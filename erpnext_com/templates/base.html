@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=1050">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="/assets/erpnext_com/img/favicon.ico">
+
+        <title>{{ title }}</title>
+
+        <!--jQuery-->
+        <script type="text/javascript"
+		    src="/assets/frappe/js/lib/jquery/jquery.min.js"></script>
+
+        <!-- Fonts -->
+        <script src="//use.typekit.net/ioc2xoj.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+		{%- for link in web_include_css %}
+		<link type="text/css" rel="stylesheet" href="{{ link }}">
+		{%- endfor -%}
+
+		{%- block style %}
+			<style data-html-block="style">
+			{%- if style is defined -%}{{ style }}{%- endif -%}
+			</style>
+		{%- endblock -%}
+
+		{%- for link in web_include_js %}
+		<script type="text/javascript" src="{{ link }}"></script>
+		{%- endfor -%}
+
+        <!-- Styles -->
+        <link href="/assets/erpnext_com/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" data-html-block="content">
+        {% block content %}{{ content }}{% endblock %}
+        </div>
+        <!--Footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <ul>
+                            <li class="col-sm-4"><a class="footer-link" href="/frappe">
+                                <h1>Frappé</h1>
+                                <p>About the company</p>
+                            </a></li>
+                            <li class="col-sm-4"><a class="footer-link" href="/">
+                                <h1>ERP Next</h1>
+                                <p>ERP for Entrepreneurs</p>
+                            </a></li>
+                            <li class="col-sm-4"><a class="footer-link" href="/developers">
+                                <h1>Developers</h1>
+                                <p>Framework and docs</p>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 copyright">
+                        <p>&copy;<span id="year"></span> Frappé Pvt. Ltd. Content licensed under <a href=#>CC-BY-SA 3.0</a>. Read the <a href=#>terms of use</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Javascript-->
+        <script src="/assets/erpnext_com/js/main.js"></script>
+
+	{%- block script %}
+		<script data-html-block="script">
+		{%- if script is defined -%}{{ script }}{%- endif -%}
+		</script>
+	{%- endblock %}
+
+	{%- block script_lib %}
+		<script data-html-block="script_lib" data-path="{{ name }}">
+		{%- if script_lib is defined -%}{{ script_lib }}{%- endif -%}
+		</script>
+	{%- endblock -%}
+
+    </body>
+</html>
