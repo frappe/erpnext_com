@@ -1,3 +1,6 @@
+from __future__ import unicode_literals
+# -*- coding: utf-8 -*-
+
 app_name = "erpnext_com"
 app_title = "ERPNext.com"
 app_publisher = "Frappe"
@@ -7,6 +10,17 @@ app_color = "black"
 app_email = "info@erpnext.com"
 app_url = "https://erpnext.com"
 app_version = "0.0.1"
+
+website_context = {
+	"nav_brand": "ERPNext",
+	"nav_links": [
+		("Pricing", "/signup"),
+		("Features", "/features"),
+		("Docs", "/user-guide"),
+		("Blog", "https://blog.frappe.io")
+	]
+}
+
 
 # Includes in <head>
 # ------------------
