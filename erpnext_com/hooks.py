@@ -14,9 +14,9 @@ app_version = "0.0.1"
 website_context = {
 	"nav_brand": "ERPNext",
 	"nav_links": [
-		("Pricing", "/signup"),
+		("Pricing", "/pricing"),
 		("Features", "/features"),
-		("Docs", "/user-guide"),
+		("Docs", "https://manual.erpnext.com"),
 		("Blog", "https://blog.frappe.io")
 	]
 }
