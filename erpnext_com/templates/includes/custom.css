@@ -1,5 +1,11 @@
 .erpnext-features {
 	text-align: center;
+	padding-bottom: 70px;
+}
+
+#page-features [data-html-block="header"],
+#page-pricing [data-html-block="header"] {
+	text-align: center;
 }
 
 .erpnext-features img {
@@ -11,3 +17,79 @@
 .erpnext-features h3 {
 	margin-top: 70px;
 }
+
+/* pricing */
+.erpnext-pricing .plan-title {
+	text-transform: uppercase;
+}
+
+.erpnext-pricing .pricing {
+	padding: 15px;
+	width: 100%;
+	border: 1px solid #d1d8dd;
+	border-radius: 5px;
+}
+
+.erpnext-pricing .pricing .plan-value div {
+	display: inline-block;
+}
+
+.erpnext-pricing .pricing .sup {
+	position: relative;
+	font-size: 24px;
+	top: -50px;
+	right: -7px;
+}
+
+.erpnext-pricing .plan-price {
+	letter-spacing: -0.5rem;
+	font-size: 90px;
+	line-height: 1.5em;
+	margin-bottom: -20px;
+}
+
+.erpnext-pricing .start-trial {
+	margin-bottom: 15px;
+}
+
+.erpnext-pricing .buy-container {
+	border-top: 1px dashed #d1d8dd;
+	margin-top: 15px;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-top: 15px;
+}
+
+@media(max-width: 767px) {
+	.erpnext-pricing .col-sm-4 {
+		margin-bottom: 50px;
+	}
+
+	.erpnext-pricing .col-sm-4:first-child {
+		margin-top: 15px;
+	}
+
+	.erpnext-pricing .plans-common {
+		margin-top: 0px;
+	}
+}
+
+.compare-erpnext .table-responsive,
+.compare-erpnext .table-bordered,
+.compare-erpnext .table-bordered td,
+.compare-erpnext .table-bordered th {
+	border-color: #223B4F;
+}
+
+.compare-erpnext td.c-yes {
+	background-color: #78E361;
+}
+
+.compare-erpnext td.c-no {
+	background-color: #FFB170;
+}
+
+.compare-erpnext td.c-maybe {
+	background-color: #FFF348;
+}
+

@@ -1,0 +1,149 @@
+{% block title %}Sign Up For A Free 30-Day Trial{% endblock %}
+
+{% block content %}
+<!-- no-sidebar -->
+<br>
+<div class="container" style="max-width: 700px;">
+	<div class="row">
+		<div class="col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
+			<form role="form">
+				<div class="form-group">
+					<div class="input-group">
+						<input name="subdomain" placeholder="mycompany" class="form-control" type="text">
+						<span class="input-group-addon">.{{ frappe.local.conf.domain }}</span>
+					</div>
+					<p class="help-block">Your subdomain i.e.
+						https://<strong class="subdomain-help">mycompany</strong>.{{ frappe.local.conf.domain }}. <br>
+						Must contain only letters, no spaces, numbers or special characters.</p>
+				</div>
+
+				<div class="form-group">
+					<input name="company_name" placeholder="My Company" class="form-control" type="text">
+					<p class="help-block">Full Name of your Company</p>
+				</div>
+
+				<div class="form-group">
+					<input name="full_name" placeholder="Jane Doe" class="form-control" type="text">
+					<p class="help-block">Your First and Last Name <em>(will appear in your user id)</em></p>
+				</div>
+
+				<div class="form-group">
+					<input name="email" placeholder="jane_doe@example.com" class="form-control" type="text">
+					<p class="help-block">Your Email Address <em>(your login details will be emailed here)</em></p>
+				</div>
+
+				<br>
+				<div class="form-group text-center">
+					<button class="btn btn-primary btn-request" type="button">Setup My Trial</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+frappe.ready(function() {
+	// button for signup event
+	var page = $('#page-signup');
+	page.find('.btn-request').click(function() {
+		var args = {};
+		$.each(page.find("form input"), function(i, input) {
+			args[$(input).attr("name")] = $(input).val();
+		});
+
+
+		// all mandatory
+		if(!(args.full_name && args.company_name && args.email && args.subdomain)) {
+			frappe.msgprint("All fields are necessary. Please try again.");
+			return false;
+		}
+
+		// email is valid
+		if(!valid_email(args.email)) {
+			frappe.msgprint('Please enter a valid Email Address.');
+			return false;
+		}
+
+		// subdomain in one word
+		if(args.subdomain.search(/^[a-z0-9][-a-z0-9]*[a-z0-9]$/)===-1) {
+			frappe.msgprint("Sub-domain can only contain letters, numbers and hyphens. Please try again.");
+			return false;
+		}
+
+		var MAX_LENGTH = 20;
+		if(args.subdomain.length > MAX_LENGTH) {
+			frappe.msgprint("Sub-domain can not have more than " + MAX_LENGTH + " characters.");
+			return false;
+		}
+
+		// add plan to args
+		var plan = get_url_arg('plan');
+		if(plan) args.plan = plan;
+
+		args.cmd = "frappe_central.frappe_central.doctype.frappe_account_request.frappe_account_request.sign_up";
+
+		var btn_html = $(".btn-request").html();
+		$(".btn-request").prop("disabled", true).html("Sending details...");
+
+		// on success, it will show message page!
+		$.ajax({
+			url: "/",
+			data: args,
+			type: "POST",
+			statusCode: {
+				200: function(data, status, xhr) {
+					if(xhr.getResponseHeader("X-Page-Name")) {
+						frappe.render_json(data);
+					}
+				}
+			}
+		}).fail(function(xhr) {
+			var data = JSON.parse(xhr.responseText);
+			if(data.message) {
+				frappe.msgprint(data.message);
+			} else {
+				var message = data._server_messages ? JSON.parse(data._server_messages).join("\n")
+					: "Some error occured. Please try again.";
+				frappe.msgprint(message);
+			}
+
+			if(data.exc) {
+				console.error(JSON.parse(data.exc).join("\n"));
+			}
+
+		}).always(function() {
+			$(".btn-request").prop("disabled", false).html(btn_html);
+		});
+
+		return false;
+	});
+
+
+	// change help description based on subdomain change
+	$('[name="subdomain"]').on("keyup", function() {
+		$('.subdomain-help').text($(this).val() || "mycompany");
+	});
+
+	var query_params = get_query_params();
+	if (!query_params.plan) {
+		// redirect to pricing page
+		window.location.href = "/pricing";
+	}
+});
+</script>
+{% endblock %}
+
+{% block style %}
+<style>
+.form-group {
+	margin-bottom: 30px;
+}
+
+[data-html-block="header"] {
+	text-align: center;
+}
+
+</style>
+{% endblock %}
