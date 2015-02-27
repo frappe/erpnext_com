@@ -36,14 +36,13 @@
 
 .erpnext-pricing .pricing .sup {
 	position: relative;
-	font-size: 24px;
-	top: -50px;
-	right: -7px;
+	top: -28px;
+	right: -2px;
 }
 
 .erpnext-pricing .plan-price {
-	letter-spacing: -0.5rem;
-	font-size: 90px;
+	letter-spacing: -0.3rem;
+	font-size: 60px;
 	line-height: 1.5em;
 	margin-bottom: -20px;
 }
@@ -93,3 +92,23 @@
 	background-color: #FFF348;
 }
 
+#page-terms,
+#page-faq,
+#page-privacy,
+#page-testimonials,
+#page-license-trademark,
+#page-contribute {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 768px) {
+	#page-terms,
+	#page-faq,
+	#page-privacy,
+	#page-testimonials,
+	#page-license-trademark,
+	#page-contribute {
+		max-width: 75%;
+	}
+}

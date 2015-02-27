@@ -1,0 +1,5 @@
+single-server
+multitenant-server
+user-training
+developer-training
+assisted-development

@@ -1,0 +1,4 @@
+manufacturing
+distribution
+retail
+services

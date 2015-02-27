@@ -1,0 +1,50 @@
+<h1>Download Virtual Image<h1>
+<p class="lead">Download a pre-installed Virtual Box Image</p>
+
+<h3>How to Install</h3>
+
+<p>You will need Oracle's Virtual Box to use the image:</p>
+<ul>
+    <li><a href="https://www.virtualbox.org/">https://www.virtualbox.org/</a>
+    </li>
+</ul>
+<p>Import the .ova file into VirtualBox. Though the default settings of the appliance should be good enough for most users, you may need to change them if you face performace issues.</p>
+<p>The virtual appliance uses Debian GNU/Linux 7.</p>
+<p>The credentials of the virtual image are:</p>
+<ul>
+    <li>username: erpnext</li>
+    <li>password: erpnext</li>
+    <li>mysql root password: erpnext</li>
+    <li>root password: erpnext</li>
+    <li>erpnext database name: erpnext</li>
+    <li>erpnext database password: erpnext</li>
+</ul>
+<p>Once the Virtual Machine boots, use your HOST operating system's browser and go to:</p>
+<ul>
+    <li>http://localhost:8080</li>
+</ul>
+<p>and login using:</p>
+<ul>
+    <li>user: Administrator</li>
+    <li>password: admin</li>
+</ul>
+<hr>
+<h3>Download Image</h3>
+
+<p><a href="https://erpnext.com/downloads/ERPNext-241114.ova">https://erpnext.com/downloads/ERPNext-241114.ova</a> (893 MB, MD5 Checksum - 2b6ed875cda090f4965119c7ff9449f6)</p>
+<p>Created on 24th November, 2014.</p>
+<hr>
+<h3>Update Image</h3>
+<p>To update the ERPNext Virtual Box, login to your Virtual Box's Shell (username: "erpnext", password: "erpnext") and run the following</p>
+<pre>cd frappe-bench
+bench update
+</pre>
+
+<hr>
+<p>Having trouble with the Virtual Image? Raise your issues at  <a href="https://discuss.frappe.io" target="_blank"> https://discuss.frappe.io</a>
+</p>
+<hr>
+<h3>Manual Install?</h3>
+<p>Use <a href="https://github.com/frappe/bench">Frappe Bench</a>
+</p>
+</div>
