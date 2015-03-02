@@ -1,5 +1,5 @@
-from __future__ import unicode_literals
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 
 app_name = "erpnext_com"
 app_title = "ERPNext.com"
