@@ -75,6 +75,6 @@ Note: Server refers to a root server or managed server or virtual server. Hostin
 
 **US $3000 / year**
 
-<a href="/buy/payment#ProductionSupport" class="btn btn-success">Buy Now</a>
+<a href="/pricing/payment" class="btn btn-success">Buy Now</a>
 
 <a href="/contact">Contact Us for information</a>

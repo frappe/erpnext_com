@@ -31,6 +31,6 @@ Developer training session that will cover:
 
 **US $1500**
 
-<a href="/payment#DeveloperTraining" class="btn btn-success">Buy Now</a>
+<a href="/pricing/payment" class="btn btn-success">Buy Now</a>
 
 <a href="/contact">Please schedule your session before you buy</a>

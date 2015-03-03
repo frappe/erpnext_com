@@ -22,7 +22,7 @@ You can sign-up for a free 30 day trial. You will instantly get an email with a 
 
 #### 4. How Do I Pay?
 
-You are not required to pay for the trial. If you choose to continue using your trial then you can pay us via <a href="/payment">PayPal or Wire Transfer</a> and drop us an email.
+You are not required to pay for the trial. If you choose to continue using your trial then you can pay us via <a href="/pricing/payment">PayPal or Wire Transfer</a> and drop us an email.
 
 <br>
 

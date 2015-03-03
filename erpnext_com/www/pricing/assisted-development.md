@@ -1,12 +1,16 @@
 # Assisted Development
 
-<p class="lead">Enterprise Support For Frappe / ERPNext is ideal for companies that want to build in-house capabilities in developing, extending and customzing ERPNext</p>
+<p class="lead">Ideal for companies that want to build in-house capabilities in developing, extending and customzing ERPNext</p>
 
-Enterprise Support Includes:
+Assisted Development Includes:
+
+---
 
 #### 1. Training
 
 A two day Training Session. [See details](/pricing/developer-training)
+
+---
 
 #### 2. Design Review
 
@@ -28,11 +32,21 @@ We will do code reviews for your team's development so that your apps get built 
 
 **Note:** We will review and comment on your commits on GitHub or Bitbucket only.
 
-**Frequency:** Max twice once per week
+**Frequency:** Max twice per week
 
 ---
 
-#### 4. Developer Support on IRC
+#### 4. Bug Fixing
+
+We will help in fixing bugs related to your customizations.
+
+**Note:** We will review and comment on your commits on GitHub or Bitbucket only.
+
+**Frequency:** Max twice per week
+
+---
+
+#### 5. Developer Support on IRC
 
 During office hours, we will try and respond to your developer queries on priority. If one of your developers is stuck, we will try and allocate someone to give you support.
 
@@ -42,7 +56,7 @@ During office hours, we will try and respond to your developer queries on priori
 
 ---
 
-#### 5. Deployment Support (Multi-tenant)
+#### 6. Deployment Support (Multi-tenant)
 
 We will provide help so that you can setup up multiple instances (sites) of ERPNext using [Frappe Bench](https://github.com/frappe/bench) along with backups and other settingsfrap
 
@@ -52,8 +66,14 @@ We will provide help so that you can setup up multiple instances (sites) of ERPN
 
 ---
 
+#### 7. Max Consulting Hours
+
+We will provide **upto 100 hours** of above mentioned consulting excluding the training period.
+
+---
+
 ### Pricing
 
 **US $5000 / year**
 
-<a href="/buy/payment#DeveloperSupport" class="btn btn-success">Buy Now</a>
+<a href="/pricing/payment" class="btn btn-success">Buy Now</a>

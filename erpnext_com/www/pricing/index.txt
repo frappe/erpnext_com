@@ -1,5 +1,6 @@
+payment
 single-server
 multitenant-server
+assisted-development
 user-training
 developer-training
-assisted-development

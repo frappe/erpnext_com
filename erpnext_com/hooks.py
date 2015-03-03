@@ -31,7 +31,7 @@ website_context = {
 
 # include js, css files in header of web template
 # web_include_css = "/assets/erpnext_com/css/erpnext_com.css"
-# web_include_js = "/assets/erpnext_com/js/erpnext_com.js"
+# web_include_js = "/assets/erpnext_com/js/payment.js"
 
 # Home Pages
 # ----------
