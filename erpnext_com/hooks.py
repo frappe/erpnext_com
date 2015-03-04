@@ -119,3 +119,4 @@ home_page = "index"
 # 	"frappe.desk.doctype.event.event.get_events": "erpnext_com.event.get_events"
 # }
 
+fixtures = ["Contact Us Settings"]
