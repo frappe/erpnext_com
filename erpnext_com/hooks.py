@@ -12,13 +12,14 @@ app_url = "https://erpnext.com"
 app_version = "0.0.1"
 
 website_context = {
-	"nav_brand": "ERPNext",
-	"nav_links": [
-		("Pricing", "/pricing"),
-		("Features", "/features"),
-		("Docs", "https://manual.erpnext.com"),
-		("Blog", "https://blog.frappe.io")
-	]
+	"brand_html": "ERPNext",
+	"top_bar_items": [
+		{"label": "Pricing", "url": "/pricing", "right":1},
+		{"label": "Features", "url": "/features", "right":1},
+		{"label": "Docs", "url": "https://manual.erpnext.com", "right":1},
+		{"label": "Blog", "url": "https://blog.frappe.io", "right":1}
+	],
+	"hide_login": 1
 }
 
 
