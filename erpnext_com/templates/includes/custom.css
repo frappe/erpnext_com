@@ -8,14 +8,13 @@
 	text-align: center;
 }
 
-.erpnext-features img {
-	width: 70%;
-	margin: 30px auto;
-	margin-bottom: 70px;
-}
-
 .erpnext-features h3 {
 	margin-top: 70px;
+}
+
+.feature-separator {
+/*	width: 50%;*/
+	margin: 0px auto 120px !important;
 }
 
 /* pricing */
@@ -112,3 +111,4 @@
 		max-width: 75%;
 	}
 }
+
