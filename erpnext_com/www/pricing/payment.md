@@ -15,18 +15,19 @@
 	</thead>
 	<tbody>
 		{% for plan in [
-			{"name": "Cloud Enterprise", "usd": "$ 599"},
-			{"name": "Cloud Small Business", "usd": "$ 299"},
-			{"name": "Cloud Startup", "usd": "$ 149"},
-			{"name": "Multitenant Server Support", "usd": "$ 3000"},
+			{"name": "5 users, 5GB space", "usd": "$ 300"},
+			{"name": "25 users, 10GB space", "usd": "$ 600"},
+			{"name": "100 users, 20GB space", "usd": "$ 1500"},
+			{"name": "Unlimited users, 50GB space", "usd": "$ 3000"},
 			{"name": "Single Instance Server Suport", "usd": "$ 1000"},
+			{"name": "Multitenant Server Support", "usd": "$ 3000"},
 			{"name": "Assisted Development", "usd": "$ 5000"},
 			{"name": "Developer Training", "usd": "$ 1500"},
 			{"name": "User Training", "usd": "$ 1500"},
 			{"name": "Sponsorship", "usd": "$ 5000"},
 		] -%}
 			{% set inr = frappe.utils.fmt_money(
-				frappe.utils.cint(frappe.utils.flt(frappe.utils.flt(plan.usd[1:]) * 60.0 * 1.1236, 2)),
+				frappe.utils.cint(frappe.utils.flt(frappe.utils.flt(plan.usd[1:]) * 60.0 * 1.14 / 1000.0, 0) * 1000),
 				precision=0,
 				currency="INR") %}
 			<tr>
@@ -77,7 +78,7 @@
 </div>
 
 <div class="india-wire-transfer-msg hidden">
-	<p>12.36% Service Tax is included for Indian Customers.</p>
+	<p>14% Service Tax is included for Indian Customers.</p>
 	
 	<hr>
 	<h4>Option A: Direct Transfer</h4>
