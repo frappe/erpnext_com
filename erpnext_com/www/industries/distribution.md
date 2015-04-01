@@ -18,19 +18,19 @@ This is a broad overview of how a distributor company could run its business by 
 
 The setup wizard and setting up module will help in entering your SKU's/Item details along with Customer/Lead and Supplier information.
 
-![Item](/assets/erpnext_org/images/erpnext/item-distributor.png)
+![Item](/assets/erpnext_com/images/industries/item-distributor.png)
 
 ### Selling
 
 Once your system is setup, you can keep track of communication with your Leads or Customers. You can send them Newsletters once in a while and send specific Quotations when they are ready to order. When they place an order, you can create a Sales Order.
 
-![Sales Order](/assets/erpnext_org/images/erpnext/sales-order-list-distributor.png)
+![Sales Order](/assets/erpnext_com/images/industries/sales-order-list-distributor.png)
 
 ### Buying
 
 Keep track of Items to buy by raising Material Requests, send Purchase Orders to your Suppliers and enter Purchase Receipts when you receive material.
 
-![Buying](/assets/erpnext_org/images/erpnext/supplier-quotation-list-distributor.png)
+![Buying](/assets/erpnext_com/images/industries/supplier-quotation-list-distributor.png)
 
 
 ### Inventory
