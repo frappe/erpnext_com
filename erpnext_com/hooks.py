@@ -10,6 +10,7 @@ app_color = "black"
 app_email = "info@erpnext.com"
 app_url = "https://erpnext.com"
 app_version = "0.0.1"
+hide_in_installer = True
 
 website_context = {
 	"brand_html": "ERPNext",
