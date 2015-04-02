@@ -45,7 +45,11 @@ If you have not Purchased Our Services, then we have a right to terminate them. 
 
 ### 7. Rate Inflation
 
-We reserve the right to increase our price or change the pricing model as and when we see fit. Incase if we have a price rise and you are unhappy, we will allow you to use the service for a period of three months under the old rate. Please note that ERPNext and Frappe Apps are Free and Open Source software and you are free to purchase hosting and support services from any other vendor.
+We reserve the right to increase our price or change the pricing model as and when we see fit. Incase if we have a price rise and you are unhappy, we will allow you to use the service for a period of three months under the old rate.
+
+We also reserve the right to change the resource allocated, number of users, or any such parameter for any of our free or paid plans as we see fit.
+
+Please note that ERPNext and Frappe Apps are Free and Open Source software and you are free to purchase hosting and support services from any other vendor or host it yourself at no cost.
 
 ### 8. Backups
 

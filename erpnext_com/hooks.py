@@ -16,6 +16,7 @@ website_context = {
 	"top_bar_items": [
 		{"label": "Pricing", "url": "/pricing", "right":1},
 		{"label": "Features", "url": "/features", "right":1},
+		{"label": "Demo", "url": "https://demo.erpnext.com", "right":1},
 		{"label": "Docs", "url": "https://manual.erpnext.com", "right":1},
 		{"label": "Blog", "url": "https://blog.frappe.io", "right":1}
 	],
