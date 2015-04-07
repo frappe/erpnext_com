@@ -27,7 +27,7 @@
 			{"name": "Sponsorship", "usd": "$ 5000"},
 		] -%}
 			{% set inr = frappe.utils.fmt_money(
-				frappe.utils.cint(frappe.utils.flt(frappe.utils.flt(plan.usd[1:]) * 60.0 * 1.14 / 1000.0, 0) * 1000),
+				frappe.utils.cint(frappe.utils.flt(frappe.utils.flt(plan.usd[1:]) * 60.0 * 1.1236 / 1000.0, 0) * 1000),
 				precision=0,
 				currency="INR") %}
 			<tr>
@@ -78,7 +78,7 @@
 </div>
 
 <div class="india-wire-transfer-msg hidden">
-	<p>14% Service Tax is included for Indian Customers.</p>
+	<p>12.36% Service Tax is included for Indian Customers.</p>
 	
 	<hr>
 	<h4>Option A: Direct Transfer</h4>

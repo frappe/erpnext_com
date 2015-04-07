@@ -18,30 +18,50 @@
 }
 
 .erpnext-paid-plans {
-	border: 1px solid #d1d8dd;
+/*	border: 1px solid #d1d8dd;
+	border-radius: 4px;
+*/}
+
+.erpnext-paid-plans .plan {
+	border: 1px solid #e6e6e6;
 	border-radius: 4px;
 }
 
-.erpnext-paid-plans .plan {
+.erpnext-paid-plans .plan .plan-users {
+	padding-top: 30px;
+	margin: 10px;
+}
+
+.erpnext-paid-plans .plan .plan-space {
+	padding-bottom: 30px;
+	margin: 10px;
+}
+
+.erpnext-paid-plans .plan h2 {
 	padding: 20px 0px;
+	border-top: 1px solid #e6e6e6;
+	margin: 0px;
+	background-color: #f7fafc;
 }
 
 @media (max-width: 767px) {
-	.erpnext-paid-plans {
-		border-radius: 0px;
-		border-left: none;
-		border-right: none;
-	}
-
-	.erpnext-paid-plans .plan {
-		border-top: 1px solid #d1d8dd;
-	}
-
-	.erpnext-paid-plans .plan:first-child {
-		border-top: none;
+	.erpnext-paid-plans .col-sm-3 {
+		margin: 20px 0px;
 	}
 }
 
+.support-plans p {
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.support-plans-section {
+	padding: 40px 0px !important;
+}
+
+.support-plans {
+	padding: 0px 20px;
+}
 
 .compare-erpnext .table-responsive,
 .compare-erpnext .table-bordered,
