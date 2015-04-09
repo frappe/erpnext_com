@@ -19,7 +19,7 @@
 			{"name": "25 users, 10GB space", "usd": "$ 600"},
 			{"name": "100 users, 20GB space", "usd": "$ 1500"},
 			{"name": "Unlimited users, 50GB space", "usd": "$ 3000"},
-			{"name": "Single Instance Server Suport", "usd": "$ 1000"},
+			{"name": "Single Instance Server Support", "usd": "$ 1000"},
 			{"name": "Multitenant Server Support", "usd": "$ 3000"},
 			{"name": "Assisted Development", "usd": "$ 5000"},
 			{"name": "Developer Training", "usd": "$ 1500"},
