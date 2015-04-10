@@ -58,7 +58,7 @@ During office hours, we will try and respond to your developer queries on priori
 
 #### 6. Deployment Support (Multi-tenant)
 
-We will provide help so that you can setup up multiple instances (sites) of ERPNext using [Frappe Bench](https://github.com/frappe/bench) along with backups and other settingsfrap
+We will provide help so that you can setup up multiple instances (sites) of ERPNext using [Frappe Bench](https://github.com/frappe/bench) along with backups and other settings.
 
 **Note:** Support will be provided over chat / email. We will not troubleshoot on your system.
 
