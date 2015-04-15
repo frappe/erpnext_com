@@ -21,5 +21,5 @@ Badly missing a feature that you want to be developed on priority? We can help y
 
 ### Ready?
 
-<a href="https://github.com/frappe/erpnext/issues/new?title=[Paid+Feature]+" class="btn btn-primary">Raise an Issue on GitHub</a>
+<a href="https://github.com/frappe/erpnext/issues/new?title=[Paid+Development]+" class="btn btn-primary">Raise an Issue on GitHub</a>
 
