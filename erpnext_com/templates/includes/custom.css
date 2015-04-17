@@ -1,6 +1,5 @@
 .erpnext-features {
 	text-align: center;
-	padding-bottom: 70px;
 }
 
 #page-features [data-html-block="header"],
@@ -10,6 +9,18 @@
 
 .erpnext-features h3 {
 	margin-top: 70px;
+}
+
+@media (min-width: 768px) {
+	.erp-feature .narrow {
+		max-width: 60%;
+	}
+}
+
+.erp-feature {
+	padding: 50px 15px;
+	border-bottom: 1px solid #d1d8dd;
+	margin: 0px -15px;
 }
 
 .feature-separator {
@@ -103,3 +114,6 @@
 	}
 }
 
+#page-features .page-content {
+	padding: 0px;
+}
