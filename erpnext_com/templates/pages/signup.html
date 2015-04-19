@@ -47,7 +47,7 @@
 frappe.ready(function() {
 	// button for signup event
 	var page = $('#page-signup');
-	page.find('.btn-request').click(function() {
+	page.find('.btn-request').off('click').on('click', function() {
 		var args = {};
 		$.each(page.find("form input"), function(i, input) {
 			args[$(input).attr("name")] = $(input).val();
