@@ -117,3 +117,11 @@
 #page-features .page-content {
 	padding: 0px;
 }
+
+#page-version-5 .page-content {
+	padding-bottom: 0px;
+}
+
+.small-content h4 {
+	margin-bottom: 0px;
+}
