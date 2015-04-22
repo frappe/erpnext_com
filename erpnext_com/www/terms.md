@@ -2,8 +2,8 @@
 
 <p class="lead">Subscription Agreement</p>
 
-Version: 3.0
-Date: 1st March 2015
+Version: 3.1
+Date: 1st April 2015
 
 
 ### Introduction
@@ -89,7 +89,7 @@ Registered Address: D/324 Neelkanth Business Park, Vidyavihar West, Mumbai 40008
 
 Jurisdiction: Mumbai, India
 
-Dated: 1st April 2014
+Dated: 1st April 2015
 
 ---
 
