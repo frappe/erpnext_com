@@ -72,7 +72,7 @@ deal with products that cost $ 10,000.00 (USD) per order.
 We sincerely thank their software developer, Maxwell Morais, who is single-
 handedly deploying ERPNext for their 11 stores.
 
-![](assets/erpnext_com/images/stories/max_morais.jpg)
+![](/assets/erpnext_com/images/stories/max_morais.jpg)
 
 > Como o rei Pelé, que com seus pés fazem dos movimentos com a bola uma arte,
 assim é ERPNext, transformando as dificuldades e transtornos do dia-a-dia da

@@ -28,7 +28,7 @@ processes, and numerous employee records had become a herculean task to
 manage. They felt the need for a software that could integrate all their
 operations and data. 
 
-![](assets/erpnext_com/images/stories/hisham_farid.jpg)
+![](/assets/erpnext_com/images/stories/hisham_farid.jpg)
 
 Their IT manager, Mr. Hisham Farid, had good experience
 with Oracle so he decided to get an ERP system for the company. However, he

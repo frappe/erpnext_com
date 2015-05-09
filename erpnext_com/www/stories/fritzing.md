@@ -21,7 +21,7 @@ forums.
 Amin participated in the ‘Open Hardware Summit’ at the MIT. He showcased
 Fritzing and key elements of ERPNext.
 
-![](assets/erpnext_com/images/stories/fritzing-ohs.png)
+![](/assets/erpnext_com/images/stories/fritzing-ohs.png)
 
 > “Everyone who attended the Open Hardware Summit at MIT last week was very
 impressed with ERPNext. They truly believe - as I do - that it’s the best ERP
@@ -43,12 +43,12 @@ abstract to understand and need knowledge of electronics. They have enabled
 documentation of prototypes which mimic the realistic aspects of the
 electronic components used in breadboards, sensors or cables.
 
-![](assets/erpnext_com/images/stories/fritzing-board.png)
+![](/assets/erpnext_com/images/stories/fritzing-board.png)
 
 Downside of a breadboard based prototype: too big, too fragile, difficult to
 spot mistakes, hard to transport, extremely difficult to reproduce
 
-![](assets/erpnext_com/images/stories/fritzing-board2.png)
+![](/assets/erpnext_com/images/stories/fritzing-board2.png)
 
 A compact, robust and industrially reproducible PCB (right), manufactured from
 a Fritzing file (left)
@@ -59,7 +59,7 @@ Fritzing enables easy transfer between a hardware sketch and software
 representation. They make it possible to create PCB layouts turn into a robust
 PCB Prototypes which were earlier difficult to “read” and could only be photographed. Fritzing has made it easily readable. 
 
-![](assets/erpnext_com/images/stories/fritzing-lab.png)
+![](/assets/erpnext_com/images/stories/fritzing-lab.png)
 
 #### Best Practice: Communication and Collaboration
 
@@ -74,6 +74,6 @@ entry barrier, and not limiting advancing users in the long run. The notion of
 learning by doing and through the works of others, as opposed to from a
 textbook.
 
-![](assets/erpnext_com/images/stories/fritzing-logo.png)
+![](/assets/erpnext_com/images/stories/fritzing-logo.png)
 
 [Fritzing Website](http://fritzing.org/home/)

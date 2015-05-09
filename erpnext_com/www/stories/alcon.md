@@ -9,7 +9,7 @@ wireless communication, surveillance CCTV, and Access control in Philippines. Th
 We interviewed their Director-Sales and Marketing, Ms. Zel Ortiz, to
 understand the practices which make them a market leader.
 
-![](assets/erpnext_com/images/stories/zel-ortiz.png)
+![](/assets/erpnext_com/images/stories/zel-ortiz.png)
 
 Ms. Zel believes that Alcon’s strength lies in operating as one team. They are
 unified in their front and take decisions as a unified whole. They follow a
@@ -40,7 +40,7 @@ When we asked Ms. Zel, which is her favourite feature in ERPNext? She said,
 **all of them!**
 
 
-![](assets/erpnext_com/images/stories/alcon-logo.png)
+![](/assets/erpnext_com/images/stories/alcon-logo.png)
 
 [Alcon Philippines Website](http://www.alconphils.com/)
 

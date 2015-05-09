@@ -5,7 +5,7 @@ ERPNext Implementation story. He began by saying that “I have been compelled
 by my conscience to write about this product which has put all my plans in
 place for my organisation”.
 
-![](assets/erpnext_com/images/stories/aditya-duggal.png)
+![](/assets/erpnext_com/images/stories/aditya-duggal.png)
 
 #### Company and Products
 
@@ -68,6 +68,6 @@ dollars company to 3 million dollars professionally managed organisation. His
 journey is continuous and he is constantly striving to channel his company
 towards unprecedented success.
 
-![](assets/erpnext_com/images/stories/rigpl-logo.png)
+![](/assets/erpnext_com/images/stories/rigpl-logo.png)
 
 [RIGPL Website](http://www.rigpl.com)
