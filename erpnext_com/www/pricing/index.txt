@@ -6,3 +6,4 @@ user-training
 developer-training
 paid-feature-development
 migrations
+free
