@@ -51,6 +51,7 @@
 .erpnext-paid-plans .plan h2 {
 	padding: 20px 0px;
 	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
 	margin: 0px;
 	background-color: #f7fafc;
 }
