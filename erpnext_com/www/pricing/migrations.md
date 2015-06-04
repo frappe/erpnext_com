@@ -34,7 +34,7 @@ This service is also available for those who have an ERPNext Support plan for th
         </tr>
         <tr>
             <td>Upload ERPNext database</td>
-            <td>$100 for Free Plan<br>Free for paid subcribers</td>
+            <td>Free for paid subcribers</td>
         </tr>
     </tbody>
 </table>
