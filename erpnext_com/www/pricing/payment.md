@@ -78,7 +78,7 @@
 </div>
 
 <div class="india-wire-transfer-msg hidden">
-	<p>12.36% Service Tax is included for Indian Customers.</p>
+	<p>14% Service Tax is included for Indian Customers.</p>
 	
 	<hr>
 	<h4>Option A: Direct Transfer</h4>
