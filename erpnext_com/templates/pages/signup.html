@@ -130,6 +130,9 @@ frappe.ready(function() {
 	if (!query_params.plan) {
 		// redirect to pricing page
 		window.location.href = "/pricing";
+	} else if (query_params.for_mobile_app) {
+		// for mobile app singup, hide header and footer
+		$("header,footer").addClass("hidden");
 	}
 });
 </script>
