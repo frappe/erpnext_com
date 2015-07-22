@@ -20,7 +20,8 @@ website_context = {
 		{"label": "Docs", "url": "https://manual.erpnext.com", "right":1},
 		{"label": "Blog", "url": "https://blog.frappe.io", "right":1},
 	],
-	"hide_login": 1
+	"hide_login": 1,
+	"favicon": "/assets/frappe_theme/img/favicon.ico"
 }
 
 
