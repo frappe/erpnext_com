@@ -27,7 +27,7 @@
 			{"name": "Sponsorship", "usd": "$ 5000"},
 		] -%}
 			{% set inr = frappe.utils.fmt_money(
-				frappe.utils.cint(frappe.utils.flt(frappe.utils.flt(plan.usd[1:]) * 60.0 * 1.1236 / 1000.0, 0) * 1000),
+				frappe.utils.cint(frappe.utils.flt(frappe.utils.flt(plan.usd[1:]) * 60.0 * 1.14 / 1000.0, 0) * 1000),
 				precision=0,
 				currency="INR") %}
 			<tr>
