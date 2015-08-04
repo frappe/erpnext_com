@@ -126,3 +126,19 @@
 .small-content h4 {
 	margin-bottom: 0px;
 }
+
+.benefits-check {
+	float: left;
+	margin-left: -20px;
+	margin-top: 3px;
+	color: #98d85b;
+}
+
+.article-style {
+	margin-top:0px;
+	margin-left: 20px;
+	max-width: 560px;
+	margin: auto;
+	font-size: 1.13em;
+	line-height: 1.5;
+}

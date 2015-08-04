@@ -7,7 +7,7 @@
 		<h4>Helping Users</h4>
 	</div>
 	<div class="col-md-8">
-		Our support process relies on enthusiastic contributors like you to help others get the most out of Frappe / ERPNext. Join the <a href="https://discuss.frappe.io" target="_blank">Frappe.io forum</a> and start helping out.</a>
+		Our support process relies on enthusiastic contributors like you to help others get the most out of Frappe / ERPNext. Join the <a href="https://discuss.erpnext.com" target="_blank">Frappe.io forum</a> and start helping out.</a>
 	</div>
 </div>
 <hr>
