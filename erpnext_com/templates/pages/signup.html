@@ -40,6 +40,43 @@
 		</div>
 	</div>
 </div>
+
+<!-- Google Code for Signup Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 1032834481;
+    w.google_conversion_label = "JvAUCLX41gEQsZu_7AM";
+    w.google_conversion_value = 1.00;
+    w.google_conversion_currency = "INR";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    window.google_is_call = true;
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
 {% endblock %}
 
 {% block script %}
@@ -86,6 +123,8 @@ frappe.ready(function() {
 
 		var btn_html = $(".btn-request").html();
 		$(".btn-request").prop("disabled", true).html("Sending details...");
+
+        goog_report_conversion()
 
 		// on success, it will show message page!
 		$.ajax({
