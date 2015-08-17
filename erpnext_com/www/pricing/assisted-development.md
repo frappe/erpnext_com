@@ -68,7 +68,7 @@ We will provide help so that you can setup up multiple instances (sites) of ERPN
 
 #### 7. Max Consulting Hours
 
-We will provide **upto 100 hours** of above mentioned consulting excluding the training period.
+We will provide **upto 50 hours** of above mentioned consulting excluding the training period.
 
 ---
 
