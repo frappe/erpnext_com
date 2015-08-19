@@ -49,7 +49,7 @@
 			</tr>
 			<tr>
 				<td>Address of Bank</td>
-				<td>Rupam Center, Cine Planet, Sion (E), Mumbai 400022, India.</td>
+				<td>1st Floor, Sanghavi Square, M. G. Road, Ghatkopar (W), Mumbai - 400086, India.</td>
 			</tr>
 			<tr>
 				<td>Account Number</td>
@@ -61,7 +61,7 @@
 			</tr>
 			<tr>
 				<td>IFSC Code</td>
-				<td>HDFC0000163</td>
+				<td>HDFC0001473</td>
 			</tr>
 			<tr>
 				<td>SWIFT Code</td>
@@ -91,7 +91,7 @@
 			</tr>
 			<tr>
 				<td>Address of Bank</td>
-				<td>Rupam Center, Cine Planet, Sion (E), Mumbai 400022, India.</td>
+				<td>1st Floor, Sanghavi Square, M. G. Road, Ghatkopar (W), Mumbai - 400086, India.</td>
 			</tr>
 			<tr>
 				<td>Account Number</td>
@@ -103,7 +103,7 @@
 			</tr>
 			<tr>
 				<td>IFSC Code</td>
-				<td>HDFC0000163</td>
+				<td>HDFC0001473</td>
 			</tr>
 			<tr>
 				<td>SWIFT Code</td>
