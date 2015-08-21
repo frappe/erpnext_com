@@ -1,3 +1,20 @@
 .page-content {
 	padding-bottom: 0px !important;
 }
+
+.dashboard-section {
+	margin: auto;
+	max-width: 90%;
+}
+
+@media(min-width: 768px) {
+	.dashboard-section {
+		max-width: 80%;
+	}
+}
+
+@media(min-width: 992px) {
+	.dashboard-section {
+		max-width: 65%;
+	}
+}
