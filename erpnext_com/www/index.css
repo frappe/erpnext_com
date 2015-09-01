@@ -18,3 +18,52 @@
 		max-width: 65%;
 	}
 }
+
+.hero-content h1 {
+	font-size: 1.85em;
+	font-weight: 300;
+}
+
+.hero {
+	border-bottom: 0px;
+}
+
+.erp-hero {
+	border-bottom: 1px solid #e1e9f0;
+}
+
+.hero-content p {
+	margin-bottom: 100px;
+}
+
+.navbar {
+	border-bottom: 0px;
+}
+
+.navbar, footer, .later {
+	opacity: 0;
+}
+
+.navbar, footer, .later {
+    -moz-animation: cssAnimation 1s ease-in 0s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 1s ease-in 0s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 1s ease-in 0s forwards;
+    /* Opera */
+    animation: cssAnimation 1s ease-in 0s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cssAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes cssAnimation {
+    to {
+        opacity: 1;
+    }
+}

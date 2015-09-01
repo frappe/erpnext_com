@@ -6,22 +6,24 @@
             <img class="erp-hero" src="/assets/frappe_theme/img/platforms.svg">
         </div> -->
         <div class="col-sm-12 hero-content" style="margin-top: 10px;">
-            <h1>ERP for Entrepreneurs</h1>
-            <p>ERPNext helps you take full control of your business.
-                <br class="hidden-xs"> It is as powerful as it is easy to use.</p>
-            <a class="x-large blue button" href="/signup?plan=P5">Sign Up &mdash; 30 Day Free Trial</a>
-            <p class="description">
-				<a class="no-decoration" href="/pricing">See plans and pricing</a>
-			</p>
+            <h1>ERP Made Simple</h1>
+            <p class="text-muted later">ERPNext helps you take
+                full control of your business.
+                <br class="hidden-xs">
+                    It is as powerful as it is easy to use.</p>
+            <a class="x-large blue button later" href="/signup?plan=P5">Sign Up &mdash; 30 Day Free Trial</a>
+            <p class="description later">
+                <a class="no-decoration" href="/pricing">See plans and pricing</a>
+            </p>
         </div>
 
-        <div class="col-sm-12">
+        <div class="col-sm-12 later">
             <img class="erp-hero" style="width: auto;"
                 src="/assets/erpnext_com/img/head-screenshot.jpg">
         </div>
     </div>
     <!-- Content -->
-    <div class="group">
+    <div class="group later">
         <div class="row section text-center">
             <div class="col-sm-12">
                 <div class="dashboard-section">
@@ -33,7 +35,7 @@
         </div>
     </div>
 
-    <div class="row section">
+    <div class="row section later">
         <div class="col-sm-4 small-content">
             <img src="/assets/frappe_theme/img/support.svg">
             <h1>Expert Support</h1>
@@ -55,3 +57,10 @@
             <a href="/download">Download ERPNext free</a>
         </div>
     </div>
+    <script>
+    $(function() {
+        setTimeout(function() {
+            $(".later").fadeIn();
+        }, 1000);
+    });
+    </script>
