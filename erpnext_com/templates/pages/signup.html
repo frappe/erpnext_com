@@ -1,7 +1,11 @@
-{% block title %}Sign up for the 30 day free trial{% endblock %}
+{% block title %}Sign Up for ERPNext{% endblock %}
 
 {% block content %}
 <!-- no-sidebar -->
+<h1 class="text-center">
+	Sign Up &mdash; <span class="plan-message">Free for 1 User</span>
+</h1>
+
 <br>
 <div class="container" style="max-width: 700px;">
 	<div class="row">
@@ -172,6 +176,12 @@ frappe.ready(function() {
 	} else if (query_params.for_mobile_app) {
 		// for mobile app singup, hide header and footer
 		$("header,footer").addClass("hidden");
+	}
+
+	if (["Free", "Free-Solo"].indexOf(query_params.plan)!==-1) {
+		page.find(".plan-message").text("Free for 1 User");
+	} else {
+		page.find(".plan-message").text("Free 30-day Trial");
 	}
 });
 </script>
