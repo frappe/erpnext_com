@@ -24,6 +24,7 @@ website_context = {
 	"favicon": "/assets/frappe_theme/img/favicon.ico"
 }
 
+translated_languages_for_website = ["ja"]
 
 # Includes in <head>
 # ------------------
