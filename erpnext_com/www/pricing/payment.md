@@ -78,8 +78,8 @@
 </div>
 
 <div class="india-wire-transfer-msg hidden">
-	<p>14% Service Tax is included for Indian Customers.</p>
-	
+	<p>14.5% Service Tax is included for Indian Customers.</p>
+
 	<hr>
 	<h4>Option A: Direct Transfer</h4>
 	<p>You can directly remit the amount to our bank. All bank transfer charges, if any, are to be borne by you.</p>
@@ -111,7 +111,7 @@
 			</tr>
 		</tbody>
 	</table>
-	
+
 	<hr>
 	<h4>Option B: Deposit Cash / Check</h4>
 	<p>You can also directly deposit a check to your local HDFC Bank Branch to our account:</p>
@@ -127,7 +127,7 @@
 			</tr>
 		</tbody>
 	</table>
-	
+
 	<hr>
 	<h4>Option C: Mail / Courier Us A Check</h4>
 	<p>You can send us your check by courier at:</p>
