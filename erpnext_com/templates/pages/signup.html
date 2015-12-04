@@ -2,6 +2,11 @@
 
 {% block content %}
 <!-- no-sidebar -->
+<div class="missing-domain-msg hidden text-center">
+	<p class="lead" style="font-size: 24px;"><span class="missing-domain text-primary"></span> does not exist</p>
+	<i class="octicon octicon-chevron-down mega-octicon" style="color: #36414C;"></i>
+</div>
+
 <h1 class="text-center">
 	Sign Up &mdash; <span class="plan-message">Free for 1 User</span>
 </h1>
@@ -182,6 +187,18 @@ frappe.ready(function() {
 		page.find(".plan-message").text("Free for 1 User");
 	} else {
 		page.find(".plan-message").text("Free 30-day Trial");
+	}
+
+	$('.domain-missing-msg').addClass("hidden");
+	if (query_params.domain) {
+		var subdomain = query_params.domain;
+		if (subdomain.indexOf(".{{ frappe.local.conf.domain }}")) {
+			subdomain = subdomain.replace(".{{ frappe.local.conf.domain }}", "");
+		}
+		$('[name="subdomain"]').val(subdomain);
+
+		$('.missing-domain').html(query_params.domain);
+		$('.missing-domain-msg').removeClass("hidden");
 	}
 });
 </script>
