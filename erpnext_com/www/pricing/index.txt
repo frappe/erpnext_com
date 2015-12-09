@@ -1,4 +1,5 @@
 payment
+vip
 single-server
 multitenant-server
 assisted-development
