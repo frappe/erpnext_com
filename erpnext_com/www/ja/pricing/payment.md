@@ -19,12 +19,7 @@
 			{"name": "25 users, 10GB space", "name_ja": "25ユーザー・容量10GB", "usd": "$ 600"},
 			{"name": "100 users, 20GB space", "name_ja": "100ユーザー・容量20GB", "usd": "$ 1500"},
 			{"name": "Unlimited users, 50GB space", "name_ja": "ユーザー数無制限・容量50GB", "usd": "$ 3000"},
-			{"name": "Single Instance Server Support", "name_ja": "シングルインスタンスサーバー サポート", "usd": "$ 1000"},
-			{"name": "Multitenant Server Support", "name_ja": "マルチテナントサーバー サポート", "usd": "$ 3000"},
-			{"name": "Assisted Development", "name_ja": "開発補助", "usd": "$ 5000"},
-			{"name": "Developer Training", "name_ja": "開発者トレーニング", "usd": "$ 1500"},
-			{"name": "User Training", "name_ja": "ユーザートレーニング", "usd": "$ 1500"},
-			{"name": "Sponsorship", "name_ja": "スポンサーシップ", "usd": "$ 5000"},
+			{"name": "ERPNext VIP", "name_ja": "スポンサーシップ", "usd": "$ 5000"},
 		] -%}
 			{% set inr = frappe.utils.fmt_money(
 				frappe.utils.cint(frappe.utils.flt(frappe.utils.flt(plan.usd[1:]) * 60.0 * 1.1236 / 1000.0, 0) * 1000),
