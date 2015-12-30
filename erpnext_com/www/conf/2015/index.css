@@ -1,0 +1,169 @@
+header, footer {
+	display: none;
+}
+
+h1 {
+  line-height:1.2em;
+}
+
+.conf-2015-hero {
+	background: linear-gradient(0deg, #3B3B80, #5E5FBE);
+}
+
+.conf-2015-hero .hero {
+  padding: 90px 0;
+}
+
+.conf-2015-hero .erp-hero {
+	width: 677px;
+	margin-top: -4em;
+	margin-bottom: -8em;
+}
+
+.conf-2015-hero .hero-content h1.erpnext-conference {
+	margin-top: -36px;
+	margin-bottom: 5px;
+	font-size: 2.34em;
+    line-height:1em;
+	text-shadow: 0px 2px 2px rgba(1,2,2,0.1);
+}
+
+.conf-2015-hero .hero-date-location {
+	font-size: 0.9em;
+	letter-spacing: 0.07em;
+}
+
+.conf-2015-hero .hero-content h1 {
+	font-size: 1.833em;
+    line-height:1.2em;
+}
+
+.conf-2015-hero .hero-content p {
+	font-weight: 200;
+}
+
+.conf-2015-hero .hero-content p.sub-head {
+	margin-top: 20px;
+	max-width: 800px;
+	font-size: 1.33em;
+    line-height: 1.35em;
+}
+
+.conf-2015-hero .hero-content .button {
+    margin-top:30px;
+    font-size: 1.33em;
+}
+
+.who-should-attend-image {
+      width:330px;
+}
+
+.white {
+	color: white;
+}
+
+.brand-muted {
+	color: #b8b9de;
+}
+
+.brand-muted a:hover,
+.brand-muted a:focus,
+.brand-muted a:active {
+	color: white !important;
+}
+
+.speaking-at-the-conference .large-description {
+	max-width: 640px;
+	margin-bottom: 60px;
+}
+
+.conf-information li {
+	margin-bottom: 30px;
+}
+
+.who-should-attend .register {
+	font-size: 0.9em;
+	font-weight: 200;
+}
+
+@media(max-width: 767px) {
+
+    body{
+      line-height:1.6em;
+    }
+    .container, .hero-content {
+      padding:0 20px;
+      max-width:440px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .conf-2015-hero .hero {
+      padding: 60px 0;
+    }
+
+    .conf-2015-hero .hero-content h1.erpnext-conference {
+        font-size: 1.9em;
+        line-height:1em;
+    }
+
+    .conf-2015-hero .erp-hero {
+        margin-top: -4em;
+        margin-bottom: -6em;
+        max-width:340px;
+    }
+
+    .conf-2015-hero .hero-content h1 {
+        font-size: 1.3em;
+    }
+
+    .conf-2015-hero .hero-content p.sub-head, .conf-2015-hero .hero-content .button {
+        margin-top: 0px;
+    }
+
+    .conf-2015-hero .hero-content p.sub-head, .conf-2015-hero .hero-content .button {
+        font-size: 1.1em;
+    }
+
+    .row.section {
+        padding:60px 0;
+    }
+	.speaking-at-the-conference .col-sm-4 {
+		text-align: center;
+	}
+
+    .speaking-at-the-conference .col-sm-4 h2, .speaking-at-the-conference .col-sm-4 p{
+		max-width:275px;
+        margin-left: auto;
+        margin-right: auto;
+	}
+
+	.speaking-at-the-conference .col-sm-4:not(:last-child) {
+		margin-bottom: 60px;
+	}
+
+	.who-should-attend .register {
+		font-size: 0.7em;
+	}
+    ul {
+      margin-bottom:0;
+    }
+}
+
+@media(max-device-width: 480px) {
+    body {
+        font-size:13px;
+    }
+    .conf-2015-hero .hero-content h1.erpnext-conference {
+        font-size:1.8em;
+    }
+    .conf-2015-hero .erp-hero {
+        max-width:300px;
+    }
+    .who-should-attend-image {
+        width:330px;
+    }
+    p {
+      font-size:1.2em;
+    }
+}

@@ -1,0 +1,18 @@
+.table {
+	border-top: 1px solid #d1d8dd;
+	max-width: 500px;
+	margin: 7px 0px 30px;
+}
+
+.table td,
+.table th {
+	padding: 8px 16px !important;
+	border-top: 0px !important;
+}
+
+.table thead tr th:first-child,
+.table tbody tr td:first-child {
+	width: 38.2%;
+	text-align: right;
+	border-right: 1px solid #d1d8dd;
+}
