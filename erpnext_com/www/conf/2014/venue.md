@@ -1,6 +1,6 @@
 # Venue
 
-<img src="/assets/conf_erpnext_com/images/conf/erpnext-conf-14.png" class="img-responsive">
+<img src="/assets/erpnext_com/images/conf/erpnext-conf-14.png" class="img-responsive">
 
 The ERPNext Conference will be held in the quaint and quirky neighbourhood in Mumbai called Matunga. Matunga is the hub of the South Indian community in Mumbai and is famous for its Cafes, Book Stalls, Temples and Cultural Shops. Its down-to-earth, quality-and-consistency and value-for-money ethic is exactly what ERPNext is all about.
 
@@ -18,11 +18,11 @@ See you at the conference!
 
 ---
 
-<p><img src="/assets/conf_erpnext_com/images/conf/matunga-1.jpg" class="img-responsive"></p>
-<p><img src="/assets/conf_erpnext_com/images/conf/matunga-2.jpg" class="img-responsive"></p>
-<p><img src="/assets/conf_erpnext_com/images/conf/matunga-3.jpg" class="img-responsive"></p>
-<p><img src="/assets/conf_erpnext_com/images/conf/matunga-4.jpg" class="img-responsive"></p>
-<p><img src="/assets/conf_erpnext_com/images/conf/matunga-5.jpg" class="img-responsive"></p>
+<p><img src="/assets/erpnext_com/images/conf/matunga-1.jpg" class="img-responsive"></p>
+<p><img src="/assets/erpnext_com/images/conf/matunga-2.jpg" class="img-responsive"></p>
+<p><img src="/assets/erpnext_com/images/conf/matunga-3.jpg" class="img-responsive"></p>
+<p><img src="/assets/erpnext_com/images/conf/matunga-4.jpg" class="img-responsive"></p>
+<p><img src="/assets/erpnext_com/images/conf/matunga-5.jpg" class="img-responsive"></p>
 
 ---
 
