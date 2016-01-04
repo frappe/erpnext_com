@@ -18,7 +18,7 @@ website_context = {
 		{"label": "Pricing", "url": "/pricing", "right":1},
 		{"label": "Features", "url": "/features", "right":1},
 		{"label": "Docs", "url": "https://manual.erpnext.com", "right":1},
-		{"label": "Blog", "url": "https://blog.frappe.io", "right":1},
+		{"label": "Blog", "url": "https://frappe.io/blog", "right":1},
 	],
 	"hide_login": 1,
 	"favicon": "/assets/frappe_theme/img/favicon.ico"

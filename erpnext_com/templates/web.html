@@ -1,3 +1,6 @@
+{% extends "frappe_theme/templates/base.html" %}
+
+{% block content %}
 <div class="page-container" id="page-{{ name or page_name }}" data-path="{{ pathname }}"
     {% if page_or_generator=="Generator" %}data-doctype="{{ doctype }}"{% endif %}>
 	<div class="page-content">
@@ -12,11 +15,12 @@
                 </div>
             </div>
     		<div class="page-breadcrumbs" data-html-block="breadcrumbs">
-    			{%- if breadcrumbs is defined -%}{{ breadcrumbs }}{%- endif -%}
+    			{%- if breadcrumbs is defined -%}{%- endif -%}
     		</div>
     	    <div class="page-content-block">
-    		{%- block content -%}{{ content or "" }}{%- endblock -%}
+    		{%- block page_content -%}{%- endblock -%}
     	    </div>
     	</div>
 	</div>
 </div>
+{% endblock %}
