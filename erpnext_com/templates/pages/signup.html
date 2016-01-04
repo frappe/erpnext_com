@@ -144,8 +144,10 @@ frappe.ready(function() {
 			type: "POST",
 			statusCode: {
 				200: function(data, status, xhr) {
-					if(xhr.getResponseHeader("X-Page-Name")) {
-						frappe.render_json(data);
+					if (status==="success") {
+						document.open();
+						document.write(data);
+						document.close();
 					}
 				}
 			}
