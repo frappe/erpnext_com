@@ -10,7 +10,10 @@
 </div>
 
 <h1 class="text-center">
-	Sign Up &mdash; <span class="plan-message">Free for 1 User</span>
+	Sign Up for
+	<span class="erpnext-distribution noselect">ERPNext</span>
+	<br>
+	<span class="plan-message small">Free for 1 User</span>
 </h1>
 
 <br>
@@ -130,6 +133,8 @@ frappe.ready(function() {
 		var plan = get_url_arg('plan');
 		if(plan) args.plan = plan;
 
+		if (window.erpnext_distribution) args.distribution = window.erpnext_distribution;
+
 		args.cmd = "frappe_central.frappe_central.doctype.frappe_account_request.frappe_account_request.sign_up";
 
 		var btn_html = $(".btn-request").html();
@@ -204,7 +209,34 @@ frappe.ready(function() {
 		$('.missing-domain').html(query_params.domain);
 		$('.missing-domain-msg').removeClass("hidden");
 	}
+
+	// distribution
+	$('.erpnext-distribution').on("click", function() {
+		set_distribution(true);
+	});
+
+	set_distribution();
 });
+
+var set_distribution = function(toggle) {
+	if (!window.erpnext_distribution) {
+		window.erpnext_distribution = get_query_params().distribution || "erpnext";
+	}
+
+	if (toggle) {
+		if (window.erpnext_distribution === "erpnext") {
+			window.erpnext_distribution = "schools";
+		} else {
+			window.erpnext_distribution = "erpnext";
+		}
+	}
+
+	$(".erpnext-distribution").text({
+		"erpnext": "ERPNext",
+		"schools": "ERPNext Schools (beta)"
+	}[window.erpnext_distribution]);
+}
+
 </script>
 {% endblock %}
 
@@ -216,6 +248,11 @@ frappe.ready(function() {
 
 [data-html-block="header"] {
 	text-align: center;
+}
+
+.erpnext-distribution {
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 </style>
