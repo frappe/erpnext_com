@@ -56,6 +56,10 @@
 	background-color: #f7fafc;
 }
 
+.erpnext-paid-plans .small.blue.button {
+	margin: 5px;
+}
+
 @media (max-width: 767px) {
 	.erpnext-paid-plans .col-sm-3 {
 		margin: 20px 0px;

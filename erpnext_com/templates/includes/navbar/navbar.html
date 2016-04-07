@@ -7,7 +7,9 @@
 				<a class="navbar-brand ellipsis" href="{{ url_prefix }}{{ '/schools' if is_schools else '/' }}">
 					<span>
 						{% if is_schools %}
-							<img class='navbar-icon' src='/assets/frappe_theme/img/erp-icon.svg' />ERPNext Schools
+							<img class='navbar-icon' src='/assets/frappe_theme/img/erp-icon.svg' />
+								ERPNext Schools
+								<sup class='text-warning'>beta</sup>
 						{% else %}
 							<img class='navbar-icon' src='/assets/frappe_theme/img/erp-icon.svg' />ERPNext
 						{% endif %}
