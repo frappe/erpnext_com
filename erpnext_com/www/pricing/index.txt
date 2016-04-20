@@ -7,3 +7,4 @@ user-training
 developer-training
 paid-feature-development
 migrations
+support-for-self-hosted

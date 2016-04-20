@@ -1,3 +1,5 @@
+<!-- redirect: /pricing/support-for-self-hosted -->
+ <!-- <div class="VIP plan stopped">
 # ERPNext VIP
 
 <p class="lead">Upto 50 hours of ERPNext Consulting from the Core team, that covers everything we know from implementation, integration, deployment, developer support, design reviews etc.</p>
