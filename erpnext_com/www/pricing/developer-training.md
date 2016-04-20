@@ -1,1 +1,1 @@
-<!-- redirect: /pricing/vip -->
+<!-- redirect: /pricing/support-for-self-hosted -->
