@@ -13,7 +13,7 @@ setup_signup = function(page) {
 
 
 		// all mandatory
-		if(!(args.full_name && args.company_name && args.email && args.subdomain)) {
+		if(!(args.full_name && args.email && args.subdomain)) {
 			frappe.msgprint("All fields are necessary. Please try again.");
 			return false;
 		}
@@ -42,7 +42,7 @@ setup_signup = function(page) {
 
 		args.distribution = window.erpnext_signup.distribution;
 
-		args.cmd = "frappe_central.frappe_central.doctype.frappe_account_request.frappe_account_request.sign_up";
+		args.cmd = "erpnext_com.api.signup";
 
 		var btn_html = $(".btn-request").html();
 		$(".btn-request").prop("disabled", true).html("Sending details...");
@@ -55,11 +55,9 @@ setup_signup = function(page) {
 			data: args,
 			type: "POST",
 			statusCode: {
-				200: function(data, status, xhr) {
-					if (status==="success") {
-						document.open();
-						document.write(data);
-						document.close();
+				200: function(data, success, xhr) {
+					if (data.message && data.message.location) {
+						window.location.href = data.message.location;
 					}
 				}
 			}
@@ -78,6 +76,7 @@ setup_signup = function(page) {
 			}
 
 		}).always(function() {
+			console.log('always', arguments);
 			$(".btn-request").prop("disabled", false).html(btn_html);
 		});
 
@@ -126,40 +125,3 @@ setup_signup = function(page) {
 
 };
 
-// var set_distribution = function(toggle) {
-// 	if (!window.erpnext_distribution) {
-// 		window.erpnext_distribution = get_query_params().distribution || "erpnext";
-// 	}
-//
-// 	if (toggle) {
-// 		if (window.erpnext_distribution === "erpnext") {
-// 			window.erpnext_distribution = "schools";
-// 		} else {
-// 			window.erpnext_distribution = "erpnext";
-// 		}
-// 	}
-//
-// 	var distribution_title, company_placeholder, company_label;
-// 	if (window.erpnext_distribution=='erpnext') {
-// 		distribution_title = 'ERPNext';
-// 		company_placeholder = 'My Company'
-// 		company_label = ''
-// 	} else {
-// 		distribution_title =
-// 		company_placeholder =
-// 		company_label =
-// 	}
-//
-// 	$(".erpnext-distribution").html(distribution_title);
-//
-// 		{
-// 		"erpnext": "ERPNext",
-// 		"schools": "ERPNext Schools <sup class='text-warning' style='font-weight: 300;'>beta</sup>"
-// 	}[window.erpnext_distribution]);
-//
-// 	company_placeholder = {}
-//
-// 	$('[data-field-section="company_name"')
-// 		.find('.form-control').attr('placeholder', company_placeholder).end()
-// 		.find('.help-block').text(company_label)
-// }
