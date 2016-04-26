@@ -1,6 +1,6 @@
-# Support for Self-Hosted
+# Functional Support for Self-Hosted
 
-Prefer to self host your ERPNext account? You can still avail support from us.
+Prefer to self host your ERPNext account? You can still get support from us.
 
 ### What does it cover
 
@@ -14,7 +14,7 @@ Your ERPNext account must be running on the latest ERPNext version in production
 1. Upgrading your ERPNext instance to the latest version.
 1. Technical support.
 
-Technical support on a self hosted instance can be availed via <a href="https://discuss.erpnext.com">community forum</a>. For the priority technical support, consider signing up with <a href="https://community.erpnext.com/service-providers">Service Provider</a>.
+Technical support on a self hosted instance is available via <a href="https://discuss.erpnext.com">community forum</a>. For the priority technical support, consider signing up with one of <a href="https://community.erpnext.com/service-providers">ERPNext Service Provider</a>.
 
 ### Pricing
 
