@@ -1,0 +1,25 @@
+{% extends "templates/web.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block subnav %}
+{% include "templates/includes/subnav.html" %}
+{% endblock %}
+{%- block hero -%}
+<div class="row hero">
+	<div class="col-sm-12 hero-content">
+		<h1>{{ feature_headline }}</h1>		
+		<p class="text-muted later sub-heading"> {% if feature_sub_headline %} {{ feature_sub_headline }} {% endif %}</p>		
+	{% if image %}
+		<div class="fake-browser-frame">
+		<img class="erp-hero" src="{{ image }}">
+		</div>
+	{% endif %}
+	</div>
+</div>
+{%- endblock -%}
+{% block page_content %}
+<div class="row section text-center">
+	<div class="col-sm-12">	
+	{{ article }}
+	</div>
+</div>
+{% endblock %}

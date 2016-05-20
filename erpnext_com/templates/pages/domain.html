@@ -1,6 +1,55 @@
 {% extends "templates/web.html" %}
-
+{% block title %}{{ erpnext_page.title }}{% endblock %}
+{% block subnav %}
+{% include "templates/includes/subnav.html" %}
+{% endblock %}
+{%- block hero -%}
+<div class="row hero">
+	<div class="col-sm-12 hero-content">
+		<h1>{{ erpnext_page.headline }}</h1>
+		
+		<p class="text-muted later sub-heading"> {% if erpnext_page.sub_headline %} {{ erpnext_page.sub_headline }} {% endif %}</p>
+		
+		 <a class="x-large blue button later" href="{{ erpnext_page.primary_link }}">{{ erpnext_page.primary_label }}</a>
+		
+		<p class="secondary-link later">
+		    <a class="no-decoration" href="{{ erpnext_page.secondary_link }}">{{ erpnext_page.secondary_label }}</a>
+		</p>
+	{% if erpnext_page.hero_image %}
+		<div class="fake-browser-frame">
+		<img class="erp-hero" src="{{ erpnext_page.hero_image }}">
+		</div>
+	{% endif %}
+	</div>
+</div>
+{%- endblock -%}
 {% block page_content %}
-<h1>{{ headline }}</h1>
-<h2>{{ sub_headline }}</h2>
+<div class="row section text-center erpnext-features">
+{% for feature in erpnext_page.fullfeatures %}
+	{% for f in feature %}
+		<div class="col-sm-12 erp-feature">	
+			<h1 class="feature-title"> {{ f.feature_headline }}</h1>
+			<p class="narrow">{{ f.feature_sub_headline }}</p>
+			<div class="fake-browser-frame">
+			<img class="img-responsive browser-image feature-image" src="{{ f.image }}">
+			</div>
+		</div>
+	{% endfor %}
+{% endfor %}
+</div>
+
+<div class="grid-section row section later">	
+{% for feature in erpnext_page.gridfeatures %}
+	{% for f in feature %}
+	    <div class="col-sm-4 col-xs-4 small-content">
+			{% if f.image %} 
+			<img src="{{ f.image }}">
+			{% endif %}
+			 <h1>{{ f.feature_headline }}</h1>
+			 <p>{{ f.feature_sub_headline }}</p>       
+	    </div>
+	{% endfor %}
+{% endfor %}
+</div>
+
 {% endblock %}

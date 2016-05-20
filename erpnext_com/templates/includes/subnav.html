@@ -1,0 +1,36 @@
+<div class="navbar subnav" role="navigation">
+	<div class="container">	
+		<div class="navbar-header">
+			<a class="navbar-brand ellipsis" href="/">
+				<span>
+				ERPNext Schools
+				</span>
+			</a>
+		</div>
+	    <div class="navbar-inner">
+	        <div class="container"> 
+		        <ul class="nav navbar-nav navbar-left"> 		 
+				<li data-label="Pricing">
+				   	<a href="/pricing">
+				   	Pricing</a></li>
+				<li data-label="Features">
+				   	<a href="/features">
+				   	Features</a></li>
+				<li data-label="Docs">
+				   	<a href="http://frappe.github.io/erpnext">
+				   	Docs</a></li>
+		        </ul>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+frappe.ready(function() {
+$('.subnav').affix({
+      offset: {
+        top: $('.navbar').height()
+      }
+});	
+});	
+</script>

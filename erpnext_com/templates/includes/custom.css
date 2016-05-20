@@ -1,3 +1,32 @@
+.container, .navbar, footer {
+    max-width: none;
+    margin: auto;
+}
+
+.hero-content h1 {
+    font-size: 1.85em;
+    font-weight: 300;
+}
+
+.hero-content .sub-heading {
+    margin-bottom: 100px;
+}
+
+.hero-content .secondary-link {
+	margin-top: 16px;
+    margin-bottom: 100px;
+	font-size: 0.9em;
+	color: #B8C2CC;
+}
+
+.hero {
+	border-bottom: 1px solid #d1d8dd;
+}
+
+.dashboard-section h1 {
+    font-size: 1.5em;
+}
+
 .erpnext-features {
 	text-align: center;
 }
@@ -127,6 +156,11 @@
 	padding-bottom: 0px;
 }
 
+.grid-section .small-content {
+	margin-bottom: 40px;
+}
+
+
 .small-content h4 {
 	margin-bottom: 0px;
 }
@@ -145,4 +179,17 @@
 	margin: auto;
 	font-size: 1.13em;
 	line-height: 1.5;
+}
+
+.subnav {
+  top: 0px;
+  background-color: rgb(247,247,247); 
+  border-bottom: 1px solid #d1d8dd;
+}
+
+.subnav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
 }
