@@ -3,22 +3,18 @@
 		<div class="navbar-header">
 			<a class="navbar-brand ellipsis" href="/">
 				<span>
-				ERPNext Schools
+				{{ brand_html }} 
 				</span>
 			</a>
 		</div>
 	    <div class="navbar-inner">
 	        <div class="container"> 
-		        <ul class="nav navbar-nav navbar-left"> 		 
-				<li data-label="Pricing">
-				   	<a href="/pricing">
-				   	Pricing</a></li>
-				<li data-label="Features">
-				   	<a href="/features">
-				   	Features</a></li>
-				<li data-label="Docs">
-				   	<a href="http://frappe.github.io/erpnext">
-				   	Docs</a></li>
+		        <ul class="nav navbar-nav navbar-left">
+				{% for s in sub_navbar_items %} 		 
+				<li data-label="{{ s.URL }}">
+				<a href="/features">{{ s.label }}</a>
+				</li>
+				{% endfor %}	
 		        </ul>	
 			</div>
 		</div>

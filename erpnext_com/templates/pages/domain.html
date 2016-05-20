@@ -1,9 +1,8 @@
 {% extends "templates/web.html" %}
 {% block title %}{{ erpnext_page.title }}{% endblock %}
-{% block subnav %}
-{% include "templates/includes/subnav.html" %}
-{% endblock %}
+
 {%- block hero -%}
+{% include "templates/pages/subnav.html" %}
 <div class="row hero">
 	<div class="col-sm-12 hero-content">
 		<h1>{{ erpnext_page.headline }}</h1>
