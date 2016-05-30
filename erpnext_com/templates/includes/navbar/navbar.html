@@ -4,12 +4,16 @@
 	<nav class="navbar navbar-default navbar-main" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand ellipsis" href="{{ url_prefix }}{{ '/schools' if is_schools else '/' }}">
+				<a class="navbar-brand ellipsis" href="/{{ url_prefix }}">
 					<span>
 						{% if is_schools %}
 							<img class='navbar-icon' src='/assets/frappe_theme/img/erp-icon.svg' />
-								ERPNext Schools
-								<sup class='text-warning'>beta</sup>
+							ERPNext
+							<a href="{{ url_prefix }}{{ '/schools' if is_schools else '/' }}"
+								style="display: inline-block; padding-top: 10px;"
+								>Schools</a>
+							<sup class='text-warning'>beta</sup>
+
 						{% else %}
 							<img class='navbar-icon' src='/assets/frappe_theme/img/erp-icon.svg' />ERPNext
 						{% endif %}
