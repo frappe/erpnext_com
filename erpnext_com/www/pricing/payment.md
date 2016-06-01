@@ -20,6 +20,7 @@
 			{"name": "100 users, 20GB space", "usd": "$ 1500"},
 			{"name": "Unlimited users, 50GB space", "usd": "$ 3000"},
 			{"name": "Functional Support for Self Hosted", "usd": "$ 600"},
+			{"name": "ERPNext VIP", "usd": "$ 5000"},
 		] -%}
 			{% set inr = frappe.utils.fmt_money(
 				frappe.utils.cint(frappe.utils.flt(frappe.utils.flt(plan.usd[1:]) * 60.0 * 1.1236 / 1000.0, 0) * 1000),
