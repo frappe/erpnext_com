@@ -75,4 +75,5 @@ We will provide **upto a maximum of 50 hours** of consulting / travel.
 
 **US $5000 / year**
 
-<a href="/pricing/payment" class="btn btn-success">Buy Now</a>
+<br>
+<a href="https://frappe.io/about#contact" class="blue button">Get in Touch</a>
