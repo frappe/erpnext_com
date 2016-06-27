@@ -124,4 +124,3 @@ setup_signup = function(page) {
 	}
 
 };
-
