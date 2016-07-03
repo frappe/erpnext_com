@@ -42,43 +42,30 @@ setup_signup = function(page) {
 
 		args.distribution = window.erpnext_signup.distribution;
 
-		args.cmd = "erpnext_com.api.signup";
+		var $btn = $('.btn-request');
 
-		var btn_html = $(".btn-request").html();
-		$(".btn-request").prop("disabled", true).html("Sending details...");
+		var btn_html = $btn.html();
+		$btn.prop("disabled", true).html("Sending details...");
 
         goog_report_conversion()
 
 		// on success, it will show message page!
-		$.ajax({
-			url: "/",
-			data: args,
-			type: "POST",
-			statusCode: {
-				200: function(data, success, xhr) {
-					if (data.message && data.message.location) {
-						window.location.href = data.message.location;
-					}
-				}
-			}
-		}).fail(function(xhr) {
-			var data = JSON.parse(xhr.responseText);
-			if(data.message) {
-				frappe.msgprint(data.message);
-			} else {
-				var message = data._server_messages ? JSON.parse(data._server_messages).join("\n")
-					: "Some error occured. Please try again.";
-				frappe.msgprint(message);
-			}
+		frappe.call({
+			method: 'erpnext_com.api.signup',
+			args: args,
+			type: 'POST',
+			btn: $btn,
+			callback: function(r) {
+				if (r.exc) return;
 
-			if(data.exc) {
-				console.error(JSON.parse(data.exc).join("\n"));
-			}
+				if (r.message.location) {
+					window.location.href = r.message.location;
+				}
+			},
 
 		}).always(function() {
-			console.log('always', arguments);
-			$(".btn-request").prop("disabled", false).html(btn_html);
-		});
+			$btn.prop("disabled", false).html(btn_html);
+		})
 
 		return false;
 	});
@@ -105,7 +92,8 @@ setup_signup = function(page) {
 		$("header,footer").addClass("hidden");
 	}
 
-	if (["Free", "Free-Solo"].indexOf(query_params.plan)!==-1) {
+	if (['Free', 'Free-Solo'].indexOf(query_params.plan)!==-1) {
+		// keeping Free-Solo for backward compatibility
 		page.find(".plan-message").text("Free for 1 User");
 	} else {
 		page.find(".plan-message").text("Free 30-day Trial");

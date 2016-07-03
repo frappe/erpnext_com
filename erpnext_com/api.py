@@ -5,8 +5,8 @@ from frappe import _
 from central.signup import signup as _signup
 
 @frappe.whitelist(allow_guest=True)
-def signup(full_name, email, subdomain, plan="Free-Solo", distribution="erpnext"):
-	status = _signup(full_name, email, subdomain, distribution, plan)
+def signup(full_name, email, subdomain, plan="Free", distribution="erpnext"):
+	status = _signup(full_name, email, subdomain, plan=plan, distribution=distribution)
 
 	context = {
 		'pathname': 'schools/signup' if distribution=='schools' else 'signup'
@@ -20,11 +20,6 @@ def signup(full_name, email, subdomain, plan="Free-Solo", distribution="erpnext"
 			It may take a few minutes before you receive this email.</p>
 			<p>Once you click on the verification link, your account will be ready in a few minutes.</p>
 			</div>""".format(email), context=context)
-	# TODO Need to decide whether this part of code is necessary or not
-	# elif r.status_code in (417, 409):
-	# 	# ValidationError, NameError
-	# 	# show the message that we got from server
-	# 	frappe.throw(json.loads(r.json()['_server_messages'])[0])
 
 	else:
 		# something went wrong
