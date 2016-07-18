@@ -1,0 +1,130 @@
+<h1>Conference Registration</h1>
+
+<h3>1. Select Passes</h3>
+
+
+<div class='form'>
+	<table class='table table-bordered'>
+		<thead>
+			<tr>
+				<th style="width: 60%">Event</th>
+				<th style="width: 20%" class='text-right'># of Passes</th>
+				<th style="width: 20%" class='text-right'>Amount</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					Developer workshop, October 14th
+					<br><b>Price:</b> Rs 2000 (includes lunch)
+				</td>
+				<td>
+					<input type='text' name='workshop'
+						data-rate='2000' class='form-control text-right'>
+				</td>
+				<td class='workshop-amount text-right'></td>
+			</tr>
+			<tr>
+				<td>
+					Main Conference, October 15th
+					<br><b>Price:</b> Rs 600 (includes lunch)
+				</td>
+				<td>
+					<input type='text' name='conference'
+						data-rate ='600' class='form-control text-right'>
+				</td>
+				<td class='conference-amount text-right'></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class='text-right'>Total</td>
+				<td class='total-amount text-right'></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>2. Tell us about you</h3>
+
+	<div>
+	<div class='row'>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="textinput">Full Name</label>
+			<div class="col-md-4">
+				<input id="textinput" name="full_name" type="text" label='Full Name'
+					placeholder="Your Name" class="form-control input-md"
+					required>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class='row'>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="textinput">Email Id</label>
+			<div class="col-md-4">
+				<input id="textinput" name="email" type="text"
+					placeholder="you@youcompany.com" label='Email Id'
+					class="form-control input-md" required>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class='row'>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="textinput">Company Name</label>
+			<div class="col-md-4">
+				<input id="textinput" name="company" type="text"
+					placeholder="Company Name" label='Company Name'
+					class="form-control input-md" required>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<button class="blue button btn-pay">Pay Now</button>
+</div>
+
+<script>
+frappe.ready(function() {
+	$('.form-control').on('keyup', function() {
+		var name = $(this).attr('name'),
+			rate = parseInt($(this).attr('data-rate')),
+			val = parseInt($(this).val());
+
+		if(val) {
+			$('.' + name + '-amount').html(rate * val);
+		} else {
+			$('.' + name + '-amount').html('');
+		}
+
+		$('.total-amount').html(parseInt($('.workshop-amount').html())
+			+ parseInt($('.conference-amount').html()));
+
+	});
+
+	$('.btn-pay').on('click', function() {
+		var data = {};
+		var valid = true;
+		$('input').each(function() {
+			var val = $(this).val();
+			data[$(this).attr('name')] = val;
+			if($(this).is(':required') && !val) {
+				frappe.msgprint(($(this).attr('label') + ' is required'));
+				valid = false;
+				return false;
+			}
+		});
+
+		if(valid) {
+			frappe.call({
+				method: 'erpnext_com.api.make_payment',
+				args: data,
+				callback: function(r) {
+					window.location.href = r.message;
+				}
+			});
+		}
+	});
+});
+</script>
