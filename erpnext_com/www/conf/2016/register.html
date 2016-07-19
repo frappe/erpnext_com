@@ -1,4 +1,5 @@
 <h1>Conference Registration</h1>
+<p class='lead'>Register for the 3rd Annual ERPNext Conference in Mumbai on 14th-15th October, 2016</p>
 
 <h3>1. Select Passes</h3>
 
@@ -98,8 +99,9 @@ frappe.ready(function() {
 			$('.' + name + '-amount').html('');
 		}
 
-		$('.total-amount').html(parseInt($('.workshop-amount').html())
-			+ parseInt($('.conference-amount').html()));
+		$('.total-amount').html(
+			(parseInt($('.workshop-amount').html()) || 0)
+			+ (parseInt($('.conference-amount').html()) || 0));
 
 	});
 

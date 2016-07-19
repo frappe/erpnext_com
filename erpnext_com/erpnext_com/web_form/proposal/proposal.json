@@ -1,0 +1,50 @@
+{
+ "allow_comments": 1, 
+ "allow_delete": 0, 
+ "allow_edit": 1, 
+ "allow_multiple": 0, 
+ "creation": "2016-07-19 12:09:34.601334", 
+ "doc_type": "Conference Talk", 
+ "docstatus": 0, 
+ "doctype": "Web Form", 
+ "idx": 0, 
+ "introduction_text": "Give as much information (links etc) as you can about your talk so that we can review it. Let the talks be more about your project than your company.", 
+ "is_standard": 1, 
+ "login_required": 1, 
+ "modified": "2016-07-19 12:50:07.513315", 
+ "modified_by": "Administrator", 
+ "module": "erpnext_com", 
+ "name": "proposal", 
+ "owner": "Administrator", 
+ "published": 1, 
+ "route": "proposals", 
+ "success_message": "Thanks for your proposal. We will review and get back as soon as possible.", 
+ "success_url": "/conf/2016", 
+ "title": "Propose a Talk", 
+ "web_form_fields": [
+  {
+   "fieldname": "subject", 
+   "fieldtype": "Data", 
+   "hidden": 0, 
+   "label": "Subject", 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "talk_content", 
+   "fieldtype": "Text", 
+   "hidden": 0, 
+   "label": "Talk Content", 
+   "read_only": 0, 
+   "reqd": 1
+  }, 
+  {
+   "fieldname": "speaker_bio", 
+   "fieldtype": "Text", 
+   "hidden": 0, 
+   "label": "Speaker Bio", 
+   "read_only": 0, 
+   "reqd": 1
+  }
+ ]
+}

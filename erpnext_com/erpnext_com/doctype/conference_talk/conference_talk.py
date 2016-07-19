@@ -6,6 +6,5 @@ from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
 
-class ConferenceParticipant(Document):
-	def on_payment_authorized(self):
-		self.db_set('paid', 1)
+class ConferenceTalk(Document):
+	pass

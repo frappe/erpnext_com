@@ -146,3 +146,13 @@
 	font-size: 1.13em;
 	line-height: 1.5;
 }
+
+.page-container[data-path="proposals"] .page-header-block,
+.page-container[data-path="proposals"] .page-header-actions-block {
+	display: block !important;
+}
+
+.page-container[data-path="proposals"] .page-header-actions-block {
+	margin-top: 20px;
+}
+
