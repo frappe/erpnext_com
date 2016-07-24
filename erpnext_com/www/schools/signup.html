@@ -17,21 +17,6 @@
 		<div class="col-sm-offset-2 col-sm-8">
 			<form role="form">
 				<div class="form-group">
-					<div class="input-group">
-						<input name="subdomain" placeholder="myschool" class="form-control" type="text">
-						<span class="input-group-addon">.{{ frappe.local.conf.domain }}</span>
-					</div>
-					<p class="help-block">Your subdomain i.e.
-						https://<strong class="subdomain-help">myschool</strong>.{{ frappe.local.conf.domain }}. <br>
-						Must contain only letters, no spaces, numbers or special characters.</p>
-				</div>
-
-				<div class="form-group" data-field-section='company_name'>
-					<input name="company_name" placeholder="My Institute" class="form-control" type="text">
-					<p class="help-block">Full Name of your Institute</p>
-				</div>
-
-				<div class="form-group">
 					<input name="full_name" placeholder="Jane Doe" class="form-control" type="text">
 					<p class="help-block">Your First and Last Name <em>(will appear in your user id)</em></p>
 				</div>
@@ -39,6 +24,16 @@
 				<div class="form-group">
 					<input name="email" placeholder="jane_doe@example.com" class="form-control" type="text">
 					<p class="help-block">Your Email Address <em>(your login details will be emailed here)</em></p>
+				</div>
+
+				<div class="form-group">
+					<div class="input-group">
+						<input name="subdomain" placeholder="myschool" class="form-control" type="text">
+						<span class="input-group-addon">.{{ signup_domain }}</span>
+					</div>
+					<p class="help-block">Your subdomain i.e.
+						https://<strong class="subdomain-help">myschool</strong>.{{ signup_domain }}. <br>
+						Must contain only letters, no spaces, numbers or special characters.</p>
 				</div>
 
 				<br>
@@ -61,7 +56,7 @@
 	}
 
 	frappe.ready(function() {
-		setup_signup($('#page-signup-1'));
+		setup_signup($('#page-signup'));
 	});
 </script>
 
