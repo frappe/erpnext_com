@@ -6,6 +6,9 @@ from central.signup import signup as _signup
 
 @frappe.whitelist(allow_guest=True)
 def signup(full_name, email, subdomain, plan="Free", distribution="erpnext"):
+	if distribution=='schools':
+		distribution = 'erpnext'
+
 	status = _signup(full_name, email, subdomain, plan=plan, distribution=distribution)
 
 	context = {
