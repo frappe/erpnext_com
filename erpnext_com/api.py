@@ -58,6 +58,9 @@ def signup(full_name, email, subdomain, plan="Free", distribution="erpnext"):
 			<p>Once you click on the verification link, your account will be ready in a few minutes.</p>
 			</div>""".format(email), context=context)
 
+	elif status=='retry':
+		return {}
+
 	else:
 		# something went wrong
 		location = frappe.redirect_to_message(_('Something went wrong'),
