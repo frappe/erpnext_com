@@ -49,10 +49,7 @@ def make_payment(full_name, email, company, workshop=0, conference=0, currency='
 		del frappe.local.response['type']
 		del frappe.local.response['location']
 
-		return {
-			'redirect_to': location
-		}
-
+		return location
 
 @frappe.whitelist(allow_guest=True)
 def signup(full_name, email, subdomain, plan="Free", distribution="erpnext"):
