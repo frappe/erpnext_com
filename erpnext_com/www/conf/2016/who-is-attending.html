@@ -1,0 +1,23 @@
+<p><a href="/conf/2016"><i class='octicon octicon-chevron-left'></i> Conference Home</a></p>
+
+<h2>Who is attending ERPNext Conference 2016</h2>
+<br>
+<table class='table table-bordered'>
+	<thead>
+		<tr>
+			<th style='width: 50%'>Name</th>
+			<th style='width: 50%'>Organization</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for p in frappe.get_all('Conference Participant', fields=['full_name', 'company_name']) %}
+		<tr>
+			<td>{{ p.full_name }}</td>
+			<td>{{ p.company_name }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+<p>
+	<a href="/conf/2016/register" class="blue button">Join This List</a>
+</p>
