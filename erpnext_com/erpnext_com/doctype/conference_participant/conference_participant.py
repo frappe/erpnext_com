@@ -3,9 +3,9 @@
 # For license information, please see license.txt
 
 from __future__ import unicode_literals
-import frappe
 from frappe.model.document import Document
 
 class ConferenceParticipant(Document):
 	def on_payment_authorized(self):
-		self.db_set('paid', 1)
+		self.paid = 1
+		self.save(ignore_permission=True)

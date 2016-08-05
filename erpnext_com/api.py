@@ -4,6 +4,7 @@ from frappe import _
 from central.signup import signup as _signup
 
 from razorpay_integration.api import get_razorpay_checkout_url
+import paypal_integration.express_checkout
 
 # TODO:
 # 1. send email to particpant and us
@@ -11,7 +12,7 @@ from razorpay_integration.api import get_razorpay_checkout_url
 # 3. final design
 
 @frappe.whitelist(allow_guest=True)
-def make_payment(full_name, email, company, workshop=0, conference=0):
+def make_payment(full_name, email, company, workshop=0, conference=0, currency='inr'):
 	amount = int(workshop or 0) * 2000 + int(conference or 0) * 600
 
 	if not amount:
@@ -28,18 +29,30 @@ def make_payment(full_name, email, company, workshop=0, conference=0):
 		'amount': amount
 	}).insert(ignore_permissions=True)
 
-	url = get_razorpay_checkout_url(**{
-		'amount': amount,
-		'title': 'ERPNext Conference Tickets',
-		'description': '{0} passes for conference, {1} passes for workshop'.format(int(conference or 0), int(workshop or 0)),
-		'payer_name': full_name,
-		'payer_email': email,
-		'doctype': participant.doctype,
-		'name': participant.name,
-		'order_id': participant.name
-	})
+	if currency.lower()=='inr':
+		url = get_razorpay_checkout_url(**{
+			'amount': amount,
+			'title': 'ERPNext Conference Tickets',
+			'description': '{0} passes for conference, {1} passes for workshop'.format(int(conference or 0), int(workshop or 0)),
+			'payer_name': full_name,
+			'payer_email': email,
+			'doctype': participant.doctype,
+			'name': participant.name,
+			'order_id': participant.name
+		})
 
-	return url
+		return url
+	else:
+		paypal_integration.express_checkout.set_express_checkout(amount,
+			data={'reference_doctype': participant.doctype, 'reference_docname': participant.name})
+		location = frappe.local.response['location']
+		del frappe.local.response['type']
+		del frappe.local.response['location']
+
+		return {
+			'redirect_to': location
+		}
+
 
 @frappe.whitelist(allow_guest=True)
 def signup(full_name, email, subdomain, plan="Free", distribution="erpnext"):

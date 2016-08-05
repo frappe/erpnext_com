@@ -3,7 +3,6 @@
 
 <h3>1. Select Passes</h3>
 
-
 <div class='form'>
 	<table class='table table-bordered'>
 		<thead>
@@ -17,24 +16,26 @@
 			<tr>
 				<td>
 					Developer workshop, October 14th
-					<br><b>Price:</b> Rs 2000 (includes lunch)
+					<br><b>Price:</b> Rs 2000 / US$ 50 (includes lunch)
 				</td>
 				<td>
 					<input type='text' name='workshop'
-						data-rate='2000' class='form-control text-right'>
+						data-rate-inr='2000' data-rate-usd='50'
+						class='form-control workshop-tickets text-right'>
 				</td>
 				<td class='workshop-amount text-right'></td>
 			</tr>
 			<tr>
 				<td>
 					Main Conference, October 15th
-					<br><b>Price:</b> Rs 600 (includes lunch)
+					<br><b>Price:</b> Rs 600 / US$ 10 (includes lunch)
 				</td>
 				<td>
-					<input type='text' name='conference'
-						data-rate ='600' class='form-control text-right'>
+					<input type='text' name='conf'
+						data-rate-inr ='600' data-rate-usd='10'
+						class='form-control conf-tickets text-right'>
 				</td>
-				<td class='conference-amount text-right'></td>
+				<td class='conf-amount text-right'></td>
 			</tr>
 			<tr>
 				<td></td>
@@ -43,6 +44,10 @@
 			</tr>
 		</tbody>
 	</table>
+
+<p>
+	Pay by <a href='#' class='use-inr'>Indian Rupee</a> | <a href="#" class='use-usd'>US Dollar</a>
+</p>
 
 	<h3>2. Tell us about you</h3>
 
@@ -88,21 +93,21 @@
 
 <script>
 frappe.ready(function() {
-	$('.form-control').on('keyup', function() {
-		var name = $(this).attr('name'),
-			rate = parseInt($(this).attr('data-rate')),
-			val = parseInt($(this).val());
+	frappe.currency = 'inr';
+	$('.use-inr').on('click', function() {
+		frappe.currency = 'inr';
+		frappe.recalculate();
+		return false;
+	});
 
-		if(val) {
-			$('.' + name + '-amount').html(rate * val);
-		} else {
-			$('.' + name + '-amount').html('');
-		}
+	$('.use-usd').on('click', function() {
+		frappe.currency = 'usd';
+		frappe.recalculate();
+		return false;
+	});
 
-		$('.total-amount').html(
-			(parseInt($('.workshop-amount').html()) || 0)
-			+ (parseInt($('.conference-amount').html()) || 0));
-
+	$('.workshop-tickets, .conf-tickets').on('keyup', function() {
+		frappe.recalculate();
 	});
 
 	$('.btn-pay').on('click', function() {
@@ -118,6 +123,8 @@ frappe.ready(function() {
 			}
 		});
 
+		data.currency = frappe.currency;
+
 		if(valid) {
 			frappe.call({
 				method: 'erpnext_com.api.make_payment',
@@ -129,4 +136,27 @@ frappe.ready(function() {
 		}
 	});
 });
+
+frappe.recalculate = function() {
+	['workshop-tickets', 'conf-tickets'].forEach(function(type) {
+		var $input = $('.' + type);
+		var name = $input.attr('name'),
+			rate = parseInt($input.attr('data-rate-' + frappe.currency)),
+			val = parseInt($input.val());
+
+			if(val) {
+				amount = rate * val;
+				$('.' + name + '-amount')
+					.html(frappe.currency.toUpperCase() + ' ' + amount)
+					.attr('data-amount', amount);
+			} else {
+				$('.' + name + '-amount').html('').attr('data-amount', '0');
+			}
+	});
+
+	$('.total-amount').html(frappe.currency.toUpperCase() + ' ' +
+		((parseInt($('.workshop-amount').attr('data-amount')) || 0)
+		+ (parseInt($('.conf-amount').attr('data-amount')) || 0)));
+
+}
 </script>
