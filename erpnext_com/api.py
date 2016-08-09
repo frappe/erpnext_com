@@ -13,7 +13,14 @@ import paypal_integration.express_checkout
 
 @frappe.whitelist(allow_guest=True)
 def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
-	amount = int(workshop or 0) * 2000 + int(conf or 0) * 600
+	if currency=='inr':
+		conf_rate = 600
+		workshop_rate = 2000
+	else:
+		conf_rate = 10
+		workshop_rate = 50
+
+	amount = int(workshop or 0) * workshop_rate + int(conf or 0) * conf_rate
 
 	if not amount:
 		frappe.msgprint('Please set no of tickets')
