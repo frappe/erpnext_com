@@ -132,7 +132,11 @@ frappe.ready(function() {
 				method: 'erpnext_com.api.make_payment',
 				args: data,
 				callback: function(r) {
-					window.location.href = r.message;
+					if(r.message) {
+						window.location.href = r.message;
+					} else {
+						frappe.msgprint("There was an error. Please email help@erpnext.com for details");
+					}
 				}
 			});
 		}

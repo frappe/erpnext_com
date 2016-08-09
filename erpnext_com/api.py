@@ -12,8 +12,8 @@ import paypal_integration.express_checkout
 # 3. final design
 
 @frappe.whitelist(allow_guest=True)
-def make_payment(full_name, email, company, workshop=0, conference=0, currency='inr'):
-	amount = int(workshop or 0) * 2000 + int(conference or 0) * 600
+def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
+	amount = int(workshop or 0) * 2000 + int(conf or 0) * 600
 
 	if not amount:
 		frappe.msgprint('Please set no of tickets')
@@ -25,7 +25,7 @@ def make_payment(full_name, email, company, workshop=0, conference=0, currency='
 		'email_id': email,
 		'company_name': company,
 		'workshop': workshop,
-		'conference': conference,
+		'conference': conf,
 		'amount': amount
 	}).insert(ignore_permissions=True)
 
@@ -33,7 +33,7 @@ def make_payment(full_name, email, company, workshop=0, conference=0, currency='
 		url = get_razorpay_checkout_url(**{
 			'amount': amount,
 			'title': 'ERPNext Conference Tickets',
-			'description': '{0} passes for conference, {1} passes for workshop'.format(int(conference or 0), int(workshop or 0)),
+			'description': '{0} passes for conference, {1} passes for workshop'.format(int(conf or 0), int(workshop or 0)),
 			'payer_name': full_name,
 			'payer_email': email,
 			'doctype': participant.doctype,
