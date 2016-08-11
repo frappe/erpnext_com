@@ -8,4 +8,4 @@ from frappe.model.document import Document
 class ConferenceParticipant(Document):
 	def on_payment_authorized(self):
 		self.paid = 1
-		self.save(ignore_permission=True)
+		self.save(ignore_permissions=True)
