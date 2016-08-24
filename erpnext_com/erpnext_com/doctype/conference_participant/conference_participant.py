@@ -6,6 +6,6 @@ from __future__ import unicode_literals
 from frappe.model.document import Document
 
 class ConferenceParticipant(Document):
-	def on_payment_authorized(self):
+	def on_payment_authorized(self, status_changed_to=None):
 		self.paid = 1
 		self.save(ignore_permissions=True)
