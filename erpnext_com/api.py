@@ -59,8 +59,10 @@ def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
 		return location
 
 @frappe.whitelist(allow_guest=True)
-def signup(full_name, email, subdomain, plan="Free", distribution="erpnext"):
-	status = _signup(full_name, email, subdomain, plan=plan, distribution='erpnext' if distribution=='schools' else distribution)
+def signup(full_name, email, subdomain, plan="Free", distribution="erpnext", res=None):
+	status = _signup(full_name, email, subdomain, plan=plan,
+		distribution='erpnext' if distribution=='schools' else distribution,
+		reseller=res)
 
 	context = {
 		'pathname': 'schools/signup' if distribution=='schools' else 'signup'

@@ -40,6 +40,9 @@ setup_signup = function(page) {
 		var plan = get_url_arg('plan');
 		if(plan) args.plan = plan;
 
+		var res = get_url_arg('res');
+		if(res) args.res = res;
+
 		args.distribution = window.erpnext_signup.distribution;
 
 		var $btn = $('.btn-request');
