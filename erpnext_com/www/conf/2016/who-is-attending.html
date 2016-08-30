@@ -12,7 +12,8 @@
 		</tr>
 	</thead>
 	<tbody>
-		{% for p in frappe.get_all('Conference Participant', fields=['full_name', 'company_name']) %}
+		{% for p in frappe.get_all('Conference Participant', fields=['full_name', 'company_name'],
+			filters={'paid': 1}) %}
 		<tr>
 			<td>{{ p.full_name }}</td>
 			<td>{{ p.company_name }}</td>
