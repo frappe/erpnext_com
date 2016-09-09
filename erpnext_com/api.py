@@ -3,9 +3,6 @@ import frappe
 from frappe import _
 from central.signup import signup as _signup
 
-from razorpay_integration.api import get_razorpay_checkout_url
-import paypal_integration.express_checkout
-
 # TODO:
 # 1. send email to particpant and us
 # 2. who is coming page
@@ -36,27 +33,23 @@ def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
 		'amount': amount
 	}).insert(ignore_permissions=True)
 
-	if currency.lower()=='inr':
-		url = get_razorpay_checkout_url(**{
-			'amount': amount,
-			'title': 'ERPNext Conference Tickets',
-			'description': '{0} passes for conference, {1} passes for workshop'.format(int(conf or 0), int(workshop or 0)),
-			'payer_name': full_name,
-			'payer_email': email,
-			'doctype': participant.doctype,
-			'name': participant.name,
-			'order_id': participant.name
-		})
-
-		return url
+	#get controller for respecctive payment gateway
+	if currency == "inr":
+		from frappe.integrations.razorpay import get_checkout_url
 	else:
-		paypal_integration.express_checkout.set_express_checkout(amount,
-			data={'reference_doctype': participant.doctype, 'reference_docname': participant.name})
-		location = frappe.local.response['location']
-		del frappe.local.response['type']
-		del frappe.local.response['location']
+		from frappe.integrations.paypal import get_checkout_url
 
-		return location
+	return get_checkout_url(**{
+		"amount": amount,
+		"title": 'ERPNext Conference Tickets',
+		"description": '{0} passes for conference, {1} passes for workshop'.format(int(conf or 0), int(workshop or 0)),
+		"reference_doctype":  participant.doctype,
+		"reference_docname": participant.name,
+		"payer_email": email,
+		"payer_name": full_name,
+		"order_id": participant.name,
+		"currency": currency
+	})
 
 @frappe.whitelist(allow_guest=True)
 def signup(full_name, email, subdomain, plan="Free", distribution="erpnext", res=None):
