@@ -1,0 +1,55 @@
+<style>
+h1 {
+	font-size: 42px;
+}
+
+h2 {
+	font-size: 28px;
+}
+</style>
+
+<!-- no-cache -->
+
+<section class='border-bottom'>
+	<div class='text-center'>
+		<h2>Conference Agenda</h2>
+		<p class='lead'>October 15th, 10am - 5pm at Mysore Association, Matunga</p>
+		<p style='max-width: 500px; margin: auto;'>The goal of this conference is to move ERPNext to a more community oriented
+			project. We will focus on work done by not only the ERPNext team but also
+			the commnunity.</p>
+		<br>
+	</div>
+
+	<table class='table table-bordered' style='max-width: 500px; margin: auto;'>
+		<thead>
+			<tr>
+				<th style="width: 40%">Time</th>
+				<th>Title</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% set time_dict =  {'to_time': None}  %}
+			{% for talk in frappe.get_all("Conference Talk", fields=["name", "from_time", "to_time", "speaker_name", "subject"], order_by="from_time asc") %}
+				{% if time_dict.update( {'to_time': talk.to_time }) %} {% endif %}
+
+				<tr>
+					<td>{{ get_formated_time(talk.from_time) }} - {{ get_formated_time(talk.to_time) }}</td>
+					<td>
+						{% if talk.subject %}
+							{{ talk.subject }}<br>
+						{% else %}
+							Will share experience with ERPNext implementation and development<br>
+						{% endif %}
+						<b>Speaker:</b> {{ talk.speaker_name }}
+					</td>
+				</tr>
+			{% endfor %}
+			<tr>
+				<td>{{ get_formated_time(time_dict['to_time']) }} - 5:00 PM</td>
+				<td>
+					<b>Q & A and General Discussion</b>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
