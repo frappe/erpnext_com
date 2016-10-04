@@ -19,7 +19,7 @@ h2 {
 	<br>
 </div>
 
-<table class='table table-bordered' style='max-width: 500px; margin: auto;'>
+<table class='table table-bordered' style='max-width: 520px; margin: auto;'>
 	<thead>
 		<tr>
 			<th style="width: 40%">Time</th>
@@ -27,7 +27,6 @@ h2 {
 		</tr>
 	</thead>
 	<tbody>
-		{% set time_dict =  {'to_time': None}  %}
 		{% for talk in frappe.get_all("Conference Talk", fields=["name", "from_time", "to_time", "speaker_name", "subject"], order_by="from_time asc") %}
 			{% if time_dict.update( {'to_time': talk.to_time }) %} {% endif %}
 
@@ -43,11 +42,5 @@ h2 {
 				</td>
 			</tr>
 		{% endfor %}
-		<tr>
-			<td>{{ get_formated_time(time_dict['to_time']) }} - 5:00 PM</td>
-			<td>
-				<b>Q & A and General Discussion</b>
-			</td>
-		</tr>
 	</tbody>
 </table>
