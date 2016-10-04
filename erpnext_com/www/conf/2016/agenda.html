@@ -28,8 +28,6 @@ h2 {
 	</thead>
 	<tbody>
 		{% for talk in frappe.get_all("Conference Talk", fields=["name", "from_time", "to_time", "speaker_name", "subject"], order_by="from_time asc") %}
-			{% if time_dict.update( {'to_time': talk.to_time }) %} {% endif %}
-
 			<tr>
 				<td>{{ get_formated_time(talk.from_time) }} - {{ get_formated_time(talk.to_time) }}</td>
 				<td>
