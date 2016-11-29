@@ -11,7 +11,7 @@
 			<a class="grey" href="https://discuss.frappe.io" target="_blank">Community support</a> -->
 		</p>
 		<br>
-		<a class="large blue button" href="/signup?plan=Free-Solo">Sign Up</a>
+		<a class="large blue button" onclick="make_signup_root('signup', 'Free-Solo')">Sign Up</a>
 		<br><br>
     </div>
 
@@ -30,7 +30,7 @@
 					<p class="lead plan-space">5GB space</p>
 					<p class="lead plan-support">Functional Support</p>
 					<h2>$300/year</h2>
-                    <p><a class="small blue button" href="/signup?plan=P5">
+                    <p><a class="small blue button" onclick="make_signup_root('signup', 'P5')">
                         Start Trial</a></p>
 				</div>
 			</div>
@@ -40,7 +40,7 @@
 					<p class="lead plan-space">10GB space</p>
 					<p class="lead plan-support">Functional Support</p>
 					<h2>$600/year</h2>
-                    <p><a class="small blue button" href="/signup?plan=P25">
+                    <p><a class="small blue button" onclick="make_signup_root('signup', 'P25')">
                         Start Trial</a></p>
 				</div>
 			</div>
@@ -50,7 +50,7 @@
 					<p class="lead plan-space">20GB space</p>
 					<p class="lead plan-support">Functional Support</p>
 					<h2>$1500/year</h2>
-                    <p><a class="small blue button" href="/signup?plan=P100">
+                    <p><a class="small blue button" onclick="make_signup_root('signup', 'P100')">
                         Start Trial</a></p>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
 					<p class="lead plan-space">50GB space</p>
 					<p class="lead plan-support">Functional Support</p>
 					<h2>$3000/year</h2>
-                    <p><a class="small blue button" href="/signup?plan=P1000">
+                    <p><a class="small blue button" onclick="make_signup_root('signup', 'P1000')">
                         Start Trial</a></p>
 				</div>
 			</div>
@@ -167,3 +167,14 @@
 		<a class="large blue button" style="margin: 5px" href="/pricing/paid-feature-development" target="_blank">Learn More</a>
 	</div>
 </div>
+
+
+<script>
+	function make_signup_root(page, plan) {
+		var url = page + '?plan=' + plan;
+
+		// concat existing params to url
+		url = url + window.location.search.replace('?', '&');
+		window.location.href = url;
+	}
+</script>
