@@ -10,7 +10,8 @@ Badly missing a feature that you want to be developed on priority? We can help y
     1. Number your details instead of writing long paragraphs.
     1. Use screenshots or mockups to help us visualize what you need.
     1. Give examples of your proposed feature.
-1. If this feature is generic, we will come back with an estimate of how much it will cost. Our rates will be $100 per hour and we will charge for minimum one hour.
+1. Drop us an email at hello@erpnext.com indicitating that you want to sponsor this features.
+1. If this feature is generic, we will come back with an estimate of how much it will cost. Our rates will be $70 per hour and we will charge for minimum one hour.
 1. Everything we do will be production quality and tested manually and automatically, so please accept our estimate.
 1. If you are okay, we will send you an invoice that you can pay via Paypal or wire transfer.
     1. You will need to add bank charges that are around $20 incase of wire transfer from outside India.
