@@ -1,0 +1,170 @@
+<p><a href="/conf/2016"><i class='octicon octicon-chevron-left'></i> Conference Home</a></p>
+
+<h1>Conference Registration Now Closed!</h1>
+<p>Don't forget to catchup the videos</p>
+
+<!-- <p class='lead'>Register for the 3rd Annual ERPNext Conference in Mumbai on 14th-15th October, 2016</p>
+
+<h3>1. Select Passes</h3>
+
+<div class='form'>
+	<table class='table table-bordered'>
+		<thead>
+			<tr>
+				<th style="width: 60%">Event</th>
+				<th style="width: 20%" class='text-right'># of Passes</th>
+				<th style="width: 20%" class='text-right'>Amount</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					Developer workshop, October 14th
+					<br><b>Price:</b> Rs 2000 / US$ 50 (includes lunch)
+				</td>
+				<td>
+					<input type='text' name='workshop'
+						data-rate-inr='2000' data-rate-usd='50'
+						class='form-control workshop-tickets text-right'>
+				</td>
+				<td class='workshop-amount text-right'></td>
+			</tr>
+			<tr>
+				<td>
+					Main Conference, October 15th
+					<br><b>Price:</b> Rs 600 / US$ 10 (includes lunch)
+				</td>
+				<td>
+					<input type='text' name='conf'
+						data-rate-inr ='600' data-rate-usd='10'
+						class='form-control conf-tickets text-right'>
+				</td>
+				<td class='conf-amount text-right'></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class='text-right'>Total</td>
+				<td class='total-amount text-right'></td>
+			</tr>
+		</tbody>
+	</table>
+
+<p>
+	Pay by <a href='#' class='use-inr'>Indian Rupee</a> | <a href="#" class='use-usd'>US Dollar</a>
+</p>
+
+	<h3>2. Tell us about you</h3>
+
+	<div>
+	<div class='row'>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="textinput">Full Name</label>
+			<div class="col-md-4">
+				<input id="textinput" name="full_name" type="text" label='Full Name'
+					placeholder="Your Name" class="form-control input-md"
+					required>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class='row'>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="textinput">Email Id</label>
+			<div class="col-md-4">
+				<input id="textinput" name="email" type="text"
+					placeholder="you@youcompany.com" label='Email Id'
+					class="form-control input-md" required>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class='row'>
+		<div class="form-group">
+			<label class="col-md-4 control-label" for="textinput">Company Name</label>
+			<div class="col-md-4">
+				<input id="textinput" name="company" type="text"
+					placeholder="Company Name" label='Company Name'
+					class="form-control input-md" required>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<button class="blue button btn-pay">Pay Now</button>
+</div>
+
+<script>
+frappe.ready(function() {
+	frappe.currency = 'inr';
+	$('.use-inr').on('click', function() {
+		frappe.currency = 'inr';
+		frappe.recalculate();
+		return false;
+	});
+
+	$('.use-usd').on('click', function() {
+		frappe.currency = 'usd';
+		frappe.recalculate();
+		return false;
+	});
+
+	$('.workshop-tickets, .conf-tickets').on('keyup', function() {
+		frappe.recalculate();
+	});
+
+	$('.btn-pay').on('click', function() {
+		var data = {};
+		var valid = true;
+		$('input').each(function() {
+			var val = $(this).val();
+			data[$(this).attr('name')] = val;
+			if($(this).is(':required') && !val) {
+				frappe.msgprint(($(this).attr('label') + ' is required'));
+				valid = false;
+				return false;
+			}
+		});
+
+		data.currency = frappe.currency;
+
+		if(valid) {
+			frappe.call({
+				method: 'erpnext_com.api.make_payment',
+				args: data,
+				callback: function(r) {
+					if(r.message) {
+						window.location.href = r.message;
+					} else {
+						frappe.msgprint("There was an error. Please email help@erpnext.com for details");
+					}
+				}
+			});
+		}
+	});
+});
+
+frappe.recalculate = function() {
+	['workshop-tickets', 'conf-tickets'].forEach(function(type) {
+		var $input = $('.' + type);
+		var name = $input.attr('name'),
+			rate = parseInt($input.attr('data-rate-' + frappe.currency)),
+			val = parseInt($input.val());
+
+			if(val) {
+				amount = rate * val;
+				$('.' + name + '-amount')
+					.html(frappe.currency.toUpperCase() + ' ' + amount)
+					.attr('data-amount', amount);
+			} else {
+				$('.' + name + '-amount').html('').attr('data-amount', '0');
+			}
+	});
+
+	$('.total-amount').html(frappe.currency.toUpperCase() + ' ' +
+		((parseInt($('.workshop-amount').attr('data-amount')) || 0)
+		+ (parseInt($('.conf-amount').attr('data-amount')) || 0)));
+
+}
+</script> -->

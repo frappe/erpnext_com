@@ -19,7 +19,8 @@
 			{"name": "25 users, 10GB space", "name_ja": "25ユーザー・容量10GB", "usd": "$ 600"},
 			{"name": "100 users, 20GB space", "name_ja": "100ユーザー・容量20GB", "usd": "$ 1500"},
 			{"name": "Unlimited users, 50GB space", "name_ja": "ユーザー数無制限・容量50GB", "usd": "$ 3000"},
-			{"name": "ERPNext VIP", "name_ja": "スポンサーシップ", "usd": "$ 5000"},
+			{"name": "Support for self hosted", "name_ja": 
+自己のサポートがホストされています, "usd": "$ 600"},
 		] -%}
 			{% set inr = frappe.utils.fmt_money(
 				frappe.utils.cint(frappe.utils.flt(frappe.utils.flt(plan.usd[1:]) * 60.0 * 1.1236 / 1000.0, 0) * 1000),

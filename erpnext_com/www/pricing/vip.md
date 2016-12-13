@@ -8,7 +8,7 @@ The ERPNext VIP Plan includes:
 
 #### Installation and Setup
 
-We will help you select a server and install ERPNext and Frappe on your remote server with SSL, Backups and other standard setup using Frappe Bench
+We will help you select a server and install ERPNext and Frappé on your remote server with SSL, Backups and other standard setup using Frappé Bench
 
 ---
 
@@ -20,12 +20,6 @@ We will help you implement ERPNext in your organization and support your functio
 2. Data Import
 3. Configuring Permissions
 4. Best Practices
-
----
-
-#### Developer Training
-
-We will provide advanced developer training on building custom ERPNext apps. Developers are expected to complete the free online tutorial and videos before setting up the session.
 
 ---
 
@@ -61,13 +55,7 @@ During office hours, we will try and respond to your developer queries on priori
 
 #### Deployment and Upgrade Support
 
-We will help you manage, upgrade and monitor multiple instances (sites) of ERPNext using [Frappe Bench](https://github.com/frappe/bench).
-
----
-
-#### Feature Development
-
-We will build a missing feature you want if it falls within the scope of our work. Please note that we can decline this if we feel that scope of the project is too big or the requirements are not very clear.
+We will help you manage, upgrade and monitor multiple instances (sites) of ERPNext using [Frappé Bench](https://github.com/frappe/bench).
 
 ---
 
@@ -87,6 +75,5 @@ We will provide **upto a maximum of 50 hours** of consulting / travel.
 
 **US $5000 / year**
 
-Interested?
-
-<a href="https://about.frappe.io/#contact" class="blue button">Get in Touch</a>
+<br>
+<a href="https://frappe.io/about#contact" class="blue button">Get in Touch</a>

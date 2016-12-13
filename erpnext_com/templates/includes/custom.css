@@ -38,14 +38,18 @@
 	border-radius: 4px;
 }
 
-.erpnext-paid-plans .plan .plan-users {
+.erpnext-paid-plans .plan .plan-title {
 	padding-top: 30px;
+	padding-bottom: 15px;
 	margin: 10px;
 }
 
-.erpnext-paid-plans .plan .plan-space {
-	padding-bottom: 30px;
+.erpnext-paid-plans .plan .plan-item {
 	margin: 10px;
+}
+
+.erpnext-paid-plans .plan .plan-item:nth-child(4) {
+	padding-bottom: 30px;
 }
 
 .erpnext-paid-plans .plan h2 {
@@ -146,3 +150,13 @@
 	font-size: 1.13em;
 	line-height: 1.5;
 }
+
+.page-container[data-path="proposals"] .page-header-block,
+.page-container[data-path="proposals"] .page-header-actions-block {
+	display: block !important;
+}
+
+.page-container[data-path="proposals"] .page-header-actions-block {
+	margin-top: 20px;
+}
+

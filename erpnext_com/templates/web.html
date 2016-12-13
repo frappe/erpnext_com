@@ -1,14 +1,19 @@
 {% extends "frappe_theme/templates/base.html" %}
 
 {% block content %}
-<div class="page-container" id="page-{{ name or page_name }}" data-path="{{ pathname }}"
+<div class="page-container" id="page-{{ name or route }}" data-path="{{ pathname }}"
     {% if page_or_generator=="Generator" %}data-doctype="{{ doctype }}"{% endif %}>
 	<div class="page-content">
     	<div class="page-content-wrapper">
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-xs-8">
 	        		<div class="page-header-block" data-html-block="header">
 	                    {% block header %}{% endblock %}
+	        		</div>
+                </div>
+                <div class="col-xs-4">
+	        		<div class="page-header-actions-block" data-html-block="header">
+	                    {% block header_actions %}{% endblock %}
 	        		</div>
                 </div>
             </div>
