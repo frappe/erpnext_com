@@ -4,7 +4,7 @@ def get_data():
 	return {
 		"erpnext_com": {
 			"color": "black",
-			"icon": "icon-globe",
+			"icon": "fa fa-globe",
 			"type": "module",
 			"label": _("Conference")
 		}

@@ -42,7 +42,7 @@ setup_signup = function(page) {
 
 		var res = get_url_arg('res');
 		if(res) args.res = res;
-
+		
 		args.distribution = window.erpnext_signup.distribution;
 
 		var $btn = $('.btn-request');
@@ -89,7 +89,9 @@ setup_signup = function(page) {
 	var query_params = get_query_params();
 	if (!query_params.plan) {
 		// redirect to pricing page
-		window.location.href = window.erpnext_signup.distribution=='schools' ? "/schools/pricing" : '/pricing';
+		var url = window.erpnext_signup.distribution=='schools' ? "/schools/pricing" : '/pricing';
+		window.location.href = url + '?' + $.param( query_params )
+
 	} else if (query_params.for_mobile_app) {
 		// for mobile app singup, hide header and footer
 		$("header,footer").addClass("hidden");
