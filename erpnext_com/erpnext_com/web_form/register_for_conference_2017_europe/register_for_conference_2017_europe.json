@@ -16,7 +16,7 @@
  "is_standard": 1, 
  "login_required": 0, 
  "max_attachment_size": 0, 
- "modified": "2017-01-05 16:52:41.525022", 
+ "modified": "2017-01-05 17:05:29.705795", 
  "modified_by": "Administrator", 
  "module": "erpnext_com", 
  "name": "register-for-conference-2017-europe", 
@@ -24,9 +24,9 @@
  "payment_button_label": "Buy Now", 
  "published": 1, 
  "route": "conf/2017-eu/register-form", 
- "show_sidebar": 1, 
+ "show_sidebar": 0, 
  "sidebar_items": [], 
- "success_url": "/register-for-conference-2017-europe", 
+ "success_url": "/conf/2017-eu", 
  "title": "Register for Conference 2017 Europe", 
  "web_form_fields": [
   {
