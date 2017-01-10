@@ -35,6 +35,12 @@ body {
 .bg-blue {
 	background : #5f5fce;
 }
+.bg-white {
+	background: #fff;
+}
+.bg-gray {
+	background: #f9f9f9;
+}
 
 .padd-0 {
 	padding: 0;
@@ -45,4 +51,22 @@ body {
 	border: 0px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.2);
     font-size: 1em;
+}
+
+.mar-t-50 {
+	margin-top: 50px;
+}
+.mar-b-50 {
+	margin-bottom: 50px;
+}
+
+.h2 {
+	font-size: 32px;
+	color: #36414c;
+	line-height: 24px;
+}
+.p {
+	font-size: 25px;
+	color: #6c7680;
+	line-height: 24px;
 }
