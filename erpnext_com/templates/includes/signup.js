@@ -10,7 +10,7 @@ setup_signup = function(page) {
 		$.each(page.find("form input"), function(i, input) {
 			args[$(input).attr("name")] = $(input).val();
 		});
-
+		args["subdomain"] = args.subdomain.toLowerCase();
 
 		// all mandatory
 		if(!(args.full_name && args.email && args.subdomain)) {
