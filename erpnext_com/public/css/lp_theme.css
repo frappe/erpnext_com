@@ -8,11 +8,24 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+.cl-white {
+	color: #fff;
+}
+
+.navbar-icon {
+    width: 24px;
+    margin-right: 7px;
+    margin-top: -3px;
+}
+
 .bg-blue {
 	background : #5f5fce;
 }
 
-
-p {
-	color: #000;
+.padd-0 {
+	padding: 0;
+}
+.white-btn {
+	background: #fff;
+	color: #7574ff;
 }
