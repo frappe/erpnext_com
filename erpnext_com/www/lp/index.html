@@ -1,3 +1,17 @@
+{% extends "frappe/templates/base.html" %}
+
+{% block favicon %}
+    <link rel="icon" href="{{ favicon }}">
+    <link rel="shortcut icon" href="{{ favicon }}">
+{% endblock %}
+
+{% block head_include %}
+    {% include "templates/includes/typekit.html" %}
+    <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+    <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+    <style>{% include "templates/includes/custom.css" %}</style>
+{% endblock %}
+
 {% block content %}
 	<div class="container-fluid bg-blue">
 		<div class="container">
