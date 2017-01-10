@@ -26,6 +26,10 @@ body {
 	color: #fff;
 }
 
+.fnt-34 {
+	font-size: 34px;
+}
+
 .navbar-icon {
     width: 24px;
     margin-right: 7px;
@@ -63,10 +67,15 @@ body {
 .h2 {
 	font-size: 32px;
 	color: #36414c;
-	line-height: 24px;
+	line-height: 36px;
+	margin-bottom: 35px;
 }
 .p {
 	font-size: 25px;
 	color: #6c7680;
-	line-height: 24px;
+	line-height: 36px;
+    margin-bottom: 35px;
+}
+.section-block {
+	padding: 75px 0;
 }
