@@ -10,7 +10,7 @@
 		{% block header %}
 				<h1> Service Page </h1>
 		{% endblock %}
-		
+
 		<div class="container-fluid bg-blue">
 			<div class="container">
 				<div class="row">
@@ -27,5 +27,13 @@
 			</div>
 		</div>
 
+		<script>
+			frappe.ready(function(){
+				$(".hero-and-content .container").removeClass('container').addClass('container-fluid')
+			})
+		</script>
+
 {% endblock %}
+
+		
 
