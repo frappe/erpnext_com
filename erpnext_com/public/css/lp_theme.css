@@ -56,6 +56,24 @@ body {
     border-bottom: 3px solid rgba(0, 0, 0, 0.2);
     font-size: 1em;
 }
+.white-btn:hover {
+	text-decoration: none;
+	background: #7574ff;
+	color: #fff;
+}
+
+.blue-btn {
+	background: #7574ff;
+	color: #fff;
+	border: 0px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+}
+.blue-btn:hover {
+	text-decoration: none;
+	background: #7574ff;
+	color: #fff;
+}
 
 .mar-t-50 {
 	margin-top: 50px;
@@ -65,17 +83,37 @@ body {
 }
 
 .h2 {
-	font-size: 32px;
+	font-size: 26px;
 	color: #36414c;
-	line-height: 36px;
+	line-height: 30px;
 	margin-bottom: 35px;
 }
 .p {
-	font-size: 25px;
-	color: #6c7680;
-	line-height: 36px;
+	font-size: 18px;
+    color: #6c7680;
+    line-height: 30px;
     margin-bottom: 35px;
 }
 .section-block {
 	padding: 75px 0;
+}
+.testimonial_name {
+	color: #36414c;
+	font-size: 23px;
+}
+.case-wrapper {
+    position: relative;
+    margin: 0px;
+    float: left;
+    width: 138px;
+    height: 140px;
+}
+.app-icon {
+    padding: 20px;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
 }
