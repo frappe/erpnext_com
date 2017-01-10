@@ -8,6 +8,20 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 7px 12px 9px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.x-large.button {
+    font-size: 1.6em;
+    padding: 16px 40px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
 .cl-white {
 	color: #fff;
 }
@@ -28,4 +42,7 @@ body {
 .white-btn {
 	background: #fff;
 	color: #7574ff;
+	border: 0px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    font-size: 1em;
 }
