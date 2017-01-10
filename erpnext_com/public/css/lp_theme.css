@@ -1,10 +1,5 @@
-@bg-blue: #5f5fce;
-.open-sans() {
-	font-family: 'Open Sans', sans-serif;
-}
-
 body {
-	.open-sans();
+	font-family: 'Open Sans', sans-serif;
     font-size: 15px;
 	color: @text-light;
 	text-rendering: optimizeLegibility !important;
@@ -14,6 +9,5 @@ body {
 }
 
 .bg-blue {
-	background : @bg-blue;
+	background : #5f5fce;
 }
-
