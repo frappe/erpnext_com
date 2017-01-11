@@ -21,7 +21,7 @@ body {
 }
 
 .x-large.button {
-    font-size: 1.6em;
+    font-size: 20px;
     padding: 16px 40px;
     border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
