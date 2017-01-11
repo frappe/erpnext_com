@@ -256,6 +256,9 @@ footer li a {
     color: inherit;
     text-decoration: underline;
 }
+.clearfix {
+	clear: both;
+}
 
 @media screen and (max-width: 767px)
 {
@@ -306,6 +309,9 @@ footer li a {
 	.pricing-section {
 		padding-left: 0;
 		padding-right: 0;
+	}
+	hr.mar-t-50 {
+		margin-top: 0;
 	}
 
 }
