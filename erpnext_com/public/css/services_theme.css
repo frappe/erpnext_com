@@ -150,9 +150,14 @@ body {
 .section-block {
 	padding: 75px 0;
 }
+.testimonial-img {
+	margin: auto;
+    max-width: 150px;
+}
 .testimonial_name {
 	color: #36414c;
-	font-size: 23px;
+	font-size: 18px;
+	margin-top: 40px;
 }
 .case-wrapper {
     position: relative;
@@ -196,3 +201,4 @@ body {
 #icon-grid svg {
 	fill: #fff;
 }
+
