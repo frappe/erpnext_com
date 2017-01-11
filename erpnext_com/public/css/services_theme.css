@@ -32,8 +32,15 @@ body {
     border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 
+.show {
+	display: block !important;
+}
+
 .cl-white {
 	color: #fff;
+}
+.cl-blue {
+	color: #5E64FF;
 }
 
 .fnt-34 {
@@ -212,7 +219,7 @@ body {
     text-align: center;
     display: inline-block;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -230,11 +237,12 @@ footer ul, footer ul li {
 
 footer li a {
     text-decoration: none;
-    color: #6c7680;
+    color: #36414c;
+    font-size: 16px;
 }
 
 .copyright {
-    font-size: 0.8em;
+    font-size: 14px;
     text-align: center;
     padding-bottom: 50px;
 }
@@ -267,6 +275,10 @@ footer li a {
 	.p {
 	    font-size: 16px;
 	    text-align: center;
+	}
+	.toggle-sidebar {
+		margin-right: 10px;
+    	margin-top: 10px;
 	}
 }
 

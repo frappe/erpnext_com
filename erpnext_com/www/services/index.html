@@ -377,6 +377,10 @@
 		<script>
 			frappe.ready(function(){
 				$(".hero-and-content .container:first").removeClass('container');
+
+				$(".toggle-sidebar").click(function(){
+					$(".navbar-nav").parent().toggleClass('show');
+				});
 			})
 		</script>
 
@@ -390,7 +394,7 @@
 						<hr class="mar-t-50" />
 					</div>
 			</div>
-			
+
             <ul class="list-unstyled footer-list">
                 <li>
                     <a href="https://erpnext.com">ERPNext</a>
@@ -436,7 +440,7 @@
 		<div class="row" style="padding-bottom: 50px;">
 			<div class="col-sm-12 text-center">
 				<p>
-				<b><a href="https://erpnext.com/conf/2017-eu">
+				<b><a href="https://erpnext.com/conf/2017-eu" class="cl-blue">
 				Register for the ERPNext Conference Europe 2017 on March 17-18, Frankfurt
 				<i class="octicon octicon-arrow-small-right hidden-xs"></i>
 				</a></b>
