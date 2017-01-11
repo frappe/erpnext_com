@@ -280,5 +280,23 @@ footer li a {
 		margin-right: 10px;
     	margin-top: 10px;
 	}
+	.large.button {
+		font-size: 16px;
+	}
+	.case-wrapper {
+	    width: 110px;
+	}
+
+	footer {
+		padding: 0 15px;
+	}
+
+	.footer-list li {
+	    margin: 0px 15px 20px;
+	    display: block;
+	    float: left;
+	    width: 23%;
+	    text-align: left;
+	}
 }
 
