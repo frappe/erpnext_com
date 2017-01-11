@@ -184,6 +184,11 @@ body {
     vertical-align: middle;
 }
 
+#icon-grid {
+	max-width: 970px;
+    margin: auto;
+}
+
 #icon-grid svg {
 	fill: #fff;
 }
