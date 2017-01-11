@@ -8,6 +8,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+.navbar-brand {
+	width: 155px;
+}
+
 .button {
     display: inline-block;
     border-radius: 4px;
@@ -202,6 +206,45 @@ body {
 
 #icon-grid svg {
 	fill: #fff;
+}
+
+.footer-list {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+footer ul, footer ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.footer-list li {
+    margin: 0px 15px;
+    display: inline-block;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #6c7680;
+}
+
+.copyright {
+    font-size: 0.8em;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.copyright p {
+    padding-bottom: 0px;
+    color: #B8C2CC;
+}
+.underline {
+    color: inherit;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 767px)
