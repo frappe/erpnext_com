@@ -116,6 +116,7 @@ body {
 	text-decoration: none;
 	background: #7574ff;
 	color: #fff;
+	border-bottom: 3px solid rgba(117, 116, 255, 0.2);
 }
 
 .blue-btn {
@@ -129,6 +130,7 @@ body {
 	text-decoration: none;
 	background: #7574ff;
 	color: #fff;
+	border-bottom: 3px solid rgba(117, 116, 255, 0.2);
 }
 
 .mar-t-0 {
