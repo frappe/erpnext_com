@@ -22,6 +22,12 @@ body {
     border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 
+.large.button {
+    font-size: 1.33em;
+    padding: 12px 24px 10px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+
 .cl-white {
 	color: #fff;
 }
@@ -132,6 +138,10 @@ body {
     color: #6c7680;
     line-height: 30px;
     margin-bottom: 35px;
+}
+
+.cl-light-gray {
+	color: #b8c2cc;
 }
 .section-block {
 	padding: 75px 0;
