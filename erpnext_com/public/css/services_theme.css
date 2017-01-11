@@ -262,6 +262,9 @@ footer li a {
 	.heading {
 		font-size: 24px;
 	}
+	.octicon-three-bars {
+		font-size: 26px;
+	}
 	.x-large.button {
 	    font-size: 18px;
 	    padding: 12px 31px;
@@ -299,6 +302,18 @@ footer li a {
 	    float: left;
 	    width: 23%;
 	    text-align: left;
+	}
+	.pricing-section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+@media screen and (max-width: 480px)
+{
+	.x-large.button {
+		display: block;
 	}
 }
 
