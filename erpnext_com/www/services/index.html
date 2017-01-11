@@ -251,7 +251,9 @@
 							</div>
 
 							<div class="visible-xs text-center">
-								<a class="x-large blue-btn button later view_module" href="/signup?plan=Free">View all 14 modules</a>
+								<p class="text-center">
+									<a class="x-large blue-btn button later view_module" href="javascript:void(0);">View all 14 modules</a>
+								</p>
 							</div>
 							<div class="hidden-xs other_module">
 								<div class="case-wrapper text-center"> 
@@ -388,7 +390,8 @@
 					$(".navbar-nav").parent().toggleClass('show');
 				});
 
-				$(".view_module").click(function(){
+				$(".view_module").click(function(e){
+					e.preventDefault();
 					$(this).hide();
 					$(".other_module").addClass('show');
 				});
