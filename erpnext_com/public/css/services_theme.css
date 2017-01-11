@@ -120,6 +120,9 @@ body {
 	color: #fff;
 }
 
+.mar-t-0 {
+	margin-top: 0;
+}
 .mar-t-20 {
 	margin-top: 20px;
 }
@@ -172,7 +175,6 @@ body {
     margin: auto;
     text-align: center;
     border-radius: 16px;
-    cursor: pointer;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
 }
 .case-label {
@@ -200,5 +202,28 @@ body {
 
 #icon-grid svg {
 	fill: #fff;
+}
+
+@media screen and (max-width: 767px)
+{
+	.heading {
+		font-size: 24px;
+	}
+	.x-large.button {
+	    font-size: 18px;
+	    padding: 12px 31px;
+	    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+	}
+	.section-block {
+	    padding: 25px 0;
+	}
+	.h2 {
+	    font-size: 20px;
+	    text-align: center;
+	}
+	.p {
+	    font-size: 16px;
+	    text-align: center;
+	}
 }
 

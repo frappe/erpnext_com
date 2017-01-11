@@ -12,7 +12,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 class="text-center cl-white mar-t-50 fnt-34"> Build a profitable service business using ERPNext </h1>
+						<h1 class="text-center cl-white mar-t-50 fnt-34 heading"> Build a profitable service business using ERPNext </h1>
 						<p class="text-center mar-t-50 mar-b-50">
 							<a class="x-large white-btn button later" href="/signup?plan=Free">Sign Up — Free for 1 User</a>
 						</p>
@@ -51,10 +51,8 @@
 		<div class="container-fluid bg-gray section-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-						<img src="/assets/erpnext_com/images/services/screen.png" class="img-responsive" alt="erpnext screen" />
-					</div>
-					<div class="col-md-6">
+					
+					<div class="col-md-6 col-md-push-6">
 						<h2 class="h2">Billing & Invoicing</h2>
 						<p class="p">
 							Easily create projects, define and allocate tasks. Make systematic time log entries for work done against Tasks. Bill your customers using time logs.
@@ -66,6 +64,9 @@
 							Your earnings will improve once you stay on top of your workload and capacity.
 						</p>
 					</div>
+					<div class="col-md-6 col-md-pull-6">
+						<img src="/assets/erpnext_com/images/services/screen.png" class="img-responsive" alt="erpnext screen" />
+					</div>
 					
 				</div>
 			</div>
@@ -74,7 +75,7 @@
 		<div class="container-fluid bg-white section-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 col-md-push-6">
 						<h2 class="h2">HR, Leave & Payroll</h2>
 						<p class="p">
 							Easily create projects, define and allocate tasks. Make systematic time log entries for work done against Tasks. Bill your customers using time logs.
@@ -86,7 +87,7 @@
 							Your earnings will improve once you stay on top of your workload and capacity.
 						</p>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 col-md-pull-6">
 						<img src="/assets/erpnext_com/images/services/screen.png" class="img-responsive" alt="erpnext screen" />
 					</div>
 				</div>
@@ -96,10 +97,8 @@
 		<div class="container-fluid bg-gray section-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-						<img src="/assets/erpnext_com/images/services/screen.png" class="img-responsive" alt="erpnext screen" />
-					</div>
-					<div class="col-md-6">
+					
+					<div class="col-md-6 col-md-push-6">
 						<h2 class="h2">CRM</h2>
 						<p class="p">
 							Easily create projects, define and allocate tasks. Make systematic time log entries for work done against Tasks. Bill your customers using time logs.
@@ -110,6 +109,9 @@
 						<p class="p">
 							Your earnings will improve once you stay on top of your workload and capacity.
 						</p>
+					</div>
+					<div class="col-md-6 col-md-pull-6">
+						<img src="/assets/erpnext_com/images/services/screen.png" class="img-responsive" alt="erpnext screen" />
 					</div>
 					
 				</div>
@@ -378,6 +380,65 @@
 			})
 		</script>
 
+{% endblock %}
+
+{% block footer %}
+    <footer>
+        <div class="container">
+            <ul class="list-unstyled footer-list">
+                <li>
+                    <a href="https://erpnext.com">ERPNext</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io">Frappé</a>
+                </li>
+                <li>
+                    <a href="https://erpnext.com/schools">Schools</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="https://community.erpnext.com/service-providers">Services</a>
+                </li>
+                <li>
+                    <a href="https://erpnext.com/reseller">Reseller</a>
+                </li>
+                <li>
+                    <a href="https://discuss.erpnext.com">Forum</a>
+                </li>
+                <li>
+                    <a href="https://github.com/frappe">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io/about">About</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io/about#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>
+                    &copy;<span id="year"></span> Frappé Technologies Pvt. Ltd.
+                    Content licensed under
+                    <a class="underline" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">
+						CC-BY-SA 3.0</a>. Read the <a href="https://erpnext.com/terms" class="underline">terms of use</a>.
+                </p>
+            </div>
+        </div>
+
+		<div class="row" style="padding-bottom: 50px;">
+			<div class="col-sm-12 text-center">
+				<p>
+				<b><a href="https://erpnext.com/conf/2017-eu">
+				Register for the ERPNext Conference Europe 2017 on March 17-18, Frankfurt
+				<i class="octicon octicon-arrow-small-right hidden-xs"></i>
+				</a></b>
+				</p>
+			</div>
+		</div>
+	</footer>
+    
 {% endblock %}
 
 		
