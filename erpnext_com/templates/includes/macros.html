@@ -24,7 +24,7 @@
 
 	{% if features -%}
 			{%- for feature in features -%}
-				<div class="container-fluid bg-white section-block {% if forloop.counter|divisibleby:2 %} bg-gray {% else %} bg-white {% endif %}">
+				<div class="container-fluid bg-white section-block {% cycle 'bg-white' 'bg-gray' %}">
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-6">
