@@ -1,0 +1,34 @@
+{% macro hero(title) %}
+<h1 class="main-heading">{{ title }}</h1>
+{% endmacro %} 
+
+
+{% macro feature(industry) %}
+	{% set features = [
+		{"title": "Projects and Timesheets", "desc": "In ERPNext all projects are linked to Tasks, Timesheets, Expenses, Purchases, Budgets so you get a full view of your activities. Billing and Payroll is also deeply tied to projects making it easier for you to tie everything together.", "img": "/assets/erpnext_com/images/services/projects.png"},
+		{"title": "Pricing", "desc": "/schools/pricing", "img": ""},
+		{"title": "Pricing", "desc": "/schools/pricing", "img": ""},
+		{"title": "Pricing", "desc": "/schools/pricing", "img": ""},
+		{"title": "Pricing", "desc": "/schools/pricing", "img": ""}
+	
+	] %}
+
+	{% if features -%}
+			{%- for feature in features -%}
+				<div class="container-fluid bg-white section-block">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-6">
+								<h2 class="h2">{{ feature.title }}</h2>
+								<p class="p">{{ feature.desc }}</p>
+							</div>
+							<div class="col-sm-6">
+								<img src="{{ feature.img }}" class="img-responsive" alt="erpnext screen" />
+							</div>
+						</div>
+					</div>
+				</div>
+			{%- endfor %}
+	{%- endif %}
+
+{% endmacro %}

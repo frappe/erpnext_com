@@ -1,4 +1,5 @@
 {% extends "frappe/templates/base.html" %}
+{% include "/assets/erpnext_com/templates/includes/macros.html" %}
 
 {% block title %}ERP for Service Business{% endblock %}
 
@@ -12,8 +13,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<h1 class="main-heading">
-							ERP for Service Business</h1>
+						{{ hero("ERP for Service Business") }}
 						<p class="lead">
 							Build a Profitable Business Using ERPNext </h1>
 						<p class="mar-t-50 mar-b-50">
@@ -30,6 +30,8 @@
 				</div>
 			</div>
 		</div>
+
+		{{ feature() }}
 
 		<div class="container-fluid bg-white section-block">
 			<div class="container">
