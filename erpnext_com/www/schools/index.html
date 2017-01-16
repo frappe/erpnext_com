@@ -1,61 +1,190 @@
-<!-- title: Open Source School Management System -->
+{% extends "frappe/templates/base.html" %}
+{% from "erpnext_com/templates/includes/macros.html" import hero %}
+{% from "erpnext_com/templates/includes/macros.html" import feature %}
 
-<!-- Hero Section -->
+{% block title %}School management software{% endblock %}
 
-    <div class="row hero" style="padding-top: 30px; padding-bottom: 0px;">
-        <!-- <div class="col-sm-12">
-            <img class="erp-hero" src="/assets/frappe_theme/img/platforms.svg">
-        </div> -->
-        <div class="col-sm-12 hero-content" style="margin-top: 10px;">
-            <h1>Simple School Management</h1>
-            <p class="text-muted later">ERPNext Schools helps you manage your institute with ease
-            </p>
-            <a class="x-large blue button later" href="/schools/signup?plan=Free">Sign Up &mdash; Free for 1 User</a>
-            <p class="description later">
-                <a class="no-decoration" href="/schools/pricing">See plans and pricing</a>
-            </p>
-        </div>
+{% block head_include %}
+	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+{% endblock %}
 
-        <div class="col-sm-12 later" style="padding-top: 70px;">
-        <div class="fake-browser-frame">
-            <img class="img-responsive browser-image feature-image" src="/assets/erpnext_com/images/schools/student.png">
+{% block content %}
+
+		<div class="container-fluid bg-gray padd-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						{{ hero("School management software") }}
+						<p class="lead">
+							Build a Profitable Business Using ERPNext </h1>
+						<p class="mar-t-50 mar-b-50">
+							<a class="x-large blue-btn button later" href="/signup?plan=Free">Sign Up — Free for 1 User</a>
+						</p>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="fake-browser-frame">
+									<img class="img-responsive browser-image feature-image" src="/assets/erpnext_com/images/services/desktop.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{{ feature("school") }}
+
+
+		<div class="container-fluid bg-white section-block">
+			<div class="container">
+				<h2 class="text-center h2">Trusted by users across 150+ countries</h2>
+				<div class="row">
+					<div class="col-sm-8">
+						<p class="p">
+							I've been spending the past few days scouring the entire Internet looking for small business ERPs.I'm a professional accountant with SAP experience and I've been trying out demos of various ERP products
+
+						</p>
+						<p class="p">
+							I have to say I am blown away by ERPNext. It's ridiculously fast, extremely simple, incredible functionalities in all areas imaginable, etc. And then I see the price and I'm scratching my head.
+						</p>
+						<p class="p">
+							This seems too good to be true and I'm pretty much done analysing at this point.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p class="text-center">
+							<img src="/assets/erpnext_com/images/services/user.png" class="img-responsive img-circle testimonial-img" />
+						</p>
+						<p class="testimonial_name text-center">
+							 Raphael D. Groulx
+						</p>
+					</div>
+				</div>
+				<p class="text-center mar-t-50">
+					<a class="button btn-link" href="/testimonials">Read more testimonials...</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="container-fluid bg-gray section-block">
+			<div class="container">
+				<h2 class="text-center h2">ERPNext also includes</h2>
+				<div class="mar-t-50"></div>
+				<div class="row standard-features">
+					<div class="col-sm-6">
+						<p><span class='indicator green'>Role Based Access</p>
+						<p><span class='indicator green'>Field Level Customization</p>
+						<p><span class='indicator green'>Customized Print</p>
+						<p><span class='indicator green'>Email Integration</p>
+						<p><span class='indicator green'>Report Builder</p>
+						<p><span class='indicator green'>Shared Calendar</p>
+						<p><span class='indicator green'>Customer, Vendor Portal</p>
+						<p><span class='indicator green'>Downloadable Backups</p>
+						<p><span class='indicator green'>Payment Integration</p>
+					</div>
+					<div class="col-sm-6">
+						<p><span class='indicator green'>Workflow Engine</p>
+						<p><span class='indicator green'>Custom Fields</p>
+						<p><span class='indicator green'>Exensible Custom Scripts</p>
+						<p><span class='indicator green'>SMS Integration</p>
+						<p><span class='indicator green'>Gantt and Kanban View</p>
+						<p><span class='indicator green'>Email Alerts</p>
+						<p><span class='indicator green'>Finance Analytics</p>
+						<p><span class='indicator green'>Website and Web Forms</p>
+						<p><span class='indicator green'>Mobile App</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container-fluid pricing-section bg-white section-block retail-cta-section">
+			<div class="container text-center">
+				<p class='lead'>Trusted by more than 3000 companies across 150 countries.
+					<br></p>
+				<p>
+					<a class="x-large blue-btn button later" href="/signup?plan=Free">
+						Sign Up - Free for 1 User</a>
+				</p>
+				<p>
+					<a href="#" class="cl-light-gray">See plans and pricing</a>
+				</p>
+			</div>
+		</div>
+
+
+
+		<script>
+			frappe.ready(function(){
+				$(".hero-and-content .container:first").removeClass('container');
+
+				$(".toggle-sidebar").click(function(){
+					$(".navbar-nav").parent().toggleClass('show');
+				});
+
+				$(".view_module").click(function(e){
+					e.preventDefault();
+					$(this).hide();
+					$(".other_module").addClass('show');
+				});
+			})
+		</script>
+
+{% endblock %}
+
+{% block footer %}
+    <footer>
+        <div class="container">
+
+            <ul class="list-unstyled footer-list">
+                <li>
+                    <a href="https://erpnext.com">ERPNext</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io">Frappé</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="https://community.erpnext.com/service-providers">Services</a>
+                </li>
+                <li>
+                    <a href="https://erpnext.com/reseller">Reseller</a>
+                </li>
+                <li>
+                    <a href="https://discuss.erpnext.com">Forum</a>
+                </li>
+                <li>
+                    <a href="https://github.com/frappe">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io/about">About</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io/about#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>
+                    &copy;<span id="year"></span> Frappé Technologies Pvt. Ltd.
+                    Content licensed under
+                    <a class="underline" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">
+						CC-BY-SA 3.0</a>. Read the <a href="https://erpnext.com/terms" class="underline">terms of use</a>.
+                </p>
             </div>
         </div>
-    </div>
-    <!-- Content -->
-    <div class="group later">
-        <div class="row section text-center">
-            <div class="col-sm-12">
-                <div class="dashboard-section">
-                    <h1>Course Scheduling, Student Management and more</h1>
-                    <p>ERPNext Schools has a wide array of apps, deeply integrated with each other.</p>
-                </div>
-                <img src="/assets/erpnext_com/images/schools/dashboard-shot.png">
-            </div>
-        </div>
-    </div>
 
-    <div class="row section later">
-        <div class="col-sm-4 small-content">
-            <img src="/assets/frappe_theme/img/support.svg">
-            <h1>Expert Support</h1>
-            <p>Support tools are built into our cloud service, making it easy to find help instantly.
-				Get quick replies from our team or the community.
-			</p>
-            <a href="/benefits">See all the benefits</a>
-        </div>
+		<div class="row" style="padding-bottom: 50px;">
+			<div class="col-sm-12 text-center">
+				<p>
+				<b><a href="https://erpnext.com/conf/2017-eu" class="cl-blue">
+				Register for the ERPNext Conference Europe 2017 on March 17-18, Frankfurt
+				<i class="octicon octicon-arrow-small-right hidden-xs"></i>
+				</a></b>
+				</p>
+			</div>
+		</div>
+	</footer>
 
-        <div class="col-sm-4 small-content">
-            <img src="/assets/frappe_theme/img/community.svg">
-            <h1>Amazing Community</h1>
-            <p>The community portal is the hub of activity for ERPNext Schools. Use it to ask a question, find developers or hire service providers.</p>
-            <a href="https://discuss.erpnext.com/c/schools" target="_blank">Visit the community portal</a>
-        </div>
-
-        <div class="col-sm-4 small-content">
-            <img src="/assets/frappe_theme/img/developers.svg">
-            <h1>Developer Friendly</h1>
-            <p>ERPNext Schools is open source and infinitely extensible. Customize it, build upon it, add your own apps built with our <a href="https://frappe.io" class="underline">Frappé Framework</a>.</p>
-            <a href="http://frappe.github.io/schools/install.html">Install ERPNext Schools for free</a>
-        </div>
-    </div>
+{% endblock %}
