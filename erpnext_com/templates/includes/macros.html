@@ -41,3 +41,40 @@
 	{%- endif %}
 
 {% endmacro %}
+
+{% macro testimonials() %}
+	{% set testomonials = [
+		{"title": "I am blown away by ERPNext", "desc": "I've been spending the past few days scouring the entire Internet looking for small business ERPs.I'm a professional accountant with SAP experience and I've been trying out demos of various ERP products <br/> <br/> I have to say I am blown away by ERPNext. It's ridiculously fast, extremely simple, incredible functionalities in all areas imaginable, etc. And then I see the price and I'm scratching my head. <br/> <br/>This seems too good to be true and I'm pretty much done analysing at this point.", "customer_img": "/assets/erpnext_com/images/services/user.png","customer_name":"Raphael D. Groulx"},
+		{"title": "I am blown away by ERPNext", "desc": "I've been spending the past few days scouring the entire Internet looking for small business ERPs.I'm a professional accountant with SAP experience and I've been trying out demos of various ERP products <br/> <br/> I have to say I am blown away by ERPNext. It's ridiculously fast, extremely simple, incredible functionalities in all areas imaginable, etc. And then I see the price and I'm scratching my head. <br/> <br/>This seems too good to be true and I'm pretty much done analysing at this point.", "customer_img": "/assets/erpnext_com/images/services/user.png","customer_name":"Raphael D. Groulx"}
+		
+	
+	] %}
+
+	{% if testimonials -%}
+			{%- for testimonial in testimonials -%}
+				<div class="container-fluid section-block {{ loop.cycle('bg-gray', 'bg-whilte') }}">
+					<div class="container">
+						
+						<div class="row">
+							<div class="col-sm-8 {{ loop.cycle('', 'col-sm-push-4') }}">
+								<h2 class="text-left h2 mar-t-0 mar-b-35">{{ testimonial.title }}</h2>
+								<p class="p">
+									{{ testimonial.desc }}
+								</p>
+								
+							</div>
+							<div class="col-sm-4 {{ loop.cycle('', 'col-sm-pull-8') }}">
+								<p class="overflow-h {{ loop.cycle('text-right', 'text-left') }}">
+									<img src="{{ testimonial.customer_img }}" class="img-responsive img-circle testimonial-img {{ loop.cycle('testimonial-img-right', 'testimonial-img-left') }}" />
+								</p>
+								<p class="testimonial_name {{ loop.cycle('text-right', 'text-left') }}">
+									 {{ testimonial.customer_name }}
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			{%- endfor %}
+	{%- endif %}
+
+{% endmacro %}
