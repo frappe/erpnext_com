@@ -5,7 +5,6 @@
 	
 	] %}
 
-	{% if testimonial_data -%}
 			{%- for testimonial in testimonial_data -%}
 				<div class="container-fluid section-block {{ loop.cycle('bg-gray', 'bg-whilte') }}">
 					<div class="container">
@@ -30,6 +29,5 @@
 					</div>
 				</div>
 			{%- endfor %}
-	{%- endif %}
 
 {% endmacro %}
