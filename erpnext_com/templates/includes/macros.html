@@ -4,23 +4,36 @@
 
 
 {% macro feature(industry) %}
-	{% set features = [
-		{"title": "Projects and Timesheets", "desc": "In ERPNext all projects are linked to Tasks, Timesheets, Expenses, Purchases, Budgets so you get a full view of your activities. Billing and Payroll is also deeply tied to projects making it easier for you to tie everything together.", "img": "/assets/erpnext_com/images/services/projects.png"},
-		{"title": "Billing and Invoicing", "desc": "Billing and receivables tracking in ERPNext helps you stay
-							on top of your finances. Project based accountings helps you get the
-							profitability of each project on your fingertip.", "img": "/assets/erpnext_com/images/services/invoice.png"},
-		{"title": "HR, Leave and Payroll", "desc": "Your employees can apply for leaves and claim expenses directly through ERPNext. All of this is seamlessly integrated with your payroll and accounting. ERPNext also helps you manage recruiting, appraisals, trainings and much more.", "img": "/assets/erpnext_com/images/services/hr.png"},
-		{"title": "CRM and Sales", "desc": "With a fully integrated sales management system, you can track Leads,
-							Opportunities, send Quotes, manage Orders and fulfilment in ERPNext.
-							You can set alerts and send email directly from the system so that
-							you can close more deals.", "img": "/assets/erpnext_com/images/services/crm.png"},
-		{"title": "Helpdesk and Support", "desc": "By linking your incoming support emails to ERPNext, you can keep track
-							of open issues across projects and make sure your customers are happy
-							by answering on time. You can also create help articles and build
-							a support portal that will make your customers get what
-							they need even faster.", "img": "/assets/erpnext_com/images/services/support.png"}
-	
-	] %}
+
+	{% if industry=='service' %}
+		{% set features = [
+			{"title": "Projects and Timesheets", "desc": "In ERPNext all projects are linked to Tasks, Timesheets, Expenses, Purchases, Budgets so you get a full view of your activities. Billing and Payroll is also deeply tied to projects making it easier for you to tie everything together.", "img": "/assets/erpnext_com/images/services/projects.png"},
+			{"title": "Billing and Invoicing", "desc": "Billing and receivables tracking in ERPNext helps you stay
+								on top of your finances. Project based accountings helps you get the
+								profitability of each project on your fingertip.", "img": "/assets/erpnext_com/images/services/invoice.png"},
+			{"title": "HR, Leave and Payroll", "desc": "Your employees can apply for leaves and claim expenses directly through ERPNext. All of this is seamlessly integrated with your payroll and accounting. ERPNext also helps you manage recruiting, appraisals, trainings and much more.", "img": "/assets/erpnext_com/images/services/hr.png"},
+			{"title": "CRM and Sales", "desc": "With a fully integrated sales management system, you can track Leads,
+								Opportunities, send Quotes, manage Orders and fulfilment in ERPNext.
+								You can set alerts and send email directly from the system so that
+								you can close more deals.", "img": "/assets/erpnext_com/images/services/crm.png"},
+			{"title": "Helpdesk and Support", "desc": "By linking your incoming support emails to ERPNext, you can keep track
+								of open issues across projects and make sure your customers are happy
+								by answering on time. You can also create help articles and build
+								a support portal that will make your customers get what
+								they need even faster.", "img": "/assets/erpnext_com/images/services/support.png"}
+		
+		] %}
+
+	{% else if industry=='retail' %}
+		{% set features = [
+			{"title": "Point of Sale", "desc": "ERPNext has touch-friendly Point of Sales interface which is linked to billing, payments and Inventory. You can manage settings like Currency, Cash / Bank Account, Taxes, and Terms and Conditions individually for each location. POS feature also works offline and syncs when you have internet.", "img": "/assets/erpnext_com/images/services/projects.png"},
+			{"title": "Inventory", "desc": "Easily manage multiple inventory locations. When the stock goes below threshold quantity - Automatically raise material requests, send purchase orders to suppliers and record purchase receipts. Batches, serial numbers, stock valuation and automated inventory accounting help you be on top of the stock.", "img": "/assets/erpnext_com/images/services/invoice.png"},
+			{"title": "Multi-store", "desc": "Your stores at multiple locations will run cohesively with ERPNext. You can manage your operations remotely, communicate between different branches and analyze real-time reports across all branches.", "img": "/assets/erpnext_com/images/services/hr.png"},
+			{"title": "Billing and accounting", "desc": "Billing and receivables tracking in ERPNext helps you stay on top of your finances. Inventory linked accounting helps you get the performance of each product. Get the insights about your top selling products and make more informed decisions.", "img": "/assets/erpnext_com/images/services/crm.png"}
+		
+		] %}
+
+	{% endif %}
 
 	{% if features -%}
 			{%- for feature in features -%}
