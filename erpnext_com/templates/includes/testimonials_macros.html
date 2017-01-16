@@ -1,42 +1,3 @@
-{% macro feature() %}
-	{% set features = [
-		{"title": "Projects and Timesheets", "desc": "In ERPNext all projects are linked to Tasks, Timesheets, Expenses, Purchases, Budgets so you get a full view of your activities. Billing and Payroll is also deeply tied to projects making it easier for you to tie everything together.", "img": "/assets/erpnext_com/images/services/projects.png"},
-		{"title": "Billing and Invoicing", "desc": "Billing and receivables tracking in ERPNext helps you stay
-							on top of your finances. Project based accountings helps you get the
-							profitability of each project on your fingertip.", "img": "/assets/erpnext_com/images/services/invoice.png"},
-		{"title": "HR, Leave and Payroll", "desc": "Your employees can apply for leaves and claim expenses directly through ERPNext. All of this is seamlessly integrated with your payroll and accounting. ERPNext also helps you manage recruiting, appraisals, trainings and much more.", "img": "/assets/erpnext_com/images/services/hr.png"},
-		{"title": "CRM and Sales", "desc": "With a fully integrated sales management system, you can track Leads,
-							Opportunities, send Quotes, manage Orders and fulfilment in ERPNext.
-							You can set alerts and send email directly from the system so that
-							you can close more deals.", "img": "/assets/erpnext_com/images/services/crm.png"},
-		{"title": "Helpdesk and Support", "desc": "By linking your incoming support emails to ERPNext, you can keep track
-							of open issues across projects and make sure your customers are happy
-							by answering on time. You can also create help articles and build
-							a support portal that will make your customers get what
-							they need even faster.", "img": "/assets/erpnext_com/images/services/support.png"}
-	
-	] %}
-
-	{% if features -%}
-			{%- for feature in features -%}
-				<div class="container-fluid bg-white section-block {{ loop.cycle('bg-white', 'bg-gray') }}">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-6 {{ loop.cycle('', 'col-sm-push-6') }}">
-								<h2 class="h2">{{ feature.title }}</h2>
-								<p class="p">{{ feature.desc }}</p>
-							</div>
-							<div class="col-sm-6 {{ loop.cycle('', 'col-sm-pull-6') }}">
-								<img src="{{ feature.img }}" class="img-responsive" alt="erpnext screen" />
-							</div>
-						</div>
-					</div>
-				</div>
-			{%- endfor %}
-	{%- endif %}
-
-{% endmacro %}
-
 {% macro testimonials() %}
 	{% set testomonial_data = [
 		{"title": "I am blown away by ERPNext", "desc": "I've been spending the past few days scouring the entire Internet looking for small business ERPs.I'm a professional accountant with SAP experience and I've been trying out demos of various ERP products <br/> <br/> I have to say I am blown away by ERPNext. It's ridiculously fast, extremely simple, incredible functionalities in all areas imaginable, etc. And then I see the price and I'm scratching my head. <br/> <br/>This seems too good to be true and I'm pretty much done analysing at this point.", "customer_img": "/assets/erpnext_com/images/services/user.png","customer_name":"Raphael D. Groulx"},
@@ -44,7 +5,7 @@
 	
 	] %}
 
-	{% if testimonials -%}
+	{% if testimonial_data -%}
 			{%- for testimonial in testimonial_data -%}
 				<div class="container-fluid section-block {{ loop.cycle('bg-gray', 'bg-whilte') }}">
 					<div class="container">
