@@ -1,0 +1,157 @@
+{% extends "frappe/templates/base.html" %}
+{% from "erpnext_com/templates/includes/macros.html" import hero %}
+{% from "erpnext_com/templates/includes/macros.html" import feature %}
+
+{% block title %}ERP for Service Business{% endblock %}
+
+{% block head_include %}
+	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+		<div class="container-fluid bg-white padd-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						{{ hero("ERP for Service Business") }}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-white section-block">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-sm-8">
+						<h2 class="text-center h2"> I am blown away by ERPNext</h2>
+						<p class="p">
+							I've been spending the past few days scouring the entire Internet looking for small business ERPs.I'm a professional accountant with SAP experience and I've been trying out demos of various ERP products
+
+						</p>
+						<p class="p">
+							I have to say I am blown away by ERPNext. It's ridiculously fast, extremely simple, incredible functionalities in all areas imaginable, etc. And then I see the price and I'm scratching my head.
+						</p>
+						<p class="p">
+							This seems too good to be true and I'm pretty much done analysing at this point.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p class="text-center">
+							<img src="/assets/erpnext_com/images/services/user.png" class="img-responsive img-circle testimonial-img" />
+						</p>
+						<p class="testimonial_name text-center">
+							 Raphael D. Groulx
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid bg-gray section-block">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-sm-8 col-sm-push-8">
+						<h2 class="text-center h2"> I am blown away by ERPNext</h2>
+						<p class="p">
+							I've been spending the past few days scouring the entire Internet looking for small business ERPs.I'm a professional accountant with SAP experience and I've been trying out demos of various ERP products
+
+						</p>
+						<p class="p">
+							I have to say I am blown away by ERPNext. It's ridiculously fast, extremely simple, incredible functionalities in all areas imaginable, etc. And then I see the price and I'm scratching my head.
+						</p>
+						<p class="p">
+							This seems too good to be true and I'm pretty much done analysing at this point.
+						</p>
+					</div>
+					<div class="col-sm-4 col-sm-pull-4">
+						<p class="text-center">
+							<img src="/assets/erpnext_com/images/services/user.png" class="img-responsive img-circle testimonial-img" />
+						</p>
+						<p class="testimonial_name text-center">
+							 Raphael D. Groulx
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<script>
+			frappe.ready(function(){
+				$(".hero-and-content .container:first").removeClass('container');
+
+				$(".toggle-sidebar").click(function(){
+					$(".navbar-nav").parent().toggleClass('show');
+				});
+
+				$(".view_module").click(function(e){
+					e.preventDefault();
+					$(this).hide();
+					$(".other_module").addClass('show');
+				});
+			})
+		</script>
+
+{% endblock %}
+
+{% block footer %}
+    <footer>
+        <div class="container">
+
+            <ul class="list-unstyled footer-list">
+                <li>
+                    <a href="https://erpnext.com">ERPNext</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io">Frappé</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io/blog">Blog</a>
+                </li>
+                <li>
+                    <a href="https://community.erpnext.com/service-providers">Services</a>
+                </li>
+                <li>
+                    <a href="https://erpnext.com/reseller">Reseller</a>
+                </li>
+                <li>
+                    <a href="https://discuss.erpnext.com">Forum</a>
+                </li>
+                <li>
+                    <a href="https://github.com/frappe">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io/about">About</a>
+                </li>
+                <li>
+                    <a href="https://frappe.io/about#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p>
+                    &copy;<span id="year"></span> Frappé Technologies Pvt. Ltd.
+                    Content licensed under
+                    <a class="underline" href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">
+						CC-BY-SA 3.0</a>. Read the <a href="https://erpnext.com/terms" class="underline">terms of use</a>.
+                </p>
+            </div>
+        </div>
+
+		<div class="row" style="padding-bottom: 50px;">
+			<div class="col-sm-12 text-center">
+				<p>
+				<b><a href="https://erpnext.com/conf/2017-eu" class="cl-blue">
+				Register for the ERPNext Conference Europe 2017 on March 17-18, Frankfurt
+				<i class="octicon octicon-arrow-small-right hidden-xs"></i>
+				</a></b>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+{% endblock %}
+
+
+
