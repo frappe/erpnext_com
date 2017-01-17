@@ -1,170 +1,176 @@
 {% from "erpnext_com/templates/includes/macros.html" import hero %}
-<div class="row text-center">
-    <div class="col-sm-12 page-padding" id="cloud">
-        {{ hero("Free for Solo Entrepreneurs") }}
-		<p class="lead">
-			Use all our features with 1 user and 150MB space.<br>
-			<a class="grey" href="https://discuss.erpnext.com" target="_blank">Supported by a community</a> over 2500 members strong.
-			<br>
-			Switch to a premium plan anytime in-app.
-			<!-- With 500MB space and
-			<a class="grey" href="https://discuss.frappe.io" target="_blank">Community support</a> -->
-		</p>
-		<br>
-		<a class="large blue button" onclick="redirect_to_signup('signup', 'Free-Solo')">Sign Up</a>
-		<br><br>
-    </div>
 
-	<hr class="col-sm-12">
-	<div class="col-sm-12 erpnext-pricing page-padding">
-		<h1>Annual Pricing. Priority Support.</h1>
-		<p class="lead">Upgrade to a premium plan from for more users & storage, priority support,<br class="hidden-xs">
-			on-boarding help and automatic backups.
-		</p>
-		<br>
+{% block content %}
+<div class="container-fluid bg-white padd-0">
+	<div class="container">
+		<div class="row text-center">
+		    <div class="col-sm-12 page-padding" id="cloud">
+		        {{ hero("Free for Solo Entrepreneurs") }}
+				<p class="lead">
+					Use all our features with 1 user and 150MB space.<br>
+					<a class="grey" href="https://discuss.erpnext.com" target="_blank">Supported by a community</a> over 2500 members strong.
+					<br>
+					Switch to a premium plan anytime in-app.
+					<!-- With 500MB space and
+					<a class="grey" href="https://discuss.frappe.io" target="_blank">Community support</a> -->
+				</p>
+				<br>
+				<a class="large blue button" onclick="redirect_to_signup('signup', 'Free-Solo')">Sign Up</a>
+				<br><br>
+		    </div>
 
-		<div class="row text-center erpnext-paid-plans">
-			<div class="col-sm-3">
-				<div class="plan">
-					<p class="lead plan-users">5 users</p>
-					<p class="lead plan-space">5GB space</p>
-					<p class="lead plan-support">Functional Support</p>
-					<h2>$300/year</h2>
-                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P5')">
-                        Start Trial</a></p>
+			<hr class="col-sm-12">
+			<div class="col-sm-12 erpnext-pricing page-padding">
+				<h1>Annual Pricing. Priority Support.</h1>
+				<p class="lead">Upgrade to a premium plan from for more users & storage, priority support,<br class="hidden-xs">
+					on-boarding help and automatic backups.
+				</p>
+				<br>
+
+				<div class="row text-center erpnext-paid-plans">
+					<div class="col-sm-3">
+						<div class="plan">
+							<p class="lead plan-users">5 users</p>
+							<p class="lead plan-space">5GB space</p>
+							<p class="lead plan-support">Functional Support</p>
+							<h2>$300/year</h2>
+		                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P5')">
+		                        Start Trial</a></p>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="plan">
+							<p class="lead plan-users">25 users</p>
+							<p class="lead plan-space">10GB space</p>
+							<p class="lead plan-support">Functional Support</p>
+							<h2>$600/year</h2>
+		                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P25')">
+		                        Start Trial</a></p>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="plan">
+							<p class="lead plan-users">100 users</p>
+							<p class="lead plan-space">20GB space</p>
+							<p class="lead plan-support">Functional Support</p>
+							<h2>$1500/year</h2>
+		                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P100')">
+		                        Start Trial</a></p>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="plan">
+							<p class="lead plan-users">Unlimited users</p>
+							<p class="lead plan-space">50GB space</p>
+							<p class="lead plan-support">Functional Support</p>
+							<h2>$3000/year</h2>
+		                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P1000')">
+		                        Start Trial</a></p>
+						</div>
+					</div>
 				</div>
+
+				<p style="margin-top: 60px;">
+					<a class="small blue button" href="/pricing/payment">Payment Options</a>
+					<br>
+				</p>
+				<p class="description">
+		            <a href="/benefits" class="no-decoration" style="margin-bottom: 10px; display: inline-block">
+		                Why choose ERPNext Hosting?</a><br>
+					<a href="/compare" class="no-decoration">Compare with other applications</a>
+		        </p>
+				<br><br>
+
 			</div>
-			<div class="col-sm-3">
-				<div class="plan">
-					<p class="lead plan-users">25 users</p>
-					<p class="lead plan-space">10GB space</p>
-					<p class="lead plan-support">Functional Support</p>
-					<h2>$600/year</h2>
-                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P25')">
-                        Start Trial</a></p>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="plan">
-					<p class="lead plan-users">100 users</p>
-					<p class="lead plan-space">20GB space</p>
-					<p class="lead plan-support">Functional Support</p>
-					<h2>$1500/year</h2>
-                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P100')">
-                        Start Trial</a></p>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="plan">
-					<p class="lead plan-users">Unlimited users</p>
-					<p class="lead plan-space">50GB space</p>
-					<p class="lead plan-support">Functional Support</p>
-					<h2>$3000/year</h2>
-                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P1000')">
-                        Start Trial</a></p>
-				</div>
+		 <!-- <div class="row section support-plans-section">
+			<hr class="col-sm-12">
+		    <div class="col-sm-12 page-padding" id="vip">
+		        <h1>Paid Support for Self-Hosted</h1>
+				<p class="lead">
+					Functional support on your self hosted ERPNext instance.
+				</p>
+				<br>
+				<a class="large blue button" href="/pricing/support-for-self-hosted">Learn More</a>
+				<br><br>
+		    </div>
+
+
+
+		        <div class="col-sm-4 small-content support-plans" style="text-align: left;">
+		            <h1 id="support">Support Plans</h1>
+		            <div>
+		                <a href="/pricing/single-server">Single Instance Server  - $1000/year</a>
+		                <p>Ideal for medium enterprises who manage their own servers and want full control of their data.</p>
+		            </div>
+
+		            <div>
+		                <a href="/pricing/multitenant-server">Multitenant Server - $3000/year</a>
+		                <p>Ideal for software vendors who want to provide ERPNext services to their customers.</p>
+		            </div>
+		        </div>
+
+		        <div class="col-sm-4 small-content support-plans" style="text-align: left;">
+		            <h1 id="training">Implementation</h1>
+
+		            <div>
+		                <a href="/express-implementation">Express Implementation - $5000</a>
+		                <p>We will spend upto 50 hours over one month with you to help you migrate your enterprise to ERPNext.</p>
+		            </div>
+
+		            <div>
+		                <a href="/pricing/developer-training">Developer Training - $1500</a>
+		                <p>Ideal for companies that want to build in-house capabilities in developing, extending and customizing ERPNext.</p>
+		            </div>
+
+		        </div>
+
+		        <div class="col-sm-4 small-content support-plans" style="text-align: left;">
+		            <h1 id="consult">Consulting</h1>
+
+		            <div>
+		                <a href="/pricing/assisted-development">Assisted Development - $5000/year</a>
+		                <p>Developer training, design and code review and deployment support for your ERPNext customizations.</p>
+		            </div>
+
+		            <div>
+		                <a href="/pricing/paid-feature-development">Paid Feature Development</a>
+		                <p>Missing a feature in ERPNext that you badly need? Jump up its priority by sponsoring the feature.</p>
+		            </div>
+
+		            <div>
+		                <a href="/pricing/migrations">Data Migrations</a>
+		                <p>Get help in importing your data into the ERPNext
+		                    Cloud or your own server (with Support Plan).</p>
+		            </div>
+
+		        </div>
+		    </div> -->
+
+			<hr class="col-sm-12">
+		    <div class="col-sm-12 page-padding" id="open-source">
+		        <h1>Self-Hosted</h1>
+				<p class="lead">
+					ERPNext is open source and licenced under GNU GPL v3.<br>
+					It's free to use on your own server.
+				</p>
+				<br>
+				<a class="large blue button" style="margin: 5px" href="https://github.com/frappe/erpnext" target="_blank">Github</a>
+				<a class="large blue button" style="margin: 5px" href="/download">Download VM</a>
+				<a class="large blue button" style="margin: 5px" href="https://github.com/frappe/bench" target="_blank">Install</a>
+				<br><br>
+					<a href="/pricing/functional-support-for-self-hosted"><b>Get priority support on your self-hosted instance</b></a>
+		    </div>
+
+			<hr class="col-sm-12">
+		    <div class="col-sm-12 page-padding">
+		        <h1>Paid Feature Development</h1>
+				<p class="lead">
+					Missing a feature in ERPNext that you badly need?<br> Jump up its priority by sponsoring the feature.
+				</p>
+				<br>
+				<a class="large blue button" style="margin: 5px" href="/pricing/paid-feature-development" target="_blank">Learn More</a>
 			</div>
 		</div>
-
-		<p style="margin-top: 60px;">
-			<a class="small blue button" href="/pricing/payment">Payment Options</a>
-			<br>
-		</p>
-		<p class="description">
-            <a href="/benefits" class="no-decoration" style="margin-bottom: 10px; display: inline-block">
-                Why choose ERPNext Hosting?</a><br>
-			<a href="/compare" class="no-decoration">Compare with other applications</a>
-        </p>
-		<br><br>
-
-	</div>
- <!-- <div class="row section support-plans-section">
-	<hr class="col-sm-12">
-    <div class="col-sm-12 page-padding" id="vip">
-        <h1>Paid Support for Self-Hosted</h1>
-		<p class="lead">
-			Functional support on your self hosted ERPNext instance.
-		</p>
-		<br>
-		<a class="large blue button" href="/pricing/support-for-self-hosted">Learn More</a>
-		<br><br>
-    </div>
-
-
-
-        <div class="col-sm-4 small-content support-plans" style="text-align: left;">
-            <h1 id="support">Support Plans</h1>
-            <div>
-                <a href="/pricing/single-server">Single Instance Server  - $1000/year</a>
-                <p>Ideal for medium enterprises who manage their own servers and want full control of their data.</p>
-            </div>
-
-            <div>
-                <a href="/pricing/multitenant-server">Multitenant Server - $3000/year</a>
-                <p>Ideal for software vendors who want to provide ERPNext services to their customers.</p>
-            </div>
-        </div>
-
-        <div class="col-sm-4 small-content support-plans" style="text-align: left;">
-            <h1 id="training">Implementation</h1>
-
-            <div>
-                <a href="/express-implementation">Express Implementation - $5000</a>
-                <p>We will spend upto 50 hours over one month with you to help you migrate your enterprise to ERPNext.</p>
-            </div>
-
-            <div>
-                <a href="/pricing/developer-training">Developer Training - $1500</a>
-                <p>Ideal for companies that want to build in-house capabilities in developing, extending and customizing ERPNext.</p>
-            </div>
-
-        </div>
-
-        <div class="col-sm-4 small-content support-plans" style="text-align: left;">
-            <h1 id="consult">Consulting</h1>
-
-            <div>
-                <a href="/pricing/assisted-development">Assisted Development - $5000/year</a>
-                <p>Developer training, design and code review and deployment support for your ERPNext customizations.</p>
-            </div>
-
-            <div>
-                <a href="/pricing/paid-feature-development">Paid Feature Development</a>
-                <p>Missing a feature in ERPNext that you badly need? Jump up its priority by sponsoring the feature.</p>
-            </div>
-
-            <div>
-                <a href="/pricing/migrations">Data Migrations</a>
-                <p>Get help in importing your data into the ERPNext
-                    Cloud or your own server (with Support Plan).</p>
-            </div>
-
-        </div>
-    </div> -->
-
-	<hr class="col-sm-12">
-    <div class="col-sm-12 page-padding" id="open-source">
-        <h1>Self-Hosted</h1>
-		<p class="lead">
-			ERPNext is open source and licenced under GNU GPL v3.<br>
-			It's free to use on your own server.
-		</p>
-		<br>
-		<a class="large blue button" style="margin: 5px" href="https://github.com/frappe/erpnext" target="_blank">Github</a>
-		<a class="large blue button" style="margin: 5px" href="/download">Download VM</a>
-		<a class="large blue button" style="margin: 5px" href="https://github.com/frappe/bench" target="_blank">Install</a>
-		<br><br>
-			<a href="/pricing/functional-support-for-self-hosted"><b>Get priority support on your self-hosted instance</b></a>
-    </div>
-
-	<hr class="col-sm-12">
-    <div class="col-sm-12 page-padding">
-        <h1>Paid Feature Development</h1>
-		<p class="lead">
-			Missing a feature in ERPNext that you badly need?<br> Jump up its priority by sponsoring the feature.
-		</p>
-		<br>
-		<a class="large blue button" style="margin: 5px" href="/pricing/paid-feature-development" target="_blank">Learn More</a>
 	</div>
 </div>
 
@@ -187,3 +193,5 @@
 		window.location.href = url;
 	}
 </script>
+
+{% endblock %}
