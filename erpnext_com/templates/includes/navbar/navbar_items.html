@@ -1,3 +1,4 @@
+{#
 {% set is_schools = pathname=="schools" or pathname.startswith("schools/") %}
 {% if is_schools %}
 
@@ -8,6 +9,8 @@
 ] %}
 
 {% else %}
+
+#}
 
 {% set top_bar_items = [
 	{"label": "Industries", "child_items":[
@@ -23,7 +26,11 @@
 	
 ] %}
 
+{#
+
 {% endif %}
+
+#}
 
 {% if top_bar_items -%}
 <ul class="nav navbar-nav navbar-left">
