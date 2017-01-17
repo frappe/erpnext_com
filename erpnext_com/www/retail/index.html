@@ -10,17 +10,17 @@
 
 {% block content %}
 
-		<div class="container-fluid bg-white padd-0 border-top-1 border-bottom-1">
+		<div class="container-fluid bg-white padd-0 border-bottom-1">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
 						{{ hero("ERP for Retail Business") }}
 						<p class="lead">
 							Build a Profitable Business Using ERPNext </h1>
-						<p class="mar-t-50 mar-b-50">
+						<p class="mar-t-50 mar-b-0">
 							<a class="x-large blue-btn button later" href="/signup?plan=Free">Sign Up — Free for 1 User</a>
 						</p>
-						<p>
+						<p class="mar-b-50">
 							<a href="/pricing" class="cl-light-gray">See plans and pricing</a>
 						</p>
 						<div class="row">
@@ -125,11 +125,6 @@
 					$(".navbar-nav").parent().toggleClass('show');
 				});
 
-				$(".view_module").click(function(e){
-					e.preventDefault();
-					$(this).hide();
-					$(".other_module").addClass('show');
-				});
 			})
 		</script>
 
