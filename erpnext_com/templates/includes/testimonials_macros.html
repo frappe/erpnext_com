@@ -1,62 +1,52 @@
 {% macro testimonials() %}
 	{% set testimonialsdata = [
 		{
-			"title": "Amazing job with v7",
-			"desc":	 "The UI and UX are one of the most fluid and highly useable interfaces I have ever seen in an ERP. You make accounting fun (more or less ) Keep up the amazing work.", 
+			"desc":	 "<strong>Amazing job with v7</strong>, The UI and UX are one of the most fluid and highly useable interfaces I have ever seen in an ERP. You make accounting fun (more or less ) Keep up the amazing work.", 
 			"customer_img": "/assets/erpnext_com/images/services/user.png",
 			"customer_name":"Gladwyn Lewis"
 		},
 		{
-			"title": "impressed with the overall support and business model",
-			"desc":"We are customers of erpnext and i must say I am very impressed with the overall support and business model the team has implemented. ", 
+			"desc":"We are customers of erpnext and <strong>i must say I am very impressed with the overall support and business model the team has implemented.</strong> ", 
 			"customer_img": "/assets/erpnext_com/images/services/user.png",
 			"customer_name":"Aditya Iyer"
 		},
 		{
-			"title": "", 
-			"desc":"I’ve been both the system admin, champion, and developer for ERPNext within my organization for almost three years now, though! We really love the product and it seems to only be getting better every day! ", 
+			"desc":"I’ve been both the system admin, champion, and developer for ERPNext within my organization for almost three years now, though! <strong>We really love the product and it seems to only be getting better every day!</strong> ", 
 			"customer_img": "/assets/erpnext_com/images/services/user.png",
 			"customer_name":"Alec Ruiz-Ramon"
 		},
 		{
-			"title": "",
 			"desc": "For many years we have searched for a solution that aligns with our market strategy and that provides the essential building blocks to move forward with new technologies and demands for our growing markets. Our research led us to your company and your ERP solution ERPNext. Which we think has the best- integrated solution around that can be adapted to our markets, on point with the latest technology such as Cloud based, mobile ready among other points.", 
 			"customer_img": "/assets/erpnext_com/images/services/user.png",
 			"customer_name":"Sergio Alcántara (Mexico, Service Provider)"
 		},
 		{
-			"title": "",
-			"desc": "I am seriously very impressed with your people and your cause. WELL DONE! The world needs more people like you!", 
+			"desc": "<strong>I am seriously very impressed with your people and your cause.</strong> WELL DONE! The world needs more people like you!", 
 			"customer_img": "/assets/erpnext_com/images/services/user.png",
 			"customer_name":"Chris Koh"
 		},
 		{
-			"title": "",
-		    "desc": "Many ERP software have $$$ attached to them, and I too frequently see failed deployment because of that factor. Being open source and fully customizable, ERPNext position itself in a different league and, in my opinion, toward the future.", 
+			"desc": "Many ERP software have $$$ attached to them, and I too frequently see failed deployment because of that factor. Being open source and fully customizable, <strong>ERPNext position itself in a different league </strong> and, in my opinion, toward the future.", 
 		    "customer_img": "/assets/erpnext_com/images/services/user.png",
 		    "customer_name":"Bernard Lefebvre"
 		},
 		{
-			"title": "",
-			"desc":"I did an extensive search for a suitable package and after several months settled on ERPNext. I am very happy with the package, the subscription program and especially with the support team.
+			"desc":"I did an extensive search for a suitable package and after several months settled on ERPNext. <strong>I am very happy with the package</strong>, the subscription program and especially with the support team.
 You guys are great. I say this with several years of personal experience in the core team of the Joomla! open source project  - so I know what I see :-)", 
 			"customer_img": "/assets/erpnext_com/images/services/user.png",
 			"customer_name":"David Gal (Netvision, Israel)"
 		},
 		{
-			"title": "", 
-			"desc": "We (Square Cube for Marketing) started using ERPNext since the beginning of this year and i just want to say that it's an amazing piece of software with extraordinary details and we are very much appreciating every minute using it.", 
+			"desc": "We (Square Cube for Marketing) started using ERPNext since the beginning of this year and i just want to say that it's an amazing piece of software with extraordinary details and <strong>we are very much appreciating every minute using it.</strong>", 
 			"customer_img": "/assets/erpnext_com/images/services/user.png",
 			"customer_name":"Ahmed Mourad"
 		},
 		{
-			"title": "",
 			"desc": "First of all I want to say thanks for producing an erp software that actually made me say wow! a couple of times already.", 
 			"customer_img": "/assets/erpnext_com/images/services/user.png",
 			"customer_name":"Wolf-Dieter Grabner"
 		},
 		{
-			"title": "",
 			"desc": "Many ERP software have $$$ attached to them, and I too frequently see failed deployment because of that factor. Being open source and fully customizable, ERPNext position itself in a different league and, in my opinion, toward the future.", 
 			"customer_img": "/assets/erpnext_com/images/services/user.png",
 			"customer_name":"Bernard Lefebvre"
@@ -77,10 +67,10 @@ You guys are great. I say this with several years of personal experience in the 
 								
 							</div>
 							<div class="col-sm-4 {{ loop.cycle('', 'col-sm-pull-8') }}">
-								<p class="overflow-h {{ loop.cycle('text-right', 'text-left') }}">
+								<p class="overflow-h text-center">
 									<img src="{{ testimonial.customer_img }}" class="img-responsive img-circle testimonial-img {{ loop.cycle('testimonial-img-right', 'testimonial-img-left') }}" />
 								</p>
-								<p class="testimonial_name {{ loop.cycle('text-right', 'text-left') }}">
+								<p class="testimonial_name text-center">
 									 {{ testimonial.customer_name }}
 								</p>
 							</div>
