@@ -163,11 +163,11 @@
 				<div class="container-fluid bg-white section-block {{ loop.cycle('bg-white', 'bg-gray') }}">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-6 {{ loop.cycle('', 'col-sm-push-6') }}">
+							<div class="col-sm-12 text-center {{ loop.cycle('', 'col-sm-push-6') }}">
 								<h2 class="h2 text-capitalize">{{ feature.title }}</h2>
 								<p class="p">{{ feature.desc }}</p>
 							</div>
-							<div class="col-sm-6 {{ loop.cycle('', 'col-sm-pull-6') }}">
+							<div class="col-sm-12 text-center {{ loop.cycle('', 'col-sm-pull-6') }}">
 								<img src="{{ feature.img }}" class="img-responsive" alt="erpnext screen" />
 							</div>
 						</div>
