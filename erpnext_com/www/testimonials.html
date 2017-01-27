@@ -41,16 +41,6 @@
 		<script>
 			frappe.ready(function(){
 				$(".hero-and-content .container:first").removeClass('container');
-
-				$(".toggle-sidebar").click(function(){
-					$(".navbar-nav").parent().toggleClass('show');
-				});
-
-				$(".view_module").click(function(e){
-					e.preventDefault();
-					$(this).hide();
-					$(".other_module").addClass('show');
-				});
 			})
 		</script>
 
