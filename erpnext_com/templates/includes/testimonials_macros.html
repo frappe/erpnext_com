@@ -59,20 +59,16 @@ You guys are great. I say this with several years of personal experience in the 
 					<div class="container">
 						
 						<div class="row">
-							<div class="col-sm-8 testimonial-content {{ loop.cycle('', 'col-sm-push-4') }}">
+							<div class="col-sm-12 testimonial-content {{ loop.cycle('', 'col-sm-push-4') }}">
 								<p class="p">
 									{{ testimonial.desc }}
-								</p>
-								
-							</div>
-							<div class="col-sm-4 {{ loop.cycle('', 'col-sm-pull-8') }}">
-								<p class="overflow-h text-center">
-									<img src="{{ testimonial.customer_img }}" class="img-responsive img-circle testimonial-img {{ loop.cycle('testimonial-img-right', 'testimonial-img-left') }}" />
 								</p>
 								<p class="testimonial_name text-center">
 									 {{ testimonial.customer_name }}
 								</p>
+								
 							</div>
+							
 						</div>
 					</div>
 				</div>
