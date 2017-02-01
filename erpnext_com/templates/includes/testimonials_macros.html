@@ -2,54 +2,49 @@
 	{% set testimonialsdata = [
 		{
 			"desc":	 "<strong>Amazing job with v7</strong>, The UI and UX are one of the most fluid and highly useable interfaces I have ever seen in an ERP. You make accounting fun (more or less ) Keep up the amazing work.", 
-			"customer_img": "/assets/erpnext_com/images/services/user.png",
+			"customer_img": "/assets/erpnext_com/images/testimonials/gladwynlewis.jpg",
 			"customer_name":"Gladwyn Lewis"
 		},
 		{
 			"desc":"We are customers of erpnext and <strong>i must say I am very impressed with the overall support and business model the team has implemented.</strong> ", 
-			"customer_img": "/assets/erpnext_com/images/services/user.png",
+			"customer_img": "/assets/erpnext_com/images/testimonials/aditya.jpeg",
 			"customer_name":"Aditya Iyer"
 		},
 		{
 			"desc":"I’ve been both the system admin, champion, and developer for ERPNext within my organization for almost three years now, though! <strong>We really love the product and it seems to only be getting better every day!</strong> ", 
-			"customer_img": "/assets/erpnext_com/images/services/user.png",
+			"customer_img": "/assets/erpnext_com/images/testimonials/alec.jpg",
 			"customer_name":"Alec Ruiz-Ramon"
 		},
 		{
 			"desc": "For many years we have searched for a solution that aligns with our market strategy and that provides the essential building blocks to move forward with new technologies and demands for our growing markets. Our research led us to your company and your ERP solution ERPNext. Which we think has the best- integrated solution around that can be adapted to our markets, on point with the latest technology such as Cloud based, mobile ready among other points.", 
-			"customer_img": "/assets/erpnext_com/images/services/user.png",
-			"customer_name":"Sergio Alcántara, (Mexico, Service Provider)"
+			"customer_img": "/assets/erpnext_com/images/testimonials/sergio.jpg",
+			"customer_name":"Sergio Alcántara <br/>(Mexico, Service Provider)"
 		},
 		{
 			"desc": "<strong>I am seriously very impressed with your people and your cause.</strong> WELL DONE! The world needs more people like you!", 
-			"customer_img": "/assets/erpnext_com/images/services/user.png",
+			"customer_img": "/assets/erpnext_com/images/testimonials/chris-koh.jpg",
 			"customer_name":"Chris Koh"
 		},
 		{
 			"desc": "Many ERP software have $$$ attached to them, and I too frequently see failed deployment because of that factor. Being open source and fully customizable, <strong>ERPNext position itself in a different league </strong> and, in my opinion, toward the future.", 
-		    "customer_img": "/assets/erpnext_com/images/services/user.png",
+		    "customer_img": "/assets/erpnext_com/images/testimonials/bernard.jpg",
 		    "customer_name":"Bernard Lefebvre"
 		},
 		{
 			"desc":"I did an extensive search for a suitable package and after several months settled on ERPNext. <strong>I am very happy with the package</strong>, the subscription program and especially with the support team.
 You guys are great. I say this with several years of personal experience in the core team of the Joomla! open source project  - so I know what I see :-)", 
-			"customer_img": "/assets/erpnext_com/images/services/user.png",
-			"customer_name":"David Gal, (Netvision, Israel)"
+			"customer_img": "/assets/erpnext_com/images/testimonials/david_gale.jpg",
+			"customer_name":"David Gal <br/>(Netvision, Israel)"
 		},
 		{
 			"desc": "We (Square Cube for Marketing) started using ERPNext since the beginning of this year and i just want to say that it's an amazing piece of software with extraordinary details and <strong>we are very much appreciating every minute using it.</strong>", 
-			"customer_img": "/assets/erpnext_com/images/services/user.png",
+			"customer_img": "/assets/erpnext_com/images/testimonials/ahmed-mourad.jpg",
 			"customer_name":"Ahmed Mourad"
 		},
 		{
 			"desc": "First of all I want to say thanks for producing an erp software that actually made me say wow! a couple of times already.", 
-			"customer_img": "/assets/erpnext_com/images/services/user.png",
+			"customer_img": "/assets/erpnext_com/images/testimonials/wolf-dieter.jpg",
 			"customer_name":"Wolf-Dieter Grabner"
-		},
-		{
-			"desc": "Many ERP software have $$$ attached to them, and I too frequently see failed deployment because of that factor. Being open source and fully customizable, ERPNext position itself in a different league and, in my opinion, toward the future.", 
-			"customer_img": "/assets/erpnext_com/images/services/user.png",
-			"customer_name":"Bernard Lefebvre"
 		}
 	
 	] %}
@@ -59,16 +54,20 @@ You guys are great. I say this with several years of personal experience in the 
 					<div class="container">
 						
 						<div class="row">
-							<div class="col-sm-12 testimonial-content">
-								<p class="p text-center">
+							<div class="col-sm-8 testimonial-content {{ loop.cycle('', 'col-sm-push-4') }}">
+								<p class="p">
 									{{ testimonial.desc }}
+								</p>
+								
+							</div>
+							<div class="col-sm-4 {{ loop.cycle('', 'col-sm-pull-8') }}">
+								<p class="overflow-h text-center">
+									<img src="{{ testimonial.customer_img }}" class="img-responsive img-circle testimonial-img {{ loop.cycle('testimonial-img-right', 'testimonial-img-left') }}" />
 								</p>
 								<p class="testimonial_name text-center">
 									 {{ testimonial.customer_name }}
 								</p>
-								
 							</div>
-							
 						</div>
 					</div>
 				</div>
