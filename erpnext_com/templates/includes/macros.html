@@ -71,11 +71,7 @@
 
 	{% elif industry=="manufacturing" %}
 		{% set features = [
-			{
-				"title": "Sales + Purchase Management", 
-				"desc": "Make purchase requests for all materials required for production. Send automatically to concerned suppliers. Manage inventory of finished goods at the end of production and automatically link it to sales and accounting.", 
-				"img": "/assets/erpnext_com/images/manufacturing/manufacturing_sales.jpg"
-			},
+			
 			{
 				"title": "Bill of Materials", 
 				"desc": "Maintain the list of all materials and operations that are required in making your finished product. Assign cost to each material and get insights of the total cost of production. Be on top of the materials required during production in real time.", 
@@ -94,7 +90,12 @@
 			{
 				"title": "Production and Materials Planning", 
 				"desc": "ERPNExt helps you plan production and purchase of items for a period. With interlinked sales orders or material requests you can automatically generate production orders or purchase requests. Always be sure of having enough time and materials for production.", 
-				"img": "/assets/erpnext_com/images/manufacturing/manufacturing_productionplanning.jpg"
+				"img": "/assets/erpnext_com/images/manufacturing/manufacturing_productionplanning.png"
+			},
+			{
+				"title": "Sales + Purchase Management", 
+				"desc": "Make purchase requests for all materials required for production. Send automatically to concerned suppliers. Manage inventory of finished goods at the end of production and automatically link it to sales and accounting.", 
+				"img": "/assets/erpnext_com/images/manufacturing/manufacturing_sales.jpg"
 			}
 		
 		] %}
@@ -168,7 +169,7 @@
 								<h2 class="h2 text-capitalize">{{ feature.title }}</h2>
 								<p class="p">{{ feature.desc }}</p>
 							</div>
-							<div class="col-sm-12 text-center">
+							<div class="col-sm-12 text-center mar-t-40">
 								<img src="{{ feature.img }}" class="img-responsive" alt="erpnext screen" />
 							</div>
 						</div>
