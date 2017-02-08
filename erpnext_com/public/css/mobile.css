@@ -1,0 +1,13 @@
+.store-badge {
+    display: inline-block;
+}
+
+.store-badge.app-store {
+    width: 135px;
+}
+.store-badge.play-store {
+    width: 155px;
+}
+.erpnext-mobile-hero {
+    max-width: 650px;
+}
