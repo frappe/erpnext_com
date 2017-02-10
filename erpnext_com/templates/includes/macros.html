@@ -1,0 +1,73 @@
+{% macro hero(title, subtitle, image) %}
+<div class="container-fluid section-block">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1 class="main-heading">
+					{{ title }}</h1>
+				<p class="lead text-muted">
+					{{ subtitle }}</p>
+				<p class="mar-t-50 mar-b-0">
+					<a class="x-large blue-btn button later" href="/signup?plan=Free">
+						Sign Up — Free for 1 User</a>
+				</p>
+				<p class="mar-b-50">
+					<a href="/pricing" class="cl-light-gray">See plans and pricing</a>
+				</p>
+				<div class="mar-t-70">
+					<div>
+						<img class="img-responsive screenshot feature-image"
+							src="{{ image }}">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endmacro %}
+
+
+{% macro feature(detail) %}
+	<div class="container-fluid bg-white section-block feature-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2 class="h2 text-capitalize">{{ detail.title }}</h2>
+					<p class="p">{{ detail.desc }}</p>
+				</div>
+				<div class="col-sm-12 text-center mar-t-40">
+					<img src="{{ detail.img }}" class="screenshot img-responsive"
+						alt="erpnext screen" />
+				</div>
+			</div>
+		</div>
+	</div>
+{% endmacro %}
+
+{% macro testimonial(name, description, image) %}
+	<div class="container-fluid bg-gray section-block feature-section testimonial">
+		<div class="container">
+			<h2 class="text-center h2">Trusted by users across 150+ countries</h2>
+			<div class="row">
+				<div class="col-sm-8 testimonial-content">
+					<p class="p text-left">
+						{{ description }}
+					</p>
+
+				</div>
+				<div class="col-sm-4">
+					<p class="overflow-h text-center">
+						<img src="{{ image}}" class="img-responsive img-circle testimonial-img" />
+					</p>
+					<p class="testimonial_name text-center">
+						{{ name }}
+					</p>
+				</div>
+
+			</div>
+			<p class="text-center small">
+				<a class="button btn-link" href="/testimonials">Read more testimonials...</a>
+			</p>
+		</div>
+	</div>
+{% endmacro %}

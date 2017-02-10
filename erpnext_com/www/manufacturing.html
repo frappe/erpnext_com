@@ -1,0 +1,65 @@
+{% extends "frappe_theme/templates/base.html" %}
+{% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
+
+{% block title %}ERP for Manufacturing Business{% endblock %}
+
+{% block head_include %}
+	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	{{ hero("ERP for Manufacturers",
+		"Manage and Grow Your Manufacturing Unit with ERPNext", 			"/assets/erpnext_com/images/manufacturing/manufacturing-hero.png") }}
+
+	{{ feature({
+			"title": "Bill of Materials",
+			"desc": "Maintain the list of all materials and operations that are required in making your finished product. Assign cost to each material and get insights of the total cost of production. Be on top of the materials required during production in real time.",
+			"img": "/assets/erpnext_com/images/manufacturing/BOM.png"
+		})
+	}}
+
+	{{ feature({
+			"title": "Production Orders",
+			"desc": "Track the orders for production floor, automatically track material movements as ERPNext interlinks production orders, bill of materials and inventory. Track the progress with timesheets and record successful production by registering finished goods.",
+			"img": "/assets/erpnext_com/images/manufacturing/Production_Order.png"
+		})
+	}}
+
+	{{ feature({
+			"title": "Inventory Management",
+			"desc": "Easily manage multiple inventory locations. Track inventory levels per warehouse and update based on manual inspection. Batches, serial numbers, stock valuation and automated inventory accounting help you be on top of stock.",
+			"img": "/assets/erpnext_com/images/manufacturing/Stock_Summary.png"
+		})
+	}}
+
+	{{ feature({
+			"title": "Production and Materials Planning",
+			"desc": "ERPNExt helps you plan production and purchase of items for a period. With interlinked sales orders or material requests you can automatically generate production orders or purchase requests. Always be sure of having enough time and materials for production.",
+			"img": "/assets/erpnext_com/images/manufacturing/manufacturing_productionplanning.png"
+		})
+	}}
+
+	{{ feature({
+			"title": "Sales + Purchase Management",
+			"desc": "Make purchase requests for all materials required for production. Send automatically to concerned suppliers. Manage inventory of finished goods at the end of production and automatically link it to sales and accounting.",
+			"img": "/assets/erpnext_com/images/industries/purchase-order.png"
+		})
+	}}
+
+	{{ testimonial("Sonal Ramnathkar", "After evaluating a bunch of ERPs including TCS, Tally and many others, I finally found the right ERP for me furniture manufacturing startup. <strong>I love using ERPNext and recommend it to any disrete manufacturing company", "/assets/erpnext_com/images/testimonials/sonal.jpg") }}
+
+	{% include("erpnext_com/templates/includes/industry_footer.html") %}
+
+		<script>
+			frappe.ready(function(){
+				$(".hero-and-content .container:first").removeClass('container');
+
+				$(".toggle-sidebar").click(function(){
+					$(".navbar-nav").parent().toggleClass('show');
+				});
+
+			})
+		</script>
+
+{% endblock %}
+

@@ -1,0 +1,50 @@
+{% extends "frappe_theme/templates/base.html" %}
+{% from "erpnext_com/templates/includes/macros.html" import hero %}
+{% from "erpnext_com/templates/includes/testimonials_macros.html" import testimonials %}
+
+{% block title %}ERP for Service Business{% endblock %}
+
+{% block head_include %}
+	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+		<div class="container-fluid">
+			<div class="container">
+				<div class="row section-block">
+					<div class="col-md-12 text-center">
+						<h1>What Our Users Say About Us</h1>
+						<p class='lead text-muted'>Loved by more than 3000 companies across the world</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{{ testimonials() }}
+
+		<div class="container-fluid section-block feature-section">
+			<div class="container text-center">
+				<p class="lead">Trusted by more than 3000 companies across 150 countries.
+					<br>
+				</p>
+				<p>
+					<a class="x-large blue-btn button later" href="/signup?plan=Free">
+						Sign Up - Free for 1 User</a>
+				</p>
+				<p>
+					<a href="#" class="cl-light-gray">See plans and pricing</a>
+				</p>
+			</div>
+		</div>
+
+
+		<script>
+			frappe.ready(function(){
+				$(".hero-and-content .container:first").removeClass('container');
+			})
+		</script>
+
+{% endblock %}
+
+

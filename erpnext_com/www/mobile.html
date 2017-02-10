@@ -1,0 +1,58 @@
+{% extends "frappe_theme/templates/base.html" %}
+{% from "erpnext_com/templates/includes/macros.html" import hero %}
+
+{% block title %}ERPNext Mobile Apps{% endblock %}
+
+{% block head_include %}
+	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+	 <link href="/assets/erpnext_com/css/mobile.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+		<div class="container-fluid section-block" style="padding-bottom: 0px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h1>ERPNext Mobile Apps</h1>
+
+						<p class="lead">
+							ERPNext Mobile apps help you manage your business on the go
+						</p>
+
+						<div class="app-store-links">
+							<div class="store-badge app-store">
+								<a href="https://itunes.apple.com/in/app/erpnext/id1027318091?mt=8" target="_blank">
+									<img alt="Get in the App Store" src="/assets/erpnext_com/img/app-store-badge.svg"></a>
+							</div>
+							<div class="store-badge play-store">
+								<a href="https://play.google.com/store/apps/details?id=io.frappe.mobile&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank">
+									<img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"/></a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 mar-t-70">
+								<img class="img-responsive feature-image erpnext-mobile-hero" src="/assets/erpnext_com/images/erpnext-mobile-hero-cropped.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			frappe.ready(function(){
+				$(".hero-and-content .container:first").removeClass('container');
+
+				$(".toggle-sidebar").click(function(){
+					$(".navbar-nav").parent().toggleClass('show');
+				});
+
+			})
+		</script>
+
+{% endblock %}
+
+
+
+
+
