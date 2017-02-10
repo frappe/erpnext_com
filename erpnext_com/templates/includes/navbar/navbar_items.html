@@ -1,36 +1,17 @@
-{#
-{% set is_schools = pathname=="schools" or pathname.startswith("schools/") %}
-{% if is_schools %}
-
-{% set top_bar_items = [
-	{"label": "Pricing", "url": "/schools/pricing", "right":1},
-	{"label": "Features", "url": "/schools/features", "right":1},
-	{"label": "Docs", "url": "http://frappe.github.io/schools", "right":1},
-] %}
-
-{% else %}
-
-#}
-
 {% set top_bar_items = [
 	{"label": "Industries", "child_items":[
-											{"label": "Services", "url": "/services","right": 1},
-											{"label": "Manufacturing", "url": "/manufacturing","right": 1},
-											{"label": "Retail", "url": "/retail","right": 1},
-											{"label": "Distribution", "url": "/distribution","right": 1},
-											{"label": "Schools", "url": "/schools","right": 1}
-										], "right":1},
+		{"label": "Services", "url": "/services","right": 1},
+		{"label": "Manufacturing", "url": "/manufacturing","right": 1},
+		{"label": "Retail", "url": "/retail","right": 1},
+		{"label": "Distribution", "url": "/distribution","right": 1},
+		{"label": "Schools", "url": "/schools","right": 1}
+	], "right":1},
 	{"label": "Pricing", "url": "/pricing", "right":1},
-	{"label": "Resources", "url": "http://frappe.github.io/erpnext", "right":1},
-	{"label": "Blog", "url": "https://frappe.io/blog", "right": 1},
-	
+	{"label": "Manual", "url": "http://frappe.github.io/erpnext/user/manual/en/", "right":1,
+		"target": "target=_blank"},
+	{"label": "Blog", "url": "https://frappe.io/blog", "right": 1, "target":
+		"target=_blank"},
 ] %}
-
-{#
-
-{% endif %}
-
-#}
 
 {% if top_bar_items -%}
 <ul class="nav navbar-nav navbar-left">

@@ -1,4 +1,0 @@
-manufacturing
-distribution
-retail
-services

@@ -10,11 +10,12 @@
 
 {% block content %}
 
-		<div class="container-fluid bg-whie padd-0">
+		<div class="container-fluid">
 			<div class="container">
-				<div class="row">
+				<div class="row section-block">
 					<div class="col-md-12 text-center">
-						{{ hero("What Our Users Say About Us") }}
+						<h1>What Our Users Say About Us</h1>
+						<p class='lead text-muted'>Loved by more than 3000 companies across the world</p>
 					</div>
 				</div>
 			</div>
@@ -22,7 +23,7 @@
 
 		{{ testimonials() }}
 
-		<div class="container-fluid bg-white section-block">
+		<div class="container-fluid section-block feature-section">
 			<div class="container text-center">
 				<p class="lead">Trusted by more than 3000 companies across 150 countries.
 					<br>
@@ -37,7 +38,7 @@
 			</div>
 		</div>
 
-		
+
 		<script>
 			frappe.ready(function(){
 				$(".hero-and-content .container:first").removeClass('container');

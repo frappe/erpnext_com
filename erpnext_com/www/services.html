@@ -1,6 +1,5 @@
 {% extends "frappe_theme/templates/base.html" %}
-{% from "erpnext_com/templates/includes/macros.html" import hero %}
-{% from "erpnext_com/templates/includes/macros.html" import feature %}
+{% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
 
 {% block title %}ERP for Service Business{% endblock %}
 
@@ -9,121 +8,57 @@
 {% endblock %}
 
 {% block content %}
+	{{ hero("ERP for Services",
+		"Manage and Grow Your Firm with ERPNext", 			"/assets/erpnext_com/images/services/services-hero.png") }}
 
-		<div class="container-fluid bg-white padd-0 border-bottom-1">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						{{ hero("ERP for Service Business") }}
-						<p class="lead">
-							Build a Profitable Business Using ERPNext </h1>
-						<p class="mar-t-50 mar-b-0">
-							<a class="x-large blue-btn button later" href="/signup?plan=Free">Sign Up — Free for 1 User</a>
-						</p>
-						<p class="mar-b-50">
-							<a href="/pricing" class="cl-light-gray">See plans and pricing</a>
-						</p>
-						<div class="row">
-							<div class="col-md-12 mar-t-70">
-								<div class="fake-browser-frame">
-									<img class="img-responsive browser-image feature-image" src="/assets/erpnext_com/images/services/services-hero.png">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		{{ feature("service") }}
+	{{ feature({
+			"title": "Projects and Timesheets",
+			"desc": "In ERPNext all projects are linked to Tasks, Timesheets, Expenses, Purchases, Budgets so you get a full view of your activities. Billing and Payroll is also deeply tied to projects making it easier for you to tie everything together.",
+			"img": "/assets/erpnext_com/images/services/projects.png"
+		})
+	}}
 
 
-		<div class="container-fluid bg-gray section-block testimonial">
-			<div class="container">
-				<h2 class="text-center h2">Trusted by users across 150+ countries</h2>
-				<div class="row">
-					<div class="col-sm-8 testimonial-content">
-						<p class="p text-left">
-							After trying so many ERP's, <strong>what I liked is the completeness and ease of use of ERPnext. </strong> Other ERP’s are very hard to use and learn” At Alcon, people were used to working on traditional excel / word files. It was difficult to get everybody to use ERPNext, which was based on an open source platform; However, they came around when they saw a user-friendly interface.
+	{{ feature({
+			"title": "Billing and Invoicing",
+			"desc": "Billing and receivables tracking in ERPNext helps you stay
+							on top of your finances. Project based accountings helps you get the
+							profitability of each project on your fingertip.",
+			"img": "/assets/erpnext_com/images/services/invoice.png"
+		})
+	}}
 
-						</p>
-						
-					</div>
-					<div class="col-sm-4">
-								<p class="overflow-h text-center">
-									<img src="/assets/erpnext_com/images/testimonials/zel-ortiz.png" class="img-responsive img-circle testimonial-img" />
-								</p>
-								<p class="testimonial_name text-center">
-									 Ms. Zel Ortiz
-								</p>
-							</div>
-					
-				</div>
-				<p class="text-center mar-t-50">
-					<a class="button btn-link" href="/testimonials">Read more testimonials...</a>
-				</p>
-			</div>
-		</div>
+	{{ feature({
+			"title": "HR, Leave and Payroll",
+			"desc": "Your employees can apply for leaves and claim expenses directly through ERPNext. All of this is seamlessly integrated with your payroll and accounting. ERPNext also helps you manage recruiting, appraisals, trainings and much more.",
+			"img": "/assets/erpnext_com/images/services/hr.png"
+		})
+	}}
 
-		<div class="container-fluid bg-white section-block">
-			<div class="container">
-				<h2 class="text-center h2">ERPNext also includes</h2>
-				<div class="mar-t-50"></div>
-				<div class="row standard-features">
-					<div class="col-sm-6">
-						<p><span class='indicator green'>Role Based Access</p>
-						<p><span class='indicator green'>Field Level Customization</p>
-						<p><span class='indicator green'>Customized Print</p>
-						<p><span class='indicator green'>Email Integration</p>
-						<p><span class='indicator green'>Report Builder</p>
-						<p><span class='indicator green'>Shared Calendar</p>
-						<p><span class='indicator green'>Customer, Vendor Portal</p>
-						<p><span class='indicator green'>Downloadable Backups</p>
-						<p><span class='indicator green'>Payment Integration</p>
-					</div>
-					<div class="col-sm-6">
-						<p><span class='indicator green'>Workflow Engine</p>
-						<p><span class='indicator green'>Custom Fields</p>
-						<p><span class='indicator green'>Exensible Custom Scripts</p>
-						<p><span class='indicator green'>SMS Integration</p>
-						<p><span class='indicator green'>Gantt and Kanban View</p>
-						<p><span class='indicator green'>Email Alerts</p>
-						<p><span class='indicator green'>Finance Analytics</p>
-						<p><span class='indicator green'>Website and Web Forms</p>
-						<p><span class='indicator green'>Mobile App</p>
-					</div>
-				</div>
+	{{ feature({
+			"title": "CRM and Sales",
+			"desc": "With a fully integrated sales management system, you can track Leads,
+							Opportunities, send Quotes, manage Orders and fulfilment in ERPNext.
+							You can set alerts and send email directly from the system so that
+							you can close more deals.",
+			"img": "/assets/erpnext_com/images/industries/sales-analytics.png"
+		})
+	}}
 
-			</div>
-		</div>
+	{{ feature({
+			"title": "Helpdesk and Support",
+			"desc": "By linking your incoming support emails to ERPNext, you can keep track
+							of open issues across projects and make sure your customers are happy
+							by answering on time. You can also create help articles and build
+							a support portal that will make your customers get what
+							they need even faster.",
+			"img": "/assets/erpnext_com/images/services/support.png"
+		})
+	}}
 
-		<div class="container-fluid pricing-section">
-			<div class="container text-center">
-				<p class='lead'>Trusted by more than 3000 companies across 150 countries.
-					<br></p>
-				<p>
-					<a class="x-large blue-btn button later" href="/signup?plan=Free">
-						Sign Up - Free for 1 User</a>
-				</p>
-				<p>
-					<a href="/pricing" class="cl-light-gray">See plans and pricing</a>
-				</p>
-			</div>
-		</div>
+	{{ testimonial("Zel Ortiz", "After trying so many ERP's, <strong>what I liked is the completeness and ease of use of ERPnext. </strong> Other ERP’s are very hard to use and learn” At Alcon, people were used to working on traditional excel / word files. It was difficult to get everybody to use ERPNext, which was based on an open source platform; However, they came around when they saw a user-friendly interface.", "/assets/erpnext_com/images/testimonials/zel-ortiz.png") }}
 
-
-
-		<script>
-			frappe.ready(function(){
-				$(".hero-and-content .container:first").removeClass('container');
-
-				$(".toggle-sidebar").click(function(){
-					$(".navbar-nav").parent().toggleClass('show');
-				});
-
-			})
-		</script>
-
+	{% include("erpnext_com/templates/includes/industry_footer.html") %}
 {% endblock %}
 
 
