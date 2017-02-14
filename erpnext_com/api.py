@@ -63,7 +63,7 @@ def signup(full_name, email, subdomain, plan="Free", distribution="erpnext", res
 			<p>It may take a few minutes before you receive this email.
 			If you don't find it, please check your SPAM folder.</p>
 			<p>After verification, your account will be setup</p>
-			</div>""".format(email), indicator='blue')
+			</div>""".format(email))
 
 	elif status=='retry':
 		return {}
@@ -71,7 +71,7 @@ def signup(full_name, email, subdomain, plan="Free", distribution="erpnext", res
 	else:
 		# something went wrong
 		location = frappe.redirect_to_message(_('Something went wrong'),
-			'Please try again or drop an email to support@erpnext.com', indicator='red')
+			'Please try again or drop an email to support@erpnext.com')
 
 	return {
 		'location': location
