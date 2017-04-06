@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 import frappe
 from frappe import _
 from central.signup import signup as _signup
+from frappe.integrations.utils import get_checkout_url
 
 # TODO:
 # 1. send email to particpant and us
@@ -35,9 +36,9 @@ def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
 
 	#get controller for respecctive payment gateway
 	if currency == "inr":
-		from frappe.integrations.razorpay import get_checkout_url
+		payment_gateway = "Razorpay"
 	else:
-		from frappe.integrations.paypal import get_checkout_url
+		payment_gateway = "PayPal"
 
 	return get_checkout_url(**{
 		"amount": amount,
@@ -48,7 +49,8 @@ def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
 		"payer_email": email,
 		"payer_name": full_name,
 		"order_id": participant.name,
-		"currency": currency
+		"currency": currency,
+		"payment_gateway": payment_gateway
 	})
 
 @frappe.whitelist(allow_guest=True)
