@@ -1,48 +1,57 @@
+<!-- no-cache -->
 
-<div class="missing-domain-msg hidden text-center">
-	<p class="lead" style="font-size: 24px;"><span class="missing-domain text-primary"></span> does not exist</p>
-	<i class="octicon octicon-chevron-down mega-octicon" style="color: #36414C;"></i>
-</div>
-
-<h1 class="text-center">
-	Sign Up for
-	<span>ERPNext</span>
-	<br>
-	<span class="plan-message small">Free for 1 User</span>
-</h1>
-
-<br>
-<div class="container" style="max-width: 700px;">
-	<div class="row">
-		<div class="col-sm-offset-2 col-sm-8">
-			<form role="form">
-				<div class="form-group">
-					<input name="full_name" placeholder="Jane Doe" class="form-control" type="text">
-					<p class="help-block">Your First and Last Name <em>(will appear in your user id)</em></p>
-				</div>
-
-				<div class="form-group">
-					<input name="email" placeholder="jane_doe@example.com" class="form-control" type="text">
-					<p class="help-block">Your Email Address <em>(your login details will be emailed here)</em></p>
-				</div>
-
-				<div class="form-group">
-					<div class="input-group">
-						<input name="subdomain" placeholder="mycompany" class="form-control" type="text">
-						<span class="input-group-addon">.{{ signup_domain }}</span>
-					</div>
-					<p class="help-block">Your subdomain i.e.
-						https://<strong class="subdomain-help">mycompany</strong>.{{ signup_domain }}. <br>
-						Must contain only letters, no spaces, numbers or special characters.</p>
-				</div>
-
-				<br>
-				<div class="form-group text-center">
-					<a class="small blue button btn-request" type="button">Setup My Account</a>
-				</div>
-			</form>
-		</div>
+<div class="page-card">
+	<div class="missing-domain-msg hidden text-center">
+		<p class="lead" style="font-size: 24px;"><span class="missing-domain text-primary"></span> does not exist</p>
+		<i class="octicon octicon-chevron-down mega-octicon" style="color: #36414C;"></i>
 	</div>
+
+	<h1 class="text-center">
+		Sign Up for
+		<span>ERPNext</span>
+		<br>
+		<span class="plan-message small">Free for 1 User</span>
+	</h1>
+
+	<br>
+	<form class="signup-state-details" role="form">
+
+		<div class="form-group">
+			<p class="help-block">Your First and Last Name</p>
+			<input name="full_name" placeholder="Jane Doe" class="form-control" type="text">
+		</div>
+
+		<div class="form-group">
+			<p class="help-block">Your Email Address</p>
+			<input name="email" placeholder="jane_doe@example.com" class="form-control" type="text">
+			<p class="validation-message">Please enter a valid email address</p>
+		</div>
+
+		<div class="form-group">
+			<p class="help-block">Your Company Name <em></em></p>
+			<input name="company_name" placeholder="Best Builds" class="form-control" type="text">
+		</div>
+
+		<div class="form-group signup-subdomain">
+			<p class="help-block">Your Subdomain <em>(can only contain letters, numbers and hyphens.)</em></p>
+				<div class="input-group">
+					<input name="subdomain" placeholder="mycompany" class="form-control" type="text">
+					<span class="input-group-addon">.{{ signup_domain }}</span>
+				</div>
+				<div class="availability">
+					<span class="availability-status hidden"><i class="octicon octicon-check"></i><span></span></span>
+					<span class="availability-spinner text-muted hidden">Checking ...</span>
+				</div>
+			<p class="validation-message"></p>
+		</div>
+
+		<br>
+		<div class="form-group text-center">
+			<a class="small blue button btn-request" type="button">Setup My Account</a>
+		</div>
+
+	</form>
+
 </div>
 
 {% include "erpnext_com/templates/includes/google_conversion.html" %}
@@ -62,11 +71,72 @@
 
 <style>
 .form-group {
+	position: relative;
 	margin-bottom: 30px;
+}
+
+.form-group em {
+	font-size: 12px;
+}
+
+.hero-and-content {
+	background-color: #f5f7fa;
 }
 
 [data-html-block="header"] {
 	text-align: center;
 }
+
+.page-card {
+	max-width: 500px;
+    padding: 30px 40px;
+    margin: 20px auto;
+}
+
+.help-block {
+	margin-bottom: 5px;
+}
+
+.availability {
+	position: absolute;
+}
+
+.availability-status {
+	display: flex;
+    align-items: center;
+}
+
+.availability-status span {
+	font-size: 12px;
+}
+
+.availability-status i, .availability-spinner i {
+	margin: 5px;
+	font-size: 16px;
+}
+
+.validation-message {
+	display: none;
+	margin-top: 0px;
+    position: absolute;
+    font-size: 12px;
+}
+
+.invalid .validation-message{
+	color: #ffad58;
+	display: inherit;
+}
+
+.invalid input {
+	border-color: #ffad58;
+	background-color: #fffdf4;
+}
+
+.availability-spinner {
+	display: inline-block;
+
+}
+
+
 
 </style>

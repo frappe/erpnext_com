@@ -78,3 +78,7 @@ def signup(full_name, email, subdomain, plan="Free", distribution="erpnext", res
 	return {
 		'location': location
 	}
+
+@frappe.whitelist(allow_guest=True)
+def check_subdomain_availability(subdomain):
+	return frappe.db.exists('Bench Site', subdomain + '.erpnext.com')
