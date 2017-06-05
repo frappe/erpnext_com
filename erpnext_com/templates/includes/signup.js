@@ -5,27 +5,7 @@ setup_signup = function(page) {
 		var page = $('#page-signup,#page-signup-1');
 	}
 
-	const email_domains = {
-		"gmail": "https://mail.google.com/",
-		"yahoo": "https://mail.yahoo.com/"
-	}
-
 	let domain_input_flag = 0;
-
-	// page.find('.signup-state-details input').on('input change blur', function() {
-	// 	$btn = page.find('.btn-request');
-	// 	if(page.find('.invalid').length) {
-	// 		$btn.addClass('inactive');
-	// 		return;
-	// 	}
-	// 	page.find('.signup-state-details input').each(function(item) {
-	// 		if($(this).val().length === 0) {
-	// 			$btn.addClass('inactive');
-	// 		} else {
-	// 			$btn.removeClass('inactive');
-	// 		}
-	// 	});
-	// });
 
 	page.find('input[name="email"]').on('change', function() {
 		let email = $(this).val();
@@ -34,35 +14,7 @@ setup_signup = function(page) {
 		} else {
 			$(this).closest('.form-group').removeClass('invalid');
 		}
-	})
-
-	page.find('input[name="company_name"]').on('input', function() {
-		var $this = $(this);
-		clearTimeout($this.data('timeout'));
-		$this.data('timeout', setTimeout(function() {
-			// remove only problematic chars
-			let subdomain = $this.val().toLowerCase().replace(/[^a-z]/g, '');
-			if(subdomain.length === 0) return;
-
-			// Set only if not previously set by the user or domain empty
-			if(is_a_valid_subdomain(subdomain)[0] &&
-				(page.find('input[name="subdomain"]').val().length === 0 ||
-					domain_input_flag === 0)) {
-
-				check_if_available(subdomain, function(status) {
-					if(status) {
-						page.find('.signup-subdomain').removeClass('invalid');
-						page.find('input[name="subdomain"]').val(subdomain).trigger('change');
-						domain_input_flag = 0;
-
-						page.find('.availability-status i').addClass('octicon-check text-success');
-						page.find('.availability-status i').removeClass('octicon-x text-danger');
-						page.find('.availability-status').removeClass('hidden');
-					}
-				});
-			}
-		}, 500));
-	})
+	});
 
 	page.find('input[name="subdomain"]').on('input', function() {
 		domain_input_flag = 1;
@@ -70,71 +22,86 @@ setup_signup = function(page) {
 		clearTimeout($this.data('timeout'));
 		$this.data('timeout', setTimeout(function() {
 			let subdomain = $this.val();
-			if(subdomain.length === 0) return;
-			// $this.closest('.form-group').removeClass('invalid');
+			set_availability_status('empty');
+			if(subdomain.length === 0) {
+				return;
+			}
 
 			page.find('.availability-status').addClass('hidden');
-			var is_valid = is_a_valid_subdomain(subdomain);
-			if(is_valid[0]) {
-				$this.closest('.form-group').removeClass('invalid');
+			var [is_valid, validation_msg] = is_a_valid_subdomain(subdomain);
+			if(is_valid) {
+				// show spinner
 				page.find('.availability-spinner').removeClass('hidden');
 				check_if_available(subdomain, function(status) {
-					if(status) {
-						page.find('.availability-status i').removeClass('octicon-x text-danger');
-						page.find('.availability-status i').addClass('octicon-check text-success');
-
-						page.find('.availability-status').removeClass('text-danger');
-						page.find('.availability-status').addClass('text-success');
-						page.find('.availability-status span').html(`${subdomain}.erpnext.com is available!`);
-					} else {
-						page.find('.availability-status i').removeClass('octicon-check text-success');
-						page.find('.availability-status i').addClass('octicon-x text-danger');
-
-						page.find('.availability-status').removeClass('text-success');
-						page.find('.availability-status').addClass('text-danger');
-						page.find('.availability-status span').html(`${subdomain}.erpnext.com is already taken.`);
-					}
+					set_availability_status(status, subdomain);
+					// hide spinner
 					page.find('.availability-spinner').addClass('hidden');
-					page.find('.availability-status').removeClass('hidden');
 				});
 			} else {
-				$this.parent().siblings('.validation-message').html(is_valid[1]);
-				$this.closest('.form-group').addClass('invalid');
+				set_availability_status('invalid', subdomain, validation_msg);
 			}
 		}, 500));
-	})
+	});
+
+	function set_availability_status(is_available, subdomain, validation_msg) {
+		// reset
+		page.find('.availability-status').addClass('hidden');
+		page.find('.signup-subdomain').removeClass('invalid');
+
+		if(typeof is_available === 'string') {
+			if(is_available === 'empty') {
+				// blank state
+			} else if(is_available === 'invalid') {
+				// custom validation message
+				const form_control = page.find('.signup-subdomain').addClass('invalid');
+				form_control.find('.validation-message').html(validation_msg || '');
+			}
+			return;
+		}
+
+		page.find('.availability-status').removeClass('hidden');
+		if(is_available) {
+			// available state
+			page.find('.availability-status i').removeClass('octicon-x text-danger');
+			page.find('.availability-status i').addClass('octicon-check text-success');
+
+			page.find('.availability-status').removeClass('text-danger');
+			page.find('.availability-status').addClass('text-success');
+			page.find('.availability-status span').html(`${subdomain}.erpnext.com is available!`);
+		} else {
+			// not available state
+			page.find('.availability-status i').removeClass('octicon-check text-success');
+			page.find('.availability-status i').addClass('octicon-x text-danger');
+
+			page.find('.availability-status').removeClass('text-success');
+			page.find('.availability-status').addClass('text-danger');
+			page.find('.availability-status span').html(`${subdomain}.erpnext.com is already taken.`);
+		}
+	}
 
 	page.find('.btn-request').off('click').on('click', function() {
-		var args = {};
-		$.each(page.find("form input"), function(i, input) {
-			args[$(input).attr("name")] = $(input).val();
-		});
-		args["subdomain"] = args.subdomain.toLowerCase();
+		var args = Array.from(page.find('form input'))
+			.reduce(
+				(acc, input) => {
+					acc[$(input).attr('name')] = $(input).val();
+					return acc;
+				}, {});
+		args.subdomain = args.subdomain.toLowerCase();
 
-		//
-		// // all mandatory
-		// if(!(args.full_name && args.email && args.company && args.subdomain)) {
-		// 	frappe.msgprint("All fields are necessary. Please try again.");
-		// 	return false;
-		// }
+		// all mandatory
+		if(!(args.full_name && args.email && args.company_name && args.subdomain)) {
+			frappe.msgprint("All fields are necessary. Please try again.");
+			return false;
+		}
 
-		// // email is valid
-		// if(!valid_email(args.email)) {
-		// 	frappe.msgprint('Please enter a valid Email Address.');
-		// 	return false;
-		// }
-
-		// subdomain in one word
-		// if(args.subdomain.search(/^[a-z0-9][-a-z0-9]*[a-z0-9]$/)===-1) {
-		// 	frappe.msgprint("Sub-domain can only contain letters, numbers and hyphens. Please try again.");
-		// 	return false;
-		// }
-
-		// var MAX_LENGTH = 20;
-		// if(args.subdomain.length > MAX_LENGTH) {
-		// 	frappe.msgprint("Sub-domain can not have more than " + MAX_LENGTH + " characters.");
-		// 	return false;
-		// }
+		// validate inputs
+		const validations = Array.from(page.find('.form-group.invalid'))
+			.map(form_group => $(form_group).find('.validation-message').html());
+		// console.log(validations)
+		if(validations.length > 0) {
+			frappe.msgprint(validations.join("<br>"));
+			return;
+		}
 
 		// add plan to args
 		var plan = get_url_arg('plan');
@@ -150,7 +117,7 @@ setup_signup = function(page) {
 		var btn_html = $btn.html();
 		$btn.prop("disabled", true).html("Sending details...");
 
-        goog_report_conversion();
+		goog_report_conversion(); // eslint-disable-line
 
 		console.log("BEFORE SENDING");
 
@@ -170,23 +137,7 @@ setup_signup = function(page) {
 
 		}).always(function() {
 			$btn.prop("disabled", false).html(btn_html);
-		})
-
-		// Do directly on verification message page, not here
-
-		// var verification_msg = `We've sent an email to ${args.email}. Please `;
-		// Object.keys(email_domains).map(function(domain) {
-		// 	if(args.email.includes(domain)) {
-		// 		verification_msg += `login to <a href="${email_domains[domain]}">${domain}</a> and `;
-		// 	}
-		// });
-
-		// verification_msg += `follow the link to verify your account request.`;
-
-		// page.find('.signup-process-message').html(verification_msg);
-
-		// page.find('.signup-state-details').addClass("hidden");
-		// page.find('.signup-state-verification').removeClass("hidden");
+		});
 
 		return false;
 	});

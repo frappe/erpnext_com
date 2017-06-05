@@ -7,7 +7,7 @@
 	</div>
 
 	<h1 class="text-center">
-		Sign Up for
+		<span>Sign Up for</span>
 		<span>ERPNext</span>
 		<br>
 		<span class="plan-message small">Free for 1 User</span>
@@ -17,30 +17,30 @@
 	<form class="signup-state-details" role="form">
 
 		<div class="form-group">
-			<p class="help-block">Your First and Last Name</p>
+			<p class="help-block">Full Name</p>
 			<input name="full_name" placeholder="Jane Doe" class="form-control" type="text">
 		</div>
 
 		<div class="form-group">
-			<p class="help-block">Your Email Address</p>
+			<p class="help-block">Email Address</p>
 			<input name="email" placeholder="jane_doe@example.com" class="form-control" type="text">
 			<p class="validation-message">Please enter a valid email address</p>
 		</div>
 
 		<div class="form-group">
-			<p class="help-block">Your Company Name <em></em></p>
+			<p class="help-block">Company Name <em></em></p>
 			<input name="company_name" placeholder="Best Builds" class="form-control" type="text">
 		</div>
 
 		<div class="form-group signup-subdomain">
-			<p class="help-block">Your Subdomain <em>(can only contain letters, numbers and hyphens.)</em></p>
+			<p class="help-block">Subdomain <em>(can only contain letters, numbers and hyphens.)</em></p>
 				<div class="input-group">
 					<input name="subdomain" placeholder="mycompany" class="form-control" type="text">
 					<span class="input-group-addon">.{{ signup_domain }}</span>
 				</div>
 				<div class="availability">
 					<span class="availability-status hidden"><i class="octicon octicon-check"></i><span></span></span>
-					<span class="availability-spinner text-muted hidden">Checking ...</span>
+					<span class="availability-spinner text-extra-muted hidden" style="font-size: 12px;">checking...</span>
 				</div>
 			<p class="validation-message"></p>
 		</div>
