@@ -1,28 +1,15 @@
+{% extends "frappe_theme/templates/base.html" %}
 {% from "erpnext_com/templates/includes/macros.html" import hero %}
-<!-- title: Free and Open Source Cloud ERP - ERPNext -->
+{% block title %} Open Source Cloud ERP - ERPNext {% endblock %}
 
-<!-- Hero Section -->
-    <div class="row hero" style="padding-top: 30px; padding-bottom: 0px;">
-        <div class="col-sm-12 hero-content">
-           <h1 class="main-heading">ERP Made Simple</h1>
-            <p class="later lead text-muted">ERPNext helps you take
-                full control of your business.
-                <br class="hidden-xs">
-                    It is as powerful as it is easy to use.</p>
-            <a class="x-large blue button later mar-t-26" href="/signup?plan=Free">Sign Up &mdash; Free for 1 User</a>
-            <p class="description later">
-                <a class="no-decoration" href="/pricing">See plans and pricing</a>
-            </p>
-        </div>
+{% block head_include %}
+    <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+{% endblock %}
 
-        <div class="col-sm-12 later">
-			<div class="fake-browser-frame browser-image"
-				style="margin: 70px auto 0px auto; border-bottom: 0px;">
-	            <img src="/assets/erpnext_com/images/home.png" style="width: 800px;">
-			</div>
-        </div>
-    </div>
-    <!-- Content -->
+{% block content %}
+	{{ hero("ERP Made Simple",
+		"ERPNext helps you take full control of your business. <br> It is as powerful as it is easy to use", "/assets/erpnext_com/images/home.png", False)}}
+        
     <div class="group later">
         <div class="row section text-center">
             <div class="col-sm-12">
@@ -31,7 +18,7 @@
                     <p class="p">ERPNext covers all the features you need to run a small or medium business.</p>
                 </div>
                 <img src="/assets/erpnext_com/img/dashboard-shot.png" class="screenshot"
-					style="width: 600px;">
+                    style="width: 600px;">
             </div>
         </div>
     </div>
@@ -58,5 +45,6 @@
             <a href="/download">Download ERPNext free</a>
         </div>
     </div>
-
+    
+{% endblock %}
 

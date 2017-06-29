@@ -1,4 +1,4 @@
-{% macro hero(title, subtitle, image) %}
+{% macro hero(title, subtitle, image, enable_free_plan) %}
 <div class="container-fluid section-block">
 	<div class="container">
 		<div class="row">
@@ -7,13 +7,20 @@
 					{{ title }}</h1>
 				<p class="lead text-muted">
 					{{ subtitle }}</p>
-				<p class="mar-t-50 mar-b-0">
-					<a class="x-large blue-btn button later" href="/signup?plan=Free">
-						Sign Up — Free for 1 User</a>
-				</p>
-				<p class="mar-b-50">
-					<a href="/pricing" class="cl-light-gray">See plans and pricing</a>
-				</p>
+                {% if enable_free_plan %}
+                    <p class="mar-t-50 mar-b-0">
+                        <a class="x-large blue-btn button later" href="/signup?plan=Free">
+                            Sign Up — Free for 1 User</a>
+                    </p>
+                    <p class="mar-b-50">
+                        <a href="/pricing" class="cl-light-gray">See plans and pricing</a>
+                    </p>
+                {% else %}
+                    <p class="mar-t-50 mar-b-50">
+                        <a class="x-large blue-btn button later" href="/pricing">
+                            Start a free 30-day trial</a>
+                    </p>
+                {% endif %}
 				<div class="mar-t-70">
 					<div>
 						<img class="img-responsive screenshot feature-image"
