@@ -3,9 +3,27 @@
 {% block title %} Open Source Cloud ERP - ERPNext {% endblock %}
 
 {% block content %}
-	{{ hero("ERP Made Simple",
-		"ERPNext helps you take full control of your business. <br> It is as powerful as it is easy to use", "/assets/erpnext_com/images/home.png", False)}}
-        
+	<!-- {{ hero("ERP Made Simple",
+		"ERPNext helps you take full control of your business. <br> It is as powerful as it is easy to use", "/assets/erpnext_com/images/home.png", False)}} -->
+	<section class='hero text-center' style="padding-bottom: 0;">
+		<div class='text-center'>
+			<img src='/assets/erpnext_com/img/erpnext_com_illustration.png'
+				style='width: 700px; margin: -90px 0 -60px -32px;'>
+		</div>
+		<h1 style="font-size: 32px;"><span class="what">ERP</span> Made Simple</h1>
+		<p class='lead'>ERPNext helps you take full control of your business. <br> It is as powerful as it is easy to use</p>
+		<p class="mar-t-50 mar-b-50">
+			<a class="x-large blue-btn button later" href="/pricing" style="font-size: 20px;">
+			Start a free 30-day trial</a>
+		</p>
+		<!-- <div class="mar-t-70">
+			<div>
+				<img class="img-responsive screenshot feature-image"
+				src="/assets/erpnext_com/images/home.png">
+			</div>
+		</div> -->
+	</section>
+
 	<div class="group later">
 		<div class="row section text-center">
 			<div class="col-sm-12">
@@ -41,6 +59,39 @@
 			<a href="/download">Download ERPNext free</a>
 		</div>
 	</div>
-    
+
+	<script>
+		frappe.ready(function() {
+			var last = 0;
+			setInterval(function() {
+
+				var whats = ['ERP', 'Business', 'Accounting', 'Manufacturing', 'Operations',
+					'Inventory', 'CRM', 'Managing', 'Timesheets', 'Billing', 'Projects'];
+
+				var index = last;
+				while(index == last) {
+					index = parseInt(Math.random() * whats.length);
+				}
+
+				var what = whats[index];
+
+				var start = 0;
+				for(var i = 0; i < what.length; i++) {
+					var text = what.substr(0, i + 1);
+					start += 50 + Math.random() * 50;
+					show_text(text, start);
+				}
+
+
+			}, 3000)
+
+			function show_text(text, timeout) {
+				setTimeout(() => {
+					$('.what').text(text);
+				}, timeout)
+			}
+		})
+	</script>
+
 {% endblock %}
 
