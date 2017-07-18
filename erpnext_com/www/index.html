@@ -62,18 +62,25 @@
 
 	<script>
 		frappe.ready(function() {
+			var seen = [];
 			var last = 0;
 			setInterval(function() {
-
 				var whats = ['ERP', 'Business', 'Accounting', 'Manufacturing', 'Operations',
 					'Inventory', 'CRM', 'Managing', 'Timesheets', 'Billing', 'Projects'];
 
-				var index = last;
-				while(index == last) {
+				if(seen.length == whats.length) {
+					seen = []
+				}
+
+				var index = parseInt(Math.random() * whats.length);
+				while(seen.includes(index) || last == index) {
 					index = parseInt(Math.random() * whats.length);
 				}
 
 				var what = whats[index];
+
+				seen.push(index);
+				last = index;
 
 				var start = 0;
 				for(var i = 0; i < what.length; i++) {
