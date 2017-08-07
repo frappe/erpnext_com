@@ -8,7 +8,7 @@ Date: 1st April 2015
 
 ### Introduction
 
-Frappe Technologies Pvt Ltd is the publisher of "ERPNext" and offers hosting and support services for the same. The software is available under the GNU/GPL licenses and others as specified in the source code. This agreement is not about the software (which is available under the General Public License) but for the hosting and support services that are provided commercially.
+Frappé Technologies Pvt Ltd is the publisher of "ERPNext" and offers hosting and support services for the same. The software is available under the GNU/GPL licenses and others as specified in the source code. This agreement is not about the software (which is available under the General Public License) but for the hosting and support services that are provided commercially.
 
 ### 1. Scope
 
@@ -18,7 +18,7 @@ This agreement covers the terms under which you can use the free, trial or paid 
 
 Services: Hosting and support services offered by us
 You, Your: The subscriber or user of our services
-We, Us, Our: Frappe Technologies Pvt. Ltd. or services offered by Frappe Technologies Pvt Ltd
+We, Us, Our: Frappé Technologies Pvt. Ltd. or services offered by Frappé Technologies Pvt Ltd
 Confidential Information: Information that is given from one party to another that is reasonably understood to be confidential.
 
 ### 3. Services
@@ -49,7 +49,7 @@ We reserve the right to increase our price or change the pricing model as and wh
 
 We also reserve the right to change the resource allocated, number of users, or any such parameter for any of our free or paid plans as we see fit.
 
-Please note that ERPNext and Frappe Apps are Free and Open Source software and you are free to purchase hosting and support services from any other vendor or host it yourself at no cost.
+Please note that ERPNext and Frappé Apps are Free and Open Source software and you are free to purchase hosting and support services from any other vendor or host it yourself at no cost.
 
 ### 8. Backups
 
@@ -83,7 +83,7 @@ You can ask for your data for a period of 30 days after the termination. You wil
 
 This agreement is subject to change and we will update you via email incase we make any changes.
 
-Company: Frappe Technologies Pvt Ltd
+Company: Frappé Technologies Pvt Ltd
 
 Registered Address: D/324 Neelkanth Business Park, Vidyavihar West, Mumbai 400086
 

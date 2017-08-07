@@ -52,7 +52,7 @@
 			</tr>
 			<tr>
 				<td>Account Name (Beneficiary Name)</td>
-				<td>Frappe Technologies Pvt. Ltd.</td>
+				<td>Frappé Technologies Pvt. Ltd.</td>
 			</tr>
 			<tr>
 				<td>IFSC Code</td>
@@ -94,7 +94,7 @@
 			</tr>
 			<tr>
 				<td>Account Name (Beneficiary Name)</td>
-				<td>Frappe Technologies Pvt. Ltd.</td>
+				<td>Frappé Technologies Pvt. Ltd.</td>
 			</tr>
 			<tr>
 				<td>IFSC Code</td>
@@ -114,7 +114,7 @@
 		<tbody>
 			<tr>
 				<td width="30%">Payable To</td>
-				<td>Frappe Technologies Pvt. Ltd.</td>
+				<td>Frappé Technologies Pvt. Ltd.</td>
 			</tr>
 			<tr>
 				<td>Account Number</td>
@@ -127,7 +127,7 @@
 	<h4>Option C: Mail / Courier Us A Check</h4>
 	<p>You can send us your check by courier at:</p>
 	<p>
-		<b>Frappe Technologies Pvt Ltd.</b> <br>
+		<b>Frappé Technologies Pvt Ltd.</b> <br>
 		D - 324, Neelkanth Business Park, <br>
 		Next to Vidyavihar Station, <br>
 		Vidyavihar West, <br>

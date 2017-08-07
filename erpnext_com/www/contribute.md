@@ -7,7 +7,7 @@
 		<h4>Helping Users</h4>
 	</div>
 	<div class="col-md-8">
-		Our support process relies on enthusiastic contributors like you to help others get the most out of Frappe / ERPNext. Join the <a href="https://discuss.erpnext.com" target="_blank">Frappe.io forum</a> and start helping out.</a>
+		Our support process relies on enthusiastic contributors like you to help others get the most out of Frappé / ERPNext. Join the <a href="https://discuss.erpnext.com" target="_blank">Frappé.io forum</a> and start helping out.</a>
 	</div>
 </div>
 <hr>
@@ -34,7 +34,7 @@
 		<h4>Localization</h4>
 	</div>
 	<div class="col-md-8">
-		Get involved by <a href="https://translate.erpnext.com">translating Frappe, ERPNext and other projects in your language</a>. Also help us tell the world about how ERPNext is helping create better software for everyone by translating content our website.
+		Get involved by <a href="https://translate.erpnext.com">translating Frappé, ERPNext and other projects in your language</a>. Also help us tell the world about how ERPNext is helping create better software for everyone by translating content our website.
 	</div>
 </div>
 <hr>
@@ -43,7 +43,7 @@
 		<h4>Spread the Word</h4>
 	</div>
 	<div class="col-md-8">
-		Help us spread the word about how Frappe and ERPNext projects are helping create better software for everyone. Write / create a small video about your experiences using ERPNext and share it with the community.
+		Help us spread the word about how Frappé and ERPNext projects are helping create better software for everyone. Write / create a small video about your experiences using ERPNext and share it with the community.
 	</div>
 </div>
 <hr>
@@ -52,7 +52,7 @@
 		<h4>Documentation</h4>
 	</div>
 	<div class="col-md-8">
-		<a href="https://github.com/frappe/erpnext_com" target="_blank">ERPNext.com</a> and <a href="https://github.com/frappe/frappe_io" target="_blank">Frappe.io</a> is the hub for information about Frappe and ERPNext technologies. Help make our documentation better by writing new content, correcting existing material or translating content into new languages.
+		<a href="https://github.com/frappe/erpnext_com" target="_blank">ERPNext.com</a> and <a href="https://github.com/frappe/frappe_io" target="_blank">Frappé.io</a> is the hub for information about Frappé and ERPNext technologies. Help make our documentation better by writing new content, correcting existing material or translating content into new languages.
 	</div>
 </div>
 <hr>
@@ -70,7 +70,7 @@
 		<h4>Visual Design</h4>
 	</div>
 	<div class="col-md-8">
-		Usability and design are one of the key strengths of Frappe / ERPNext. We want to make it possible for artists to cover the web and people with designs inspired by ERPNext. Please join the <a href="https://discuss.erpnext.com" target="_blank">community</a> / <a href="https://github.com/frappe/erpnext/issues" target="_blank">GitHub</a> to discuss on how you can help us with design.
+		Usability and design are one of the key strengths of Frappé / ERPNext. We want to make it possible for artists to cover the web and people with designs inspired by ERPNext. Please join the <a href="https://discuss.erpnext.com" target="_blank">community</a> / <a href="https://github.com/frappe/erpnext/issues" target="_blank">GitHub</a> to discuss on how you can help us with design.
 	</div>
 </div>
 <hr>
