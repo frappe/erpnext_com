@@ -208,8 +208,8 @@ setup_signup = function(page) {
 	$('.domain-missing-msg').addClass("hidden");
 	if (query_params.domain) {
 		var subdomain = query_params.domain;
-		if (subdomain.indexOf(".{{ frappe.local.conf.domain }}")) {
-			subdomain = subdomain.replace(".{{ frappe.local.conf.domain }}", "");
+		if (subdomain.indexOf(".{{ signup_domain }}")) {
+			subdomain = subdomain.replace(".{{ signup_domain }}", "");
 		}
 		$('[name="subdomain"]').val(subdomain);
 
