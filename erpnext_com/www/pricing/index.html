@@ -1,4 +1,4 @@
-{% from "erpnext_com/templates/includes/macros.html" import hero %}
+{% from "erpnext_com/templates/includes/macros.html" import hero, render_plan %}
 
 <div class="container-fluid bg-white padd-0">
 	<div class="container">
@@ -22,55 +22,14 @@
 				<p class="p">Start with a <b>Free 30 day Trial</b> and upgrade to a <br>premium plan with more users & storage and priority support.<br class="hidden-xs">
 				</p>
 				<br>
-
 				<div class="row text-center erpnext-paid-plans">
-					<div class="col-sm-3">
-						<div class="plan">
-							<p class="lead plan-users">5 users</p>
-							<p class="lead plan-space">5GB space</p>
-							<p class="lead plan-space"> 5000 emails</p>
-							<p class="lead plan-support">Functional Support</p>
-							<h2>$299/year</h2>
-		                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P5-2017')">
-		                        Start Trial</a></p>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="plan">
-							<p class="lead plan-users">25 users</p>
-							<p class="lead plan-space">10GB space</p>
-							<p class="lead plan-space"> 10000 emails</p>
-							<p class="lead plan-support" >Functional Support</p>
-							<h2>$899/year</h2>
-		                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P25-2017')">
-		                        Start Trial</a></p>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="plan">
-							<p class="lead plan-users">50 users</p>
-							<p class="lead plan-space">15GB space</p>
-							<p class="lead plan-space"> 15000 emails</p>
-							<p class="lead plan-support">Functional Support</p>
-							<h2>$1499/year</h2>
-		                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P50-2017')">
-		                        Start Trial</a></p>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="plan">
-							<p class="lead plan-users">100 Users</p>
-							<p class="lead plan-space">20GB space</p>
-							<p class="lead plan-space"> 20000 emails</p>
-							<p class="lead plan-support">Functional Support</p>
-							<h2>$1999/year</h2>
-		                    <p><a class="small blue button" onclick="redirect_to_signup('signup', 'P100-2017')">
-		                        Start Trial</a></p>
-						</div>
-					</div>
+					{% for plan in plan_details %}
+						{{ render_plan( plan.name , plan.users, plan.emails, plan.space, plan.amount) }}
+					{% endfor %}
 				</div>
 
-				<p style="margin-top: 60px;">
+
+				<p style="margin-top: 20px;">
 					<a href="/pricing/payment"><b>Payment Options</b></a>
 					<br>
 				</p>

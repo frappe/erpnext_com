@@ -36,6 +36,7 @@
 .erpnext-paid-plans .plan {
 	border: 1px solid #e6e6e6;
 	border-radius: 4px;
+	margin-bottom: 40px;
 }
 
 .erpnext-paid-plans .plan .plan-title {
