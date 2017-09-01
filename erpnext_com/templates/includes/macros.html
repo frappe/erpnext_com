@@ -78,3 +78,18 @@
 		</div>
 	</div>
 {% endmacro %}
+
+{% macro  render_plan(plan_name, users, emails, space, price) %}
+	<div class="col-sm-3">
+		<div class="plan">
+			<p class="lead plan-users">{{ users }} users</p>
+			<p class="lead plan-space">{{ space }}GB space</p>
+			<p class="lead plan-space"> {{ emails }} emails</p>
+			<p class="lead plan-support">Functional Support</p>
+			<h2>$ {{ price }}/year</h2>
+				<p><a class="small blue button" onclick="redirect_to_signup('signup', '{{plan_name}}')">
+				Start Trial</a></p>
+		</div>
+	</div>
+{% endmacro %}
+
