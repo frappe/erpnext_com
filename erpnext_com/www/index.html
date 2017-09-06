@@ -31,8 +31,39 @@
 					<h1 class="h2">Accounting, Inventory <br class="visible-xs"> and Beyond</h1>
 					<p class="p">ERPNext covers all the features you need to run a small or medium business.</p>
 				</div>
-				<img src="/assets/erpnext_com/img/dashboard-shot.png" class="screenshot"
-				style="width: 600px;">
+				<div class="tabs">
+					<div class="tab active" data-target="image-1">
+						<div class="tab-box">
+							<span class='tab-label'>Items</span>
+						</div>
+					</div>
+					<div class="tab" data-target="image-2">
+						<div class="tab-box">
+							<span class='tab-label'>Customers</span>
+						</div>
+					</div>
+					<div class="tab" data-target="image-3">
+						<div class="tab-box">
+							<span class='tab-label'>Sales Invoice</span>
+						</div>
+					</div>
+					<div class="tab" data-target="image-4">
+						<div class="tab-box">
+							<span class='tab-label'>Material Request</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-content">
+					<img src="/assets/erpnext_com/images/home/new-item.gif"
+						class="img-responsive image-1">
+					<img src="/assets/erpnext_com/images/home/new-customer.gif"
+						class="img-responsive image-2 hidden">
+					<img src="/assets/erpnext_com/images/home/new-sales-inv.gif"
+						class="img-responsive image-3 hidden">
+					<img src="/assets/erpnext_com/images/home/new-material-req.gif" 						class="img-responsive image-4 hidden">
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -64,6 +95,14 @@
 
 	<script>
 		frappe.ready(function() {
+			$('.tab').click(function(){
+			  let to_hide = $('.tab.active').removeClass('active').attr('data-target');
+			  let to_show = $(this).addClass('active').attr('data-target');
+
+			  $('.' + to_hide).addClass('hidden');
+			  $('.' + to_show).removeClass('hidden');
+			});
+
 			var seen = [];
 			var last = 0;
 			setInterval(function() {
