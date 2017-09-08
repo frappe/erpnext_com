@@ -33,9 +33,21 @@
 	border-radius: 4px;
 */}
 
+.plan-head {
+	background-color: #f7fafc;
+	padding-top: 5px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.plan-head .bold {
+	font-size: 20px;
+}
+
 .erpnext-paid-plans .plan {
 	border: 1px solid #e6e6e6;
 	border-radius: 4px;
+	margin-bottom: 30px;
+	cursor: pointer;
 }
 
 .erpnext-paid-plans .plan .plan-title {
@@ -62,6 +74,12 @@
 
 .erpnext-paid-plans .small.blue.button {
 	margin: 5px;
+}
+
+.trial {
+	margin-bottom: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #e6e6e6;
 }
 
 @media (max-width: 767px) {
