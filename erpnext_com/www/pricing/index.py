@@ -12,6 +12,7 @@ def get_context(context):
 				where bp.is_an_upgrade=1 order by bpa.amount asc
 	''', as_dict=1):
 		plan['amount'] = cint(plan['amount'])
+		plan['space'] = cint(plan['space'])
 		plan_details.append(plan)
 
 	return {
