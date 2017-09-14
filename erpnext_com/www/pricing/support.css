@@ -5,7 +5,8 @@ b {
 .standard-features {
 	max-width: 500px;
 	margin: auto;
-	padding: 20px;
+	padding: 0px 20px;
+	margin-top: -60px;
 }
 
 .standard-features div {
