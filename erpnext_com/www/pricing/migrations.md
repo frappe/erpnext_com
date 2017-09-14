@@ -1,1 +1,1 @@
-<!-- redirect: /pricing/support-for-self-hosted -->
+<!-- redirect: /pricing/support-->

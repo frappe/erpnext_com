@@ -1,0 +1,13 @@
+b {
+	font-weight: 600;
+}
+
+.standard-features {
+	max-width: 500px;
+	margin: auto;
+	padding: 20px;
+}
+
+.standard-features div {
+	line-height: 1.8;
+}
