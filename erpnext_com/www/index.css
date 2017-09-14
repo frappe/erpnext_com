@@ -120,6 +120,12 @@
 	position:relative;
 }
 
+@media (max-width: 767px) {
+	.tab-content {
+		padding-top: 0px;
+	}
+}
+
 .tab-content img {
 	border-top:1px solid #ccc;
 }
