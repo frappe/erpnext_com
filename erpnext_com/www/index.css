@@ -237,11 +237,12 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	font-size: 1.2em;
-	margin-top: 0.2em;
+	margin-top: 0.25em;
 	max-width: calc(100% - 5em);
 	pointer-events: none;
   }
   .chrome-tabs .chrome-tab-close {
+	display: none;
 	position: absolute;
 	width: 1.4em;
 	height: 1.4em;

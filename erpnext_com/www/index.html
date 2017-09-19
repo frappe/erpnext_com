@@ -136,7 +136,6 @@
 			$(el).on('activeTabChange', ({ detail }) => {
 				const $tab = $(detail.tabEl);
 				const title = $tab.find('.chrome-tab-title').text();
-				console.log(title)
 				const image = tabs.find(tab => tab.title === title).image;
 
 				$('.tab-content img').hide();
