@@ -31,37 +31,46 @@
 					<h1 class="h2">Accounting, Inventory <br class="visible-xs"> and Beyond</h1>
 					<p class="p">ERPNext covers all the features you need to run a small or medium business.</p>
 				</div>
-				<div class="tabs">
-					<div class="tab active hidden-xs" data-target="image-1">
-						<div class="tab-box">
-							<span class='tab-label'>Items</span>
-						</div>
+
+				<div class="chrome-tabs" data-chrome-tabs-instance-id="0">
+					<div class="chrome-tabs-content">
+
 					</div>
-					<div class="tab hidden-xs" data-target="image-2">
-						<div class="tab-box">
-							<span class='tab-label'>Customers</span>
-						</div>
-					</div>
-					<div class="tab hidden-sm hidden-xs" data-target="image-3">
-						<div class="tab-box">
-							<span class='tab-label'>Sales Invoice</span>
-						</div>
-					</div>
-					<div class="tab hidden-sm hidden-xs" data-target="image-4">
-						<div class="tab-box">
-							<span class='tab-label'>Material Request</span>
-						</div>
-					</div>
+					<div class="chrome-tabs-bottom-bar" style="z-index: 3;"></div>
+					<!-- Styles to prevent flash after JS initialization -->
+					<style>
+						.chrome-tabs .chrome-tab {
+							width: 243px
+						}
+
+						.chrome-tabs .chrome-tab:nth-child(1) {
+							transform: translate3d(0px, 0, 0)
+						}
+
+						.chrome-tabs .chrome-tab:nth-child(2) {
+							transform: translate3d(229px, 0, 0)
+						}
+					</style>
+					<style>
+						.chrome-tabs[data-chrome-tabs-instance-id="0"] .chrome-tab:nth-child(1) {
+							transform: translate3d(0px, 0, 0)
+						}
+
+						.chrome-tabs[data-chrome-tabs-instance-id="0"] .chrome-tab:nth-child(2) {
+							transform: translate3d(229px, 0, 0)
+						}
+					</style>
 				</div>
 
 				<div class="tab-content">
 					<img src="/assets/erpnext_com/images/home/new-item.gif"
 						class="img-responsive image-1">
 					<img src="/assets/erpnext_com/images/home/new-customer.gif"
-						class="img-responsive image-2 hidden">
+						class="img-responsive image-2">
 					<img src="/assets/erpnext_com/images/home/new-sales-inv.gif"
-						class="img-responsive image-3 hidden">
-					<img src="/assets/erpnext_com/images/home/new-material-req.gif" 						class="img-responsive image-4 hidden">
+						class="img-responsive image-3">
+					<img src="/assets/erpnext_com/images/home/new-material-req.gif"
+						class="img-responsive image-4">
 				</div>
 
 			</div>
@@ -93,14 +102,45 @@
 		</div>
 	</div>
 
+	<script src="/assets/erpnext_com/js/draggabilly.js"></script>
+	<script src="/assets/erpnext_com/js/chrome-tabs.js"></script>
 	<script>
 		frappe.ready(function() {
-			$('.tab').click(function(){
-			  let to_hide = $('.tab.active').removeClass('active').attr('data-target');
-			  let to_show = $(this).addClass('active').attr('data-target');
 
-			  $('.' + to_hide).addClass('hidden');
-			  $('.' + to_show).removeClass('hidden');
+			var el = document.querySelector('.chrome-tabs')
+			window.chromeTabs = new ChromeTabs()
+			chromeTabs.init(el, {
+				tabOverlapDistance: 14,
+				minWidth: 45,
+				maxWidth: 243
+			});
+
+			let tabs = [
+				{ title: 'Items', image: '.image-1' },
+				{ title: 'Customers', image: '.image-2' },
+				{ title: 'Sales Invoice', image: '.image-3' },
+				{ title: 'Material Request', image: '.image-4' }
+			];
+
+			for (const tab of tabs) {
+				chromeTabs.addTab({
+					title: tab.title,
+					favicon: '/assets/frappe_theme/img/favicon.ico'
+				})
+			}
+
+			chromeTabs.setCurrentTab($('.chrome-tab:first-child').get(0));
+
+			$('.tab-content img').not(':first-child').hide();
+
+			$(el).on('activeTabChange', ({ detail }) => {
+				const $tab = $(detail.tabEl);
+				const title = $tab.find('.chrome-tab-title').text();
+				console.log(title)
+				const image = tabs.find(tab => tab.title === title).image;
+
+				$('.tab-content img').hide();
+				$('.tab-content').find(image).show();
 			});
 
 			var seen = [];
