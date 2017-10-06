@@ -79,11 +79,11 @@
 	</div>
 {% endmacro %}
 
-{% macro  render_plan(plan_name, users, emails, space, price) %}
+{% macro  render_plan(plan_name, users, emails, space, price, currency) %}
 	<div class='col-sm-3'>
 		<div class='plan' data-plan-name='{{ plan_name }}'>
 			<div class='top-section plan-head'>
-				<p class='bold'> $ {{ price }}/year </p>
+				<p class='bold'> {{ _('{0}/year').format(frappe.utils.fmt_money(price, precision=0, currency=currency)) }} </p>
 				<p><b> {{ users }} Users </b></p>
 			</div>
 			<p>Emails: {{ emails }}</p>
