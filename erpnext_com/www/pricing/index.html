@@ -24,7 +24,7 @@
 				<br>
 				<div class="row text-center erpnext-paid-plans">
 					{% for plan in plan_details %}
-						{{ render_plan( plan.name , plan.users, plan.emails, plan.space, plan.amount) }}
+						{{ render_plan( plan.name , plan.users, plan.emails, plan.space, plan.amount, plan.currency) }}
 					{% endfor %}
 				</div>
 
