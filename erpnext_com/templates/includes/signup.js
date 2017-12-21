@@ -198,12 +198,12 @@ setup_signup = function(page) {
 		$("header,footer").addClass("hidden");
 	}
 
-	if (['Free', 'Free-Solo'].indexOf(query_params.plan)!==-1) {
-		// keeping Free-Solo for backward compatibility
-		page.find(".plan-message").text("Free for 1 User");
-	} else {
-		page.find(".plan-message").text("Free 30-day Trial");
-	}
+	page.find(".plan-message").text("Free 30-day Trial");
+
+	// if (['Free', 'Free-Solo'].indexOf(query_params.plan)!==-1) {
+// 		// keeping Free-Solo for backward compatibility
+// 		page.find(".plan-message").text("Free for 1 User");
+// 	}
 
 	$('.domain-missing-msg').addClass("hidden");
 	if (query_params.domain) {
