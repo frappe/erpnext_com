@@ -174,7 +174,7 @@ setup_signup = function(page) {
 		setTimeout(function() {
 			frappe.call({
 				method: 'erpnext_com.api.check_subdomain_availability',
-				args: {subdomain: subdomain},
+				args: { subdomain: subdomain },
 				type: 'POST',
 				callback: function(r) {
 					if(!r.message) {

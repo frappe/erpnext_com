@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 import frappe
 from frappe import _
-from central.signup import signup as _signup
+from central.signup import signup as _signup, validate_subdomain
 from frappe.integrations.utils import get_checkout_url
 
 # TODO:
@@ -81,4 +81,10 @@ def signup(full_name, email, subdomain, plan=None, distribution="erpnext", res=N
 
 @frappe.whitelist(allow_guest=True)
 def check_subdomain_availability(subdomain):
-	return frappe.db.exists('Bench Site', subdomain + '.erpnext.com')
+	signup_domain = frappe.db.get_single_value('Central Settings', 'signup_domain') or frappe.local.conf.domain
+	try:
+		return validate_subdomain(subdomain)
+	except frappe.DuplicateEntryError:
+		frappe.local.message_log = []
+		return '{0}.{1}'.format(subdomain, signup_domain)
+
