@@ -1,0 +1,44 @@
+{% extends "frappe_theme/templates/base.html" %}
+{% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
+
+{% block title %}ERP for Non-Profit Organisations{% endblock %}
+
+{% block head_include %}
+	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	{{ hero("ERP for Non-Profits",
+		"People who change the world need the tools to do it! - NTEN", 			"/assets/erpnext_com/images/non-profit/non-profit-hero-linus.png", False) }}
+
+	{{ feature({
+			"title": "Chapters",
+			"desc": "Create local chapter of your organization and members to it. ",
+			"img": "/assets/erpnext_com/images/non-profit/chapter.png"
+		})
+	}}
+
+	{{ feature({
+			"title": "Donors",
+			"desc": "Maintain the list of donors helping you out in your efforts. Maintain the list of individuals as well as organizations.",
+			"img": "/assets/erpnext_com/images/non-profit/donors.png"
+		})
+	}}
+
+	{{ feature({
+			"title": "Volunteers",
+			"desc": "Maintain details of volunteers along with details like skillset and availability.",
+			"img": "/assets/erpnext_com/images/non-profit/volunteer.png"
+		})
+	}}
+
+	{{ feature({
+			"title": "Grants",
+            "desc": "Assess, approve, and disburse grants for applications made by seekers. Applicants can track the status of their grant applications on the website.",
+			"img": "/assets/erpnext_com/images/non-profit/grant-applications.png"
+		})
+	}}
+
+	{% include("erpnext_com/templates/includes/industry_footer.html") %}
+{% endblock %}
+
