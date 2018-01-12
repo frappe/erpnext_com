@@ -1,0 +1,53 @@
+{% extends "frappe_theme/templates/base.html" %}
+{% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
+
+{% block title %}VAT Ready ERP{% endblock %}
+
+{% block head_include %}
+	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	{{ hero("VAT Ready ERP",
+		"For UAE and Saudi Arabia Tax Requirement",
+		"/assets/erpnext_com/images/gcc-vat/hero.png", False) }}
+
+	{{ feature({
+			"title": "Chart of Accounts",
+			"desc": "Get tax accounts in the Chart of Accounts out-of-the-box tailored to your country's tax requirements.",
+			"img": "/assets/erpnext_com/images/gcc-vat/chart-of-accounts.png"
+		})
+	}}
+
+
+	{{ feature({
+		"title": "Tax Templates",
+		"desc": "Predefined Sales and Purchase Taxes templates, ready to apply VAT on your sales and purchase transactions.",
+		"img": "/assets/erpnext_com/images/gcc-vat/tax-template.png"
+		})
+	}}
+
+	{{ feature({
+			"title": "Customer and Company TRN",
+			"desc": "Assign Tax Registration Numbers (TRN) to your suppliers and customers.",
+			"img": "/assets/erpnext_com/images/gcc-vat/TRN-tax-id.png"
+		})
+	}}
+
+	{{ feature({
+		"title": "Sales Invoice",
+		"desc": "Issue VAT-compliant Sales Invoice to your customers in Simplified and/or Detailed formats.",
+		"img": "/assets/erpnext_com/images/gcc-vat/detailed.png"
+		})
+	}}
+
+	{{ testimonial("Konrad Schwitter, OfficeOne", 
+	"<strong>VAT is fully implemented!</strong> 
+	I want to thank you guys very much for all the support and patience you had with me.Once more I’m fully 
+	convinced with your leading edge product but even more important the people behind it.
+	", "/assets/erpnext_com/images/testimonials/konrad.png") }}
+
+
+	{% include("erpnext_com/templates/includes/industry_footer.html") %}
+{% endblock %}
+
