@@ -1,0 +1,52 @@
+{% extends "frappe_theme/templates/base.html" %}
+{% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
+
+{% block title %}ERP for Agriculture{% endblock %}
+
+{% block head_include %}
+	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	{{ hero("ERP for Agriculture",
+		"Fresh and Healthy, Like your Farm Produce", 			"/assets/erpnext_com/images/agriculture/agri-desk-hero.png", False) }}
+
+	{{ feature({
+			"title": "Land Unit",
+			"desc": "Accurately track and divide land units for micro-management.",
+			"img": "/assets/erpnext_com/images/agriculture/land-unit.png"
+		})
+	}}
+	
+	{{ feature({
+            "title": "Crop",
+			"desc": "Maintain the crop details along with the list of tasks associated with growing the crop.",
+			"img": "/assets/erpnext_com/images/agriculture/crop.png"
+		})
+	}}
+
+	{{ feature({
+			"title": "Crop Cycle",
+			"desc": "Track progress of your agricultural activities with expected calendar of activities.",
+			"img": "/assets/erpnext_com/images/agriculture/crop-cycle-gantt.png"
+		})
+	}}
+
+	
+	{{ feature({
+			"title": "Soil Analysis",
+			"desc": "Keep track of the overall health of your farm with plant, water, and soil analysis.",
+			"img": "/assets/erpnext_com/images/agriculture/soil-texture.png"
+		})
+	}}
+
+	{{ feature({
+			"title": "Disease Management and Control",
+			"desc": "Protect your crops from virus and pests. Maintain a list of remedies for common dieases which affect your produce.",
+			"img": "/assets/erpnext_com/images/agriculture/disease.png"
+		})
+	}}
+
+	{% include("erpnext_com/templates/includes/industry_footer.html") %}
+{% endblock %}
+
