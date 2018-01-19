@@ -1,0 +1,67 @@
+{% extends "frappe_theme/templates/base.html" %}
+{% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
+
+{% block title %}GST Ready ERP{% endblock %}
+
+{% block head_include %}
+	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	{{ hero("GST Ready ERP",
+		"Easy Filing of the Goods and Services Tax in India",
+		"/assets/erpnext_com/images/india/gst-tax-sales-invoice.png", False) }}
+
+
+	{{ feature({
+			"title": "Easy GST Return Filing",
+			"desc": "Get the GSTR-1 report (B2B & B2C) in ready-to-upload format. Upload the report directly on the GST portal.",
+			"img": "/assets/erpnext_com/images/india/GSTR-1.png"
+		})
+	}}
+
+		{{ feature({
+			"title": "GST Ready From The Get-Go",
+			"desc": "ERPNext is GST ready out-of-the-box with tons of in-built tax-templates, chart of accounts, HSN codes, reports, and print formats to assure full GST compliance from the beggining.",
+			"img": "/assets/erpnext_com/images/india/chart-of-accounts-gst-india.png"
+		})
+	}}	
+
+	{{ feature({
+			"title": "Create GST Compliant Invoices",
+			"desc": "Issue GST compliant invoices to customers and business in with print formats in line with the GST guidelines.",
+			"img": "/assets/erpnext_com/images/india/gst-pos-invoice.png"
+		})
+	}}	
+
+	{{ feature({
+		"title": "Find Item HSN Codes With Ease",
+		"desc": "14000+ HSN Codes readily available in ERPNext. In the Item, just type in the item name in the HSN field and the system will suggest the relevant HSN code.",
+		"img": "/assets/erpnext_com/images/india/hsn-code-copy.png"
+		})
+	}}
+
+	{{ feature({ 
+		"title": "Itemised Tax Breakup",
+		"desc": "Manage itemised taxation on items (0%, 5%, 12%, 18%, 28%) in the single transcation. In the Print Format, get tax breakup for each item HSN code-wise.",
+		"img": "/assets/erpnext_com/images/india/gst-tax-breakup.png"
+		})
+	}}
+
+	{{ feature({
+			"title": "Manage Multiple GSTIN for Single Customer/Supplier",
+			"desc": "With the GSTIN in the Address field, you can update GSTIN to each location of Customer/Supplier.",
+			"img": "/assets/erpnext_com/images/india/gstin-address.png"
+		})
+	}}
+
+	{{ feature({
+		"title": "Other GST Reports",
+		"desc": "Keep an eye on your transactions with a flurry of handy reports tailored for GST.",
+		"img": "/assets/erpnext_com/images/india/gst-other-reports.png"
+		})
+	}}
+
+	{% include("erpnext_com/templates/includes/industry_footer.html") %}
+{% endblock %}
+
