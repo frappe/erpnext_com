@@ -22,7 +22,6 @@ website_context = {
 	# ],
 	"hide_login": 1,
 	"favicon": "/assets/frappe_theme/img/favicon.ico",
-    "sitename": "erpnext"
 }
 
 # Includes in <head>
