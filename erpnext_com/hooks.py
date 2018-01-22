@@ -21,7 +21,7 @@ website_context = {
 	# 	{"label": "Blog", "url": "https://frappe.io/blog", "right":1},
 	# ],
 	"hide_login": 1,
-	"favicon": "/assets/frappe_theme/img/favicon.ico",
+	"favicon": "/assets/frappe_theme/img/favicon.ico"
 }
 
 # Includes in <head>
