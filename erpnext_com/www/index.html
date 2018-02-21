@@ -1,6 +1,13 @@
 {% extends "frappe_theme/templates/base.html" %}
 {% from "erpnext_com/templates/includes/macros.html" import hero %}
-{% block title %} Open Source Cloud ERP - ERPNext {% endblock %}
+{% block title %}Open Source Cloud ERP Software - ERPNext{% endblock %}
+
+{% block head_include %}
+    <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
+	<meta name="description" content="ERPNext is the world's top 100% open source ERP software. ERPNext supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare" />
+	<meta name="keywords" content="ERP Software, Cloud ERP, Open Source ERP, Accounting Software, Online ERP, Online Accounting, ERP for small business" />
+    <style>{% include "templates/includes/custom.css" %}</style>
+{% endblock %}
 
 {% block content %}
 	<!-- {{ hero("ERP Made Simple",
@@ -11,7 +18,7 @@
 				style='width: 700px;'>
 		</div>
 		<h1 class="hero-title"><span class="what">ERP</span> Made Simple</h1>
-		<p class='lead'>ERPNext helps you take full control of your business. <br> It is as powerful as it is easy to use</p>
+		<p class='lead'>The ERP Software that helps you take full control of your business. <br> ERPNext is both powerful and easy to use</p>
 		<p class="mar-t-50 mar-b-50">
 			<a class="x-large blue-btn button later" href="/pricing" style="font-size: 20px;">
 			Start a free 30-day trial</a>
