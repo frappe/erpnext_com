@@ -20,7 +20,7 @@
 .erp-feature {
 	padding: 50px 15px;
 	border-bottom: 1px solid #d1d8dd;
-	margin: 0px -15px;
+	margin: 0 -15px;
 }
 
 .feature-separator {
@@ -29,9 +29,19 @@
 }
 
 .erpnext-paid-plans {
+
 /*	border: 1px solid #d1d8dd;
 	border-radius: 4px;
-*/}
+*/
+}
+
+.plan {
+	height: 600px;
+}
+
+.plan .small {
+	font-size: 15px;
+}
 
 .plan-head {
 	background-color: #f7fafc;
@@ -41,13 +51,19 @@
 
 .plan-head .bold {
 	font-size: 20px;
+	font-weight: normal;
+	padding-top: 10px;
+}
+
+.plan-head h1 {
+	font-size: 40px;
+	margin-top: 0;
 }
 
 .erpnext-paid-plans .plan {
 	border: 1px solid #e6e6e6;
 	border-radius: 4px;
 	margin-bottom: 30px;
-	cursor: pointer;
 }
 
 .erpnext-paid-plans .plan .plan-title {
@@ -64,6 +80,27 @@
 	padding-bottom: 30px;
 }
 
+.bottom-section {
+	padding: 15px 30px 0 30px;
+	text-align: left;
+}
+
+.bottom-section .indicator {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.bottom-section .indicator::before {
+    margin: 0px 8px 1px 0px;
+}
+.main-heading {
+	margin-top:50px;
+}
+
+.erpnext-pricing {
+    padding-top: 100px;
+}
+/*
 .erpnext-paid-plans .plan h2 {
 	padding: 20px 0px;
 	border-top: 1px solid #e6e6e6;
@@ -72,14 +109,15 @@
 	background-color: #f7fafc;
 }
 
+*/
 .erpnext-paid-plans .small.blue.button {
 	margin: 5px;
 }
 
 .trial {
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	padding-top: 10px;
-	border-top: 1px solid #e6e6e6;
+	/*border-top: 1px solid #e6e6e6;*/
 }
 
 @media (max-width: 767px) {
