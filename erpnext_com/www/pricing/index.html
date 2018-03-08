@@ -16,8 +16,7 @@
 								<h1 class="h1">{{ plan.price }}</h1>
 								<p>{{ plan.info }}</p>
 							<div class="trial">
-								<button class="btn btn-primary"
-									onclick="redirect_to_signup('signup', 'P10-2018')"> Start Trial </button>
+								<button class="btn btn-primary" {{ plan.ctalink }}>{{ plan.cta }}</button>
 							</div>
 							</div>
 							<div class="bottom-section">
@@ -38,18 +37,17 @@
 					Why choose ERPNext Hosting?</a><br>
 				<a href="/compare" class="no-decoration">Compare with other applications</a>
 				</p>
-				<br><br>
-
+				</br></br>
+				<button class="btn btn-primary" onclick="window.location'/request-a-demo'">Request A Demo</button>
 			</div>
 		</div>
 	</div>
-
-	<script>
-		function redirect_to_signup(page, plan) {
-			var url = page + '?plan=' + plan;
-
-			// concat existing params to url
-			url = url + window.location.search.replace('?', '&');
-			window.location.href = url;
-		}
-	</script>
+</div>
+<script>
+	function redirect_to_signup(page, plan) {
+		var url = page + '?plan=' + plan;
+		// concat existing params to url
+		url = url + window.location.search.replace('?', '&');
+		window.location.href = url;
+	}
+</script>
