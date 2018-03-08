@@ -10,7 +10,8 @@ def get_context(context):
 		"All Domains",
 		"Auto-Upgrades",
 		"Automated Backups",
-		"Custom Domain"
+		"Custom Domain",
+		"Mobile App"
 		]
 
 	start_features = [
@@ -48,15 +49,15 @@ def get_context(context):
 		"price": "$ 125<span class=\"small\">/month</span>",
 		"info": "Billed Annually",
 		"cta": "Start Trial",
-		"ctalink": "onclick=\"redirect_to_signup('signup', 'P10-2018')\"",
+		"ctalink": "href='/signup?plan=P10-2018'",
 		"features": start_features + common_features
 		},
 
 		{"name": "Medium",
-		"price": "$ 800<span class=\"small\">/month</span>",
+		"price": "$ 800<span class='small'>/month</span>",
 		"info": "Billed Annually",
 		"cta": "Start Trial",
-		"ctalink":  "onclick=\"redirect_to_signup('signup', 'P100-2018')\"",
+		"ctalink": "href='/signup?plan=P100-2018'",
 		"features": medium_features + common_features + medium_extras
 		},
 
@@ -64,7 +65,7 @@ def get_context(context):
 		"price": "Custom",
 		"info": "Dedicated Server",
 		"cta": "Contact Us",
-		"ctalink": "onclick=\"window.location='https://frappe.io/about#contact'\";",
+		"ctalink": "href='/contact'",
 		"features": enterprise_features + common_features + enterprise_extras
 		}
 		]

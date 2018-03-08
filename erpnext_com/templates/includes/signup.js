@@ -187,7 +187,7 @@ setup_signup = function(page) {
 		}, 2000);
 	}
 
-	var query_params = get_query_params();
+	var query_params = frappe.utils.get_query_params();
 	if (!query_params.plan) {
 		// redirect to pricing page
 		var url = window.erpnext_signup.distribution=='schools' ? "/schools/pricing" : '/pricing';
