@@ -20,18 +20,20 @@
 .erp-feature {
 	padding: 50px 15px;
 	border-bottom: 1px solid #d1d8dd;
-	margin: 0px -15px;
+	margin: 0 -15px;
 }
 
 .feature-separator {
-/*	width: 50%;*/
-	margin: 0px auto 120px !important;
+	margin: 0 auto 120px !important;
 }
 
-.erpnext-paid-plans {
-/*	border: 1px solid #d1d8dd;
-	border-radius: 4px;
-*/}
+.plan {
+	height: 750px;
+}
+
+.plan .small {
+	font-size: 15px;
+}
 
 .plan-head {
 	background-color: #f7fafc;
@@ -41,13 +43,19 @@
 
 .plan-head .bold {
 	font-size: 20px;
+	font-weight: normal;
+	padding-top: 10px;
+}
+
+.plan-head h1 {
+	font-size: 40px;
+	margin-top: 0;
 }
 
 .erpnext-paid-plans .plan {
 	border: 1px solid #e6e6e6;
 	border-radius: 4px;
 	margin-bottom: 30px;
-	cursor: pointer;
 }
 
 .erpnext-paid-plans .plan .plan-title {
@@ -64,12 +72,26 @@
 	padding-bottom: 30px;
 }
 
-.erpnext-paid-plans .plan h2 {
-	padding: 20px 0px;
-	border-top: 1px solid #e6e6e6;
-	border-bottom: 1px solid #e6e6e6;
-	margin: 0px;
-	background-color: #f7fafc;
+.bottom-section {
+	padding: 15px 30px 0 30px;
+	text-align: left;
+}
+
+.bottom-section .indicator {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.bottom-section .indicator::before {
+	margin: 0 8px 1px 0;
+}
+
+.main-heading {
+	margin-top:50px;
+}
+
+.erpnext-pricing {
+	padding-top: 100px;
 }
 
 .erpnext-paid-plans .small.blue.button {
@@ -77,47 +99,46 @@
 }
 
 .trial {
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	padding-top: 10px;
-	border-top: 1px solid #e6e6e6;
 }
 
 @media (max-width: 767px) {
 	.erpnext-paid-plans .col-sm-3 {
-		margin: 20px 0px;
+		margin: 20px 0;
 	}
 }
 
 .support-plans p {
-	margin-top: 0px;
+	margin-top: 0;
 	margin-bottom: 20px;
 }
 
 .support-plans-section {
-	padding: 40px 0px !important;
+	padding: 40px 0 !important;
 }
 
 .support-plans {
-	padding: 0px 20px;
+	padding: 0 20px;
 }
 
 .compare-erpnext .table-responsive,
 .compare-erpnext .table-bordered,
 .compare-erpnext .table-bordered td,
 .compare-erpnext .table-bordered th {
-	border-color: #223B4F;
+	border-color: #223b4f;
 }
 
 .compare-erpnext td.c-yes {
-	background-color: #78E361;
+	background-color: #78e361;
 }
 
 .compare-erpnext td.c-no {
-	background-color: #FFB170;
+	background-color: #ffb170;
 }
 
 .compare-erpnext td.c-maybe {
-	background-color: #FFF348;
+	background-color: #fff348;
 }
 
 #page-terms,
@@ -142,15 +163,15 @@
 }
 
 #page-features .page-content {
-	padding: 0px;
+	padding: 0;
 }
 
 #page-version-5 .page-content {
-	padding-bottom: 0px;
+	padding-bottom: 0;
 }
 
 .small-content h4 {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 .benefits-check {
@@ -161,7 +182,7 @@
 }
 
 .article-style {
-	margin-top:0px;
+	margin-top:0;
 	margin-left: 20px;
 	max-width: 560px;
 	margin: auto;

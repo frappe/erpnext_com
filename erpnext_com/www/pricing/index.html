@@ -1,86 +1,51 @@
 {% from "erpnext_com/templates/includes/macros.html" import hero, render_plan %}
-
 <div class="container-fluid bg-white padd-0">
 	<div class="container">
-		<div class="row text-center">
-			<!--<div class="col-sm-12 page-padding" id="cloud">
-				<h1 class="h2">Free for Solo Entrepreneurs</h1>
-				<p class="lead">
-					Use all features with 1 User and 150MB Space.<br>
-					<a class="grey" href="https://discuss.erpnext.com" target="_blank">Supported by a community</a> over 2500 members strong.
-					<br>
-					Switch to a premium plan anytime in-app.
+		<div class="row">
+			<div class="col-sm-12 erpnext-pricing page-padding text-center">
+				<h1 class="main-heading">Take Full Control of Your Business</h1>
+				<p class="p">Start with a <b>Free 30 day Trial</b> now and upgrade to a <br>premium plan with more users & storage and priority support.<br class="hidden-xs">
 				</p>
 				<br>
-				<a class="large blue button" onclick="redirect_to_signup('signup', 'Free-Solo')">Sign Up</a>
-				<br><br>
-			</div>
-
-			<hr class="col-sm-12"> -->
-			<div class="col-sm-12 erpnext-pricing page-padding">
-				<h1 class="h2">Annual Pricing. Priority Support.</h1>
-				<p class="p">Start with a <b>Free 30 day Trial</b> and upgrade to a <br>premium plan with more users & storage and priority support.<br class="hidden-xs">
-				</p>
-				<br>
-				<div class="row text-center erpnext-paid-plans">
-					{% for plan in plan_details %}
-						{{ render_plan( plan.name , plan.users, plan.emails, plan.space, plan.amount) }}
+				<div class="row erpnext-paid-plans">
+					{% for plan in plans %}
+					<div class="col-sm-4">
+						<div class="plan">
+							<div class="top-section text-center plan-head">
+								<p class="bold">{{ plan.name }}</p>
+								<h1 class="h1">{{ plan.price }}</h1>
+								<p>{{ plan.info }}</p>
+							<div class="trial">
+								<a class="btn btn-primary" {{ plan.ctalink }}>{{ plan.cta }}</a>
+							</div>
+							</div>
+							<div class="bottom-section">
+								{% for feature in plan.features %}
+								<p><span class="indicator green">{{ feature }}</span></p>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
 					{% endfor %}
 				</div>
-
-
 				<p style="margin-top: 20px;">
-					<a href="/pricing/payment"><b>Payment Options</b></a>
-					<br>
+				<a href="/pricing/payment"><b>Payment Options</b></a>
+				<br>
 				</p>
 				<p class="description">
-		            <a href="/benefits" class="no-decoration" style="margin-bottom: 10px; display: inline-block">
-		                Why choose ERPNext Hosting?</a><br>
-					<a href="/compare" class="no-decoration">Compare with other applications</a>
-		        </p>
-				<br><br>
-
-			</div>
-		 	<div class="row section support-plans-section">
-			<hr class="col-sm-12">
-		    <div class="col-sm-12 page-padding">
-		        <h1 class="h2">Self-Hosted</h1>
-				<p class="p">
-					ERPNext is open source and licenced under GNU GPL v3.<br>
-					It's free to use on your own server.
+				<a href="/benefits" class="no-decoration" style="margin-bottom: 10px; display: inline-block">
+					Why choose ERPNext Hosting?</a><br>
+				<a href="/compare" class="no-decoration">Compare with other applications</a>
 				</p>
-				<br>
-				<a class="large blue button" style="margin: 5px" href="https://github.com/frappe/erpnext" target="_blank">Github</a>
-				<a class="large blue button" style="margin: 5px" href="/download">Download VM</a>
-				<a class="large blue button" style="margin: 5px" href="https://github.com/frappe/bench" target="_blank">Install</a>
-		    </div>
-			<hr class="col-sm-12">
-		    <div class="col-sm-12 page-padding">
-		        <h1 class="h2">Support for Self-Hosted</h1>
-				<p class="lead">
-					Installation, Upgrade and Functional support on your self hosted ERPNext instance.
-				</p>
-				<br>
-				<a class="large blue button" href="/pricing/support">Learn More</a>
-		    </div>
-
-			<hr class="col-sm-12">
-		    <div class="col-sm-12 page-padding">
-		        <h1 class="h2">Paid Feature Development</h1>
-				<p class="p">
-					Missing a feature in ERPNext that you badly need?<br> Jump up its priority by sponsoring the feature.
-				</p>
-				<br>
-				<a class="large blue button" style="margin: 5px" href="/pricing/paid-feature-development" target="_blank">Learn More</a>
+				</br></br>
+				<a class="btn btn-primary" href="https://frappe.erpnext.com/request-a-demo">Request A Demo</a>
 			</div>
 		</div>
 	</div>
 </div>
-
 <script>
 	function redirect_to_signup(page, plan) {
 		var url = page + '?plan=' + plan;
-
 		// concat existing params to url
 		url = url + window.location.search.replace('?', '&');
 		window.location.href = url;
