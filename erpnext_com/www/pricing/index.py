@@ -41,7 +41,7 @@ def get_context(context):
 		"Customisations",
 		"Custom Print Formats",
 		"Custom Reports",
-		"Feature Constibutions"
+		"Feature Contributions"
 		]
 
 	plans = [
@@ -50,7 +50,7 @@ def get_context(context):
 		"info": "Billed Annually",
 		"cta": "Start Trial",
 		"ctalink": "onclick=\"redirect_to_signup('signup', 'P10-2018')\"",
-		"features": start_features + common_features,
+		"features": start_features + common_features
 		},
 
 		{"name": "Medium",
