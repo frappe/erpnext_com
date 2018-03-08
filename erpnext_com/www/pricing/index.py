@@ -38,10 +38,9 @@ def get_context(context):
 
 	enterprise_extras = [
 		"Dedicated Engineer",
-		"Customisations",
 		"Custom Print Formats",
 		"Custom Reports",
-		"Feature Contributions"
+		"Feature Development"
 		]
 
 	plans = [
