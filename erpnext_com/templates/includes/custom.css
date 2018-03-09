@@ -28,7 +28,7 @@
 }
 
 .plan {
-	height: 750px;
+	height: 780px;
 }
 
 .plan .small {
@@ -198,4 +198,3 @@
 .page-container[data-path="proposals"] .page-header-actions-block {
 	margin-top: 20px;
 }
-
