@@ -17,30 +17,30 @@ def get_context(context):
 	start_features = [
 		"10 Users",
 		"10 GB Space",
-		"10,000 Emails",
+		"10,000 Emails"
 		]
 
 	medium_features = [
 		"100 Users",
 		"100 GB Space",
-		"100,000 Emails",
+		"100,000 Emails"
 		]
 
 	enterprise_features = [
 		"Unlimited Users",
 		"Unlimited Space",
-		"Unlimited Emails",
+		"Unlimited Emails"
 		]
 
 	medium_extras = [
-		"5 Custom Print Formats",
-		"5 Custom Reports"
+		"5 Custom Reports",
+		"5 Custom Print Formats"
 		]
 
 	enterprise_extras = [
-		"Dedicated Engineer",
-		"Custom Print Formats",
 		"Custom Reports",
+		"Custom Print Formats",
+		"Dedicated Engineer",
 		"Feature Development"
 		]
 
