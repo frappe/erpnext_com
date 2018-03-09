@@ -46,6 +46,7 @@
 
 .main-illustration {
 	margin: -90px 0 -60px -32px;
+	min-height: 420px;
 }
 
 .hero-title {
