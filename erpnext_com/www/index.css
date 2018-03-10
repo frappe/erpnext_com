@@ -53,6 +53,12 @@
 	font-size: 32px;
 }
 
+@media screen and (max-width: 750px) {
+	.main-illustration {
+		min-height: inherit;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	.main-illustration {
 		margin: -60px 0 -20px -16px;
