@@ -15,13 +15,15 @@ def get_context(context):
 		]
 
 	start_features = [
-		"10 Users",
-		"10 GB Space",
-		"10,000 Emails"
+		"5 Users",
+		"<span class='bold'>Add User at $12.5/month</span>",
+		"5 GB Space",
+		"5,000 Emails"
 		]
 
 	medium_features = [
 		"100 Users",
+		"<span class='bold'>Add User at $12.5/month</span>",
 		"100 GB Space",
 		"100,000 Emails"
 		]
@@ -46,10 +48,10 @@ def get_context(context):
 
 	plans = [
 		{"name": "Small",
-		"price": "$ 125<span class=\"small\">/month</span>",
+		"price": "$ 70<span class=\"small\">/month</span>",
 		"info": "Billed Annually",
 		"cta": "Start Trial",
-		"ctalink": "href='/signup?plan=P10-2018'",
+		"ctalink": "href='/signup?plan=P5-2018'",
 		"features": start_features + common_features
 		},
 
