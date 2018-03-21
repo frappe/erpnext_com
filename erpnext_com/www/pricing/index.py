@@ -51,7 +51,7 @@ def get_context(context):
 		"price": "$ 70<span class=\"small\">/month</span>",
 		"info": "Billed Annually",
 		"cta": "Start Trial",
-		"ctalink": "href='/signup?plan=P5-2018'",
+		"ctalink": "onclick=\"redirect_to_signup('signup', 'P5-2018')\"",
 		"features": start_features + common_features
 		},
 
@@ -59,7 +59,7 @@ def get_context(context):
 		"price": "$ 800<span class='small'>/month</span>",
 		"info": "Billed Annually",
 		"cta": "Start Trial",
-		"ctalink": "href='/signup?plan=P100-2018'",
+		"ctalink": "onclick=\"redirect_to_signup('signup', 'P100-2018')\"",
 		"features": medium_features + common_features + medium_extras
 		},
 
