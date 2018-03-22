@@ -15,7 +15,7 @@
 	</thead>
 	<tbody>
 		{% for plan in [
-			{"name": "5 users, 5GB space", "usd": "$ 840", "inr": "45,000"},
+			{"name": "5 users, 5GB space", "usd": "$ 840", "inr": "50,000"},
 			{"name": "100 users, 100GB space", "usd": "$ 10000", "inr": "6,50,000"},
 		] -%}
 			<!-- {% set inr = frappe.utils.fmt_money(
