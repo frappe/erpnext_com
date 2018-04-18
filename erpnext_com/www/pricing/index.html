@@ -4,70 +4,117 @@
 		<div class="row">
 			<div class="col-sm-12 erpnext-pricing page-padding text-center">
 				<h1 class="main-heading">Take Full Control of Your Business</h1>
-				<p class="p">Start with a <b>free 30 day trial</b> now and upgrade to a <br>premium plan with more users & storage and priority support.<br class="hidden-xs">
+				<p class="p">Start with a <b>free 30 day trial</b> now and upgrade to a <br>premium plan with more users &amp; storage and priority support.<br class="hidden-xs">
 				</p>
-				<br>
-				<div class="row erpnext-paid-plans">
-					{% for plan in plans %}
-					<div class="col-sm-4">
-						<div class="plan">
-							<div class="top-section text-center plan-head">
-								<p class="bold">{{ plan.name }}</p>
-								<h1 class="h1">{{ plan.price }}</h1>
-								<p>{{ plan.info }}</p>
-							<div class="trial">
-								<a class="btn btn-primary" {{ plan.ctalink }}>{{ plan.cta }}</a>
-							</div>
-							</div>
-							<div class="bottom-section">
-								{% for feature in plan.features %}
-								<p><span class="indicator green">{{ feature }}</span></p>
-								{% endfor %}
-							</div>
+				<hr class="col-sm-12">
+				<div class="col-sm-12 page-padding">
+					<h2 class="h2">Small &amp; Medium Business</h2>
+					<h2 class="h2">$12.5 <span class="small">/ user / month, paid annually</span></h2>
+					<div class="row text-left">
+						<div class="plan-detail col-sm-3">
+							<p><span class="indicator green"></span>5 Users</p>
+							<p><span class="indicator green"></span>5 GB Space</p>
+							<p><span class="indicator green"></span>Add User at $150/year</p>
+						</div>
+						<div class="plan-detail col-sm-3">
+							<p><span class="indicator green"></span>All Modules</p>
+							<p><span class="indicator green"></span>All Domains</p>
+							<p><span class="indicator green"></span>Auto-Upgrades</p>
+						</div>
+						<div class="plan-detail col-sm-3">
+							<p><span class="indicator green"></span>Automated Backups</p>
+							<p><span class="indicator green"></span>Custom Domain</p>
+							<p><span class="indicator green"></span>Mobile App</p>
+						</div>
+						<div class="plan-detail col-sm-3">
+							<p><span class="indicator green"></span>5000 Emails</p>
+							<p><span class="indicator green"></span>Priority Support</p>
+							<p><span class="indicator green"></span>Bug Fix Gaurantee</p>
 						</div>
 					</div>
-					{% endfor %}
+					<br>
+					<a class="large blue button" onclick="redirect_to_signup('signup', 'P5-2018')">Start Trial</a>
+					<br>
+					<p style="margin-top: 20px;">
+						<a class="text-center" href="https://frappe.erpnext.com/request-a-demo"><b>Request A Demo</b></a>
+					</p>
 				</div>
-				<p style="margin-top: 20px;">
-				<a href="/pricing/payment"><b>Payment Options</b></a>
-				<br>
-				</p>
-				<p>
-				<a href="/benefits" style="margin-bottom: 10px; display: inline-block">
-					<b>Why choose ERPNext Hosting?</b>
-				</a>
-				<br>
-				<a href="/compare">
-					<b>Compare with other applications</b>
-				</a>
-				</p>
-				</br></br>
-				<a class="large blue button" href="https://frappe.erpnext.com/request-a-demo">Request A Demo</a>
-			</div>
-			<hr class="col-sm-12">
-			<div class="col-sm-12 page-padding text-center">
-				<h1 class="h2">Self-Hosted</h1>
-				<p class="p">
-					ERPNext is open source and licenced under GNU GPL v3.<br>
-					It's free to use on your own server.
-				</p>
-				<br>
-				<a class="large blue button" style="margin: 5px" href="https://github.com/frappe/erpnext" target="_blank">Github</a>
-				<a class="large blue button" style="margin: 5px" href="/download">Download VM</a>
-				<a class="large blue button" style="margin: 5px" href="https://github.com/frappe/bench" target="_blank">Install</a>
-			</div>
+				<hr class="col-sm-12">
+				<div class="col-sm-12 page-padding">
+					<h2 class="h2">ERPNext For Enterprises</h2>
+					<p class="p">Contact Us for the Price</p>
+					<div class="row text-left">
+						<div class="plan-detail col-sm-3">
+							<p><span class="indicator green"></span>Unlimited Users</p>
+							<p><span class="indicator green"></span>Unlimited Space</p>
+							<p><span class="indicator green"></span>Unlimited Emails</p>
+							<p><span class="indicator green"></span>Priority Support</p>
+						</div>
+						<div class="plan-detail col-sm-3">
+							<p><span class="indicator green"></span>Bug Fix Gaurantee</p>
+							<p><span class="indicator green"></span>All Modules</p>
+							<p><span class="indicator green"></span>All Domains</p>
+							<p><span class="indicator green"></span>Auto-Upgrades</p>
+						</div>
+						<div class="plan-detail col-sm-3">
+							<p><span class="indicator green"></span>Custom Domain</p>
+							<p><span class="indicator green"></span>Mobile App</p>
+							<p><span class="indicator green"></span>Custom Reports</p>
+							<p><span class="indicator green"></span>Custom Print Formats</p>
+						</div>
+						<div class="plan-detail col-sm-3">
+							<p><span class="indicator green"></span>Dedicated Engineer</p>
+							<p><span class="indicator green"></span>Feature Development</p>
+							<p><span class="indicator green"></span>Automated Backups</p>
+						</div>
+					</div>
+					<br>
+					<a class="large blue button" href="/contact">Contact Us</a>
+					<br>
+					<p style="margin-top: 20px;">
+						<a class="text-center" href="https://frappe.erpnext.com/request-a-demo"><b>Request A Demo</b></a>
+					</p>
+				</div>
+				<hr class="col-sm-12">
+				<div class="col-sm-12 page-padding">
+					<p>
+						<a href="/pricing/payment"><b>Payment Options</b></a>
+						<br>
+					</p>
+					<p>
+						<a href="/benefits" style="margin-bottom: 10px; display: inline-block">
+							<b>Why choose ERPNext Hosting?</b>
+						</a>
+						<br>
+						<a href="/compare">
+							<b>Compare with other applications</b>
+						</a>
+					</p>
+				</div>
+				<hr class="col-sm-12">
+				<div class="col-sm-12 page-padding text-center">
+					<h1 class="h2">Self-Hosted</h1>
+					<p class="p">
+						ERPNext is open source and licenced under GNU GPL v3.<br>
+						It's free to use on your own server.
+					</p>
+					<br>
+					<a class="large blue button" style="margin: 5px" href="https://github.com/frappe/erpnext" target="_blank">Github</a>
+					<a class="large blue button" style="margin: 5px" href="/download">Download VM</a>
+					<a class="large blue button" style="margin: 5px" href="https://github.com/frappe/bench" target="_blank">Install</a>
+				</div>
 
-			<hr class="col-sm-12">
-			<div class="col-sm-12 page-padding text-center">
-				<h1 class="h2">Paid Feature Development</h1>
-				<p class="p">
-					Missing a feature in ERPNext that you badly need?<br> Jump up its priority by sponsoring the feature.
-				</p>
-				<br>
-				<a class="large blue button" style="margin: 5px" href="/pricing/paid-feature-development" target="_blank">Learn More</a>
+				<hr class="col-sm-12">
+				<div class="col-sm-12 page-padding text-center">
+					<h1 class="h2">Paid Feature Development</h1>
+					<p class="p">
+						Missing a feature in ERPNext that you badly need?<br> Jump up its priority by sponsoring the feature.
+					</p>
+					<br>
+					<a class="large blue button" style="margin: 5px" href="/pricing/paid-feature-development" target="_blank">Learn More</a>
+				</div>
 			</div>
 		</div>
-
 	</div>
 </div>
 <script>

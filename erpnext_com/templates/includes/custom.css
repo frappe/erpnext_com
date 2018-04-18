@@ -77,12 +77,12 @@
 	text-align: left;
 }
 
-.bottom-section .indicator {
+.plan-detail .indicator {
 	font-size: 14px;
 	font-weight: 400;
 }
 
-.bottom-section .indicator::before {
+.plan-detail .indicator::before {
 	margin: 0 8px 1px 0;
 }
 
