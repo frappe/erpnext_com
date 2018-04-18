@@ -86,6 +86,14 @@
 	margin: 0 8px 1px 0;
 }
 
+.price {
+	font-size: 40px;
+}
+
+.price .small {
+	font-size: 18px;
+}
+
 .main-heading {
 	margin-top:50px;
 }
