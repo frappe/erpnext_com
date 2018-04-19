@@ -88,10 +88,11 @@
 
 .price {
 	font-size: 40px;
+	margin-top: 40px;
 }
 
 .price .small {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .main-heading {
