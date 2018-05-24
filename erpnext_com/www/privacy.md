@@ -1,4 +1,4 @@
-# Privacy Policies
+# Privacy Policy
 
 This is only applicable if you are using our services.
 
