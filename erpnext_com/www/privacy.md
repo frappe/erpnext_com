@@ -4,7 +4,7 @@ This is only applicable if you are using our services.
 
 We here at Frappe Technologies, value your privacy and take serious measures in protecting your personal information and have hence updated our privacy policy to make it GDPR compaliant.
 
-### [What information of me is stored](#what-information-of-me-is-stored)?
+### [What information about me is stored](#what-information-about-me-is-stored)?
 
 We only store the information necessary for billing and contact purposes. This will include the following:<br>
 <ul>
