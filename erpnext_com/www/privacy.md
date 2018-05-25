@@ -2,7 +2,7 @@
 
 This is only applicable if you are using our services.
 
-We here at Frappe Technologies, value your privacy and take serious measures in protecting your personal information and have hence updated our privacy policy to make it GDPR compaliant.
+We here at Frappe Technologies, value your privacy and take serious measures in protecting your personal information and have hence updated our privacy policy to make it GDPR compliant.
 
 ### [What information about me is stored](#what-information-about-me-is-stored)?
 
