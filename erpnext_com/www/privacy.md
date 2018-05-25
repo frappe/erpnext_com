@@ -1,8 +1,13 @@
 # Privacy Policy
 
-This is only applicable if you are using our services.
+This is only applicable if you are using our services: <br>
+<ul>
+    <li>Subscribed to ERPNext hosted account</li> 
+    <li>30-day trial account</li>
+    <li>Requested for a demo</li>
+</ul>
 
-We here at Frappe Technologies, value your privacy and take serious measures in protecting your personal information and have hence updated our privacy policy to make it GDPR compaliant.
+We here at Frappe Technologies, value your privacy and take serious measures in protecting your personal information and have hence updated our privacy policy to make it GDPR compliant.
 
 ### [What information about me is stored](#what-information-about-me-is-stored)?
 
@@ -54,7 +59,7 @@ Just [download the backup](#what-about-backups) of your account.
 
 Want to exercise your right to be forgotten? Just drop an email to <a href="mailto:support@erpnext.com?subject=GDPR: Right to Erasure&body=ERPNext Account URL:">support@erpnext.com</a> with the subject line "GDPR: Right to Erasure".
 
-PS: We can't delete the details related to billing.
+PS: We can't delete certain details related to billing for legal and auditing purposes.
 
 ### [What if I want to move my data](#what-if-i-want-to-move-my-data)?
 
