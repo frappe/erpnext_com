@@ -15,7 +15,7 @@
 	</thead>
 	<tbody>
 		{% for plan in [
-			{"name": "5 users, 5GB space", "usd": "$ 750", "inr": "50,000"},
+			{"name": "3 users, 5GB space", "usd": "$ 450", "inr": "30,000"},
 		] -%}
 			<!-- {% set inr = frappe.utils.fmt_money(
 				frappe.utils.cint(frappe.utils.flt(frappe.utils.flt(plan.usd[1:]) * 60.0 * 1.1236 / 1000.0, 0) * 1000),
