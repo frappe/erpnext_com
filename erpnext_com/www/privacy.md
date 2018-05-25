@@ -1,35 +1,67 @@
-# Security and Privacy
+# Privacy Policy
 
 This is only applicable if you are using our services.
 
-We take your privacy seriously and will take all measures to protect your personal information. Any personal information received will only be used to reply to your queries or fix your bugs. We will not sell or redistribute your information to anyone. All our engineers are bound by a Non-Disclosure Agreement (NDA) before they have access to your data.
+We here at Frappe Technologies, value your privacy and take serious measures in protecting your personal information and have hence updated our privacy policy to make it GDPR compaliant.
 
-### How often do you backup and how many copies do you keep?
+### [What information about me is stored](#what-information-about-me-is-stored)?
 
-Internally we have one live server and one mirror server (a replication of the live servers, should it fail) and we take automated 12 hr backups on Amazon S3 (a very large backup service) and then physical backups every morning on weekdays. Even though we keep 3 backups, we recommend our customer to take their own backups atleast once a week as a good practice.
+We only store the information necessary for billing and contact purposes. This will include the following:<br>
+<ul>
+    <li>Your Name (of course)</li>
+    <li>Your Email ID</li>
+</ul>
 
-### Can my competitors steal my data?
+These are the common information stored with us when you are use an ERPNext cloud account. The following information is also stored: <br>
+<ul> 
+    <li>Phone number of the primary contact person (if shared by the user)</li>
+    <li>Billing Address (of the company/primary user)</li>
+</ul>
 
-We are constantly trying to ensure that your data is not accessible by hackers. We have basic security in place like encrypted (https) sign-in, encrypted passwords, encrypted database name. A lot of things we do we do not disclose because it would defeat the purpose.
+We also store all the data that is requested from you when you <a href="https://erpnext.com/signup" target="_blank">signup</a> or <a href="https://frappe.erpnext.com/request-a-demo" target="_blank">request a demo.
 
-### Can I control which users can access what data?
+### [Where do you host](#where-do-you-host)?
 
-Yes, ERPNext has a powerful role-based permission system in place to ensure that you can accurately control who within your company can access your data and this can be control upto field-level. How do you ensure privacy of our data?
+We currently host with <a href="https://www.online.net/en" target="_blank">online.net</a> whose servers/data centers are located in <a href="https://documentation.online.net/en/dedicated-server/overview/datacenters" target="_blank">Paris, France</a>. 
+ 
+### [What about backups](#what-about-backups)?
 
-### Can your engineers access our data?
+On the cloud, we maintain regular SQL backups (from hereon referred to as backup) of your account. A backup is taken every 6 hours. 
+ 
+We recommend that you also maintain your own copy. To download them manually by going to ``` Setup > Download Backups ```. You can also automate database backup download of your ERPNext account into your <a href="https://erpnext.org/docs/user/manual/en/setting-up/integrations/dropbox-backup" target="_blank">Dropbox account.
 
-If anyone in our team has to access your data for support, then you will get an email mentioning that one our engineers have accessed your data along with a reason. Our passwords are not accessible to our engineers and are generated via a program. If they need to access the password, they must go via this route. All our employees have a singed a Non-Disclosure of Data agreement with us and they are fully aware of the consequences and risks involved with access of customer data.
+### [Who can access my account](#who-can-access-my-account)?
 
-### Am I locked into ERPNext?
+We also have an access to your account for adminsitrative purposes. This includes access for support and update purposes.
 
-ERPnext is free and Open Source. This is our biggest advantage against other cloud/SAAS ERPs. In the remote possibility that you do not want our service or we are unable to service, the entire source code with installation instructions is online at github.com. You could hire a freelancer, from popular sites like odesk.com or elance.com and get your own server setup.
+If anyone in our team has to access your data for support, then you will get an email mentioning that one our engineers have accessed your data along with a reason. Your passwords are not accessible to our engineers and are generated via a program. If they need to access the password, they must go via this route. All our employees have a singed a Non-Disclosure of Data agreement with us and they are fully aware of the consequences and risks involved with access of customer data.
 
-### What if ERPNext shuts shop?
+### [How do I check all the changes you have made as an Administrator](#how-do-i-check-all-the-changes-you-have-made-as-an-administrator)
 
-We have been running this service since 2008 and we can understand the apprehension depending on a startup business. We have more than 100 (as of end 2012) companies who are depending on ERPNext to run their companies. We are a company with a very lean setup and backed by stable investment and we have a plan to be a long term service provider to SMBs. Moreover, our product is Open Source (see earlier question) and it is easy to setup your own ERPNext server.
+All changes made in ERPNext are tracked. At the bottom of each form (or doctypes as we call them) you will see who has made the recent changes. Additionally, you can view the Activity Log Report to track the activities of users in your account.
 
-### Refunds
+### [How do you use my data](#how-do-you-use-my-data)?
 
-If you are not 100% satisfied with your purchase, within 120 days from the purchase date, we will fully refund the cost of your order.
+Any personal information received will only be used to reply to your queries or fix your bugs (and occassionally send Newsletters which you can opt out of). We will not sell or redistribute your information to any third party.
 
-If you have any other concerns, please feel free to get in touch.
+We do track your visits to the website through Google Analytics but the data is anonymised. 
+
+### [How can I see all the information that is stored with you](#how-can-i-see-all-the-information-that-is-stored-with-you)?
+
+Just [download the backup](#what-about-backups) of your account.
+
+### [How can I delete all my data that resides with you](#how-can-i-delete-all-my-data-that-resides-with-you)?
+
+Want to exercise your right to be forgotten? Just drop an email to <a href="mailto:support@erpnext.com?subject=GDPR: Right to Erasure&body=ERPNext Account URL:">support@erpnext.com</a> with the subject line "GDPR: Right to Erasure".
+
+PS: We can't delete the details related to billing.
+
+### [What if I want to move my data](#what-if-i-want-to-move-my-data)?
+
+ERPNext is free and Open Source. This is our biggest advantage against other cloud/SAAS ERPs. In the remote possibility that you do not want our service or we are unable to service, the entire source code with installation instructions is online at github.com.
+
+All you have to do is download your backup and reinstall on your new server. You can also export only the necessary data in spreasheets (Excel,CSV) and import them in your new instance.
+
+### Have more questions?
+
+Drop an email to <a href="mailto:hello@erpnext.com">hello@erpnext.com</a>.
