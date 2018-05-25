@@ -104,10 +104,10 @@ setup_signup = function(page) {
 		}
 
 		// add plan to args
-		var plan = get_url_arg('plan');
+		var plan = frappe.utils.get_url_arg('plan');
 		if(plan) args.plan = plan;
 
-		var res = get_url_arg('res');
+		var res = frappe.utils.get_url_arg('res');
 		if(res) args.res = res;
 
 		args.distribution = window.erpnext_signup.distribution;
