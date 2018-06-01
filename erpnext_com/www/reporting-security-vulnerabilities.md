@@ -28,7 +28,7 @@ Common examples include:
 
 
 # Security Vulnerability Submission by Email
-<p class='p' style='margin-bottom: 0;'>If you found any security breaches, please report the issue <i class="fa fa-envelope"> </i> <a  href='mailto:report@erpnext.com'> Frappe Vulnerability Management</a></p>
+<p class='p' style='margin-bottom: 0;'>If you find any security breaches, please report the issue  to <i class="fa fa-envelope"> </i> <a  href='mailto:report@erpnext.com'> Frappe Vulnerability Management</a></p>
 
 <p class='p' style='margin-bottom: 10px;'>
 It is important to include at least the following information in the email:
@@ -45,7 +45,9 @@ It is important to include at least the following information in the email:
 # Considered Resources
 
 * Framework : Frappe
-* Applications : ERPNext
-* Tools : Bench, Bench Manager
+* Application : ERPNext
+* Tools : Bench, Bench Manager, Frappe Docker
 * Libraries: Chars, Gantt, Data-tables
 * Site: *.erpnext.com
+
+Note: Please do not report vulnerabilities occurred due to customisations.
