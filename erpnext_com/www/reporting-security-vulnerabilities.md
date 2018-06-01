@@ -41,13 +41,3 @@ It is important to include at least the following information in the email:
 * Information about known exploits
 * Disclosure plans, if any
 * If you want public recognition
-
-# Considered Resources
-
-* Framework : Frappe
-* Application : ERPNext
-* Tools : Bench, Bench Manager, Frappe Docker
-* Libraries: Chars, Gantt, Data-tables
-* Site: *.erpnext.com
-
-Note: Please do not report vulnerabilities occurred due to customisations.
