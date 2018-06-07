@@ -11,7 +11,7 @@ We here at Frappe Technologies, value your privacy and take serious measures in 
 
 ## Privacy Notice (for GDPR)
 
-This privacy notice provides you with details of how we collect and process your personal data through your use of our site [INSERT THE URL OF YOUR WEBSITE].
+This privacy notice provides you with details of how we collect and process your personal data through your use of our site https://erpnext.com.
  
 By providing us with your data, you warrant to us that you are over 13 years of age. 
   
