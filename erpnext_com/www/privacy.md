@@ -9,6 +9,78 @@ This is only applicable if you are using our services: <br>
 
 We here at Frappe Technologies, value your privacy and take serious measures in protecting your personal information and have hence updated our privacy policy to make it GDPR compliant.
 
+## Privacy Notice (for GDPR)
+
+This privacy notice provides you with details of how we collect and process your personal data through your use of our site [INSERT THE URL OF YOUR WEBSITE].
+ 
+By providing us with your data, you warrant to us that you are over 13 years of age. 
+  
+Frappe Technologies Pvt. Limited is the data controller and processor, and we are responsible for your personal data (referred to as “we”, “us” or “our” in this privacy notice).
+
+## Scope
+
+The regulation applies to any processing of personal data by any organization:
+
+1. If the controlling or processing organization is located in the EU
+2. If the organization is not located in the EU, but the processing involves personal data of data subjects located in the EU, and is related to commercial offerings or behavior monitoring.
+
+## Roles
+
+The regulation distinguishes two main types of entities:
+
+1. Data controller: any entity who determines the purposes and means of the processing of personal data, alone or jointly. As a general rule, every organization is a controller for its own data.
+2. Data processor: any entity who processes data on behalf of a data controller.
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th style="width: 25%">We Act As</th>
+        <th style="width: 25%">Data Processeing</th>
+        <th style="width: 50%">Kind of data</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Data Controller & Processor</td>
+        <td>erpnext.com</td>
+        <td>Personal Information like name, email, contact no. of clients, prospective clients who either email us, request for demo or sign up for a trial account</td> 
+    </tr>
+    </tbody>    
+    <tbody>
+    <tr>
+        <td>Data Processor</td>
+        <td>ERPNext Cloud Account</td>
+        <td>Any data stored by our customers in their ERPNext account, they are teh database owner and become the Data Controller for it. We on act as the Data Processor</td> 
+    </tr>     
+    <tbody>      
+    <tbody>
+    <tr>
+        <td>None</td>
+        <td>Self-hosted/On-Premise</td>
+        <td>Open Source users using ERPNext for their organization on their own server.</td> 
+    </tr>     
+    <tbody>         
+</table>
+
+### Contact Details
+
+Our full details are:
+
+**Full name of legal entity:** Frappe Technologies Private Limited
+
+**Email address:** <a href="mailto: hello@erpnext.com">hello@erpnext.com</a>/<a href="mailto: support@erpnext.com">support@erpnext.com</a><br><br>
+
+**Postal address:** <br>
+D/324, Neelkanth Business Park,<br>
+Near Vidyavihar Railway Station,<br>
+Vidyavihar West,<br>
+Mumbai 400086. <br><br>
+
+**Telephone number:** <a href="tel: +91-80-339-23819">+91-80-339-23819</a><br><br>
+
+It is very important that the information we hold about you is accurate and up to date. Please let us know if at any time your personal information changes by emailing us at 
+Email address: <a href="mailto: support@erpnext.com">support@erpnext.com</a>.
+
 ### [What information about me is stored](#what-information-about-me-is-stored)?
 
 We only store the information necessary for billing and contact purposes. This will include the following:<br>
@@ -31,7 +103,9 @@ We currently host with <a href="https://www.online.net/en" target="_blank">onlin
  
 ### [What about backups](#what-about-backups)?
 
-On the cloud, we maintain regular SQL backups (from hereon referred to as backup) of your account. A backup is taken every 6 hours. 
+On the cloud, we maintain regular SQL backups (from hereon referred to as backup) of your account. A backup is taken every 6 hours.
+
+These backups are stored on Amazon's AWS service which is <a href="https://aws.amazon.com/compliance/gdpr-center/" target="_blank">GDPR compliant</a>. 
  
 We recommend that you also maintain your own copy. To download them manually by going to ``` Setup > Download Backups ```. You can also automate database backup download of your ERPNext account into your <a href="https://erpnext.org/docs/user/manual/en/setting-up/integrations/dropbox-backup" target="_blank">Dropbox account.
 
@@ -41,7 +115,7 @@ We also have an access to your account for adminsitrative purposes. This include
 
 If anyone in our team has to access your data for support, then you will get an email mentioning that one our engineers have accessed your data along with a reason. Your passwords are not accessible to our engineers and are generated via a program. If they need to access the password, they must go via this route. All our employees have a singed a Non-Disclosure of Data agreement with us and they are fully aware of the consequences and risks involved with access of customer data.
 
-### [How do I check all the changes you have made as an Administrator](#how-do-i-check-all-the-changes-you-have-made-as-an-administrator)
+### [How do I check all the changes you have made as an Administrator](#how-do-i-check-all-the-changes-you-have-made-as-an-administrator)?
 
 All changes made in ERPNext are tracked. At the bottom of each form (or doctypes as we call them) you will see who has made the recent changes. Additionally, you can view the Activity Log Report to track the activities of users in your account.
 
@@ -59,7 +133,7 @@ Just [download the backup](#what-about-backups) of your account.
 
 Want to exercise your right to be forgotten? Just drop an email to <a href="mailto:support@erpnext.com?subject=GDPR: Right to Erasure&body=ERPNext Account URL:">support@erpnext.com</a> with the subject line "GDPR: Right to Erasure".
 
-PS: We can't delete certain details related to billing for legal and auditing purposes.
+PS: We can't delete certain details related to billing for legal and auditing purposes. This is in accordance to "Lawful processing on the ground of legal obligations". Refer <a href="https://gdpr-info.eu/recitals/no-45/" target="_blank">Recital 45</a> and <a href="https://gdpr-info.eu/art-6-gdpr/" target="_blank">Article 6</a> of the GDPR.
 
 ### [What if I want to move my data](#what-if-i-want-to-move-my-data)?
 
