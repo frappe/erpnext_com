@@ -11,10 +11,10 @@ We here at Frappe Technologies, value your privacy and take serious measures in 
 
 ## Privacy Notice (for GDPR)
 
-This privacy notice provides you with details of how we collect and process your personal data through your use of our site https://erpnext.com.
- 
-By providing us with your data, you warrant to us that you are over 13 years of age. 
-  
+This privacy notice provides you with details of how we collect and process your personal data through your use of our site https://erpnext.com.<br>
+
+By providing us with your data, you warrant to us that you are over 13 years of age.<br>
+
 Frappe Technologies Pvt. Limited is the data controller and processor, and we are responsible for your personal data (referred to as “we”, “us” or “our” in this privacy notice).
 
 ## Scope
@@ -68,13 +68,13 @@ Our full details are:
 
 **Full name of legal entity:** Frappe Technologies Private Limited
 
-**Email address:** <a href="mailto: hello@erpnext.com">hello@erpnext.com</a>/<a href="mailto: support@erpnext.com">support@erpnext.com</a><br><br>
+**Email address:** <a href="mailto: hello@erpnext.com">hello@erpnext.com</a>/<a href="mailto: support@erpnext.com">support@erpnext.com</a><br>
 
 **Postal address:** <br>
 D/324, Neelkanth Business Park,<br>
 Near Vidyavihar Railway Station,<br>
 Vidyavihar West,<br>
-Mumbai 400086. <br><br>
+Mumbai 400086. <br>
 
 **Telephone number:** <a href="tel: +91-80-339-23819">+91-80-339-23819</a><br><br>
 
