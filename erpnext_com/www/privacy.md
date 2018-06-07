@@ -65,7 +65,7 @@ PS: We can't delete certain details related to billing for legal and auditing pu
 
 ERPNext is free and Open Source. This is our biggest advantage against other cloud/SAAS ERPs. In the remote possibility that you do not want our service or we are unable to service, the entire source code with installation instructions is online at github.com.
 
-All you have to do is download your backup and reinstall on your new server. You can also export only the necessary data in spreasheets (Excel,CSV) and import them in your new instance.
+All you have to do is download your backup and reinstall on your new server. You can also export only the necessary data in spreadheets (Excel,CSV) and import them in your new instance.
 
 ### Have more questions?
 
