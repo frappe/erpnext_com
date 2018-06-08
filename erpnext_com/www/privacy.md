@@ -9,20 +9,13 @@ This is only applicable if you are using our services: <br>
 
 We here at Frappe Technologies, value your privacy and take serious measures in protecting your personal information and have hence updated our privacy policy to make it GDPR compliant.
 
-## Privacy Notice (for GDPR)
+## Privacy Notice
 
 This privacy notice provides you with details of how we collect and process your personal data through your use of our site https://erpnext.com.<br>
 
 By providing us with your data, you warrant to us that you are over 13 years of age.<br>
 
 Frappe Technologies Pvt. Limited is the data controller and processor, and we are responsible for your personal data (referred to as “we”, “us” or “our” in this privacy notice).
-
-## Scope
-
-The regulation applies to any processing of personal data by any organization:
-
-1. If the controlling or processing organization is located in the EU
-2. If the organization is not located in the EU, but the processing involves personal data of data subjects located in the EU, and is related to commercial offerings or behavior monitoring.
 
 ## Roles
 
@@ -50,7 +43,7 @@ The regulation distinguishes two main types of entities:
     <tr>
         <td>Data Processor</td>
         <td>ERPNext Cloud Account</td>
-        <td>Any data stored by our customers in their ERPNext account, they are teh database owner and become the Data Controller for it. We on act as the Data Processor</td> 
+        <td>Any data stored by our customers in their ERPNext account, they are the database owner and become the Data Controller for it. We on act as the Data Processor</td> 
     </tr>     
     <tbody>      
     <tbody>
@@ -105,7 +98,7 @@ We currently host with <a href="https://www.online.net/en" target="_blank">onlin
 
 On the cloud, we maintain regular SQL backups (from hereon referred to as backup) of your account. A backup is taken every 6 hours.
 
-These backups are stored on Amazon's AWS service which is <a href="https://aws.amazon.com/compliance/gdpr-center/" target="_blank">GDPR compliant</a>. 
+These backups are stored on Amazon's AWS service. You can refer to its <a href="https://aws.amazon.com/compliance/gdpr-center/" target="_blank">compliance information</a>. 
  
 We recommend that you also maintain your own copy. To download them manually by going to ``` Setup > Download Backups ```. You can also automate database backup download of your ERPNext account into your <a href="https://erpnext.org/docs/user/manual/en/setting-up/integrations/dropbox-backup" target="_blank">Dropbox account.
 
@@ -117,13 +110,13 @@ If anyone in our team has to access your data for support, then you will get an 
 
 ### [How do I check all the changes you have made as an Administrator](#how-do-i-check-all-the-changes-you-have-made-as-an-administrator)?
 
-All changes made in ERPNext are tracked. At the bottom of each form (or doctypes as we call them) you will see who has made the recent changes. Additionally, you can view the Activity Log Report to track the activities of users in your account.
+We will report to you what changes (if any) we have done. At the bottom of each form (or doctypes as we call them) you will see who has made the recent changes. Additionally, you can view the Activity Log Report to track the activities of users in your account. Changes are also made automatically via patches when a new version gets released. In case a patch fails, an Administrator may change your data. In this case too you will receive an email notification of the same.
 
 ### [How do you use my data](#how-do-you-use-my-data)?
 
-Any personal information received will only be used to reply to your queries or fix your bugs (and occassionally send Newsletters which you can opt out of). We will not sell or redistribute your information to any third party.
+Any personal information received will only be used to reply to your queries or fix your bugs (and occassionally send Newsletters which you can opt out of). We do not and never will sell or redistribute your information to any third party.
 
-We do track your visits to the website through Google Analytics but the data is anonymised. 
+We do track your visits to the website through Google Analytics. This data is collected anonymously and viwed in an aggregated form to understand the user behaviour across companies. The kind of queries we engage with here are like what is the most used transaction in ERPNext, or what do most users do after making a Sales Invoice.
 
 ### [How can I see all the information that is stored with you](#how-can-i-see-all-the-information-that-is-stored-with-you)?
 
@@ -131,15 +124,15 @@ Just [download the backup](#what-about-backups) of your account.
 
 ### [How can I delete all my data that resides with you](#how-can-i-delete-all-my-data-that-resides-with-you)?
 
-Want to exercise your right to be forgotten? Just drop an email to <a href="mailto:support@erpnext.com?subject=GDPR: Right to Erasure&body=ERPNext Account URL:">support@erpnext.com</a> with the subject line "GDPR: Right to Erasure".
+Want to exercise your right to be forgotten? Just drop an email to <a href="mailto:support@erpnext.com?subject=GDPR: Right to Erasure&body=ERPNext Account URL:">support@erpnext.com</a> with the subject line "Please delete my data".
 
-PS: We can't delete certain details related to billing for legal and auditing purposes. This is in accordance to "Lawful processing on the ground of legal obligations". Refer <a href="https://gdpr-info.eu/recitals/no-45/" target="_blank">Recital 45</a> and <a href="https://gdpr-info.eu/art-6-gdpr/" target="_blank">Article 6</a> of the GDPR.
+Please not that we can't delete certain details related to billing for legal and auditing purposes.
 
 ### [What if I want to move my data](#what-if-i-want-to-move-my-data)?
 
 ERPNext is free and Open Source. This is our biggest advantage against other cloud/SAAS ERPs. In the remote possibility that you do not want our service or we are unable to service, the entire source code with installation instructions is online at github.com.
 
-All you have to do is download your backup and reinstall on your new server. You can also export only the necessary data in spreadheets (Excel,CSV) and import them in your new instance.
+All you have to do is download your backup and reinstall on your new server. You can also export only the necessary data in spreadheets (Excel, CSV) and import them in your new instance.
 
 ### Have more questions?
 
