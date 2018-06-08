@@ -82,7 +82,7 @@ We only store the information necessary for billing and contact purposes. This w
     <li>Your Email ID</li>
 </ul>
 
-These are the common information stored with us when you are use an ERPNext cloud account. The following information is also stored: <br>
+These are the common information stored with us when you use an ERPNext cloud account. The following information is also stored: <br>
 <ul> 
     <li>Phone number of the primary contact person (if shared by the user)</li>
     <li>Billing Address (of the company/primary user)</li>
@@ -106,7 +106,7 @@ We recommend that you also maintain your own copy. To download them manually by 
 
 We also have an access to your account for adminsitrative purposes. This includes access for support and update purposes.
 
-If anyone in our team has to access your data for support, then you will get an email mentioning that one our engineers have accessed your data along with a reason. Your passwords are not accessible to our engineers and are generated via a program. If they need to access the password, they must go via this route. All our employees have a singed a Non-Disclosure of Data agreement with us and they are fully aware of the consequences and risks involved with access of customer data.
+If anyone in our team has to access your data for support, then you will get an email mentioning that one of our engineers have accessed your data along with a reason. Your passwords are not accessible to our engineers and are generated via a program. If they need to access the account, they must go via this route. All our employees have singed a Non-Disclosure of Data agreement with us and they are fully aware of the consequences and risks involved with access of customer data.
 
 ### [How do I check all the changes you have made as an Administrator](#how-do-i-check-all-the-changes-you-have-made-as-an-administrator)?
 
@@ -126,7 +126,7 @@ Just [download the backup](#what-about-backups) of your account.
 
 Want to exercise your right to be forgotten? Just drop an email to <a href="mailto:support@erpnext.com?subject=GDPR: Right to Erasure&body=ERPNext Account URL:">support@erpnext.com</a> with the subject line "Please delete my data".
 
-Please not that we can't delete certain details related to billing for legal and auditing purposes.
+Please note that we can't delete certain details related to billing for legal and auditing purposes.
 
 ### [What if I want to move my data](#what-if-i-want-to-move-my-data)?
 
