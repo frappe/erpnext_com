@@ -106,7 +106,7 @@ We recommend that you also maintain your own copy. To download them manually by 
 
 We also have an access to your account for adminsitrative purposes. This includes access for support and update purposes.
 
-If anyone in our team has to access your data for support, then you will get an email mentioning that one of our engineers have accessed your data along with a reason. Your passwords are not accessible to our engineers and are generated via a program. If they need to access the account, they must go via this route. All our employees have singed a Non-Disclosure of Data agreement with us and they are fully aware of the consequences and risks involved with access of customer data.
+If anyone in our team has to access your data for support, then you will get an email mentioning that one of our engineers have accessed your data along with a reason. Your passwords are not accessible to our engineers and are generated via a program. If they need to access the account, they must go via this route. All our employees have signed a Non-Disclosure of Data agreement with us and they are fully aware of the consequences and risks involved with access of customer data.
 
 ### [How do I check all the changes you have made as an Administrator](#how-do-i-check-all-the-changes-you-have-made-as-an-administrator)?
 
