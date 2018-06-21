@@ -1,53 +1,45 @@
 {% extends "frappe_theme/templates/base.html" %}
-{% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
 
-{% block title %}ERP for Manufacturing Business{% endblock %}
+{% from "erpnext_com/templates/includes/domain.html" import domain %}
 
-{% block head_include %}
-	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
-{% endblock %}
+{% block title %}ERP for Manufacturing{% endblock %}
 
 {% block content %}
-	{{ hero("ERP for Manufacturers",
-		"Manage and Grow Your Manufacturing Unit with ERPNext", 			"/assets/erpnext_com/images/manufacturing/manufacturing-hero.png", False) }}
 
-	{{ feature({
+{{ domain(
+	"Manufacturing",
+	"ERPNext for Manufacturing Companies",
+	"ERPNext Manufacturing module helps you manage your manufacturing process right from procurement to shipping finished goods.",
+	"manufacturing.jpg",
+	[
+		{
 			"title": "Bill of Materials",
-			"desc": "Maintain the list of all materials and operations that are required in making your finished product. Assign cost to each material and get insights of the total cost of production. Be on top of the materials required during production in real time.",
-			"img": "/assets/erpnext_com/images/manufacturing/BOM.png"
-		})
-	}}
+			"content": "Manage multi-level Bill of Materials and Operations, the blue print of your manufacturing system."
+		},
+		{
+			"title": "Production Plan",
+			"content": "Make Production Plans based on Sales Orders or internal requirements and track operations."
+		},
+		{
+			"title": "Work Order",
+			"content": "Issue and track Work Orders for workstations and plan time and material for each Work Order."
+		},
+		{
+			"title": "Items and Variants",
+			"content": "ERPNext Item management helps you create and manage your manufacturing items and its variants."
+		},
+		{
+			"title": "Batches and Serial Numbers",
+			"content": "ERPNext has built-in support for batched and serialized inventory that will help you in traceability."
+		},
+		{
+			"title": "Quality Inspection",
+			"content": "Keep track of quality inspections done for purchased and manufacturing materials."
+		},
+	]
+	)
+}}
 
-	{{ feature({
-			"title": "Production Orders",
-			"desc": "Track the orders for production floor, automatically track material movements as ERPNext interlinks production orders, bill of materials and inventory. Track the progress with timesheets and record successful production by registering finished goods.",
-			"img": "/assets/erpnext_com/images/manufacturing/Production_Order.png"
-		})
-	}}
-
-	{{ feature({
-			"title": "Inventory Management",
-			"desc": "Easily manage multiple inventory locations. Track inventory levels per warehouse and update based on manual inspection. Batches, serial numbers, stock valuation and automated inventory accounting help you be on top of stock.",
-			"img": "/assets/erpnext_com/images/manufacturing/Stock_Summary.png"
-		})
-	}}
-
-	{{ feature({
-			"title": "HR, Leave and Payroll",
-			"desc": "Your employees can apply for leaves and claim expenses directly through ERPNext. All of this is seamlessly integrated with your payroll and accounting. ERPNext also helps you manage recruiting, appraisals, trainings and much more.",
-			"img": "/assets/erpnext_com/images/services/hr.png"
-		})
-	}}
-
-	{{ feature({
-			"title": "Sales + Purchase Management",
-			"desc": "Make purchase requests for all materials required for production. Send automatically to concerned suppliers. Manage inventory of finished goods at the end of production and automatically link it to sales and accounting.",
-			"img": "/assets/erpnext_com/images/industries/purchase-order.png"
-		})
-	}}
-
-	{{ testimonial("Sonal Ramnathkar", "After evaluating a bunch of ERPs including TCS, Tally and many others, I finally found the right ERP for me furniture manufacturing startup. <strong>I love using ERPNext and recommend it to any discrete manufacturing company", "/assets/erpnext_com/images/testimonials/sonal.jpg") }}
-
-	{% include("erpnext_com/templates/includes/industry_footer.html") %}
 {% endblock %}
+
 

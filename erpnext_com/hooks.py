@@ -16,7 +16,7 @@ website_context = {
 	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/erpnext_com/img/erpnext-logo-blue.svg' />ERPNext",
 	"top_bar_items": [
 		{"label": "Pricing", "url": "/pricing", "right":1},
-		{"label": "Features", "url": "/features", "right":1},
+		{"label": "Learn", "url": "/learn", "right":1},
 		{"label": "Industries", "right":1, "child_items": [
 			{"label": "Services", "url":"/services"},
 			{"label": "Manufacturing", "url":"/manufacturing"},
@@ -31,6 +31,15 @@ website_context = {
 	"hide_login": 1,
 	"favicon": "/assets/erpnext_com/img/erpnext-logo-blue.png"
 }
+
+website_redirects = [
+	{'source': '/compare', 'target': 'https://erpnext.org/contribute' },
+	{'source': '/benefits', 'target': '/about' },
+	{'source': '/features', 'target': '/learn' },
+	{'source': '/download', 'target': 'https://erpnext.org/get-started' },
+	{'source': '/faq', 'target': 'https://erpnext.org/faq' },
+	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },
+]
 
 # Includes in <head>
 # ------------------

@@ -1,59 +1,45 @@
 {% extends "frappe_theme/templates/base.html" %}
-{% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
 
-{% block title %}ERP for Distribution Business{% endblock %}
+{% from "erpnext_com/templates/includes/domain.html" import domain %}
 
-{% block head_include %}
-	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
-{% endblock %}
+{% block title %}ERP for Distribution{% endblock %}
 
 {% block content %}
 
-	{{ hero("ERP for Distributors",
-		"Manage and Grow Your Distribution Business with ERPNext", 		"/assets/erpnext_com/images/distribution/hero.jpg", False) }}
-
-	{{ feature({
+{{ domain(
+	"Distribution",
+	"ERPNext for Distribution or Trading",
+	"ERPNext is a perfect fit for distribution companies and helps you manage your inventory across multiple currencies and companies.",
+	"distribution.jpg",
+	[
+		{
 			"title": "Inventory",
-			"desc": "You can setup your inventory Warehouses and manage the Stock of your Items Batchwise or by Serial Numbers. Easily manage multiple inventory locations. Track inventory levels per warehouse and update based on manual inspection.",
-			"img": "/assets/erpnext_com/images/distribution/distrubution_1_inventory.jpg"
-		})
-	}}
-
-	{{ feature({
-			"title": "Sales and Purchase",
-			"desc": "You can track communication with your Leads or Customers. Keep engaging with them by sending newsletter once in awhile and send specific Quotations when they are ready to order. Keep track of items to buy by raising Material Requests, send Purchase Orders to your suppliers and enter Purchase Receipts when you receive material.",
-			"img": "/assets/erpnext_com/images/industries/purchase-order.png"
-		})
-	}}
-
-	{{ feature({
-			"title": "Billing and Receivables",
-			"desc": "Billing and receivables tracking in ERPNext helps you stay on top of your finances. Specific Project, customer or product based filtering helps you get the profitability of each factor on your fingertip.",
-			"img": "/assets/erpnext_com/images/distribution/distrubution_3_billing.jpg"
-		})
-	}}
-
-	{{ feature({
-			"title": "HR and Payroll",
-			"desc": "Your employees can apply for leaves and claim expenses directly through ERPNext. All of this is seamlessly integrated with your payroll and accounting. ERPNext also helps you manage recruiting, appraisals, training and much more.",
-			"img": "/assets/erpnext_com/images/distribution/distrubution_4_hr.jpg"
-		})
-	}}
-
-	{{ feature({
-			"title": "Auto Re-ordering",
-			"desc": "When the stock goes below threshold quantity - Automatically raise material requests, send purchase orders to suppliers and record purchase receipts. Carry out effective stock management always have enough supply at hand.",
-			"img": "/assets/erpnext_com/images/distribution/distrubution_5_autoreorder.jpg"
-		})
-	}}
-
-	{{ testimonial("Gladwyn Lewis", "<strong>Amazing job with v7</strong>, The UI and UX are one of the most fluid and highly useable interfaces I have ever seen in an ERP. You make accounting fun (more or less ) Keep up the amazing work.", "/assets/erpnext_com/images/testimonials/gladwynlewis.jpg") }}
-
-	{% include("erpnext_com/templates/includes/industry_footer.html") %}
+			"content": "ERPNext stock module will help you manage inventory and procurement across warehouses."
+		},
+		{
+			"title": "Billing and Payments",
+			"content": "Track all things financial, including billings and payments with the ERPNext accounts module."
+		},
+		{
+			"title": "Items and Variants",
+			"content": "ERPNext Item management helps you create and manage your manufacturing items and its variants."
+		},
+		{
+			"title": "Multi Currency",
+			"content": "You can maintain prices, bill, track payments and maintain account balances in multiple currencies"
+		},
+		{
+			"title": "Batches and Serial Numbers",
+			"content": "ERPNext has built-in support for batched and serialized inventory that will help you in traceability."
+		},
+		{
+			"title": "Quality Inspection",
+			"content": "Keep track of quality inspections done for purchased and manufacturing materials."
+		}
+	]
+	)
+}}
 
 {% endblock %}
-
-
-
 
 

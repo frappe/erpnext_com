@@ -1,52 +1,45 @@
 {% extends "frappe_theme/templates/base.html" %}
-{% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
+
+{% from "erpnext_com/templates/includes/domain.html" import domain %}
 
 {% block title %}ERP for Agriculture{% endblock %}
 
-{% block head_include %}
-	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
-{% endblock %}
-
 {% block content %}
-	{{ hero("ERP for Agriculture",
-		"Fresh and Healthy, Like your Farm Produce", 			"/assets/erpnext_com/images/agriculture/agri-desk-hero.png", False) }}
 
-	{{ feature({
-			"title": "Land Unit",
-			"desc": "Accurately track and divide land units for micro-management.",
-			"img": "/assets/erpnext_com/images/agriculture/land-unit.png"
-		})
-	}}
-	
-	{{ feature({
-            "title": "Crop",
-			"desc": "Maintain the crop details along with the list of tasks associated with growing the crop.",
-			"img": "/assets/erpnext_com/images/agriculture/crop.png"
-		})
-	}}
-
-	{{ feature({
+{{ domain(
+	"Agriculture",
+	"ERPNext for Agriculture",
+	"ERPNext Agriculture module helps you manage your land, crop cycles, track soil composition and diseases.",
+	"agriculture.jpg",
+	[
+		{
 			"title": "Crop Cycle",
-			"desc": "Track progress of your agricultural activities with expected calendar of activities.",
-			"img": "/assets/erpnext_com/images/agriculture/crop-cycle-gantt.png"
-		})
-	}}
+			"content": "Plan your crop cycles with standard processes linked to a crop and keep track of all tasks."
+		},
+		{
+			"title": "Crop Management",
+			"content": "The Crop master helps you keep plans and processes linked to a crop and track its history."
+		},
+		{
+			"title": "Land Management",
+			"content": "Geo-tag all your properties and map them in a hierarchical model."
+		},
+		{
+			"title": "Disease Management",
+			"content": "Keep a track of crop diseases with treatements and keep track of actions taken."
+		},
+		{
+			"title": "Inventory",
+			"content": "ERPNext stock module will help you manage inventory and procurement across warehouses."
+		},
+		{
+			"title": "Billing and Payments",
+			"content": "Track all things financial, including billings and payments with the ERPNext accounts module."
+		},
+	]
+	)
+}}
 
-	
-	{{ feature({
-			"title": "Soil Analysis",
-			"desc": "Keep track of the overall health of your farm with plant, water, and soil analysis.",
-			"img": "/assets/erpnext_com/images/agriculture/soil-texture.png"
-		})
-	}}
-
-	{{ feature({
-			"title": "Disease Management and Control",
-			"desc": "Protect your crops from virus and pests. Maintain a list of remedies for common dieases which affect your produce.",
-			"img": "/assets/erpnext_com/images/agriculture/disease.png"
-		})
-	}}
-
-	{% include("erpnext_com/templates/includes/industry_footer.html") %}
 {% endblock %}
+
 
