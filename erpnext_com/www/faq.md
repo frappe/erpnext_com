@@ -4,7 +4,7 @@
 
 #### 1. What is Frappé?
 
-Frappé is an Open Source platform for building web applications. ERPNext is built on the Frappé Framework. [Learn more about Frappé at Frappé.io](https://frappe.io)
+Frappé is an Open Source platform for building web applications. ERPNext is built on the Frappé Framework. [Learn more about Frappe at Frappe.io](https://frappe.io)
 
 <br>
 
@@ -28,7 +28,7 @@ You are not required to pay for the trial. If you choose to continue using your 
 
 #### 5. Is this a Fork of Another ERP?
 
-No this is not a fork of any existing ERP. ERPNext was started from scratch by us (Frappé Technologies Pvt. Ltd.) and is currently used in over [60 countries across the world](https://erpnext/countries).
+No this is not a fork of any existing ERP. ERPNext was started from scratch by us (Frappe Technologies Pvt. Ltd.) and is currently used in over [60 countries across the world](https://erpnext/countries).
 
 <br>
 
