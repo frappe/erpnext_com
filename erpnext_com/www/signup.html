@@ -1,53 +1,58 @@
 <!-- no-cache -->
 
 <section class='top-section'>
+	<div class='container'>
 	<h1>Sign up for ERPNext</h1>
-	<p class='lead'>Start right now with a Free 30 day trial</p>
-</section>
-<section class='page-card'>
-	<div class="missing-domain-msg hidden text-center">
-		<p class="lead" style="font-size: 24px;"><span class="missing-domain text-primary"></span> does not exist</p>
+	<p class='lead mb-4'>Start right now with a Free 30 day trial</p>
+
+	<div class="missing-domain-msg text-center hidden w-500 mb-4">
+		<p class="alert alert-warning"><span class="missing-domain text-primary"></span> does not exist</p>
 		<i class="octicon octicon-chevron-down mega-octicon" style="color: #36414C;"></i>
 	</div>
 
-	<form class="signup-state-details" role="form">
-
-		<div class="form-group">
-			<p class="help-block">Full Name</p>
-			<input name="full_name" placeholder="Jane Doe" class="form-control" type="text">
-		</div>
-
-		<div class="form-group">
-			<p class="help-block">Email Address</p>
-			<input name="email" placeholder="jane_doe@example.com" class="form-control" type="text">
-			<p class="validation-message">Please enter a valid email address</p>
-		</div>
-
-		<div class="form-group">
-			<p class="help-block">Company Name <em></em></p>
-			<input name="company_name" placeholder="Best Builds" class="form-control" type="text">
-		</div>
-
-		<div class="form-group signup-subdomain">
-			<p class="help-block">Subdomain <em>(can only contain letters, numbers and hyphens.)</em></p>
-				<div class="input-group">
-					<input name="subdomain" placeholder="mycompany" class="form-control" type="text">
-					<span class="input-group-addon">.{{ signup_domain }}</span>
+	<div class='card w-500 text-left'>
+		<div class='card-body'>
+			<form class="signup-state-details" role="form">
+				<div class="form-group">
+					<p class="help-block">Full Name</p>
+					<input name="full_name" placeholder="Jane Doe" class="form-control" type="text">
 				</div>
-				<div class="availability">
-					<span class="availability-status hidden"><i class="octicon octicon-check"></i><span></span></span>
-					<span class="availability-spinner text-extra-muted hidden" style="font-size: 12px;">checking...</span>
+
+				<div class="form-group">
+					<p class="help-block">Email Address</p>
+					<input name="email" placeholder="jane_doe@example.com" class="form-control" type="text">
+					<p class="validation-message">Please enter a valid email address</p>
 				</div>
-			<p class="validation-message"></p>
+
+				<div class="form-group">
+					<p class="help-block">Company Name <em></em></p>
+					<input name="company_name" placeholder="Best Builds" class="form-control" type="text">
+				</div>
+
+				<div class="form-group signup-subdomain">
+					<p class="help-block">Subdomain <em class='small text-muted'>(can only contain letters, numbers and hyphens.)</em></p>
+						<div class="input-group">
+							<input name="subdomain" placeholder="mycompany" class="form-control" type="text">
+							<div class="input-group-append">
+								<span class="input-group-text">.{{ signup_domain }}</span>
+							</div>
+						</div>
+						<div class="availability">
+							<span class="availability-status hidden"><i class="octicon octicon-check"></i><span></span></span>
+							<span class="availability-spinner small text-muted hidden">checking...</span>
+						</div>
+					<p class="validation-message small"></p>
+				</div>
+
+				<br>
+				<div class="form-group text-center">
+					<button class="btn btn-primary btn-request" type="button">Setup My Account</button>
+				</div>
+
+			</form>
 		</div>
-
-		<br>
-		<div class="form-group text-center">
-			<button class="btn btn-primary btn-request" type="button">Setup My Account</button>
-		</div>
-
-	</form>
-
+	</div>
+	</div>
 </section>
 
 {% include "erpnext_com/templates/includes/google_conversion.html" %}
@@ -71,10 +76,6 @@
 	margin-bottom: 30px;
 }
 
-.form-group em {
-	font-size: 12px;
-}
-
 .hero-and-content {
 	background-color: #f5f7fa;
 }
@@ -93,19 +94,6 @@
 	margin-bottom: 5px;
 }
 
-.availability {
-	position: absolute;
-}
-
-.availability-status {
-	display: flex;
-    align-items: center;
-}
-
-.availability-status span {
-	font-size: 12px;
-}
-
 .availability-status i, .availability-spinner i {
 	margin: 5px;
 	font-size: 16px;
@@ -115,7 +103,6 @@
 	display: none;
 	margin-top: 0px;
     position: absolute;
-    font-size: 12px;
 }
 
 .invalid .validation-message{
@@ -127,12 +114,6 @@
 	border-color: #ffad58;
 	background-color: #fffdf4;
 }
-
-.availability-spinner {
-	display: inline-block;
-
-}
-
 
 
 </style>
