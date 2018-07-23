@@ -1,14 +1,13 @@
-# Terms
+<section class='top-section'>
+<h1>Subscription Terms</h1>
+</section>
 
-<p class="lead">Subscription Agreement</p>
-
-Version: 3.1
-Date: 1st April 2015
-
+Version: 3.2
+Date: 1st August 2018
 
 ### Introduction
 
-Frappé Technologies Pvt Ltd is the publisher of "ERPNext" and offers hosting and support services for the same. The software is available under the GNU/GPL licenses and others as specified in the source code. This agreement is not about the software (which is available under the General Public License) but for the hosting and support services that are provided commercially.
+Frappe Technologies Pvt Ltd is the publisher of "ERPNext" and offers hosting and support services for the same. The software is available under the GNU/GPL licenses and others as specified in the source code. This agreement is not about the software (which is available under the General Public License) but for the hosting and support services that are provided commercially.
 
 ### 1. Scope
 
@@ -18,7 +17,7 @@ This agreement covers the terms under which you can use the free, trial or paid 
 
 Services: Hosting and support services offered by us
 You, Your: The subscriber or user of our services
-We, Us, Our: Frappé Technologies Pvt. Ltd. or services offered by Frappé Technologies Pvt Ltd
+We, Us, Our: Frappe Technologies Pvt. Ltd. or services offered by Frappe Technologies Pvt Ltd
 Confidential Information: Information that is given from one party to another that is reasonably understood to be confidential.
 
 ### 3. Services
@@ -37,6 +36,8 @@ If You choose to do it, then there is no obligation on Our part to support Your 
 
 Your information / data is owned by You and is a part of your database / files and is treated as Confidential Information. We will ensure that Your Confidential Information is managed with the same level of security as Our Confidential Information. We will take all reasonable effort to ensure that any Confidential Information is managed in a secure manner by using rights management and password encryption. We may or may not publish our security measures to maintain their secrecy.
 
+[For full details, please read the privacy policy](/privacy)
+
 ### 6. Purchasing
 
 Our services can be purchased as specified on our website, via online money transfers or using third party services such as PayPal or in some cases, checks.
@@ -49,7 +50,7 @@ We reserve the right to increase our price or change the pricing model as and wh
 
 We also reserve the right to change the resource allocated, number of users, or any such parameter for any of our free or paid plans as we see fit.
 
-Please note that ERPNext and Frappé Apps are Free and Open Source software and you are free to purchase hosting and support services from any other vendor or host it yourself at no cost.
+Please note that ERPNext and Frappe Apps are Free and Open Source software and you are free to purchase hosting and support services from any other vendor or host it yourself at no cost.
 
 ### 8. Backups
 
@@ -83,13 +84,13 @@ You can ask for your data for a period of 30 days after the termination. You wil
 
 This agreement is subject to change and we will update you via email incase we make any changes.
 
-Company: Frappé Technologies Pvt Ltd
+Company: Frappe Technologies Pvt Ltd
 
 Registered Address: D/324 Neelkanth Business Park, Vidyavihar West, Mumbai 400086
 
 Jurisdiction: Mumbai, India
 
-Dated: 1st April 2015
+Dated: 1st April 2018
 
 ---
 

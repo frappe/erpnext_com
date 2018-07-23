@@ -1,57 +1,43 @@
 {% extends "frappe_theme/templates/base.html" %}
-{% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
 
-{% block title %}ERP for Retail Business{% endblock %}
+{% from "erpnext_com/templates/includes/domain.html" import domain %}
 
-{% block head_include %}
-	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
-{% endblock %}
+{% block title %}ERP for Retail{% endblock %}
 
 {% block content %}
-	{{ hero("ERP for Retailers",
-		"Manage and Grow Your Store with ERPNext", 			"/assets/erpnext_com/images/retail/retail-hero.jpg", False) }}
 
-
-	{{ feature({
+{{ domain(
+	"Retail",
+	"ERPNext for Retail",
+	"ERPNext can help you manage your shop or multiple shops with a web based POS with integrated inventory and accounting.",
+	"retail.jpg",
+	[
+		{
 			"title": "Point of Sale",
-			"desc": "ERPNext has touch-friendly Point of Sales interface which is linked to billing, payments and Inventory. You can manage settings like Currency, Cash / Bank Account, Taxes, and Terms and Conditions individually for each location. POS feature also works offline and syncs when you have internet.",
-			"img": "/assets/erpnext_com/images/retail/point-of-sale.jpg"
-		})
-	}}
-
-	{{ feature({
+			"content": "The ERPNext POS helps you manage your store checkout easily with integrated billing and inventory."
+		},
+		{
 			"title": "Inventory",
-			"desc": "Easily manage multiple inventory locations. When the stock goes below threshold quantity - Automatically raise material requests, send purchase orders to suppliers and record purchase receipts. Batches, serial numbers, stock valuation and automated inventory accounting help you be on top of the stock.",
-			"img": "/assets/erpnext_com/images/retail/stock.jpg"
-		})
-	}}
-
-	{{ feature({
-			"title": "Multi-store",
-			"desc": "Your stores at multiple locations will run cohesively with ERPNext. You can manage your operations remotely, communicate between different branches and analyze real-time reports across all branches.",
-			"img": "/assets/erpnext_com/images/retail/multi-store.jpg"
-		})
-	}}
-
-	{{ feature({
-			"title": "Billing and Accounting",
-			"desc": "Billing and receivables tracking in ERPNext helps you stay on top of your finances. Inventory linked accounting helps you get the performance of each product. Get the insights about your top selling products and make more informed decisions.",
-			"img": "/assets/erpnext_com/images/retail/invoice.jpg"
-		})
-	}}
-
-	{{ feature({
-			"title": "Sales and Purchase",
-			"desc": "You  can track communication with your Leads or Customers. Keep engaging with them by sending newsletter once in awhile and send specific Quotations when they are ready to order. Keep track of items to buy by raising Material Requests, send Purchase Orders to your suppliers and enter Purchase Receipts when you receive material.",
-			"img": "/assets/erpnext_com/images/industries/purchase-order.png"
-		})
-	}}
-
-
-	{{ testimonial("Konrad Schwitter, OfficeOne", "<strong>We are using erpnext for more than four years and are very happy.</strong> We use all the modules a trading company needs to be successful including POS and Accounting. We also run the hosted cloud solution from erpnext with a unbelievable availability and performance. This week I kickstarted a new project with one of my other companies.", "/assets/erpnext_com/images/testimonials/konrad.png") }}
-
-
-	{% include("erpnext_com/templates/includes/industry_footer.html") %}
+			"content": "ERPNext stock module will help you manage inventory and procurement across warehouses."
+		},
+		{
+			"title": "Billing and Payments",
+			"content": "Track all things financial, including billings and payments with the ERPNext accounts module."
+		},
+		{
+			"title": "Items and Variants",
+			"content": "ERPNext Item management helps you create and manage your manufacturing items and its variants."
+		},
+		{
+			"title": "Batches and Serial Numbers",
+			"content": "ERPNext has built-in support for batched and serialized inventory that will help you in traceability."
+		},
+		{
+			"title": "HR and Payroll",
+			"content": "Manage your employee data, payroll, leave and attendance, expense claims, all within your ERPNext system."
+		},
+	]
+	)
+}}
 
 {% endblock %}
-

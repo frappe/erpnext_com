@@ -1,114 +1,122 @@
 {% extends "frappe_theme/templates/base.html" %}
-{% from "erpnext_com/templates/includes/macros.html" import hero %}
 {% block title %}Open Source Cloud ERP Software - ERPNext{% endblock %}
 
+{% from "templates/includes/media.html" import media %}
+
 {% block head_include %}
-    <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
 	<meta name="description" content="ERPNext is the world's top 100% open source ERP software. ERPNext supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare" />
 	<meta name="keywords" content="ERP Software, Cloud ERP, Open Source ERP, Accounting Software, Online ERP, Online Accounting, ERP for small business" />
-    <style>{% include "templates/includes/custom.css" %}</style>
 {% endblock %}
 
 {% block content %}
-	<!-- {{ hero("ERP Made Simple",
-		"ERPNext helps you take full control of your business. <br> It is as powerful as it is easy to use", "/assets/erpnext_com/images/home.png", False)}} -->
-	<section class='hero text-center' style="padding-bottom: 0;">
-		<div class='text-center'>
-			<img class="main-illustration" src='/assets/erpnext_com/img/erpnext_com_illustration.png'
-				style='width: 700px;'>
+<section class='top-section'>
+	<div class='container'>
+	<div class='text-center'>
+		<!-- <img class="main-illustration" src='/assets/erpnext_com/img/erpnext_com_illustration.png'
+			style='width: 700px;'> -->
+	</div>
+	<h1><span class="what">ERP</span> Made Simple</h1>
+	<p class='lead'>The ERP Software that helps you take full control of your business. <br> ERPNext is both powerful and easy to use.</p>
+	<p class="mt-4">
+		<a class="btn btn-primary btn-lg" href="/signup">
+		Start a Free 30-day Trial</a>
+	</p>
+
+	<div class="chrome-tabs mt-5" data-chrome-tabs-instance-id="0">
+		<div class="chrome-tabs-content">
+
 		</div>
-		<h1 class="hero-title"><span class="what">ERP</span> Made Simple</h1>
-		<p class='lead'>The ERP Software that helps you take full control of your business. <br> ERPNext is both powerful and easy to use</p>
-		<p class="mar-t-50 mar-b-50">
-			<a class="x-large blue-btn button later" href="/pricing" style="font-size: 20px;">
-			Start a free 30-day trial</a>
-		</p>
-		<!-- <div class="mar-t-70">
-			<div>
-				<img class="img-responsive screenshot feature-image"
-				src="/assets/erpnext_com/images/home.png">
+		<div class="chrome-tabs-bottom-bar" style="z-index: 3;"></div>
+		<!-- Styles to prevent flash after JS initialization -->
+		<style>
+			.chrome-tabs .chrome-tab {
+				width: 243px
+			}
+
+			.chrome-tabs .chrome-tab:nth-child(1) {
+				transform: translate3d(0px, 0, 0)
+			}
+
+			.chrome-tabs .chrome-tab:nth-child(2) {
+				transform: translate3d(229px, 0, 0)
+			}
+		</style>
+		<style>
+			.chrome-tabs[data-chrome-tabs-instance-id="0"] .chrome-tab:nth-child(1) {
+				transform: translate3d(0px, 0, 0)
+			}
+
+			.chrome-tabs[data-chrome-tabs-instance-id="0"] .chrome-tab:nth-child(2) {
+				transform: translate3d(229px, 0, 0)
+			}
+		</style>
+	</div>
+
+	<div class="tab-content">
+		<img src="/assets/erpnext_com/images/home/new-item.gif"
+			class="img-responsive image-1">
+		<img src="/assets/erpnext_com/images/home/new-customer.gif"
+			class="img-responsive image-2">
+		<img src="/assets/erpnext_com/images/home/new-sales-inv.gif"
+			class="img-responsive image-3">
+		<img src="/assets/erpnext_com/images/home/new-material-req.gif"
+			class="img-responsive image-4">
+	</div>
+	<p class='text-muted small text-center mt-3'>Click on tabs above to explore</p>
+
+	</div>
+</section>
+
+<section class="section-padding section-bg">
+	<div class='container'>
+	<div class='card-deck'>
+		<div class="card">
+			<!-- <img class='mt-3' src="/assets/erpnext_com/img/balloon.svg" style='height: 150px'> -->
+			<div class='card-body'>
+				<h5 class='card-title'>Expert Support</h5>
+				<div>Our awesome support team is ready to help you get started on the ERPNext Cloud. Support is also available for local installations.</div>
 			</div>
-		</div> -->
-	</section>
+			<div class='card-footer'>
+				<a href="/pricing" class='text-muted small'>See plans for details</a>
+			</div>
+		</div>
 
-	<div class="group later">
-		<div class="row section text-center">
-			<div class="col-sm-12">
-				<div class="dashboard-section">
-					<h1 class="h2">Accounting, Inventory <br class="visible-xs"> and Beyond</h1>
-					<p class="p">ERPNext covers all the features you need to run a small or medium business.</p>
-				</div>
+		<div class="card">
+			<!-- <img class='mt-3' src="/assets/erpnext_com/img/umbrella.svg" style='height: 150px'> -->
+			<div class='card-body'>
+				<h5 class='card-title'>Amazing Community</h5>
+				<div>The forum is the hub of activity related to ERPNext. You can ask a question, find developers or hire service providers.</div>
+			</div>
+			<div class='card-footer'>
+				<a href="https://discuss.erpnext.com" class='text-muted small'>Visit the forum</a>
+			</div>
+		</div>
 
-				<div class="chrome-tabs" data-chrome-tabs-instance-id="0">
-					<div class="chrome-tabs-content">
-
-					</div>
-					<div class="chrome-tabs-bottom-bar" style="z-index: 3;"></div>
-					<!-- Styles to prevent flash after JS initialization -->
-					<style>
-						.chrome-tabs .chrome-tab {
-							width: 243px
-						}
-
-						.chrome-tabs .chrome-tab:nth-child(1) {
-							transform: translate3d(0px, 0, 0)
-						}
-
-						.chrome-tabs .chrome-tab:nth-child(2) {
-							transform: translate3d(229px, 0, 0)
-						}
-					</style>
-					<style>
-						.chrome-tabs[data-chrome-tabs-instance-id="0"] .chrome-tab:nth-child(1) {
-							transform: translate3d(0px, 0, 0)
-						}
-
-						.chrome-tabs[data-chrome-tabs-instance-id="0"] .chrome-tab:nth-child(2) {
-							transform: translate3d(229px, 0, 0)
-						}
-					</style>
-				</div>
-
-				<div class="tab-content">
-					<img src="/assets/erpnext_com/images/home/new-item.gif"
-						class="img-responsive image-1">
-					<img src="/assets/erpnext_com/images/home/new-customer.gif"
-						class="img-responsive image-2">
-					<img src="/assets/erpnext_com/images/home/new-sales-inv.gif"
-						class="img-responsive image-3">
-					<img src="/assets/erpnext_com/images/home/new-material-req.gif"
-						class="img-responsive image-4">
-				</div>
-
+		<div class="card">
+			<!-- <img class='mt-3' src="/assets/erpnext_com/img/sun.svg" style='height: 150px'> -->
+			<div class='card-body'>
+				<h5 class='card-title'>Open Source</h5>
+				<div>ERPNext is open source and infinitely extensible. Customize it, build upon it, add your own apps built with our <a href="https://frappe.io" class="underline">Frappe Framework</a>.</div>
+			</div>
+			<div class='card-footer'>
+				<a href="https://frappe.io/frappe" class='text-muted small'>Explore Frappe Framework</a>
 			</div>
 		</div>
 	</div>
-
-	<div class="row section later">
-		<div class="col-sm-4 small-content">
-			<div>
-				<img style="height: 120px; margin-top: 10px;" src="/assets/erpnext_com/img/balloon.svg">
-			</div>
-			<h1>Expert Support</h1>
-			<p>Our awesome support team is ready to help you get started on the ERPNext Cloud. Support is also available for local installations.</p>
-			<a href="/pricing">See plans for details</a>
-		</div>
-
-		<div class="col-sm-4 small-content">
-			<img src="/assets/erpnext_com/img/umbrella.svg">
-			<h1>Amazing Community</h1>
-			<p>The forum is the hub of activity related to ERPNext. You can ask a question, find developers or hire service providers.</p>
-			<a href="https://discuss.erpnext.com" target="_blank">Visit the forum</a>
-		</div>
-
-		<div class="col-sm-4 small-content">
-			<img src="/assets/erpnext_com/img/sun.svg">
-			<h1>Developer Friendly</h1>
-			<p>ERPNext is open source and infinitely extensible. Customize it, build upon it, add your own apps built with our <a href="https://frappe.io" class="underline">Frappé Framework</a>.</p>
-			<a href="/download">Download ERPNext free</a>
+	</div>
+</section>
+<section class='section-padding'>
+	<div class='container text-center'>
+		<h3 class='text-center'>Loved by Users</h3>
+		<p class='lead'>ERPNext is used by more than 3000 companies across the world</p>
+		<img src="/assets/erpnext_com/img/home/customer-logos.png" class='greyscale my-5'>
+		<div class='mt-4 '>
+			<a class="btn btn-primary btn-lg" href="/signup">
+			Start a Free 30-day Trial</a>
 		</div>
 	</div>
-
+</section>
+<style>.footer-message { display: none; }</style>
 	<script src="/assets/erpnext_com/js/draggabilly.js"></script>
 	<script src="/assets/erpnext_com/js/chrome-tabs.js"></script>
 	<script>

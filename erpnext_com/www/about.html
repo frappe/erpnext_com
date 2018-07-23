@@ -1,0 +1,86 @@
+{% extends "templates/base.html" %}
+{% block title %}First Class Support for ERPNext{% endblock %}
+{% block content %}
+
+<section class='splash'
+	style='background-image: url(/assets/erpnext_com/img/unsplash/pitstop.jpg)'>
+</section>
+
+<section class='top-section after-splash'>
+	<div class='container'>
+		<h1>First Class Support for ERPNext</h1>
+		<p class="lead">Brought to you by the team that built ERPNext, Frappe Technologies, ERPNext.com aims to be the parter of choice for serious organizations looking for solid ERPNext experience and support.<p>
+	</div>
+</section>
+
+{% set reasons = [
+	{
+		"title": "Server Management",
+		"content": "Let us lose sleep over your infrastructure. We have years of experiences ensuring that your servers are up and running at optimium levels."
+	},
+	{
+		"title": "Redundancy",
+		"content": "ERPNext Cloud uses a Master-Slave system, so each server has a live twin that will ensure that chances of losing data are bare minimum."
+	},
+	{
+		"title": "Upgrade Management",
+		"content": "Don't worry about keeping updated with the latest security and performance upgrades, we ensure that your ERPNext instance is patched and up-to-date."
+	},
+	{
+		"title": "Priority Support",
+		"content": "Our support team knows ERPNext inside out and has tons of experience dealing with all kinds of scenarios, and responds very quickly."
+	},
+	{
+		"title": "Bug Fix Guarantee",
+		"content": "If you report a bug in a standard feature, we will guarantee that it will be fixed with highest priority and automatically patched and released for you."
+	},
+	{
+		"title": "Configuration Support",
+		"content": "If you are implementing ERPNext, our support team will help you map your business process with ERPNext workflows and help you setup your system."
+	},
+	{
+		"title": "Email Service",
+		"content": "With ERPNext.com you don't have to worry your transaction emails reach your recipients as we automatically route your emails via Mailgun."
+	},
+	{
+		"title": "Offsite Backups",
+		"content": "Your instance on ERPNext.com is automatically backed up on Amazon S3 so that you can be doubly assured of your data."
+	},
+	{
+		"title": "Scalability Support",
+		"content": "As your business grows, you may experience scalability issues. We will ensure we try and fix them so that you do not experience slow performance."
+	}
+
+] %}
+
+<section class='section-bg'>
+	<div class='container'>
+		<h3 class=text-center>Why Choose ERPNext.com?</h3>
+		<p class='lead text-center'>Leave your system management to the experts so that you can focus your energy on what you do best.</p>
+		<div class='row mt-5'>
+			{% for card in reasons %}
+			<div class='col-sm-4 mb-4'>
+				<div class='card h-100'>
+					<div class='card-body'>
+						<h5 class='card-title'>{{ card.title }}</h5>
+						{{ card.content }}
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class='container text-center'>
+		<h3>Powered By Frappe</h3>
+		<p class='lead text-center'>ERPNext.com are brought to you by Frappe Technologies, the originator and maintainer of the ERPNext Project</p>
+		<img class='mt-4' src='/assets/erpnext_com/img/hackathon.jpg'>
+		<div class='mt-5'>
+			<a href='https://frappe.io/about' class='btn btn-dark' target='_blank'>Learn more about Frappe</a>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

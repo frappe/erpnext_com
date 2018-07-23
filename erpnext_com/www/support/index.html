@@ -1,0 +1,46 @@
+<section class='top-section'>
+	<div class='container'>
+		<h1>Support for Self-Hosted</h1>
+		<p class='lead'>Get full control and ownership over your ERP system with no strings attached.</p>
+	</div>
+</section>
+<section class=section-bg>
+	<div class='container'>
+		<div class='card-deck'>
+			{% for card in [
+				{
+					"title": "Functional Support",
+					"content": "Includes one time setup and unlimted bug fix and support over email for one year for all standard modules.",
+					"link": "/support/functional"
+				},
+				{
+					"title": "Server Support",
+					"content": "Remote server setup and monitoring with managed upgrade, scalability and crash recovery services.",
+					"link": "/support/server"
+				},
+				{
+					"title": "Developer Support",
+					"content": "Remote support to your developer team over email and chat by core Frappe and ERPNext Developers.",
+					"link": "/support/developer"
+				},
+				] %}
+			<div class='card'>
+				<div class='card-body'>
+					<h5 class='card-title'>{{ card.title }}</h5>
+					{{ card.content }}
+				</div>
+				<div class='card-footer'>
+					<a class='btn btn-secondary btn-sm' href="{{ card.link }}">Learn More</a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<section>
+	<div class='container text-center'>
+		<h1>Enterprise Support</h1>
+		<p class=lead>Get your own remote ERP management team that will adapt to your enterprise needs, including support, server management and development.</p>
+		<a class='btn btn-secondary btn-sm mt-4' href="/contact">Get in Touch</a>
+	</div>
+</section>

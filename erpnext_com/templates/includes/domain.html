@@ -1,0 +1,39 @@
+{% macro domain(domain, title, subtitle, image, features) %}
+<section class='splash' style="background-image: url(/assets/erpnext_com/img/unsplash/{{ image }})"></section>
+<section class='top-section after-splash'>
+	<div class=container>
+		<h1>{{ title }}</h1>
+		<p class='lead'>{{ subtitle }}</p>
+	</div>
+</section>
+<section class='section-bg'>
+	<div class=container>
+		<div class=text-center>
+			<h1>{{ domain}} Features</h1>
+		</div>
+		<div class='row mt-5'>
+			{% for card in features %}
+			<div class='col-sm-4 mb-4'>
+				<div class='card h-100'>
+					<div class='card-body'>
+						<h5 class='card-title'>{{ card.title }}</h5>
+						{{ card.content }}
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<section>
+	<div class='container text-center'>
+		<p class='lead mb-4'>Join thousands of companies world-wide and discover why ERPNext makes so much sense</p>
+		<img src="/assets/erpnext_com/img/home/customer-logos.png" class='greyscale my-5'>
+		<a href='/signup' class='btn btn-primary btn-lg'>
+			Sign up for a Free Trial
+		</a>
+	</div>
+</section>
+
+<style>.footer-message { display: none; }</style>
+{% endmacro %}

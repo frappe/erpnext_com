@@ -1,74 +1,50 @@
+# -*- coding: utf-8 -*-
+
 from __future__ import unicode_literals
 import frappe
-from frappe.utils import cint
+import requests
+from frappe.utils import fmt_money
+
+eu = ["BE", "BG", "CZ", "DK", "DE", "EE", "IE", "EL", "ES", "FR", "HR",
+	"IT", "CY", "LV", "LT", "LU", "HU", "MT", "NL", "AT", "PL", "PT",
+	"RO", "SI", "SK", "FI", "SE"]
 
 def get_context(context):
-	common_features = [
-		"Priority Support",
-		"Bug Fix Guarantee",
-		"All Modules",
-		"All Domains",
-		"Auto-Upgrades",
-		"Automated Backups",
-		"Custom Domain",
-		"Mobile App"
-		]
+	context.no_cache = True
+	context.country = get_country()
 
-	start_features = [
-		"5 Users",
-		"<span class='bold'>Add User at $12.5/month</span>",
-		"5 GB Space",
-		"5,000 Emails"
-		]
+	context.currency = 'USD'
+	context.symbol = '$'
+	context.rate = 150
 
-	medium_features = [
-		"100 Users",
-		"<span class='bold'>Add User at $12.5/month</span>",
-		"100 GB Space",
-		"100,000 Emails"
-		]
+	if context.country == 'IN':
+		context.currency = 'INR'
+		context.symbol = '₹'
+		context.rate = 10000
 
-	enterprise_features = [
-		"Unlimited Users",
-		"Unlimited Space",
-		"Unlimited Emails"
-		]
+	elif context.country in eu:
+		context.currency = 'EUR'
+		context.symbol = '€'
+		context.rate = 125
 
-	medium_extras = [
-		"5 Custom Reports",
-		"5 Custom Print Formats"
-		]
+	elif context.country == 'UK':
+		context.currency = 'GBP'
+		context.symbol = '£'
+		context.rate = 120
 
-	enterprise_extras = [
-		"Custom Reports",
-		"Custom Print Formats",
-		"Dedicated Engineer",
-		"Feature Development"
-		]
+	elif context.country == 'AE':
+		context.currency = 'AED'
+		context.symbol = 'د.إ'
+		context.rate = 550
 
-	plans = [
-		{"name": "Small",
-		"price": "$ 70<span class=\"small\">/month</span>",
-		"info": "Billed Annually",
-		"cta": "Start Trial",
-		"ctalink": "onclick=\"redirect_to_signup('signup', 'P5-2018')\"",
-		"features": start_features + common_features
-		},
+	context.rate = fmt_money(context.rate)[:-3]
 
-		{"name": "Medium",
-		"price": "$ 800<span class='small'>/month</span>",
-		"info": "Billed Annually",
-		"cta": "Start Trial",
-		"ctalink": "onclick=\"redirect_to_signup('signup', 'P100-2018')\"",
-		"features": medium_features + common_features + medium_extras
-		},
 
-		{"name": "Enterprise",
-		"price": "Custom",
-		"info": "Dedicated Server",
-		"cta": "Contact Us",
-		"ctalink": "href='/contact'",
-		"features": enterprise_features + common_features + enterprise_extras
-		}
-		]
-	return {"plans": plans}
+@frappe.whitelist(allow_guest=True)
+def get_country():
+	ip = '2405:201:23:fee6:18d4:2134:5d99:5dcc'
+	#ip = frappe.local.request_ip
+	country_code = requests.get('https://pro.ip-api.com/json/{ip}?key={key}&fields=countryCode'.format(
+		ip=ip, key=frappe.conf.get('ip-api-key'))).json().get('countryCode')
+
+	return country_code

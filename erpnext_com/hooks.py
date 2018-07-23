@@ -13,16 +13,35 @@ app_version = "0.0.1"
 hide_in_installer = True
 
 website_context = {
-	# "brand_html": "<img class='navbar-icon' src='/assets/frappe_theme/img/erp-icon.svg' />ERPNext",
-	# "top_bar_items": [
-	# 	{"label": "Pricing", "url": "/pricing", "right":1},
-	# 	{"label": "Features", "url": "/features", "right":1},
-	# 	{"label": "Docs", "url": "http://frappe.github.io/erpnext", "right":1},
-	# 	{"label": "Blog", "url": "https://frappe.io/blog", "right":1},
-	# ],
+	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/erpnext_com/img/erpnext-logo-blue.svg' />ERPNext",
+	"top_bar_items": [
+		{"label": "Pricing", "url": "/pricing", "right":1},
+		{"label": "Support", "url": "/support", "right":1},
+		{"label": "Learn", "url": "/learn", "right":1},
+		{"label": "Sign Up", "url": "/signup", "right":1},
+		{"label": "Industries", "right":1, "child_items": [
+			{"label": "Services", "url":"/services"},
+			{"label": "Manufacturing", "url":"/manufacturing"},
+			{"label": "Retail", "url":"/retail"},
+			{"label": "Distribution", "url":"/distribution"},
+			{"label": "Education", "url":"/education"},
+			{"label": "Non Profit", "url":"/non-profit"},
+			{"label": "Agriculture", "url":"/agriculture"},
+		]},
+		{"label": "About", "url": "/about", "right":1},
+	],
 	"hide_login": 1,
-	"favicon": "/assets/frappe_theme/img/favicon.ico"
+	"favicon": "/assets/erpnext_com/img/erpnext-logo-blue.png"
 }
+
+website_redirects = [
+	{'source': '/compare', 'target': 'https://erpnext.org/contribute' },
+	{'source': '/benefits', 'target': '/about' },
+	{'source': '/features', 'target': '/learn' },
+	{'source': '/download', 'target': 'https://erpnext.org/get-started' },
+	{'source': '/faq', 'target': 'https://erpnext.org/faq' },
+	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },
+]
 
 # Includes in <head>
 # ------------------
@@ -32,7 +51,7 @@ website_context = {
 # app_include_js = "/assets/erpnext_com/js/erpnext_com.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/erpnext_com/css/erpnext_com.css"
+web_include_css = "/assets/erpnext_com/css/custom.css"
 web_include_js = "/assets/erpnext_com/js/payment.js"
 
 # Home Pages

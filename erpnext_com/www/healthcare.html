@@ -1,51 +1,43 @@
 {% extends "frappe_theme/templates/base.html" %}
-{% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
 
-{% block title %}ERP for Healthcare{% endblock %}
+{% from "erpnext_com/templates/includes/domain.html" import domain %}
 
-{% block head_include %}
-	 <link href="/assets/frappe_theme/css/frappe_theme.css" rel="stylesheet">
-{% endblock %}
+{% block title %}ERP for Education{% endblock %}
 
 {% block content %}
-	{{ hero("ERP for Healthcare",
-		"Healing Touch to Healthcare Management", 			"/assets/erpnext_com/images/healthcare/patient-appointment.png", False) }}
 
-	{{ feature({
-			"title": "Patient and Appointment",
-			"desc": "Maintain Patient's details. Create new Appointments and Consultation for Patients.",
-			"img": "/assets/erpnext_com/images/healthcare/healthcare-hero-patient.png"
-		})
-	}}
-
-	{{ feature({
-		"title": "Physician Schedule",
-		"desc": "Create schedules for physicians in a jiffy.",
-		"img": "/assets/erpnext_com/images/healthcare/physician-schedule.gif"
-		})
-	}}
-
-	{{ feature({
-			"title": "Consultation",
-			"desc": "Record patient encounters with the Consultation document. Manage the Assessments, Prescriptions, and Medical Coding from a single place.",
-			"img": "/assets/erpnext_com/images/healthcare/patient-consultation.png"
-		})
-	}}
-
-	{{ feature({
+{{ domain(
+	"Healthcare",
+	"ERPNext for Healthcare",
+	"ERPNext Healthcare modules helps you manage patients, appointments, consultations and lab tests along with billing and all the other ERPNext goodies",
+	"healthcare.jpg",
+	[
+		{
+			"title": "Patient Data",
+			"content": "Keep track of all patients, their history and other critical parameters."
+		},
+		{
+			"title": "Appointments",
+			"content": "Maintain a schedule of all your physicians and track appointment bookings for them."
+		},
+		{
+			"title": "Consultations",
+			"content": "Record all observations, assessments and prescriptions of all patient consultations."
+		},
+		{
 			"title": "Lab Tests",
-			"desc": "Manage a clinical laboratory by entering Lab Tests and print or email test results, manage collected samples, and create Invoices.",
-			"img": "/assets/erpnext_com/images/healthcare/lab-test.png"
-		})
-	}}
+			"content": "Manage all Lab Tests along with specimens and resultes and keep them ready for print."
+		},
+		{
+			"title": "Patient Billing",
+			"content": "Track all things financial, including billings and payments with the ERPNext accounts module."
+		},
+		{
+			"title": "Stores and Inventory",
+			"content": "ERPNext stock module will help you manage medical inventory and procurement across warehouses."
+		}
+	]
+	)
+}}
 
-	{{ feature({
-			"title": "Appointment Analysis",
-			"desc": "See what your appointments tell you about your doctors and departments. The appointment analytics tool gives you greater insight into the appointments being made by the patients.",
-			"img": "/assets/erpnext_com/images/healthcare/appointment-analytics.png"
-		})
-	}}
-
-	{% include("erpnext_com/templates/includes/industry_footer.html") %}
 {% endblock %}
-
