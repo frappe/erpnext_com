@@ -1,10 +1,9 @@
-# Terms
+<section class='top-section'>
+<h1>Subscription Terms</h1>
+</section>
 
-<p class="lead">Subscription Agreement</p>
-
-Version: 3.1
-Date: 1st April 2015
-
+Version: 3.2
+Date: 1st August 2018
 
 ### Introduction
 
@@ -36,6 +35,8 @@ If You choose to do it, then there is no obligation on Our part to support Your 
 ### 5. Confidentiality and Privacy
 
 Your information / data is owned by You and is a part of your database / files and is treated as Confidential Information. We will ensure that Your Confidential Information is managed with the same level of security as Our Confidential Information. We will take all reasonable effort to ensure that any Confidential Information is managed in a secure manner by using rights management and password encryption. We may or may not publish our security measures to maintain their secrecy.
+
+[For full details, please read the privacy policy](/privacy)
 
 ### 6. Purchasing
 
@@ -89,7 +90,7 @@ Registered Address: D/324 Neelkanth Business Park, Vidyavihar West, Mumbai 40008
 
 Jurisdiction: Mumbai, India
 
-Dated: 1st April 2015
+Dated: 1st April 2018
 
 ---
 

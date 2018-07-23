@@ -18,6 +18,7 @@ website_context = {
 		{"label": "Pricing", "url": "/pricing", "right":1},
 		{"label": "Support", "url": "/support", "right":1},
 		{"label": "Learn", "url": "/learn", "right":1},
+		{"label": "Sign Up", "url": "/signup", "right":1},
 		{"label": "Industries", "right":1, "child_items": [
 			{"label": "Services", "url":"/services"},
 			{"label": "Manufacturing", "url":"/manufacturing"},

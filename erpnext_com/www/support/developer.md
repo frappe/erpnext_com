@@ -6,10 +6,6 @@ Developer support is ideal for users who have in-house developers and are on the
 
 Frappe developers have experience of working with hundreds of instance and all developers are exposed to all the aspects of the product and are full-stack developers.
 
-### Case Base Support
-
-Frappe developers will respond to your design queries by email and if necessary schedule a call or conduct a one-on-one screen sharing session. Based on your requirement, support will be given by the domain or technology expert.
-
 ### Consulting
 
 When you are designing a new feature or integration, Frappe developers can help you determine the best approach and help you in anticipating problems that may arise based on your approach.

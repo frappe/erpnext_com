@@ -1,22 +1,18 @@
-#Reporting Security Vulnerabilities
-<br>
-<p class='p' style='margin-bottom: 0;'>
+<section class='top-section'>
+<h1>Reporting Security Vulnerabilities</h1>
+</section>
+
 While we try to be proactive in preventing security problems, we do not assume they’ll never come up.
-</p>
-<p class='p' style='margin-bottom: 0;'>
+
 It is standard practice to responsibly and privately disclose a security problem to the vendor i.e. Frappe core development team before publicising, so a fix can be prepared, and damage from the vulnerability minimised.
-</p>
 
-# Policy
-<p class='p' style='margin-bottom: 0;'>
+#### Policy
+
 You are responsible for complying with all applicable laws and must only ever use or otherwise access your own test accounts when researching vulnerabilities in any of our products or services. Access to, or modification of user data is explicitly prohibited without prior consent from the account owner.
-</p>
 
-# Qualifying Vulnerabilities
+#### Qualifying Vulnerabilities
 
-<p class='p' style='margin-bottom: 0;'>
-Any reproducible vulnerability that affects the security of our users is likely to be in scope. 
-</p>
+Any reproducible vulnerability that affects the security of our users is likely to be in scope.
 
 Common examples include:
 
@@ -27,12 +23,11 @@ Common examples include:
 * SQL Injection (SQLi)
 
 
-# Security Vulnerability Submission by Email
-<p class='p' style='margin-bottom: 0;'>If you find any security breaches, please report the issue  to <i class="fa fa-envelope"> </i> <a  href='mailto:report@erpnext.com'> Frappe Vulnerability Management</a></p>
+#### Security Vulnerability Submission by Email
 
-<p class='p' style='margin-bottom: 10px;'>
+If you find any security breaches, please report the issue  to <i class="fa fa-envelope"> </i> <a  href='mailto:report@erpnext.com'> Frappe Vulnerability Management</a>
+
 It is important to include at least the following information in the email:
-</p>
 
 * Organization and contact name
 * Your Reference / Advisory Number

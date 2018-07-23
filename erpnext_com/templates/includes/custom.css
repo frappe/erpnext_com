@@ -1,3 +1,7 @@
 .navbar {
 /*	background-color: #5e64ff !important;
 */}
+
+a[href="/signup"] {
+	font-weight: bold;
+}
