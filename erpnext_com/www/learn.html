@@ -1,18 +1,32 @@
-<section class='top-section'>
-	<div class='container'>
-	<h1>Master ERPNext Basics</h1>
-	<p class='lead mb-4'>These short videos will get you started with ERPNext in a short time. 100% Recommended by users!</p>
+{% macro video(title, id) %}
+<div class='card mt-5'>
+	<div class="embed-responsive embed-responsive-16by9">
+	  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ id }}?rel=0" allowfullscreen></iframe>
 	</div>
-</section>
-{% macro video(title, link) %}
-<div class='card'>
-	<>
 	<div class='card-body'>
+		{{ title }}
 	</div>
 </div>
 {% endmacro %}
-<section class='section-bg'>
+
+<section class='top-section'>
 	<div class='container'>
-		<div class>
+		<h1>Master ERPNext Basics</h1>
+		<p class='lead'>These short videos will get you started with ERPNext in a short time. 100% Recommended by users!</p>
+		<div class='card-deck'>
+			{{ video("Chart of Accounts", "AcfMCT7wLLo") }}
+			{{ video("Items and Pricing", "FcOsV-e8ymE") }}
+		</div>
+		<div class='card-deck'>
+			{{ video("Customers and Suppliers", "zsrrVDk6VBs") }}
+			{{ video("Opening Account Balances", "U5wPIvEn-0c") }}
+		</div>
+		<div class='card-deck'>
+			{{ video("Opening Stock", "nlHX0ZZ84Lw") }}
+			{{ video("Bill of Materials", "hDV0c1OeWLo") }}
+		</div>
+		<div class='mt-5'>
+			<a href='https://erpnext.org/docs/user/videos/learn' class='btn btn-dark'>Watch More Videos</a>
+		</div>
 	</div>
 </section>

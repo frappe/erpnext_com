@@ -42,4 +42,6 @@ Despite best efforts, sometimes bugs can get introduced in the system at the tim
 
 If you are on a stable release, you must upgrade to the latest version of that release. Selective patches cannot be applied as it will compromise the integrity of the system and potentially introduce many more issues.
 
-<a class='btn btn-primary' href='/request-quote'>Request A Quote</a>
+<div class='my-5 text-center'>
+	<a href='/contact' class='btn btn-primary'>Get in Touch</a>
+</div>
