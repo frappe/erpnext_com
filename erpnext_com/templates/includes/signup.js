@@ -119,7 +119,6 @@ setup_signup = function(page) {
 
 		goog_report_conversion(); // eslint-disable-line
 
-		console.log("BEFORE SENDING");
 
 		// on success, it will show message page!
 		frappe.call({
