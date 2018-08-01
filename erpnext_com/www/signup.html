@@ -1,5 +1,4 @@
 <!-- no-cache -->
-
 <section class='top-section'>
 	<div class='container'>
 	<h1>Start Your Free 30 Day Trial</h1>
@@ -54,13 +53,63 @@
 	</div>
 	</div>
 </section>
-<style>.footer-message { display: none; }</style>
+<style>
+	.footer-message { display: none; }
+
+	.form-group {
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	.hero-and-content {
+		background-color: #f5f7fa;
+	}
+
+	[data-html-block="header"] {
+		text-align: center;
+	}
+
+	.page-card {
+		max-width: 500px;
+		padding: 30px 40px;
+		margin: 20px auto;
+	}
+
+	.help-block {
+		margin-bottom: 5px;
+	}
+
+	.availability-status i, .availability-spinner i {
+		margin: 5px;
+		font-size: 16px;
+	}
+
+	.validation-message {
+		display: none;
+		margin-top: 0px;
+		position: absolute;
+	}
+
+	.invalid .validation-message{
+		color: #ffad58;
+		display: inherit;
+	}
+
+	.invalid input {
+		border-color: #ffad58;
+		background-color: #fffdf4;
+	}
+
+	{% include "templates/styles/card_style.css" %}
+</style>
+
 
 {% include "erpnext_com/templates/includes/google_conversion.html" %}
 
+
 <script>
 	{% include "erpnext_com/templates/includes/signup.js" %}
-	{% include "templates/styles/card_style.css" %}
+	
 
 	window.erpnext_signup = {
 		subdomain_placeholder: 'mycompany',
@@ -71,51 +120,3 @@
 		setup_signup($('#page-signup'));
 	});
 </script>
-
-<style>
-.form-group {
-	position: relative;
-	margin-bottom: 30px;
-}
-
-.hero-and-content {
-	background-color: #f5f7fa;
-}
-
-[data-html-block="header"] {
-	text-align: center;
-}
-
-.page-card {
-	max-width: 500px;
-    padding: 30px 40px;
-    margin: 20px auto;
-}
-
-.help-block {
-	margin-bottom: 5px;
-}
-
-.availability-status i, .availability-spinner i {
-	margin: 5px;
-	font-size: 16px;
-}
-
-.validation-message {
-	display: none;
-	margin-top: 0px;
-    position: absolute;
-}
-
-.invalid .validation-message{
-	color: #ffad58;
-	display: inherit;
-}
-
-.invalid input {
-	border-color: #ffad58;
-	background-color: #fffdf4;
-}
-
-
-</style>

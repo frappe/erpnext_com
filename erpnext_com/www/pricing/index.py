@@ -13,10 +13,6 @@ def get_context(context):
 	context.no_cache = True
 	context.country = get_country()
 
-	context.currency = 'USD'
-	context.symbol = '$'
-	context.rate = 150
-
 	if context.country == 'IN':
 		context.currency = 'INR'
 		context.symbol = '₹'
@@ -37,14 +33,23 @@ def get_context(context):
 		context.symbol = 'د.إ'
 		context.rate = 550
 
-	context.rate = fmt_money(context.rate)[:-3]
+	else:
+		context.currency = 'USD'
+		context.symbol = '$'
+		context.rate = 150
 
+	context.rate = fmt_money(context.rate)[:-3]
 
 @frappe.whitelist(allow_guest=True)
 def get_country():
-	ip = '2405:201:23:fee6:18d4:2134:5d99:5dcc'
-	#ip = frappe.local.request_ip
-	country_code = requests.get('https://pro.ip-api.com/json/{ip}?key={key}&fields=countryCode'.format(
-		ip=ip, key=frappe.conf.get('ip-api-key'))).json().get('countryCode')
+	ip = frappe.local.request_ip
 
-	return country_code
+	res = requests.get('https://pro.ip-api.com/json/{ip}?key={key}&fields=countryCode'.format(
+		ip=ip, key=frappe.conf.get('ip-api-key')))
+	
+	try:
+		country_code = res.json().get('countryCode')
+		return country_code
+
+	except Exception:
+		return ''
