@@ -351,14 +351,10 @@
 		});
 
 		$(".signup").on('click', function(){
-			console.log(subscription_type)
 			let plan = 'P3-2018';
 			let page = 'signup';
 
-			if(subscription_type=='Monthly')
-				plan = 'Monthly P3 - 2018'
-
-			var url = page + '?plan=' + plan;
+			var url = page + '?plan=' + plan + '&subscription_type=' + subscription_type;
 				// concat existing params to url
 			url = url + window.location.search.replace('?', '&');
 			window.location.href = url;
