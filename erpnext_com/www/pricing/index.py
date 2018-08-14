@@ -17,28 +17,34 @@ def get_context(context):
 		context.currency = 'INR'
 		context.symbol = '₹'
 		context.rate = 10000
+		context.monthly_rate = 1000
 
 	elif context.country in eu:
 		context.currency = 'EUR'
 		context.symbol = '€'
 		context.rate = 125
+		context.monthly_rate = 13
 
 	elif context.country == 'UK':
 		context.currency = 'GBP'
 		context.symbol = '£'
 		context.rate = 120
+		context.monthly_rate = 12
 
 	elif context.country == 'AE':
 		context.currency = 'AED'
 		context.symbol = 'د.إ'
 		context.rate = 550
+		context.monthly_rate = 55
 
 	else:
 		context.currency = 'USD'
 		context.symbol = '$'
 		context.rate = 150
+		context.monthly_rate = 15
 
 	context.rate = fmt_money(context.rate)[:-3]
+	context.monthly_rate = fmt_money(context.monthly_rate)[:-3]
 
 @frappe.whitelist(allow_guest=True)
 def get_country():
