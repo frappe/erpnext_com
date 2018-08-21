@@ -54,9 +54,9 @@ def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
 	})
 
 @frappe.whitelist(allow_guest=True)
-def signup(full_name, email, subdomain, plan=None, distribution="erpnext", res=None):
+def signup(full_name, email, subdomain, plan=None, distribution="erpnext", res=None, subscription_type='Yearly'):
 	status = _signup(full_name, email, subdomain, plan=plan,
-		distribution=distribution, reseller=res)
+		distribution=distribution, reseller=res, subscription_type=subscription_type)
 
 	if status == 'success':
 		location = frappe.redirect_to_message(_('Verify your Email'),

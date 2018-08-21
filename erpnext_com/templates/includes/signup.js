@@ -110,6 +110,9 @@ setup_signup = function(page) {
 		var res = frappe.utils.get_url_arg('res');
 		if(res) args.res = res;
 
+		var subscription_type = frappe.utils.get_url_arg('subscription_type');
+		if(subscription_type) args.subscription_type = subscription_type;
+
 		args.distribution = window.erpnext_signup.distribution;
 
 		var $btn = $('.btn-request');

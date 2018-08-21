@@ -1,9 +1,109 @@
 <!-- title: ERPNext pricing -->
+<style>
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 140px;
+		height: 34px;
+	}
+
+	.switch input {display:none;}
+
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #6e43f3;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+
+	.slider:before {
+		position: absolute;
+		content: "";
+		height: 26px;
+		width: 26px;
+		left: 6px;
+		bottom: 4px;
+		background-color: white;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+
+	input:checked + .slider {
+		background-color: #6e43f3;
+	}
+
+	input:focus + .slider {
+		box-shadow: 0 0 1px #2196F3;
+	}
+
+	input:checked + .slider:before {
+		-webkit-transform: translateX(100px);
+		-ms-transform: translateX(100px);
+		transform: translateX(100px);
+	}
+
+	/*------ ADDED CSS ---------*/
+	.monthly
+	{
+		display: none;
+	}
+
+	.monthly, .yearly
+	{
+		color: white;
+		position: absolute;
+		transform: translate(-50%,-50%);
+		top: 50%;
+		left: 50%;
+		font-size: 16px;
+		font-family: "Hind";
+	}
+
+	input:checked+ .slider .monthly
+	{display: block;}
+
+	input:checked + .slider .yearly
+	{display: none;}
+
+	/*--------- END --------*/
+
+	/* Rounded sliders */
+	.slider.round {
+		border-radius: 34px;
+	}
+
+	.slider.round:before {
+		border-radius: 50%;
+	}
+
+</style>
 
 <section class='top-section'>
 	<div class='container'>
-	<h1>ERPNext Cloud is {{ symbol }} {{ rate }}/user/year, all inclusive.</h1>
-	<div class="lead">Minimum of 3 users, paid annually</div>
+	<label class="switch">
+		<input type="checkbox" id="subscription_type">
+			<div class="slider round">
+				<!--ADDED HTML -->
+				<span class="monthly">Monthly</span>
+				<span class="yearly">Yearly</span>
+				<!--END-->
+			</div>
+	</label>
+
+	<div class='yearly_banner'>
+		<h1>ERPNext Cloud is {{ symbol }} {{ rate }}/user/yearly, all inclusive.</h1>
+		<div class='lead'>Minimum of 3 users, paid annually</div>
+	</div>
+	<div class='monthly_banner hide'>
+		<h1>ERPNext Cloud is {{ symbol }} {{ monthly_rate }}/user/monthly, all inclusive.</h1>
+		<div class='lead'>Minimum of 3 users, paid monthly</div>
+	</div>
+
 	<div class="row text-left mt-5">
 		{% set features = [
 			{
@@ -45,7 +145,7 @@
 		{% endfor %}
 	</div>
 
-	<button class="btn btn-primary btn-lg mt-5" onclick="redirect_to_signup('signup', 'P3-2018')">Start a Free Trial</button>
+	<button class="btn btn-primary btn-lg mt-5 signup">Start a Free Trial</button>
 	<br>
 	<div class='mt-4'>
 		<a class="text-center" href="https://support.erpnext.com/request-a-demo"><b>Request A Demo</b></a>
@@ -233,10 +333,31 @@
 	</div>
 </section> -->
 <script>
-	function redirect_to_signup(page, plan) {
-		var url = page + '?plan=' + plan;
-		// concat existing params to url
-		url = url + window.location.search.replace('?', '&');
-		window.location.href = url;
-	}
+	frappe.ready(function() {
+		let subscription_type = 'Yearly';
+
+		$('#subscription_type').on('click', function(){
+			if($(this).prop('checked')) {
+				$('.yearly_banner').hide();
+				$('.monthly_banner').show();
+				subscription_type= 'Monthly'
+			}
+			else{
+				$('.yearly_banner').show();
+				$('.monthly_banner').hide();
+				subscription_type= 'Yearly';
+			}
+		});
+
+		$(".signup").on('click', function(){
+			let plan = 'P3-2018';
+			let page = 'signup';
+
+			var url = page + '?plan=' + plan + '&subscription_type=' + subscription_type;
+				// concat existing params to url
+			url = url + window.location.search.replace('?', '&');
+			window.location.href = url;
+		})
+	})
+
 </script>
