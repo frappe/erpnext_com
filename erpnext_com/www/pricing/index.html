@@ -99,7 +99,7 @@
 		<h1>ERPNext Cloud is {{ symbol }} {{ rate }}/user/yearly, all inclusive.</h1>
 		<div class='lead'>Minimum of 3 users, paid annually</div>
 	</div>
-	<div class='monthly_banner'>
+	<div class='monthly_banner hide'>
 		<h1>ERPNext Cloud is {{ symbol }} {{ monthly_rate }}/user/monthly, all inclusive.</h1>
 		<div class='lead'>Minimum of 3 users, paid monthly</div>
 	</div>
@@ -334,7 +334,6 @@
 </section> -->
 <script>
 	frappe.ready(function() {
-		$('.monthly_banner').hide();
 		let subscription_type = 'Yearly';
 
 		$('#subscription_type').on('click', function(){
