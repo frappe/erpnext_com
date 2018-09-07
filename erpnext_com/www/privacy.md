@@ -7,6 +7,7 @@ This is only applicable if you are using our services: <br>
     <li>Subscribed to ERPNext hosted account</li>
     <li>30-day trial account</li>
     <li>Requested for a demo</li>
+    <li>Contact for consultation via e-mail</li>
 </ul>
 
 We here at Frappe Technologies, value your privacy and take serious measures in protecting your personal information and have hence updated our privacy policy to make it GDPR compliant.
