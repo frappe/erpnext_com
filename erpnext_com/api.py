@@ -55,10 +55,16 @@ def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
 
 @frappe.whitelist(allow_guest=True)
 def signup(full_name, email, subdomain, plan=None, distribution="erpnext", res=None):
-	status = _signup(full_name, email, subdomain, plan=plan,
+	resp = _signup(full_name, email, subdomain, plan=plan,
 		distribution=distribution, reseller=res)
 
-	if status == 'success':
+	if resp.get("redirect_to"):
+
+		return {
+			"location": resp['redirect_to']
+		}
+
+	elif resp['status'] == 'success':
 		location = frappe.redirect_to_message(_('Verify your Email'),
 			"""<div><p>You will receive an email at <strong>{}</strong>,
 			asking you to verify this account request.<p><br>
@@ -66,7 +72,7 @@ def signup(full_name, email, subdomain, plan=None, distribution="erpnext", res=N
 			If you don't find it, please check your SPAM folder.</p>
 			</div>""".format(email), indicator_color='blue')
 
-	elif status=='retry':
+	elif resp['status']=='retry':
 		return {}
 
 	else:
