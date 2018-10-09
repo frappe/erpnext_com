@@ -16,7 +16,7 @@ def get_context(context):
 	if context.country == 'IN':
 		context.currency = 'INR'
 		context.symbol = '₹'
-		context.rate = 10000
+		context.rate = 1200
 
 	elif context.country in eu:
 		context.currency = 'EUR'
@@ -36,9 +36,9 @@ def get_context(context):
 	else:
 		context.currency = 'USD'
 		context.symbol = '$'
-		context.rate = 150
+		context.rate = 19.99
 
-	context.rate = fmt_money(context.rate)[:-3]
+	context.rate = fmt_money(context.rate)
 
 @frappe.whitelist(allow_guest=True)
 def get_country():
@@ -46,7 +46,7 @@ def get_country():
 
 	res = requests.get('https://pro.ip-api.com/json/{ip}?key={key}&fields=countryCode'.format(
 		ip=ip, key=frappe.conf.get('ip-api-key')))
-	
+
 	try:
 		country_code = res.json().get('countryCode')
 		return country_code

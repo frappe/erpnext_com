@@ -7,12 +7,15 @@ setup_signup = function(page) {
 
 	let domain_input_flag = 0;
 
-	page.find('input[name="email"]').on('change', function() {
-		let email = $(this).val();
-		if(!valid_email(email)) {
+	$('input[name="number_of_users"]').on('change', function() {
+		let number_of_users = Number($(this).val());
+
+		if(isNaN(number_of_users) || number_of_users <= 0) {
 			$(this).closest('.form-group').addClass('invalid');
 		} else {
 			$(this).closest('.form-group').removeClass('invalid');
+
+			$('.subscription-price').html((19.99 * number_of_users).toFixed(2));
 		}
 	});
 
