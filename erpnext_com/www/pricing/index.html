@@ -6,138 +6,59 @@
 	<div class="lead">All our plans provide all features, in-app support and backups.</div>
 
 	<div class="row text-left mt-5">
-
+		{% for feature in base_features %}
 		<div class='col-sm-4 mb-4'>
 			<div class='card'>
 				<div class=card-body>
-					<h6><b>All Modules</b></h6>
-					<p class="small mb-0">Unlimited features with Accounting, Inventory, HR and Payroll</p>
+					<h6><b>{{ feature.title }}</b></h6>
+					<p class="small mb-0">{{ feature.content }}</p>
 				</div>
 			</div>
 		</div>
-
-		<div class='col-sm-4 mb-4'>
-			<div class='card'>
-				<div class=card-body>
-					<h6><b>Personalized Support</b></h6>
-					<p class="small mb-0">In app priority support from the team that brought you ERPNext</p>
-				</div>
-			</div>
-		</div>
-
-		<div class='col-sm-4 mb-4'>
-			<div class='card'>
-				<div class=card-body>
-					<h6><b>Backup + Redundancy</b></h6>
-					<p class="small mb-0">Servers with offsite snapshot backups ensuring max reliability.</p>
-				</div>
-			</div>
-		</div>
-
+		{% endfor %}
 	</div>
+
 
 	<h3 class='mt-4'>Choose your ERPNext Subscription</h3>
 
 	<div class="row text-left mt-4">
 
-
+		{% for plan in plans %}
 		<div class='col-sm-4 mb-4'>
 			<div class='card'>
 				<div class=card-body>
-					<h4 class='card-title' style="font-weight: 300">Basic</h4>
+					<h4 class='card-title' style="font-weight: 300">{{ plan.title }}</h4>
 
-					<h3>$5</h3>
-					<p class="small mb-1">USD / user / month</p>
-					<p class="text-muted small">or $50 per user per year</p>
+					<h3>{{ plan.pricing[0].symbol }} {{ plan.pricing[0].monthly_rate }}</h3>
+					<p class="small mb-1">{{ plan.pricing[0].currency }} / user / month</p>
+					<p class="text-muted small">or {{ plan.pricing[0].symbol }} {{ plan.pricing[0].annual_rate }} per user per year</p>
 
-					<button class="btn btn-primary btn-sm" onclick="redirect_to_signup('signup', 'P3-2018')">Subscribe</button>
+					<button class="btn btn-primary btn-sm" onclick="redirect_to_signup('signup', '{{ plan.name }}')">Subscribe</button>
 
-					<h6 class="mt-5"><b>Server and Emails</b></h6>
-					<p class="small mb-2">2 GB cloud storage</p>
-					<p class="small mb-2">2000 emails / month</p>
-					<p class="small mb-2">Extensible via add-ons</p>
+					{% for feature in plan.features %}
+					<div
+					{% if loop.index == 2 %}
+						style="min-height: 158px"
+					{% endif %}
+					{% if loop.index == 3 %}
+						style="min-height: 112px"
+					{% endif %}
+					>
+						<h6 class="mt-5">
+							<b>{{ feature.title }}</b>
+						</h6>
+							{% for subfeature in feature.content %}
+							<p class="small mb-2">{{ subfeature }}</p>
+							{% endfor %}
 
-					<div style="min-height: 158px">
-						<h6 class="mt-5"><b>Customization</b></h6>
-						<p class="small mb-2">Customized Print Formats and Email Alerts</p>
-						<p class="small mb-2">10 Custom Fields</p>
-						<p class="small mb-2">1 Custom Form</p>
 					</div>
-
-					<div class="mb-3" style="min-height: 112px">
-						<h6 class="mt-5"><b>Integrations + API</b></h6>
-						<p class="small mb-2">Integrations with Email and REST API</p>
-					</div>
+					{% endfor %}
 
 				</div>
 			</div>
 		</div>
 
-		<div class='col-sm-4 mb-4'>
-			<div class='card'>
-				<div class=card-body>
-					<h4 class='card-title' style="font-weight: 300">Business</h4>
-
-					<h3>$10</h3>
-					<p class="small mb-1">USD / user / month</p>
-					<p class="text-muted small">or $100 per user per year</p>
-
-					<button class="btn btn-primary btn-sm" onclick="redirect_to_signup('signup', 'P3-2018')">Subscribe</button>
-
-					<h6 class="mt-5"><b>Server and Emails</b></h6>
-					<p class="small mb-2">5 GB cloud storage</p>
-					<p class="small mb-2">5000 emails / month</p>
-					<p class="small mb-2">Extensible via add-ons</p>
-
-					<div style="min-height: 158px">
-						<h6 class="mt-5"><b>Customization</b></h6>
-						<p class="small mb-2">Customized Print Formats and Email Alerts</p>
-						<p class="small mb-2">Unlimited Custom Fields</p>
-						<p class="small mb-2">10 Custom Forms, 10 Custom Scripts</p>
-					</div>
-
-					<div style="min-height: 112px">
-						<h6 class="mt-5"><b>Integrations + API</b></h6>
-						<p class="small">Built-in integrations with Email</p>
-						<p class="small">Dropbox, Shopify, REST API and more</p>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class='col-sm-4 mb-4'>
-			<div class='card'>
-				<div class=card-body>
-					<h4 class='card-title' style="font-weight: 300">Enterprise</h4>
-
-					<h3>$25</h3>
-					<p class="small mb-1">USD / user / month</p>
-					<p class="text-muted small">or $250 per user per year</p>
-
-					<button class="btn btn-primary btn-sm" onclick="redirect_to_signup('signup', 'P3-2018')">Subscribe</button>
-
-					<h6 class="mt-5"><b>Server and Emails</b></h6>
-					<p class="small mb-2">15 GB cloud storage</p>
-					<p class="small mb-2">15000 emails / month</p>
-					<p class="small mb-2">Extensible via add-ons</p>
-
-					<div>
-						<h6 class="mt-5"><b>Customization</b></h6>
-						<p class="small mb-2">Customized Print Formats and Email Alerts</p>
-						<p class="small mb-2">Unlimited Custom Fields, Forms and Scripts</p>
-						<p class="small mb-2">1 Custom Application</p>
-					</div>
-
-					<div>
-						<h6 class="mt-5"><b>Integrations + API</b></h6>
-						<p class="small">Built-in integrations with Email</p>
-						<p class="small">Dropbox, Shopify, REST API and more</p>
-					</div>
-
-				</div>
-			</div>
-		</div>
+		{% endfor %}
 
 	</div>
 
