@@ -5,6 +5,8 @@ setup_signup = function(page) {
 		var page = $('#page-signup,#page-signup-1');
 	}
 
+	$('input[name="number_of_users"]').val(1);
+
 	$('input[name="number_of_users"]').on('change', function() {
 		let number_of_users = Number($(this).val());
 
@@ -90,7 +92,7 @@ setup_signup = function(page) {
 		args.subdomain = args.subdomain.toLowerCase();
 
 		// all mandatory
-		if(!(args.full_name && args.email && args.domain && args.subdomain)) {
+		if(!(args.full_name && args.email && args.number_of_users && args.subdomain)) {
 			frappe.msgprint("All fields are necessary. Please try again.");
 			return false;
 		}
@@ -201,9 +203,9 @@ setup_signup = function(page) {
 	page.find(".plan-message").text("Free 30-day Trial");
 
 	// if (['Free', 'Free-Solo'].indexOf(query_params.plan)!==-1) {
-// 		// keeping Free-Solo for backward compatibility
-// 		page.find(".plan-message").text("Free for 1 User");
-// 	}
+	// 		// keeping Free-Solo for backward compatibility
+	// 		page.find(".plan-message").text("Free for 1 User");
+	// 	}
 
 	$('.domain-missing-msg').addClass("hidden");
 	if (query_params.domain) {
