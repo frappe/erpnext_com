@@ -11,34 +11,16 @@ eu = ["BE", "BG", "CZ", "DK", "DE", "EE", "IE", "EL", "ES", "FR", "HR",
 
 def get_context(context):
 	context.no_cache = True
-	context.country = get_country()
+	country = get_country()
+	country = country
 
-	if context.country == 'IN':
+	if country == 'IN':
 		context.currency = 'INR'
 		context.symbol = '₹'
-		context.rate = 1200
-
-	elif context.country in eu:
-		context.currency = 'EUR'
-		context.symbol = '€'
-		context.rate = 125
-
-	elif context.country == 'UK':
-		context.currency = 'GBP'
-		context.symbol = '£'
-		context.rate = 120
-
-	elif context.country == 'AE':
-		context.currency = 'AED'
-		context.symbol = 'د.إ'
-		context.rate = 550
 
 	else:
 		context.currency = 'USD'
 		context.symbol = '$'
-		context.rate = 19.99
-
-	context.rate = fmt_money(context.rate)
 
 	context.base_features = [
 		{
@@ -57,26 +39,25 @@ def get_context(context):
 
 	context.plan_features = ['Server and Emails', 'Customization', 'Integrations + API']
 
+	basic_plan = frappe.get_doc('Base Plan', 'P-Basic')
+	basic_plan_pricing = [d.as_dict() for d in basic_plan.amounts if d.currency == context.currency][0]
+	basic_plan_pricing['symbol'] = context.symbol
+
+	business_plan = frappe.get_doc('Base Plan', 'P-Business')
+	business_plan_pricing = [d.as_dict() for d in business_plan.amounts if d.currency == context.currency][0]
+	business_plan_pricing['symbol'] = context.symbol
+
+	enterprise_plan = frappe.get_doc('Base Plan', 'P-Enterprise')
+	enterprise_plan_pricing = [d.as_dict() for d in enterprise_plan.amounts if d.currency == context.currency][0]
+	enterprise_plan_pricing['symbol'] = context.symbol
+
 	context.plans = [
 		{
-			'name': 'P-Basic',
+			'name': basic_plan.name,
 			'title': 'Basic',
-			'pricing': [
-				{
-					'currency': 'USD',
-					'symbol': '$',
-					'monthly_rate': 5,
-					'annual_rate': 50
-				},
-				{
-					'currency': 'INR',
-					'symbol': '₹',
-					'monthly_rate': 200,
-					'annual_rate': 2000
-				}
-			],
-			'storage': 2,
-			'emails': 2000,
+			'pricing': basic_plan_pricing,
+			'storage': basic_plan.space,
+			'emails': basic_plan.emails,
 			'features': [
 				{
 					'title': context.plan_features[0],
@@ -104,22 +85,11 @@ def get_context(context):
 
 		},
 		{
-			'name': 'P-Business',
+			'name': business_plan.name,
 			'title': 'Business',
-			'pricing': [
-				{
-					'currency': 'USD',
-					'symbol': '$',
-					'monthly_rate': 10,
-					'annual_rate': 100
-				},
-				{
-					'currency': 'INR',
-					'symbol': '₹',
-					'monthly_rate': 500,
-					'annual_rate': 5000
-				}
-			],
+			'pricing': business_plan_pricing,
+			'storage': business_plan.space,
+			'emails': business_plan.emails,
 			'storage': 5,
 			'emails': 5000,
 			'features': [
@@ -150,24 +120,11 @@ def get_context(context):
 
 		},
 		{
-			'name': 'P-Enterprise',
+			'name': enterprise_plan.name,
 			'title': 'Enterprise',
-			'pricing': [
-				{
-					'currency': 'USD',
-					'symbol': '$',
-					'monthly_rate': 25,
-					'annual_rate': 250
-				},
-				{
-					'currency': 'INR',
-					'symbol': '₹',
-					'monthly_rate': 1500,
-					'annual_rate': 15000
-				}
-			],
-			'storage': 15,
-			'emails': 15000,
+			'pricing': enterprise_plan_pricing,
+			'storage': enterprise_plan.space,
+			'emails': enterprise_plan.emails,
 			'features': [
 				{
 					'title': context.plan_features[0],

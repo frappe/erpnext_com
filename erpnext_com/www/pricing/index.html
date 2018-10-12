@@ -29,9 +29,9 @@
 				<div class=card-body>
 					<h4 class='card-title' style="font-weight: 300">{{ plan.title }}</h4>
 
-					<h3>{{ plan.pricing[0].symbol }} {{ plan.pricing[0].monthly_rate }}</h3>
-					<p class="small mb-1">{{ plan.pricing[0].currency }} / user / month</p>
-					<p class="text-muted small">or {{ plan.pricing[0].symbol }} {{ plan.pricing[0].annual_rate }} per user per year</p>
+					<h3>{{ plan.pricing.symbol }} {{ plan.pricing.monthly_amount|int }}</h3>
+					<p class="small mb-1">{{ plan.pricing.currency }} / user / month</p>
+					<p class="text-muted small">or {{ plan.pricing.symbol }} {{ plan.pricing.amount|int }} per user per year</p>
 
 					<button class="btn btn-primary btn-sm" onclick="redirect_to_signup('signup', '{{ plan.name }}')">Subscribe</button>
 
@@ -248,6 +248,7 @@
 	<a class="btn btn-dark" style="margin: 5px" href="/pricing/paid-feature-development" target="_blank">Learn More</a>
 	</div>
 </section> -->
+
 <script>
 	function redirect_to_signup(page, plan) {
 		var url = page + '?plan=' + plan;

@@ -65,7 +65,6 @@
 		console.log('out');
 		$('#page-signup, #page-signup-1').find('input[name="email"]').on('change', function() {
 			let email = $(this).val();
-			console.log('in');
 			if(!valid_email(email)) {
 				$(this).closest('.form-group').addClass('invalid');
 			} else {
@@ -73,6 +72,14 @@
 			}
 		});
 	});
+
+	function redirect_to_subscribe(page, plan) {
+		frappe.get_route();
+		var url = page + '?plan=' + plan;
+		// concat existing params to url
+		url = url + window.location.search.replace('?', '&');
+		window.location.href = url;
+	}
 
 </script>
 
