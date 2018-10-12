@@ -39,17 +39,16 @@ def get_context(context):
 
 	context.plan_features = ['Server and Emails', 'Customization', 'Integrations + API']
 
-	basic_plan = frappe.get_doc('Base Plan', 'P-Basic')
-	basic_plan_pricing = [d.as_dict() for d in basic_plan.amounts if d.currency == context.currency][0]
-	basic_plan_pricing['symbol'] = context.symbol
+	def get_plan_and_pricing(plan_name):
+		plan = frappe.get_doc('Base Plan', plan_name)
+		pricing = [d.as_dict() for d in plan.amounts if d.currency == context.currency][0]
+		pricing['symbol'] = context.symbol
 
-	business_plan = frappe.get_doc('Base Plan', 'P-Business')
-	business_plan_pricing = [d.as_dict() for d in business_plan.amounts if d.currency == context.currency][0]
-	business_plan_pricing['symbol'] = context.symbol
+		return plan, pricing
 
-	enterprise_plan = frappe.get_doc('Base Plan', 'P-Enterprise')
-	enterprise_plan_pricing = [d.as_dict() for d in enterprise_plan.amounts if d.currency == context.currency][0]
-	enterprise_plan_pricing['symbol'] = context.symbol
+	basic_plan, basic_plan_pricing = get_plan_and_pricing('P-Basic')
+	business_plan, business_plan_pricing = get_plan_and_pricing('P-Business')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Enterprise')
 
 	context.plans = [
 		{
@@ -90,8 +89,6 @@ def get_context(context):
 			'pricing': business_plan_pricing,
 			'storage': business_plan.space,
 			'emails': business_plan.emails,
-			'storage': 5,
-			'emails': 5000,
 			'features': [
 				{
 					'title': context.plan_features[0],
