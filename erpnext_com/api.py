@@ -57,9 +57,9 @@ def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
 	})
 
 @frappe.whitelist(allow_guest=True)
-def signup(full_name, email, subdomain, plan=None, distribution="erpnext", res=None):
+def signup(full_name, email, subdomain, plan=None, distribution="erpnext", res=None, number_of_users=1):
 	resp = _signup(full_name, email, subdomain, plan=plan,
-		distribution=distribution, reseller=res)
+		distribution=distribution, reseller=res, users=number_of_users)
 
 	if resp.get("redirect_to"):
 
