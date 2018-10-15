@@ -1,122 +1,186 @@
 <!-- no-cache -->
-<section class='top-section'>
+<section class='top-section staged-form'>
 	<div class='container'>
-	<h1>Start Your Free 30 Day Trial</h1>
-	<p class='lead mb-4'>Get your own ERPNext account in seconds</p>
 
-	<div class="missing-domain-msg text-center hidden w-500 mb-4">
-		<p class="alert alert-warning"><span class="missing-domain text-primary"></span> does not exist</p>
-		<i class="octicon octicon-chevron-down mega-octicon" style="color: #36414C;"></i>
-	</div>
+		<h2 class="mb-4">Get Started with ERPNext</h2>
 
-	<div class='card w-500 text-left'>
-		<div class='card-body'>
-			<form class="signup-state-details" role="form">
-				<div class="form-group">
-					<p class="help-block">Full Name</p>
-					<input name="full_name" placeholder="Jane Doe" class="form-control" type="text">
-				</div>
-
-				<div class="form-group">
-					<p class="help-block">Email Address</p>
-					<input name="email" placeholder="jane_doe@example.com" class="form-control" type="text">
-					<p class="validation-message">Please enter a valid email address</p>
-				</div>
-
-				<div class="form-group">
-					<p class="help-block">Company Name <em></em></p>
-					<input name="company_name" placeholder="Best Builds" class="form-control" type="text">
-				</div>
-
-				<div class="form-group signup-subdomain">
-					<p class="help-block">Subdomain <em class='small text-muted'>(can only contain letters, numbers and hyphens.)</em></p>
-						<div class="input-group">
-							<input name="subdomain" placeholder="mycompany" class="form-control" type="text">
-							<div class="input-group-append">
-								<span class="input-group-text">.{{ signup_domain }}</span>
-							</div>
-						</div>
-						<div class="availability">
-							<span class="availability-status hidden"><i class="octicon octicon-check"></i><span></span></span>
-							<span class="availability-spinner small text-muted hidden">checking...</span>
-						</div>
-					<p class="validation-message small"></p>
-				</div>
-
-				<br>
-				<div class="form-group text-center">
-					<button class="btn btn-primary btn-request" type="button">Setup My Account</button>
-				</div>
-
-			</form>
+		<div class="stage-container w-500">
+			<div class="stage-line"></div>
+			<i class="stage completed"></i>
+			<i class="stage stage-2"></i>
+			<i class="stage"></i>
 		</div>
-	</div>
+
+		<div class="stage-names w-500">
+			<div class="stage-name small">Personal Info</div>
+			<div class="stage-name text-extra-muted small stage-name-subscription">Subscription</div>
+			<div class="stage-name text-extra-muted small">Payment</div>
+		</div>
+
+		<div class="missing-domain-msg text-center hidden w-500 mb-4">
+			<p class="alert alert-warning"><span class="missing-domain text-primary"></span> does not exist</p>
+			<i class="octicon octicon-chevron-down mega-octicon" style="color: #36414C;"></i>
+		</div>
+
+		<div class='card w-500 text-left'>
+			<div class='card-body'>
+				<form class="signup-state-details" role="form">
+
+					<div class="personal-info">
+						<div class="form-group">
+							<p class="help-block">Your Name</p>
+							<input name="full_name" placeholder="Jane Doe" class="form-control" type="text">
+						</div>
+
+						<div class="form-group">
+							<p class="help-block">Your Email</p>
+							<input name="email" placeholder="jane_doe@example.com" class="form-control" type="text">
+							<p class="validation-message">Please enter a valid email address</p>
+						</div>
+
+						<div class="form-group">
+							<p class="help-block">What does your organization do?</p>
+							<select name="email" placeholder="jane_doe@example.com" class="form-control" type="text">
+								<option value='Manufacturing'>Manufacturing</option>
+								<option value='Sercices'>Services</option>
+								<option value='Retail'>Retail</option>
+								<option value='Distribution'>Distribution</option>
+								<option value='Education'>Education</option>
+							</select>
+							<p class="validation-message"></p>
+						</div>
+
+						<div class="form-group text-center">
+							<button type="button" class="btn btn-primary subscribe-button">Subscribe</button>
+						</div>
+					</div>
+
+					<div class="subscription hide">
+						<div class="form-group signup-subdomain">
+							<p class="help-block">Your Site Name <em class='small text-muted'>(can only contain letters, numbers and hyphens.)</em></p>
+								<div class="input-group">
+									<input name="subdomain" placeholder="mycompany" class="form-control" type="text">
+									<div class="input-group-append">
+										<span class="input-group-text">.erpnext.com</span>
+									</div>
+								</div>
+								<div class="availability">
+									<span class="availability-status hidden"><i class="octicon octicon-check"></i><span></span></span>
+									<span class="availability-spinner small text-muted hidden">checking...</span>
+								</div>
+							<p class="validation-message small"></p>
+						</div>
+
+						<div class="form-horizontal-group">
+							<!-- TODO: reenable these at the time of choice of subscription at the time of signup -->
+
+							<!-- <div class="form-group" style="margin-right: 15px;"> -->
+							<div class="form-group">
+								<p class="help-block">Number of Users</p>
+								<input name="number_of_users" placeholder="1" class="form-control" type="number">
+								<p class="validation-message small">Please enter a valid number of users.</p>
+							</div>
+
+							<!-- <div class="form-group">
+								<p class="help-block">Subscription Type</p>
+								<select name="subscription-type" class="form-control" type="text">
+									<option value='Monthly'>Monthly</option>
+									<option value='Annual'>Annual</option>
+								</select>
+							</div> -->
+						</div>
+
+						<div>
+							<h5 class="plan-name"></h5>
+							<h3 class="text-muted">
+								<span class="pricing-symbol"></span>
+								<span class="subscription-price"></span>/month
+							</h3>
+						</div>
+
+						<div class="form-group text-center mt-4">
+							<button class="btn btn-default" type="button">Not ready yet? Try ERPNext over at demo.erpnext.com</button>
+						</div>
+
+						<div class="form-group text-center">
+							<button class="btn btn-primary btn-request" type="button">Proceed to Payment</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+
 	</div>
 </section>
-<style>
-	.footer-message { display: none; }
-
-	.form-group {
-		position: relative;
-		margin-bottom: 30px;
-	}
-
-	.hero-and-content {
-		background-color: #f5f7fa;
-	}
-
-	[data-html-block="header"] {
-		text-align: center;
-	}
-
-	.page-card {
-		max-width: 500px;
-		padding: 30px 40px;
-		margin: 20px auto;
-	}
-
-	.help-block {
-		margin-bottom: 5px;
-	}
-
-	.availability-status i, .availability-spinner i {
-		margin: 5px;
-		font-size: 16px;
-	}
-
-	.validation-message {
-		display: none;
-		margin-top: 0px;
-		position: absolute;
-	}
-
-	.invalid .validation-message{
-		color: #ffad58;
-		display: inherit;
-	}
-
-	.invalid input {
-		border-color: #ffad58;
-		background-color: #fffdf4;
-	}
-
-	{% include "templates/styles/card_style.css" %}
-</style>
-
-
-{% include "erpnext_com/templates/includes/google_conversion.html" %}
-
 
 <script>
-	{% include "erpnext_com/templates/includes/signup.js" %}
-	
+	{% include "erpnext_com/templates/includes/subscription.js" %}
+
+	frappe.ready(function() {
+		let $page = $('#page-signup, #page-signup-1');
+		$page.find('input[name="email"]').on('change', function() {
+			let email = $(this).val();
+			if(!valid_email(email)) {
+				$(this).closest('.form-group').addClass('invalid');
+			} else {
+				$(this).closest('.form-group').removeClass('invalid');
+			}
+		});
+
+		$page.find('.subscribe-button').on('click', () => {
+			if(!$page.find('input[name="full_name"]').val()
+				|| !$page.find('input[name="email"]').val()
+				|| $page.find('input[name="email"]').parent().hasClass('invalid') ) {
+
+				frappe.msgprint("All fields are necessary. Please try again.");
+				return false;
+			} else {
+				show_subscription_form();
+			}
+		});
+
+		function show_subscription_form() {
+			$page.find('.personal-info').addClass('hide');
+			$page.find('.subscription').removeClass('hide');
+
+			$page.find('.stage-2').addClass('completed');
+			$page.find('.stage-name-subscription').removeClass('text-extra-muted');
+		}
+
+		setup_signup($('#page-signup'));
+
+		let plan_name = frappe.utils.get_query_params().plan;
+
+		if(plan_name) {
+			frappe.call({
+				method: 'erpnext_com.api.get_plan_details',
+				args: { plan_name },
+				callback: function(r) {
+					if (r.exc) return;
+
+					if (r.message) {
+						let pricing = r.message.pricing;
+
+						$('.plan-name').html(plan_name);
+						$('.pricing-symbol').html(pricing.symbol);
+						$('.subscription-price').html(pricing.monthly_amount);
+					}
+				},
+
+			});
+		}
+	});
 
 	window.erpnext_signup = {
 		subdomain_placeholder: 'mycompany',
 		distribution: 'erpnext'
 	}
 
-	frappe.ready(function() {
-		setup_signup($('#page-signup'));
-	});
 </script>
+
+<style>
+	{% include "templates/styles/card_style.css" %}
+</style>
+
+{% include "erpnext_com/templates/includes/google_conversion.html" %}

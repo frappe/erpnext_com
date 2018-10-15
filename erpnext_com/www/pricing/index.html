@@ -1,55 +1,71 @@
 <!-- title: ERPNext pricing -->
 
-<section class='top-section'>
+<section class='top-section pt-5'>
 	<div class='container'>
-	<h1>ERPNext Cloud is {{ symbol }} {{ rate }}/user/year, all inclusive.</h1>
-	<div class="lead">Minimum of 3 users, paid annually.</div>
-	<div class="row text-left mt-5">
-		{% set features = [
-			{
-				"title": "All Modules",
-				"content": "Includes all ERPNext modules and features, from financial accounting and inventory to HR and payroll."
-			},
-			{
-				"title": "Server and Emails",
-				"content": "Fully managed cloud with space of 1GB / user and 5000 emails per month, which can be extended."
-			},
-			{
-				"title": "Priority Support",
-				"content": "Email based priority support and bug-fix guarantee from the super experienced ERPNext team."
-			},
-			{
-				"title": "Backup + Redundancy",
-				"content": "All our servers have redundancy and offsite snapshot backups so we can ensure max reliability."
-			},
-			{
-				"title": "Customization",
-				"content": "You can easily add Customized Print Formats, Custom Fields, Forms and Scripts, and Email Alerts."
-			},
-			{
-				"title": "Integrations + API",
-				"content": "ERPNext comes with built-in integrations with Email, Dropbox, Shopify, REST API and more."
-			},
-		]
-		%}
+	<h1>Get Started with ERPNext</h1>
+	<div class="lead">All our plans provide all features, in-app support and backups.</div>
 
-		{% for card in features %}
+	<div class="row text-left mt-5">
+		{% for feature in base_features %}
 		<div class='col-sm-4 mb-4'>
-			<div class='card h-100'>
+			<div class='card'>
 				<div class=card-body>
-					<h5 class='card-title'>{{ card.title }}</h5>
-					{{ card.content }}
+					<h6><b>{{ feature.title }}</b></h6>
+					<p class="small mb-0">{{ feature.content }}</p>
 				</div>
 			</div>
 		</div>
 		{% endfor %}
 	</div>
 
-	<button class="btn btn-primary btn-lg mt-5" onclick="redirect_to_signup('signup', 'P3-2018')">Start a Free Trial</button>
-	<br>
-	<div class='mt-4'>
-		<a class="text-center" href="https://support.erpnext.com/request-a-demo"><b>Request A Demo</b></a>
+
+	<h3 class='mt-4'>Choose your ERPNext Subscription</h3>
+
+	<div class="row text-left mt-4">
+
+		{% for plan in plans %}
+		<div class='col-sm-4 mb-4'>
+			<div class='card'>
+				<div class=card-body>
+					<h4 class='card-title' style="font-weight: 300">{{ plan.title }}</h4>
+
+					<h3>{{ plan.pricing.symbol }} {{ plan.pricing.monthly_amount|int }}</h3>
+					<p class="small mb-1">{{ plan.pricing.currency }} / user / month</p>
+					<p class="text-muted small">or {{ plan.pricing.symbol }} {{ plan.pricing.amount|int }} per user per year</p>
+
+					<button class="btn btn-primary btn-sm" onclick="redirect_to_signup('signup', '{{ plan.name }}')">Subscribe</button>
+
+					{% for feature in plan.features %}
+					<div
+					{% if loop.index == 2 %}
+						style="min-height: 158px"
+					{% endif %}
+					{% if loop.index == 3 %}
+						style="min-height: 112px"
+					{% endif %}
+					>
+						<h6 class="mt-5">
+							<b>{{ feature.title }}</b>
+						</h6>
+							{% for subfeature in feature.content %}
+							<p class="small mb-2">{{ subfeature }}</p>
+							{% endfor %}
+
+					</div>
+					{% endfor %}
+
+				</div>
+			</div>
+		</div>
+
+		{% endfor %}
+
 	</div>
+
+	<!-- <div class='mt-4'>
+		<a class="text-center" href="https://support.erpnext.com/request-a-demo"><b>Request A Demo</b></a>
+	</div> -->
+
 </div>
 </section>
 <section class='section-bg'>
@@ -147,10 +163,10 @@
 		<h5>Can I pay via credit card or wire transfer?</h5>
 		<p class='mb-5'>Yes, you can make payment from within your account using your credit card. If you prefer wire us the money, <a href='/pricing/payment'>here are our bank details.</a></p>
 
-		<h5>Can I extend my trial period?</h5>
+		<!-- <h5>Can I extend my trial period?</h5>
 		<p class='mb-5'>
 			Yes, we would be happy to extend your trial, <a href="mailto:hello@erpnext.com?subject=Please extend my trial&body=Please extend my trial account id {your account here}">just get in touch</a>.
-		</p>
+		</p> -->
 
 		<h5>Can I buy more space / emails?</h5>
 		<p class='mb-5'>
@@ -177,7 +193,7 @@
 	<div class="row text-left mt-4">
 		<div class="plan-detail col-sm-3">
 			<div><span class="indicator green"></span>Unlimited Users</div>
-			<div><span class="indicator green"></span>All Modules</div>
+			<div><span class="indicator green"></span>Modules</div>
 			<div><span class="indicator green"></span>Unlimited Emails</div>
 			<div><span class="indicator green"></span>Dedicated Engineer</div>
 		</div>
@@ -232,6 +248,7 @@
 	<a class="btn btn-dark" style="margin: 5px" href="/pricing/paid-feature-development" target="_blank">Learn More</a>
 	</div>
 </section> -->
+
 <script>
 	function redirect_to_signup(page, plan) {
 		var url = page + '?plan=' + plan;
@@ -240,3 +257,11 @@
 		window.location.href = url;
 	}
 </script>
+
+<style>
+
+	/* .card {
+		box-shadow: none;
+	} */
+
+</style>

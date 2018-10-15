@@ -5,14 +5,17 @@ setup_signup = function(page) {
 		var page = $('#page-signup,#page-signup-1');
 	}
 
-	let domain_input_flag = 0;
+	$('input[name="number_of_users"]').val(1);
 
-	page.find('input[name="email"]').on('change', function() {
-		let email = $(this).val();
-		if(!valid_email(email)) {
+	$('input[name="number_of_users"]').on('change', function() {
+		let number_of_users = Number($(this).val());
+
+		if(isNaN(number_of_users) || number_of_users <= 0) {
 			$(this).closest('.form-group').addClass('invalid');
 		} else {
 			$(this).closest('.form-group').removeClass('invalid');
+
+			$('.subscription-price').html((19.99 * number_of_users).toFixed(2));
 		}
 	});
 
@@ -89,7 +92,7 @@ setup_signup = function(page) {
 		args.subdomain = args.subdomain.toLowerCase();
 
 		// all mandatory
-		if(!(args.full_name && args.email && args.company_name && args.subdomain)) {
+		if(!(args.full_name && args.email && args.number_of_users && args.subdomain)) {
 			frappe.msgprint("All fields are necessary. Please try again.");
 			return false;
 		}
@@ -189,20 +192,24 @@ setup_signup = function(page) {
 	var query_params = frappe.utils.get_query_params();
 	if (!query_params.plan) {
 		// redirect to pricing page
-		// var url = window.erpnext_signup.distribution=='schools' ? "/schools/pricing" : '/pricing';
-		// window.location.href = url + '?' + $.param( query_params )
+		var url = window.erpnext_signup.distribution=='schools' ? "/schools/pricing" : '/pricing';
+		window.location.href = url + '?' + $.param( query_params )
 
-	} else if (query_params.for_mobile_app) {
-		// for mobile app singup, hide header and footer
-		$("header,footer").addClass("hidden");
+	} else {
+		if (query_params.for_mobile_app) {
+			// for mobile app singup, hide header and footer
+			$("header,footer").addClass("hidden");
+		}
+
+		$('.plan-name').html(query_params.plan);
 	}
 
 	page.find(".plan-message").text("Free 30-day Trial");
 
 	// if (['Free', 'Free-Solo'].indexOf(query_params.plan)!==-1) {
-// 		// keeping Free-Solo for backward compatibility
-// 		page.find(".plan-message").text("Free for 1 User");
-// 	}
+	// 		// keeping Free-Solo for backward compatibility
+	// 		page.find(".plan-message").text("Free for 1 User");
+	// 	}
 
 	$('.domain-missing-msg').addClass("hidden");
 	if (query_params.domain) {
