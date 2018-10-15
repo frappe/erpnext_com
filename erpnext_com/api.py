@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 import frappe
+import requests
 from frappe import _
 from central.signup import signup as _signup, validate_subdomain
 from frappe.integrations.utils import get_checkout_url
@@ -93,4 +94,37 @@ def check_subdomain_availability(subdomain):
 	except frappe.DuplicateEntryError:
 		frappe.local.message_log = []
 		return '{0}.{1}'.format(subdomain, signup_domain)
+
+@frappe.whitelist(allow_guest=True)
+def get_plan_details(plan_name):
+	currency = 'USD'
+	symbol = '$'
+
+	if get_country() == 'IN':
+		currency = 'INR'
+		symbol = 'Rs.'
+
+	plan = frappe.get_doc('Base Plan', plan_name)
+	pricing = [d for d in plan.amounts if d.currency == currency][0].as_dict()
+
+	pricing['symbol'] = symbol
+
+	plan = plan.as_dict()
+	plan['pricing'] = pricing
+
+	return plan
+
+@frappe.whitelist(allow_guest=True)
+def get_country():
+	ip = frappe.local.request_ip
+
+	res = requests.get('https://pro.ip-api.com/json/{ip}?key={key}&fields=countryCode'.format(
+		ip=ip, key=frappe.conf.get('ip-api-key')))
+
+	try:
+		country_code = res.json().get('countryCode')
+		return country_code
+
+	except Exception:
+		return ''
 

@@ -192,12 +192,16 @@ setup_signup = function(page) {
 	var query_params = frappe.utils.get_query_params();
 	if (!query_params.plan) {
 		// redirect to pricing page
-		// var url = window.erpnext_signup.distribution=='schools' ? "/schools/pricing" : '/pricing';
-		// window.location.href = url + '?' + $.param( query_params )
+		var url = window.erpnext_signup.distribution=='schools' ? "/schools/pricing" : '/pricing';
+		window.location.href = url + '?' + $.param( query_params )
 
-	} else if (query_params.for_mobile_app) {
-		// for mobile app singup, hide header and footer
-		$("header,footer").addClass("hidden");
+	} else {
+		if (query_params.for_mobile_app) {
+			// for mobile app singup, hide header and footer
+			$("header,footer").addClass("hidden");
+		}
+
+		$('.plan-name').html(query_params.plan);
 	}
 
 	page.find(".plan-message").text("Free 30-day Trial");
