@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from __future__ import unicode_literals
 import frappe
 import requests
@@ -55,9 +57,9 @@ def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
 	})
 
 @frappe.whitelist(allow_guest=True)
-def signup(full_name, email, subdomain, plan=None, distribution="erpnext", res=None, number_of_users=1):
+def signup(full_name, email, subdomain, plan=None, distribution="erpnext", res=None):
 	resp = _signup(full_name, email, subdomain, plan=plan,
-		distribution=distribution, reseller=res, users=number_of_users)
+		distribution=distribution, reseller=res)
 
 	if resp.get("redirect_to"):
 
@@ -102,7 +104,7 @@ def get_plan_details(plan_name):
 
 	if get_country() == 'IN':
 		currency = 'INR'
-		symbol = 'Rs.'
+		symbol = '₹'
 
 	plan = frappe.get_doc('Base Plan', plan_name)
 	pricing = [d for d in plan.amounts if d.currency == currency][0].as_dict()
