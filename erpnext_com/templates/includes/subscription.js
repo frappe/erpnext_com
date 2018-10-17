@@ -1,3 +1,61 @@
+frappe.ready(function() {
+	let $page = $('#page-signup, #page-signup-1');
+	$page.find('input[name="email"]').on('change', function() {
+		let email = $(this).val();
+		if(!valid_email(email)) {
+			$(this).closest('.form-group').addClass('invalid');
+		} else {
+			$(this).closest('.form-group').removeClass('invalid');
+		}
+	});
+
+	$page.find('.subscribe-button').on('click', () => {
+		if(!$page.find('input[name="full_name"]').val()
+			|| !$page.find('input[name="email"]').val()
+			|| $page.find('input[name="email"]').parent().hasClass('invalid') ) {
+
+			frappe.msgprint("All fields are necessary. Please try again.");
+			return false;
+		} else {
+			show_subscription_form();
+		}
+	});
+
+	function show_subscription_form() {
+		$page.find('.personal-info').addClass('hide');
+		$page.find('.subscription').removeClass('hide');
+
+		$page.find('.stage-2').addClass('completed');
+		$page.find('.stage-name-subscription').removeClass('text-extra-muted');
+	}
+
+	setup_signup($('#page-signup'));
+
+	let plan_name = frappe.utils.get_query_params().plan;
+
+	if(plan_name) {
+		frappe.call({
+			method: 'erpnext_com.api.get_plan_details',
+			args: { plan_name },
+			callback: function(r) {
+				if (r.exc) return;
+
+				if (r.message) {
+					plan = r.message
+					window.plan = plan;
+					let pricing = plan.pricing;
+
+					$('.plan-name').html('ERPNext ' + plan_name);
+					$('.pricing-currency').html(pricing.symbol);
+
+					$('.monthly-pricing, .total-cost').html(pricing.monthly_amount );
+				}
+			},
+
+		});
+	}
+});
+
 setup_signup = function(page) {
 	// button for signup event
 	if (!page) {
@@ -15,7 +73,9 @@ setup_signup = function(page) {
 		} else {
 			$(this).closest('.form-group').removeClass('invalid');
 
-			$('.subscription-price').html((19.99 * number_of_users).toFixed(2));
+			$('.number_of_users').html(number_of_users);
+			$('.user-text').html(number_of_users > 1 ? 'users' : 'user');
+			$('.total-cost').html((plan.pricing.monthly_amount * number_of_users).toFixed(0));
 		}
 	});
 
