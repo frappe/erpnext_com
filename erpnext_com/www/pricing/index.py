@@ -46,13 +46,14 @@ def get_context(context):
 
 		return plan, pricing
 
-	basic_plan, basic_plan_pricing = get_plan_and_pricing('Basic')
-	business_plan, business_plan_pricing = get_plan_and_pricing('Business')
-	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('Enterprise')
+	basic_plan, basic_plan_pricing = get_plan_and_pricing('P-Basic')
+	business_plan, business_plan_pricing = get_plan_and_pricing('P-Business')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Enterprise')
 
 	context.plans = [
 		{
 			'name': basic_plan.name,
+			'title': basic_plan.name.replace('P-', ''),
 			'pricing': basic_plan_pricing,
 			'storage': basic_plan.space,
 			'emails': basic_plan.emails,
@@ -84,6 +85,7 @@ def get_context(context):
 		},
 		{
 			'name': business_plan.name,
+			'title': basic_plan.name.replace('P-', ''),
 			'pricing': business_plan_pricing,
 			'storage': business_plan.space,
 			'emails': business_plan.emails,
@@ -116,6 +118,7 @@ def get_context(context):
 		},
 		{
 			'name': enterprise_plan.name,
+			'title': basic_plan.name.replace('P-', ''),
 			'pricing': enterprise_plan_pricing,
 			'storage': enterprise_plan.space,
 			'emails': enterprise_plan.emails,
