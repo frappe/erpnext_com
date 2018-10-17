@@ -3,9 +3,9 @@
 <section class='top-section pt-5'>
 	<div class='container'>
 	<h1>Get Started with ERPNext</h1>
-	<div class="lead">All our plans provide all features, in-app support and backups.</div>
+	<div class="lead">All our plans provide all modules, in-app support and backups.</div>
 
-	<div class="row text-left mt-5">
+	<!-- <div class="row text-left mt-5">
 		{% for feature in base_features %}
 		<div class='col-sm-4 mb-4'>
 			<div class='card'>
@@ -16,24 +16,33 @@
 			</div>
 		</div>
 		{% endfor %}
-	</div>
+	</div> -->
 
 
-	<h3 class='mt-4'>Choose your ERPNext Subscription</h3>
+	<!-- <h3 class='mt-4'>Choose your ERPNext Subscription</h3> -->
 
-	<div class="row text-left mt-4">
+	<div class="row text-left mt-5">
 
 		{% for plan in plans %}
 		<div class='col-sm-4 mb-4'>
 			<div class='card'>
 				<div class=card-body>
-					<h4 class='card-title' style="font-weight: 300">{{ plan.title }}</h4>
+					<h4 class='card-title text-slim'>{{ plan.name }}</h4>
 
 					<h3>{{ plan.pricing.symbol }} {{ plan.pricing.monthly_amount|int }}</h3>
 					<p class="small mb-1">{{ plan.pricing.currency }} / user / month</p>
 					<p class="text-muted small">or {{ plan.pricing.symbol }} {{ plan.pricing.amount|int }} per user per year</p>
 
 					<button class="btn btn-primary btn-sm" onclick="redirect_to_signup('signup', '{{ plan.name }}')">Subscribe</button>
+
+					{% for feature in base_features %}
+					<h6 class="mt-5">
+						<b>{{ feature.title }}</b>
+					</h6>
+					<p class="small mb-2">{{ feature.content }}</p>
+					{% endfor %}
+
+					<hr>
 
 					{% for feature in plan.features %}
 					<div
@@ -63,8 +72,11 @@
 	</div>
 
 	<!-- <div class='mt-4'>
-		<a class="text-center" href="https://support.erpnext.com/request-a-demo"><b>Request A Demo</b></a>
+		<a class="text-center" href="https://support.erpnext.com/request-a-demo"><b>Compare Plans</b></a>
 	</div> -->
+	<div class='mt-4'>
+		<a class="text-center" href="https://support.erpnext.com/request-a-demo"><b>Request A Demo</b></a>
+	</div>
 
 </div>
 </section>
@@ -83,7 +95,7 @@
 			ERPNext is designed for self-implementation, and most companies don't need any help, just a bit of determination. To help you, there are tons of videos and other resources that will help you. If you sign up for a paid account, we conduct one-on-one sessions to help you configure the system.</a>
 		</p>
 
-		<h5>What is my annual cost?</h5>
+		<!-- <h5>What is my annual cost?</h5>
 		<div class='mb-5'>
 			<p>Each user on ERPNext Cloud is priced at {{ symbol }} {{ rate }} per year. Enter your number of users and currency to estimate your annual cost.</p>
 			<div>
@@ -144,7 +156,8 @@
 					set_total();
 				</script>
 			</div>
-		</div>
+		</div> -->
+
 		<h5>Will self hosting be better?</h5>
 		<p class='mb-5'>It depends. ERPNext is 100% Free and Open Source and depending on your scale and capability, self-hosting may be the right solution for you. <a href=/support>Learn more about our enterprise services.</a><br><br>
 

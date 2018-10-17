@@ -15,6 +15,23 @@ a[href="/signup"] {
 	flex: 1;
 }
 
+.text-slim {
+	font-weight: 300
+}
+
+.level {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.subscription-box {
+	border: 1px solid #cdd4d9;
+	border-radius: 3px;
+	background: #fafbfc;
+	padding: 15px;
+}
+
 .stage-names {
 	margin-bottom: 2rem;
 	display: flex;
