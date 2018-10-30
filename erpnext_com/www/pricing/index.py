@@ -11,10 +11,9 @@ eu = ["BE", "BG", "CZ", "DK", "DE", "EE", "IE", "EL", "ES", "FR", "HR",
 
 def get_context(context):
 	context.no_cache = True
-	country = get_country()
-	country = country
+	country_code = get_country().get("countryCode")
 
-	if country == 'IN':
+	if country_code == 'IN':
 		context.currency = 'INR'
 		context.symbol = '₹'
 
