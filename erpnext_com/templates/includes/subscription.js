@@ -35,7 +35,7 @@ frappe.ready(function() {
 
 	if(plan_name) {
 		frappe.call({
-			method: 'erpnext_com.api.get_plan_details',
+			method: 'erpnext_com.www.pricing.index.get_plan_details',
 			args: { plan_name },
 			callback: function(r) {
 				if (r.exc) return;
