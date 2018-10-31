@@ -143,7 +143,7 @@ setup_signup = function(page) {
 	}
 
 	page.find('.btn-request').off('click').on('click', function() {
-		var args = Array.from(page.find('form input'))
+		var args = Array.from(page.find('form input, form select'))
 			.reduce(
 				(acc, input) => {
 					acc[$(input).attr('name')] = $(input).val();
@@ -181,7 +181,6 @@ setup_signup = function(page) {
 		$btn.prop("disabled", true).html("Sending details...");
 
 		goog_report_conversion(); // eslint-disable-line
-
 
 		// on success, it will show message page!
 		frappe.call({
