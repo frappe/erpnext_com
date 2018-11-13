@@ -67,14 +67,16 @@
 
 						<div class="form-group">
 							<p class="help-block">Password</p>
-							<input type="password" name="passphrase" class="form-control">
+							<input type="password" name="passphrase" id="passphrase" class="form-control">
+							<span class="password-strength-indicator indicator"></span>
 						</div>
+						<p class='password-strength-message text-muted small hidden'></p>
 
 						<div class="form-group">
 							<p class="help-block">What does your organization do?</p>
 							<select name="industry_type" class="form-control">
 								<option value='Manufacturing'>Manufacturing</option>
-								<option value='Sercices'>Services</option>
+								<option value='Services'>Services</option>
 								<option value='Retail'>Retail</option>
 								<option value='Distribution'>Distribution</option>
 								<option value='Education'>Education</option>
@@ -178,6 +180,17 @@
 </script>
 
 <style>
+	.password-strength-indicator {
+		float: right;
+		padding: 15px;
+		margin-top: -38px;
+		margin-right: -7px;
+	}
+
+	.password-strength-message {
+		margin-top: -10px;
+	}
+	
 	{% include "templates/styles/card_style.css" %}
 </style>
 
