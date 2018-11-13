@@ -324,4 +324,71 @@ setup_signup = function(page) {
 		$('.missing-domain-msg').removeClass("hidden");
 	}
 
+	window.clear_timeout = function() {
+		if (window.timout_password_strength) {
+			clearTimeout(window.timout_password_strength);
+			window.timout_password_strength = null;
+		}
+	};
+
+	window.strength_indicator = $('.password-strength-indicator');
+	window.strength_message = $('.password-strength-message');
+
+	$('#passphrase').on('keyup', function() {
+		window.clear_timeout();
+		window.timout_password_strength = setTimeout(test_password_strength, 200);
+	});
+
+	function test_password_strength(){
+		window.timout_password_strength = null;
+		return frappe.call({
+			type: 'GET',
+			method: 'frappe.core.doctype.user.user.test_password_strength',
+			args: {
+				new_password: $('#passphrase').val()
+			},
+			callback: function(r) {
+				console.log(r.message.entropy)
+				if (r.message) {
+					var score = r.message.score,
+						feedback = r.message.feedback;
+
+					feedback.crack_time_display = r.message.crack_time_display;
+					feedback.score = score;
+
+					if(feedback.password_policy_validation_passed){
+						set_strength_indicator('green', feedback);
+					}else{
+						set_strength_indicator('red', feedback);
+					}
+				}
+			}
+		});
+	}
+	
+	function set_strength_indicator(color, feedback) {
+		var message = [];
+		feedback.help_msg = "";
+		if(!feedback.password_policy_validation_passed){
+			feedback.help_msg = "<br>" + "{{ _("Hint: Include symbols, numbers and capital letters in the password") }}";
+		}
+		if (feedback) {
+			if(!feedback.password_policy_validation_passed){
+				if (feedback.suggestions && feedback.suggestions.length) {
+					message = message.concat(feedback.suggestions);
+				} else if (feedback.warning) {
+					message.push(feedback.warning);
+				}
+				message.push(feedback.help_msg);
+
+			} else {
+				message.push("{{ _('Success! You are good to go 👍') }}");
+			}
+		}
+
+		strength_indicator.removeClass().addClass('password-strength-indicator indicator ' + color);
+		strength_message.html(message.join(' ') || '').removeClass('hidden');
+		// strength_indicator.attr('title', message.join(' ') || '');
+	}
+
 };

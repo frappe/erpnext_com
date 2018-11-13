@@ -65,8 +65,8 @@ def signup(full_name, email, subdomain, industry_type, plan=None, distribution="
 	language=None):
 
 	resp = _signup(full_name, email, subdomain, industry_type, plan=plan,
-    distribution=distribution, reseller=res, users=number_of_users, password=passphrase,
-    country=country, timezone=timezone, currency=currency, language=language)
+		distribution=distribution, reseller=res, users=number_of_users, password=passphrase,
+		country=country, timezone=timezone, currency=currency, language=language)
 
 	if resp.get("redirect_to"):
 
