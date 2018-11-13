@@ -6,6 +6,8 @@ import requests
 from frappe import _
 from central.signup import signup as _signup, validate_subdomain
 from frappe.integrations.utils import get_checkout_url
+from frappe.utils.momentjs import get_all_timezones
+from frappe.geo.country_info import get_country_timezone_info
 
 # TODO:
 # 1. send email to particpant and us
@@ -57,10 +59,14 @@ def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
 	})
 
 @frappe.whitelist(allow_guest=True)
+
 def signup(full_name, email, subdomain, industry_type, plan=None, distribution="erpnext",
-	res=None, number_of_users=1, passphrase=None):
+	res=None, number_of_users=1, passphrase=None, country=None, timezone=None, currency=None,
+	language=None):
+
 	resp = _signup(full_name, email, subdomain, industry_type, plan=plan,
-		distribution=distribution, reseller=res, users=number_of_users, password=passphrase)
+    distribution=distribution, reseller=res, users=number_of_users, password=passphrase,
+    country=country, timezone=timezone, currency=currency, language=language)
 
 	if resp.get("redirect_to"):
 
@@ -97,3 +103,30 @@ def check_subdomain_availability(subdomain):
 	except frappe.DuplicateEntryError:
 		frappe.local.message_log = []
 		return '{0}.{1}'.format(subdomain, signup_domain)
+
+@frappe.whitelist(allow_guest=True)
+def load_dropdowns():
+	data = {
+		'languages': [d.language_name for d in frappe.get_all("Language", fields=['language_name'])],
+		'countries': [d.name for d in frappe.get_all("Country")],
+		'currencies': [d.name for d in frappe.get_all("Currency")],
+		'default_country': get_country().get('country', None)
+	}
+
+	data.update(get_country_timezone_info())
+
+	return data
+
+def get_country(fields=None):
+	if not fields:
+		fields = ['countryCode']
+
+	ip = frappe.local.request_ip
+	res = requests.get('https://pro.ip-api.com/json/{ip}?key={key}&fields={fields}'.format(
+		ip=ip, key=frappe.conf.get('ip-api-key'), fields=','.join(fields)))
+
+	try:
+		return res.json()
+
+	except Exception:
+		return {}
