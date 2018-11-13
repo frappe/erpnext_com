@@ -54,6 +54,48 @@ frappe.ready(function() {
 
 		});
 	}
+
+	frappe.call({
+		method:"erpnext_com.api.load_dropdowns",
+		callback: function(r) {
+			let $country_select = $("select[name*='country']");
+			r.message.countries.forEach(country_name => {
+				$country_select.append($("<option />").val(country_name).text(country_name));
+			});
+
+			let $language_select = $("select[name*='language']");
+			r.message.languages.forEach(language => {
+				$language_select.append($("<option />").val(language).text(language));
+			});
+
+			let $timezone_select = $("select[name*='timezone']");
+			r.message.all_timezones.forEach(timezone => {
+				$timezone_select.append($("<option />").val(timezone).text(timezone));
+			});
+
+			let $currency_select = $("select[name*='currency']");
+			r.message.currencies.forEach(currency => {
+				$currency_select.append($("<option />").val(currency).text(currency));
+			});
+
+			let country_info = r.message.country_info;
+
+			$country_select.on('change', function() {
+				let country = $(this).val();
+				$timezone_select.val(country_info[country].timezones[0]);
+				$currency_select.val(country_info[country].currency);
+			});
+
+			$language_select.val('English');
+			if(r.message.default_country) {
+				$country_select.val(r.message.default_country);
+			} else {
+				$country_select.val('India');
+			}
+			$country_select.trigger('change');
+		}
+	});
+
 });
 
 setup_signup = function(page) {
