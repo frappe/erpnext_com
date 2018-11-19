@@ -32,6 +32,6 @@ window.Intercom("boot", {
 	app_id: "md8hmp1l"
 });
 
-frappe.route.on('change', () => {
-	window.Intercom("update");
-});
+// frappe.route.on('change', () => {
+// 	window.Intercom("update");
+// });

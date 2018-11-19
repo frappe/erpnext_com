@@ -68,6 +68,7 @@ def get_context(context):
 				{
 					'title': context.plan_features[1],
 					'content': [
+						'Single Company',
 						'Customized Print Formats and Email Alerts',
 						'10 Custom Fields',
 						'1 Custom Form'
@@ -100,6 +101,7 @@ def get_context(context):
 				{
 					'title': context.plan_features[1],
 					'content': [
+						'3 Companies',
 						'Customized Print Formats and Email Alerts',
 						'Unlimited Custom Fields',
 						'10 Custom Forms, 10 Custom Scripts'
@@ -109,6 +111,7 @@ def get_context(context):
 					'title': context.plan_features[2],
 					'content': [
 						'Integrations with Email and REST API',
+						'Payment Gateways',
 						'Dropbox, Shopify and AWS'
 					]
 				}
@@ -133,6 +136,7 @@ def get_context(context):
 				{
 					'title': context.plan_features[1],
 					'content': [
+						'Unlimited Companies',
 						'Customized Print Formats and Email Alerts',
 						'Unlimited Custom Fields, Forms and Scripts',
 						'1 Custom App Installation'
@@ -142,6 +146,7 @@ def get_context(context):
 					'title': context.plan_features[2],
 					'content': [
 						'Integrations with Email and REST API',
+						'Payment Gateways',
 						'Dropbox, Shopify and AWS'
 					]
 				}
