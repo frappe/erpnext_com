@@ -95,7 +95,7 @@
 								<div class="input-group">
 									<input name="subdomain" placeholder="mycompany" class="form-control" type="text">
 									<div class="input-group-append">
-										<span class="input-group-text">.erpnext.com</span>
+										<span class="input-group-text">.{{ signup_domain }}</span>
 									</div>
 								</div>
 								<div class="availability">
@@ -132,6 +132,7 @@
 							</h3>
 						</div> -->
 
+					    {% if is_payment_mandatory %}
 						<div class="level subscription-box mt-4 mb-5">
 							<div>
 								<h6>You're subscribing for</h6>
@@ -152,13 +153,17 @@
 								</p>
 							</div>
 						</div>
+						{% endif %}
 
-						<div class="form-group text-center">
-							<button class="btn btn-primary btn-request" type="button">Proceed to Payment</button>
+						<div class="form-group text-center mb-4 text-muted small">
+							<p><input type="checkbox" aria-label="Accept Terms and Privacy Policy">
+							<span>I have read and agree to the <a href="/terms">Terms of Use</a> and </span><a href="/privacy">Privacy Policy</a>.</p>
 						</div>
 
-						<div class="form-group text-center mt-5 mb-3 text-muted small">
-							<p>Not ready yet? Try ERPNext over at <a href="https://demo.erpnext.com">demo.erpnext.com</a></p>
+						<div class="form-group text-center">
+							<button class="btn btn-primary btn-request" type="button">Proceed
+							{% if is_payment_mandatory %}to payment{% endif %}
+							</button>
 						</div>
 					</div>
 
