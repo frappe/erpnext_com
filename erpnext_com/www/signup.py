@@ -5,7 +5,8 @@ from central.signup import is_payment_mandatory
 no_cache = True
 
 def get_context(context):
+	context.is_payment_mandatory = is_payment_mandatory()
+
 	return {
-		'signup_domain': get_signup_domain() or 'erpnext.com',
-		'is_payment_mandatory': is_payment_mandatory
+		'signup_domain': get_signup_domain() or 'erpnext.com'
 	}

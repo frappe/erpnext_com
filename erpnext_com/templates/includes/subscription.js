@@ -208,6 +208,11 @@ setup_signup = function(page) {
 			return;
 		}
 
+		if($("input[name*='agree-checkbox']").prop("checked") === false) {
+			frappe.msgprint("Please agree to the Terms of Use and Privacy Policy.");
+			return;
+		}
+
 		// add plan to args
 		var plan = frappe.utils.get_url_arg('plan');
 		if(plan) args.plan = plan;
@@ -365,7 +370,7 @@ setup_signup = function(page) {
 			}
 		});
 	}
-	
+
 	function set_strength_indicator(color, feedback) {
 		var message = [];
 		feedback.help_msg = "";
