@@ -21,11 +21,10 @@
 
 	<!-- <h3 class='mt-4'>Choose your ERPNext Subscription</h3> -->
 
-	<div class="row text-left mt-5">
+	<div class="d-flex flex-row text-left mt-5">
 
 		{% for plan in plans %}
-		<div class='col-sm-4 mb-4'>
-			<div class='card'>
+			<div class='card mx-2 '>
 				<div class=card-body>
 					<h4 class='card-title text-slim'>{{ plan.title }}</h4>
 
@@ -65,7 +64,6 @@
 
 				</div>
 			</div>
-		</div>
 
 		{% endfor %}
 
