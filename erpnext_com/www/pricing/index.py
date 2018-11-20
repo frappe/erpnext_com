@@ -46,8 +46,8 @@ def get_context(context):
 		return plan, pricing
 
 	basic_plan, basic_plan_pricing = get_plan_and_pricing('P-Basic')
-	business_plan, business_plan_pricing = get_plan_and_pricing('P-Business')
-	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Enterprise')
+	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro')
 
 	context.plans = [
 		{
@@ -70,7 +70,7 @@ def get_context(context):
 					'content': [
 						'Single Company',
 						'Customized Print Formats and Email Alerts',
-						'10 Custom Fields',
+						'20 Custom Fields',
 						'1 Custom Form'
 					]
 				},
