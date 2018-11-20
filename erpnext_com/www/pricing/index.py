@@ -77,7 +77,7 @@ def get_context(context):
 				{
 					'title': context.plan_features[2],
 					'content': [
-						'Integrations with Email and REST API'
+						'Email Integration and REST API'
 					]
 				}
 			],
@@ -110,7 +110,7 @@ def get_context(context):
 				{
 					'title': context.plan_features[2],
 					'content': [
-						'Integrations with Email and REST API',
+						'Email Integration and REST API',
 						'Payment Gateways',
 						'Dropbox, Shopify and AWS'
 					]
@@ -145,7 +145,7 @@ def get_context(context):
 				{
 					'title': context.plan_features[2],
 					'content': [
-						'Integrations with Email and REST API',
+						'Email Integration and REST API',
 						'Payment Gateways',
 						'Dropbox, Shopify and AWS'
 					]
