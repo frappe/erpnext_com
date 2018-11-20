@@ -46,8 +46,8 @@ def get_context(context):
 		return plan, pricing
 
 	basic_plan, basic_plan_pricing = get_plan_and_pricing('P-Basic')
-	business_plan, business_plan_pricing = get_plan_and_pricing('P-Business')
-	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Enterprise')
+	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro')
 
 	context.plans = [
 		{
@@ -68,15 +68,16 @@ def get_context(context):
 				{
 					'title': context.plan_features[1],
 					'content': [
+						'Single Company',
 						'Customized Print Formats and Email Alerts',
-						'10 Custom Fields',
+						'20 Custom Fields',
 						'1 Custom Form'
 					]
 				},
 				{
 					'title': context.plan_features[2],
 					'content': [
-						'Integrations with Email and REST API'
+						'Email Integration and REST API'
 					]
 				}
 			],
@@ -100,6 +101,7 @@ def get_context(context):
 				{
 					'title': context.plan_features[1],
 					'content': [
+						'3 Companies',
 						'Customized Print Formats and Email Alerts',
 						'Unlimited Custom Fields',
 						'10 Custom Forms, 10 Custom Scripts'
@@ -108,7 +110,8 @@ def get_context(context):
 				{
 					'title': context.plan_features[2],
 					'content': [
-						'Integrations with Email and REST API',
+						'Email Integration and REST API',
+						'Payment Gateways',
 						'Dropbox, Shopify and AWS'
 					]
 				}
@@ -133,6 +136,7 @@ def get_context(context):
 				{
 					'title': context.plan_features[1],
 					'content': [
+						'Unlimited Companies',
 						'Customized Print Formats and Email Alerts',
 						'Unlimited Custom Fields, Forms and Scripts',
 						'1 Custom App Installation'
@@ -141,7 +145,8 @@ def get_context(context):
 				{
 					'title': context.plan_features[2],
 					'content': [
-						'Integrations with Email and REST API',
+						'Email Integration and REST API',
+						'Payment Gateways',
 						'Dropbox, Shopify and AWS'
 					]
 				}

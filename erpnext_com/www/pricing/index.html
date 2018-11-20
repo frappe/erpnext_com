@@ -21,25 +21,24 @@
 
 	<!-- <h3 class='mt-4'>Choose your ERPNext Subscription</h3> -->
 
-	<div class="row text-left mt-5">
+	<div class="d-flex flex-row text-left mt-5">
 
 		{% for plan in plans %}
-		<div class='col-sm-4 mb-4'>
-			<div class='card'>
+			<div class='card mx-2 '>
 				<div class=card-body>
 					<h4 class='card-title text-slim'>{{ plan.title }}</h4>
 
 					<h3>{{ plan.pricing.symbol }} {{ plan.pricing.monthly_amount|int }}</h3>
 					<p class="small mb-1">{{ plan.pricing.currency }} / user / month</p>
-					<p class="text-muted small">or {{ plan.pricing.symbol }} {{ plan.pricing.amount|int }} per user per year</p>
+					<p class="text-muted small">or {{ plan.pricing.symbol }} {{ plan.pricing.amount|int }} / user / year</p>
 
-					<button class="btn btn-primary btn-sm" onclick="redirect_to_signup('signup', '{{ plan.name }}')">Subscribe</button>
+					<button class="btn btn-primary btn-sm mb-4" onclick="redirect_to_signup('signup', '{{ plan.name }}')">Start 14 Day Trial</button>
 
 					{% for feature in base_features %}
-					<h6 class="mt-5">
-						<b>{{ feature.title }}</b>
+					<h6 class="mt-3">
+						{{ feature.title }}
 					</h6>
-					<p class="small mb-2">{{ feature.content }}</p>
+					<!-- <p class="small mb-2">{{ feature.content }}</p> -->
 					{% endfor %}
 
 					<hr>
@@ -65,7 +64,6 @@
 
 				</div>
 			</div>
-		</div>
 
 		{% endfor %}
 
