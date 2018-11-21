@@ -24,7 +24,17 @@
 	<div class="d-flex flex-row text-left mt-5">
 
 		{% for plan in plans %}
-			<div class='card mx-2 '>
+			<div class='card pricing-card'
+			{% if loop.index == 2 %}
+				style='box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2); z-index: 1;'
+			{% endif %}
+			{% if loop.index == 1 %}
+				style="border-right: none;"
+			{% endif %}
+			{% if loop.index == 3 %}
+				style="border-left: none;"
+			{% endif %}
+			>
 				<div class=card-body>
 					<h4 class='card-title text-slim'>{{ plan.title }}</h4>
 
@@ -32,7 +42,13 @@
 					<p class="small mb-1">{{ plan.pricing.currency }} / user / month</p>
 					<p class="text-muted small">or {{ plan.pricing.symbol }} {{ plan.pricing.amount|int }} / user / year</p>
 
-					<button class="btn btn-primary btn-sm mb-4" onclick="redirect_to_signup('signup', '{{ plan.name }}')">Start 14 Day Trial</button>
+					<button class="btn btn-primary
+
+					{% if (loop.index == 1) or (loop.index == 3) %}
+						btn-muted
+					{% endif %}
+
+					btn-sm mb-4" onclick="redirect_to_signup('signup', '{{ plan.name }}')">Start 14 Day Trial</button>
 
 					{% for feature in base_features %}
 					<h6 class="mt-3">
@@ -44,14 +60,7 @@
 					<hr>
 
 					{% for feature in plan.features %}
-					<div
-					{% if loop.index == 2 %}
-						style="min-height: 158px"
-					{% endif %}
-					{% if loop.index == 3 %}
-						style="min-height: 112px"
-					{% endif %}
-					>
+					<div>
 						<h6 class="mt-5">
 							<b>{{ feature.title }}</b>
 						</h6>
@@ -72,18 +81,28 @@
 	<!-- <div class='mt-4'>
 		<a class="text-center" href="https://support.erpnext.com/request-a-demo"><b>Compare Plans</b></a>
 	</div> -->
-	<div class='mt-4'>
+	<!-- <div class='mt-4'>
 		<a class="text-center" href="https://support.erpnext.com/request-a-demo"><b>Request A Demo</b></a>
-	</div>
+	</div> -->
 
 </div>
 </section>
+
+<section>
+	<div class='container text-center'>
+		<h1>Enterprise Implementation</h1>
+		<p class=lead>Need more resources? Get your own remote ERP management team that will adapt to your enterprise needs, including support, server management and development.</p>
+		<a class='btn btn-secondary btn-sm mt-4' href="/contact">Get in Touch</a>
+	</div>
+</section>
+
 <section class='section-bg'>
 	<div class='container text-center'>
 		<h2>Discounts for Education and Non-Profits</h2>
 		<p class='lead'>If you are a registered school, college or non-profit, we will offer you a discount of 30%. <a href="mailto:hello@erpnext.com?subject=Education/non profit discount">Get in touch</a></p>
 	</div>
 </section>
+
 <section class='section' id='faq'>
 	<div class='container'>
 		<h2 class='text-center mb-5'>Frequently Asked Questions</h2>
@@ -271,8 +290,16 @@
 
 <style>
 
-	/* .card {
+	.pricing-card {
 		box-shadow: none;
-	} */
+	}
+
+	.btn-muted {
+		/* background-color: #9c9ca2;
+		border-color: #9a9a9a; */
+
+		background-color: #8383ff;
+		border-color: #898bff;
+	}
 
 </style>

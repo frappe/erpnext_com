@@ -138,7 +138,7 @@ def get_context(context):
 					'content': [
 						'Unlimited Companies',
 						'Customized Print Formats and Email Alerts',
-						'Unlimited Custom Fields, Forms and Scripts',
+						'Unlimited Custom Forms and Scripts',
 						'1 Custom App Installation'
 					]
 				},
