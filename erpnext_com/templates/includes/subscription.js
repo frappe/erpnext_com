@@ -194,7 +194,9 @@ setup_signup = function(page) {
 		args.subdomain = args.subdomain.toLowerCase();
 
 		// all mandatory
-		if(!(args.full_name && args.email && args.number_of_users && args.subdomain)) {
+		if(!(args.full_name && args.email && args.number_of_users && args.subdomain
+				&& args.language && args.country && args.timezone && args.currency
+				&& args.password && args.industry_type && args.number_of_users)) {
 			frappe.msgprint("All fields are necessary. Please try again.");
 			return false;
 		}
