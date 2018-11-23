@@ -198,7 +198,7 @@ setup_signup = function(page) {
 		// all mandatory
 		if(!(args.full_name && args.email && args.number_of_users && args.subdomain
 				&& args.language && args.country && args.timezone && args.currency
-				&& args.password && args.industry_type && args.number_of_users)) {
+				&& args.passphrase && args.industry_type && args.number_of_users)) {
 			frappe.msgprint("All fields are necessary. Please try again.");
 			return false;
 		}
@@ -206,8 +206,7 @@ setup_signup = function(page) {
 		// validate inputs
 		const validations = Array.from(page.find('.form-group.invalid'))
 			.map(form_group => $(form_group).find('.validation-message').html());
-		// console.log(validations)
-		if(validations.length > 0) {
+			if(validations.length > 0) {
 			frappe.msgprint(validations.join("<br>"));
 			return;
 		}
@@ -357,7 +356,6 @@ setup_signup = function(page) {
 				new_password: $('#passphrase').val()
 			},
 			callback: function(r) {
-				console.log(r.message.entropy)
 				if (r.message) {
 					var score = r.message.score,
 						feedback = r.message.feedback;
