@@ -13,7 +13,7 @@ frappe.ready(function() {
 		if(!$page.find('input[name="full_name"]').val()
 			|| !$page.find('input[name="email"]').val()
 			|| $page.find('input[name="email"]').parent().hasClass('invalid')
-			|| !$page.find('input[name="industry_type"]').val()
+			|| !$page.find('select[name="industry_type"]').val()
 			|| !$page.find('input[name="password"]').val() ) {
 
 			frappe.msgprint("All fields are necessary. Please try again.");
