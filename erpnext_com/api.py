@@ -106,27 +106,15 @@ def check_subdomain_availability(subdomain):
 
 @frappe.whitelist(allow_guest=True)
 def load_dropdowns():
+	from .www.pricing.index import get_country
+
 	data = {
 		'languages': [d.language_name for d in frappe.get_all("Language", fields=['language_name'])],
 		'countries': [d.name for d in frappe.get_all("Country")],
 		'currencies': [d.name for d in frappe.get_all("Currency")],
-		'default_country': get_country().get('country', None)
+		'default_country': get_country(fields=['country']).get('country', None)
 	}
 
 	data.update(get_country_timezone_info())
 
 	return data
-
-def get_country(fields=None):
-	if not fields:
-		fields = ['countryCode']
-
-	ip = frappe.local.request_ip
-	res = requests.get('https://pro.ip-api.com/json/{ip}?key={key}&fields={fields}'.format(
-		ip=ip, key=frappe.conf.get('ip-api-key'), fields=','.join(fields)))
-
-	try:
-		return res.json()
-
-	except Exception:
-		return {}
