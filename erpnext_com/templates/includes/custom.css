@@ -1,3 +1,7 @@
+h6 {
+	font-weight: 600;
+}
+
 .navbar {
 /*	background-color: #5e64ff !important;
 */}
@@ -129,3 +133,4 @@ a[href="/signup"] {
 	border-color: #ffad58;
 	background-color: #fffdf4;
 }
+
