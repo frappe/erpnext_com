@@ -40,7 +40,8 @@
 
 					<h3>{{ plan.pricing.symbol }} {{ plan.pricing.monthly_amount|int }}</h3>
 					<p class="small mb-1">{{ plan.pricing.currency }} / user / month</p>
-					<p class="text-muted small">or {{ plan.pricing.symbol }} {{ plan.pricing.amount|int }} / user / year</p>
+					<p class="text-muted small mb-1">or {{ plan.pricing.symbol }} {{ plan.pricing.amount|int }} / user / year</p>
+					<p class="text-muted small">(Inclusive of Taxes)</p>
 
 					<button class="btn btn-primary
 
@@ -60,7 +61,11 @@
 					<hr>
 
 					{% for feature in plan.features %}
-					<div>
+					<div
+					{% if loop.index == 3 %}
+						style="min-height: 190px;"
+					{% endif %}
+					>
 						<h6 class="mt-5">
 							<b>{{ feature.title }}</b>
 						</h6>
