@@ -58,6 +58,12 @@ def get_context(context):
 			'emails': basic_plan.emails,
 			'features': [
 				{
+					'title': 'Organisations',
+					'content': [
+						'Single Company',
+					]
+				},
+				{
 					'title': context.plan_features[0],
 					'content': [
 						'2 GB cloud storage',
@@ -68,7 +74,6 @@ def get_context(context):
 				{
 					'title': context.plan_features[1],
 					'content': [
-						'Single Company',
 						'Customized Print Formats and Email Alerts',
 						'20 Custom Fields',
 						'1 Custom Form'
@@ -91,6 +96,12 @@ def get_context(context):
 			'emails': business_plan.emails,
 			'features': [
 				{
+					'title': 'Organisations',
+					'content': [
+						'3 Companies',
+					]
+				},
+				{
 					'title': context.plan_features[0],
 					'content': [
 						'5 GB cloud storage',
@@ -101,7 +112,6 @@ def get_context(context):
 				{
 					'title': context.plan_features[1],
 					'content': [
-						'3 Companies',
 						'Customized Print Formats and Email Alerts',
 						'Unlimited Custom Fields',
 						'10 Custom Forms, 10 Custom Scripts'
@@ -126,6 +136,12 @@ def get_context(context):
 			'emails': enterprise_plan.emails,
 			'features': [
 				{
+					'title': 'Organisations',
+					'content': [
+						'Unlimited Companies',
+					]
+				},
+				{
 					'title': context.plan_features[0],
 					'content': [
 						'15 GB cloud storage',
@@ -136,7 +152,6 @@ def get_context(context):
 				{
 					'title': context.plan_features[1],
 					'content': [
-						'Unlimited Companies',
 						'Customized Print Formats and Email Alerts',
 						'Unlimited Custom Fields',
 						'Unlimited Custom Forms and Scripts'
