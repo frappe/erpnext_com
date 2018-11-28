@@ -13,6 +13,7 @@ frappe.ready(function() {
 		if(!$page.find('input[name="full_name"]').val()
 			|| !$page.find('input[name="email"]').val()
 			|| $page.find('input[name="email"]').parent().hasClass('invalid')
+			|| $page.find('input[name="passphrase"]').parent().hasClass('invalid')
 			|| !$page.find('select[name="industry_type"]').val()
 			|| !$page.find('input[name="passphrase"]').val() ) {
 
@@ -365,8 +366,10 @@ setup_signup = function(page) {
 
 					if(feedback.password_policy_validation_passed){
 						set_strength_indicator('green', feedback);
-					}else{
+						$('input[name="passphrase"]').closest('.form-group').removeClass('invalid');
+					} else {
 						set_strength_indicator('red', feedback);
+						$('input[name="passphrase"]').closest('.form-group').addClass('invalid');
 					}
 				}
 			}
