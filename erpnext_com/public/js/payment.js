@@ -23,15 +23,16 @@ window.pay = {
 	},
 }
 
+var script = document.createElement( 'script' );
+script.src = "https://wchat.freshchat.com/js/widget.js"
+$("head").append(script);
 
-var s = document.createElement( 'script' );
-s.textContent = `(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/md8hmp1l';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()`;
-document.body.appendChild( s );
-
-window.Intercom("boot", {
-	app_id: "md8hmp1l"
-});
-
-// frappe.route.on('change', () => {
-// 	window.Intercom("update");
-// });
+setTimeout(() => {
+	var script = document.createElement( 'script' );
+	script.textContent = `window.fcWidget.init({
+		token: "2041bf4a-21c8-4921-8ff0-9cf5a49534c5",
+		host: "https://wchat.freshchat.com"
+	});`;
+	script.type = "text/javascript";
+	$("body").append( script );
+}, 2000);
