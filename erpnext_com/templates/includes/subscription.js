@@ -68,7 +68,8 @@ frappe.ready(function() {
 
 			let $language_select = $("select[name*='language']");
 			r.message.languages.forEach(language => {
-				$language_select.append($("<option />").val(language).text(language));
+				//language[0] is for language code and language[1] is for language name
+				$language_select.append($("<option />").val(language[0]).text(language[1]));
 			});
 
 			let $timezone_select = $("select[name*='timezone']");
@@ -89,7 +90,7 @@ frappe.ready(function() {
 				$currency_select.val(country_info[country].currency);
 			});
 
-			$language_select.val('English');
+			$language_select.val('en');
 			if(r.message.default_country) {
 				$country_select.val(r.message.default_country);
 			} else {
