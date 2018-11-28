@@ -109,7 +109,7 @@ def load_dropdowns():
 	from .www.pricing.index import get_country
 
 	data = {
-		'languages': [d.language_name for d in frappe.get_all("Language", fields=['language_name'])],
+		'languages': [(d.language_code, d.language_name) for d in frappe.get_all("Language", fields=['language_name', 'language_code'])],
 		'countries': [d.name for d in frappe.get_all("Country")],
 		'currencies': [d.name for d in frappe.get_all("Currency")],
 		'default_country': get_country(fields=['country']).get('country', None)
