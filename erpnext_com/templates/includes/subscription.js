@@ -277,7 +277,7 @@ setup_signup = function(page) {
 		if(subdomain.length > MAX_LENGTH) {
 			return [0, `Sub-domain cannot have more than ${MAX_LENGTH} characters`];
 		}
-		if(subdomain.search(/^[A-Za-z0-9][-A-Z-a-z0-9]*[A-Za-z0-9]$/)===-1) {
+		if(subdomain.search(/^[A-Za-z0-9][A-Za-z0-9]*[A-Za-z0-9]$/)===-1) {
 			return [0, 'Sub-domain can only contain letters and numbers'];
 		}
 		return [1, ''];
