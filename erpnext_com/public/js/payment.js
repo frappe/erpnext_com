@@ -23,16 +23,16 @@ window.pay = {
 	},
 }
 
-var script = document.createElement( 'script' );
-script.src = "https://wchat.freshchat.com/js/widget.js"
-$("head").append(script);
+// var script = document.createElement( 'script' );
+// script.src = "https://wchat.freshchat.com/js/widget.js"
+// $("head").append(script);
 
-setTimeout(() => {
-	var script = document.createElement( 'script' );
-	script.textContent = `window.fcWidget.init({
-		token: "2041bf4a-21c8-4921-8ff0-9cf5a49534c5",
-		host: "https://wchat.freshchat.com"
-	});`;
-	script.type = "text/javascript";
-	$("body").append( script );
-}, 2000);
+// setTimeout(() => {
+// 	var script = document.createElement( 'script' );
+// 	script.textContent = `window.fcWidget.init({
+// 		token: "2041bf4a-21c8-4921-8ff0-9cf5a49534c5",
+// 		host: "https://wchat.freshchat.com"
+// 	});`;
+// 	script.type = "text/javascript";
+// 	$("body").append( script );
+// }, 2000);
