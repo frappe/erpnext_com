@@ -1,0 +1,23 @@
+{% macro card_grid(heading, subtitle, features) %}
+
+		<h3 class="text-center">{{ heading }}</h3>
+		<p class='lead text-center'>{{ subtitle }}</p>
+		<div class='row mt-5'>
+			{% for card in features %}
+			<div class='col-sm-4 mb-4'>
+				<div class='card h-100'>
+					<div class='card-body'>
+						<h5 class='card-title'>{{ card.title }}</h5>
+						{{ card.content }}
+					</div>
+					{% if card.url %}
+					<div class="card-footer">
+						<a class='text-muted small' href="{{card.url}}">Read more</a>
+					</div>
+					{% endif %}
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+
+{% endmacro %}

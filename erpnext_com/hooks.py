@@ -15,11 +15,10 @@ hide_in_installer = True
 website_context = {
 	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/erpnext_com/img/erpnext-logo-blue.svg' />ERPNext",
 	"top_bar_items": [
+		{"label": "Features", "url": "/features", "right":1},
 		{"label": "Pricing", "url": "/pricing", "right":1},
-		{"label": "Support", "url": "/support", "right":1},
-		{"label": "Learn", "url": "/learn", "right":1},
-		{"label": "Sign Up", "url": "/signup", "right":1},
-		{"label": "Industries", "right":1, "child_items": [
+		{"label": "Enterprise", "url": "/enterprise", "right":1},
+		{"label": "Solutions", "right":1, "child_items": [
 			{"label": "Services", "url":"/services"},
 			{"label": "Manufacturing", "url":"/manufacturing"},
 			{"label": "Retail", "url":"/retail"},
@@ -28,7 +27,7 @@ website_context = {
 			{"label": "Non Profit", "url":"/non-profit"},
 			{"label": "Agriculture", "url":"/agriculture"},
 		]},
-		{"label": "About", "url": "/about", "right":1},
+		{"label": "Get Started", "url": "/signup", "right":1},
 	],
 	"hide_login": 1,
 	"favicon": "/assets/erpnext_com/img/erpnext-logo-blue.png"
@@ -37,7 +36,7 @@ website_context = {
 website_redirects = [
 	{'source': '/compare', 'target': 'https://erpnext.org/contribute' },
 	{'source': '/benefits', 'target': '/about' },
-	{'source': '/features', 'target': '/learn' },
+	# {'source': '/features', 'target': '/learn' },
 	{'source': '/download', 'target': 'https://erpnext.org/get-started' },
 	{'source': '/faq', 'target': 'https://erpnext.org/faq' },
 	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },

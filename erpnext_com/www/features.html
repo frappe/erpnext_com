@@ -1,0 +1,121 @@
+{% extends "frappe_theme/templates/base.html" %}
+{% block title %}Open Source Cloud ERP Software - ERPNext{% endblock %}
+
+{% from "templates/includes/media.html" import media %}
+
+{% block head_include %}
+	<meta name="description" content="ERPNext is the world's top 100% open source ERP software. ERPNext supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare" />
+	<meta name="keywords" content="ERP Software, Cloud ERP, Open Source ERP, Accounting Software, Online ERP, Online Accounting, ERP for small business" />
+{% endblock %}
+
+{% from "erpnext_com/templates/includes/card_grid.html" import card_grid %}
+{% from "erpnext_com/templates/includes/feature_section.html" import full_width_feature %}
+{% from "erpnext_com/templates/includes/feature_section.html" import full_width_feature_reverse %}
+
+{% block content %}
+<section class='top-section'>
+	<div class='container'>
+	<div class='text-center'>
+		<!-- <img class="main-illustration" src='/assets/erpnext_com/img/erpnext_com_illustration.png'
+			style='width: 700px;'> -->
+	</div>
+	<h1>ERPNext Features</h1>
+	<p class='lead'>The ERP Software that helps you take full control of your business. <br> ERPNext is both powerful and easy to use.</p>
+	<p class="mt-4">
+		<a class="btn btn-primary btn-lg" style="width: 170px;" href="/pricing">Get Started</a>
+	</p>
+	<p class="mt-0 small text-muted">Try ERPNext free for 14 days</p>
+
+
+	</div>
+</section>
+
+<section class='section-padding section-bg'>
+	<div class=container>
+		{{ card_grid(
+			"Everything Included",
+			"ERPNext includes all modules and integrations out of the box so you can get started immediately",
+			[
+				{
+				"title": "Manufacturing",
+				"content": "Effectively maintain & manage  multilevel Bill of materials, Production costing, planning & Inventory.",
+				},
+				{
+				"title": "Buying & Selling",
+				"content": "Increase productivity and lower costs by automating supplier quotation to Purchase order to Sales order flow.",
+				},
+				{
+				"title": "CRM",
+				"content": "Win and Retain more customers by optimising sales process. Track Leads, Opportunities and push the sales Orders on the go.",
+				},
+				{
+				"title": "Projects",
+				"content": "Deliver both internal and external projects on time, budget and profitable. Track Tasks, Timesheets and Issues by project.",
+				},
+				{
+				"title": "Support",
+				"content": "Deliver a better service experience with an intuitive issue tracker and integrated knowledge base.",
+				},
+				{
+				"title": "Asset Management",
+				"content": "Maintain and Manage details of assets, their movement, Value adjustment and depreciation.",
+				},
+				{
+				"title": "HR & Payroll",
+				"content": "Manage full employee life cycle right from Onboarding, payroll, Attendance, expense claims, assets  to Separation.",
+				},
+				{
+				"title": "Accounting & Bookkeeping",
+				"content": "Get a real time view of your cash flow. Full fledged accounting module covering every aspect of book keeping.",
+				},
+			]
+			)
+		}}
+	</div>
+</section>
+
+<section class='section-padding'>
+	<h3 class="text-center">Manage Your Business With a Click</h3>
+	<p class='lead text-center'>The ERP Software that helps you take full control of your business. <br> ERPNext is both powerful and easy to use.</p>
+	<div class="container">
+		{{ 
+			full_width_feature(
+				"Role Permission Manager",
+				"Set advanced control on role and user level permissions against the the data contained in the document being accessed.",
+				"setting-up-permissions-leave-application.png",
+			)
+		}}
+		{{
+			full_width_feature_reverse(
+				"Customizations",
+				"ERPNext includes standard objects which account for many business needs and scenarios. If you have a unique business component for which you want to capture information in ERPNext you can create a custom fields, forms, module, scripts.",
+				"customize-doctype.png",
+			)
+		}}
+		{{
+			full_width_feature(
+				"Multilingual",
+				"ERPNext is available in over 70 languages, making it one of the most accessible ERP softwares in the world.",
+				"languages.png",
+			)
+		}}
+	</div>
+</section>
+<hr>
+
+<section class='section-padding'>
+	<div class='text-center container'>
+		<h3 class='text-center'>Loved by Users</h3>
+		<p class='lead'>ERPNext is used by more than 3000 companies across the world</p>
+		<img src="/assets/erpnext_com/img/home/customer-logos.png" class='greyscale my-5'>
+		<div class='mt-4 '>
+			<a class="btn btn-primary btn-lg" href="/pricing">Get Started</a>
+		</div>
+	</div>
+</section>
+<style>
+	.footer-message { display: none; }
+	.navbar { border: none !important; }
+</style>
+{% endblock %}
+
