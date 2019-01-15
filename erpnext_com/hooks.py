@@ -43,6 +43,8 @@ website_redirects = [
 	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },
 ]
 
+look_for_sidebar_json = True
+
 # Includes in <head>
 # ------------------
 
