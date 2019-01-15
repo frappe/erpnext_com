@@ -18,6 +18,7 @@ website_context = {
 		{"label": "Features", "url": "/features", "right":1},
 		{"label": "Pricing", "url": "/pricing", "right":1},
 		{"label": "Enterprise", "url": "/enterprise", "right":1},
+		{"label": "Support", "url": "/support", "right":1},
 		{"label": "Solutions", "right":1, "child_items": [
 			{"label": "Services", "url":"/services"},
 			{"label": "Manufacturing", "url":"/manufacturing"},
@@ -36,7 +37,6 @@ website_context = {
 website_redirects = [
 	{'source': '/compare', 'target': 'https://erpnext.org/contribute' },
 	{'source': '/benefits', 'target': '/about' },
-	{'source': '/features', 'target': '/learn' },
 	{'source': '/download', 'target': 'https://erpnext.org/get-started' },
 	{'source': '/faq', 'target': 'https://erpnext.org/faq' },
 	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },
