@@ -74,15 +74,16 @@ const pricing_multiplier = {
 
 var application = new Vue({
 	el: '#calculator',
-		data: {
-		message: 'Hello Vue!'
-	},
 	data: {
 		region: null,
 		service: null,
 		plan: null,
 		users: 0,
-		total: null,
+	},
+	computed: {
+		total: function() {
+			return pricing_multiplier[this.region] * this.plan * this.users
+		}
 	}
 })
 
