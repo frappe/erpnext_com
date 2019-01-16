@@ -72,6 +72,18 @@ const pricing_multiplier = {
 	"europe": 2,
 }
 
+const discounts = {
+	"0:50": 0,
+	"50:100": 5,
+	"100:150": 10,
+	"150:200": 15,
+	"200:250": 20,
+	"250:300": 25,
+	"300:350": 30,
+	"350:400": 35,
+	"400:1000000000": 40,
+}
+
 var application = new Vue({
 	el: '#calculator',
 	data: {
@@ -82,7 +94,13 @@ var application = new Vue({
 	},
 	computed: {
 		total: function() {
-			return pricing_multiplier[this.region] * this.plan * this.users
+			let users = Object.entries(discounts).map(range => {
+				const result = range[0].split(":")
+				const low = result[0]
+				const high = result[1]
+				return Math.min(parseInt(high) - parseInt(low), Math.max(this.users - parseInt(low), 0)) * (100 - range[1]) / 100
+			}).reduce((a,b) => a+b)
+			return pricing_multiplier[this.region] * this.plan * users
 		}
 	}
 })
