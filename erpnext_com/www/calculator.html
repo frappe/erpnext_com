@@ -57,6 +57,7 @@
 			Plan: {{ plan }}
 			Users: {{ users }}
 			Total: {{ total }}
+			Rate/User: {{ rate }}
 		</div>
 	</div>
 </div>
@@ -101,6 +102,9 @@ var application = new Vue({
 				return Math.min(parseInt(high) - parseInt(low), Math.max(this.users - parseInt(low), 0)) * (100 - range[1]) / 100
 			}).reduce((a,b) => a+b)
 			return pricing_multiplier[this.region] * this.plan * users
+		},
+		rate: function() {
+			return this.total / this.users
 		}
 	}
 })
