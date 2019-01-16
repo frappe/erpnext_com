@@ -7,5 +7,84 @@
 	</div>
 </section>
 
+<div id="calculator">
+	<div>
+		<div>
+			<label for="india">India</label>
+			<input type="radio" name="region" value="india" v-model="region"/>
+		</div>
+		<div>
+			<label for="me">Middle East</label>
+			<input type="radio" name="region" value="me" v-model="region"/>
+		</div>
+		<div>
+			<label for="europe">Europe</label>
+			<input type="radio" name="region" value="europe" v-model="region"/>
+		</div>
+	</div>
+	<div>
+		<div>
+			<label for="saas">SAAS</label>
+			<input type="radio" name="service" value="saas" v-model="service"/>
+		</div>
+		<div>
+			<label for="self">Self Hosted</label>
+			<input type="radio" name="service" value="self" v-model="service"/>
+		</div>
+	</div>
+	<div>
+		<div>
+			<label for="5">5 USD</label>
+			<input type="radio" name="plan" value="5" v-model="plan"/>
+		</div>
+		<div>
+			<label for="10">10 USD</label>
+			<input type="radio" name="plan" value="10" v-model="plan"/>
+		</div>
+		<div>
+			<label for="25">25 USD</label>
+			<input type="radio" name="plan" value="25" v-model="plan"/>
+		</div>
+	</div>
+	<div>
+		<div>
+			<label for="users">Number of Users</label>
+			<input type="number" name="users" value="1" v-model="users"/>
+		</div>
+		<div>
+			Region: {{ region }}
+			Service: {{ service }}
+			Plan: {{ plan }}
+			Users: {{ users }}
+			Total: {{ total }}
+		</div>
+	</div>
+</div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script>
+
+const pricing_multiplier = {
+	"india": 1,
+	"me": 1.5,
+	"europe": 2,
+}
+
+var application = new Vue({
+	el: '#calculator',
+		data: {
+		message: 'Hello Vue!'
+	},
+	data: {
+		region: null,
+		service: null,
+		plan: null,
+		users: 0,
+		total: null,
+	}
+})
+
+</script>
 {% endblock %}
