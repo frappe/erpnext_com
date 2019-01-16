@@ -84,6 +84,8 @@
 			Self Users: {{ self_users }}
 			Self ESS Users: {{ self_ess_users }}
 			Self Total: {{ self_total }}
+			Functional Consulting Hours: {{ self_functional_hours }}
+			Developer Consulting Hours: {{ self_developer_hours }}
 		</div>
 	</div>
 </div>
@@ -137,6 +139,12 @@ var application = new Vue({
 		},
 		self_total: function() {
 			return pricing_multiplier[this.region] * (this.self_plan * this.self_users + this.self_plan * 0.3 * this.self_ess_users)
+		},
+		self_functional_hours: function() {
+			return this.self_users * 0.5
+		},
+		self_developer_hours: function() {
+			return this.self_users * 0.25
 		}
 	}
 })
