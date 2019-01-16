@@ -35,35 +35,61 @@
 	<div>
 		<div>
 			<label for="5">5 USD</label>
-			<input type="radio" name="plan" value="5" v-model="plan"/>
+			<input type="radio" name="saas_plan" value="5" v-model="saas_plan"/>
 		</div>
 		<div>
 			<label for="10">10 USD</label>
-			<input type="radio" name="plan" value="10" v-model="plan"/>
+			<input type="radio" name="saas_plan" value="10" v-model="saas_plan"/>
 		</div>
 		<div>
 			<label for="25">25 USD</label>
-			<input type="radio" name="plan" value="25" v-model="plan"/>
+			<input type="radio" name="saas_plan" value="25" v-model="saas_plan"/>
 		</div>
 	</div>
 	<div>
 		<div>
-			<label for="users">Number of Users</label>
-			<input type="number" name="users" value="1" v-model="users"/>
+			<label for="saas_users">Number of Users</label>
+			<input type="number" name="saas_users" value="1" v-model="saas_users"/>
 		</div>
+	</div>
+	<div>
 		<div>
 			Region: {{ region }}
 			Service: {{ service }}
-			Plan: {{ plan }}
-			Users: {{ users }}
-			Total: {{ total }}
-			Rate/User: {{ rate }}
+			SAAS Plan: {{ saas_plan }}
+			SAAS Users: {{ saas_users }}
+			SAAS Total: {{ saas_total }}
+			SAAS Rate/User: {{ saas_rate }}
+		</div>
+	</div>
+	<div>
+		<div>
+			<label for="100">100 USD</label>
+			<input type="radio" name="self_plan" value="100" v-model="self_plan"/>
+		</div>
+	</div>
+	<div>
+		<div>
+			<label for="self_users">Number of Users</label>
+			<input type="number" name="self_users" value="10" v-model="self_users"/>
+		</div>
+		<div>
+			<label for="self_ess_users">Number of ESS Users</label>
+			<input type="number" name="self_ess_users" value="10" v-model="self_ess_users"/>
+		</div>
+	</div>
+	<div>
+		<div>
+			Self Plan: {{ self_plan }}
+			Self Users: {{ self_users }}
+			Self ESS Users: {{ self_ess_users }}
+			Self Total: {{ self_total }}
 		</div>
 	</div>
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <script>
 
@@ -73,7 +99,7 @@ const pricing_multiplier = {
 	"europe": 2,
 }
 
-const discounts = {
+const saas_discounts = {
 	"0:50": 0,
 	"50:100": 5,
 	"100:150": 10,
@@ -90,21 +116,27 @@ var application = new Vue({
 	data: {
 		region: null,
 		service: null,
-		plan: null,
-		users: 0,
+		saas_plan: null,
+		self_plan: null,
+		saas_users: 0,
+		self_users: 0,
+		self_ess_users: 0,
 	},
 	computed: {
-		total: function() {
-			let users = Object.entries(discounts).map(range => {
+		saas_total: function() {
+			let users = Object.entries(saas_discounts).map(range => {
 				const result = range[0].split(":")
 				const low = result[0]
 				const high = result[1]
-				return Math.min(parseInt(high) - parseInt(low), Math.max(this.users - parseInt(low), 0)) * (100 - range[1]) / 100
+				return Math.min(parseInt(high) - parseInt(low), Math.max(this.saas_users - parseInt(low), 0)) * (100 - range[1]) / 100
 			}).reduce((a,b) => a+b)
-			return pricing_multiplier[this.region] * this.plan * users
+			return pricing_multiplier[this.region] * this.saas_plan * users
 		},
-		rate: function() {
-			return this.total / this.users
+		saas_rate: function() {
+			return this.saas_total / this.saas_users
+		},
+		self_total: function() {
+			return pricing_multiplier[this.region] * (this.self_plan * this.self_users + this.self_plan * 0.3 * this.self_ess_users)
 		}
 	}
 })
