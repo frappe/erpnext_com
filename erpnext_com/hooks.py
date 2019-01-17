@@ -13,6 +13,7 @@ app_version = "0.0.1"
 hide_in_installer = True
 
 website_context = {
+	"repo": "frappe/erpnext_com",
 	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/erpnext_com/img/erpnext-logo-blue.svg' />ERPNext",
 	"top_bar_items": [
 		{"label": "Pricing", "url": "/pricing", "right":1},
