@@ -88,31 +88,31 @@ frappe.ready(function () {
 	//------------------------------------------------------
 	setup_signup($('#page-signup'));
 
-	// let plan_name = frappe.utils.get_query_params().plan;
+	let plan_name = frappe.utils.get_query_params().plan;
 
-	// if (plan_name) {
-	// 	frappe.call({
-	// 		method: 'erpnext_com.www.pricing.index.get_plan_details',
-	// 		args: {
-	// 			plan_name
-	// 		},
-	// 		callback: function (r) {
-	// 			if (r.exc) return;
+	if (plan_name) {
+		frappe.call({
+			method: 'erpnext_com.www.pricing.index.get_plan_details',
+			args: {
+				plan_name
+			},
+			callback: function (r) {
+				if (r.exc) return;
 
-	// 			if (r.message) {
-	// 				plan = r.message
-	// 				window.plan = plan;
-	// 				let pricing = plan.pricing;
+				if (r.message) {
+					plan = r.message
+					window.plan = plan;
+					let pricing = plan.pricing;
 
-	// 				$('.plan-name').html('ERPNext ' + plan_name.replace('P-', ''));
-	// 				$('.pricing-currency').html(pricing.symbol);
+					$('.plan-name').html('ERPNext ' + plan_name.replace('P-', ''));
+					$('.pricing-currency').html(pricing.symbol);
 
-	// 				$('.monthly-pricing, .total-cost').html(pricing.monthly_amount);
-	// 			}
-	// 		},
+					$('.monthly-pricing, .total-cost').html(pricing.monthly_amount);
+				}
+			},
 
-	// 	});
-	// }
+		});
+	}
 
 	frappe.call({
 		method: "erpnext_com.api.load_dropdowns",
