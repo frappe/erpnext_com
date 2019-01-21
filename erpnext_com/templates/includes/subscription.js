@@ -315,7 +315,7 @@ setup_signup = function(page) {
 		$('.plan-name').html(query_params.plan);
 	}
 
-	page.find(".plan-message").text("Free 30-day Trial");
+	page.find(".plan-message").text("Free 14-day Trial");
 
 	// if (['Free', 'Free-Solo'].indexOf(query_params.plan)!==-1) {
 	// 		// keeping Free-Solo for backward compatibility
