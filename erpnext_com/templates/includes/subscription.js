@@ -34,6 +34,35 @@ frappe.ready(function () {
 		}
 	});
 
+	$page.find('.account-setup-button').on('click', () => {
+		if (!$page.find('select[name="country"]').val() ||
+			!$page.find('select[name="industry_type"]').val() ||
+			!$page.find('select[name="currency"]').val() ||
+			!$page.find('select[name="language"]').val() ||
+			!$page.find('select[name="timezone"]').val()) {
+
+			frappe.msgprint("All fields are necessary. Please try again.");
+			return false;
+		} else {
+			location.hash = "#other-details"
+			changeRoute()
+		}
+	});
+
+	$page.find('.other-settings-button').on('click', () => {
+		if (!$page.find('input[name="company"]').val() ||
+			!$page.find('input[name="expected_number"]').val() ||
+			!$page.find('input[name="designation"]').val() ||
+			!$page.find('select[name="referral_source"]').val()) {
+
+			frappe.msgprint("All fields are necessary. Please try again.");
+			return false;
+		} else {
+			location.hash = "#finish"
+			changeRoute()
+		}
+	});
+
 	// Sign Up Router ------------------------------------------------------------
 	const route_map = [
 		{
@@ -45,16 +74,12 @@ frappe.ready(function () {
 			element: ".personal-info"
 		},
 		{
-			route: "#subscription",
-			element: ".subscription"
-		},
-		{
-			route: "#regional-settings",
+			route: "#account-setup",
 			element: ".regional-settings"
 		},
 		{
-			route: "#domain",
-			element: ".domain-settings"
+			route: "#other-details",
+			element: ".other-details"
 		}
 	]
 
