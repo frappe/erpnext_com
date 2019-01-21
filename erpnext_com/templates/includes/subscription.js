@@ -111,6 +111,7 @@ frappe.ready(function () {
 		}
 		changeRoute()
 	}
+	
 	document.onload = checkLocationHash();
 	window.onhashchange = changeRoute;
 
@@ -369,23 +370,22 @@ setup_signup = function (page) {
 	}
 
 	function check_if_available(subdomain, callback) {
-		callback(1);
-		// setTimeout(function () {
-		// 	frappe.call({
-		// 		method: 'erpnext_com.api.check_subdomain_availability',
-		// 		args: {
-		// 			subdomain: subdomain
-		// 		},
-		// 		type: 'POST',
-		// 		callback: function (r) {
-		// 			if (!r.message) {
-		// 				callback(1);
-		// 			} else {
-		// 				callback(0);
-		// 			}
-		// 		},
-		// 	});
-		// }, 2000);
+		setTimeout(function () {
+			frappe.call({
+				method: 'erpnext_com.api.check_subdomain_availability',
+				args: {
+					subdomain: subdomain
+				},
+				type: 'POST',
+				callback: function (r) {
+					if (!r.message) {
+						callback(1);
+					} else {
+						callback(0);
+					}
+				},
+			});
+		}, 2000);
 	}
 
 	var query_params = frappe.utils.get_query_params();
@@ -428,7 +428,8 @@ setup_signup = function (page) {
 			window.timout_password_strength = null;
 		}
 	};
-
+	
+	//-------------------------------------- Password Strength --------------------------------------
 	window.strength_indicator = $('.password-strength-indicator');
 	window.strength_message = $('.password-strength-message');
 
