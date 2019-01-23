@@ -12,13 +12,14 @@ frappe.ready(function() {
 	$page.find('.subscribe-button').on('click', () => {
 		if(!$page.find('input[name="full_name"]').val()
 			|| !$page.find('input[name="email"]').val()
-			|| $page.find('input[name="email"]').parent().hasClass('invalid')
-			|| $page.find('input[name="passphrase"]').parent().hasClass('invalid')
 			|| !$page.find('select[name="industry_type"]').val()
 			|| !$page.find('input[name="passphrase"]').val() ) {
-
 			frappe.msgprint("All fields are necessary. Please try again.");
 			return false;
+		} else if($page.find('input[name="email"]').parent().hasClass('invalid')) {
+			frappe.msgprint("Please enter a valid email.");
+		} else if($page.find('input[name="passphrase"]').parent().hasClass('invalid')) {
+			frappe.msgprint("Please enter a strong password.");
 		} else {
 			show_subscription_form();
 		}
