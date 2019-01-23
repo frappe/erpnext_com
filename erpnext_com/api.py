@@ -60,11 +60,11 @@ def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
 
 @frappe.whitelist(allow_guest=True)
 
-def signup(full_name, email, subdomain, industry_type, plan=None, distribution="erpnext",
+def signup(full_name, email, phone_number, subdomain, industry_type, plan=None, distribution="erpnext",
 	res=None, number_of_users=1, passphrase=None, country=None, timezone=None, currency=None,
 	language=None):
 
-	resp = _signup(full_name, email, subdomain, industry_type, plan=plan,
+	resp = _signup(full_name, email, phone_number, subdomain, industry_type, plan=plan,
 		distribution=distribution, reseller=res, users=number_of_users, password=passphrase,
 		country=country, timezone=timezone, currency=currency, language=language)
 
