@@ -26,6 +26,7 @@ frappe.ready(function() {
 	});
 
 	function show_subscription_form() {
+		window.scroll(0, 0);
 		$page.find('.personal-info').addClass('hide');
 		$page.find('.subscription').removeClass('hide');
 
