@@ -13,8 +13,13 @@ app_version = "0.0.1"
 hide_in_installer = True
 
 website_context = {
+<<<<<<< 44e913e9b866596c50da7fa50e78e4760aa01833
 	"repo": "frappe/erpnext_com",
 	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/erpnext_com/img/erpnext-logo-blue.svg' />ERPNext",
+=======
+	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo-blue.svg',
+	'brand_name': 'ERPNext',
+>>>>>>> fix: for subnav
 	"top_bar_items": [
 		{"label": "Features", "url": "/features", "right":1},
 		{"label": "Pricing", "url": "/pricing", "right":1},
