@@ -13,7 +13,8 @@ app_version = "0.0.1"
 hide_in_installer = True
 
 website_context = {
-	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/erpnext_com/img/erpnext-logo-blue.svg' />ERPNext",
+	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo-blue.svg',
+	'brand_name': 'ERPNext',
 	"top_bar_items": [
 		{"label": "Pricing", "url": "/pricing", "right":1},
 		{"label": "Support", "url": "/support", "right":1},
