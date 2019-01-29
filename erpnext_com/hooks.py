@@ -13,6 +13,7 @@ app_version = "0.0.1"
 hide_in_installer = True
 
 website_context = {
+	"repo": "frappe/erpnext_com",
 	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/erpnext_com/img/erpnext-logo-blue.svg' />ERPNext",
 	"top_bar_items": [
 		{"label": "Pricing", "url": "/pricing", "right":1},
@@ -42,6 +43,8 @@ website_redirects = [
 	{'source': '/faq', 'target': 'https://erpnext.org/faq' },
 	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },
 ]
+
+look_for_sidebar_json = True
 
 # Includes in <head>
 # ------------------
