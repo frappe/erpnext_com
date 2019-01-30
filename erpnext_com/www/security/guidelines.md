@@ -17,15 +17,20 @@ Any reproducible vulnerability that affects the security of our users is likely 
 Common examples include:
 
 * Cross Site Scripting (XSS)
-* Cross Site Request Forgery (CSRF)
-* Server Side Request Forgery (SSRF)
 * Remote Code Execution (RCE)
 * SQL Injection (SQLi)
+* Code Injection
+* Buffer Overflow
+* Unvalidated Input
+* Access-Control Problem
+* Race Condition
+* Remote Code Execution
+* Weaknesses in Authentication, Authorization, or Cryptographic Practices
 
 
 #### Security Vulnerability Submission by Email
 
-If you find any security breaches, please report the issue  to <i class="fa fa-envelope"> </i> <a  href='mailto:report@erpnext.com'> Frappe Vulnerability Management</a>
+If you find any security breaches, please report the issue  to <i class="fa fa-envelope"> </i> <a href='report'> Frappe Vulnerability Management</a>
 
 It is important to include at least the following information in the email:
 
