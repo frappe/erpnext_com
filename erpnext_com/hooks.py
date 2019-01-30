@@ -28,6 +28,7 @@ website_context = {
 			{"label": "Education", "url":"/education"},
 			{"label": "Non Profit", "url":"/non-profit"},
 			{"label": "Agriculture", "url":"/agriculture"},
+			{"label": "Healthcare", "url": "/healthcare"},
 		]},
 		{"label": "About", "url": "/about", "right":1},
 	],
