@@ -14,12 +14,12 @@ hide_in_installer = True
 
 website_context = {
 	"repo": "frappe/erpnext_com",
-	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/erpnext_com/img/erpnext-logo-blue.svg' />ERPNext",
+	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo-blue.svg',
+	'brand_name': 'ERPNext',
 	"top_bar_items": [
-		{"label": "Pricing", "url": "/pricing", "right":1},
+		{"label": "Pricing & Signup", "url": "/pricing", "right":1},
 		{"label": "Support", "url": "/support", "right":1},
-		{"label": "Learn", "url": "/learn", "right":1},
-		{"label": "Sign Up", "url": "/signup", "right":1},
+		{"label": "Docs", "url": "/docs/user/manual/en", "right":1},
 		{"label": "Industries", "right":1, "child_items": [
 			{"label": "Services", "url":"/services"},
 			{"label": "Manufacturing", "url":"/manufacturing"},
