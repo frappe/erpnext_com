@@ -34,6 +34,7 @@
 <section class='section-padding'>
 	<div class='container'>
 		<div class='table-responsive'>
+			{% if references %}
 			<table class='table table-bordered table-hover'>
 				<thead class='thead-dark'>
 					<th>Reference</th>
@@ -49,6 +50,10 @@
 					<td>{{ item.severity }}</td>
 				</tbody>
 				{% endfor %}
+			{% else %}
+				<p>No vulnerabilities to display! Hooray?</p>
+			{% endif %}
+
 			</table>
 		</div>
 	</div>

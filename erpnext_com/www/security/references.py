@@ -5,5 +5,5 @@ import frappe
 no_cache = True
 
 def get_context(context):
-	test = frappe.get_all("CVE", fields="*")
-	return {"test": test}
+	references = frappe.get_all("CVE", fields="*")
+	return {"references": references}
