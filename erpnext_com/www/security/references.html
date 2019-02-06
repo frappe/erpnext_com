@@ -1,0 +1,57 @@
+{% extends "templates/base.html" %}
+
+{% from "templates/includes/media.html" import media %}
+
+{% block content %}
+
+<section class='top-section'>
+<div class='container'>
+	<h1>Frappe Security Bulletin</h1>
+	<p class='lead'>
+		This security bulletin contains detailed information about vulnerabilities affecting the Frappe Framework.
+	</p>
+
+</div>
+</section>
+
+<section class='section-padding section-bg'>
+<div class='container'>
+	<h3>Disclaimer</h3>
+
+<ul>
+	<li>The listed vulnerabilities and exploits have been patched in all currently supported versions of Frappe.</li>
+	<li>The list is to be considered as a comprehensive compendium of all the vulnerabilities and exploits.</li>
+		<ul>
+			<li>The disclosure of any valid reported issue will take place after <b>60 days</b> from the reporting period.</li>
+			<li>If any of the issues fixed haven't been added to the list, please <a href="mailto:security@erpnext.com" target="_blank">contact us</a> regarding the same.</li>
+			<li>If you find any vulnerability or exploit in the system that needs to be fixed, please <a href="/report">report it</a> to us.</li>
+		</ul>
+</ul>
+
+</div>
+</section>
+
+<section class='section-padding'>
+	<div class='container'>
+		<div class='table-responsive'>
+			<table class='table table-bordered table-hover'>
+				<thead class='thead-dark'>
+					<th>Reference</th>
+					<th>Reported By</th>
+					<th>Affected Applications</th>
+					<th>Severity</th>
+				</thead>
+				{% for item in test %}
+				<tbody>
+	   				<td><a href="{{ item.commit_url }}">{{ item.reference }}</a></td>
+					<td><a href="{{ item.reporter_url }}">{{ item.reported_by }}</a></td>
+					<td>{{ item.affected_applications }}</td>
+					<td>{{ item.severity }}</td>
+				</tbody>
+				{% endfor %}
+			</table>
+		</div>
+	</div>
+</section>
+
+{% endblock %}
