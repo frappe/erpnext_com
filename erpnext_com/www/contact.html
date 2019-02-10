@@ -5,12 +5,31 @@
 	        <h3>Write to us</h3>
 	        <p>Have a question or comment? Write in, we would love to hear from you. We’ll write back as soon as we can.</p>
 
-			<div class='text-muted mt-3'>Subject</div>
-			<input class="form-control" type="text" name="subject">
-			<div class='text-muted mt-3'>Your email</div>
+			<div class='text-muted mt-3'>Your name</div>
+			<input class="form-control" type="text" name="fullname" required>
+
+			<div class='text-muted mt-3' required>Your email</div>
 			<input class="form-control" type="text" name="email">
+
+			<div class='text-muted mt-3' required>Your job title</div>
+			<input class="form-control" type="text" name="title">
+
+			<div class='text-muted mt-3' required>What are you looking for?</div>
+			<select class="form-control" name="service">
+				<option value='Enterprise Support'>Enterprise Support</option>
+				<option value='Implementation Support'>Implementation Support</option>
+				<option value='Consultation'>Consultation</option>
+				<option value='Partnership'>Partnership</option>
+			</select>
+
+			<div class='text-muted mt-3' required>Are you already using ERPNext?</div>
+			<select class="form-control" name="service">
+				<option value='No'>No</option>
+				<option value='Yes'>Yes</option>
+			</select>
+
 			<div class='text-muted mt-3'>Message</div>
-			<textarea class="form-control" name="message" style="height: 200px;"></textarea>
+			<textarea class="form-control" name="message" style="height: 200px;" required></textarea>
 			<a href=# id="send" class="btn btn-dark btn-send form-control mt-4">Send</a>
 	    </div>
 	    <div class="col-sm-6 content address">
@@ -24,5 +43,50 @@
 	</div>
 </section>
 <script>
-	{% include "templates/includes/contact.js" %}
+	frappe.ready(function() {
+
+		if(frappe.utils.get_url_arg('subject')) {
+		  $('[name="subject"]').val(frappe.utils.get_url_arg('subject'));
+		}
+
+		$('.btn-send').off("click").on("click", function() {
+			var email = $('[name="email"]').val();
+			var message = $('[name="message"]').val();
+
+			if(!(email && message)) {
+				frappe.msgprint("{{ _("Please enter both your email and message so that we \
+					can get back to you. Thanks!") }}");
+				return false;
+			}
+
+			if(!validate_email(email)) {
+				frappe.msgprint("{{ _("You seem to have written your name instead of your email. \
+					Please enter a valid email address so that we can get back.") }}");
+				$('[name="email"]').focus();
+				return false;
+			}
+
+			$("#contact-alert").toggle(false);
+			frappe.send_message({
+				subject: $('[name="subject"]').val(),
+				sender: email,
+				message: message,
+				callback: function(r) {
+					if(r.message==="okay") {
+						frappe.msgprint("{{ _("Thank you for your message") }}");
+					} else {
+						frappe.msgprint("{{ _("There were errors") }}");
+						console.log(r.exc);
+					}
+					$(':input').val('');
+				}
+			}, this);
+			return false;
+		});
+
+	});
+
+	var msgprint = function(txt) {
+		if(txt) $("#contact-alert").html(txt).toggle(true);
+	}
 </script>

@@ -7,12 +7,12 @@
 		<div class='row mt-5'>
 			{% for card in features %}
 			<div class='col-sm-4 mb-4'>
-				<div class='card h-100'>
-					<div class='card-body'>
+				<a href='{{ card.path }}' class='card h-100 text-left'>
+					<div class='card-body '>
 						<h5 class='card-title'>{{ card.title }}</h5>
 						{{ card.content }}
 					</div>
-				</div>
+				</a>
 			</div>
 			{% endfor %}
 		</div>

@@ -18,9 +18,10 @@ website_context = {
 	'brand_name': 'ERPNext',
 	"top_bar_items": [
 		{"label": "Pricing & Signup", "url": "/pricing", "right":1},
-		{"label": "Support", "url": "/support", "right":1},
+		{"label": "Features", "url": "/features", "right":1},
+		{"label": "Enterprise", "url": "/enterprise", "right":1},
 		{"label": "Docs", "url": "/docs/user/manual/en", "right":1},
-		{"label": "Industries", "right":1, "child_items": [
+		{"label": "Solutions", "right":1, "child_items": [
 			{"label": "Services", "url":"/services"},
 			{"label": "Manufacturing", "url":"/manufacturing"},
 			{"label": "Retail", "url":"/retail"},
@@ -28,6 +29,7 @@ website_context = {
 			{"label": "Education", "url":"/education"},
 			{"label": "Non Profit", "url":"/non-profit"},
 			{"label": "Agriculture", "url":"/agriculture"},
+			{"label": "Healthcare", "url": "/healthcare"},
 		]},
 		{"label": "About", "url": "/about", "right":1},
 	],
@@ -38,7 +40,6 @@ website_context = {
 website_redirects = [
 	{'source': '/compare', 'target': 'https://erpnext.org/contribute' },
 	{'source': '/benefits', 'target': '/about' },
-	{'source': '/features', 'target': '/learn' },
 	{'source': '/download', 'target': 'https://erpnext.org/get-started' },
 	{'source': '/faq', 'target': 'https://erpnext.org/faq' },
 	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },

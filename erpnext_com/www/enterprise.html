@@ -1,0 +1,72 @@
+{% extends "templates/base.html" %}
+{% block title %}First Class Support for ERPNext{% endblock %}
+{% block content %}
+
+<section class='top-section'>
+	<div class='container'>
+		<h1>Enterprise Implementation</h1>
+		<p class="lead">Need more resources? Get your own remote ERP management team that will adapt to your enterprise needs, including support, server management and development.<p>
+		<p class="mt-4">
+			<a class="btn btn-primary btn-lg" style="width: 170px;" href="/contact-form">Get In Touch</a>
+		</p>
+	</div>
+</section>
+
+{% set reasons = [
+	{
+		"title": "Implementation Services",
+		"content": "If you are implementing ERPNext, our support team will help you map your business process with ERPNext workflows and help you setup your system."
+	},
+	{
+		"title": "Priority Support",
+		"content": "Our support team knows ERPNext inside out and has tons of experience dealing with all kinds of scenarios, and responds very quickly."
+	},
+	{
+		"title": "Upgrade Management",
+		"content": "Don't worry about keeping updated with the latest security and performance upgrades, we ensure that your ERPNext instance is patched and up-to-date."
+	},
+	{
+		"title": "Server Management",
+		"content": "Let us lose sleep over your infrastructure. We have years of experiences ensuring that your servers are up and running at optimium levels."
+	},
+	{
+		"title": "Scalability Support",
+		"content": "As your business grows, you may experience scalability issues. We will ensure we try and fix them so that you do not experience slow performance."
+	},
+	{
+		"title": "Bug Fix Guarantee",
+		"content": "If you report a bug in a standard feature, we will guarantee that it will be fixed with highest priority and automatically patched and released for you."
+	},
+] %}
+
+<section class='section-bg'>
+	<div class='container'>
+		<h3 class=text-center>Why Choose ERPNext?</h3>
+		<p class='lead text-center'>Leave your system management to the experts so that you can focus your energy on what you do best.</p>
+		<div class='row mt-5'>
+			{% for card in reasons %}
+			<div class='col-sm-4 mb-4'>
+				<div class='card h-100'>
+					<div class='card-body'>
+						<h5 class='card-title'>{{ card.title }}</h5>
+						{{ card.content }}
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class='container text-center'>
+		<h3>"World's Best ERP"</h3>
+		<p class='lead text-center'>ERPNext has been recognized as one of the world's best open source ERPs and is backed by the not-for-profit ERPNext Foundation</p>
+		<img class='mt-4' src='/assets/erpnext_com/img/front-runners.png'>
+		<div class='mt-5'>
+			<a href='/contact-form' class='btn btn-primary btn-lg'>Get in Touch</a>
+		</div>
+	</div>
+</section>
+
+{% endblock %}
