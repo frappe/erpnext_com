@@ -13,18 +13,9 @@ app_version = "0.0.1"
 hide_in_installer = True
 
 website_context = {
-<<<<<<< 44e913e9b866596c50da7fa50e78e4760aa01833
-	"repo": "frappe/erpnext_com",
-	"brand_html": "<img class='mr-2 d-inline-block align-top' src='/assets/erpnext_com/img/erpnext-logo-blue.svg' />ERPNext",
-=======
 	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo-blue.svg',
 	'brand_name': 'ERPNext',
->>>>>>> fix: for subnav
 	"top_bar_items": [
-		{"label": "Features", "url": "/features", "right":1},
-		{"label": "Pricing", "url": "/pricing", "right":1},
-		{"label": "Enterprise", "url": "/enterprise", "right":1},
-		{"label": "Support", "url": "/support", "right":1},
 		{"label": "Solutions", "right":1, "child_items": [
 			{"label": "Services", "url":"/services"},
 			{"label": "Manufacturing", "url":"/manufacturing"},
@@ -35,7 +26,10 @@ website_context = {
 			{"label": "Agriculture", "url":"/agriculture"},
 			{"label": "Healthcare", "url": "/healthcare"},
 		]},
-		{"label": "Get Started", "url": "/signup", "right":1},
+		{"label": "Features", "url": "/features", "right":1},
+		{"label": "Enterprise", "url": "/enterprise", "right":1},
+		{"label": "About", "url": "/about", "right":1},
+		{"label": "Pricing & Signup", "url": "/pricing", "right":1},
 	],
 	"hide_login": 1,
 	"favicon": "/assets/erpnext_com/img/erpnext-logo-blue.png"
