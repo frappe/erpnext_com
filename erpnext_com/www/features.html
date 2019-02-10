@@ -4,7 +4,7 @@
 {% from "templates/includes/media.html" import media %}
 
 {% block head_include %}
-	<meta name="description" content="ERPNext is the world's top 100% open source ERP software. ERPNext supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare" />
+	<meta name="description" content="ERPNext Features: Finanical Accounting, CRM, HRMS, Helpdesk and much more" />
 	<meta name="keywords" content="ERP Software, Cloud ERP, Open Source ERP, Accounting Software, Online ERP, Online Accounting, ERP for small business" />
 {% endblock %}
 
@@ -13,33 +13,21 @@
 {% from "erpnext_com/templates/includes/feature_section.html" import full_width_feature_reverse %}
 
 {% block content %}
-<section class='top-section'>
-	<div class='container'>
-	<div class='text-center'>
-		<!-- <img class="main-illustration" src='/assets/erpnext_com/img/erpnext_com_illustration.png'
-			style='width: 700px;'> -->
-	</div>
-	<h1>ERPNext Features</h1>
-	<p class='lead'>The ERP Software that helps you take full control of your business. <br> ERPNext is both powerful and easy to use.</p>
-	<p class="mt-4">
-		<a class="btn btn-primary btn-lg" style="width: 170px;" href="/pricing">Get Started</a>
-	</p>
-	<p class="mt-0 small text-muted">Try ERPNext free for 14 days</p>
-
-
-	</div>
-</section>
-
-<section class='section-padding section-bg'>
+<section class='section-padding'>
 	<div class=container>
 		{{ card_grid(
-			"Everything Included",
-			"ERPNext includes all modules and integrations out of the box so you can get started immediately",
+			"Hundreds of Features for your Organization",
+			"All modules and integrations are available out of the box so you can get started immediately",
 			[
 				{
 				"title": "Accounting",
 				"content": "Get a real time view of your cash flow. Full fledged accounting module covering every aspect of book keeping.",
 				"url": "/docs/user/manual/en/accounts"
+				},
+				{
+				"title": "HR & Payroll",
+				"content": "Manage full employee life cycle right from Onboarding, payroll, Attendance, expense claims, assets  to Separation.",
+				"url": "/docs/user/manual/en/human-resources"
 				},
 				{
 				"title": "Manufacturing",
@@ -62,7 +50,7 @@
 				"url": "/docs/user/manual/en/projects"
 				},
 				{
-				"title": "Support",
+				"title": "Helpdesk",
 				"content": "Deliver a better service experience with an intuitive issue tracker and integrated knowledge base.",
 				"url": "/docs/user/manual/en/support"
 				},
@@ -70,11 +58,6 @@
 				"title": "Asset Management",
 				"content": "Maintain and Manage details of assets, their movement, Value adjustment and depreciation.",
 				"url": "/docs/user/manual/en/asset"
-				},
-				{
-				"title": "HR & Payroll",
-				"content": "Manage full employee life cycle right from Onboarding, payroll, Attendance, expense claims, assets  to Separation.",
-				"url": "/docs/user/manual/en/human-resources"
 				},
 				{
 				"title": "Website",
@@ -87,13 +70,13 @@
 	</div>
 </section>
 
-<section class='section-padding'>
-	<h3 class="text-center">Manage Your Business With a Click</h3>
-	<p class='lead text-center'>The ERP Software that helps you take full control of your business. <br> ERPNext is both powerful and easy to use.</p>
+<section class='section-padding section-bg'>
+	<h3 class="text-center">Customizable and Permission Controlled</h3>
+	<p class='lead text-center'>ERPNext allows you to add custom roles, permission rules, scripts and workflows<br> to tailor the system to your needs and control access as required.</p>
 	<div class="container">
-		{{ 
+		{{
 			full_width_feature(
-				"Role Permission Manager",
+				"Permission Manager",
 				"Set advanced control on role and user level permissions against the the data contained in the document being accessed.",
 				"role-permission.png",
 				"/docs/user/manual/en/setting-up/users-and-permissions",
@@ -117,7 +100,6 @@
 		}}
 	</div>
 </section>
-<hr>
 
 <section class='section-padding'>
 	<div class='text-center container'>

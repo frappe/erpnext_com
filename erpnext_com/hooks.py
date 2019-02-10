@@ -13,6 +13,7 @@ app_version = "0.0.1"
 hide_in_installer = True
 
 website_context = {
+	"repo": "frappe/erpnext_com",
 	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo-blue.svg',
 	'brand_name': 'ERPNext',
 	"top_bar_items": [
@@ -28,8 +29,9 @@ website_context = {
 		]},
 		{"label": "Features", "url": "/features", "right":1},
 		{"label": "Enterprise", "url": "/enterprise", "right":1},
-		{"label": "About", "url": "/about", "right":1},
+		{"label": "Docs", "url": "/docs/user/manual/en", "right":1},
 		{"label": "Pricing & Signup", "url": "/pricing", "right":1},
+		{"label": "About", "url": "/about", "right":1},
 	],
 	"hide_login": 1,
 	"favicon": "/assets/erpnext_com/img/erpnext-logo-blue.png"
