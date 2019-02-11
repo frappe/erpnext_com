@@ -30,7 +30,7 @@ Common examples include:
 
 #### Security Vulnerability Submission
 
-If you find any security breaches, please report the issue  to <a href='report'> Frappe Vulnerability Management</a>
+If you find any security breaches, please report the issue to <a href='/security/report'>via this form</a>
 
 It is important to include at least the following information in the email:
 
@@ -41,3 +41,8 @@ It is important to include at least the following information in the email:
 * Information about known exploits
 * Disclosure plans, if any
 * If you want public recognition
+
+<p class='text-center'>
+    <a href='/security/report' class='btn btn-secondary'>
+    Report a Vulnerability</a>
+</p>
