@@ -3,23 +3,19 @@
 <section class='top-section'>
 	<div class='container'>
 	<h1 class='pt-4'>Get Started with ERPNext</h1>
-	<div class="lead pb-3">All our plans provide world class hosting,<br> all modules, in-app support and backups.</div>
+	<div class="lead pb-3">All our plans provide world class hosting,
+		<br class='d-none d-sm-block'> all modules, in-app support and backups.</div>
 
-	<div class="d-flex flex-row text-left mt-5">
+	<div class="row">
 
 		{% for plan in plans %}
-			<div class='card pricing-card'
+		<div class='col-sm-4 mb-4' style='padding: 0px'>
+			<div class='card h-100'
 			{% if loop.index == 2 %}
-				style='box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2); z-index: 1;'
-			{% endif %}
-			{% if loop.index == 1 %}
-				style="border-right: none;"
-			{% endif %}
-			{% if loop.index == 3 %}
-				style="border-left: none;"
+				style='box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2); z-index: 1; margin: 0px -5px;'
 			{% endif %}
 			>
-				<div class=card-body>
+				<div class='card-body text-left'>
 					<h4 class='card-title text-slim'>{{ plan.title }}</h4>
 
 					<h3>{{ plan.pricing.symbol }} {{ plan.pricing.monthly_amount|int }}</h3>
@@ -62,7 +58,7 @@
 
 				</div>
 			</div>
-
+		</div>
 		{% endfor %}
 
 	</div>
