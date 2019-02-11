@@ -1,9 +1,9 @@
 <!-- title: ERPNext pricing -->
 
-<section class='top-section pt-5'>
+<section class='top-section'>
 	<div class='container'>
 	<h1 class='pt-4'>Get Started with ERPNext</h1>
-	<div class="lead pb-3">All our plans provide all modules, in-app support and backups.</div>
+	<div class="lead pb-3">All our plans provide world class hosting,<br> all modules, in-app support and backups.</div>
 
 	<div class="d-flex flex-row text-left mt-5">
 
@@ -67,28 +67,14 @@
 
 	</div>
 
-	<!-- <div class='mt-4'>
-		<a class="text-center" href="https://support.erpnext.com/contact-form"><b>Compare Plans</b></a>
-	</div> -->
-	<!-- <div class='mt-4'>
-		<a class="text-center" href="https://support.erpnext.com/contact-form"><b>Request A Demo</b></a>
-	</div> -->
-
 </div>
-</section>
-
-<section>
-	<div class='container text-center'>
-		<h1>Enterprise Implementation</h1>
-		<p class=lead>Need more resources? Get your own remote ERP management team that will adapt to your enterprise needs, including support, server management and development.</p>
-		<a class='btn btn-secondary btn-sm mt-4' href="/contact">Get in Touch</a>
-	</div>
 </section>
 
 <section class='section-bg'>
 	<div class='container text-center'>
-		<h2>Discounts for Education and Non-Profits</h2>
-		<p class='lead'>If you are a registered school, college or non-profit, we will offer you a discount of 30%. <a href="mailto:hello@erpnext.com?subject=Education/non profit discount">Get in touch</a></p>
+		<h2>Support for Self Hosted</h2>
+		<p class=lead>ERPNext is a 100% Free and Open Source Software. We also offer you support for your self hosted instance.</p>
+		<a class='btn btn-secondary btn-sm mt-4' href="/support">Learn about Support for Self Hosted</a>
 	</div>
 </section>
 
@@ -100,70 +86,6 @@
 		<p class='mb-5'>
 			ERPNext is designed for self-implementation, and most companies don't need any help, just a bit of determination. To help you, there are tons of videos and other resources that will help you. If you sign up for a paid account, we conduct one-on-one sessions to help you configure the system.</a>
 		</p>
-
-		<!-- <h5>What is my annual cost?</h5>
-		<div class='mb-5'>
-			<p>Each user on Frappe Cloud is priced at {{ symbol }} {{ rate }} per year. Enter your number of users and currency to estimate your annual cost.</p>
-			<div>
-				<table class='table table-bordered' style='max-width: 500px'>
-					<thead>
-						<tr>
-							<th class='py-1'>No of Users</th>
-							<th class='py-1' style='width: 25%'>Currency</th>
-							<th class='py-1 text-right'>Annual Cost</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<input class='form-control input-users'
-									type='number' value='3' min='3' step='1'>
-							</td>
-							<td>
-								<select class='form-control input-currency'>
-									<option value='USD' {% if currency=='USD' %}selected{% endif %}>US $</option>
-									<option value='INR' {% if currency=='INR' %}selected{% endif %}>₹</option>
-									<option value='EUR' {% if currency=='EUR' %}selected{% endif %}>€</option>
-									<option value='AED' {% if currency=='AED' %}selected{% endif %}>د.إ</option>
-									<option value='GBP' {% if currency=='GBP' %}selected{% endif %}>£</option>
-								</select>
-							</td>
-							<td>
-								<input class='form-control text-right input-total'
-									value = '450' disabled>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<script>
-					const rate = {
-						'USD': 150,
-						'INR': 10000,
-						'EUR': 125,
-						'GBP': 120,
-						'AED': 550,
-
-					};
-					const users = document.querySelector('.input-users');
-					const currency = document.querySelector('.input-currency');
-					const set_total = () => {
-						if (!users.value) return;
-						let no_of_users = (parseInt(users.value || 3) || 3);
-						if (no_of_users < 3) {
-							no_of_users = 3;
-							setTimeout(() => { users.value = 3 }, 1000)
-						}
-						document.querySelector('.input-total').value =
-							(no_of_users *
-								rate[currency.value]).toLocaleString();
-					}
-					users.addEventListener('keyup', set_total);
-					currency.addEventListener('change', set_total);
-					set_total();
-				</script>
-			</div>
-		</div> -->
-
 		<h5>Will self hosting be better?</h5>
 		<p class='mb-5'>It depends. ERPNext is 100% Free and Open Source and depending on your scale and capability, self-hosting may be the right solution for you. <a href=/support>Learn more about our enterprise services.</a><br><br>
 
@@ -171,7 +93,13 @@
 
 		<h5>Can I get a one-on-one demo?</h5>
 		<p class='mb-5'>
-			Yes, we would be happy to schedule a remote, one-on-one demo. <a href='https://support.erpnext.com/contact-form' target='_blank'>Just send us a request for one.</a>
+			Yes, we would be happy to schedule a remote, one-on-one demo. <a href='/contact-form' target='_blank'>Just send us a request for one.</a>
+		</p>
+
+		<h5>Do you have discounts for education institutes and not-profits?</h5>
+		<p class='mb-5'>
+			Yes, we support your non profit or education institute with a 30% discount.
+			<a href='/contact-form' target='_blank'>Contact us to apply.</a></a>
 		</p>
 
 		<h5>Is ERPNext available in my language?</h5>
@@ -191,78 +119,6 @@
 	</div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-<!-- <section class='section-padding section-bg text-center'>
-	<div class='container'>
-	<h3>Solutions for Every Business</h3>
-	<p class="text-muted lead">Services for companies that want to self host ERPNext</p>
-	<div class="row text-left mt-4">
-		<div class="plan-detail col-sm-3">
-			<div><span class="indicator green"></span>Unlimited Users</div>
-			<div><span class="indicator green"></span>Modules</div>
-			<div><span class="indicator green"></span>Unlimited Emails</div>
-			<div><span class="indicator green"></span>Dedicated Engineer</div>
-		</div>
-		<div class="plan-detail col-sm-3">
-			<div><span class="indicator green"></span>Unlimited Space</div>
-			<div><span class="indicator green"></span>All Domains</div>
-			<div><span class="indicator green"></span>Auto-Upgrades</div>
-			<div><span class="indicator green"></span>Feature Development</div>
-		</div>
-		<div class="plan-detail col-sm-3">
-			<div><span class="indicator green"></span>Priority Support</div>
-			<div><span class="indicator green"></span>Automated Backups</div>
-			<div><span class="indicator green"></span>Custom Domain</div>
-			<div><span class="indicator green"></span>Custom Reports</div>
-		</div>
-		<div class="plan-detail col-sm-3">
-			<div><span class="indicator green"></span>Bug Fix Guarantee</div>
-			<div><span class="indicator green"></span>Mobile App</div>
-			<div><span class="indicator green"></span>Custom Print Formats</div>
-		</div>
-	</div>
-	<div class='mt-5'>
-		<a class="btn btn-primary" href="https://frappe.erpnext.com/contact-form"><b>Request A Demo</b></a>
-	</p>
-	</div>
-</section>
-<section class="section-padding text-center">
-	<div class='container'>
-	<h3>Self-Hosted</h3>
-	<p class="lead">
-		ERPNext is open source and licenced under GNU GPL v3.<br>
-		It's free to use on your own server.
-	</p>
-	<div class='mt-4'>
-		<a class="btn btn-dark mr-3"
-			href="https://github.com/frappe/erpnext" target="_blank">Github</a>
-		<a class="btn btn-dark mr-3"
-			href="/download">Download VM</a>
-		<a class="btn btn-dark mr-3"
-			href="https://github.com/frappe/bench" target="_blank">Install</a>
-	</div>
-	</div>
-</section>
-
-<section class='section-padding text-center section-bg'>
-	<div class='container'>
-	<h2>Paid Feature Development</h2>
-	<p class="lead">
-		Missing a feature in ERPNext that you badly need?<br> Jump up its priority by sponsoring the feature.
-	</p>
-	<br>
-	<a class="btn btn-dark" style="margin: 5px" href="/pricing/paid-feature-development" target="_blank">Learn More</a>
-	</div>
-</section> -->
 
 <script>
 	function redirect_to_signup(page, plan) {

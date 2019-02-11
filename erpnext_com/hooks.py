@@ -18,6 +18,7 @@ website_context = {
 	'brand_name': 'ERPNext',
 	"top_bar_items": [
 		{"label": "Solutions", "right":1, "child_items": [
+			{"label": "Features", "url": "/features"},
 			{"label": "Services", "url":"/services"},
 			{"label": "Manufacturing", "url":"/manufacturing"},
 			{"label": "Retail", "url":"/retail"},
@@ -27,11 +28,9 @@ website_context = {
 			{"label": "Agriculture", "url":"/agriculture"},
 			{"label": "Healthcare", "url": "/healthcare"},
 		]},
-		{"label": "Features", "url": "/features", "right":1},
-		{"label": "Enterprise", "url": "/enterprise", "right":1},
-		{"label": "Docs", "url": "/docs/user/manual/en", "right":1},
 		{"label": "Pricing & Signup", "url": "/pricing", "right":1},
-		{"label": "About", "url": "/about", "right":1},
+		{"label": "Self Hosted", "url": "/support", "right":1},
+		{"label": "Docs", "url": "/docs/user/manual/en", "right":1},
 	],
 	"hide_login": 1,
 	"favicon": "/assets/erpnext_com/img/erpnext-logo-blue.png"

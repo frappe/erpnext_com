@@ -10,7 +10,7 @@
 
 {% block content %}
 
-		<div class="container-fluid">
+		<section>
 			<div class="container">
 				<div class="row section-block">
 					<div class="col-md-12 text-center">
@@ -19,11 +19,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		{{ testimonials() }}
 
-		<div class="container-fluid section-block feature-section">
+		<section>
 			<div class="container text-center">
 				<h2>Independent Reviews</h2>
 				<div class=row>
@@ -42,31 +42,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
-
-
-		<div class="container-fluid section-block feature-section">
-			<div class="container text-center">
-				<p class="lead">Trusted by more than 3000 companies across 150 countries.
-					<br>
-				</p>
-				<!-- <p>
-                    <a class="x-large blue-btn button later" href="/signup?plan=Free">
-                        Sign Up - Free for 1 User</a>
-                </p> -->
-				<p>
-					<a href="/pricing" class="x-large blue-btn button later">Get Started with ERPNext</a>
-				</p>
-			</div>
-		</div>
-
-
-		<script>
-			frappe.ready(function(){
-				$(".hero-and-content .container:first").removeClass('container');
-			})
-		</script>
+		{% include "erpnext_com/templates/includes/signup_footer.html" %}
 
 {% endblock %}
 

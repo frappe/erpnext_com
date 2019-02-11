@@ -1,35 +1,187 @@
+{% extends "templates/base.html" %}
+{% block title %}ERPNext for Enterprise{% endblock %}
+{% block content %}
+
 <section class='top-section'>
 	<div class='container'>
-		<h1>Support for Self-Hosted</h1>
-		<p class='lead'>Get full control and ownership over your ERP system with no strings attached.</p>
-		<div class='card-deck mt-5'>
-			{% for card in [
-				{
-					"title": "Functional Support",
-					"content": "Includes one time setup and unlimted bug fix and support over email for one year for all standard modules.",
-					"link": "/support/functional"
-				},
-				{
-					"title": "Server Support",
-					"content": "Remote server setup and monitoring with managed upgrade, scalability and crash recovery services.",
-					"link": "/support/server"
-				},
-				{
-					"title": "Developer Support",
-					"content": "Remote support to your developer team over email and chat by core Frappe and ERPNext Developers.",
-					"link": "/support/developer"
-				},
-				] %}
-			<div class='card'>
-				<div class='card-body'>
-					<h5 class='card-title'>{{ card.title }}</h5>
-					{{ card.content }}
-				</div>
-				<div class='card-footer'>
-					<a class='btn btn-secondary btn-sm' href="{{ card.link }}">Learn More</a>
-				</div>
-			</div>
+		<h1>ERPNext Support for Self Hosted</h1>
+		<p class="lead">Priority support for self hosted instances. Start for Free<p>
+
+{% set features = [
+	{
+		"title": "All Modules",
+		"free": 1
+	},
+	{
+		"title": "Built in Integrations",
+		"free": 1
+	},
+	{
+		"title": "Forum Support",
+		"free": 1
+	},
+	{
+		"title": "Bug Fix Guarantee",
+	},
+	{
+		"title": "In-app Support",
+	},
+	{
+		"title": "Email / Phone Support",
+	},
+	{
+		"title": "Configuration Support",
+	},
+	{
+		"title": "Upgrade Management",
+	},
+	{
+		"title": "Server Support",
+	},
+	{
+		"title": "Scalability Support",
+	},
+] %}
+
+<div class='text-left d-none d-sm-block container border mt-5'>
+	<div class='row border-bottom'>
+		<div class='col-sm-6'></div>
+		<div class='col-sm-3 text-center pt-3'>
+			<h5>Self Support</h5>
+			<p>Free</p>
+		</div>
+		<div class='col-sm-3 text-center pt-3'>
+			<h5>ERPNext Support</h5>
+			<p>Starts at<br>$100 / user / year</p>
+		</div>
+	</div>
+
+	{% for f in features %}
+	<div class='row border-bottom'>
+		<div class='col-sm-6 py-3'>
+			{{ f.title }}
+			{% if not f.free %}<a href='support/details' class='text-extra-muted small'>Learn More</a>{% endif %}
+		</div>
+		<div class='col-sm-3 py-3 text-center'>
+			{% if f.free %}<i class='octicon octicon-check text-primary'></i>{% endif %}
+		</div>
+		<div class='col-sm-3 py-3 text-center'>
+			<i class='octicon octicon-check text-primary'></i>
+		</div>
+	</div>
+	{% endfor %}
+
+	<div class='row mt-5'>
+		<div class='col-sm-6'></div>
+		<div class='col-sm-3 text-center'>
+			<a class='py-2 d-block' href='https://github.com/frappe/bench' target='_blank'
+				>Install via Bench</a>
+		</div>
+		<div class='col-sm-3 text-center'>
+			<a href='/contact-form' class='btn btn-primary'>Get in Touch</a>
+			<p class='mt-3'><a href='/get-a-quote'>Get A Quote</a></p>
+		</div>
+	</div>
+
+</div>
+
+<!-- for mobile -->
+<div class='d-block d-sm-none mt-4'>
+	<div class='card mb-4'>
+		<div class='card-body'>
+			<h4 class='mt-3'>ERPNext Free</h4>
+			<p>Install via Bench</p>
+			<hr>
+			{% for f in features %}
+			{% if f.free %}
+			<p>
+				<i class='octicon octicon-check text-primary'></i> {{ f.title }}
+			</p>
+			{% endif %}
 			{% endfor %}
+			<hr>
+			<p>
+				<a class='py-2 d-block' href='https://github.com/frappe/bench' target='_blank'
+				>Install via Bench</a>
+			</p>
+
+		</div>
+	</div>
+	<div class='card'>
+		<div class='card-body'>
+			<h4 class='mt-3'>ERPNext Support</h4>
+			<p>$100 / user / year*</p>
+			<hr>
+			{% for f in features %}
+			<p>
+				<i class='octicon octicon-check text-primary'></i>
+				{{ f.title }}
+				{% if not f.free %}<a href='support/details' class='text-extra-muted'>Learn More</a>{% endif %}
+			</p>
+			{% endfor %}
+			<hr>
+			<p>
+				<a href='/contact-form' class='btn btn-primary'>Get in Touch</a>
+				<p class='mt-3'><a href='/get-a-quote'>Get A Quote</a></p>
+			</p>
+		</div>
+	</div>
+</div>
+
+</div>
+</section>
+
+<section class='section-bg'>
+	<div class='container'>
+		<p class='lead'>
+				"The beautiful user interface that comes out of the box is great as people are able to pick up intuitively. The ease of configuring all modules to suit our specific requirements is commendable. Frappe framework that powers ERPNext has also been utilised a lot by us to plug in various middlewares into ERPNext as well as build stand alone applications. For us, Frappe is the best thing about ERPNext."
+		</p>
+		<h5 class='text-center'>
+			Zerodha Engineering Team
+		</h5>
+	</div>
+
+</section>
+
+<section class='section' id='faq'>
+	<div class='container'>
+		<h2 class='text-center mb-5'>Frequently Asked Questions</h2>
+
+		<h5>*Is there a separate pricing for Employee Self-Service (HR module only) user?</h5>
+		<p class='mb-5'>
+			For users who will be only applying for leaves and expense claims (Human Resource Management module) will be charged at 30% of the full user rate.
+		</p>
+
+
+		<h5>What happens after my enterprise contract expires?</h5>
+		<p class='mb-5'>
+			You can continue to use ERPNext on your server after your enterprise support license expires, but you will have to manage your own support and server management. Some features like in-app support will also stop working.
+		</p>
+
+		<h5>If ERPNext is Free and Open Source, why charge per user?</h5>
+		<p class='mb-5'>
+			ERPNext is Free and Open Source ("free" as in "free-speech"), but the services around ERPNext need engineers to support you. These are what is charged.
+			Since scale, complexity and support requirement of a deployment is proportional to the number of users, the Enterprise Support contract is also priced per user.
+			Also most ERP products are priced per user, so it is easy to compare with other products. ERPNext Support is a fraction of what you would pay for NetSuite, SAP or Oracle Cloud.
+		</p>
+
+		<h5>How is the number of users counted?</h5>
+		<p class='mb-5'>The number of users at the time of signup is counted for the Support Billing. If the number of users exceeds by 15% of the billable users, additional billing is required, for continued support.</p>
+
+		<h5>Is ERPNext available in my language?</h5>
+		<p class='mb-5'>
+			Most likely yes! ERPNext has been translated to more than 70 languages with the help of the community. <a href='https://translate.erpnext.com' target='_blank'>View the translation portal for a full list of supported languages</a>
+		</p>
+
+		<h5>Can I pay via credit card or wire transfer?</h5>
+		<p class='mb-5'>Yes, you can make payment from within your account using your credit card. If you prefer wire us the money, <a href='/pricing/payment'>here are our bank details.</a></p>
+
+		<p>Still have questions? Feel free to drop us a mail at <a href='mailto:hello@erpnext.com'>hello@erpnext.com</a>
+
+		<div class='my-5 text-center'>
+			<a href='/contact-form' class='btn btn-primary btn-lg'>Get in Touch</a>
 		</div>
 	</div>
 </section>
+
+{% endblock %}
