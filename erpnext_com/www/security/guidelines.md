@@ -28,9 +28,9 @@ Common examples include:
 * Weaknesses in Authentication, Authorization, or Cryptographic Practices
 
 
-#### Security Vulnerability Submission by Email
+#### Security Vulnerability Submission
 
-If you find any security breaches, please report the issue  to <i class="fa fa-envelope"> </i> <a href='report'> Frappe Vulnerability Management</a>
+If you find any security breaches, please report the issue  to <a href='report'> Frappe Vulnerability Management</a>
 
 It is important to include at least the following information in the email:
 
