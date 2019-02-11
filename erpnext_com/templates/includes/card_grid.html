@@ -1,12 +1,16 @@
 {% macro card_grid(heading, subtitle, features) %}
 
+		{% if heading %}
 		<h3 class="text-center">{{ heading }}</h3>
+		{% endif %}
+		{% if subtitle %}
 		<p class='lead text-center'>{{ subtitle }}</p>
+		{% endif %}
 		<div class='row mt-5'>
 			{% for card in features %}
 			<div class='col-sm-4 mb-4'>
 					<a href="{{ card.url }}" class='card h-100'>
-						<div class='card-body'>
+						<div class='card-body text-left'>
 							<h5 class='card-title'>{{ card.title }}</h5>
 							{{ card.content }}
 						</div>

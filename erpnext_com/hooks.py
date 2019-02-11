@@ -18,7 +18,6 @@ website_context = {
 	'brand_name': 'ERPNext',
 	"top_bar_items": [
 		{"label": "Solutions", "child_items": [
-			{"label": "Features", "url": "/features"},
 			{"label": "Services", "url":"/services"},
 			{"label": "Manufacturing", "url":"/manufacturing"},
 			{"label": "Retail", "url":"/retail"},

@@ -2,6 +2,7 @@
 {% block title %}Open Source Cloud ERP Software - ERPNext{% endblock %}
 
 {% from "templates/includes/media.html" import media %}
+{% from "erpnext_com/templates/includes/card_grid.html" import card_grid %}
 
 {% block head_include %}
 	<meta name="description" content="ERPNext is the world's top 100% open source ERP software. ERPNext supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare" />
@@ -17,6 +18,59 @@
 		<a class="btn btn-primary btn-lg" style="width: 170px;" href="/pricing">Get Started</a>
 	</p>
 	<p class="mt-0 small text-muted">Try ERPNext free for 14 days</p>
+
+	{{ card_grid(
+		None,
+		None,
+		[
+			{
+			"title": "Accounting",
+			"content": "Get a real time view of your cash flow. Full fledged accounting module covering every aspect of book keeping.",
+			"url": "/docs/user/manual/en/accounts"
+			},
+			{
+			"title": "HR & Payroll",
+			"content": "Manage full employee life cycle right from onboarding, payroll, attendance, expense claims, assets to separation.",
+			"url": "/docs/user/manual/en/human-resources"
+			},
+			{
+			"title": "Manufacturing",
+			"content": "Effectively maintain & manage multilevel bill of materials, production planning, job cards & inventory.",
+			"url": "/docs/user/manual/en/manufacturing"
+			},
+			{
+			"title": "Sales & Purchase",
+			"content": "Increase productivity and lower costs by managing your sales and purchase cycles, from purchase to sales orders",
+			"url": "/docs/user/manual/en/buying"
+			},
+			{
+			"title": "CRM",
+			"content": "Win and Retain more customers by optimising sales process. Track leads, opportunities and send the quotes on the go.",
+			"url": "/docs/user/manual/en/CRM"
+			},
+			{
+			"title": "Projects",
+			"content": "Deliver both internal and external projects on time, budget and profitability. Track tasks, timesheets and issues by project.",
+			"url": "/docs/user/manual/en/projects"
+			},
+			{
+			"title": "Helpdesk",
+			"content": "Deliver a better service experience with an intuitive issue tracker and integrated knowledge base.",
+			"url": "/docs/user/manual/en/support"
+			},
+			{
+			"title": "Asset Management",
+			"content": "Maintain and Manage details of assets, their movement, value adjustment and depreciation.",
+			"url": "/docs/user/manual/en/asset"
+			},
+			{
+			"title": "Website",
+			"content": "ERPNext comes with a fully featured content management with blogs, web pages and forms.",
+			"url": "/docs/user/manual/en/website"
+			},
+		]
+		)
+	}}
 
 
 	</div>
@@ -50,7 +104,7 @@
 		<div class="card">
 			<!-- <img class='mt-3' src="/assets/erpnext_com/img/sun.svg" style='height: 150px'> -->
 			<div class='card-body'>
-				<h5 class='card-title'>Open Source</h5>
+				<h5 class='card-title'>100% Open Source</h5>
 				<div>ERPNext is open source and infinitely extensible. Customize it, build upon it, add your own apps built with <a href="https://frappe.io/frappe" class="underline">Frappe Framework</a>.</div>
 			</div>
 			<div class='card-footer'>
@@ -71,86 +125,6 @@
 	</div>
 </section>
 <style>.footer-message { display: none; }</style>
-	<script src="/assets/erpnext_com/js/draggabilly.js"></script>
-	<script src="/assets/erpnext_com/js/chrome-tabs.js"></script>
-	<script>
-		frappe.ready(function() {
-
-			var el = document.querySelector('.chrome-tabs')
-			window.chromeTabs = new ChromeTabs()
-			chromeTabs.init(el, {
-				tabOverlapDistance: 14,
-				minWidth: 45,
-				maxWidth: 243
-			});
-
-			let tabs = [
-				{ title: 'Items', image: '.image-1' },
-				{ title: 'Customers', image: '.image-2' },
-				{ title: 'Sales Invoice', image: '.image-3' },
-				{ title: 'Material Request', image: '.image-4' }
-			];
-
-			for (const tab of tabs) {
-				chromeTabs.addTab({
-					title: tab.title,
-				})
-			}
-
-			chromeTabs.setCurrentTab($('.chrome-tab:first-child').get(0));
-
-			$('.tab-content img').not(':first-child').hide();
-
-			$(el).on('activeTabChange', ({ detail }) => {
-				const $tab = $(detail.tabEl);
-				const title = $tab.find('.chrome-tab-title').text();
-				const image = tabs.find(tab => tab.title === title).image;
-
-				$('.tab-content img').hide();
-				$('.tab-content').find(image).show();
-			});
-
-			var seen = [];
-			var last = 0;
-			setInterval(function() {
-				var whats = [
-					'ERP', 'Business', 'Accounting', 'Manufacturing', 'Operations',
-					'Inventory', 'CRM', 'Managing', 'Timesheets', 'Billing', 'Projects',
-					'Payroll', 'Leave Applications', 'Loans', 'Selling', 'Purchasing', 'To Do Lists',
-					'Taxes', 'Quality'
-				];
-
-				if(seen.length == whats.length) {
-					seen = []
-				}
-
-				var index = parseInt(Math.random() * whats.length);
-				while(seen.includes(index) || last == index) {
-					index = parseInt(Math.random() * whats.length);
-				}
-
-				var what = whats[index];
-
-				seen.push(index);
-				last = index;
-
-				var start = 0;
-				for(var i = 0; i < what.length; i++) {
-					var text = what.substr(0, i + 1);
-					start += 50 + Math.random() * 50;
-					show_text(text, start);
-				}
-
-
-			}, 3000)
-
-			function show_text(text, timeout) {
-				setTimeout(() => {
-					$('.what').text(text);
-				}, timeout)
-			}
-		})
-	</script>
 
 {% endblock %}
 

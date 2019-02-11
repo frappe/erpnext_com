@@ -6,10 +6,6 @@ h6 {
 /*	background-color: #5e64ff !important;
 */}
 
-a[href="/pricing"] {
-	font-weight: bold;
-}
-
 .form-horizontal-group {
 	display: flex;
 	justify-content: space-between
