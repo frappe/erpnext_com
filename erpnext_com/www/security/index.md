@@ -42,6 +42,13 @@ It is important to include at least the following information in the email:
 * Disclosure plans, if any
 * If you want public recognition
 
+Please allow a reasonable time (2-4 days) for us to confirm and respond to the issue after reporting.
+
+
+#### List of Known Vulnerabilities
+
+To view a list of known vulnerabilities that have already been fixed in the system, please visit the [CVE References Page](/security/references).
+
 <p class='text-center'>
     <a href='/security/report' class='btn btn-secondary'>
     Report a Vulnerability</a>
