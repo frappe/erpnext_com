@@ -7,7 +7,6 @@ from frappe import _
 from central.signup import signup as _signup, validate_subdomain
 from frappe.integrations.utils import get_checkout_url
 from frappe.utils.momentjs import get_all_timezones
-from frappe.geo.country_info import get_country_timezone_info
 
 # TODO:
 # 1. send email to particpant and us
@@ -57,64 +56,3 @@ def make_payment(full_name, email, company, workshop=0, conf=0, currency='inr'):
 		"currency": currency,
 		"payment_gateway": payment_gateway
 	})
-
-@frappe.whitelist(allow_guest=True)
-
-def signup(full_name, email, phone_number, subdomain, industry_type, plan=None, distribution="erpnext",
-	res=None, number_of_users=1, passphrase=None, country=None, timezone=None, currency=None,
-	language=None):
-
-	resp = _signup(full_name, email, phone_number, subdomain, industry_type, plan=plan,
-		distribution=distribution, reseller=res, users=number_of_users, password=passphrase,
-		country=country, timezone=timezone, currency=currency, language=language)
-
-	if resp.get("redirect_to"):
-
-		return {
-			"location": resp['redirect_to']
-		}
-
-	elif resp['status'] == 'success':
-		location = frappe.redirect_to_message(_('Verify your Email'),
-			"""<div><p>You will receive an email at <strong>{}</strong>,
-			asking you to verify this account request.<p><br>
-			<p>It may take a few minutes before you receive this email.
-			If you don't find it, please check your SPAM folder.</p>
-			</div>""".format(email), indicator_color='blue')
-
-	elif resp['status']=='retry':
-		return {}
-
-	else:
-		# something went wrong
-		location = frappe.redirect_to_message(_('Something went wrong'),
-			'Please try again or drop an email to support@erpnext.com',
-			indicator_color='red')
-
-	return {
-		'location': location
-	}
-
-@frappe.whitelist(allow_guest=True)
-def check_subdomain_availability(subdomain):
-	signup_domain = frappe.db.get_single_value('Central Settings', 'signup_domain') or frappe.local.conf.domain
-	try:
-		return validate_subdomain(subdomain)
-	except frappe.DuplicateEntryError:
-		frappe.local.message_log = []
-		return '{0}.{1}'.format(subdomain, signup_domain)
-
-@frappe.whitelist(allow_guest=True)
-def load_dropdowns():
-	from .www.pricing.index import get_country
-
-	data = {
-		'languages': [(d.language_code, d.language_name) for d in frappe.get_all("Language", fields=['language_name', 'language_code'])],
-		'countries': [d.name for d in frappe.get_all("Country")],
-		'currencies': [d.name for d in frappe.get_all("Currency")],
-		'default_country': get_country(fields=['country']).get('country', None)
-	}
-
-	data.update(get_country_timezone_info())
-
-	return data
