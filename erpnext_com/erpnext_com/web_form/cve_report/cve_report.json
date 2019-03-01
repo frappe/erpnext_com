@@ -17,7 +17,7 @@
  "is_standard": 1,
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2019-02-07 02:45:20.417220",
+ "modified": "2019-03-01 09:48:53.358759",
  "modified_by": "Administrator",
  "module": "erpnext_com",
  "name": "cve-report",
@@ -93,7 +93,7 @@
    "label": "Affected Version",
    "max_length": 0,
    "max_value": 0,
-   "options": "\nv11\nv12\nAll",
+   "options": "\nv10\nv11\nv12\nAll",
    "read_only": 0,
    "reqd": 1,
    "show_in_filter": 0
