@@ -42,7 +42,7 @@
 					<th>Affected Applications</th>
 					<th>Severity</th>
 				</thead>
-				{% for item in test %}
+				{% for item in references %}
 				<tbody>
 	   				<td><a href="{{ item.commit_url }}">{{ item.reference }}</a></td>
 					<td><a href="{{ item.reporter_url }}">{{ item.reported_by }}</a></td>
