@@ -16,6 +16,7 @@ website_context = {
 	"repo": "frappe/erpnext_com",
 	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo-blue.svg',
 	'brand_name': 'ERPNext',
+	"brand_html": "ERPNext",
 	"top_bar_items": [
 		{"label": "Solutions", "child_items": [
 			{"label": "Services", "url":"/services"},
