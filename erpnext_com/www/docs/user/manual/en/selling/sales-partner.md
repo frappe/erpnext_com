@@ -30,3 +30,11 @@ To see listing of partner, you should go to:
 https://yourCompanyName.erpnext.com/partners
 
 <img class="screenshot" alt="Sales Partner" src="{{docs_base_url}}/assets/img/crm/sales-partner-listing.png">
+
+#### 2.2 Track Sales via Sales Partner
+
+Sales Partner can actively generates leads for your company products/ services. To track the performance of each sales partner use Referral Code and their URL as below
+
+e.g. A URL like this http://xyz.erpnext.com?sp=speed will capture the Sales Partner Informatiton in the Quotation and Sales Order generated via Shopping Cart.
+
+<img class="screenshot" alt="Sales Partner Referral Code" src="{{docs_base_url}}/assets/img/crm/sales-partner-refrral-code.png">
