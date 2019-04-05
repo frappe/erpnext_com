@@ -31,7 +31,7 @@ website_context = {
 		{"label": "Cloud", "url": "/pricing"},
 		{"label": "Services", "url": "/support"},
 		{"label": "Partners", "child_items": [
-			{"label": "Become a Partner", "url":"/partners/partner-with-us"},
+			{"label": "Become a Partner", "url":"/partners/plans"},
 			{"label": "Partners Listing", "url":"/partners"},
 		]},
 		{"label": "Docs", "url": "/docs/user/manual/en", "right":1},
