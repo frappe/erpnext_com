@@ -6,18 +6,9 @@
 </section>
 
 ##### Q. How is the fees calculated for the number of users?
-You only pay for the number of System users in your accounts. i.e those who can access the desk.
+You only pay for the number of System users in your accounts. These are the users who can access the core modules of the ERP and not just portal views. 
 
-##### Q. Who is a system user?
-A system user is generally someone with system roles like manager in Sales/Purchase/Manufacturing/HR, Leave Approver, Employee, Auditor, etc. These roles are assigned from the settings page.
-
-##### Q. What is this Desk you are talking about?
-When you log in to your ERPNext account, you can see a purple background with icons on your screen. That is the Desk!
-
-<div> <!--class="col-sm-12 text-center mar-t-40"> -->
-    <img src="/assets/erpnext_com/images/erpnext-desk.png" class="img-responsive"
-        alt="ERPNext Desk Screen" style="padding-top: 10px; padding-bottom: 17px; width:800px; margin:auto;">
-</div>
+A system user is generally someone with system roles like manager in Sales/Purchase/Manufacturing/HR, Leave Approver, Employee, Auditor, etc. These roles are assigned from the user's settings page.
 
 ##### Q. I'm going to have a large number of users on the cloud. Can I avail a bulk discount?
 Not unless you have 100+ users. If so, you may also be interested in our <a href="https://erpnext.com/support">Enterprise plan</a>. 
@@ -49,6 +40,11 @@ We use Paypal as our payment gateway to handle international subscriptions. You 
 You can add more space/users from within your account. Just go to **My Account > Upgrade > Purchase Add-ons**. 
 
 You can also upgrade your current plan in the same manner.
+
+<div> <!--class="col-sm-12 text-center mar-t-40"> -->
+    <img src="/assets/erpnext_com/images/upgrades.gif" class="img-responsive"
+        alt="ERPNext Desk Screen" style="padding-top: 10px; padding-bottom: 17px; width:800px; margin:auto;">
+</div>
 
 ##### Q. I have already subscribed and I want to pay for the next month, however I don’t see a payment option, how so?
 If you’ve paid via credit card or paypal for your subscription, the next payment will be auto-debited. In case there is an issue, get in touch with our support team.
