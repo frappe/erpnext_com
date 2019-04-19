@@ -28,7 +28,7 @@ website_context = {
 			{"label": "Agriculture", "url":"/agriculture"},
 			{"label": "Healthcare", "url": "/healthcare"},
 		]},
-		{"label": "Cloud", "url": "/pricing"},
+		{"label": "Pricing", "url": "/pricing"},
 		{"label": "Services", "child_items": [
 			{"label": "Support", "url": "/support"},
 			{"label": "Enterprise", "url": "/enterprise"},
