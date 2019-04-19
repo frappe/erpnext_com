@@ -29,10 +29,14 @@ website_context = {
 			{"label": "Healthcare", "url": "/healthcare"},
 		]},
 		{"label": "Cloud", "url": "/pricing"},
-		{"label": "Services", "url": "/support"},
+		{"label": "Services", "child_items": [
+			{"label": "Support", "url": "/support"},
+			{"label": "Enterprise", "url": "/enterprise"},
+			{"label": "Contact Sales", "url": "/contact-form"},
+		]},
 		{"label": "Partners", "child_items": [
+			{"label": "Partner Listing", "url":"/partners"},
 			{"label": "Become a Partner", "url":"/partners/plans"},
-			{"label": "Partners Listing", "url":"/partners"},
 		]},
 		{"label": "Docs", "url": "/docs/user/manual/en", "right":1},
 		{"label": "About", "url": "/about", "right":1},
