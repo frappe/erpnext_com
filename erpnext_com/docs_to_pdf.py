@@ -30,6 +30,15 @@ def execute():
 	all_content = all_content.replace('.html', '')
 	all_content = re.sub(r'\n---\n', '', all_content)
 	all_content = re.sub(r'!\[.*]\(/docs/assets/old_images/.*\n', '', all_content)
+	all_content = re.sub(r'<img .*src="(.*)">', r'<br>![](\1)', all_content)
+	all_content = re.sub(r'(#+)(\w)', r'\1 \2', all_content)
+	all_content = re.sub('{next}', '', all_content)
+
+	image_links = re.findall(r'!\[.*]\((.*)\)', all_content)
+
+	for link in image_links:
+		if not Path(link).exists():
+			all_content = all_content.replace(link, '')
 
 	manual = Path(target) / 'erpnext-manual.md'
 	manual.touch()
@@ -40,7 +49,8 @@ def execute():
 def setup_paths():
 	global source, target, base, assets_path
 	app_path = frappe.get_app_path('erpnext_com')
-	source = app_path + '/www/docs/user/manual/en/index.md'
+	# source = app_path + '/www/docs/user/manual/en/index.md'
+	source = app_path + '/www/docs/user/manual/en/accounts/index.md'
 	target = '.'
 	base = app_path + '/www'
 	assets_path = app_path + '/www/docs'
