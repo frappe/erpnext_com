@@ -64,7 +64,7 @@ look_for_sidebar_json = True
 
 # include js, css files in header of web template
 web_include_css = "/assets/erpnext_com/css/custom.css"
-web_include_js = "/assets/erpnext_com/js/payment.js"
+web_include_js = ["/assets/erpnext_com/js/payment.js", "/assets/erpnext_com/js/search_docs.js"]
 
 # Home Pages
 # ----------
