@@ -1,9 +1,10 @@
 import frappe
 import io
 import re
+import os
 from pathlib import Path
 
-# bench --site sitename execute erpnext_com.docs_to_pdf.execute
+# bench --site sitename execute erpnext_com.docs_to_pdf.execute --args user/manual/en/index.md
 # pandoc ./sites/erpnext-manual.md -o erpnext-manual.pdf
 
 source = ''
@@ -14,10 +15,9 @@ already_done = []
 index = 0
 all_content = ''
 
-def execute():
+def execute(source_file_path=None):
 	global all_content
-
-	setup_paths()
+	setup_paths(source_file_path)
 	s = Path(source)
 
 	make_file(s, s.name)
@@ -46,14 +46,17 @@ def execute():
 	print(manual.absolute())
 
 
-def setup_paths():
+def setup_paths(source_file_path):
 	global source, target, base, assets_path
+
+	if not source_file_path:
+		source_file_path = 'user/manual/en/index.md'
+
 	app_path = frappe.get_app_path('erpnext_com')
-	# source = app_path + '/www/docs/user/manual/en/index.md'
-	source = app_path + '/www/docs/user/manual/en/accounts/index.md'
+	source = os.path.join(app_path, 'www/docs', source_file_path)
 	target = '.'
-	base = app_path + '/www'
-	assets_path = app_path + '/www/docs'
+	base = os.path.join(app_path, 'www')
+	assets_path = os.path.join(app_path, 'www/docs')
 
 
 def make_file(s, file_name):
