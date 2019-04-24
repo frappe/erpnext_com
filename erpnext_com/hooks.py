@@ -16,6 +16,7 @@ website_context = {
 	"repo": "frappe/erpnext_com",
 	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo-blue.svg',
 	'brand_name': 'ERPNext',
+	"brand_html": "ERPNext",
 	"top_bar_items": [
 		{"label": "Solutions", "child_items": [
 			{"label": "Services", "url":"/services"},
@@ -27,8 +28,16 @@ website_context = {
 			{"label": "Agriculture", "url":"/agriculture"},
 			{"label": "Healthcare", "url": "/healthcare"},
 		]},
-		{"label": "Cloud", "url": "/pricing"},
-		{"label": "Services", "url": "/support"},
+		{"label": "Pricing", "url": "/pricing"},
+		{"label": "Services", "child_items": [
+			{"label": "Support", "url": "/support"},
+			{"label": "Enterprise", "url": "/enterprise"},
+			{"label": "Contact Sales", "url": "/contact-form"},
+		]},
+		{"label": "Partners", "child_items": [
+			{"label": "Partner Listing", "url":"/partners"},
+			{"label": "Become a Partner", "url":"/partners/plans"},
+		]},
 		{"label": "Docs", "url": "/docs/user/manual/en", "right":1},
 		{"label": "About", "url": "/about", "right":1},
 	],
