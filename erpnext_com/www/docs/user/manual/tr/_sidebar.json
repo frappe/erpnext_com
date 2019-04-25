@@ -1,13 +1,13 @@
 [
  {
   "route": "/docs",
-  "title": "Docs Home"
+  "title": "Dökümanlar Ana Sayfa"
  },
  {
-   "route": "/docs/user/manual/en",
-   "title": "Manual (English)"
+   "route": "/docs/user/manual/tr",
+   "title": "El Kitabı (Türkçe)"
   },
-
+{##}
  {
   "route": "/docs/user/manual/en/introduction",
   "title": "Introduction"
@@ -87,5 +87,5 @@
  {
   "route": "/docs/user/manual/en/customize-erpnext",
   "title": "Customize"
- }
+ } {##}
 ]
