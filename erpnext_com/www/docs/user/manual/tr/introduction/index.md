@@ -53,9 +53,9 @@ Ve bir ton daha.
 
 ## ERPNext sadece KOBİ'ler için mi?
 
-ERPNext, KOBİ'ler ve büyük işletmeler tarafından kullanılabilir. Bilinen bir sınırlama yoktur, şu ana kadar iyi ölçeklendi. Afrika’daki çeşitli perakende zincirleri ve Hindistan’da saygın bir hisse senedi alım satım şirketi (1000'in üzerinde çalışanı olan) ERPNext kullanıyor.
+ERPNext, KOBİ'ler ve büyük işletmeler tarafından kullanılabilir. Bilinen bir sınırlama yok, şu ana kadar iyi ölçeklendi. Afrika’daki çeşitli perakende zincirleri ve Hindistan’da saygın bir hisse senedi alım satım şirketi (1000'in üzerinde çalışanı olan) ERPNext kullanıyor.
 
-Daha fazla bilgi için çeşitli [Kullanıcı Öyküleri(ingilizce)](https://erpnext.org/stories) 'ne göz atın.Here is a video to get you started:
+Daha fazla bilgi için çeşitli [Kullanıcı Öyküleri(ingilizce)](https://erpnext.org/stories) 'ne göz atın.İşte başlamanız için bir video:
 
 
 <div>
