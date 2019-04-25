@@ -7,85 +7,85 @@
    "route": "/docs/user/manual/tr",
    "title": "El Kitabı (Türkçe)"
   },
+ {
+  "route": "/docs/user/manual/tr/introduction",
+  "title": "Giriş"
+ },
 {##}
  {
-  "route": "/docs/user/manual/en/introduction",
-  "title": "Introduction"
+  "route": "/docs/user/manual/tr/setting-up",
+  "title": "Kurulum"
  },
  {
-  "route": "/docs/user/manual/en/setting-up",
-  "title": "Setting Up"
- },
- {
-   "route": "/docs/user/manual/en/accounts",
-   "title": "Accounts"
+   "route": "/docs/user/manual/tr/accounts",
+   "title": "Hesaplar"
   },
   {
-   "route": "/docs/user/manual/en/stock",
-   "title": "Stock"
+   "route": "/docs/user/manual/rt/stock",
+   "title": "Stok"
   },
   {
-   "route": "/docs/user/manual/en/CRM",
+   "route": "/docs/user/manual/tr/CRM",
    "title": "CRM"
   },
   {
-   "route": "/docs/user/manual/en/selling",
-   "title": "Selling"
+   "route": "/docs/user/manual/tr/selling",
+   "title": "Satış"
   },
   {
-   "route": "/docs/user/manual/en/buying",
-   "title": "Buying"
+   "route": "/docs/user/manual/tr/buying",
+   "title": "Satınalma"
   },
   {
-   "route": "/docs/user/manual/en/human-resources",
-   "title": "Human Resources"
+   "route": "/docs/user/manual/tr/human-resources",
+   "title": "İnsan Kaynakları"
   },
   {
-   "route": "/docs/user/manual/en/projects",
-   "title": "Projects"
+   "route": "/docs/user/manual/tr/projects",
+   "title": "Projeler"
   },
   {
-   "route": "/docs/user/manual/en/support",
-   "title": "Support"
+   "route": "/docs/user/manual/tr/support",
+   "title": "Destek"
   },
   {
-    "route": "/docs/user/manual/en/asset",
-    "title": "Asset"
+    "route": "/docs/user/manual/tr/asset",
+    "title": "Varlık Yönetimi"
   },
  {
-   "route": "/docs/user/manual/en/quality-management",
-   "title": "Quality Management"
+   "route": "/docs/user/manual/tr/quality-management",
+   "title": "Kalite Yönetimi"
  },
  {
-  "route": "/docs/user/manual/en/manufacturing",
-  "title": "Manufacturing"
+  "route": "/docs/user/manual/tr/manufacturing",
+  "title": "Üretim"
  },
  {
-  "route": "/docs/user/manual/en/education",
-  "title": "Education"
+  "route": "/docs/user/manual/tr/education",
+  "title": "Eğitim"
  },
  {
-   "route": "/docs/user/manual/en/healthcare",
-   "title": "Healthcare"
+   "route": "/docs/user/manual/tr/healthcare",
+   "title": "Sağlık Hizmetleri"
   },
   {
-   "route": "/docs/user/manual/en/agriculture",
-   "title": "Agriculture"
+   "route": "/docs/user/manual/tr/agriculture",
+   "title": "Tarım"
   },
  {
-  "route": "/docs/user/manual/en/non_profit",
-  "title": "Non Profit"
+  "route": "/docs/user/manual/tr/non_profit",
+  "title": "Kar Amacı Gütmeyen"
  }, 
- {
-  "route": "/docs/user/manual/en/hospitality",
-  "title": "Hospitality"
+   {
+  "route": "/docs/user/manual/tr/hospitality",
+  "title": "Konaklama"
  },
  {
-   "route": "/docs/user/manual/en/erpnext_integration",
-   "title": "Integrations"
+   "route": "/docs/user/manual/tr/erpnext_integration",
+   "title": "Entegrasyon"
   },
  {
-  "route": "/docs/user/manual/en/customize-erpnext",
-  "title": "Customize"
+  "route": "/docs/user/manual/tr/customize-erpnext",
+  "title": "Özelleştirme"
  } {##}
 ]

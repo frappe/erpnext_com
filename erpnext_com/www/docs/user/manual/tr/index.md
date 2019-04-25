@@ -1,10 +1,10 @@
 <!-- add-breadcrumbs -->
-<!-- title: ERPNext User Manual (English) -->
+<!-- title: ERPNext Kullanıcı El Kitabı (English) -->
 
 # Kullanım Kılavuzu (Türkçe)
 Aşağıdakiler, ERPNext'in geniş bir yelpazedeki işletmeleri kapsayan çeşitli modülleri ve faliyet gösterdiği alanlarıdır. Küçük bir distribütör, üretici, eğitim kurumu işleten veya sağlık kuruluşu olabilirsiniz. Herkese göre bir şeylerimiz var.
 ## İçindekiler
-##### 1. Temel
+##### 1.Temel
 1. [Giriş](/docs/user/manual/tr/introduction)
 - [Kurulum](/docs/user/manual/tr/setting-up)
 - [ERPNext'i kullanma](/docs/user/manual/tr/using-erpnext)
@@ -22,12 +22,12 @@ Aşağıdakiler, ERPNext'in geniş bir yelpazedeki işletmeleri kapsayan çeşit
 - [Kalite Yönetimi](/docs/user/manual/tr/quality-management)
 
 ##### 3. Sektöre Özel Modüller
-1. [İmalat](/docs/user/manual/tr/manufacturing)
+1. [Üretim](/docs/user/manual/tr/manufacturing)
 - [Eğitim](/docs/user/manual/tr/education)
 - [Sağlık Hizmetleri](/docs/user/manual/tr/healthcare)
 - [Tarım](/docs/user/manual/tr/agriculture)
-- [Dernek](/docs/user/manual/tr/non_profit)
-- [Ağırlama](/docs/user/manual/tr/hospitality)
+- [Kar Amacı Gütmeyen](/docs/user/manual/tr/non_profit)
+- [Konaklama](/docs/user/manual/tr/hospitality)
 
 ##### 4. Web Sitesi ve Portal
 1. [Müşteri Portalı](/docs/user/manual/tr/customer-portal)
