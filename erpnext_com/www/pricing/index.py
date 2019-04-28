@@ -27,7 +27,7 @@ def get_context(context):
 			'content': 'Unlimited features with Accounting, Inventory, HR and Payroll'
 		},
 		{
-			'title': 'Personalized Support',
+			'title': 'Priority Support',
 			'content': 'In app priority support from the team that brought you ERPNext'
 		},
 		{
