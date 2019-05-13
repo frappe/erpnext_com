@@ -21,7 +21,7 @@
 <ul class="nav navbar-nav navbar-left">
 	{%- for page in top_bar_items -%}
 	{% if not page.parent_label and not page.right -%}
-	{% include "templates/includes/navbar/navbar_link.html" %}
+	{% include "templates/includes/navbar/navbar_link.html" ignore missing %}
 	{%- endif -%}
 	{%- endfor %}
 </ul>
@@ -29,7 +29,7 @@
 <ul class="nav navbar-nav navbar-right">
 	{%- for page in top_bar_items -%}
 	{% if not page.parent_label and page.right -%}
-	{% include "templates/includes/navbar/navbar_link.html" %}
+	{% include "templates/includes/navbar/navbar_link.html" ignore missing %}
 	{%- endif -%}
 	{%- endfor %}
 	{% include "templates/includes/navbar/navbar_login.html" %}
