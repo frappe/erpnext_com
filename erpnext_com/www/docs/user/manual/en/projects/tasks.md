@@ -28,19 +28,25 @@ You can specify a list of dependent tasks under the 'Depends On' section.
 
 ### Managing Time
 
-ERPNext uses [Time Log](/docs/user/manual/en/projects/time-log.html) to track the progress of a Task.
-You can create multiple Time Logs against each task.
-The Actual Start and End Time along with the costing is updated based on the Time Log.
+ERPNext uses [Timesheet](/docs/user/manual/en/projects/timesheet/timesheet-against-project) to track the progress of a Task.
 
-* To view Time Log made against a Task click on 'Time Logs'
+You can create multiple Timesheets against each task.
+The Actual Start and End Time along with the costing is updated based on the Timesheet.
 
-<img class="screenshot" alt="Task - View Time Log" src="{{docs_base_url}}/assets/img/project/task_view_time_log.png">
+* To view Timesheet made against a Task click on 'View' -> "Timesheet"
 
-<img class="screenshot" alt="Task - Time Log List" src="{{docs_base_url}}/assets/img/project/task_time_log_list.png">
+<img class="screenshot" alt="Task - View Timesheet" src="{{docs_base_url}}/assets/img/project/task_view_timesheet_log.png">
 
-* You can also create a Time Log directly and link it to the Task.
+<img class="screenshot" alt="Task - Timesheet List" src="{{docs_base_url}}/assets/img/project/task-timesheet-list.png">
 
-<img class="screenshot" alt="Task - Link Time Log" src="{{docs_base_url}}/assets/img/project/task_time_log_link.png">
+* You can also create a Timesheet directly and link it to the Task. 
+
+<img class="screenshot" alt="Task - Link Timesheet" src="{{docs_base_url}}/assets/img/project/task-timesheet-link.png">
+
+* It can be linked to an Employee as well, since Salary Slips can also be generated on basis of Timesheet. Notice that the Timesheet name is intuitively updated to the Employee's name so that accessibility is easier.
+
+<img class="screenshot" alt="Task - Link Timesheet Employee" src="{{docs_base_url}}/assets/img/project/task-timesheet-emp-link.png">
+
 
 ### Managing Expenses
 
