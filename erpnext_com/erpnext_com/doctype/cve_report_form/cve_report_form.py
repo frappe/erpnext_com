@@ -5,6 +5,50 @@
 from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
+from frappe.utils import get_request_session
 
 class CVEReportForm(Document):
-	pass
+
+	def after_insert(self):
+		session = get_request_session()
+		try:
+			login(session)
+			response = session.post('{host}/api/resource/Issue'.format(host=frappe.conf.api_host, data={
+					"data": {
+						json.dumps({
+							"subject": "{name} [{severity}] {app} - {vulnerability}".format(
+								name=self.name,
+								severity=self.severity,
+								app=self.affected_application,
+								vulnerability=self.vulnerability_type
+							),
+							"status": "Open",
+							"support_team": "Security",
+							"issue_type": "Security Vulnerability",
+							"raised_by": self.email_address,
+							"description": self.vulnerability_description
+					})}
+				}))
+			response.raise_for_status()
+			logout(session)
+		except Exception:
+			traceback = frappe.get_traceback()
+			frappe.log_error(traceback)
+
+
+def login(session):
+	r = session.post('{host}/'.format(host=frappe.conf.api_host), data={
+		'cmd': 'login',
+		'usr': frappe.conf.api_username,
+		'pwd': frappe.conf.api_password
+	})
+
+	try:
+		if not r.json().get('message') == "Logged In":
+			raise Exception
+	except json.decoder.JSONDecodeError:
+		raise Exception
+
+
+def logout(session):
+	session.get('{host}/?cmd=logout'.format(host=frappe.conf.api_host))
