@@ -29,7 +29,8 @@ class CVEReportForm(Document):
 							"description": self.vulnerability_description
 					})}
 				}))
-				response.raise_for_status()
+			response.raise_for_status()
+			logout(session)
 		except Exception:
 			traceback = frappe.get_traceback()
 			frappe.log_error(traceback)
