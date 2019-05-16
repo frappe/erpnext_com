@@ -14,7 +14,7 @@ class CVEReportForm(Document):
 		session = get_request_session()
 		try:
 			login(session)
-			response = session.post('{host}/api/resource/Issue'.format(host=frappe.conf.api_host, data={
+			response = session.post('{host}/api/resource/Issue'.format(host=frappe.conf.api_host), data={
 					"data": {
 						json.dumps({
 							"subject": "{name} [{severity}] {app} - {vulnerability}".format(
@@ -29,7 +29,7 @@ class CVEReportForm(Document):
 							"raised_by": self.email_address,
 							"description": self.vulnerability_description
 					})}
-				}))
+				})
 			response.raise_for_status()
 			logout(session)
 		except Exception:
