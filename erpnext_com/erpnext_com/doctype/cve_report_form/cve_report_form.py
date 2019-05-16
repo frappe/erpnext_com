@@ -11,25 +11,25 @@ class CVEReportForm(Document):
 
 	def after_insert(self):
 		session = get_request_session()
-		login(session)
-		response = session.post('{host}/api/resource/Issue'.format(host=frappe.conf.api_host, data={
-				"data": {
-					json.dumps({
-						"subject": "{name} [{severity}] {app} - {vulnerability}".format(
-							name=self.name,
-							severity=self.severity,
-							app=self.affected_application,
-							vulnerability=self.vulnerability_type
-						),
-						"status": "Open",
-						"support_team": "Security",
-						"issue_type": "Security Vulnerability",
-						"raised_by": self.email_address,
-						"description": self.vulnerability_description
-				})}
-			}))
 		try:
-			response.raise_for_status()
+			login(session)
+			response = session.post('{host}/api/resource/Issue'.format(host=frappe.conf.api_host, data={
+					"data": {
+						json.dumps({
+							"subject": "{name} [{severity}] {app} - {vulnerability}".format(
+								name=self.name,
+								severity=self.severity,
+								app=self.affected_application,
+								vulnerability=self.vulnerability_type
+							),
+							"status": "Open",
+							"support_team": "Security",
+							"issue_type": "Security Vulnerability",
+							"raised_by": self.email_address,
+							"description": self.vulnerability_description
+					})}
+				}))
+				response.raise_for_status()
 		except Exception:
 			traceback = frappe.get_traceback()
 			frappe.log_error(traceback)
