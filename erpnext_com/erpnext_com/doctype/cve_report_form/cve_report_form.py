@@ -31,7 +31,8 @@ class CVEReportForm(Document):
 		try:
 			response.raise_for_status()
 		except Exception:
-			pass
+			traceback = frappe.get_traceback()
+			frappe.log_error(traceback)
 
 
 def login(session):
