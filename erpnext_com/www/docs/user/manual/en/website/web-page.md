@@ -1,6 +1,6 @@
 # Web Page
 
-<p class="lead">Static Content like your Home Page, About Us, Contact Us, Terms pages can be created using the Web Page. </p>
+Static Content like your Home Page, About Us, Contact Us, Terms pages can be created using the Web Page.
 
 To create a new Web Page, go to:
 
