@@ -15,8 +15,11 @@ When you create a new record you will have to specify
 1. The user for which the rule has to be applied
 2. The type of document which will be allowed (for example "Company")
 3. The specific item that you want to allow (the name of the "Company)
+4. Select "Is Default" to choose the default value that is allowed for a type of document.
 
-<img src="{{docs_base_url}}/assets/img/users-and-permissions/user-perms/new-user-permission.png" class="screenshot" alt="Creating a new user permission">
+    <img src="{{docs_base_url}}/assets/img/users-and-permissions/user-perms/new-user-permission.png" class="screenshot" alt="Creating a new user permission">
+
+    >Note: Only a single user permission can be set as default for a particular doctype for a user. This default value will be automatically assigned to the doctype related link fields for any newly created document.
 
 ### Advanced control
 
