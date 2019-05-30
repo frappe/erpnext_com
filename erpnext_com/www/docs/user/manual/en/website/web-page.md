@@ -64,7 +64,6 @@ Unpublished pages will throw an `Error 404` when they are visited.
 
 ## Javascript and CSS
 
-
 You can add a JS script to your Web Page in the **Script** section. Make sure to
 write your script inside the `frappe.ready` callback.
 
