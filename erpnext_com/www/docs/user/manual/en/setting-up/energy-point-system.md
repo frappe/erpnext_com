@@ -16,9 +16,9 @@ Energy Point Rule has following fields:
 
 | Field        | Description  |
 | ------------- |:-------------|
-| Reference DocType      | Document Type you want to apply rule on eg. Task, ToDo, Issue, etc. |
-| Condition      | Condition for the point allocation. <br>eg. `doc.status == 'Closed'`<br>The above condition will check whether the `status` field in the document is 'Closed' and if yes then the points will be alloted to the user.       |
-| Points | Points to be alloted.      |
+| Reference DocType| Document Type you want to apply rule on eg. Task, ToDo, Issue, etc. |
+| Condition| Condition for the point allocation. <br>eg. `doc.status == 'Closed'`<br>The above condition will check whether the `status` field in the document is 'Closed' and if yes then the points will be alloted to the user.       |
+| Points | Points to be alloted.|
 | User Field | Field from which user will be selected eg. `Resolved By`, `Modified By`, `Owner`, etc. can be used.      |
 | Multiplier Field | Field which stores value for multiplier. This field must have numeric value, this will be multiplied with Points defined in the rule.      |
 
@@ -26,9 +26,7 @@ Energy Point Rule has following fields:
 
 ### How to create Energy Point Rules?
 
-Go To Awesome Bar > search for Energy Point Rules > Create New
-<!-- Since almost all work can be tracked through Document Types, you can apply rules on Document Type with some conditions.
-So when a document matches the provided condition, user will get the points defined in the rule. -->
+Go To Awesome Bar > search for Energy Point Rules > Create New Energy Point Rules
 
 Check following example rule:
 <img class="screenshot" src="/docs/assets/img/energy-point-system/issue-closed-rule.png">
@@ -52,7 +50,10 @@ Review system can be used to "Appreciate" or "Criticize" someone's work.
 
 Check out following GIF for the review process.
 <img class="screenshot" src="/docs/assets/img/energy-point-system/review-system.gif">
-For reviewing, user needs to have review points which can be assigned by System Manager through `Energy Point Settings`
+For reviewing, user needs to have review points which can be assigned by System Manager through `Energy Point Settings`.
+
+You can also setup auto review point allocation from 'Energy Point Settings'
+<img class="screenshot" src="/docs/assets/img/energy-point-system/auto-review-point-allocation.png">
 
 #### 3. Leaderboard
 > Social Home > Leaderboard (in side navigation bar)
