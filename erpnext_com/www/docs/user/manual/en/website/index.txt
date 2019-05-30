@@ -2,7 +2,6 @@ homepage
 web-page
 blog-post
 web-form
-blogger
 add-products-to-website
 shopping-cart
 social-login-keys

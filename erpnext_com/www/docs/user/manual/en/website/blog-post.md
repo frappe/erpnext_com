@@ -26,4 +26,34 @@ View your Blog Post by clicking on **See on Website** in the sidebar.
 ![Blog Post](/docs/assets/img/website/blog-post.png)
 *Blog Post*
 
+## Blogger
+
+Blogger is a user who can post blogs. To create a Blogger, go to:
+
+> Website > Blog > Blogger
+
+You can mention a short bio about the blogger and also set an avatar here.
+
+![Blogger](/docs/assets/img/website/blogger.png)
+*Blogger*
+
+The preview will be shown at the end of the blog post.
+![Blogger Preview](/docs/assets/img/website/blogger-preview.png)
+*Blogger Preview*
+
+## Blog Category
+
+You can group your blogs into categories. To create a new Blog Category, go to:
+
+> Website > Blog > Blog Category
+
+![Blog Category](/docs/assets/img/website/blog-category.png)
+*Blog Category*
+
+If you click on **See on Website** in the sidebar, you'll be redirected to a
+list of blogs under that category.
+
+![Blog Category - General](/docs/assets/img/website/blog-category-web-view.png)
+*Blog Category - General*
+
 {next}
