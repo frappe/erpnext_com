@@ -1,92 +1,98 @@
+{% extends "frappe_theme/templates/base.html" %}
+{% block title %}Contact Us{% endblock %}
+
+{% from "erpnext_com/templates/includes/card_grid.html" import card_grid %}
+
+{% block head_include %}
+	<meta name="description" content="ERPNext Contact Details" />
+	<meta name="keywords" content="ERPNext, Contact, Queries" />
+	<meta name="google-site-verification" content="euiq62LnIrUF6eLvL7wZEnVxhdfkfzuIMnSYRf4JzGk" />
+{% endblock %}
+
+{% block content %}
+<section class='top-section'>
+	<div class='container'>
+	<h1>Get in Touch</h1>
+	<p class='lead'>Find out the right person to address your query by clicking on the box below.</p>
+	<div class='py-4'></div>
+
+	{{ card_grid(
+		None,
+		None,
+		[
+			{
+			"title": "Contact Sales",
+			"content": "Talk to a sales representative to help you understand and evaluate ERPNext Cloud or Services",
+			"url": "/contact-form"
+			},
+			{
+			"title": "Contact Support",
+			"content": "Already a Frappe / ERPNext Customer? Connect with the support team to answer your query",
+			"url": "/contact-support"
+			},
+			{
+			"title": "Partnerships",
+			"content": "Expand your services with the world's best open source ERP community and a fast growing ecosystem",
+			"url": "/partners/signup"
+			},
+			{
+				"title": "Apply for a Job",
+				"content": "Check out our company philosophy and opportunities. We are always looking for great engineers and consultants.",
+				"url": "https://frappe.io/careers/apply"
+			},
+			{
+				"title": "Get A Quote",
+				"content": "Get a customized quote for self hosted ERPNext and implementation / development services",
+				"url": "/get-a-quote"
+			},
+			{
+				"title": "Report Vulnerability",
+				"content": "Discovered a security issue? Submit a vulnerablility report for ERPNext or Frappe Framework.",
+				"url": "/security/report"
+			},
+		])
+	}}
+</div>
+</section>
+<hr>
 <section>
 	<div class='container'>
-	<div class="row">
-	    <div class="col-sm-6 content" id="contact">
-	        <h3>Write to us</h3>
-	        <p>Have a question or comment? Write in, we would love to hear from you. We’ll write back as soon as we can.</p>
-
-			<div class='text-muted mt-3'>Your name</div>
-			<input class="form-control" type="text" name="fullname" required>
-
-			<div class='text-muted mt-3' required>Your email</div>
-			<input class="form-control" type="text" name="email">
-
-			<div class='text-muted mt-3' required>Your job title</div>
-			<input class="form-control" type="text" name="title">
-
-			<div class='text-muted mt-3' required>What are you looking for?</div>
-			<select class="form-control" name="service">
-				<option value='Enterprise Support'>Enterprise Support</option>
-				<option value='Implementation Support'>Implementation Support</option>
-				<option value='Consultation'>Consultation</option>
-				<option value='Partnership'>Partnership</option>
-			</select>
-
-			<div class='text-muted mt-3' required>Are you already using ERPNext?</div>
-			<select class="form-control" name="service">
-				<option value='No'>No</option>
-				<option value='Yes'>Yes</option>
-			</select>
-
-			<div class='text-muted mt-3'>Message</div>
-			<textarea class="form-control" name="message" style="height: 200px;" required></textarea>
-			<a href=# id="send" class="btn btn-dark btn-send form-control mt-4">Send</a>
-	    </div>
-	    <div class="col-sm-6 content address">
-	        <h3>Visit our office</h3>
-	        <p>D/324 Neelkanth Business Park, Vidyavihar West, Mumbai, Maharashtra - 400086, India</p>
-	        <p>Skype: <b>erpnext</b></p>
-	        <p>Twitter: <a href="https://twitter.com/erpnext" target="_blank"><b>@erpnext</b></a></p>
-	        <p>Phone: <a href="tel:+91-80-470-91710">+91-80-470-91710</a></p>
-	    </div>
+		{{ card_grid(
+			"Contact Details",
+			"Phone, Office Address and Social Media",
+			[
+				{
+					"title": "Phone",
+					"content": "<small>Skype: <b>ERPNext</b><br>
+					United States: <a href='tel:+1-209-813-4824'>+1 209 813 4824</a><br>
+					India: <a href='tel:+91-80-470-91710'>+91-80-470-91710</a><br>
+					UK: <a href='tel:+44 29 2254 0018'>+44 29 2254 0018</a></small>"
+				},
+				{
+					"title": "Address",
+					"content": "<small>Frappe Technologies Pvt Ltd<br>
+						D/324 Neelkanth Business Park,<br>
+						Vidyavihar (W),<br>
+						Mumbai 400086,<br>
+						India</small>"
+				},
+				{
+					"title": "Social",
+					"content": "<small>Twitter: <a href='https://twitter.com/erpnext' target='_blank'>@erpnext</a><br>
+						LinkedIn: <a href='https://in.linkedin.com/company/frappe-tech' target='_blank'>Frappe Technologies</a><br>
+						Facebook: <a href='https://www.facebook.com/ERPNext/' target='_blank'>ERPNext Page</a><br>
+						Medium: <a href='https://medium.com/frapp%C3%A9-thoughts' target='_blank'>Frappe Thoughts</a></small>"
+				}
+			])
+		}}
+	<div class='text-center'>
+		<p class="mt-5">
+			<a class="btn btn-primary btn-lg" style="width: 170px;" href="/pricing">Start Free Trial</a>
+		</p>
+		<p class="mt-0 text-muted">Try ERPNext free for 14 days</p>
 	</div>
 	</div>
 </section>
-<script>
-	frappe.ready(function() {
+<style>.footer-message { display: none; }</style>
 
-		if(frappe.utils.get_url_arg('subject')) {
-		  $('[name="subject"]').val(frappe.utils.get_url_arg('subject'));
-		}
-
-		$('.btn-send').off("click").on("click", function() {
-			var email = $('[name="email"]').val();
-			var message = $('[name="message"]').val();
-
-			if(!(email && message)) {
-				frappe.msgprint("{{ _("Please enter both your email and message so that we \
-					can get back to you. Thanks!") }}");
-				return false;
-			}
-
-			if(!validate_email(email)) {
-				frappe.msgprint("{{ _("You seem to have written your name instead of your email. \
-					Please enter a valid email address so that we can get back.") }}");
-				$('[name="email"]').focus();
-				return false;
-			}
-
-			$("#contact-alert").toggle(false);
-			frappe.send_message({
-				subject: $('[name="subject"]').val(),
-				sender: email,
-				message: message,
-				callback: function(r) {
-					if(r.message==="okay") {
-						frappe.msgprint("{{ _("Thank you for your message") }}");
-					} else {
-						frappe.msgprint("{{ _("There were errors") }}");
-						console.log(r.exc);
-					}
-					$(':input').val('');
-				}
-			}, this);
-			return false;
-		});
-
-	});
-
-	var msgprint = function(txt) {
-		if(txt) $("#contact-alert").html(txt).toggle(true);
-	}
-</script>
+{% endblock %}
