@@ -27,20 +27,26 @@ for a demonstration of the Website module in ERPNext.
 1. [Web Page](/docs/user/manual/en/website/web-page)
 1. [Blog Post](/docs/user/manual/en/website/blog-post)
 1. [Web Form](/docs/user/manual/en/website/web-form)
-1. [Blogger](/docs/user/manual/en/website/blogger)
 1. [Add Products To Website](/docs/user/manual/en/website/add-products-to-website)
 1. [Shopping Cart](/docs/user/manual/en/website/shopping-cart)
 1. [Social Login Keys](/docs/user/manual/en/website/social-login-keys)
-1. [Website Settings](/docs/user/manual/en/website/website-settings)
 
-## 2. Articles
+## 2. Setup
+
+1. [Website Settings](/docs/user/manual/en/website/website-settings)
+1. Website Theme
+1. Website Script
+1. About Us Settings
+1. Contact Us Settings
+
+## 3. Articles
 
 1. [Disable Signup](/docs/user/manual/en/website/articles/disable-signup)
 1. [Website Security](/docs/user/manual/en/website/articles/website-security)
 1. [Website Home Page](/docs/user/manual/en/website/articles/website-home-page)
 1. [Website Banner](/docs/user/manual/en/website/articles/website-banner)
 
-## 3. Videos
+## 4. Videos
 1. [Website Module Webinar](https://www.youtube.com/watch?v=lyW6mfFBSNw)
 1. [Publish Items on Website](/docs/user/videos/learn/publish-items-on-website.html)
 1. [Shopping Cart](/docs/user/videos/learn/shopping-cart.html)
