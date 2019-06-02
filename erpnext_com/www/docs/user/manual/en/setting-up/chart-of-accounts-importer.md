@@ -2,7 +2,7 @@
 
 # Chart Of Accounts Importer
 
-Chart Of Accounts Importer is avaiable in ERPNext from v12 onwards.
+>Introduced in Version 12
 
 To start importing charts of accounts navigate to
 
