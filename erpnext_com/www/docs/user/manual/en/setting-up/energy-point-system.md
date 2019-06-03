@@ -57,7 +57,7 @@ You can also setup auto review point allocation from 'Energy Point Settings':
 <img class="screenshot" src="/docs/assets/img/energy-point-system/auto-review-point-allocation.png">
 
 ### 4.3 Leaderboard
-Go To Social Home > Leaderboard (side navigation bar)
+Go to Social Home > Leaderboard (side navigation bar)
 
 Leaderboard shows user's standing in the organization.
 
