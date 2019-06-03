@@ -8,7 +8,7 @@ Energy Points System is a rating/karma system that you can enable for your organ
 
 
 ## 1. How to use the Energy Point System?
-To start using this system you need to create some Energy Point Rules so that users can get energy points based on their activities.
+To start using this system you need to create some Energy Point Rules (see section 3. How to create Energy Point Rules?) so that users can get energy points based on their activities.
 
 ## 2. What are Energy Point Rules?
 Energy Point Rules store the information about the activity and the value of points to be alloted.
@@ -53,11 +53,11 @@ Check out the following GIF for the review process.
 <img class="screenshot" src="/docs/assets/img/energy-point-system/review-system.gif">
 For reviewing, user needs to have review points which can be assigned by System Manager through **Energy Point Settings**.
 
-You can also setup auto review point allocation from 'Energy Point Settings'
+You can also setup auto review point allocation from 'Energy Point Settings':
 <img class="screenshot" src="/docs/assets/img/energy-point-system/auto-review-point-allocation.png">
 
 ### 4.3 Leaderboard
-> Go To Social Home > Leaderboard (side navigation bar)
+Go To Social Home > Leaderboard (side navigation bar)
 
 Leaderboard shows user's standing in the organization.
 
