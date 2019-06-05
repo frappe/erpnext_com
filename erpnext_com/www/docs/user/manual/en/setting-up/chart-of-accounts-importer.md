@@ -7,11 +7,9 @@
 Chart of Accounts Importer is a great tool to import your existing chart of accounts. It allows you to create your own chart of accounts according to your requirement and import it into the system .
 
 
-## How to import Chart Of Accounts
+## 1. How to import Chart Of Accounts
 
-To start importing your chart of accounts navigate to
-
-**Getting Started > Data Import and Settings > Chart of Accounts Importer**
+Go to **Getting Started > Data Import and Settings > Chart of Accounts Importer**
 
 1. Select the Company for which you want to import chart of accounts. Make sure the company you are selecting doesn't have a pre existing transactions otherwise you'll receive a validation error.
 
@@ -43,7 +41,7 @@ To start importing your chart of accounts navigate to
 
 	<img class="screenshot" alt="COA Import" src="{{docs_base_url}}/assets/img/setup/coa-import.png">
 
-#### Related Topics
+### 2. Related Topics
 1. [Chart Of Accounts](/docs/user/manual/en/accounts/chart-of-accounts)
 
 
