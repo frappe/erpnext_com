@@ -3,7 +3,7 @@
 
 > Introduced in v12
 
-**Document Follow is feature that allows users to track changes in documents via email notifications.**
+**Document Follow is a feature that allows users to track changes in documents via email notifications.**
 
 ## 1. How to Activate Document Follow
 1. Go to: **Settings > My Settings**.
@@ -33,4 +33,4 @@ Cases where the document will be __automatically__ followed after activating Doc
 
 This is what an email notification for Document Follow will look like:
 
-<img class="screenshot" alt="Defining Criteria" src="{{docs_base_url}}/assets/img/setup/email/document-follow-email-looks-like.png">
+<img class="screenshot" alt="Defining Criteria" src="{{docs_base_url}}/assets/img/setup/email/document-follow-email.png">
