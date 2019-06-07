@@ -9,12 +9,20 @@
 	<div class='row mt-5'>
 		{% for card in features %}
 		<div class='col-sm-4 mb-4'>
-			<a href="{{ card.url }}" class='card h-100'>
+			{% if card.url %}
+			<a href="{{ card.url }}" class='card h-100 card-with-link'>
+			{% else %}
+			<div class='card h-100'>
+			{% endif %}
 				<div class='card-body text-left'>
 					<h5 class='card-title'>{{ card.title }}</h5>
 					<div>{{ card.content }}</div>
 				</div>
+			{% if card.url %}
 			</a>
+			{% else %}
+			</div>
+			{% endif %}
 		</div>
 		{% endfor %}
 	</div>
