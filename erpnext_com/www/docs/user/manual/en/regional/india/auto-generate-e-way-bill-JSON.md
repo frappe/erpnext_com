@@ -28,7 +28,7 @@ To help speed up creation of e-Way Bills, you can now auto-generate a JSON file 
 
 1. Upon clicking this button, your data will be validated in accordance with the <a href="https://docs.ewaybillgst.gov.in/html/formatdownloadnew.html">JSON schema</a> and the auto-generated JSON file will be downloaded onto your device.
 
-### On the <a href="https://ewaybillgst.gov.in">GST e-Way Bill System</a>:
+### On the GST e-Way Bill System:
 
 1. Log in to the <a href="https://ewaybillgst.gov.in">GST e-Way Bill System</a> using your credentials.
 
