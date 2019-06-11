@@ -15,7 +15,7 @@ Set the Employee ID, date, purpose and requested amount and “Save” the recor
 
 Employee Advance record can be created by any employee but they cannot submit the record.
 
-After saving Employee Advance, Employee should [Assign document to Approver](/docs/user/manual/en/using-erpnext/assignment.html). On assignment, approving user will also receive email notification. To automate email notification, you can also setup [Email Alert](https://erpnext.com/docs/user/manual/en/setting-up/notifications.html).
+After saving Employee Advance, Employee should [Assign document to Approver](/docs/user/manual/en/using-erpnext/assignment.html). On assignment, approving user will also receive email notification. To automate email notification, you can also setup [Email Alert](/docs/user/manual/en/setting-up/notifications.html).
 
 After verification, approver can submit the Employee Advance form or reject the request.
 
