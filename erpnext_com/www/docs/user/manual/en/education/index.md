@@ -49,8 +49,8 @@ Here are the functionalities available under the ERPNext Education domain to go 
 ##### 6. Learning Management System
 1. [Setting Up LMS](/docs/user/manual/en/education/setting-up-lms)
 1. [LMS Masters](/docs/user/manual/en/education/lms-masters)
-1. [Enrolling Students](/docs/user/manual/en/education/scheduling-tool)
-1. [Progress Tracking](/docs/user/manual/en/education/examination)
+1. [Navigating the Portal](/docs/user/manual/en/education/navigating-the-portal)
+1. [Tracking Progress](/docs/user/manual/en/education/tracking-progress)
 
 ##### 7. Attendance
 1. [Student Attendance](/docs/user/manual/en/education/student-attendance)

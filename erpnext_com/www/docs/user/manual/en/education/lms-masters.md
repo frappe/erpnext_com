@@ -80,3 +80,4 @@ You can add questions to be listed in quizzes. Based on the number of options ma
 Quizzes are also automatically published with it's parent program, it looks as follows on the portal.
 <img class="screenshot" alt="Portal Quiz" src="{{docs_base_url}}/assets/img/education/lms/quiz.png">
 
+{next}
