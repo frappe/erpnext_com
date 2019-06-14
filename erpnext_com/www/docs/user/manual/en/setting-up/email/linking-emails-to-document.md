@@ -1,6 +1,7 @@
 <!-- add-breadcrumbs -->
 # Linking Emails to Documents
 
+> Introduced in v12
 
 You can link an Email to any Document. You can link an Email to multiple Documents in ERPNext. This can be done in the following two ways.
 
