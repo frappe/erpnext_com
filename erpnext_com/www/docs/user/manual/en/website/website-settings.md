@@ -4,6 +4,8 @@
 Website related settings like landing page and website wide theme can be
 configured here.
 
+> Website > Setup > Website Settings
+
 ## Landing Page
 
 Configure the default landing page of your website by setting the **Home Page**

@@ -105,3 +105,5 @@ To setup a custom homepage:
 1. Go to Website > Setup > Website Settings
 1. Set Home Page as the `route` of your Web Page.
    ![](/docs/assets/img/website/custom-homepage.png)
+
+{next}

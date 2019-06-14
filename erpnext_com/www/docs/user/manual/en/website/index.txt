@@ -2,7 +2,10 @@ homepage
 web-page
 blog-post
 web-form
-add-products-to-website
+website-settings
+website-theme
+product-page
+product-listing
 shopping-cart
 social-login-keys
-website-settings
+
