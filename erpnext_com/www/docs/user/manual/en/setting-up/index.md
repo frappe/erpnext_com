@@ -15,17 +15,21 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 1. [Setting Up Taxes](/docs/user/manual/en/setting-up/setting-up-taxes)
 1. [Setting Company Sales Goal](/docs/user/manual/en/setting-up/setting-company-sales-goal)
 1. [Data Import](/docs/user/manual/en/setting-up/data/data-import)
+1. [Charts Of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
 1. [Workflows](/docs/user/manual/en/setting-up/workflows)
+1. [Energy Point System](/docs/user/manual/en/setting-up/energy-point-system)
 
 ##### 1.2 Printing
-1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
 1. [Print Settings](/docs/user/manual/en/setting-up/print/print-settings)
 1. [Print Format Builder](/docs/user/manual/en/setting-up/print/print-format-builder)
 1. [Print Style](/docs/user/manual/en/setting-up/print/print-style)
 1. [Print Headings](/docs/user/manual/en/setting-up/print/print-headings)
+1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
 1. [Address Template](/docs/user/manual/en/setting-up/print/address-template)
 1. [Terms and Conditions](/docs/user/manual/en/setting-up/print/terms-and-conditions)
 1. [Cheque Print Template](/docs/user/manual/en/setting-up/print/cheque-print-template)
+1. [Custom Translations](/docs/user/manual/en/setting-up/print/custom-translations)
+1. [Raw Printing](/docs/user/manual/en/setting-up/print/raw-printing)
 
 ##### 1.3 Email and SMS
 
@@ -37,6 +41,7 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 1. [Email Domain](/docs/user/manual/en/setting-up/email/email-domain)
 1. [SMS Settings](/docs/user/manual/en/setting-up/sms-setting)
 1. [Notifications](/docs/user/manual/en/setting-up/notifications)
+1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)
 
 ##### 1.4 System Configuration
 
@@ -55,7 +60,12 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 1. [POS Setting](/docs/user/manual/en/setting-up/pos-setting)
 1. [Territory](/docs/user/manual/en/setting-up/territory)
 1. [Price Lists](/docs/user/manual/en/setting-up/price-lists)
-1. [Stock Reconciliation for non-Serialized Items](/docs/user/manual/en/setting-up/stock-reconciliation-for-non-serialized-item)
+1. [Stock Reconciliation](/docs/user/manual/en/setting-up/stock-reconciliation)
+
+##### 1.5 Data Privacy
+
+1. [Personal Data Download](/docs/user/manual/en/setting-up/data-privacy/personal-data-download)
+1. [Personal Data Deletion](/docs/user/manual/en/setting-up/data-privacy/personal-data-deletion)
 
 ## 2. Articles
 ##### 2.1 Basic Setup

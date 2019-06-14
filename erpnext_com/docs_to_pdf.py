@@ -88,7 +88,7 @@ def make_file(s, file_name):
 
 
 def get_children_files(content):
-	matches = re.findall(r'\(/(docs/user/manual.*)\)', content)
+	matches = re.findall(r'\(/(docs/user/manual.*?)\)', content)
 
 	paths = []
 	for m in matches:

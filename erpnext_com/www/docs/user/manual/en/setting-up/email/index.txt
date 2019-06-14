@@ -3,5 +3,6 @@ email-inbox
 email-alerts
 email-digest
 email-reports
-linking-emails-to-document
 sending-email
+linking-emails-to-document
+document-follow

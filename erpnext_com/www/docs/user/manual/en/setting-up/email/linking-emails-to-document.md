@@ -4,24 +4,24 @@
 
 You can link an Email to any Document. You can link an Email to multiple Documents in ERPNext. This can be done in the following two ways.
 
-- Email Aggregation for Customer and Supplier.
+- Email Aggregation in Contact, Customer and Supplier.
 - Automatic Email Linking.
 
 ### Email Aggregation for Customer and Supplier
 
-In Email Aggregation for Customer and Supplier, all the Emails from the Contacts of a Customer or Supplier can be viewed in the respective Customer and Supplier Document. This feature can be enabled by doing the following
+Email Aggregation takes place in Contacts(by default), Customer and Supplier. All the Emails sent or received from a Contacts can be viewed in that Contact's Timeline. To enable Email Aggregation for a Customer or Supplier, do the following
 
 #### Step 1
 
 In a Contact, add Links for the Customer or Supplier respectively.
 
-<img class="screenshot" alt="Add Customer/Supplier in Contact" src="{{docs_base_url}}/assets/img/setup/email/auto-email-1.png">
+<img class="screenshot" alt="Add Customer/Supplier in Contact" src="{{docs_base_url}}/assets/img/setup/email/contact-link.png">
 
 #### Step 2
 
-When an Email is sent to or reeived from the Customer or Supplier, the email is linked to the respective Contact as well as to the Customer or Supplier linked to the Contact.
+When an Email is sent to or received from the Customer or Supplier, the email is linked to the Customer or Supplier linked to the  Contact.
 
-<img class="screenshot" alt="With Filters" src="{{docs_base_url}}/assets/img/setup/email/auto-email-2.png">
+<img class="screenshot" alt="With Filters" src="{{docs_base_url}}/assets/img/setup/email/email_aggregation.gif">
 
 ### Automatic Email Linking to a Document
 
@@ -31,11 +31,11 @@ Automatic Email Linking links an Email to the Document specified in the unique E
 
 Enable Automatic Email Linking in Email Account. This feature can be used only with one Email Account at a time.
 
-<img class="screenshot" alt="Add Customer/Supplier in Contact" src="{{docs_base_url}}/assets/img/setup/email/auto-email-1.png">
+<img class="screenshot" alt="Add Customer/Supplier in Contact" src="{{docs_base_url}}/assets/img/setup/email/enable_email_link.png">
 
 #### Step 2
 
 Once this feature has been enabled, you will see a unique Email ID generated using the Email ID mentioned in the Email Account.
 Now you can copy the Email ID by clicking on it and you can send or receive Emails using the unique Email ID. An Email containing this unique Email ID either in Recipients, Cc or Bcc, the system will link that Email to the specified Document.
 
-<img class="screenshot" alt="Add Customer/Supplier in Contact" src="{{docs_base_url}}/assets/img/setup/email/auto-email-1.png">
+<img class="screenshot" alt="Add Customer/Supplier in Contact" src="{{docs_base_url}}/assets/img/setup/email/email_link.gif">

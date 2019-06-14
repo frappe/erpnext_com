@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
-# Accounts
+# Accounting
 
-Whether you have an accountant in your internal team OR you do it yourself OR you have chosen to outsource it, the financial accounting process is almost always at the center any business management system (aka an ERP system).
+Whether you have an accountant in your internal team OR you do it yourself OR you have chosen to outsource it, the financial accounting process is almost always at the center of any business management system (aka an ERP system).
 
 In ERPNext, your accounting operations consists of 3 main transactions:
 
@@ -16,10 +16,11 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 ##### 1.1 Setup and Opening
 1. [Introduction](/docs/user/manual/en/accounts/accounting-entries)
 1. [Chart Of Accounts](/docs/user/manual/en/accounts/chart-of-accounts)
-1. [Opening Balance](/docs/user/manual/en/accounts/opening-accounts)
+1. [Opening Balance](/docs/user/manual/en/accounts/opening-balance)
 1. [Cost Center](/docs/user/manual/en/accounts/cost-center)
 1. [Fiscal Year](/docs/user/manual/en/accounts/fiscal-year)
 1. [Accounts Settings](/docs/user/manual/en/accounts/accounts-settings)
+1. [Accounting Dimensions](/docs/user/manual/en/accounts/accounting-dimensions)
 
 ##### 1.2 Journals and Payments
 1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
@@ -102,6 +103,9 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 ##### 2.5 Reports and Errors
 1. [Purchase Invoice Account Type Error](/docs/user/manual/en/accounts/articles/purchase-invoice-account-type-error)
 1. [Fiscal Year Error](/docs/user/manual/en/accounts/articles/fiscal-year-error)
+
+##### 2.6 Stock and Accounting Integration
+1. [Warehouse and Accounting Ledger Link](/docs/user/manual/en/accounts/articles/warehouse-ledger-link)
 
 ## 3. Videos
 1. [Chart of Accounts](/docs/user/videos/learn/chart-of-accounts.html)

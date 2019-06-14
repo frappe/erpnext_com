@@ -1,10 +1,9 @@
-<!-- title: ERPNext pricing -->
+<!-- title: ERPNext Pricing -->
 
 <section class='top-section'>
 	<div class='container'>
-	<h1 class='pt-4'>Get Started with ERPNext</h1>
-	<div class="lead pb-3">All our plans provide world class hosting,
-		<br class='d-none d-sm-block'> all modules, instant support and backups.</div>
+	<h1 class='pt-4'>ERPNext Cloud Pricing</h1>
+	<div class="lead pb-3">Solid hosting, priority support and backups.</div>
 
 	<div class="row mt-4">
 
@@ -19,9 +18,9 @@
 					<h4 class='card-title'>{{ plan.title }}</h4>
 
 					<h3>{{ plan.pricing.symbol }} {{ plan.pricing.monthly_amount|int }}</h3>
-					<p class="small mb-1">{{ plan.pricing.currency }} / user / month</p>
-					<p class="text-muted small mb-1">or {{ plan.pricing.symbol }} {{ plan.pricing.amount|int }} / user / year</p>
-					<p class="text-muted small">(Inclusive of Taxes)</p>
+					<p class=" mb-1">{{ plan.pricing.currency }} / user / month</p>
+					<p class="text-muted  mb-1">or {{ plan.pricing.symbol }} {{ plan.pricing.amount|int }} / user / year</p>
+					<p class="text-muted ">(Inclusive of Taxes)</p>
 
 					<button class="btn btn-primary
 
@@ -32,10 +31,10 @@
 					btn-sm mb-4" onclick="redirect_to_signup('signup', '{{ plan.name }}')">Start 14 Day Trial</button>
 
 					{% for feature in base_features %}
-					<p class="mt-3">
-						{{ feature.title }}
-					</p>
-					<!-- <p class="small mb-2">{{ feature.content }}</p> -->
+					<div class='mb-2'>
+						<i class='octicon octicon-check mr-1'></i> {{ feature.title }}
+					</div>
+					<!-- <p class=" mb-2">{{ feature.content }}</p> -->
 					{% endfor %}
 
 					<hr>
@@ -50,7 +49,7 @@
 							{{ feature.title }}
 						</h6>
 							{% for subfeature in feature.content %}
-							<p class="small mb-2">{{ subfeature }}</p>
+							<p class=" mb-2">{{ subfeature }}</p>
 							{% endfor %}
 
 					</div>
@@ -85,7 +84,7 @@
 		<h5>Will self hosting be better?</h5>
 		<p class='mb-5'>It depends. ERPNext is 100% Free and Open Source and depending on your scale and capability, self-hosting may be the right solution for you. <a href=/support>Learn more about our enterprise services.</a><br><br>
 
-		If you are a small company, the cloud may make more sense for you. If you setup ERPNext on your own, then you start with a base cost of around $40/month for a VPS, then you'll need to pay extra for email, security and backups services. After that you'll spend a few hours installing and setting up everything, and also set aside a few hours of your time each month for maintenance + software updates, or maybe get someone to do that for you. Which gets expensive pretty quick. Frappe Cloud on the other hand, takes away all of that so you can focus on what you do best.</p>
+		If you are a  company, the cloud may make more sense for you. If you setup ERPNext on your own, then you start with a base cost of around $40/month for a VPS, then you'll need to pay extra for email, security and backups services. After that you'll spend a few hours installing and setting up everything, and also set aside a few hours of your time each month for maintenance + software updates, or maybe get someone to do that for you. Which gets expensive pretty quick. Frappe Cloud on the other hand, takes away all of that so you can focus on what you do best.</p>
 
 		<h5>Can I get a one-on-one demo?</h5>
 		<p class='mb-5'>

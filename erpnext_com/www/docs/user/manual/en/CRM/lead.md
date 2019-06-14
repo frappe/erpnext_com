@@ -41,7 +41,7 @@ To create a new Lead:
  * Interested: The lead is interested in the products or services.
  * Converted: If the quotation given to the Lead has resulted in confirmation of an order and if the Sales Order has been created against the quotation, then the status is set to Converted.
  * Do Not Contact: Lead is not interested and no further communication is needed.
-1. It is important to track the source from which you are getting the leads. This will help in allocating the marketing budgets effectively. You can set the same in Source field.
+1. You can set the Lead Source in Source field.
 1. Enter email ID for communication.
 1. Click on 'Save'.
 
@@ -88,33 +88,13 @@ You can define [Assignment Rules](/docs/user/manual/en/setting-up/automation/ass
 
 <img class="screenshot" alt="Lead" src="{{docs_base_url}}/assets/img/crm/lead_assignment_rule.png">
 
-### 3. Automating Lead Creation
-Leads come from many different sources. It is important that all leads are recorded.
-
-#### 3.1 Automating Lead Creation for Emails Received
-
-You may have an email address like 'sales@yourcompany.com' which is probably displayed on your website. People may send emails asking information about your products and services. You can enable [Email Account](/docs/user/manual/en/setting-up/email/email-account)  to pull these emails and create a lead for each email.
-
-#### 3.2 Capturing Leads from Your Website via a Webform
-
-You can also map the Lead form to a [Web Form](/docs/user/manual/en/website/web-form) and publish it on your website. When visitors of your website fill the form, it will be automatically added as a Lead.
-
-#### 3.3 Lead Creation for an Incomplete Order in E-Commerce Module
-
-You can publish an e-commerce website and allow users to place an order for your products. If a user selects items but doesn't complete the process you can pursue that user as a lead.
-
-#### 3.4 Importing Leads
-
-If you have a spreadsheet with details of the leads, you can use the [Data Import](/docs/user/manual/en/setting-up/data/data-import) feature to import the leads.
-
----
-### 4. Adding Custom Fields
+### 3. Adding Custom Fields
 
 You may need to add custom fields to capture additional details as per your needs.
 
 You can customize the Lead DocType using [Customize Form](/docs/user/manual/en/customize-erpnext/custom-field) tool.
 
-### 5. Related Topics
+### 4. Related Topics
 1. [Opportunity](/docs/user/manual/en/CRM/opportunity)
 1. [Customer](/docs/user/manual/en/CRM/customer)
 1. [Difference between Lead, Contact, and Customer](/docs/user/manual/en/CRM/articles/difference_between_lead_contact_and_customer)
