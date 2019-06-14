@@ -87,10 +87,11 @@ Please note that if you sell your items in thousands, and if the items are very 
 In ERPNext, you will have to mention the serial number in some accounting entries. If your product is not a big consumer durable Item, if it has no warranty and has no chances of being recalled, avoid giving serial numbers.
 
 * **Has Batch No**: Options for batch number, expiry date, and retaining sample stock will be revealed on ticking this checkbox. You cannot activate this if there is any pre-existing transaction for this item.
+* **Batch Number Series**: Prefix that'll be applied to batch numbers. If you set 5x1SCR,then the first batch will be named like 5x1SCR00001 on first transaction/manufacture.
 * **Automatically Create New Batch**: If the batch number is not mentioned in transactions, then they will be automatically created according to a format like AAAA.00001. If you always want to manually create a batch number for this item, leave this field blank. This setting will override 'Naming Series Prefix' in Stock Settings.
 * **Has Expiry Date**: If you tick this, the batch number will be created according to the expiry date. The expiry dates can be set in the 'Batch' master.
 * **Retain Sample**: To retain a minimum number of sample stock of the item. You need to set a Sample Retention Warehouse in Stock Settings for this. To know more, [click here](/docs/user/manual/en/stock/retain-sample-stock).
-* **Has Serial No**: This is similar to Batch Number Series, 
+* **Has Serial No**: This is similar to Batch Number Series, it'll be created when you make transactions/manufacture. If you set Serial Number Series as AA, then on the first transaction a serial number like AA00001 wil be created.
 
 > Tip: While entering an item code in an items table, if the table requires inventory details, then depending on whether the entered item is batched or serialized, you can enter serial or batch numbers right away in a pop-up dialog.
 

@@ -19,13 +19,12 @@ The stock module is tightly integrated with Purchase, Manufacturing and Accounti
 
 ### 1.2 Setup
 1. [Stock Settings](/docs/user/manual/en/stock/stock-settings)
-1. [Item Group](/docs/user/manual/en/stock/item-group)
-1. [Item Attribute](/docs/user/manual/en/stock/item-attribute)
-1. [Warehouse](/docs/user/manual/en/stock/warehouse)
 1. [Item Price](/docs/user/manual/en/stock/item-price)
-1. [Item Codification](/docs/user/manual/en/stock/item-codification)
+1. [Item Group](/docs/user/manual/en/stock/item-group)
 1. [Item Variants](/docs/user/manual/en/stock/item-variants)
-
+1. [Item Attribute](/docs/user/manual/en/stock/item-attribute)
+1. [Item Codification](/docs/user/manual/en/stock/item-codification)
+1. [Warehouse](/docs/user/manual/en/stock/warehouse)
 
 ### 1.3 Stock Transactions
 1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
