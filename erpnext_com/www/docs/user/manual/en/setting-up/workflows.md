@@ -50,6 +50,15 @@ workflow transition step that says from submitted you can cancel.
 
 <img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/workflow-6.png">
 
+#### Enable/Disable Optional Workflow State
+
+> New in Version 11
+
+Optional workflow state means that the state may not be the part of final approval. eg. states like Canceled or Rejected can be optional.
+<img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/workflow-optional-state.png">
+
+**Note:** Workflow Actions are not created for optional states.
+
 
 #### Conditions
 
@@ -92,11 +101,12 @@ If a User is eligible to take action on some workflows, emails will be sent to t
 Also the users will see entries in their Workflow Action list.
 <img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/workflow-actions-list.png">
 
-**Note:** You can set email template for Workflow Actions on each state.
-The template might consist message for users to proceed with the next Workflow Actions
+**Note:**
 
+- You can set email template for Workflow Actions on each state. The template might consist message for users to proceed with the next Workflow Actions.
+- Workflow Actions will not be created for transition to optional state.
 
-### Video Tutorial:
+### Video Tutorial
 
 <div>
     <div class="embed-container">
