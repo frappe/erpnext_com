@@ -3,14 +3,14 @@
 
 > Introduced in v12
 
-An email can be linked to multiple Documents in ERPNext. You can link an Email to multiple Documents in ERPNext. This can be done in the following two ways:
+An email can be linked to multiple Documents in ERPNext. This can be done in the following two ways:
 
 - Email Aggregation in Contact, Customer, Supplier.
 - Automatic Email Linking.
 
 ## Email Aggregation for Customer and Supplier
 
-Email Aggregation takes place in Contacts(by default), Customer and Supplier. All the Emails sent or received from a Contacts can be viewed in that Contact's Timeline. To enable Email Aggregation for a Customer or Supplier, do the following:
+Email Aggregation takes place in Contact, Customer and Supplier. All the Emails sent or received from a Contact can be viewed in that Contact's Timeline and as well as linked Customer's or Supplier's Timeline. To enable Email Aggregation, do the following:
 
 ### Step 1
 
