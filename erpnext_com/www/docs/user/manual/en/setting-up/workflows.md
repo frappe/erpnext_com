@@ -55,7 +55,7 @@ workflow transition step that says from submitted you can cancel.
 > New in Version 11
 
 Optional workflow state means that the state may not be the part of final approval. eg. states like Canceled or Rejected can be optional.
-<img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/workflow-optional-state.png">
+![Optional State](/docs/assets/img/setup/workflow-optional-state.png)
 
 **Note:** Workflow Actions are not created for optional states.
 
@@ -91,7 +91,7 @@ When the Leave Approver opens the Leave Application page, he can finally "Approv
 
 #### Workflow Actions
 
-> New in Version 11
+> Introduced in Version 11
 
 Workflow Actions is a single place to manage all the pending actions you can take on Workflows.
 
@@ -103,7 +103,7 @@ Also the users will see entries in their Workflow Action list.
 
 **Note:**
 
-- You can set email template for Workflow Actions on each state. The template might consist message for users to proceed with the next Workflow Actions.
+- You can set email template for Workflow Actions on each state. The template might consist a message for users to proceed with the next Workflow Actions.
 - Workflow Actions will not be created for transition to optional state.
 
 ### Video Tutorial
