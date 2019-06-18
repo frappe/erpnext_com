@@ -58,4 +58,15 @@ your product page.
 ![Product Page](/docs/assets/img/website/product-page.png)
 *Product Page*
 
+## Custom HTML
+
+You can further customize your Product Page by adding Custom HTML in the Website
+Content field of the Website Specifications section.
+
+![Custom Website Content](/docs/assets/img/website/custom-website-content.png)
+*Custom Website Content*
+
+![Product Page with Custom Content](/docs/assets/img/website/product-page-with-custom-content.png)
+*Product Page with Custom Content*
+
 {next}
