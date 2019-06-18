@@ -36,3 +36,5 @@ your elements look.
 
 > **Note:** Make sure you set the Website Theme in Website Settings for the theme to
 > be applied.
+
+{next}
