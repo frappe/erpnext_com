@@ -11,32 +11,30 @@ homepage or visiting the **/all-products** route. For example,
 ![Product Listing](/docs/assets/img/website/product-listing.png)
 *Product Listing*
 
-## Products Settings
+## 1. Products Settings
 
-The Product Listing can be configured from Products Settings.
-
-> Website > Portal > Products Settings
+The Product Listing can be configured from Products Settings. Go to  **Website > Portal > Products Settings**.
 
 ![Products Settings](/docs/assets/img/website/products-settings.png)
 *Products Settings*
 
 Here are some of the configuration options:
 
-**Home Page is Products**: If checked, the default home page will be set to
-Product Listing.
-**Products Per Page**: Define how many products to show per page on the Product
-Listing.
-**Hide Variants**: Only show Item Templates on the Product Listing. You can hide
-variants only when Attribute Filters are disabled.
+1. **Home Page is Products**: If checked, the default home page will be set to
+   Product Listing.
+1. **Products Per Page**: Define how many products to show per page on the
+   Product Listing.
+1. **Hide Variants**: Only show Item Templates on the Product Listing. You can
+   hide variants only when Attribute Filters are disabled.
 
-## Filters
+### 1.1 Filters
 
 You can also add filters to your listing. There are two types of filters:
 
 - Field Filters
 - Attribute Filters
 
-### Field Filters
+#### Field Filters
 
 Enable the Field Filters checkbox in Products Settings and add the fields based
 on which you want to have the filters.
@@ -44,7 +42,7 @@ on which you want to have the filters.
 ![Field Filters](/docs/assets/img/website/field-filters.png)
 *Field Filters*
 
-### Attribute Filters
+#### Attribute Filters
 
 Enable the Attribute Filters checkbox in Products Settings and add the
 attributes based on which you want to have the filters.
