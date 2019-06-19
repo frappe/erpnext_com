@@ -4,9 +4,7 @@
 In addition to listing your products, ERPNext also allows you to sell them via
 the Shopping Cart.
 
-To enable Shopping Cart, go to:
-
-> Website > Portal > Shopping Cart Settings
+To enable Shopping Cart, go to **Website > Portal > Shopping Cart Settings**
 
 ![Shopping Cart Settings](/docs/assets/img/website/shopping-cart-settings.png)
 *Shopping Cart Settings*
@@ -21,11 +19,11 @@ Here are some configuration options:
 1. **Show Contact Us Button**: Show a contact us button which customers can use
    to enquire about the Item. It will create a Lead in the system.
 
-## Item Types
+## 1. Item Types
 
 Shopping Cart works differently for Items with and without variants.
 
-### Items without variants
+### 1.1 Items without variants
 
 Items without variants have their dedicated product page and an **Add to Cart**
 button. The stock information is also shown if they are enabled in Shopping Cart
@@ -34,7 +32,7 @@ Settings.
 ![Item without Variants](/docs/assets/img/website/item-without-variants.png)
 *Item without Variants*
 
-### Items with variants
+### 1.2 Items with variants
 
 Since Item Templates can't be bought directly, there is a Configure button to
 choose the specific variant and add it to cart.
@@ -42,7 +40,7 @@ choose the specific variant and add it to cart.
 ![Item with Variants](/docs/assets/img/website/item-with-variants.gif)
 *Item with Variants*
 
-## Cart Quotation
+## 2. Cart Quotation
 
 If checkout is disabled, when your customers add an item to cart, they can click
 on the **Request for Quotation** button and get a quote for it. A Quotation is
@@ -51,7 +49,7 @@ generated in the system.
 ![Cart Quotation](/docs/assets/img/website/cart-quotation.png)
 *Cart Quotation*
 
-## Cart Checkout
+## 3. Cart Checkout
 
 You can enable checkout from **Checkout Settings** section in Shopping Cart
 Settings. You must have [PayPal Integration](/docs/user/manual/en/setting-up/integrations/paypal-integration)
