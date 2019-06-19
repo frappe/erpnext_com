@@ -4,19 +4,24 @@
 ERPNext provides advanced theming capabilities to customize the look and feel of
 your website and make it match your brand.
 
-To create a new Website Theme, go to:
+## 1. How to create a Website Theme
 
-> Website > Setup > Website Theme
+1. Go to **Website > Setup > Website Theme**.
+1. Enter a Theme Name.
+1. Click on Configure Theme and customize your theme.
+1. Click on Save.
 
-## Configure Theme
-
-Click on the **Configure Theme** button in the top right and set your theme
-values. Check out the GIF for setting up your Website Theme.
+Check out the GIF on creating a Website Theme.
 
 ![Website Theme](/docs/assets/img/website/website-theme.gif)
 *Website Theme*
 
-## Theme
+> **Note:** Make sure you set the Website Theme in Website Settings for the theme to
+> be applied.
+
+## 2. Features
+
+### 2.1 Theme
 
 The Configure Dialog is there for bootstrapping a basic theme. However, if you
 know SCSS and Bootstrap 4 theming you can manually write custom SCSS in the
@@ -28,13 +33,10 @@ imports `frappe/public/scss/website` and `erpnext/public/scss/website`. These
 are the default theme files for `frappe` and `erpnext` app. You can remove them
 if you want to write all of the CSS by yourself.
 
-## Custom JS
+### 2.2 Custom JS
 
 You can also write custom JavaScript that will run when your theme is applied.
 Use it add/remove classes from elements, or any script that helps you change how
 your elements look.
-
-> **Note:** Make sure you set the Website Theme in Website Settings for the theme to
-> be applied.
 
 {next}
