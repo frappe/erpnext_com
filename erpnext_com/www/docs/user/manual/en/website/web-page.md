@@ -4,14 +4,24 @@
 Static Content like your Home Page, About Us, Contact Us, Terms pages can be
 created using the Web Page.
 
-To create a new Web Page, go to:
+## 1. How to create a Web Page
 
-> Website > Web Page > New
+1. Go to **Website > Web Page > New**
+1. Enter a Title and add content in Main Section. The route will auto generated
+   but you can change it if you want.
+1. Click on Save.
 
 ![New Web Page](/docs/assets/img/website/new-web-page.png)
 *New Web Page*
 
-#### Title
+View your Web Page by clicking on **See on Website** in the sidebar.
+
+![Web Page](/docs/assets/img/website/web-page.png)
+*Web Page*
+
+### 1.1 Tips on making a good Web Page
+
+####  Title
 
 The first thing to set is the title of your page. The title has the maximum
 weight for search engines so choose a title that reflects the keywords that you
@@ -44,17 +54,14 @@ Now, add them to your Markdown or HTML using the appropriate syntax.
 <img src="/path/to/image-url.png" alt="Alt Text">
 ```
 
-View your Web Page by clicking on **See on Website** in the sidebar.
+## 2. Features
 
-![Web Page](/docs/assets/img/website/web-page.png)
-*Web Page*
-
-## Slideshow
+### 2.1 Slideshow
 
 You can also add a Slideshow to your Web Page. Refer how to create a Slideshow
 at [Homepage Slideshow](/docs/user/manual/en/website/homepage#homepage-slideshow)
 
-## Scheduled Publishing
+### 2.2 Scheduled Publishing
 
 You can schedule your Web Pages for publishing if you set Start Date and End
 Date for your Web Page. They will be set as published inside the date ranges and
@@ -62,7 +69,7 @@ will be unpublished outside the range automatically.
 
 Unpublished pages will throw an `Error 404` when they are visited.
 
-## Javascript and CSS
+### 2.3 Javascript and CSS
 
 You can add a JS script to your Web Page in the **Script** section. Make sure to
 write your script inside the `frappe.ready` callback.
@@ -77,7 +84,7 @@ You can add CSS styling to your Web Page in the **Style** section. Inspect the
 elements to see what classes are available for styling. If you are using HTML
 Content, you can use your own classes and style them here.
 
-## Sidebar
+### 2.4 Sidebar
 
 You can add a Website Sidebar with custom links on your Web Page. In the
 **Sidebar and Comments** section enable **Show Sidebar**. Select an existing
@@ -93,7 +100,7 @@ Add links and their route in the Sidebar Items table.
 ![Web Page with Sidebar](/docs/assets/img/website/web-page-with-sidebar.png)
 *Web Page with Sidebar*
 
-## Comments
+### 2.5 Comments
 
 You can enable comments on your Web Page where people can leave a comment with
 their Name and Email. Enable comments from the **Sidebar and Comments** section.
@@ -101,7 +108,7 @@ their Name and Email. Enable comments from the **Sidebar and Comments** section.
 ![Web Page Comments](/docs/assets/img/website/web-page-comments.gif)
 *Web Page Comments*
 
-## Header
+### 2.6 Header
 
 You can add a custom HTML for the header section of the page. This will override
 the title of the Web Page.
@@ -112,7 +119,7 @@ the title of the Web Page.
 ![Web Page with Custom Header](/docs/assets/img/website/web-page-with-custom-header.png)
 *Web Page with Custom Header*
 
-## Breadcrumbs
+### 2.7 Breadcrumbs
 
 You can add a list of breadcrumbs on your Web Page. These will be shown on top
 before the header.
@@ -123,7 +130,7 @@ before the header.
 ![Web Page with Breadcrumbs](/docs/assets/img/website/web-page-with-breadcrumbs.png)
 *Web Page with Breadcrumbs*
 
-## Meta Tags
+### 2.8 Meta Tags
 
 You can also add Meta Tags to your Web Page. You must add the property key and
 its value in the Meta Tag Table and it will auto-generate HTML `meta` tags on
