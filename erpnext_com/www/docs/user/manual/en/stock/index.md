@@ -13,24 +13,27 @@ The stock module is tightly integrated with Purchase, Manufacturing and Accounti
 
 ### 1.1 Basics
 1. [Introduction](/docs/user/manual/en/stock/introduction)
+1. [Item](/docs/user/manual/en/stock/item)
+1. [Warehouse](/docs/user/manual/en/stock/warehouse)
 1. [Opening Stock](/docs/user/manual/en/stock/opening-stock)
 1. [Accounting Of Inventory Stock](/docs/user/manual/en/stock/accounting-of-inventory-stock)
-1. [Item](/docs/user/manual/en/stock/item)
 
-### 1.2 Setup
+### 1.2 Item Variants
+1. [Item Variants](/docs/user/manual/en/stock/item-variants)
+1. [Item Attribute](/docs/user/manual/en/stock/item-attribute)
+
+### 1.3 Setup
 1. [Stock Settings](/docs/user/manual/en/stock/stock-settings)
 1. [Item Price](/docs/user/manual/en/stock/item-price)
 1. [Item Group](/docs/user/manual/en/stock/item-group)
-1. [Item Variants](/docs/user/manual/en/stock/item-variants)
-1. [Item Attribute](/docs/user/manual/en/stock/item-attribute)
 1. [Item Codification](/docs/user/manual/en/stock/item-codification)
-1. [Warehouse](/docs/user/manual/en/stock/warehouse)
 
 ### 1.3 Stock Transactions
 1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
 1. [Material Request](/docs/user/manual/en/stock/material-request)
 1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
 1. [Delivery Note](/docs/user/manual/en/stock/delivery-note)
+1. [Packing Slip](/docs/user/manual/en/stock/packing-slip)
 1. [Retaining Sample Stock](/docs/user/manual/en/stock/retain-sample-stock)
 1. [Landed Cost Voucher](/docs/user/manual/en/stock/landed-cost-voucher)
 
@@ -40,15 +43,16 @@ The stock module is tightly integrated with Purchase, Manufacturing and Accounti
 1. [Installation Note](/docs/user/manual/en/stock/installation-note)
 
 ### 1.5 Tools
-1. [Packing Slip](/docs/user/manual/en/stock/packing-slip)
 1. [Quality Inspection](/docs/user/manual/en/stock/quality-inspection)
 1. [Stock Reconciliation](/docs/user/manual/en/setting-up/stock-reconciliation-for-non-serialized-item)
+
+### 1.6 Return
+1. [Sales Return](/docs/user/manual/en/stock/sales-return)
+1. [Purchase Return](/docs/user/manual/en/stock/purchase-return)
 
 ### 1.6 Advanced
 1. [Delivery Trip](/docs/user/manual/en/stock/delivery-trip)
 1. [Projected Quantity](/docs/user/manual/en/stock/projected-quantity)
-1. [Sales Return](/docs/user/manual/en/stock/sales-return)
-1. [Purchase Return](/docs/user/manual/en/stock/purchase-return)
 1. [Perpetual Inventory](/docs/user/manual/en/stock/perpetual-inventory)
 
 ## 2. Articles
