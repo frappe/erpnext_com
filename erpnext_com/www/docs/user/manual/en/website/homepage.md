@@ -9,21 +9,29 @@ can customize it in Homepage.
 ![Homepage](/docs/assets/img/website/homepage.png)
 *Homepage*
 
+> Make sure your default homepage is set as **home** in Website Settings for
+> this to work.
+
+## 1. Hero Section
+
+There are three ways in which you can customize the way the Hero Section looks:
+
+1. Tag Line and Description (Default)
+1. Homepage Slideshow
+1. Custom Hero Section
+
+### 1.1 Tag Line and Description
+
 After you set your Tag Line, Description and Hero Image you'll have a decent
 looking front page. You can also change the URL for the Explore button.
 
 ![Website Homepage](/docs/assets/img/website/website-homepage.png)
 *Website Homepage*
 
-> Make sure your default homepage is set as **home** in Website Settings for
-> this to work.
+### 1.2 Homepage Slideshow
 
-## Homepage Slideshow
-
-There are three types of Hero Section you can configure on the Homepage. The
-first one (Default) is the one you have already seen above.
-
-The second type is Slideshow. Set the **Hero Section Based On** to **Slideshow**.
+Set the **Hero Section Based On** to **Slideshow** and the Homepage Slideshow
+field will appear.
 
 ![Homepage Slideshow Setting](/docs/assets/img/website/homepage-slideshow-setting.png)
 *Homepage Slideshow Setting*
@@ -38,7 +46,7 @@ Now, select an existing Slideshow or create a new one.
 
 ![Website Homepage with Slideshow](/docs/assets/img/website/website-homepage-slideshow.gif)
 
-## Custom Hero Section
+### 1.3 Custom Hero Section
 
 The third type of Hero Section allows you to write your own HTML.
 
@@ -60,7 +68,7 @@ Write your custom HTML in the Section HTML field.
 ![Homepage Hero Custom](/docs/assets/img/website/website-homepage-custom.png)
 *Homepage Hero Custom*
 
-## Featured Products
+## 2. Featured Products
 
 You can also show featured products on your Homepage by adding them to the
 Products Table.
@@ -72,7 +80,7 @@ Products Table.
 ![Featured Products on Homepage](/docs/assets/img/website/website-featured-products.png)
 *Featured Products on Homepage*
 
-## Homepage Section
+## 3. Homepage Section
 
 You can add custom sections on your Homepage by creating new Homepage Sections.
 
@@ -92,9 +100,9 @@ Add details for each card like Title, Subtitle, Image, Content and Route.
 You can also control the order in which these sections appear by setting the
 **Section Order**. 0 will be shown first, followed by 1, and so on.
 
-> To add Sections with Custom HTML refer [Custom Hero Section](#custom-hero-section).
+> To add Sections with Custom HTML refer [Custom Hero Section](#13-custom-hero-section).
 
-## Custom Homepage
+## 4. Custom Homepage
 
 ERPNext allows you to have a completely different homepage if you dont want to
 use the default one described above.
