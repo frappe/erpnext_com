@@ -7,9 +7,11 @@ customers and readers updated of what you are up to.
 In the age of internet, writing assumes a lot of significance because when
 people come to your website, they want to read about you and your product.
 
-To create a new blog, go to:
+## 1. How to create a Blog Post
 
-> Website > Blog > Blog Post
+1. Go to **Website > Blog > Blog Post**
+1. Enter the Title, Blog Category, Blogger and the Content.
+1. Enable Published and click on Save.
 
 ![New Blog Post](/docs/assets/img/website/new-blog-post.png)
 
@@ -26,11 +28,11 @@ View your Blog Post by clicking on **See on Website** in the sidebar.
 ![Blog Post](/docs/assets/img/website/blog-post.png)
 *Blog Post*
 
-## Blogger
+## 2. Features
 
-Blogger is a user who can post blogs. To create a Blogger, go to:
+### 2.1 Blogger
 
-> Website > Blog > Blogger
+Blogger is a user who can post blogs. To create a Blogger, go to **Website > Blog > Blogger**.
 
 You can mention a short bio about the blogger and also set an avatar here.
 
@@ -41,11 +43,10 @@ The preview will be shown at the end of the blog post.
 ![Blogger Preview](/docs/assets/img/website/blogger-preview.png)
 *Blogger Preview*
 
-## Blog Category
+### 2.2 Blog Category
 
-You can group your blogs into categories. To create a new Blog Category, go to:
-
-> Website > Blog > Blog Category
+You can group your blogs into categories. To create a new Blog Category, go to
+**Website > Blog > Blog Category**.
 
 ![Blog Category](/docs/assets/img/website/blog-category.png)
 *Blog Category*
