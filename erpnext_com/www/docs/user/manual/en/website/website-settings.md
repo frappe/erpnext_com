@@ -6,7 +6,7 @@ configured here.
 
 > Website > Setup > Website Settings
 
-## Landing Page
+## 1. Landing Page
 
 Configure the default landing page of your website by setting the **Home Page**
 field to the route of that page. You can put any route here including standard
@@ -23,12 +23,14 @@ If you want to use the ERPNext Homepage, you must set it to `home`.
 You can also set the **Title Prefix** here. It will be appended to the browser title
 on every page. It is recommended to put your company name here.
 
-## Website Theme
+## 2. Website Theme
 
 Create a personalized theme for your Website and set it here. Learn more about
 configuring Website Theme [here](/docs/user/manual/en/website/website-theme).
 
-## Brand
+## 3. Brand
+
+### 3.1 Brand Logo
 
 You can set the brand logo for your website in this section. Upload the Brand
 Image first and then click on "Set Banner from Image" button. It will generate a
@@ -36,6 +38,8 @@ Banner HTML with your uploaded logo.
 
 ![Website Settings - Banner Image](/docs/assets/img/website/website-settings-banner-image.png)
 *Website Settings - Banner Image*
+
+### 3.2 Favicon
 
 You can also set the favicon of your website in this section.
 
@@ -47,7 +51,7 @@ View your website by clicking on **View Website** in the action bar on top right
 ![Website with Brand and Favicon](/docs/assets/img/website/website-brand-and-favicon.png)
 *Website with Brand and Favicon*
 
-## Top Bar
+## 4. Top Bar
 
 You can customize the menu items in the navbar of your website from the **Top Bar**
 section.
@@ -58,7 +62,7 @@ section.
 ![Website Navbar Items](/docs/assets/img/website/website-navbar-items.png)
 *Website Navbar Items*
 
-## Banner
+## 5. Banner
 
 You can add a persistent banner to your website which will be shown above the
 navbar on all web pages. You can write any valid Bootstrap 4 markup here.
@@ -69,7 +73,7 @@ navbar on all web pages. You can write any valid Bootstrap 4 markup here.
 ![Website Banner](/docs/assets/img/website/website-banner.png)
 *Website Banner*
 
-## Footer
+## 6. Footer
 
 You can add address information and categorized links to your footer in the
 **Footer** section.
@@ -83,7 +87,7 @@ You can add address information and categorized links to your footer in the
 ![Website Footer](/docs/assets/img/website/website-footer.png)
 *Website Footer*
 
-## Integrations
+## 7. Integrations
 
 You can enable Google Analytics on your website. Just get your [Google Analytics
 ID](https://support.google.com/analytics/answer/1008080?hl=en) from your Google
@@ -92,7 +96,7 @@ Console and set it here.
 ![Google Analytics Integration](/docs/assets/img/website/website-settings-integrations.png)
 *Google Analytics Integration*
 
-## HTML Header
+## 8. HTML Header
 
 You can use this section to set meta tags across all of your web pages. A common
 use case is to add google site verification tags.
@@ -100,7 +104,7 @@ use case is to add google site verification tags.
 ![Website Settings - Header](/docs/assets/img/website/website-settings-header.png)
 *Website Settings - Header*
 
-## Robots
+## 9. Robots
 
 You can define `robots.txt` rules in this section. This information is used by
 web crawlers to decide which pages to index and skip.
@@ -110,7 +114,7 @@ web crawlers to decide which pages to index and skip.
 
 > Learn more about `robots.txt` at [Moz - Robots.txt](https://moz.com/learn/seo/robotstxt)
 
-## Redirects
+## 10. Redirects
 
 You can define a mapping of route redirects here. The mappings in the following
 screenshot makes sure that if a user visits `https://apple.erpnext.com/iphone`,
@@ -125,7 +129,7 @@ ERPNext will raise a `301 Permanent Redirect` response for these routes.
 > you can map your old routes to new ones here and these redirects will be
 > picked up by Google and will help you maintain your SEO rankings.
 
-## Chat
+## 11. Chat
 
 You can enable website visitor chat on your website in the Chat section. The
 chat widget will be shown between **From** time and **To** time. You can also
