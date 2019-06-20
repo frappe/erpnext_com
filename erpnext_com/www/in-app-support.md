@@ -1,5 +1,5 @@
 <section class='top-section'>
-<h1>In-App Support</h1>
+<h1>Frappe Customer Support</h1>
 </section>
 
 
