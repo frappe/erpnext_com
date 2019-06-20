@@ -13,8 +13,8 @@ The stock module is tightly integrated with Purchase, Manufacturing and Accounti
 
 ### 1.1 Basics
 1. [Introduction](/docs/user/manual/en/stock/introduction)
-1. [Item](/docs/user/manual/en/stock/item)
 1. [Warehouse](/docs/user/manual/en/stock/warehouse)
+1. [Item](/docs/user/manual/en/stock/item)
 1. [Opening Stock](/docs/user/manual/en/stock/opening-stock)
 1. [Accounting Of Inventory Stock](/docs/user/manual/en/stock/accounting-of-inventory-stock)
 
@@ -26,9 +26,8 @@ The stock module is tightly integrated with Purchase, Manufacturing and Accounti
 1. [Stock Settings](/docs/user/manual/en/stock/stock-settings)
 1. [Item Price](/docs/user/manual/en/stock/item-price)
 1. [Item Group](/docs/user/manual/en/stock/item-group)
-1. [Item Codification](/docs/user/manual/en/stock/item-codification)
 
-### 1.3 Stock Transactions
+### 1.4 Stock Transactions
 1. [Stock Entry](/docs/user/manual/en/stock/stock-entry)
 1. [Material Request](/docs/user/manual/en/stock/material-request)
 1. [Purchase Receipt](/docs/user/manual/en/stock/purchase-receipt)
@@ -37,20 +36,20 @@ The stock module is tightly integrated with Purchase, Manufacturing and Accounti
 1. [Retaining Sample Stock](/docs/user/manual/en/stock/retain-sample-stock)
 1. [Landed Cost Voucher](/docs/user/manual/en/stock/landed-cost-voucher)
 
-### 1.4 Serial and Batch Number
+### 1.5 Serial and Batch Number
 1. [Serial Number](/docs/user/manual/en/stock/serial-no)
 1. [Batch](/docs/user/manual/en/stock/batch)
 1. [Installation Note](/docs/user/manual/en/stock/installation-note)
 
-### 1.5 Tools
+### 1.6 Tools
 1. [Quality Inspection](/docs/user/manual/en/stock/quality-inspection)
 1. [Stock Reconciliation](/docs/user/manual/en/setting-up/stock-reconciliation-for-non-serialized-item)
 
-### 1.6 Return
+### 1.7 Return
 1. [Sales Return](/docs/user/manual/en/stock/sales-return)
 1. [Purchase Return](/docs/user/manual/en/stock/purchase-return)
 
-### 1.6 Advanced
+### 1.8 Advanced
 1. [Delivery Trip](/docs/user/manual/en/stock/delivery-trip)
 1. [Projected Quantity](/docs/user/manual/en/stock/projected-quantity)
 1. [Perpetual Inventory](/docs/user/manual/en/stock/perpetual-inventory)
@@ -74,6 +73,7 @@ The stock module is tightly integrated with Purchase, Manufacturing and Accounti
 1. [Track Items Using Barcode](/docs/user/manual/en/stock/articles/track-items-using-barcode)
 1. [Creating Depreciation For Item](/docs/user/manual/en/stock/articles/creating-depreciation-for-item)
 1. [Item Valuation FIFO And Moving Average](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average)
+1. [Item Codification](/docs/user/manual/en/stock/item-codification)
 
 ### 2.4 Serial and Batch Number
 1. [Serial Number Naming](/docs/user/manual/en/stock/articles/serial-no-naming)
