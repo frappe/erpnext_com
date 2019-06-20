@@ -4,12 +4,13 @@
 ERPNext provides product pages for your Sales Items, they can be configured from
 the Item Master.
 
-Go to:
-> Stock > Items and Pricing > Item
+Product Page is built for an Item. If you haven't created any Item go to:
+> Home > Stock > Items and Pricing > Item
 
 ## 1. How to configure a Product Page
 1. Enter the Item Code, Item Name, Item Group, and Selling Rate.
     ![New Item](/docs/assets/img/website/new-item.png)
+1. Click on **Edit in full page** button to open the form.
 1. Go to the Website section and enable **Show in Website**.
 1. Click on Save.
 1. View your Product Page by clicking on **Show on Website** in the sidebar.
@@ -21,9 +22,8 @@ Go to:
 If you have an Item that has multiple variants, for example, Apple iPhone XR
 with different colors and storage sizes, you can create a Template Item.
 
-Click on **Edit in full page** button to open the Item form. Scroll down to the
-Variants section and enable **Has Variants** and add the attributes in the
-attributes table.
+Go to the Variants section and enable **Has Variants** and add the
+attributes in the attributes table.
 
 ![Item with Variants](/docs/assets/img/website/item-with-variants.png)
 *Item with Variants*

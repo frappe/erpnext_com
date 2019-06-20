@@ -1,11 +1,12 @@
 <!-- add-breadcrumbs -->
 # Web Page
 
-**Static Content like your Home Page, About Us, Contact Us, Terms pages can be created using the Web Page.**
+**Static Content like your Home Page, About Us, Contact Us, Terms pages can be
+created using the Web Page.**
 
 To access Web Page go to:
 
-> Home > Website > Web Page
+> Home > Website > Web Site > Web Page
 
 ## 1. How to create a Web Page
 
@@ -29,8 +30,8 @@ View your Web Page by clicking on **See on Website** in the side bar.
 
 The first thing to set is the title of your page. The title has the maximum
 weight for search engines so choose a title that reflects the keywords that you
-are targeting for your audience. The route (URL) will be auto-generated from the title
-but you can change it.
+are targeting for your audience. The route (URL) will be auto-generated from the
+title but you can change it.
 
 #### Content
 
@@ -41,10 +42,9 @@ simple content pages, Rich Text and Markdown are great options.
 
 #### Images
 
-For Rich Text Content, you can directly embed images using the editor.
-For Markdown and HTML, you must attach the images to the document first.
-Now get the URL of your image by right-clicking on your attachment and copying
-the address.
+For Rich Text Content, you can directly embed images using the editor. For
+Markdown and HTML, you must attach the images to the document first. Now get the
+URL of your image by right-clicking on your attachment and copying the address.
 
 ![Image Link](/docs/assets/img/website/get-image-link.png)
 

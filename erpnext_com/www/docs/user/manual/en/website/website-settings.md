@@ -5,7 +5,7 @@ Website related settings like landing page and website wide theme can be
 configured here.
 
 To access Website Settings, go to:
-> Website > Setup > Website Settings
+> Home > Website > Setup > Website Settings
 
 ## 1. Landing Page
 
@@ -16,13 +16,14 @@ routes like `home`, `about`, `contact`, `login`, `all-products`, and `blog`.
 You can also set a [Web Page](/docs/user/manual/en/website/web-page) as the
 landing page.
 
-If you want to use the ERPNext Homepage, you must set it as `home`.
+If you want to use the ERPNext [Homepage](/docs/user/manual/en/website/homepage),
+you must set it as `home`.
 
 ![Website Settings - Landing Page](/docs/assets/img/website/website-settings-landing-page.png)
 *Website Settings - Landing Page*
 
 You can also set the **Title Prefix** here. It will be appended to the browser title
-on every page. It is recommended to put your company name here.
+on every page. You can put your company name here.
 
 ## 2. Website Theme
 
@@ -42,7 +43,8 @@ Banner HTML with your uploaded logo.
 
 ### 3.2 Favicon
 
-You can also set the favicon of your website in this section. It appears on the left side of the browser tab.
+You can also set the favicon of your website in this section. It appears on the
+left side of the browser tab.
 
 ![Website Settings - Favicon](/docs/assets/img/website/website-settings-favicon.png)
 *Website Settings - Favicon*
@@ -108,7 +110,7 @@ use case is to add Google site verification tags.
 ## 9. Robots
 
 You can define `robots.txt` rules in this section. This information is used by
-web crawlers to decide which pages to index and skip.
+web crawlers to decide which pages to index and which to skip.
 
 ![Website Settings - Robots](/docs/assets/img/website/website-settings-robots-txt.png)
 *Website Settings - Robots*

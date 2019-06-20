@@ -1,18 +1,18 @@
 <!-- add-breadcrumbs -->
 # Homepage
 
-**A homepage is the root or first page of your website from where other pages can be accessed.**
+**A homepage is the default landing page of your website.**
 
 ERPNext's Website Module generates a default landing page for your website. You
-can customize it.
+can customize it in Homepage.
 
 To access the Homepage page in ERPNext, go to:
 
 > Home > Website > Portal > Homepage
 
 ## 1. How to setup Home Page
-1. Select the company for which you're creating the homepage.
-1. Enter a title for the page.
+1. Select the Company.
+1. Set the Title. This will be shown in the Browser Tab.
 1. Configure the Hero Section as explained in the next section.
 
 ![Homepage](/docs/assets/img/website/homepage.png)
@@ -62,7 +62,7 @@ The third type of Hero Section allows you to write your own HTML.
 Set **Hero Section Based On** to **Hero Section**.
 
 Now create a new Hero Section. Set **Section Based On** as **Custom HTML**.
-Write your custom HTML in the Section HTML field. 
+Write your custom HTML in the Section HTML field.
 
 ![Homepage Settings](/docs/assets/img/website/homepage-hero-custom.png)
 *Homepage Settings*
@@ -72,7 +72,7 @@ You can write any valid [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-
 ![New Hero Section](/docs/assets/img/website/hero-custom.png)
 *New Hero Section*
 
-Example: 
+It will look something like this:
 ![Homepage Hero Custom](/docs/assets/img/website/website-homepage-custom.png)
 *Homepage Hero Custom*
 
@@ -100,7 +100,8 @@ to **Cards**.
 ![New Homepage Section](/docs/assets/img/website/new-homepage-section.png)
 *New Homepage Section*
 
-Add details for each card like Title, Subtitle, Image, Content and Route in the Section Cards table.
+Add details for each card like Title, Subtitle, Image, Content and Route in the
+Section Cards table.
 
 It will look something like this:
 ![Homepage Section](/docs/assets/img/website/homepage-section.png)

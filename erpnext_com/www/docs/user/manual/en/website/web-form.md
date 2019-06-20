@@ -18,7 +18,7 @@ details of the complaints they have registered. These can be done using Web Form
 
 To create a new **Web Form** go to:
 
-> Website > Web Site > Web Form
+> Home > Website > Web Site > Web Form
 
 ![New Web Form](/docs/assets/img/website/new-web-form-1.png)
 *New Web Form*
@@ -42,7 +42,7 @@ Here is an explanation of each of the checkboxes on the right.
 
 1. **Published**: Web Form will be accessible only if this is enabled.
 1. **Login Required**: User can fill the Web Form only if they are logged in.
-    When Login Required is checked, 
+    When Login Required is checked,
 1. **Route to Success Link**: Go to Success Link after the form is submitted.
 1. **Allow Edit**: If this is unchecked the form becomes read-only once it is
    saved.

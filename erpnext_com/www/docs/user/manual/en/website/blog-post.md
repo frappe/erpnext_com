@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Blog Post
 
-**A Blog is an article on a web page.**
+**A Blog Post is an article on your website.**
 
 Blogs are a great way to share your thoughts about your business.
 It helps keep your customers and readers updated on news related to your business.
@@ -9,16 +9,17 @@ It helps keep your customers and readers updated on news related to your busines
 In the age of the internet, writing assumes a lot of significance because when
 people come to your website, they want to read about you and your product.
 
-To access the Blog Post page, go to:
+To access the Blog Post, go to:
 > Home > Website > Blog > Blog Post
 
-## 1. How to Create a Blog Post
+## 1. How to create a Blog Post
 
 1. Click on New.
 1. Enter the Title, Blog Category, Blogger, and the Content.
 1. Enable Published and click on Save.
 
-The Blog Intro is a short description of your blog that appears just after the title and before the content.
+The Blog Intro is a short description of your blog that appears just after the
+title and before the content.
 
 ![New Blog Post](/docs/assets/img/website/new-blog-post.png)
 
@@ -39,7 +40,9 @@ View your Blog Post by clicking on **See on Website** in the sidebar.
 
 ### 2.1 Blogger
 
-Blogger is a user who can post blogs. To create a Blogger, go to **Website > Blog > Blogger**.
+Blogger is a user who can post blogs. To create a Blogger, go to:
+
+**Home > Website > Blog > Blogger**.
 
 You can mention a short bio about the blogger and also set an avatar here.
 
@@ -54,7 +57,7 @@ The preview will be shown at the end of the blog post.
 
 You can group your blogs into categories. To create a new Blog Category, go to:
 
-**Website > Blog > Blog Category**.
+**Home > Website > Blog > Blog Category**.
 
 ![Blog Category](/docs/assets/img/website/blog-category.png)
 *Blog Category*
