@@ -16,7 +16,7 @@ In-App Support is accessible in the `Help` dropdown. Click on `ERPNext Support` 
 - All the Communication that takes place between You and Frappe Technologies is maintained in the respective Support Issue.
 <img class="img-responsive feature-image screenshot" src="/assets/erpnext_com/images/in-app-support/sp2.gif">
 
-- You can reply to an Issue by click on the `Reply` button in the timeline.
+- You can reply to an Issue by click on the **Reply** button in the timeline.
 <img class="img-responsive feature-image screenshot" src="/assets/erpnext_com/images/in-app-support/sp3.gif">
 
 - An Issue created is visible to all the Users of your Company in order to reduce duplicate Issue reporting.
