@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from erpnext_com.www.pricing.index import get_country
 
 def get_context(context):
