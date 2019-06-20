@@ -7,7 +7,7 @@ To serve Customers more efficiently on Support Issues, Frappe Technologies is im
 
 #### Using In App Support
 
-In-App Support is accessible in the `Help` dropdown. Click on `ERPNext Support` and follow the steps to raise a Support Ticket
+In-App Support is accessible in the **Help** dropdown. Click on **ERPNext Support** and follow the following steps to raise a Support Ticket
 
 
 - Creating a new Support Issue using the In-App Support.
