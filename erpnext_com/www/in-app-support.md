@@ -19,5 +19,5 @@ In-App Support is accessible in the `Help` dropdown. Click on `ERPNext Support` 
 - You can reply to an Issue by click on the **Reply** button in the timeline.
 <img class="img-responsive feature-image screenshot" src="/assets/erpnext_com/images/in-app-support/sp3.gif">
 
-- An Issue created is visible to all the Users of your Company in order to reduce duplicate Issue reporting.
+- An Issue created by a user is visible to all the users of your ERPNext account in order to reduce duplicate Issue reporting.
 <img class="img-responsive feature-image screenshot" src="/assets/erpnext_com/images/in-app-support/sp1.png">
