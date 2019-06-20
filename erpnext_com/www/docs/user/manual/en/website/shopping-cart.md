@@ -4,7 +4,9 @@
 In addition to listing your products, ERPNext also allows you to sell them via
 the Shopping Cart.
 
-To enable Shopping Cart, go to **Website > Portal > Shopping Cart Settings**
+To enable Shopping Cart, go to:
+
+> Website > Portal > Shopping Cart Settings
 
 ![Shopping Cart Settings](/docs/assets/img/website/shopping-cart-settings.png)
 *Shopping Cart Settings*
@@ -43,7 +45,7 @@ choose the specific variant and add it to cart.
 ## 2. Cart Quotation
 
 If checkout is disabled, when your customers add an item to cart, they can click
-on the **Request for Quotation** button and get a quote for it. A Quotation is
+on the **Request for Quotation** button to get a quote for it. A [Quotation](/docs/user/manual/en/selling/quotation) is
 generated in the system.
 
 ![Cart Quotation](/docs/assets/img/website/cart-quotation.png)

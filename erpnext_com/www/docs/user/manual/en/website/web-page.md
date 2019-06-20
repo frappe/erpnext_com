@@ -1,20 +1,24 @@
 <!-- add-breadcrumbs -->
 # Web Page
 
-Static Content like your Home Page, About Us, Contact Us, Terms pages can be
-created using the Web Page.
+**Static Content like your Home Page, About Us, Contact Us, Terms pages can be created using the Web Page.**
+
+To access Web Page go to:
+
+> Home > Website > Web Page
 
 ## 1. How to create a Web Page
 
-1. Go to **Website > Web Page > New**
+1. Click on New.
 1. Enter a Title and add content in Main Section. The route will auto generated
-   but you can change it if you want.
+   but you can change it.
 1. Click on Save.
+1. The web page will be published only when **Published** is ticked.
 
 ![New Web Page](/docs/assets/img/website/new-web-page.png)
 *New Web Page*
 
-View your Web Page by clicking on **See on Website** in the sidebar.
+View your Web Page by clicking on **See on Website** in the side bar.
 
 ![Web Page](/docs/assets/img/website/web-page.png)
 *Web Page*
@@ -25,7 +29,7 @@ View your Web Page by clicking on **See on Website** in the sidebar.
 
 The first thing to set is the title of your page. The title has the maximum
 weight for search engines so choose a title that reflects the keywords that you
-are targeting for your audience. The route will be auto-generated from the title
+are targeting for your audience. The route (URL) will be auto-generated from the title
 but you can change it.
 
 #### Content
@@ -59,12 +63,12 @@ Now, add them to your Markdown or HTML using the appropriate syntax.
 ### 2.1 Slideshow
 
 You can also add a Slideshow to your Web Page. Refer how to create a Slideshow
-at [Homepage Slideshow](/docs/user/manual/en/website/homepage#homepage-slideshow)
+at [Homepage Slideshow](/docs/user/manual/en/website/homepage#22-homepage-slideshow)
 
 ### 2.2 Scheduled Publishing
 
 You can schedule your Web Pages for publishing if you set Start Date and End
-Date for your Web Page. They will be set as published inside the date ranges and
+Date for your Web Page. They will be set as published within the date ranges and
 will be unpublished outside the range automatically.
 
 Unpublished pages will throw an `Error 404` when they are visited.

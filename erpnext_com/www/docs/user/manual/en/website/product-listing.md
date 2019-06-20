@@ -4,7 +4,7 @@
 ERPNext provides a product listing page where your customers can discover your
 products. It is enabled by default if you have published Items on your website.
 
-You can go to the product listing by clicking on **Explore** button on your
+You can go to the product listing by clicking on the **Explore** button on your
 homepage or visiting the **/all-products** route. For example,
 `https://apple.erpnext.com/all-products`
 
@@ -50,7 +50,7 @@ attributes based on which you want to have the filters.
 ![Attribute Filters](/docs/assets/img/website/attribute-filters.png)
 *Attribute Filters*
 
-Go check your Product Listing, it should show filters on the sidebar.
+Go to your Product Listing, it should show filters on the sidebar.
 
 ![Product Listing with Filters](/docs/assets/img/website/product-listing-with-filters.png)
 *Product Listing with Filters*

@@ -4,6 +4,7 @@
 Website related settings like landing page and website wide theme can be
 configured here.
 
+To access Website Settings, go to:
 > Website > Setup > Website Settings
 
 ## 1. Landing Page
@@ -15,7 +16,7 @@ routes like `home`, `about`, `contact`, `login`, `all-products`, and `blog`.
 You can also set a [Web Page](/docs/user/manual/en/website/web-page) as the
 landing page.
 
-If you want to use the ERPNext Homepage, you must set it to `home`.
+If you want to use the ERPNext Homepage, you must set it as `home`.
 
 ![Website Settings - Landing Page](/docs/assets/img/website/website-settings-landing-page.png)
 *Website Settings - Landing Page*
@@ -41,7 +42,7 @@ Banner HTML with your uploaded logo.
 
 ### 3.2 Favicon
 
-You can also set the favicon of your website in this section.
+You can also set the favicon of your website in this section. It appears on the left side of the browser tab.
 
 ![Website Settings - Favicon](/docs/assets/img/website/website-settings-favicon.png)
 *Website Settings - Favicon*
@@ -99,7 +100,7 @@ Console and set it here.
 ## 8. HTML Header
 
 You can use this section to set meta tags across all of your web pages. A common
-use case is to add google site verification tags.
+use case is to add Google site verification tags.
 
 ![Website Settings - Header](/docs/assets/img/website/website-settings-header.png)
 *Website Settings - Header*

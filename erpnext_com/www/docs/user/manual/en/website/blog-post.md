@@ -1,21 +1,28 @@
 <!-- add-breadcrumbs -->
 # Blog Post
 
-Blogs are a great way to share your thoughts about your business and keep your
-customers and readers updated of what you are up to.
+**A Blog is an article on a web page.**
 
-In the age of internet, writing assumes a lot of significance because when
+Blogs are a great way to share your thoughts about your business.
+It helps keep your customers and readers updated on news related to your business.
+
+In the age of the internet, writing assumes a lot of significance because when
 people come to your website, they want to read about you and your product.
 
-## 1. How to create a Blog Post
+To access the Blog Post page, go to:
+> Home > Website > Blog > Blog Post
 
-1. Go to **Website > Blog > Blog Post**
-1. Enter the Title, Blog Category, Blogger and the Content.
+## 1. How to Create a Blog Post
+
+1. Click on New.
+1. Enter the Title, Blog Category, Blogger, and the Content.
 1. Enable Published and click on Save.
+
+The Blog Intro is a short description of your blog that appears just after the title and before the content.
 
 ![New Blog Post](/docs/assets/img/website/new-blog-post.png)
 
-You can write your blog in Rich Text, Markdown or HTML. If you want to write
+You can write your blog in Rich Text, Markdown, or HTML. If you want to write
 simple content pages, Rich Text and Markdown are great options. Learn how to
 attach images to your blog [here](/docs/user/manual/en/website/web-page#images).
 
@@ -45,7 +52,8 @@ The preview will be shown at the end of the blog post.
 
 ### 2.2 Blog Category
 
-You can group your blogs into categories. To create a new Blog Category, go to
+You can group your blogs into categories. To create a new Blog Category, go to:
+
 **Website > Blog > Blog Category**.
 
 ![Blog Category](/docs/assets/img/website/blog-category.png)

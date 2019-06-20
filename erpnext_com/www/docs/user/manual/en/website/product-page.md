@@ -4,12 +4,13 @@
 ERPNext provides product pages for your Sales Items, they can be configured from
 the Item Master.
 
-## 1. How to configure a Product Page
+Go to:
+> Stock > Items and Pricing > Item
 
-1. Go to **Stock > Items and Pricing > Item**.
+## 1. How to configure a Product Page
 1. Enter the Item Code, Item Name, Item Group, and Selling Rate.
     ![New Item](/docs/assets/img/website/new-item.png)
-1. Go to Website section and enable **Show in Website**.
+1. Go to the Website section and enable **Show in Website**.
 1. Click on Save.
 1. View your Product Page by clicking on **Show on Website** in the sidebar.
 
@@ -68,7 +69,7 @@ your product page.
 ![Product Page](/docs/assets/img/website/product-page.png)
 *Product Page*
 
-## 2.5 Custom HTML
+### 2.5 Custom HTML
 
 You can further customize your Product Page by adding Custom HTML in the Website
 Content field of the Website Specifications section.
