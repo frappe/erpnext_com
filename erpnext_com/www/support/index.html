@@ -1,170 +1,68 @@
-{% extends "templates/base.html" %}
-{% block title %}ERPNext for Self Hosted{% endblock %}
-{% block content %}
+{% extends "frappe_theme/templates/base.html" %}
+{% block title %}Frappe Support{% endblock %}
 
+{% from "erpnext_com/templates/includes/card_grid.html" import card_grid %}
+
+{% block head_include %}
+	<meta name="description" content="Frappe Support" />
+	<meta name="keywords" content="ERPNext Support, Enterprise Support, Developer Support" />
+	<meta name="google-site-verification" content="euiq62LnIrUF6eLvL7wZEnVxhdfkfzuIMnSYRf4JzGk" />
+{% endblock %}
+
+{% block content %}
 <section class='top-section'>
 	<div class='container'>
-		<h1>Support for Self Hosted</h1>
-		<p class="lead">Priority support for self hosted instances. Start for Free<p>
+	<h1>Self Hosted Support + Warranty</h1>
+	<p class='lead'>Ensure that your mission critical ERP platform is supported by the most experienced team</p>
+	<div class='py-4'></div>
 
-{% set features = [
-	{
-		"title": "All Modules",
-		"free": 1
-	},
-	{
-		"title": "Built in Integrations",
-		"free": 1
-	},
-	{
-		"title": "Forum Support",
-		"free": 1
-	},
-	{
-		"title": "Bug Fix Guarantee",
-	},
-	{
-		"title": "In-app Support",
-	},
-	{
-		"title": "Email / Phone Support",
-	},
-	{
-		"title": "Configuration Support",
-	},
-	{
-		"title": "Upgrade Management",
-	},
-	{
-		"title": "Server Support",
-	},
-	{
-		"title": "Scalability Support",
-	},
-] %}
-
-<div class='text-left d-none d-sm-block container border mt-5'>
-	<div class='row border-bottom' style='background-color: #f5f7fa;'>
-		<div class='col-sm-6'></div>
-		<div class='col-sm-3 text-center pt-3'>
-			<h5>Self Support</h5>
-		</div>
-		<div class='col-sm-3 text-center pt-3'>
-			<h5>ERPNext Support</h5>
-		</div>
+	{{ card_grid(
+		None,
+		None,
+		[
+			{
+				"title": "Bug Fix Warranty",
+				"content": "Get priority bug fix support from the core ERPNext team with the experience to ensure your systems run defect-free",
+				"url": "/support/details"
+			},
+			{
+				"title": "Server Support",
+				"content": "Get help from the Frappe team in debugging server issues and incidents, related to scaling or backups or recovery",
+				"url": "/support/details"
+			},
+			{
+				"title": "Product Support",
+				"content": "Get your ERPNext queries answered by trained and experienced Frappe Consultants",
+				"url": "/support/details"
+			},
+			{
+				"title": "Upgrade Support",
+				"content": "Get help while upgrading your ERPNext instance to the latest and greatest version",
+				"url": "/support/details"
+			},
+			{
+				"title": "In App Support",
+				"content": "Interact with Frappe Consultants and keep track of open tickets from inside your instance",
+				"url": "/support/details"
+			},
+			{
+				"title": "Security Alerts",
+				"content": "Update your instance as soon as security issues are fixed before they become known publicly",
+				"url": "/support/details"
+			},
+		])
+	}}
+	<div class='mt-5'>
+		<p class='lead'>Frappe Self Hosted Support starts at $150 / user / year</p>
+		<a href='/get-a-quote' class='btn btn-primary btn-lg'>Get Pricing</a>
+		<p class='mt-3'><a class='text-muted' href='/contact-form'>Contact Sales</a></p>
 	</div>
-
-	<div class='row border-bottom'>
-			<div class='col-sm-6'></div>
-			<div class='col-sm-3 text-center pt-3'>
-				<p>Free</p>
-			</div>
-			<div class='col-sm-3 text-center pt-3'>
-				<p>Starts at $150 / user / year</p>
-			</div>
-		</div>
-
-
-	{% for f in features %}
-	<div class='row border-bottom'>
-		<div class='col-sm-6 py-2'>
-			{{ f.title }}
-			{% if not f.free %}<a href='support/details' class='text-extra-muted small'>Learn More</a>{% endif %}
-		</div>
-		<div class='col-sm-3 py-2 text-center'>
-			{% if f.free %}<i class='octicon octicon-check text-primary'></i>{% endif %}
-		</div>
-		<div class='col-sm-3 py-2 text-center'>
-			<i class='octicon octicon-check text-primary'></i>
-		</div>
-	</div>
-	{% endfor %}
-
-	<div class='row mt-5'>
-		<div class='col-sm-6'></div>
-		<div class='col-sm-3 text-center'>
-			<a class='py-2 d-block' href='https://github.com/frappe/bench' target='_blank'
-				>Install via Bench</a>
-		</div>
-		<div class='col-sm-3 text-center'>
-			<a href='/contact-form' class='btn btn-primary'>Get in Touch</a>
-			<p class='mt-3'><a href='/get-a-quote'>Get A Quote</a></p>
-		</div>
-	</div>
-
-</div>
-
-<!-- for mobile -->
-<div class='d-block d-sm-none mt-5 text-left'>
-	<div class='card mb-4'>
-		<div class='card-body'>
-			<h4 class='mt-2'>ERPNext Free</h4>
-			<p>Install via Bench</p>
-			<hr>
-			{% for f in features %}
-			{% if f.free %}
-			<p>
-				<i class='octicon octicon-check text-primary'></i> {{ f.title }}
-			</p>
-			{% endif %}
-			{% endfor %}
-			<hr>
-			<p>
-				<a class='py-2 d-block' href='https://github.com/frappe/bench' target='_blank'
-				>Install via Bench</a>
-			</p>
-
-		</div>
-	</div>
-	<div class='card'>
-		<div class='card-body'>
-			<h4 class='mt-2'>ERPNext Support</h4>
-			<p>$100 / user / year*</p>
-			<hr>
-			{% for f in features %}
-			<p>
-				<i class='octicon octicon-check text-primary'></i>
-				{{ f.title }}
-				{% if not f.free %}<a href='support/details' class='text-extra-muted'>Learn More</a>{% endif %}
-			</p>
-			{% endfor %}
-			<hr>
-			<p>
-				<a href='/contact-form' class='btn btn-primary'>Get in Touch</a>
-				<p class='mt-3'><a href='/get-a-quote'>Get A Quote</a></p>
-			</p>
-		</div>
-	</div>
-</div>
-
-<p class='py-5'><a href='/pricing'>Test Drive ERPNext on the Cloud</a></p>
-
 </div>
 </section>
-
-<section class='section-bg'>
-	<div class='container'>
-		<p class='lead'>
-				"The beautiful user interface that comes out of the box is great as people are able to pick up intuitively. The ease of configuring all modules to suit our specific requirements is commendable. Frappe framework that powers ERPNext has also been utilised a lot by us to plug in various middlewares into ERPNext as well as build stand alone applications. For us, Frappe is the best thing about ERPNext."
-		</p>
-		<h5 class='text-center mt-4'>
-			- Zerodha Engineering Team
-		</h5>
-	</div>
-
-</section>
-
+<hr>
 <section class='section' id='faq'>
 	<div class='container'>
 		<h2 class='text-center mb-5'>Frequently Asked Questions</h2>
-
-		<h5>*Is there a separate pricing for Employee Self-Service (HR module only) user?</h5>
-		<p class='mb-5'>
-			No. ERPNext is not restricted to just one module, with the standard support, customers can access all modules like and CRM, Projects, Helpdesk.
-			<br><br>
-			<a href='/get-a-quote'>Get a pricing estimate.</a>
-		</p>
-
 
 		<h5>What happens after my enterprise contract expires?</h5>
 		<p class='mb-5'>
@@ -176,6 +74,13 @@
 			ERPNext is Free and Open Source ("free" as in "free-speech"), but the services around ERPNext need engineers to support you. These are what is charged.
 			Since scale, complexity and support requirement of a deployment is proportional to the number of users, the Enterprise Support contract is also priced per user.
 			Also most ERP products are priced per user, so it is easy to compare with other products. ERPNext Support is a fraction of what you would pay for NetSuite, SAP or Oracle Cloud.
+		</p>
+
+		<h5>Is there a separate pricing for Employee Self-Service (HR module only) user?</h5>
+		<p class='mb-5'>
+			No. ERPNext is not restricted to just one module, with the standard support, customers can access all modules like and CRM, Projects, Helpdesk.
+			<br><br>
+			<a href='/get-a-quote'>Get a pricing estimate.</a>
 		</p>
 
 		<h5>How is the number of users counted?</h5>
@@ -192,7 +97,7 @@
 		<p>Still have questions? Feel free to drop us a mail at <a href='mailto:hello@erpnext.com'>hello@erpnext.com</a>
 
 		<div class='my-5 text-center'>
-			<a href='/contact-form' class='btn btn-primary btn-lg'>Get in Touch</a>
+			<a href='/contact-form' class='btn btn-primary btn-lg'>Contact Sales</a>
 		</div>
 	</div>
 </section>
