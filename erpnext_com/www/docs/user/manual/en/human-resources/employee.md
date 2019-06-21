@@ -83,7 +83,7 @@ Additionally, extra details such as Contact of the previous company and Total Ex
 
 ### 2.11 Exit
 
-In this section, the exit details of the employee can be saved. These include the Resignation, Exit Interview and [Leave Encashment](/docs/user/manual/en/human-resources/leave-encashment) details. When the status of the Employee is set to 'Left', it is mandatory to fill the Relieving 
+In this section, the exit details of the employee can be saved. These include the Resignation, Exit Interview and [Leave Encashment](/docs/user/manual/en/human-resources/leave-encashment) details. When the status of the Employee is set to 'Left', it is mandatory to fill the Relieving Date.
 
 ### 2.12 Additional Features
 Some additional features included in the Employee master are as follows:
