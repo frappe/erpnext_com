@@ -56,6 +56,13 @@ Note:
 - The Terms and Conditions here are your supplier's
 - The supplier quotation can be linked to material requests using the 'Link to material requests' button
 
+### 2.3 After Submitting
+The following items can be created after submitting a Supplier Quotation:
+
+* Purchase Order - A Purchase Order if you agree with the supplier's quotation.
+* Quotation - A quotation to your customer.
+* Auto Repeat - Auto Repeat the supplier quotation at specified intervals.
+
 ### 3. Related Topics
 1. [Supplier](/docs/user/manual/en/buying/supplier)
 1. [Supplier Group](/docs/user/manual/en/buying/setup/supplier-group)
