@@ -8,6 +8,9 @@ or services you are planning to offer along with the prices and other terms
 of engagement. This has many names like "Proposal", Estimate", "Pro Forma
 Invoice" or a **Quotation**.
 
+To acesss Quotation, go to:
+> Home > Selling > Sales > Quotation
+
 A typical sales flow looks like:
 
 <img class="screenshot" alt="Make Quotation from Opportunity" src="{{docs_base_url}}/assets/img/selling/selling-flow-quo.png">
@@ -27,7 +30,7 @@ A Quotation contains details about:
 
 
 ## 1. How to create a Quotation
-1. Go to **Selling > Sales > Quotation > New Quotation**.
+1. Click on New.
 2. Select if the Quotation is to a Customer or a Lead from the 'Quotation To' field.
 3. Enter Customer/Lead name.
 1. Enter a Valid till date after which the quoted amount will be considered invalid.

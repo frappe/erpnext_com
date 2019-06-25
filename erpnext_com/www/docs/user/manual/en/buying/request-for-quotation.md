@@ -5,8 +5,11 @@
 
 ![Buying Flow](/docs/assets/img/buying/buying_flow_rfq.png)
 
+To access Request for Quotation, go to:
+> Home > Buying > Purchasing > Request for Quotation
+
 ## 1. How to create a Request For Quotation
-1. Go to: **Buying > Purchasing > Request for Quotation > New**
+1. Click on New.
 2. Enter the date.
 3. Choose the supplier to whom Request for Quotation is to be sent.
 4. In the next table, enter items, quantity and the target warehouse where you'll be sending the items.

@@ -5,15 +5,15 @@
 
 It is similar to a Sales Order but instead of sending it to an external party, you keep it for internal records.
 
+> Home > Buying > Purchasing > Purchase Order
+
 ## 1. How to create a Purchase Order
 
 A Purchase Order can be automatically created from a Material Request or
 Supplier Quotation.
 ![Buying Flow](/docs/assets/img/buying/buying_flow_po.png)
 
-1. In ERPNext, you can also make a Purchase Order directly by going to:
-
-    **Buying > Purchasing > Purchase Order > New Purchase Order**
+1. Click on New.
 1. Select the Supplier, required by date.
 1. In the items table, select the item by code, you can change the required by date for each item.
 1. Set the quantity and the price will be fetched automatically if set in the Item master.

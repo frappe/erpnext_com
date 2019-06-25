@@ -7,6 +7,9 @@ A Supplier Quotation may also contain terms of sale, terms of payment, and warra
 
 ![Buying Flow](/docs/assets/img/buying/buying_flow_sq.png)
 
+To access Supplier Quotation, go to:
+> Home > Buying > Purchasing > Supplier Quotation
+
 ## 1. How to create a Supplier Quotation
 
 ### 1.1 Supplier Quotation from Material Request

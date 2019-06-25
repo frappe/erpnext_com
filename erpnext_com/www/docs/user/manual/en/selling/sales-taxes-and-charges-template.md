@@ -10,10 +10,13 @@ may apply to your invoices (like shipping, insurance etc.) can also be configure
 
 To know about setting up taxes visit [this page](/docs/user/manual/en/setting-up/setting-up-taxes).
 
+To access Sales Taxes and Charges Template, go to:
+> Home > Selling > Settings > Sales Taxes and Charges Template
+
 ## 1. How to add Sales Taxes/Charges via a template
 Before creating a new template, note that templates are already created for many of the commonly used taxes.
 
-1. Go to **Selling > Settings > Sales Taxes and Charges Template > New**.
+1. Click on New.
 2. Enter a title name for the Tax.
 3. Under type, set on what the tax will be calculated and the tax rate. There are five options under type for which tax will be calculated.
   1. Actual: On the actual amount of each item.

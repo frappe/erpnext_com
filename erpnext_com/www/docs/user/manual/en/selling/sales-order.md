@@ -7,8 +7,11 @@ It is usually a binding Contract with your Customer. Once your customer confirms
 
 <img class="screenshot" alt="Make Quotation from Opportunity" src="{{docs_base_url}}/assets/img/selling/selling-flow-so.png">
 
+To access Sales Order, go to:
+> Home > Selling > Sales > Sales Order
+
 ## 1. How to create a Sales Order
-1. Go to **Selling > Sales > Sales Order > New Sales Order** or Type 'New Sales Order' into the "Global Search" field.
+1. Click on New.
 1. Select the Customer.
 1. Set the 'Delivery Date' - applied to the whole order.
 1. With Order Type, you can set whether it's a Sales order, Maintenance order, or from the online [Shopping Cart](/docs/user/manual/en/website/shopping-cart) of your website. By default, this value is set to "Sales".
