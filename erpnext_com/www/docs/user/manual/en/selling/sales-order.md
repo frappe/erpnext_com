@@ -154,7 +154,6 @@ These actions can also be seen at the top of the Dashboard. You can also make an
 <img class="screenshot" alt="Actions from Submitted Sales Order" src="{{docs_base_url}}/assets/img/selling/submit-so.png">
 
 ### 2.15 Sales Order with Order type 'Maintenance'
-
 When the 'Order Type' of the Sales Order is 'Maintenance' follow these steps:
 
 1. Enter Currency, Price list, and Item details.

@@ -13,6 +13,8 @@ To know about setting up taxes visit [this page](/docs/user/manual/en/setting-up
 To access Sales Taxes and Charges Template, go to:
 > Home > Selling > Settings > Sales Taxes and Charges Template
 
+To know about setting up taxes visit [this page](/docs/user/manual/en/setting-up/setting-up-taxes)
+
 ## 1. How to add Sales Taxes/Charges via a template
 Before creating a new template, note that templates are already created for many of the commonly used taxes.
 
