@@ -3,7 +3,6 @@
 
 **A Branch office is an outlet of a company located at a different location, other than the main office.**
 
-
 ERPNext allows you to create and keep a record of the different branches of your organization.
 
 To access Branch, go to:

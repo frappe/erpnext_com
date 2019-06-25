@@ -1,8 +1,17 @@
 # Leave Type
 
+<<<<<<< HEAD
 **Leave Type refers to the types of leaves that an Employee can use while making Leave Applications.** 
 
 To access Leave Type, go to:
+=======
+**Leave Type refers to types of leave allotted to an Employee by a company.** 
+
+> Human Resources > Leaves and Holiday > Leave Type > New Leave Type
+
+An employee can select a particular Leave Type while requesting for a leave. You can create any number of Leave Types based on your company’s
+requirement.
+>>>>>>> Updated the files according to the new format in the HR module
 
 > Home > Human Resources > Leaves > Leave Type 
 
