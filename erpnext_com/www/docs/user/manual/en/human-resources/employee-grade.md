@@ -1,4 +1,5 @@
 <!-- add-breadcrumbs -->
+
 #Employee Grade
 
 **An Employee Grade is a grouping of the employees that encompasses positions with the same or similar values in order to assign compensation rates and salary structures.**
@@ -23,7 +24,9 @@ To create a new Employee Grade, go to:
 
 Shown below are the different Employee Grades created.
 
-<img class="screenshot" alt="Employee Grade" src="{{docs_base_url}}/assets/img/human-resources/employee-grade1.png">
+<img class="screenshot" alt="New Employee Grade" src="{{docs_base_url}}/assets/img/human-resources/employee-grade1.png">
+
+You also can access [Employee](/docs/user/manual/en/human-resources/employee), [Leave Period](/docs/user/manual/en/human-resources/leave-type), [Employee Onboarding Template](/docs/user/manual/en//human-resources/employee-onboarding-and-separation) and [Employee Separation Template](/docs/user/manual/en//human-resources/employee-onboarding-and-separation).
 
 ## 2. Related Topics
 
@@ -35,4 +38,5 @@ Shown below are the different Employee Grades created.
 
 
 
-{next}
+
+

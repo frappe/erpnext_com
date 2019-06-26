@@ -21,4 +21,4 @@ To create a new Branch, go to:
 
 You can link the Branch to the [Employee](/docs/user/manual/en/human-resources/employee) master.
 
-{next}
+
