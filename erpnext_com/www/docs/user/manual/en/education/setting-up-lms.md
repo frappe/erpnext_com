@@ -1,13 +1,13 @@
 <!-- add-breadcrumbs -->
 # Learning Management System
 
-The education modules is bundled with a Learning Management System (LMS) out of the box. This allows institutes to publish their programs on their website. Programs can contain rich text articles, videos and even quizzes. The progress of individual students can be tracked through the desk as well as the portal.
+The Education module is bundled with a Learning Management System (LMS) out of the box. This allows institutes to publish their programs on their website. Programs can contain rich text articles, videos, and even quizzes. The progress of individual students can be tracked through the desk as well as the portal.
 
 <img class="screenshot" alt="LMS Home" src="{{docs_base_url}}/assets/img/education/lms/home.png">
 
 LMS is disabled by deafult and can be enabled from Education Settings.
 
-To enable LMS go to :
+To enable LMS go to:
 
 > Education > Eduaction Settings > LMS Settings
 
