@@ -1,14 +1,14 @@
 # Navigating the Portal
 
 ## Home Page
-The portal is hosted on `/lms` route. (Example. `hogwarts.erpnext.com/lms`) Here all the programs are shown in the form of cards. Each card is clickable and navigates to the corresponding program or course or topic or content. The portal is accessible even if a student has not logged in, however the content (Articles, Videos, etc) can oly be accessible after login and enrolling in the program.
+The portal is hosted on `/lms` route. (Example. `hogwarts.erpnext.com/lms`) Here all the programs are shown in the form of cards. Each card is clickable and navigates to the corresponding program/course/topic/content. The portal is accessible even if a student has not logged in, however the content (Articles, Videos, etc) can only be accessible after login and enrolling in the program.
 
 <img class="screenshot" alt="LMS Home" src="{{docs_base_url}}/assets/img/education/lms/home.png">
 
-## Porgram Page
-On the program page, the student can see the description as well as the list of courses in the form of cards. If the student is not enrolled, a button to enroll will be shown. This will happen only if self enroll is enabled in the program doc, if not then the program wont be visible to the student at all.
+## Program Page
+On the program page, the student can see the description as well as the list of courses in the form of cards. If the student is not enrolled, a button to enroll will be shown. This will happen only if self enroll is enabled in the program doc, if not then the program won't be visible to the student at all.
 
-After enrolling the status of each course is added to the card footer. This status is updated based on the students activity on the portal.
+After enrolling, the status of each course is added to the card footer. This status is updated based on the student's activity on the portal.
 
 <img class="screenshot" alt="Portal Program Enrolled" src="{{docs_base_url}}/assets/img/education/lms/program-enrolled.png">
 <img class="screenshot" alt="Portal Program Progress" src="{{docs_base_url}}/assets/img/education/lms/program-progress.png">
@@ -23,7 +23,7 @@ Similar to the program page, it lists all the topics, as well as the status of e
 ---
 
 ## Topic Page
-The topic page lists all the content as well as their completion status. Clicking on any card will navigate to the content Page
+The topic page lists all the content as well as their completion status. Clicking on any card will navigate to the content Page:
 
 <img class="screenshot" alt="Portal Course" src="{{docs_base_url}}/assets/img/education/lms/topic.png">
 
@@ -31,7 +31,7 @@ The topic page lists all the content as well as their completion status. Clickin
 
 ## Content Pages
 
-Each type of content has it's own view and a common navigation based on the content type.
+Each type of content has its own view and a common navigation based on the content type.
 
 <img alt="Portal Contents" src="{{docs_base_url}}/assets/img/education/lms/content.png">
 
@@ -47,7 +47,7 @@ In case of a quiz, the student has to first submit the quiz, following which the
 
 <img class="screenshot" alt="Quiz Pass" src="{{docs_base_url}}/assets/img/education/lms/quiz-pass.png">
 
-The next time a student visits the quiz page, based on the previous attempts the portal may or may not allow any quiz attempts.
+The next time a student visits the quiz page, based on the previous attempts, the portal may or may not allow any quiz attempts.
 In case the student has reached max limits, the quiz will be locked. The previous score based on the quiz grading basis will be displayed
 <img class="screenshot" alt="Quiz Limit" src="{{docs_base_url}}/assets/img/education/lms/quiz-fail-no-attempt.png">
 *Max attempt limit reached*
