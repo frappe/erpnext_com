@@ -5,7 +5,7 @@ If your business involves physical goods, buying is one of your core business
 activities. Your suppliers are as important as your customers and they must be
 provided with accurate information.
 
-Buying the right quantities at right amounts can affect your cash flow and
+Buying the right quantities in right amounts can affect your cash flow and
 profitability positively. ERPNext contains a set of transactions that will make your buying process as
 efficient and seamless as possible.
 
@@ -13,7 +13,7 @@ efficient and seamless as possible.
 ### 1.1 Purchase Cycle
 1. [Request For Quotation](/docs/user/manual/en/buying/request-for-quotation)
 1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
-1. [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-template)
+1. [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-and-charges-template)
 
 ### 1.2 Supplier
 1. [Supplier](/docs/user/manual/en/buying/supplier)

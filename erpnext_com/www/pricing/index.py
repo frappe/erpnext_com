@@ -189,18 +189,22 @@ def get_plan_details(plan_name):
 
 	return plan
 
+country_info = {}
+
 @frappe.whitelist(allow_guest=True)
 def get_country(fields=None):
-	if not fields:
-		fields = ['countryCode']
-
+	global country_info
 	ip = frappe.local.request_ip
 
-	res = requests.get('https://pro.ip-api.com/json/{ip}?key={key}&fields={fields}'.format(
-		ip=ip, key=frappe.conf.get('ip-api-key'), fields=','.join(fields)))
+	if not ip in country_info:
+		fields = ['countryCode', 'country', 'regionName', 'city']
+		res = requests.get('https://pro.ip-api.com/json/{ip}?key={key}&fields={fields}'.format(
+			ip=ip, key=frappe.conf.get('ip-api-key'), fields=','.join(fields)))
 
-	try:
-		return res.json()
+		try:
+			country_info[ip] = res.json()
 
-	except Exception:
-		return {}
+		except Exception:
+			country_info[ip] = {}
+
+	return country_info[ip]

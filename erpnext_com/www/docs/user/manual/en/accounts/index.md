@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Accounts
+# Accounting
 
 Whether you have an accountant in your internal team OR you do it yourself OR you have chosen to outsource it, the financial accounting process is almost always at the center of any business management system (aka an ERP system).
 
@@ -41,11 +41,13 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Debit Note](/docs/user/manual/en/accounts/debit-note)
 
 ##### 1.4 Pricing and Taxes
-1. [Itemized Taxation](/docs/user/manual/en/accounts/item-wise-taxation)
+1. [Item Tax Template](/docs/user/manual/en/accounts/item-tax-template)
 1. [Tax Withholding Category](/docs/user/manual/en/accounts/tax-withholding-category)
 1. [Exchange Rate Revaluation](/docs/user/manual/en/accounts/exchange-rate-revaluation)
+1. [Promotional Scheme](/docs/user/manual/en/accounts/promotional-scheme)
 1. [Pricing Rule](/docs/user/manual/en/accounts/pricing-rule)
 1. [Tax Rule](/docs/user/manual/en/accounts/tax-rule)
+1. [Tax category](/docs/user/manual/en/accounts/tax-category)
 
 ##### 1.5 Tools
 1. [Bank Reconciliation](/docs/user/manual/en/accounts/bank-reconciliation)
