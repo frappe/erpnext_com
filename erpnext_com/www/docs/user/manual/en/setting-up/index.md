@@ -65,14 +65,7 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 1. [Authorization Rule](/docs/user/manual/en/setting-up/authorization-rule)
 1. [Energy Point System](/docs/user/manual/en/setting-up/energy-point-system)
 
-<!-- remove ##### 1.7 Sales and Stock
-
-1. [POS Setting](/docs/user/manual/en/setting-up/pos-setting)
-1. [Territory](/docs/user/manual/en/setting-up/territory)
-1. [Price Lists](/docs/user/manual/en/setting-up/price-lists)
-1. [Stock Reconciliation](/docs/user/manual/en/setting-up/stock-reconciliation-for-non-serialized-item)
--->
-##### 1.5 Data Privacy
+##### 1.7 Data Privacy
 
 1. [Personal Data Download](/docs/user/manual/en/setting-up/data-privacy/personal-data-download)
 1. [Personal Data Deletion](/docs/user/manual/en/setting-up/data-privacy/personal-data-deletion)
