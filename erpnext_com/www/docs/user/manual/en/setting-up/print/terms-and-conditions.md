@@ -1,28 +1,40 @@
 <!-- add-breadcrumbs -->
 # Terms And Conditions
 
-Terms and conditions are the general and special arrangements, provisions, requirements, rules, specifications, and standards that a company follows. These specifications are an integral part of an agreement or contract that the company gets into with its customers, suppliers or partners.
+Each Quotation/Sales Order must ideally contain a set of terms of your contract. Terms and conditions are usually included to define terms of service, conditions for using any service or to even limit responsibilities of the seller in case any harm is caused to the buyer due to using the provided goods or services.  It is
+usually a good idea to make template(s) of your Terms and Conditions, so that
+you have a standard set of terms. 
 
-### 1. Make a new Terms and Conditions
+To access Terms and Conditions template go to:
 
-To setup Terms and Condition master, go to:
+> Home > Selling > Settings > Terms and Conditions Template
 
-`Selling > Terms and Condition > New`
+## 1. How to create Terms and Conditions
 
-<img class="screenshot" alt="Terms and Conditions" src="{{docs_base_url}}/assets/img/setup/print/terms-1.png">
+1. Click on new.
+1. Add the Terms and Conditions.
 
-### 2. Editing in HTML
+    <img class="screenshot" alt="Terms and Conditions" src="{{docs_base_url}}/assets/img/setup/print/terms-1.png">
 
-Content of Terms and Condition can be formatted as per your preference, and also insert images where needed. If you have expertise in HTML, you will also find option to edit the content of Terms and Condition in HTML.
-
-<img class="screenshot" alt="Terms and Conditions, Edit HTML" src="{{docs_base_url}}/assets/img/setup/print/terms-2.png">
-
-This also allows you to use Terms and Condition master for footer, which otherwise is not available in ERPNext as dedicated functionality. Since contents of Terms and Condition is always the last to appear in the print format, details of footer should be inserted at the end of the content, so that it actually appears as footer in the print format.
-
-### 3. Select in Transaction
+### 1.1. Select in Transaction
 
 In transactions, you will find section of Terms and Condition where you will be able to search and fetched required Terms and Condition master.
 
 <img class="screenshot" alt="Terms and Conditions, Select in document" src="{{docs_base_url}}/assets/img/setup/print/terms-3.png">
+
+### 1.3 What should Terms and Conditions contain?
+Here are a some common topics that Terms and Conditions should contain:
+
+  * Validity of the offer.
+  * Payment Terms (In Advance, On Credit, part advance etc).
+  * What is extra (or payable by the Customer).
+  * Safety / usage warning.
+  * Warranty if any.
+  * Return Policy.
+  * Terms of shipping, if applicable.
+  * Ways of addressing disputes, indemnity, liability, etc.
+  * Address and Contact of your Company.
+
+Terms and conditions are the general and special arrangements, provisions, requirements, rules, specifications, and standards that a company follows. These specifications are an integral part of an agreement or contract that the company gets into with its customers, suppliers or partners.
 
 {next}

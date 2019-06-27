@@ -8,7 +8,7 @@ To begin importing the Data, go to either setup, or to the Transaction you want 
 
 <img alt="Start Import" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-1-new.png">
 
-## 1\. Downloading The Template
+## 1. Downloading The Template
 
 Data in ERPNext is stored in tables, much like a spreadsheet with columns and
 rows of data. Each entity in ERPNext can have multiple child tables associated
@@ -24,7 +24,7 @@ Item can have multiple prices, An Invoice has multiple Items and so on.
   
 <img alt="Download Template" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-steps.gif">
 
-### 2\. Fill in the Template
+### 2. Fill in the Template
 
 After downloading the template, open it in a spreadsheet application (like Excel, Numbers or Libre Office) and fill in the data below the column headings.
 
@@ -39,7 +39,7 @@ file. To export the document in Excel tick the checkbox for Download in Excel Fi
 
 <img alt="Download Template" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-steps.gif">
 
-### 3\. Upload the File either in .xlsx or .csv 
+### 3. Upload the File either in .xlsx or .csv 
 
 Finally attach the  file in the section. Click on the "Upload". Once the upload is successfull click Import"
 button.

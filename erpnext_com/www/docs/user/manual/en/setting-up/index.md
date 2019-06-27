@@ -8,18 +8,24 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 ## 1. Topics
 
 ##### 1.1 Basic Setup
-
-1. [Setup Wizard](/docs/user/manual/en/setting-up/setup-wizard)
-1. [Users and Permissions](/docs/user/manual/en/setting-up/users-and-permissions)
 1. [Company Setup](/docs/user/manual/en/setting-up/company-setup)
 1. [Setting Up Taxes](/docs/user/manual/en/setting-up/setting-up-taxes)
 1. [Setting Company Sales Goal](/docs/user/manual/en/setting-up/setting-company-sales-goal)
-1. [Data Import](/docs/user/manual/en/setting-up/data/data-import)
-1. [Charts Of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
-1. [Workflows](/docs/user/manual/en/setting-up/workflows)
-1. [Energy Point System](/docs/user/manual/en/setting-up/energy-point-system)
+1. [Global Defaults](/docs/user/manual/en/setting-up/settings/global-defaults)
+1. [System Settings](/docs/user/manual/en/setting-up/settings/system-settings)
 
-##### 1.2 Printing
+##### 1.2 Data Import and Privacy
+1. [Data Import](/docs/user/manual/en/setting-up/data/data-import)
+1. [Overwriting Data From Data Import Tool](/docs/user/manual/en/setting-up/articles/overwriting-data-from-data-import-tool)
+1. [Personal Data Download](/docs/user/manual/en/setting-up/data-and-privacy/personal-data-download)
+1. [Personal Data Deletion](/docs/user/manual/en/setting-up/data-and-privacy/personal-data-deletion)
+1. [Charts Of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
+
+##### 1.3 User and Permissions
+1. [Users and Permissions](/docs/user/manual/en/setting-up/users-and-permissions)
+1. [Managing Permission Level](/docs/user/manual/en/setting-up/articles/managing-perm-level/)
+
+##### 1.4 Printing
 1. [Print Settings](/docs/user/manual/en/setting-up/print/print-settings)
 1. [Print Format Builder](/docs/user/manual/en/setting-up/print/print-format-builder)
 1. [Print Style](/docs/user/manual/en/setting-up/print/print-style)
@@ -31,7 +37,10 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 1. [Custom Translations](/docs/user/manual/en/setting-up/print/custom-translations)
 1. [Raw Printing](/docs/user/manual/en/setting-up/print/raw-printing)
 
-##### 1.3 Email and SMS
+##### 1.3 Workflows
+1. [Workflows](/docs/user/manual/en/setting-up/workflows)
+
+##### 1.5 Email and SMS
 
 1. [Email Account](/docs/user/manual/en/setting-up/email/email-account)
 1. [Email Inbox](/docs/user/manual/en/setting-up/email/email-inbox)
@@ -44,10 +53,8 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 1. [Notifications](/docs/user/manual/en/setting-up/notifications)
 1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)
 
-##### 1.4 System Configuration
+##### 1.6 System Configuration
 
-1. [Global Defaults](/docs/user/manual/en/setting-up/settings/global-defaults)
-1. [System Settings](/docs/user/manual/en/setting-up/settings/system-settings)
 1. [Module Settings](/docs/user/manual/en/setting-up/settings/module-settings)
 1. [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series)
 1. [Bulk Rename](/docs/user/manual/en/setting-up/data/bulk-rename)
@@ -56,14 +63,15 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 1. [Milestone Tracking](/docs/user/manual/en/setting-up/automation/milestone-tracker)
 1. [Auto Repeat](/docs/user/manual/en/setting-up/automation/auto-repeat)
 1. [Authorization Rule](/docs/user/manual/en/setting-up/authorization-rule)
+1. [Energy Point System](/docs/user/manual/en/setting-up/energy-point-system)
 
-##### 1.4 Sales and Stock
+<!-- remove ##### 1.7 Sales and Stock
 
 1. [POS Setting](/docs/user/manual/en/setting-up/pos-setting)
 1. [Territory](/docs/user/manual/en/setting-up/territory)
 1. [Price Lists](/docs/user/manual/en/setting-up/price-lists)
 1. [Stock Reconciliation](/docs/user/manual/en/setting-up/stock-reconciliation-for-non-serialized-item)
-
+-->
 ##### 1.5 Data Privacy
 
 1. [Personal Data Download](/docs/user/manual/en/setting-up/data-privacy/personal-data-download)
@@ -79,11 +87,8 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 ##### 2.2 Data and Managing
 
 1. [Delete A Company And All Related Transactions](/docs/user/manual/en/setting-up/articles/delete-a-company-and-all-related-transactions)
-1. [Managing Header And Footer](/docs/user/manual/en/setting-up/articles/managing-header-and-footer)
 1. [Managing Multiple Companies](/docs/user/manual/en/setting-up/articles/managing-multiple-companies)
-1. [Managing Permission Level](/docs/user/manual/en/setting-up/articles/managing-perm-level/)
 1. [Managing Tree Structure Masters](/docs/user/manual/en/setting-up/articles/managing-tree-structure-masters/)
-1. [Overwriting Data From Data Import Tool](/docs/user/manual/en/setting-up/articles/overwriting-data-from-data-import-tool)
 
 
 ##### 2.3 Errors
