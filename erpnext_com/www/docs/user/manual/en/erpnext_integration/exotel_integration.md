@@ -4,14 +4,14 @@
 
 This integration allows you to integrate Exotel into your ERPNext account. Leads and their phone numbers captured via Exotel can be saved directly to your ERPNext.
 
-## Features
+## 1. Features
 
 - Track incoming calls in your ERPNext account.
 - Shows existing lead/customer information pop-up to employees when an incoming call is received.
 
-## How to setup
+## 2. How to setup
 
-### 1. Setup your Exotel account
+### 2.1 Setup your Exotel account
 
 - Login to your Exotel account and go to App Bazar.
 - Create a new App for a new flow.
@@ -46,7 +46,7 @@ This integration allows you to integrate Exotel into your ERPNext account. Leads
 - Save the flow.
 - Now assign this newly created app to your ExoPhone from which you receive your business calls.
 
-### 2. Setup in ERPNext
+### 2.2 Setup in ERPNext
 
 - From Awesome Bar, go to 'Exotel Settings'.
 - Set your "Exotel SID" and "Exotel Token". You can find your Exotel API key and token on your [Exotel Dashboard](https://my.exotel.com/apisettings/site#api-credentials).
