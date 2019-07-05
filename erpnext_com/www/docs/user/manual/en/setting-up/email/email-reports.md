@@ -1,37 +1,28 @@
 <!-- add-breadcrumbs -->
-# Email Reports at Regular Intervals
+# Auto Email Reports
 
 You can setup **Auto Email Report** to send reports at regular intervals. These must be saved reports of any type (Report Builder, Script or Query Report).
 
 You can find Auto Email Report at
 
-> Setup > Email > Auto Email Report
+> Home > Settings > Email > Auto Email Report
 
-Or just type "Auto Email Report" on the Search bar.
+## 1. How to create an Auto Email Report
+1. Click on New.
+1. Select the Report.
+1. Select the user for which you want to create this report (permissions will apply for this user).
+1. Set the Email Addresses to which you want this report to be emailed and the frequency of the report.
 
-### Example
+    <img class="screenshot" alt="With Filters" src="{{docs_base_url}}/assets/img/setup/email/auto-email-2.png">
 
-#### Step 1
+### 1.1 Additional options
+You can also change the file format in which the report is created. A message can also be added to be sent with the email report.
 
-Select the Report, the user for which you want to create this report (permissions will apply for this user), the Email Addresses where you want this report emailed and the frequency of the report.
-
-<img class="screenshot" alt="Make Auto Email Report" src="{{docs_base_url}}/assets/img/setup/email/auto-email-1.png">
-
-#### Step 2
-
-If your report has filters, you will see a table with the filters
-
-Step 1. Select the Report, the user for which you want to create this report. Permissions will apply for this user
-
-<img class="screenshot" alt="With Filters" src="{{docs_base_url}}/assets/img/setup/email/auto-email-2.png">
-
-Click on the table to edit the table
+If your report has filters, you will be able to see them. Click on the table to edit it:
 
 <img class="screenshot" alt="Edit Filters" src="{{docs_base_url}}/assets/img/setup/email/auto-email-3.png">
 
-#### Test
-
-You can also test the report by clicking on "Download" or "Send Now"
+You can test the report by clicking on "Download" or "Send Now".
 
 Here is an example of the email you will receive for a report
 

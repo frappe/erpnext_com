@@ -3,17 +3,20 @@
 
 **Print Headings are the names/titles you can give your transactions.**
 
-These transaction include sales invoices, supplier quotations etc. You can create a list of names for different business communications.
+These transactions include sales invoices, supplier quotations, etc. You can create a list of names for different business communications.
 
-You can create print headings from:
+To access Print Headings go to:
 
-> Home > Settings > Printing > Print Heading > New
+> Home > Settings > Printing > Print Heading
 
-Creating a new Print Heading:
+## 1. How to create a Print Heading
+1. Click on New.
+1. Enter the heading that will appear on the document.
+1. Save.
 
-<img class="screenshot" alt="Print Heading" src="{{docs_base_url}}/assets/img/setup/print/print-heading.png">
+  <img class="screenshot" alt="Print Heading" src="{{docs_base_url}}/assets/img/setup/print/print-heading.png">
 
-Example of a change in print heading is shown below:
+Example of a change in print heading is shown as follows:
 
 <img class="screenshot" alt="Print Heading" src="{{docs_base_url}}/assets/img/setup/print/print-heading-1.png">
 

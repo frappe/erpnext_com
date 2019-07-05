@@ -7,11 +7,15 @@ Email Digests are a great way for top managers to keep track of the big numbers 
 
 To set up Email Digest, go to:
 
-> Setup > Email > Email Digest
+> Home > Settings > Email > Email Digest
 
-## Example
+1. Enter a name for the Email digest.
+1. Set the frequency of mails to be sent.
+1. Add or remove recipients.
+1. Select the items to be included in the digest.
+1. Save.
 
-Set your frequency, check all the items you want to receive in your weekly update and select the user ids whom you want to send the Digest to.
+Example: 
 
 <img class="screenshot" alt="Email Digest" src="{{docs_base_url}}/assets/img/setup/email/email-digest.png">
 

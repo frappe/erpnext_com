@@ -5,6 +5,8 @@ Setting up an ERP system is like starting your business all over again but in th
 
 To get an ERP implementation right, the implementor needs to set aside time and perform the implementation with dedication. Usually, this is not your post work side project you spare a couple of hours on.
 
+You'll find the global configuration options here, for module-wise setup, visit the respective modules.
+
 ## 1. Topics
 
 ##### 1.1 Basic Setup
@@ -13,21 +15,27 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 1. [Setting Company Sales Goal](/docs/user/manual/en/setting-up/setting-company-sales-goal)
 1. [Global Defaults](/docs/user/manual/en/setting-up/settings/global-defaults)
 1. [System Settings](/docs/user/manual/en/setting-up/settings/system-settings)
+1. [Price Lists](/docs/user/manual/en/setting-up/price-lists)
 
 ##### 1.2 Data Import and Privacy
-1. [Data Import](/docs/user/manual/en/setting-up/data/data-import)
-1. [Overwriting Data From Data Import Tool](/docs/user/manual/en/setting-up/articles/overwriting-data-from-data-import-tool)
+1. [Data Import](/docs/user/manual/en/setting-up//data-and-privacy/data-import)
 1. [Personal Data Download](/docs/user/manual/en/setting-up/data-and-privacy/personal-data-download)
 1. [Personal Data Deletion](/docs/user/manual/en/setting-up/data-and-privacy/personal-data-deletion)
 1. [Charts Of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
 
 ##### 1.3 User and Permissions
 1. [Users and Permissions](/docs/user/manual/en/setting-up/users-and-permissions)
-1. [Managing Permission Level](/docs/user/manual/en/setting-up/articles/managing-perm-level/)
+1. [Adding Users](/docs/user/manual/en/setting-up/users-and-permissions/adding-users)
+1. [Role and Role Profile](/docs/user/manual/en/setting-up/users-and-permissions/role-and-role-profile)
+1. [Role Based Permissions](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions)
+1. [User Permissions](/docs/user/manual/en/setting-up/users-and-permissions/user-permissions)
+1. [Role Permission For Page And Report](/docs/user/manual/en/setting-up/users-and-permissions/role-permission-for-page-and-report)
+1. [Sharing](/docs/user/manual/en/setting-up/users-and-permissions/sharing)
+1. [Administrator](/docs/user/manual/en/setting-up/users-and-permissions/administrator)
 
 ##### 1.4 Printing
 1. [Print Settings](/docs/user/manual/en/setting-up/print/print-settings)
-1. [Print Format Builder](/docs/user/manual/en/setting-up/print/print-format-builder)
+1. [Print Format](/docs/user/manual/en/setting-up/print/print-format)
 1. [Print Style](/docs/user/manual/en/setting-up/print/print-style)
 1. [Print Headings](/docs/user/manual/en/setting-up/print/print-headings)
 1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
@@ -37,10 +45,12 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 1. [Custom Translations](/docs/user/manual/en/setting-up/print/custom-translations)
 1. [Raw Printing](/docs/user/manual/en/setting-up/print/raw-printing)
 
-##### 1.3 Workflows
+##### 1.5 Workflows
 1. [Workflows](/docs/user/manual/en/setting-up/workflows)
+1. [Workflow Actions](/docs/user/manual/en/setting-up/workflow-actions)
+1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)
 
-##### 1.5 Email and SMS
+##### 1.6 Email and SMS
 
 1. [Email Account](/docs/user/manual/en/setting-up/email/email-account)
 1. [Email Inbox](/docs/user/manual/en/setting-up/email/email-inbox)
@@ -53,13 +63,12 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 1. [Notifications](/docs/user/manual/en/setting-up/notifications)
 1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)
 
-##### 1.6 System Configuration
+##### 1.7 System Configuration
 
 1. [Module Settings](/docs/user/manual/en/setting-up/settings/module-settings)
 1. [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series)
-1. [Bulk Rename](/docs/user/manual/en/setting-up/data/bulk-rename)
-1. [Download Backup](/docs/user/manual/en/setting-up/data/download-backup)
-1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)
+1. [Bulk Rename](/docs/user/manual/en/setting-up/data-and-privacy/bulk-rename)
+1. [Download Backup](/docs/user/manual/en/setting-up/data-and-privacy/download-backup)
 1. [Milestone Tracking](/docs/user/manual/en/setting-up/automation/milestone-tracker)
 1. [Auto Repeat](/docs/user/manual/en/setting-up/automation/auto-repeat)
 1. [Authorization Rule](/docs/user/manual/en/setting-up/authorization-rule)
@@ -79,9 +88,11 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 
 ##### 2.2 Data and Managing
 
+1. [Overwriting Data From Data Import Tool](/docs/user/manual/en/setting-up/articles/overwriting-data-from-data-import-tool)
 1. [Delete A Company And All Related Transactions](/docs/user/manual/en/setting-up/articles/delete-a-company-and-all-related-transactions)
 1. [Managing Multiple Companies](/docs/user/manual/en/setting-up/articles/managing-multiple-companies)
 1. [Managing Tree Structure Masters](/docs/user/manual/en/setting-up/articles/managing-tree-structure-masters/)
+1. [Managing Permission Level](/docs/user/manual/en/setting-up/articles/managing-perm-level/)
 
 
 ##### 2.3 Errors

@@ -8,7 +8,7 @@ These details will appear in the Print Format of transactions like Sales Order, 
 To access Letter Head, go to:
 > Home > Settings > Printing > Letter Head > New
 
-## How to create a Letter Head
+## 1. How to create a Letter Head
 1. Enter a name for the Letter Head. You can create a separate Letter Head for different office locations.
 1. Choose whether based on image or HTML.
 1. You can enter details in a Letter Head by using:

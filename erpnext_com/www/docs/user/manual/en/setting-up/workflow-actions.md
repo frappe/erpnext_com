@@ -1,0 +1,23 @@
+<!-- add-breadcrumbs -->
+
+## Workflow Actions
+
+> Introduced in Version 11
+
+Workflow Actions is a single place to manage all the pending actions you can take on Workflows.
+
+To access Workflow Actions, go to:
+> Home > Settings > Workflow > Workflow Actions
+
+If a User is eligible to take action on some workflows, emails will be sent to the user with the relevant document as attachment. From there the user can `Approve` or `Reject` the Workflow.
+<img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/workflow-actions-email.png">
+
+Also the users will see entries in their Workflow Action list:
+<img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/workflow-actions-list.png">
+
+**Note:**
+
+- You can set email template for Workflow Actions on each state. The template might consist of a message for users to proceed with the next Workflow Actions.
+- Workflow Actions will not be created for transition to optional state.
+
+{next}

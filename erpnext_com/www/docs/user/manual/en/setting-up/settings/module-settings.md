@@ -1,16 +1,14 @@
 <!-- add-breadcrumbs -->
 # Show or Hide Modules
 
-You can globally switch off certain desktop module via:
+You can globally switch off certain modules by clicking on Show / Hide Cards in your ERPNext Home Page.
 
-> Setup > Permissions > Show / Hide Modules
+For example if you are in the services business, you want to hide the Manufacturing Module, you can do this.
 
-For example if you are in the services business, you want to hide the Manufacturing Module, you can do this via **Show or Hide Modules**
-
-### Example
-
-Check / uncheck the items to show / hide.
+Check/uncheck the items to show/hide.
 
 <img class="screenshot" alt="Module Settings" src="{{docs_base_url}}/assets/img/setup/settings/show-hide-modules.png">
+
+In versions older than v12, click on your username, select 'Everyone' and check/uncheck the modules
 
 {next}
