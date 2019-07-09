@@ -36,10 +36,8 @@ ERPNext is optimized for itemized management of your sales and purchase. If you 
 For India:
 
 * **HSN/SAC**: Harmonized System of Nomenclature (HSN) and Service Accounting Code (SAC) for GST.
-* **Is nil rated or exempted**: For an item that is under GST, but no tax is applied to it. Eg: Cereals.
-* **Is Non GST**: For an item that is not covered under GST. Eg: petrol.
 
-##2. Features
+## 2. Features
 
 ### 2.1 Brand and Description
 
