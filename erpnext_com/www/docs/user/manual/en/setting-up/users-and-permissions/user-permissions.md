@@ -59,4 +59,8 @@ Ticking on the Show Permissions checkbox will show the read/write/submit and oth
 
 <img src="{{docs_base_url}}/assets/img/users-and-permissions/user-perms/permitted-documents.png" class="screenshot" alt="Permitted Documents for User report">
 
-{next}
+### 3. Related Topics
+1. [Adding Users](/docs/user/manual/en/setting-up/users-and-permissions/adding-users)
+1. [Role and Role Profile](/docs/user/manual/en/setting-up/users-and-permissions/role-and-role-profile)
+1. [Role Based Permissions](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions)
+1. [Role Permission For Page And Report](/docs/user/manual/en/setting-up/users-and-permissions/role-permission-for-page-and-report)

@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 #Cheque Print Template
 
+**Cheque Print Template allows defining templates for bank cheques.**
+
 Business involves making payment to various parties like suppliers and employees. Payment can be made in various modes like cash, NEFT or cheque. If you are making a payment via a cheque, you can also create a Print Format for printing Cheques from ERPNext based on the Payment Entry.
 
 To access Cheque Print Template, go to:
@@ -42,4 +44,6 @@ New print format generated for the cheque will be visible in the Payment Entry f
 
 <img class="screenshot" alt="Sample Cheque" src="{{docs_base_url}}/assets/img/setup/print/cheque-3.gif">
 
-{next}
+### 2. Related Topics
+1. [Address Template](/docs/user/manual/en/setting-up/print/address-template)
+1. [Terms and Conditions Template](/docs/user/manual/en/setting-up/print/terms-and-conditions)

@@ -2,9 +2,9 @@
 
 # Assignment Rule
 
-You can set up automatic assignment of documents to users by creating an **Assignment Rule**.
-
 > Introduced in Version 12
+
+**An Assignment Rule let you set up automatic assignment of documents to users.**
 
 To access Assignment Rule, go to:
 > Home > Settings > Workflow > Assignment Rule
@@ -15,7 +15,7 @@ To set up an automatic assignment:
 1. Click on New.
 1. Select the Document Type you want to assign automatically (for example **Issue**).
 1. Write the "Description" that will be added to the To Do.
-1. Select the condition for assignment (refer the section below(#assign/unassign-conditions)).
+1. Select the condition for assignment (refer the next section).
 1. Select the assignment rule (**Round Robin** or **Load Balancing**).
 1. Select the list of users to whom this Assignment Rule will apply.
 
@@ -55,4 +55,6 @@ Set Document Type, Descriptions and Conditions.
 Set Rule and Users:
 <img class="screenshot" alt="Assign" src="{{docs_base_url}}/assets/img/setup/automation/auto-assign-2.png">
 
-{next}
+### 2. Related Topics
+1. [Workflows](/docs/user/manual/en/setting-up/workflows)
+1. [Workflow Actions](/docs/user/manual/en/setting-up/workflow-actions)

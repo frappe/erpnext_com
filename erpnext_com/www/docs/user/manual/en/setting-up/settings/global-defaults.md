@@ -1,7 +1,9 @@
 <!-- add-breadcrumbs -->
 # Global Defaults
 
-You can set default values for your documents from Global Defaults.
+**Default values for documents like currency, fiscal year, etc, can be set from Global Defaults.**
+
+The values set here will impact all users and the default values for various fields will be set for them.
 
 To access Global Defaults, go to:
 > Home > Setup > Settings > Global Defaults
@@ -21,4 +23,7 @@ Whenever a new document is created, these values will be set as default.
 * Disable Rounded Total
 * Disable In Words
 
-{next}
+The Default Distance Unit is used to calculate the total distance in [Delivery Trips](/docs/user/manual/en/stock/delivery-trip).
+
+### Related Topics
+1. [System Settings](/docs/user/manual/en/setting-up/settings/system-settings)

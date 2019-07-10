@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Print Format
 
-The Print Format helps you quickly make a simple customized Print Format by dragging and dropping data fields and adding custom text or HTML.
+**The Print Format helps you quickly make a simple customized Print Format by dragging and dropping data fields and adding custom text or HTML.**
 
 You can create a new Print Format either by going to:
 
@@ -41,4 +41,8 @@ Then click on **Edit HTML** to edit your content.
   </iframe>
 </div>
 
-{next}
+### 2. Related Topics
+1. [Print Style](/docs/user/manual/en/setting-up/print/print-style)
+1. [Print Headings](/docs/user/manual/en/setting-up/print/print-headings)
+1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
+1. [Cheque Print Template](/docs/user/manual/en/setting-up/print/cheque-print-template)

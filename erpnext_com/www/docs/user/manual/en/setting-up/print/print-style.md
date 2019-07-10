@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # Print Style
 
+**In Print Style you can define custom CSS styles applied to Print Formats.**
+
 ERPNext comes with preset styles for printing documents. You can also create new styles using CSS that can be applied to all your print formats.
 
 To create a new **Print Style** go to:
@@ -23,4 +25,8 @@ All Print Format styles are based on Bootstrap (Version 3) CSS Framework.
 
 If you have enabled developer mode and tick on Standard then system will generate the JSON file for the Print Style. You can contribute a default print style with this.
 
-{next}
+### 2. Related Topics
+1. [Print Format](/docs/user/manual/en/setting-up/print/print-format)
+1. [Print Headings](/docs/user/manual/en/setting-up/print/print-headings)
+1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
+1. [Cheque Print Template](/docs/user/manual/en/setting-up/print/cheque-print-template)

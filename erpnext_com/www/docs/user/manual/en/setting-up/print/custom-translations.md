@@ -1,7 +1,9 @@
 <!-- add-breadcrumbs -->
 #Custom Translations
 
-User can print the customer's and supplier's document in their local language. For example, if you have customers from Germany and France who want quotations in German and French, it's possible using Custom Translations.
+**With Custom Translations, user can print the customer's and supplier's document in their local language.**
+
+For example, if you have customers from Germany and France who want quotations in German and French, it's possible using Custom Translations.
 
 ## 1. Set the Language
 
@@ -39,5 +41,7 @@ The translation is applied when user selects the language as Italian on supplier
 
 <img src="{{docs_base_url}}/assets/img/setup/multilingual_print_format/custom_translation.png" class="screenshot">
 
-
-{next}
+### 3. Related Topics
+1. [Address Template](/docs/user/manual/en/setting-up/print/address-template)
+1. [Quotation](/docs/user/manual/en/selling/quotation)
+1. [Sales Order](/docs/user/manual/en/selling/sales-order)

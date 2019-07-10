@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Print Settings
 
-In Print Settings you can set your printing preferences like Paper Size, default text size, whether you want to output as PDF or HTML, etc.
+**In Print Settings you can set your printing preferences like Paper Size, default text size, whether you want to output as PDF or HTML, etc.**
 
 To edit print settings, go to:
 > Home > Settings > Printing > Print Settings
@@ -93,4 +93,8 @@ This is executed from the `frappe-bench` directory.
 
 You can enable raw printing and print to many supported thermal printers. [Click here to know more about Raw Printing.](/docs/user/manual/en/setting-up/print/raw-printing)
 
-{next}
+### 5. Related Topics
+1. [Print Format](/docs/user/manual/en/setting-up/print/print-format)
+1. [Print Style](/docs/user/manual/en/setting-up/print/print-style)
+1. [Print Headings](/docs/user/manual/en/setting-up/print/print-headings)
+1. [Custom Translations](/docs/user/manual/en/setting-up/print/custom-translations)

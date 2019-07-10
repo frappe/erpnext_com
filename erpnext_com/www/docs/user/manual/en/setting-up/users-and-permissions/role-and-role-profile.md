@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # Role and Role Profile
 
+**Role defines the permissions. Role profiles encompass different roles.**
+
 Most commonly used roles are already defined in ERPNext, but you can add more if you want to.
 
 Role Profiles act as a template to store multiple. This Role Profile can then be assigned to a [User](/docs/user/manual/en/setting-up/users-and-permissions/adding-users). For example, Sales Supervisor will have the roles Employee, Sales Manager, Sales User, and Sales Master Manager.
@@ -29,4 +31,8 @@ To access Role Profile, go to:
 
 ![Role Profile](/docs/assets/img/users-and-permissions/role-profile.png)
 
-{next}
+### 3. Related Topics
+1. [Role Based Permissions](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions)
+1. [User Permissions](/docs/user/manual/en/setting-up/users-and-permissions/user-permissions)
+1. [Role Permission For Page And Report](/docs/user/manual/en/setting-up/users-and-permissions/role-permission-for-page-and-report)
+

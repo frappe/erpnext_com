@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # Email Inbox
 
+**Once an email account is added, the email inbox will be accessible.**
+
 Running a business involves many transactional email exchanges with parties like Customers and Suppliers, and within the company. Email Inbox feature allows you to pull all your business emails into your ERPNext account. Enabling access to business emails with other transactional details makes ERPNext a single platform for accessing all business information in one place.
 
 In ERPNext, you can configure Email Inbox for each System User. Following are the detailed steps to configure Email Inbox for a User.
@@ -74,6 +76,7 @@ The Email Inbox within ERPNext also allow you to quickly create ERPNext transact
 
 <img class="screenshot" alt="Make from Email" src="{{docs_base_url}}/assets/img/setup/email/make-from-email.png">
 
-{next}
-
-
+### 6. Related Topics
+1. [Email Account](/docs/user/manual/en/setting-up/email/email-account)
+1. [Sending Email](/docs/user/manual/en/setting-up/email/sending-email)
+1. [Email Domain](/docs/user/manual/en/setting-up/email/email-domain)

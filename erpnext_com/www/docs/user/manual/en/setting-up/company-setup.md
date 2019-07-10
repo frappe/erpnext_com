@@ -1,38 +1,49 @@
 <!-- add-breadcrumbs -->
-# Company
+# Company Setup
 
 **A company is a legal entity made up of an association of people for carrying on a commercial or industrial enterprise.**
 
-In ERPNext, the first Company is created on completion of account creation. For each Company, you can set a domain as manufacturing, retail, or services depending on the nature of your business activity.
+In ERPNext, the first Company is created when an ERPNext account. For each Company, you can set a domain as manufacturing, retail, or services depending on the nature of your business activity.
 
 If you have more than one company, you can add them from:
 
 > Home > Accounting > Company
 
 ## 1. How to create a new Company
-1. Click on New.
+1. Go to the path, click on New.
 1. Enter the name, abbreviation, and default currency for the company.
 1. Save.
+
+The abbreviation for your company is created by default. For example, FT for Frappe Technologies. The abbreviation helps in differentiating assets of one company from another.
+
+The abbreviation also appears in various accounts, cost centers, taxes templates, warehouse, etc, of your company. 
 
 You can also attach a company logo and add a description for the company.
 
 ![Company Master](/docs/assets/img/setup/company-master.png)
 
-### 1.1 Other Options when creating a company
+### 1.1 Multi Company Structure
 
-* **Domain**: The domain of work the company is into. Eg: manufacturing, services, etc. Choose one when setting up your account.
-* **Is Group**: If checked, this becomes a parent company.
-* **Parent Company**: If this is a child company, set the parent from this field. If a parent company is set, the chart of accounts for a new company will be created on the basis of the parent company.
+Let's assume you run a group of companies, some may be larger companies and some may be smaller that are a part of the larger companie(s).
 
-### 1.2  Tree View
-The tree view displays the overall structure of your companies.
+In ERPNext, you can setup multiple companies. The company structure can be parallel, i.e., sister companies, parent child companies, or a combination of both.
+
+A parent company is the larger organization which consists of one or more child companies. A child company is a subsidiary of a parent company.
+
+The company tree view displays the overall structure of your companies.
 
 <img class="screenshot" alt="Company Tree" src="{{docs_base_url}}/assets/img/accounts/company-tree.png">
 
 Once you build a company tree, ERPNext will validate if the accounts of the child companies match the accounts in the parent company. All the accounts can be combined in a consolidated chart of accounts statement.
 
+### 1.2 Other Options when Creating a Company
+
+* **Domain**: The domain of work the company is into. Eg: manufacturing, services, etc. Choose one when setting up your account.
+* **Is Group**: If checked, this becomes a parent company.
+* **Parent Company**: If this is a child company, set the parent from this field i.e., select a group company this company belongs to. If a parent company is set, the chart of accounts for the new company you're creating will be created on the basis of the selected parent company.
+
 ### 1.3 Chart of Accounts
-On each Company, the master for Chart of Accounts is maintained separately. This allows you to maintain separate accounting for each company as per the legal requirements.
+For each Company, the master for Chart of Accounts is maintained separately. This allows you to maintain separate accounting for each company as per the legal requirements. You can also import chart of accounts using the [Charts Of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer).
 
 <img class="screenshot" alt="Company Chart of Accounts" src="{{docs_base_url}}/assets/img/accounts/company-coa.png">
 
@@ -43,8 +54,8 @@ ERPNext has localized Chart of Accounts readily available for some countries. Wh
 
 <img class="screenshot" alt="Company Chart of Accounts" src="{{docs_base_url}}/assets/img/accounts/company-coa-2.png">
 
-### 1.4 Defaults:
-Within the Company master, you can set many of the default values for masters and accounts. These default accounts will help you in the quick posting of accounting transactions, where the value for the account will be fetched from the Company master if provided. As soon as the company is created, a default Chart Of Accounts and Cost Center is automatically created.
+### 1.4 Defaults
+Within the Company master, you can set many of the default values for masters and accounts. These default accounts will help you in the quick posting of accounting transactions, where the value for the account will be fetched from the Company master, if provided. As soon as the company is created, a default Chart Of Accounts and Cost Center is automatically created.
 
 The following defaults can be set for a company:
 
@@ -59,10 +70,10 @@ The following defaults can be set for a company:
 
 ## 2. Features
 ### 2.1 Monthly Sales Target
-Numerical value in the currency you've set. Total monthly sales will be visible once transactions are made. Know more [here](/docs/user/manual/en/setting-up/setting-company-sales-goal).
+Set the monthly sales target number in the company currency, for example, $10,000. Total monthly sales will be visible once transactions are made. To know more [click here](/docs/user/manual/en/setting-up/setting-company-sales-goal).
 
 ### 2.2 Account Settings
-Some of the following accounts will be set by default, others can be created. The accounts can be seen in the [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts).
+Some of the following accounts will be set by default when you create a new company, others can be created. The accounts can be seen in the [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts). These values can be changed later on if needed.
 
 * Default Bank Account
 * Default Cash Account
@@ -87,7 +98,7 @@ Some of the following accounts will be set by default, others can be created. Th
 * Default Payment Terms Template
 
 ### 2.3 Stock Settings
-Enable Perpetual Inventory - a method for managing inventory, know more [here](/docs/user/manual/en/stock/perpetual-inventory).
+Enabling Perpetual Inventory feature would lead to Stock transactions impacting company's books of accounts. Know more [here](/docs/user/manual/en/stock/perpetual-inventory).
 
 * Default Inventory Account
 * Stock Adjustment Account
@@ -96,7 +107,7 @@ Enable Perpetual Inventory - a method for managing inventory, know more [here](/
 
     ![Stock Settings in Company](/docs/assets/img/setup/company-stock-settings.png)
 
-### 2.2 Fixed Asset Depreciation Settings
+### 2.4 Fixed Asset Depreciation Settings
 For managing fixed assets in a company, the following accounts are needed. Most of them will be created by default. They can be seen in the [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts).
 
 * Accumulated Depreciation Account
@@ -110,20 +121,24 @@ For managing fixed assets in a company, the following accounts are needed. Most 
 
     ![Fixed Asset Depreciation](/docs/assets/img/setup/company-asset-depreciation.png)
 
-### 2.3 HRA Settings
-House Rent Allowance settings for your company can be set here:
+### 2.5 HRA Settings
+
+Set default Component for the following Salary Components.
+
+> For the Indian user, setting default value in this section will help in Employee Tax Declaration calculations, specially for HRA exemption amount.
 
 * Basic Component
 * HRA Component
 * Arrear Component
 
-### 2.4 Bank Remittance Settings
-For transferring money abroad, you can set the following details of your company:
+### 2.6 Bank Remittance Settings
+
+Using Payment Order feature (in Accounts), you can give a single document of transfer for multiple bank transfers. Updating value in the following fields will help you generate Bank Remittance in a format which can be accepted, and can be also uploaded on the bank's portal.
 
 * Client Code
 * Product Code
 
-### 2.5 Budget
+### 2.7 Budget
 Exception Budget Approver Role: The role selected here can bypass the set budget to approve expenses.
 
 ### 2.6 Company Info
@@ -139,9 +154,19 @@ For reference, the following details of your company can be saved in ERPNext:
 
 > Note: When setting the address here, it is important to tick the 'Is Your Company Address' checkbox.
 
+![Company Address](/docs/assets/img/setup/company-address.png)
+
 **For India**, different addresses can be added with different GSTIN numbers if the company has multiple locations. For example, if your company has offices in Mumbai, Delhi, and Bangalore, you'll have to add different addresses with different GSTIN numbers.
 
 On saving a company, the following details/actions will be visible in the dashboard:
 ![Company after Save](/docs/assets/img/setup/company-after-save.png)
 
-{next}
+### 3. Related Topics
+1. [Setting Up Taxes](/docs/user/manual/en/setting-up/setting-up-taxes)
+1. [System Settings](/docs/user/manual/en/setting-up/settings/system-settings)
+1. [Charts Of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
+1. [Users and Permissions](/docs/user/manual/en/setting-up/users-and-permissions)
+1. [Adding Users](/docs/user/manual/en/setting-up/users-and-permissions/adding-users)
+1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
+1. [Email Account](/docs/user/manual/en/setting-up/email/email-account)
+1. [Administrator](/docs/user/manual/en/setting-up/users-and-permissions/administrator)

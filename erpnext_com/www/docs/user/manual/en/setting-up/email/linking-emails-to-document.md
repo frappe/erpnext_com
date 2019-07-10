@@ -3,7 +3,9 @@
 
 > Introduced in v12
 
-An email can be linked to multiple documents in ERPNext. This can be done in the following two ways:
+**An email can be linked to multiple documents in ERPNext.**
+
+This can be done in the following two ways:
 
 - Email Aggregation in Contact, Customer, Supplier.
 - Automatic Email Linking.
@@ -34,4 +36,10 @@ Automatic Email Linking links an Email to the Document specified in the unique E
 
     <img class="screenshot" alt="Add Customer/Supplier in Contact" src="{{docs_base_url}}/assets/img/setup/email/email_link.gif">
 
-{next}
+### 3. Related Topics
+1. [Auto Email Reports](/docs/user/manual/en/setting-up/email/auto-email-reports)
+1. [Sending Email from any Document](/docs/user/manual/en/setting-up/email/sending-email)
+1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)
+
+
+{next

@@ -1,5 +1,7 @@
 <!-- add-breadcrumbs -->
-# Email Domains
+# Email Domain
+
+**An email domain is the name of the network/service you're using for your email account.**
 
 You can configure your Email Domain in ERPNext for easy setup of all Email Accounts. To find Email Domain settings go to:
 
@@ -41,4 +43,6 @@ Once you click on save, these settings are validated by ERPNext and the Email Do
 
 If you've entered and verified the above settings and are still unable to setup Email Domain, you can contact [ERPNext support](/in-app-support) for help.
 
-{next}
+### 2. Related Topics
+1. [Email Account](/docs/user/manual/en/setting-up/email/email-account)
+1. [Email Inbox](/docs/user/manual/en/setting-up/email/email-inbox)

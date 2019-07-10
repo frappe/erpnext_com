@@ -1,5 +1,7 @@
 <!-- add-breadcrumbs -->
-# Terms And Conditions
+# Terms And Conditions Template
+
+**Terms and conditions contain the terms and conditions of a service/product offered by a seller to a buyer.**
 
 Each Quotation/Sales Order must ideally contain a set of terms of your contract. Terms and conditions are usually included to define terms of service, conditions for using any service or to even limit responsibilities of the seller in case any harm is caused to the buyer due to using the provided goods or services.  It is
 usually a good idea to make template(s) of your Terms and Conditions, so that
@@ -18,7 +20,7 @@ To access Terms and Conditions template go to:
 
 ### 1.1. Select in Transaction
 
-In transactions, you will find section of Terms and Condition where you will be able to search and fetched required Terms and Condition master.
+In transactions, you will find section of Terms and Conditions where you will be able to search and fetched required Terms and Condition master.
 
 <img class="screenshot" alt="Terms and Conditions, Select in document" src="{{docs_base_url}}/assets/img/setup/print/terms-3.png">
 
@@ -37,4 +39,6 @@ Here are a some common topics that Terms and Conditions should contain:
 
 Terms and conditions are the general and special arrangements, provisions, requirements, rules, specifications, and standards that a company follows. These specifications are an integral part of an agreement or contract that the company gets into with its customers, suppliers or partners.
 
-{next}
+### 2. Related Topics
+1. [Address Template](/docs/user/manual/en/setting-up/print/address-template)
+1. [Cheque Print Template](/docs/user/manual/en/setting-up/print/cheque-print-template)

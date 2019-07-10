@@ -44,4 +44,6 @@ This indicates that the System Manager has clicked on the "Delete Data" button. 
 
 <img class="screenshot" alt="Deleted User" src="{{docs_base_url}}/assets/img/setup/personal-data-deletion-request/deleted-user.png">
 
-{next}
+### 3. Related Topics
+1. [Personal Data Download](/docs/user/manual/en/setting-up/personal-data-request)
+

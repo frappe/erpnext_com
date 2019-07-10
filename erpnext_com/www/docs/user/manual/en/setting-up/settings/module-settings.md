@@ -1,5 +1,7 @@
 <!-- add-breadcrumbs -->
-# Show or Hide Modules
+# Module settings
+
+**With Module Settings, you can show or hide modules.**
 
 You can globally switch off certain modules by clicking on Show / Hide Cards in your ERPNext Home Page.
 
@@ -11,4 +13,9 @@ Check/uncheck the items to show/hide.
 
 In versions older than v12, click on your username, select 'Everyone' and check/uncheck the modules
 
-{next}
+### Related Topics
+1. [System Settings](/docs/user/manual/en/setting-up/settings/system-settings)
+1. [Adding Users](/docs/user/manual/en/setting-up/users-and-permissions/adding-users)
+1. [Role and Role Profile](/docs/user/manual/en/setting-up/users-and-permissions/role-and-role-profile)
+1. [Role Based Permissions](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions)
+1. [User Permissions](/docs/user/manual/en/setting-up/users-and-permissions/user-permissions)

@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Setting Company Sales Goal
 
-Defining and achieving sales targets can help your company reach new goals and increase revenue.
+**Defining and achieving sales goals/targets can help your company reach new goals and increase revenue.**
 
 1. Monthly sales targets can be set for a company via the Company master. By default, the Company master dashboard displays month-wise past sales stats.
 
@@ -15,4 +15,7 @@ Defining and achieving sales targets can help your company reach new goals and i
 
     <img class="screenshot" alt="Sales Notification" src="{{docs_base_url}}/assets/img/sales_goal/sales_goal_notification.png">
 
-{next}
+### Related Topics
+1. [Company Setup](/docs/user/manual/en/setting-up/company-setup)
+1. [Sales Order](/docs/user/manual/en/selling/sales-order)
+1. [Sales Partner](/docs/user/manual/en/selling/sales-partner)

@@ -26,4 +26,9 @@ Example of a change in print heading is shown as follows:
   </iframe>
 </div>
 
-{next}
+### 2. Related Topics
+1. [Print Format](/docs/user/manual/en/setting-up/print/print-format)
+1. [Print Style](/docs/user/manual/en/setting-up/print/print-style)
+1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
+1. [Cheque Print Template](/docs/user/manual/en/setting-up/print/cheque-print-template)
+1. [Quotation](/docs/user/manual/en/selling/quotation)

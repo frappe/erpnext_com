@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # Workflows
 
+**With workflows you can rewrite how a particular process/workflow is handled in ERPNext.**
+
 In order to allow multiple people to submit multiple requests, for approvals
 by multiple users, ERPNext requires you to fill the workflow conditions.
 ERPNext tracks the multiple permissions before submission.
@@ -14,7 +16,7 @@ will get an indication that the HR department has Accepted or Rejected. The
 Manager, who is the approving authority, will either Approve or Reject this
 request. Accordingly, the user will get his Approved or Rejected status.
 
-<img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/workflow-leave-fl.jpg">
+<img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/workflow-leave-fl.png">
 
 To make this Workflow and transition rules go to:
 
@@ -94,8 +96,6 @@ When the Leave Approver opens the Leave Application page, he can finally "Approv
 
 <img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/workflow-5.png">
 
-### Video Tutorial
-
 <div>
     <div class="embed-container">
         <iframe src="https://www.youtube.com/embed/yObJUg9FxFs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
@@ -103,5 +103,6 @@ When the Leave Approver opens the Leave Application page, he can finally "Approv
     </div>
 </div>
 
-{next}
-
+### 4. Related Topics
+1. [Workflow Actions](/docs/user/manual/en/setting-up/workflow-actions)
+1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)

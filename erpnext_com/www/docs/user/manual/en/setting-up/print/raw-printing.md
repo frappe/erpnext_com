@@ -3,7 +3,9 @@
 
 > Introduced in Version 12
 
-Sending a string of commands to a printer directly in its native language is called Raw Printing. Many thermal printers need these raw commands sent to them in order to perform functions like barcode printing, receipt printing, label printing, etc. Raw Printing bypasses the printer's drivers in most cases, making them very fast and reliable. Raw Printing is also capable of doing some advanced features such as cutting receipt paper, kicking out cash drawers, etc.
+**Sending a string of commands to a printer directly in its native language is called Raw Printing.**
+
+Many thermal printers need these raw commands sent to them in order to perform functions like barcode printing, receipt printing, label printing, etc. Raw Printing bypasses the printer's drivers in most cases, making them very fast and reliable. Raw Printing is also capable of doing some advanced features such as cutting receipt paper, kicking out cash drawers, etc.
 
 ## 1. Setting up Raw Printing in ERPNext
 
@@ -104,4 +106,7 @@ Here, `qz` is a global object provided by the `qz-tray.js` library.
 
 You can also directly access the functions provided by the `qz-tray.js` library via the `qz` object. [Click here for qz-tray.js library documentation](https://qz.io/api/). Note: The `qz` object is initialized only after calling the `frappe.ui.form.qz_connect` for the first time. In case you require the `qz` object before that you can use the `frappe.ui.form.qz_init`.
 
-{next}
+### 3. Related Topics
+1. [Print Settings](/docs/user/manual/en/setting-up/print/print-settings)
+1. [Print Format](/docs/user/manual/en/setting-up/print/print-format)
+1. [Print Style](/docs/user/manual/en/setting-up/print/print-style)

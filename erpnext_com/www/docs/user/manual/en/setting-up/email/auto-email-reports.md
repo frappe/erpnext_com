@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # Auto Email Reports
 
+**Auto Email Reports automatically sends reports for the selected document.**
+
 You can setup **Auto Email Report** to send reports at regular intervals. These must be saved reports of any type (Report Builder, Script or Query Report).
 
 You can find Auto Email Report at
@@ -24,6 +26,10 @@ If your report has filters, you will be able to see them. Click on the table to 
 
 You can test the report by clicking on "Download" or "Send Now".
 
-Here is an example of the email you will receive for a report
+Here is an example of the email you will receive for a general ledger report:
 
 <img class="screenshot" alt="Report by Email" src="{{docs_base_url}}/assets/img/setup/email/auto-email-4.png">
+
+### 2. Related Topics
+1. [Email Digest](/docs/user/manual/en/setting-up/email/email-digest)
+1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)

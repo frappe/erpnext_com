@@ -1,7 +1,9 @@
 <!-- add-breadcrumbs -->
-
 # Energy Point System
-Energy Points System is a rating/karma system that you can enable for your organization. This system can be used to track the performance of each user.
+
+**Energy Points System is a rating/karma system that you can enable for your organization.**
+
+This system can be used to track the performance of each user.
 
 > To enable Energy Point System go to **Energy Point Settings**
  > check **Enabled**.
@@ -63,4 +65,5 @@ The leaderboard shows the user's standing in the organization.
 
 <img class="screenshot" src="/docs/assets/img/setup/energy-point-system/leaderboard.png">
 
-{next}
+### 5. Related Topics
+1. [Milestone Tracking](/docs/user/manual/en/setting-up/automation/milestone-tracker)

@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 #Letter Head
 
+**A letter head contains your organizations name, logo, address etc which appears at the top portion in documents.**
+
 Every company has a default Letter Head. These Letter Head values are generally set as Header and Footer in the documents. In ERPNext, you can capture these details in the Letter Head master.
 
 These details will appear in the Print Format of transactions like Sales Order, Sales Invoice, Salary Slip, Purchase Order, etc.
@@ -33,4 +35,8 @@ This is how the letterhead looks in a document's print.
   </iframe>
 </div>
 
-{next}
+### 2. Related Topics
+1. [Address Template](/docs/user/manual/en/setting-up/print/address-template)
+1. [Terms and Conditions](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+1. [Cheque Print Template](/docs/user/manual/en/setting-up/print/cheque-print-template)
+1. [Print Headings](/docs/user/manual/en/setting-up/print/print-headings)

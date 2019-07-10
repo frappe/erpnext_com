@@ -14,6 +14,14 @@ The most important role is the "System Manager". Any user having this role can a
     </div>
 </div>
 
-{index}
+### Related Topics
+
+1. [Adding Users](/docs/user/manual/en/setting-up/users-and-permissions/adding-users)
+1. [Role and Role Profile](/docs/user/manual/en/setting-up/users-and-permissions/role-and-role-profile)
+1. [Role Based Permissions](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions)
+1. [User Permissions](/docs/user/manual/en/setting-up/users-and-permissions/user-permissions)
+1. [Role Permission For Page And Report](/docs/user/manual/en/setting-up/users-and-permissions/role-permission-for-page-and-report)
+1. [Sharing](/docs/user/manual/en/setting-up/users-and-permissions/sharing)
+1. [Administrator](/docs/user/manual/en/setting-up/users-and-permissions/administrator)
 
 {next}

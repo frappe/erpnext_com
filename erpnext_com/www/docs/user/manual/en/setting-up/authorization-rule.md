@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Authorization Rule
 
-Authorization Rule is a tool to define a rule for conditional authorization.
+**Authorization Rule is a tool to define a rule for conditional authorization of documents.**
 
 If you sell and purchase items of high value or discounts applied require authorization from senior managers, you can set authorization rules for it.
 
@@ -28,5 +28,3 @@ Assume that the Sales Manager needs to authorize Sales Orders, only if its Grand
 If Sales User tries submitting Sales Order of value higher than 10,000, then he will get an error message.
 
 > If you wish to restrict Sales User from submitting Sales Orders, then instead of creating Authorization Rule, you should remove submit privilege for Sales User from [Role Permission Manager](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions).
-
-{next}

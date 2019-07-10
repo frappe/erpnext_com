@@ -2,14 +2,16 @@
 
 # Chart Of Accounts Importer
 
->Introduced in Version 12
+> Introduced in Version 12
 
-Chart of Accounts Importer is a great tool to import your existing Chart of Accounts. It allows you to create your own chart of accounts according to your requirement and import it into the system.
+When a new company is created in ERPNext, the Chart of Accounts for it is created by default with a pre set structure. However, if you have your own Chart of Accounts, you can import it using the Chart of Accounts Importer.
+
+It allows you to create your own chart of accounts according to your requirement and import it into the system.
 
 Any existing Chart Of Accounts against that company will be overwritten. Make sure the company you are selecting doesn't have a pre existing transactions otherwise you'll receive a validation error.
 
 To access, go to:
-> Getting Started > Data Import and Settings > Chart of Accounts Importer
+> Home > Getting Started > Data Import and Settings > Chart of Accounts Importer
 
 ## 1. How to import Chart Of Accounts
 

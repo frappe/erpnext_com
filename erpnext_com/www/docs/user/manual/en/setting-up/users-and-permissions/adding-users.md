@@ -2,6 +2,7 @@
 # Adding Users
 
 Users can be added by the System Manager or Administrator. To add users go to:
+> Home > Users and Permissions > Users > User
 
 There are two main types of users: Website Users and System Users. System Users are people using ERPNext in the company with access to modules, company data, etc. Web users are customers or suppliers who have access only to the portal.
   
@@ -57,14 +58,11 @@ With this option you can follow various documents in the system and get email no
 * **Send Notifications for Email threads**: The user will get a notification for Email threads in DocTypes like Opportunities.
 * **Send Me A Copy of Outgoing Emails**: Send the user a copy of the Emails they send.
 * **Allowed In Mentions**: Allow this user's name to appear in conversations so that they can be mentioned using '@'.
-* **Email Signature**: 
+* **Email Signature**: Adding an email signature here will set it as default for all outgoing emails.
 
 ### 2.6 Email Inbox
 
 Subscribe the user to different mailing lists of your company.
-
-<!--### 2.7 Desktop Background
- does not work in v12-->
 
 ### 2.7 Allow Module Access
 
@@ -103,5 +101,7 @@ Login with Email or Mobile:
 
 After adding these details, save the user.
 
-
-{next}
+### 4. Related Topics
+1. [Role Based Permissions](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions)
+1. [User Permissions](/docs/user/manual/en/setting-up/users-and-permissions/user-permissions)
+1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)

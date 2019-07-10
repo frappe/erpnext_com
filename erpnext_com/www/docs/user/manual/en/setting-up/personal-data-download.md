@@ -1,8 +1,8 @@
 <!--add breadcrumbs-->
 
-# Personal Data Download
+# Personal Data Request
 
-Personal data download tool enables user to automatically download all the personal data a user has generated while using erpnext. This includes personally identifiable data from lead, contact, communication, emails and so on.
+Personal data download tool enables user to automatically download all the personal data a user has generated while using ERPNext. This includes personally identifiable data from lead, contact, communication, emails and so on.
 
 ## 1. How to request user data download
 
@@ -22,4 +22,5 @@ The request is also recorded in the DocType "Personal Data Download Request", th
 
 <img class="screenshot" alt="Personal Data Download Request Doctype" src="{{docs_base_url}}/assets/img/setup/personal-data-download-request/personal-data-download-request-doctype.png">
 
-{next}
+### 3. Related Topics
+1. [Personal Data Deletion](/docs/user/manual/en/setting-up/personal-data-deletion)

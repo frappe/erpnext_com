@@ -4,7 +4,7 @@
 
 > Introduced in Version 12
 
-You can automatically track milestones based on the lifecycle of a document if it undergoes multiple stages.
+**You can automatically track milestones based on the lifecycle of a document if it undergoes multiple stages.**
 
 The configuration for Milestone setting can be set in **Milestone Tracking** and each milestone is updated in **Milestone**
 
@@ -43,3 +43,4 @@ Energy Point Rules can be defined to automatically give Energy Points to users w
 
 1. [Tracking Versions](/docs/user/manual/en/using-erpnext/document-versioning)
 1. [Dashboards](/docs/user/manual/en/customize-erpnext/dashboard)
+1. [Energy Point System](/docs/user/manual/en/setting-up/energy-point-system)

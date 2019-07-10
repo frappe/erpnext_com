@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # SMS Settings
 
+**You can subscribe to an SMS provider to send SMS to mobile numbers.**
+
 To integrate SMS in ERPNext, approach an SMS Gateway Provider who provides HTTP
 API. They will create an account for you and will provide an unique username
 and password.
@@ -37,4 +39,6 @@ be entered in the Static Parameters table.
 
 <img class="screenshot" alt="SMS Setting" src="{{docs_base_url}}/assets/img/setup/sms-settings1.png">
 
-{next}
+### Related Topics
+1. [Email Account](/docs/user/manual/en/setting-up/email/email-account)
+1. [Notifications](/docs/user/manual/en/setting-up/notifications)

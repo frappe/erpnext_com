@@ -1,10 +1,10 @@
 <!-- add-breadcrumbs -->
 
-## Workflow Actions
+# Workflow Actions
 
 > Introduced in Version 11
 
-Workflow Actions is a single place to manage all the pending actions you can take on Workflows.
+**Workflow Actions is a single place to manage all the pending actions you can take on Workflows.**
 
 To access Workflow Actions, go to:
 > Home > Settings > Workflow > Workflow Actions
@@ -20,4 +20,6 @@ Also the users will see entries in their Workflow Action list:
 - You can set email template for Workflow Actions on each state. The template might consist of a message for users to proceed with the next Workflow Actions.
 - Workflow Actions will not be created for transition to optional state.
 
-{next}
+### Related Topics
+1. [Workflows](/docs/user/manual/en/setting-up/workflows)
+1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)

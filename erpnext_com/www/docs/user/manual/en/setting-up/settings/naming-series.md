@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # Naming Series
 
+**Master and transactions can be given prefixes in the form of naming series.**
+
 Data records are broadly classified as “Masters” or “Transaction”. A master
 is a record that has a “name”, for example, Customer, Item, Supplier,
 Employee, etc.
@@ -66,5 +68,5 @@ For example:
   </div>
 </div>
 
-
-{next}
+### 4. Related Topics
+1. [Bulk Rename](/docs/user/manual/en/setting-up/data-and-privacy/bulk-rename)

@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # Email Accounts
 
+**You can add your email account to be used with ERPNext account.**
+
 You can manage multiple incoming and outgoing Email Accounts in ERPNext. There has to be at least one default outgoing account and one default incoming account. If you are on the ERPNext cloud, the default outgoing email is set by us.
 
 To access Email Accounts, go to:
@@ -86,4 +88,9 @@ In ERPNext when you send an email to a contact like a customer, the sender will 
     <iframe src="https://www.youtube.com/embed/ChsFbIuG06g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
-{next}
+### 4. Related Topics
+1. [Email Inbox](/docs/user/manual/en/setting-up/email/email-inbox)
+1. [Email Digest](/docs/user/manual/en/setting-up/email/email-digest)
+1. [Auto Email Reports](/docs/user/manual/en/setting-up/email/auto-email-reports)
+1. [Sending Email](/docs/user/manual/en/setting-up/email/sending-email)
+1. [Email Domain](/docs/user/manual/en/setting-up/email/email-domain)

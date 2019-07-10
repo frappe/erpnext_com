@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # Address Template
 
+**Address template can store different formats of addressed based on the region.**
+
 Each region has its own way of defining addresses. To manage multiple address formats for your Documents (like Quotations, Purchase Invoices etc.), you can create country-wise **Address Templates**.
 
 To access address template, go to:
@@ -33,4 +35,6 @@ Here is an example:
 
 <img class="screenshot" alt="Print Heading" src="{{docs_base_url}}/assets/img/setup/print/address-format.png">
 
-{next}
+### 2. Related Topics
+1. [Terms and Conditions Template](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+1. [Cheque Print Template](/docs/user/manual/en/setting-up/print/cheque-print-template)

@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # Role Based Permissions
 
+**Permission to different documents can be controlled using Role Based Permissions.**
+
 ERPNext has a role-based permission system. It means that you can assign Roles to Users, and set Permissions on Roles. The permission structure also allows you to define different permission rules for different fields, using a concept called **Permission "Level"** of a field. Once roles are assigned to a user, it gives you the ability to limit access for a user to only specific documents.
 
 To start, go to:
@@ -65,4 +67,8 @@ Leave Application is a good example that encompasses all areas of Permission Sys
 
   <img class="screenshot" alt="Let HR User delegate access to Leave Applications by checking 'Set User Permissions'. This will allow HR User to access User Permissions Manager for 'Leave Application'" src="{{docs_base_url}}/assets/img/users-and-permissions/setting-up-permissions-hr-user-role.png">
 
-{next}
+### 3. Related Topics
+1. [Role Based Permissions](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions)
+1. [User Permissions](/docs/user/manual/en/setting-up/users-and-permissions/user-permissions)
+1. [Role Permission For Page And Report](/docs/user/manual/en/setting-up/users-and-permissions/role-permission-for-page-and-report)
+
