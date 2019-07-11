@@ -6,7 +6,7 @@ Global settings for HR related documents
 <img class="screenshot" alt="HR Settings" src="{{docs_base_url}}/assets/img/human-resources/hr-settings.png">
 
 To access HR Settings, go to:
-> Home > Settings > HR Settings
+> Home > Human Resources > Settings > HR Settings
 
 There are various settings available in the HR Settings. Let's learn about each below.
 
