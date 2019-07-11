@@ -9,7 +9,7 @@ To make a new Expense Claim, go to:
 
 <img class="screenshot" alt="Expense Claim" src="{{docs_base_url}}/assets/img/human-resources/expense_claim.png">
 
-Set the Employee ID, date and the list of expenses and corresponding taxes that are to be claimed and “Submit” the record.
+Set the Employee ID, date, the list of expenses, and corresponding taxes that are to be claimed and “Submit” the record.
 
 <img class="screenshot" alt="Expense Claim" src="{{docs_base_url}}/assets/img/human-resources/expense-claim-expenses.png">
 
