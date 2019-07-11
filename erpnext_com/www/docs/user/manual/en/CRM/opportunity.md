@@ -71,7 +71,7 @@ When an opportunity is lost, you can capture the reasons for losing. This will h
 
 #### 2.7 Minutes to First Response
 
-When you sent first reply(email) to opportunity, it calculates Mins to First Response.
+When you send the first reply(email) to an Opportunity, it calculates Mins to First Response and is displayed in a field.
 
 Report for the same can be found [here](/docs/user/manual/en/CRM/crm_reports) 
 #### 3. Related Topics
