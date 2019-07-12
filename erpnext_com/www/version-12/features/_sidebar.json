@@ -1,0 +1,42 @@
+[
+ {
+  "route": "/releases/version-12",
+  "title": "Version 12 Home"
+ },
+ {
+  "route": "/releases/version-12/features/desktop",
+  "title": "New Desktop"
+ },
+ {
+  "route": "/releases/version-12/features/dashboards",
+  "title": "Dashboards"
+ },
+ {
+  "route": "/releases/version-12/features/keyboard-navigation",
+  "title": "Keyboard Navigation"
+ },
+ {
+  "route": "/releases/version-12/features/energy-points",
+  "title": "Energy Points"
+ },
+ {
+  "route": "/releases/version-12/features/website-module",
+  "title": "Website"
+ },
+ {
+  "route": "/releases/version-12/features/accounting-dimensions",
+  "title": "Accounting Dimensions"
+ },
+ {
+  "route": "/releases/version-12/features/automation",
+  "title": "Automation"
+ },
+ {
+  "route": "/releases/version-12/features/raw-printing",
+  "title": "Rar Printing"
+ },
+ {
+  "route": "/releases/version-12/features/others",
+  "title": "Other Features"
+ }
+]
