@@ -17,12 +17,6 @@
 
  * Procedure : Quality Procedure of the Goal is automatically fetched when a Goal is selected.
 
- * Scope : Scope of the Goal is automatically fetched when a Goal is selected.
-
- * Values : All the Objectives and Target and Unit associated with the Goal are fetched.
-
- * Achieved : Indicates the Achieved Value for a certain Target Value.(This Field is visible only if the Goal can be measured interms of numeric values)
-
- * Yes/No : Indicates whether the Objective has been completed or not.(This Field is visible only if the Goal cannot be measured interms of numeric values)
+ * Review : Review about a particular Quality Objective.
 
 {next}
