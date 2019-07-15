@@ -44,11 +44,18 @@ metatags:
 ### UI/UX Enhancements
 1. New Desk
 1. Keyboard Navigation
-1. Link Preview
+1. [Link Preview](/version-12/release-notes/features#link-preview)
 1. [New Upload Dialog](/version-12/release-notes/features#auto-fetch-serialized-items)
-1. [Frequently visited links appear in Awesomebar results](/version-12/release-notes/features#frequently_visited_links_appear_in_awesomebar_results)
+1. [Frequently visited links appear in Awesomebar results](/version-12/release-notes/features#frequently-visited-links-appear-in-awesomebar-results)
 1. [Full Width Container]((/version-12/release-notes/features#auto-fetch-serialized-items))
 1. [List View Enhancements](/version-12/release-notes/features#auto-fetch-serialized-items)
+
+
+### New Reports
+1. Bank Remittance
+1. BOM Explorer
+1. Project Billing Report
+1. Employee Billing Report
 
 ### Other Changes & Enhancements
 1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)
@@ -59,19 +66,13 @@ metatags:
 1. [Milestones](/docs/user/manual/en/setting-up/automation/milestone-tracker)
 1. [Project Template](/docs/user/manual/en/projects/project-template)
 1. [Dashboards](/docs/user/manual/en/customize-erpnext/dashboard)
-1. Disable customization for single doctypes
+1. [Disable customization for single doctypes](/version-12/release-notes/features#disable-customization-for-single-doctypes)
 1. [Email Linking](/docs/user/manual/en/setting-up/email/linking-emails-to-document)
 1. [Google Contacts](/version-12/release-notes/features#google-contacts)
 1. [PDF Encryption](/version-12/release-notes/features#pdf-encryption)
 1. [Raw Printing](/docs/user/manual/en/setting-up/print/raw-printing)
 1. [Web Form Refactor](/version-12/release-notes/features#web-form-refactor)
 1. [Website Refactor](/docs/user/manual/en/website)
-1. [Added Track Views field to Customize Form](/version-12/release-notes/features#added_track_views_field_to_customize_form)
+1. [Added Track Views field to Customize Form](/version-12/release-notes/features#added-track-views-field-to-customize-form)
 1. [Recorder](/version-12/release-notes/features#recorder)
-1. [Add custom columns to any report](/version-12/release-notes/features#add_custom_columns_to_any_report)
-
-### New Reports
-1. Bank Remittance
-1. BOM Explorer
-1. Project Billing Report
-1. Employee Billing Report
+1. [Add custom columns to any report](/version-12/release-notes/features#add-custom-columns-to-any-report)
