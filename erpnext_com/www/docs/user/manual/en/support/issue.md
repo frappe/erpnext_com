@@ -16,6 +16,16 @@ Frappe system.
 
 <img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/issue.png">
 
+#### Service Level Agreement
+
+If Service Level Agreements are enabled, you can track it in Issues. Every Issue
+will have a Time to Response and Resolve within which you have to Respond and Resolve the Issue.
+You can change Priority in order to escalate the priority of Issue provided the priorities are specified
+in the Service Level Agreement.
+
+<img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/iss.gif">
+<img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/iss-cust.gif">
+
 #### Discussion Thread
 
 When a new email is fetched from your mailbox, a new Issue record is
