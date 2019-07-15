@@ -1,0 +1,22 @@
+[
+ {
+  "route": "/version-12",
+  "title": "Version 12 Home"
+ },
+ {
+  "route": "/releases/version-12",
+  "title": "New Features"
+ },
+ {
+  "route": "/releases/version-12",
+  "title": "Enhancements"
+ },
+ {
+  "route": "/releases/version-12",
+  "title": "New Reports"
+ },
+ {
+  "route": "/releases/version-12",
+  "title": "Fixes"
+ }
+]
