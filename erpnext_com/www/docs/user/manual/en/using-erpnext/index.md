@@ -25,7 +25,8 @@ effectively manage your data and collaborate with your co-workers.
 - [Tags](/docs/user/manual/en/using-erpnext/tags)
 
 ## Articles
-1. [Check Link Between Documents](/docs/user/manual/en/using-erpnext/articles/check-link-between-documents)
+1. [Keyboard Shortcuts](/docs/user/manual/en/using-erpnext/articles/keyboard-shortcuts)
+- [Check Link Between Documents](/docs/user/manual/en/using-erpnext/articles/check-link-between-documents)
 - [Delete Submitted Document](/docs/user/manual/en/using-erpnext/articles/delete-submitted-document)
 - [Duplicate Record](/docs/user/manual/en/using-erpnext/articles/duplicate-record)
 - [Adding File As A Attachment](/docs/user/manual/en/using-erpnext/articles/adding-file-as-a-attachment)
