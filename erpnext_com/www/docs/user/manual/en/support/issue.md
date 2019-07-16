@@ -22,7 +22,7 @@ If [Service Level Agreements](/docs/user/manual/en/support/service-level-agreeme
 will have a Time to Response and Resolve within which you have to Respond and Resolve the Issue.
 You can change Priority in order to escalate the priority of the Issue. The priorities need to be specified
 in the Service Level Agreement.
-If by any chance you feel like resetting Service Level Agreement, you can do so by clicking Reset
+If by any chance you feel like resetting Service Level Agreement, you can do so by clicking on the 'Reset
 Service Level Agreement' button in Issues shown as follows:
 
 <img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/iss.gif">
