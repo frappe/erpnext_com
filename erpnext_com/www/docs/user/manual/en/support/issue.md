@@ -18,7 +18,7 @@ Frappe system.
 
 #### Service Level Agreement
 
-If Service Level Agreements are enabled, you can track it in Issues. Every Issue
+If [Service Level Agreements](/docs/user/manual/en/support/service-level-agreement) are enabled, you can track it in Issues. Every Issue
 will have a Time to Response and Resolve within which you have to Respond and Resolve the Issue.
 You can change Priority in order to escalate the priority of Issue provided the priorities are specified
 in the Service Level Agreement.
