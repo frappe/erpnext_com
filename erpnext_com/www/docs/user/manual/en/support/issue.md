@@ -20,7 +20,7 @@ Frappe system.
 
 If [Service Level Agreements](/docs/user/manual/en/support/service-level-agreement) are enabled, you can track it in Issues. Every Issue
 will have a Time to Response and Resolve within which you have to Respond and Resolve the Issue.
-You can change Priority in order to escalate the priority of Issue provided the priorities are specified
+You can change Priority in order to escalate the priority of the Issue. The priorities need to be specified
 in the Service Level Agreement.
 If by any chance you feel like resetting Service Level Agreement, you can do so by clicking Reset
 Service Level Agreement in Issues.
