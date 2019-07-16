@@ -46,7 +46,7 @@ Steps for creating a Service Level Agreement:
  * Entity Type : Service Level Agreements can be assigned to a Customer/Customer Group/Territory enabling you to apply Service Level Agreement based on these factors.
  * Entity: Select the name of Customer/Customer Group/Territory.
  * Start / End Date : Defines the validity of the agreement.
- * Priorities : Contains multiple Issue Priorities and their Time to respond and resolve (eg: (3, days) or (3, hours)) that are defined in Service Level.
+ * Priorities : Contains multiple Issue Priorities and their Time to Respond and Resolve (eg: (3, days) or (3, hours)) that are defined in Service Level.
  * Support days : Contains the Days of the week on which Support is provided and has a Start Time and End Time of the Working day.
 
 {next}
