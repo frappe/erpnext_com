@@ -32,7 +32,7 @@ A service level agreement (SLA) is a contract between a service provider (either
 
 To create a new Service Level Agreement go to:
 > Enable Track Service Level Agreement in Support Settings
-> Support > Service Level Agreement > New Service Level Agreement
+> Home > Support > Service Level Agreement > Service Level Agreement
 
 <img class="screenshot" alt="Service Level Agreement" src="{{docs_base_url}}/assets/img/support/supp-sett.png">
 <img class="screenshot" alt="Service Level Agreement" src="{{docs_base_url}}/assets/img/support/sla-def.gif">
