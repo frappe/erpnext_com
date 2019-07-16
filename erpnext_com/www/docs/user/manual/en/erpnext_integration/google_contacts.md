@@ -4,7 +4,7 @@
 ERPNext provides an integration with Google Contacts in order for all users to synchronize their Google Contacts with ERPNext.
 
 
-## Setup
+## How to set up Google Contacts Integration
 
 In order to allow a synchronization with Google Contacts, you need to authorize ERPNext to get Contacts data from Google. Google Contacts Integration is set up with the following steps:
 
