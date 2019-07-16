@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Google Contacts Integration
 
-ERPNext provides an integration with Google Contacts in order for all users to synchronize their Contacts.
+ERPNext provides an integration with Google Contacts in order for all users to synchronize their Google Contacts with ERPNext.
 
 
 ## Setup
