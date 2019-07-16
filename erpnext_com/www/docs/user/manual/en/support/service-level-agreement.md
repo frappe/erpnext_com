@@ -23,7 +23,7 @@ Steps for creating a Service Level:
  * Employee Group : Employee Group that will handle a particular Service Level.
  * Holiday List : Select the holidays on which Service Level Agreement won't be applied.
  * Default Priority : Default Priority selected in Priorities Child Table.
- * Priorities : Contains multiple Issue Priorities and their Time to respond and resolve (eg: (3, days) or (3, hours)) that are defined in Service Level.
+ * Priorities : Contains multiple Issue Priorities and their Time to Respond and Resolve (eg: (3, days) or (3, hours)) that are defined in the Service Level.
  * Support days : Contains the Days of the week on which Support is provided and has a Start Time and End Time of the Working day.
 
 ## Service Level Agreement
