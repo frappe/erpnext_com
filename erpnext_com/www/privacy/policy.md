@@ -19,7 +19,7 @@ By providing us with your data, you warrant to us that you are over 13 years of 
 
 Frappe Technologies Pvt. Limited is the data controller and processor, and we are responsible for your personal data (referred to as “we”, “us” or “our” in this privacy policy).
 
-We recognise the importance of maintaining your privacy. We value your privacy and appreciate your trust in us. This Policy describes how we treat user information we collect on http://www.erpnext.com, http://frappe.erpnext.com and other offline sources. This Privacy Policy applies to current and former visitors to our website and to our online customers. By visiting and/or using our website, you agree to this Privacy Policy.
+We recognize the importance of maintaining your privacy. We value your privacy and appreciate your trust in us. This Policy describes how we treat user information we collect on http://www.erpnext.com, http://frappe.erpnext.com and other offline sources. This Privacy Policy applies to current and former visitors to our website and to our online customers. By visiting and/or using our website, you agree to this Privacy Policy.
 erpnext.com is a property of Frappe Technologies Private Limited, an Indian Company registered under the Companies Act, 1956 having its registered office at D/324 Neelkanth Business Park, Vidyavihar West, Mumbai, Maharashtra - 400086, India
 
 ---
@@ -105,7 +105,7 @@ This includes a third party who may help us with implementation of the services 
 
 #### 5.3 We will share information with the event organizers
 
-We share your information with event organizers and other parties responsible for organising events, demo sessions for you. The event organizers and other parties may use the information we give them as described in their privacy policies.
+We share your information with event organizers and other parties responsible for organizing events, demo sessions for you. The event organizers and other parties may use the information we give them as described in their privacy policies.
 We may share information if we think we have to in order to comply with the law or to protect ourselves. We will share information to respond to a court order or subpoena. We may also share it if a government agency or investigatory body requests. Or, we might also share information when we are investigating potential fraud.
 We may share information with any successor to all or part of our business. For example, if part of our business is sold we may give our customer list as part of that transaction.
 We may share your information for reasons not described in this policy. We will tell you before we do this.
@@ -191,7 +191,7 @@ You can also automate database backup download of your ERPNext account into your
 
 ### 10. Who can access my account
 
-We also have an access to your account for adminsitrative purposes. This includes access for support and update purposes.
+We also have an access to your account for administrative purposes. This includes access for support and update purposes.
 
 If anyone in our team has to access your data for support, then you will get an email mentioning that one of our engineers have accessed your data along with a reason. Your passwords are not accessible to our engineers and are generated via a program. If they need to access the account, they must go via this route. All our employees have signed a Non-Disclosure of Data agreement with us and they are fully aware of the consequences and risks involved with access of customer data.
 
@@ -230,7 +230,7 @@ Please note that we can't delete certain details related to billing for legal an
 
 ERPNext is free and Open Source. This is our biggest advantage against other cloud/SAAS ERPs. In the remote possibility that you do not want our service or we are unable to service, the entire source code with installation instructions is online at github.com.
 
-All you have to do is download your backup and reinstall on your new server. You can also export only the necessary data in spreadheets (Excel, CSV) and import them in your new instance.
+All you have to do is download your backup and reinstall on your new server. You can also export only the necessary data in spreadsheets (Excel, CSV) and import them in your new instance.
 
 ---
 
@@ -273,7 +273,7 @@ Email address: <a href="mailto: support@erpnext.com">support@erpnext.com</a>.
 
 ### 19. Taking care of your Password (Password security)
 
-erpnext.com firmly believes in protecting the personal information of the customer. erpnext.com or any of its staff or official will never ask for any password or related information from its customers and the customers are also advised, in order to protect access to their accounts and to other channels, do not disclose the passwords to anyone. Generally, when you subscribe to free trial or make a purchase at erpnext.com, you are required to generate your own password. It is recommended that the customers necessarily choose their own passwords carefully such that no unauthorized access is made by a third party. You are also advised not to keep any written or other record of the password/s so that no third party could access the same. You should not disclose the password to anyone. In order that the passwords become complex and difficult for others to guess the you should carefully choose the alpha numeric passwords with combination of upper case alphabets and numbers and special characters (like @, %, &, ! etc.) The password is a private information and must be kept confidential by the owner of the username related to the password. If a password is known by someone other than the owner, that username and password could be misused to access resources and information and possibly with criminal intent—and without notice since they would appear as the registered owner. We will bear no responsibility for loss caused to you in relation to password theft or unauthorised access due to weak passwords etc.
+erpnext.com firmly believes in protecting the personal information of the customer. erpnext.com or any of its staff or official will never ask for any password or related information from its customers and the customers are also advised, in order to protect access to their accounts and to other channels, do not disclose the passwords to anyone. Generally, when you subscribe to free trial or make a purchase at erpnext.com, you are required to generate your own password. It is recommended that the customers necessarily choose their own passwords carefully such that no unauthorized access is made by a third party. You are also advised not to keep any written or other record of the password/s so that no third party could access the same. You should not disclose the password to anyone. In order that the passwords become complex and difficult for others to guess the you should carefully choose the alpha numeric passwords with combination of upper case alphabets and numbers and special characters (like @, %, &, ! etc.) The password is a private information and must be kept confidential by the owner of the username related to the password. If a password is known by someone other than the owner, that username and password could be misused to access resources and information and possibly with criminal intent—and without notice since they would appear as the registered owner. We will bear no responsibility for loss caused to you in relation to password theft or unauthorized access due to weak passwords etc.
 
 ---
 
