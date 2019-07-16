@@ -11,7 +11,7 @@
 
 ## Creating a Quality Feedback Template
 
- <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback_template.gif">
+ <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/template.gif">
 
  Steps for creating a Quality Feedback Template
 
@@ -29,6 +29,7 @@
  <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback.gif">
 
  Steps for creating a Quality Feedback
+
  * Type: Select whether Feedback is by a Customer or a User.
 
  * Name: Name of the Customer or User.

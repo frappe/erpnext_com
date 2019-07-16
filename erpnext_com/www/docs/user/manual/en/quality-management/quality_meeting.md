@@ -9,7 +9,7 @@
 
 ## Creating a Quality Meeting:
 
- <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/Meeting.gif">
+ <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/meeting.gif">
 
  Steps for creating a Meeting
 
