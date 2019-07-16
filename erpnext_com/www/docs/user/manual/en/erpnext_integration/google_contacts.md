@@ -20,6 +20,6 @@ In order to allow a synchronization with Google Contacts, you need to authorize 
 
 
 
-1. Creation of a Contacts in ERPNext from Google Contacts
+The following should be noted when creating new contacts in ERPNext from Google Contacts:
 	- All the Contacts present in Google Contacts will be synchronised in ERPNext Framework.
 	- If any of the Google Contact have multiple Email Ids associated with them, new Contact will be created in ERPNext for each Email Id.
