@@ -43,7 +43,7 @@ Steps for creating a Service Level Agreement:
  * Enable: Determines if a Service Level Agreement is enabled or disabled.
  * Default Service Level Agreement (check) : Determines if it is Default Service Level that would be applied to a customer if he/she doesn't have a paticular Service Level Agreement.
  * Service Level : Define the Service Level for the Service Level Agreement.
- * Entity Type : Service Level Agreement can be assigned to a Customer/Customer Group/Territory enabling to apply Service Level Agreement based on a Customer/Customer Group/Territory.
+ * Entity Type : Service Level Agreements can be assigned to a Customer/Customer Group/Territory enabling you to apply Service Level Agreement based on these factors.
  * Entity: Select the name of Customer/Customer Group/Territory.
  * Start / End Date : Defines the validity of the agreement.
  * Priorities : Contains multiple Issue Priorities and their Time to respond and resolve (eg: (3, days) or (3, hours)) that are defined in Service Level.
