@@ -1,4 +1,6 @@
-# Privacy Policy
+<section class='top-section'>
+    <h1>Privacy Policy</h1>
+</section>
 
 Last Updated: 15th July 2019
 
