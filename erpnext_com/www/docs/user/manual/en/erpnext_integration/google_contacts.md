@@ -16,6 +16,6 @@ In order to allow a synchronization with Google Contacts, you need to authorize 
 - Add `https://{yoursite}?cmd=frappe.integrations.doctype.google_contacts.google_contacts.google_callback` as an authorized redirect URI.
 <img class="screenshot" src="/docs/assets/img/erpnext_integrations/google_contacts_oauth.gif">
 - Add your Client ID and Client Secret in the Google Settings in **Home > Integrations > Google Services > Google Settings**
-- In the Google Contacts list, click on New. Enter the Google Account Email you want to sync and then save it. Now click on `Authorize Contacts Access` to authorize ERPNext to get Contacts data from Google.
+- In the Google Contacts list, click on New. Enter the Google Account Email you want to sync and then save it. Now click on **Authorize Contacts Access** to authorize ERPNext to get Contacts data from Google.
 - Once Authorized, you can manually sync Google Contacts or let ERPNext sync Google Contacts daily.
 <img class="screenshot" src="/docs/assets/img/erpnext_integrations/google_contacts_sync.gif">
