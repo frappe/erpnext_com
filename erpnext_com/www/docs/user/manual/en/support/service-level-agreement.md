@@ -7,6 +7,8 @@ Employee groups allow you to group a set of employees together. You can define e
 
 <img class="screenshot" alt="Employee Group" src="{{docs_base_url}}/assets/img/support/employee-group.gif">
 
+> Home > Human Resources > Employee Group > Employee Group
+
 Steps for creating a Employee Group:
 
  * Name : Name of the Employee Group.
@@ -17,6 +19,8 @@ Steps for creating a Employee Group:
 Service level measures the performance of a system. Certain goals are defined and the service level gives the percentage to which those goals should be achieved. Fill rate is different from service level.
 
 <img class="screenshot" alt="Service Level" src="{{docs_base_url}}/assets/img/support/sl.gif">
+
+> Home > Support > Service Level > Service Level
 
 Steps for creating a Service Level:
 
