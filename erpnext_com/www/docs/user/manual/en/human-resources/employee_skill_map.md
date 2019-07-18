@@ -8,10 +8,9 @@ To record an Employee Skill Map go to
 
 ## Requirements
 
-- Make sure you have set all the skills required for designations
+- Make sure you have set skills required for designations
 
 Example:
-
 ![Designation Skills]({{docs_base_url}}/assets/img/human-resources/designation-skills.png)
 
 ## How to Use
@@ -19,7 +18,7 @@ Example:
 - Set Employee in the Employee Skill Map
 - Based on the designation of the Employee system will pull the skills set for that designation
 - Now rate each skill based on the proficiency
-- You can also record record all the trainings conducted for that Employee
+- You can also record all the trainings conducted for that Employee
 
 ![Employee Skill Map]({{docs_base_url}}/assets/img/human-resources/employee-skill-map.png)
 
