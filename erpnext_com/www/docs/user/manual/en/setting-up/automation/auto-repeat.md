@@ -50,7 +50,7 @@ If you want to notify certain contacts whenever the recurring documents are crea
 - **Preview Message**: This button will show a preview of the message.
 - **Print Format**: Select a print format to define document view which should be emailed to customer.
 
-### 2.2 Repeat on a Particular Day
+### 2.2 Repeat on a particular day
 If the frequency is set as Monthly, Quarterly, Half-yearly or Yearly, then it will create recurring documents in the respective months on the same day as the 'Start Date' of Auto Repeat. If you want to create recurring documents on some other day then you can set one of the following:
 
 - **Repeat on Day**: Day of the month on which recurring document will be created. For example, if frequency is Monthly and you enter 7 then it will generate recurring document on 7th of the respective month.
