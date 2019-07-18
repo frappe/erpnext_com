@@ -1,8 +1,22 @@
 <!-- add-breadcrumbs -->
-#Employee Tax Exemption Declaration
-At the beginning of a Payroll Period, employees can declare the amount of exemption from their taxable salary they will be claiming at the end of the period by submitting proofs. To create a new Employee Tax Exemption Declaration, go to
+# Employee Tax Exemption Declaration
 
-> Human resources > Payroll > Employee Tax Exemption Declaration > New Employee Tax Exemption Declaration
+**Tax exemption is the monetary exemption of income, property or transactions from taxes that would otherwise be levied on an Employee.**
+
+At the beginning of a Payroll Period, employees can declare the amount of exemption they will be claiming from their taxable salary. ERPNext allows you to specify tax exemption category/sub-category, tax exemption amount and other related information in the Employee Tax Exemption Declaration form.
+ 
+
+To access Employee Tax Exemption Declaration, go to:
+
+> Home > Human resources > Payroll > Employee Tax Exemption Declaration 
+
+## 1. How to create Employee Tax Exemption Declaration
+
+To create a new Employee Tax Exemption Declaration:
+
+1. Go to: Employee Tax Exemption Declaration > New.
+1. Select the Exemption Sub Category and Exemption Category.
+1. Enter the Maximum Exemption Amount and Declared Amount.
 
 <img class="screenshot" alt="Employee Tax Exemption Declaration"
 	src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-declaration.png">
