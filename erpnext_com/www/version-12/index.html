@@ -16,20 +16,12 @@
 </div>
 {% endmacro %}
 
-{% macro section(title, image, description, section_class, link) %}
+{% macro section(title, image, description, section_class) %}
 <section class="section {{ section_class }}">
 	<div class="container">
-		{% if link %}
-			<a href="{{ link }}" class="no-decoration" style="color: #36414c;">
-				<h2>{{ title }}</h2>
-				<p class="text-muted" style="font-size: 1.25em;">{{ description }}</p>
-				<img class="card mt-2" src="/assets/erpnext_com/img/version-12/{{ image }}.png" alt="{{ title }}"/>
-			</a>
-		{% else %}
-			<h2>{{ title }}</h2>
-			<p class="text-muted" style="font-size: 1.25em;">{{ description }}</p>
-			<img class="card mt-2" src="/assets/erpnext_com/img/version-12/{{ image }}.png" alt="{{ title }}"/>
-		{% endif %}
+		<h2>{{ title }}</h2>
+		<p class="text-muted" style="font-size: 1.25em;">{{ description }}</p>
+		<img class="card mt-2" src="/assets/erpnext_com/img/version-12/{{ image }}.png" alt="{{ title }}"/>
 	</div>
 </section>
 {% endmacro %}
@@ -91,7 +83,7 @@
 %}
 
 {% for feature in hero_features %}
-	{{ section(feature.title, feature.image, feature.description, "section-bg" if loop.index%2!=0, "#") }}
+	{{ section(feature.title, feature.image, feature.description, "section-bg" if loop.index%2!=0) }}
 {% endfor %}
 
 {% set small_features = [

@@ -6,7 +6,7 @@ show_sidebar: 0
 metatags:
  image: /assets/frappe/img/page-cover.jpg
  description: Create custom dashboards for everything you want to measure. Monitor and visualise your growth.
- tags: [dashbaords, erpnext dashbaords, erpnext version-12, erp, erp dashboards]
+ tags: dashbaords, erpnext dashbaords, erpnext version-12, erp, erp dashboards
 ---
 
 # Version 12 Features
@@ -15,14 +15,13 @@ metatags:
 1. [Accounting Dimensions](/docs/user/manual/en/accounts/accounting-dimensions)
 1. Bank Remittance
 1. [Chart of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
-1. [GSTR-3B](/docs/user/manual/en/regional/india/gst-3b-report)
 1. Invoice Discounting
 1. [Tally Migrator](https://github.com/frappe/erpnext/pull/17405)
 
 ### Stock
 1. Asset Depreciation
 1. Serialized & Batched Item Reconciliation
-1. [Auto Fetch Serialized Items](/version-12/release-notes/features#auto-fetch-serialized-items)
+1. [Auto Fetch Serialized Items](/version-12/release-notes/features#new-upload-dialog)
 
 ### HR
 1. Auto Attendance
@@ -43,12 +42,12 @@ metatags:
 
 ### UI/UX Enhancements
 1. New Desk
-1. Keyboard Navigation
+1. [Keyboard Navigation](/docs/user/manual/en/using-erpnext/articles/keyboard-shortcuts)
 1. [Link Preview](/version-12/release-notes/features#link-preview)
-1. [New Upload Dialog](/version-12/release-notes/features#auto-fetch-serialized-items)
+1. [New Upload Dialog](/version-12/release-notes/features#new-upload-dialog)
 1. [Frequently visited links appear in Awesomebar results](/version-12/release-notes/features#frequently-visited-links-appear-in-awesomebar-results)
-1. [Full Width Container]((/version-12/release-notes/features#auto-fetch-serialized-items))
-1. [List View Enhancements](/version-12/release-notes/features#auto-fetch-serialized-items)
+1. [Full Width Container]((/version-12/release-notes/features#full-width-container))
+1. [List View Enhancements](/version-12/release-notes/features#list-view-enhancements)
 
 
 ### New Reports
@@ -56,6 +55,11 @@ metatags:
 1. BOM Explorer
 1. Project Billing Report
 1. Employee Billing Report
+1. Procurement Tracker Report
+1. Loan Repayment
+1. [GSTR-3B](/docs/user/manual/en/regional/india/gst-3b-report)
+1. Sales Partner
+1. Item group wise target variance
 
 ### Other Changes & Enhancements
 1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)
