@@ -3,23 +3,26 @@
 
 Auto Repeat feature helps you create certain documents automatically in a given time period.
 
-You can now Customize any Form to make the documents **repeatable**.
+From version 12, you can Customize any Form to make the documents **repeatable**.
 
 For Example: Assuming that you follow deferred expense system for some items. It requires you to create same Journal Entry every month to credit Deferred Expense account and debit Expense Account. You can create first Journal Entry manually for it, and then create auto-repeat transaction for it.
+
+To access Auto Repeat, go to:
+> Home > Settings > Automation > Auto Repeat
 
 ## 1. How to set up Auto Repeat
 
 ### 1.1 Customize the Form
 1. Go to: **Home > Customization > Form Customization > Customize Form**.
 2. Select the form in which you want to allow creation of repeatable documents.
-3. Check 'Allow Auto Repeat' to allow the creation of repeatable documents for that Form.
+3. Check 'Allow Auto Repeat' to allow the creation of repeatable documents for that Form. This is necessary for the document type to show up in the Reference Document field under the Auto Repeat doctype.
 
-<img class="screenshot" alt="Allow Auto Repeat" src="/docs/assets/img/setup/automation/allow-auto-repeat.png">
+  <img class="screenshot" alt="Allow Auto Repeat" src="/docs/assets/img/setup/automation/allow-auto-repeat.png">
 
 ### 1.2 Set up Auto Repeat
-1. Go to **Home > Settings > Auto Repeat > New**.
-2. Select the Reference Document Type.
-3. Select the Reference Document.
+1. Go to **Home > Settings > Automation > Auto Repeat > New**.
+2. Select the Reference Document Type, like Journal Entry or Sales Invoice, etc.
+3. Select the Reference Document. This is the individual document that you want to repeat.
 4. Set the Start Date and End Date (optional).
    If End Date is not specified, recurring documents will be created, unless the Auto Repeat is disabled.
 5. Set the Frequency for creating repeatable documents

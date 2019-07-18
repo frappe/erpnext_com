@@ -15,7 +15,7 @@ Option to set document as recurring will be visible only after it's submitted. T
 1. Click on the + button next to Auto Repeat.
 1. Select the Reference Doctype.
 1. Select the Reference Document.
-1. Set the Start Data and End Date(optional).
+1. Set the Start Date and End Date(optional).
 1. Select the frequency whether daily, weekly, etc,.
 1. Save.
 
