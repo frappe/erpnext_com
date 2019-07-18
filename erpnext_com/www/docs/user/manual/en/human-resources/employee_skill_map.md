@@ -1,6 +1,6 @@
 # Employee Skill Map
 
-Employee Skill Map is a record which helps your Organization to track your employee's skill-sets and trainings. It can be used to rate each skill of the employee and track their growth after each internal trainings. This can be used at the time of appraisals.
+Employee Skill Map is a record which helps your Organization to track your employee's skill-sets and trainings. It can be used to rate each skill of the employee and track their growth after each internal training. This can be used at the time of appraisals.
 
 To record an Employee Skill Map go to
 
