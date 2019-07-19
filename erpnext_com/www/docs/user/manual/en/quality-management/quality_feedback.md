@@ -38,7 +38,7 @@ To access Quality Feedback, go to:
 
 1. Selecting a Quality Feedback Template will automatically populate the parameters for the Quality Feedback.
 1. The date will be automatically set to the current date.
- * Feedback :
+1. The Parameters table has the following columns:
 
     - Parameter: Various Parameters that are pre-defined in the Quality Feedback Template you create.
     - Rating: Rating for a parameter from 1 to 5.
