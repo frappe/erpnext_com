@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Quality Feedback
 
- It is the information that a Quality expresses about the satisfaction or dissatisfaction about the products or services.
+**Quality Feedback is the information that a Customer expresses about the satisfaction or dissatisfaction about the products or services you offer.**
 
  The Quality Feedback has to rate different parameters and provide Qualitative Feedbacks using the pre-determined Feedback Templates.
 
