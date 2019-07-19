@@ -7,7 +7,7 @@ Quality Feedback has different fields to rate different parameters. You can also
 
 ## Quality Feedback Template
 
- For creating the Quality Feedback first you must to decide the parameters by creating the Quality Feedback Template. The templates generally contains the title of the template, scope and the different parameter to be entered. The diffrent parameter which can be decided on the basis of different occssions and survey.
+ For creating the Quality Feedback first you must to decide the parameters by creating the Quality Feedback Template. The templates generally contain the name the template, scope and the different parameters to be entered. The different parameters which can be decided on the basis of different occasions and survey.
 
 ## Creating a Quality Feedback Template
 
