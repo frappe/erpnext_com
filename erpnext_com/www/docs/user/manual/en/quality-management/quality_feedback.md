@@ -39,5 +39,5 @@ Quality Feedback has different fields to rate different parameters. You can also
  * Feedback :
 
     - Parameter : Various Parameters that are pre-defined in the Feedback Template.
-    - Rating : Rate a parameter.
+    - Rating: Rating for a parameter from 1 to 5.
     - Feedback : Feedback regarding the parameter.
