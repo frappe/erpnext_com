@@ -31,8 +31,8 @@
 <div class="col-md-6 mb-5">
 	<div class="d-flex flex-column justify-content-between h-100">
 		<div>
-			<h2>{{ title }}</h2>
-			<p class="text-muted" style="font-size: 1.25em;">{{ description }}</p>
+			<h3>{{ title }}</h3>
+			<p class="text-muted">{{ description }}</p>
 		</div>
 		{% if link %}
 		<a href="{{ link }}" class="text-muted">
@@ -49,7 +49,7 @@
 <section class="top-section">
 	<div class='container'>
 		<h1>ERPNext Version 12</h1>
-		<p class="lead">With Refreshed UI, Dashboards and over 100 new features and enhancements it is our greatest release yet.<p>
+		<p class="lead">With Refreshed UI, Dashboards and over 100 new features enhancements, it is our greatest release yet.<p>
 		<a class="btn btn-primary mt-4" href="/version-12/release-notes">Read Release Notes</a></p>
 		<div>
 			<a href="https://github.com/frappe/erpnext/" target="_blank" class="text-muted">View on Github</a>
@@ -63,7 +63,7 @@
 		{
 			"title": "New Desk UI",
 			"image": "desk",
-			"description": "The new Desk is built the from first principles, with information heirarchy in mind. It is more accessible and navigable."
+			"description": "The new Desk is built from first principles, with information heirarchy in mind. It is more accessible and navigable."
 		},
 		{
 			"title": "Dashboards",
@@ -76,7 +76,7 @@
 			"description": "The new website modules allows creation of custom themes with improved SEO and page speed."
 		},
 		{
-			"title": "Learning Portal",
+			"title": "Learning Management System",
 			"image": "lms",
 			"description": "Publish your programs online, host quizzes for your students to learn and track their progress."
 		}
@@ -90,7 +90,8 @@
 {% set small_features = [
 	{
 		"title": "Keyboard Navigation",
-		"description": "Users can now navigate all of ERPNext through the keyboard, allowing quicker access to workflows, documents and other actions."
+		"description": "Users can now navigate all of ERPNext through the keyboard, allowing quicker access to workflows, documents and other actions.",
+		"link": "/docs/user/manual/en/using-erpnext/articles/keyboard-shortcuts"
 	},
 	{
 		"title": "Accounting Dimensions",

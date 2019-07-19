@@ -33,21 +33,27 @@ metatags:
 ### CRM
 1. [Promotional Scheme](/docs/user/manual/en/accounts/promotional-schemes)
 1. [SLA](/docs/user/manual/en/support/service-level-agreement)
+1. [Exotel Call Integration](/docs/user/manual/en/erpnext_integration/exotel_integration)
 1. Email Campaign
 
 ### Domain Specific Features
-1. [Learning Portal](/docs/user/manual/en/education/setting-up-lms)
+1. [Learning Management System](/docs/user/manual/en/education/setting-up-lms)
 1. [Quality Management System](/docs/user/manual/en/quality-management)
 1. Production Plan Enhancements
 
 ### UI/UX Enhancements
-1. New Desk
+1. New Desktop
 1. [Keyboard Navigation](/docs/user/manual/en/using-erpnext/articles/keyboard-shortcuts)
 1. [Link Preview](/version-12/release-notes/features#link-preview)
 1. [New Upload Dialog](/version-12/release-notes/features#new-upload-dialog)
 1. [Frequently visited links appear in Awesomebar results](/version-12/release-notes/features#frequently-visited-links-appear-in-awesomebar-results)
 1. [Full Width Container]((/version-12/release-notes/features#full-width-container))
 1. [List View Enhancements](/version-12/release-notes/features#list-view-enhancements)
+
+### New Automation Module
+1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)
+1. [Milestones](/docs/user/manual/en/setting-up/automation/milestone-tracker)
+1. [Auto Repeat](/docs/user/manual/en/setting-up/automation/auto-repeat)
 
 ### New Reports
 1. Bank Remittance
@@ -61,12 +67,8 @@ metatags:
 1. Item group wise target variance
 
 ### Other Changes & Enhancements
-1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)
-1. Auto Repeat
-1. [Call Popup](/docs/user/manual/en/erpnext_integration/exotel_integration)
 1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)
 1. [Energy Points](/docs/user/manual/en/setting-up/energy-point-system)
-1. [Milestones](/docs/user/manual/en/setting-up/automation/milestone-tracker)
 1. [Project Template](/docs/user/manual/en/projects/project-template)
 1. [Dashboards](/docs/user/manual/en/customize-erpnext/dashboard)
 1. [Disable customization for single doctypes](/version-12/release-notes/features#disable-customization-for-single-doctypes)
