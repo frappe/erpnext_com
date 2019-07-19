@@ -27,7 +27,8 @@ To access Quality Feedback Template, go to:
  If the Feedback is not as per expectations, Quality Action may be initialised on the basis of the seriousness of the Feedback.
 
 ## 1. How to create a Quality Feedback
-
+To access Quality Feedback, go to:
+> Home > Quality > Feedback > Quality Feedback
  <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback.gif">
 
  Steps for creating a Quality Feedback
