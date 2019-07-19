@@ -7,9 +7,9 @@ Quality Feedback has different fields to rate different parameters. You can also
 
 ## Quality Feedback Template
 
- For creating the Quality Feedback first you must to decide the parameters by creating the Quality Feedback Template. The templates generally contain the name the template, scope and the different parameters to be entered. The different parameters which can be decided on the basis of different occasions and survey.
+ For creating the Quality Feedback first you must decide the parameters by creating the Quality Feedback Template. The templates generally contain the name the template, scope and the different parameters to be entered. The different parameters which can be decided on the basis of different occasions and survey.
 
- To access Quality Feedback Template, go to:
+ To access the Quality Feedback Template, go to:
 > Home > Quality > Quality Feedback Template
 
 ## 1. How to create a Quality Feedback Template
@@ -25,8 +25,8 @@ Quality Feedback has different fields to rate different parameters. You can also
 
 ## Quality Feedback
 
- The Customer/User can easily give their feedbacks by selecting their template to rate on different parameters and also provide qualitative feedback on these parameters.
- If the Feedback is not as per expectations, Quality Action may be initialised on the basis of the seriousness of the Feedback.
+ The Customer/User can easily give their feedback by selecting their template to rate on different parameters and also provide qualitative feedback on these parameters.
+ If the Feedback is not as per expectations, Quality Action may be initialized on the basis of the seriousness of the Feedback.
 
  To access Quality Feedback, go to:
 > Home > Quality > Feedback > Quality Feedback
@@ -45,4 +45,4 @@ Quality Feedback has different fields to rate different parameters. You can also
 
     - Parameter: Various Parameters that are pre-defined in the Quality Feedback Template you create.
     - Rating: Rating for a parameter from 1 to 5.
-    - Feedback : Feedback based on the Rating given.
+    - Feedback: Feedback based on the Rating given.
