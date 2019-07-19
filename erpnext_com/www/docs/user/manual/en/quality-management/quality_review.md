@@ -10,15 +10,17 @@
  To access Quality Review, go to:
 > Home > Quality > Review and Action > Quality Review
 
-## Creating a Quality Review
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/review.gif">
+## 1. How to Create a Quality Review
 
- Steps for creating a Review
+1. Go to the Quality Review list, click on New.
+1. Enter the following details:
 
  * Quality Goal: Quality Goal which is to be Reviewed.
 
  * Procedure: Quality Procedure of the Goal is automatically fetched when a Goal is selected.
 
  * Review: Review about a particular Quality Objective.
+
+    <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/review.gif">
 
 {next}
