@@ -36,7 +36,7 @@ To access Quality Feedback, go to:
 
  * Name: Name of the Customer or User.
 
- * Template : Selecting the template for the Feedback and the parameters are automatically populated for the Feedback.
+1. Selecting a Quality Feedback Template will automatically populate the parameters for the Quality Feedback.
 
  * Feedback :
 
