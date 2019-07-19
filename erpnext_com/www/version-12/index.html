@@ -1,3 +1,4 @@
+<!-- no-sitemap -->
 {% extends "templates/base.html" %}
 {% block title %}ERPNext Version 12{% endblock %}
 
@@ -83,7 +84,7 @@
 %}
 
 {% for feature in hero_features %}
-	{{ section(feature.title, feature.image, feature.description, "section-bg" if loop.index%2!=0) }}
+	{{ section(feature.title, feature.image, feature.description, "section-bg" if loop.index%2!=0 else "") }}
 {% endfor %}
 
 {% set small_features = [

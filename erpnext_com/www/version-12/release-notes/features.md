@@ -1,11 +1,12 @@
 ---
 title: Version 12 Features
 add_breadcrumbs: 0
+show_sidebar: 0
+image: /assets/erpnext_com/img/version-12/hero.png
 
 metatags:
- image: /assets/frappe/img/page-cover.jpg
- description: Create custom dashboards for everything you want to measure. Monitor and visualise your growth.
- tags: [dashbaords, erpnext dashbaords, erpnext version-12, erp, erp dashboards]
+ description: ERPNext v12 is our greatest release yet. It packs a new Refreshed UI, Dashboards and over 100 new features and enhancements.
+ keywords: erpnext v12, erpnext release notes, erpnext new features, erp, open source erp, free erp
 ---
 
 # Features and Enhancements
@@ -41,10 +42,13 @@ Percentage fields can be viewed as a progress bar in List View. It can be enbale
 Action buttons like Open reference doctypes in todo, can directly be triggered from the list view.
 ![List View Buttons](/assets/erpnext_com/img/version-12/list-view-buttons.png)
 
+## Ability to add user columns to any standard report.
+Users can now pick columns from specific doctypes and add it to standard reports.
+![Add custom columns](/assets/erpnext_com/img/version-12/custom-column.png)
+
 ## Disable customization for single doctypes
 Single doctypes are generaly used for storing configuration for various modules, customizing them without good knowledge of the system can cause the system to break, hence customization of these doctypes is disabled by default
 
-## Google Contacts
 ## PDF Encryption
 The frappe print API now supports encrypting PDFs, it can be accessed in the `frappe.get_print()` function by passing the `password` argument.
 
@@ -54,7 +58,3 @@ Webform client is refactored fixing broken filters and other fields. From versio
 ## Added Track Views field to Customize Form
 Tracking views of a doctype can be enabled from customized form.
 
-## Recorder
-
-
-## Add custom columns to any report
