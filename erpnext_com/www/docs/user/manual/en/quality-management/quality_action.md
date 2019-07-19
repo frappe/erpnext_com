@@ -27,7 +27,7 @@
 
  * Procedure : If the Quality Action is being scheduled for a Quality Review, Procedure associated with Review is fetched automatically.
 
- * Status : Indicated whether the necessary actions have been undertaken or not.
+ * Status : Indicates whether the necessary actions have been undertaken or not.
 
  * Resolution : Reolution proposed for the problem.
 
