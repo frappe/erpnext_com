@@ -3,7 +3,7 @@
 </section>
 
 
-To serve Frappe Customers more efficiently on support issues, Frappe Technologies is implementing an in-app support allowing you to raise and track issues right from your ERPNext account.
+To serve Frappe Customers more efficiently on support issues, Frappe Technologies presents in-app support allowing you to raise and track issues right from your ERPNext account.
 
 #### Using In-app Support
 
@@ -16,7 +16,7 @@ The In-app Support is accessible in the **Help** dropdown. Click on **ERPNext Su
 - All the Communication that takes place between You and Frappe Technologies is maintained in the respective Support Issue.
 <img class="img-responsive feature-image screenshot" src="/assets/erpnext_com/images/in-app-support/esi-4.gif">
 
-- You can reply to an Issue by click on the **Reply** button in the timeline.
+- You can reply to an Issue by clicking on the **Reply** button in the timeline.
 <img class="img-responsive feature-image screenshot" src="/assets/erpnext_com/images/in-app-support/esi-2.gif">
 
 - Once an Issue created is Closed, a user can rate the Support Experience.
