@@ -3,7 +3,7 @@
 
 **Quality Feedback is the information that a Customer expresses about the satisfaction or dissatisfaction about the products or services you offer.**
 
- The Quality Feedback has to rate different parameters and provide Qualitative Feedbacks using the pre-determined Feedback Templates.
+Quality Feedback has different fields to rate different parameters. You can also provide Qualitative Feedbacks using Quality Feedback Templates. The templates store preset information for you to select in the Quality Feedback.
 
 ## Quality Feedback Template
 
