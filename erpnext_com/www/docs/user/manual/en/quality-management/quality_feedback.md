@@ -32,7 +32,7 @@ To access Quality Feedback, go to:
  <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback.gif">
 
 1. Go to the Quality Feedback list, click on New.
- * Type: Select whether Feedback is by a Customer or a User.
+1. Select whether Feedback is by a Customer or a User (ERPNext account User).
 
  * Name: Name of the Customer or User.
 
