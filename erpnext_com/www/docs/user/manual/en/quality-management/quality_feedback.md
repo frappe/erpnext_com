@@ -20,7 +20,7 @@ Quality Feedback has different fields to rate different parameters. You can also
 
 ## Quality Feedback
 
- The Quality can easily give there feedbacks by selecting there template to rate on different parameter and also provide the qualitative feedback on the parameters.
+ The Customer/User can easily give their feedbacks by selecting their template to rate on different parameters and also provide qualitative feedback on these parameters.
  If the Feedback is not as per expectations, Quality Action may be initialised on the basis of the seriousness of the Feedback.
 
 ## Creating a Quality Feedback
@@ -39,4 +39,4 @@ Quality Feedback has different fields to rate different parameters. You can also
 
     - Parameter : Various Parameters that are pre-defined in the Feedback Template.
     - Rating: Rating for a parameter from 1 to 5.
-    - Feedback : Feedback regarding the parameter.
+    - Feedback : Feedback based on the Rating given.

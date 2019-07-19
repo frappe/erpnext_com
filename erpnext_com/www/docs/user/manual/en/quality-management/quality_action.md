@@ -17,11 +17,9 @@
 
  * Corrective/Preventive : It is used to indicate whether the Review is being scheduled for Corrective or for Preventive Purpose.
 
- * Type : It is used to select whether an Action is scheduled for a Quality Review or for a Quality Feedback.
+ * Document Type : It is used to select whether an Action is scheduled for a Quality Review or for a Quality Feedback.
 
- * Review : If the Quality Action is being scheduled for a Quality Review, select the Review from the list.
-
- * Feedback : If the Quality Action is being scheduled for a Quality Feedback, select the Feedback from the list.
+ * Document Name : Document name of the selected Document Type.
 
  * Goal : If the Quality Action is being scheduled for a Quality Review, Goal associated with Review is fetched automatically.
 

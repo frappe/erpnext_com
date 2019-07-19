@@ -7,10 +7,6 @@
 
  A Procedure can be of two types ie a Procedure consiting of simply steps that you must follow to achieve the Goal and Procedure having a nested Procedure along with steps that must be followed.
 
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/procedure.gif">
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/procedure-1.gif">
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/procedure-2.gif">
-
 ## Creating a Quality Procedure
 
  Steps for creating a Procedure
@@ -24,6 +20,8 @@
 * Procedure Processes :
 
   - Various processes that have to be carried out in a particular Quality Procedure.
+    <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/procedure.gif">
   - Process can either be just a instruction or a different Quality Procedure.
+    <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/procedure-1.gif">
 
 {next}

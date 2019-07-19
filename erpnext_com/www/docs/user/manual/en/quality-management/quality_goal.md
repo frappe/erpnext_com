@@ -17,16 +17,17 @@ You can create a Quality Goal for your business having multiple Quality Objectiv
 
  * Procedure : Quality Procedure that is to be followed to achieve the Goal.
 
- * created By : Person responsible for the creation of the Goal.
+ * Created By : Person responsible for the creation of the Goal.
 
  * Monitoring Frequency : If a Review of a Goal is to be scheduled automatically then select the time interval after which the Review will be created.
 
  * Revision : Mentioning the curent Revision of the Quality Goal.
 
- * Objective : Consists of the various Objectives that a Quality Goal consists of and which have to be completed to meet the Goal.
+ * Objectives :
+     - Objective : Consists of the various Objectives that a Quality Goal consists of and which have to be completed to meet the Goal.
 
- * Target : Consists of the numeric target value of an Objective that is to be met.
+     - Target : Consists of the numeric target value of an Objective that is to be met.
 
- * Unit : Measurement Unit, eg: Lead/s, Hour/s, etc, to measure Objective.
+     - Unit : Measurement Unit, eg: Lead/s, Hour/s, etc, to measure Objective.
 
 {next}
