@@ -13,7 +13,6 @@ Quality Feedback has different fields to rate different parameters. You can also
 
  <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/template.gif">
 
- Steps for creating a Quality Feedback Template
 
  * Template : The name of the template
 
