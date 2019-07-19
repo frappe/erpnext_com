@@ -34,7 +34,7 @@ To access Quality Feedback, go to:
 1. Go to the Quality Feedback list, click on New.
 1. Select whether Feedback is by a Customer or a User (ERPNext account User).
 
- * Name: Name of the Customer or User.
+1. Select the Customer or User.
 
 1. Selecting a Quality Feedback Template will automatically populate the parameters for the Quality Feedback.
 
