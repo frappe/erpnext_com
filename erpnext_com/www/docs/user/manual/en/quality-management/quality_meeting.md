@@ -7,6 +7,9 @@
 
  Quality Meetings are conducted to review the Quality Reviews that have been generated. The minutes of these meetings would include the discussion on the various Quality Reviews.
 
+ To access Quality Meeting, go to:
+> Home > Quality > Meeting > Quality Meeting
+
 ## Creating a Quality Meeting:
 
  <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/meeting.gif">

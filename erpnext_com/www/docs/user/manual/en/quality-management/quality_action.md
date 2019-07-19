@@ -9,6 +9,9 @@
 
  Quality Actions can be initialized for a Quality Goal or for a Customer Feedback which may not meet the expected target and depending on that a Corrective or Preventive Action can be started.
 
+ To access Quality Action, go to:
+> Home > Quality > Review and Action > Quality Action
+
 ## Creating a Quality Action
 
 <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/action.gif">

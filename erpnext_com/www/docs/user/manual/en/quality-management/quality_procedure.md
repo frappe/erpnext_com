@@ -7,6 +7,9 @@
 
  A Procedure can be of two types ie a Procedure consiting of simply steps that you must follow to achieve the Goal and Procedure having a nested Procedure along with steps that must be followed.
 
+ To access Quality Procedure, go to:
+> Home > Quality > Goal and Procedure > Quality Procedure
+
 ## Creating a Quality Procedure
 
  Steps for creating a Procedure
@@ -17,7 +20,7 @@
 
 * Is Group : If a Procedure has chile Procedures, selecting Is Group, groups all the Procedures into the Parent Procedure in the TreeView.
 
-* Procedure Processes :
+* Processes :
 
   - Various processes that have to be carried out in a particular Quality Procedure.
     <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/procedure.gif">

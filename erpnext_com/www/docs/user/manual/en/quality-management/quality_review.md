@@ -7,9 +7,11 @@
 
  The Quality Review can be scheduled manually or scheduled based on Goal's Monitoring Frequency. The Quality Review checks whether all Objectives of a Goal have been achieved or not.
 
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/review.gif">
+ To access Quality Review, go to:
+> Home > Quality > Review and Action > Quality Review
 
 ## Creating a Quality Review
+<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/review.gif">
 
  Steps for creating a Review
 
