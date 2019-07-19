@@ -18,7 +18,7 @@
 
  * Meeting Date: Date on which the Meeting is held.
 
- * Status: The status of the Meeting is generated based in the status of every individual Minutes discussed. If the status of all the minutes is Close, then Status of the Meeting will be 'Close' else 'Open'.
+ * Status: The status of the Meeting is generated based on the status of every individual Minutes discussed. If the status of all the minutes is Close, then Status of the Meeting will be 'Close' else 'Open'.
 
  * Agenda: Contains a list of meeting activities in the order in which they are to be taken up.
 
