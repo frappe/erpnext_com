@@ -10,9 +10,9 @@
  To access Quality Procedure, go to:
 > Home > Quality > Goal and Procedure > Quality Procedure
 
-## Creating a Quality Procedure
-
- Steps for creating a Procedure
+## 1. How to create a Quality Procedure
+1. Go to the Quality Procedure list, click on New.
+1. Enter the following details:
 
 * Procedure: Name of the Procedure that you intend to create.
 
