@@ -12,11 +12,12 @@
  To access Quality Action, go to:
 > Home > Quality > Review and Action > Quality Action
 
-## Creating a Quality Action
+## 1. How to create a Quality Action
 
 <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/action.gif">
 
- Steps for creating an Action:
+1. Go to the Quality Action list, click on New.
+1. Enter the following fields:
 
  * Corrective/Preventive : It is used to indicate whether the Review is being scheduled for Corrective or for Preventive Purpose.
 
