@@ -19,8 +19,7 @@ metatags:
 1. [Tally Migrator](https://github.com/frappe/erpnext/pull/17405)
 
 ### Stock
-1. Asset Depreciation
-1. Serialized & Batched Item Reconciliation
+1. [Serialized & Batched Item Reconciliation](/docs/user/manual/en/setting-up/stock-reconciliation#12-for-serialized-items)
 1. [Auto Fetch Serialized Items](/version-12/release-notes/features#new-upload-dialog)
 
 ### HR
