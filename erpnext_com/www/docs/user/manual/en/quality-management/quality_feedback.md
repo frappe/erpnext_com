@@ -18,7 +18,8 @@ To access Quality Feedback Template, go to:
 
 1. Enter a name for the template
 
- * Parameter : Listing down various processes/parameters to which you want the user to rate and give the feedback.
+1. In the Parameters table, list down the various processes/parameters on which you want the user to rate and give the feedback.
+1. Save.
 
 ## Quality Feedback
 
