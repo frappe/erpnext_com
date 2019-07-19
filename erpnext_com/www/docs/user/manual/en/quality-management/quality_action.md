@@ -13,9 +13,6 @@
 > Home > Quality > Review and Action > Quality Action
 
 ## 1. How to create a Quality Action
-
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/action.gif">
-
 1. Go to the Quality Action list, click on New.
 1. Enter the following fields:
 
@@ -32,5 +29,7 @@
  * Status: Indicates whether the necessary actions have been undertaken or not.
 
  * Resolution: Resolution proposed for the problem.
+
+<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/action.gif">
 
 {next}
