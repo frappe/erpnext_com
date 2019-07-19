@@ -3,7 +3,7 @@
 
 > Introduced in Version 12
 
- Quality Action is a standard features to allow implementation of corrective and preventive actions. This will meet compliance with industry regulations including GMP, ISO 9001 and 14001, TSCA, REACH, etc.
+ Quality Action is a standard feature to allow implementation of corrective and preventive actions. This will meet compliance with industry regulations including GMP, ISO 9001 and 14001, TSCA, REACH, etc.
 
  Quality Action process workflows provide a controlled environment and reduce the risk of repeat issues by ensuring that defined solutions and processes are met.
 
@@ -19,18 +19,18 @@
 1. Go to the Quality Action list, click on New.
 1. Enter the following fields:
 
- * Corrective/Preventive : It is used to indicate whether the Review is being scheduled for Corrective or for Preventive Purpose.
+ * Corrective/Preventive: It is used to indicate whether the Review is being scheduled for Corrective or for Preventive Purpose.
 
- * Document Type : It is used to select whether an Action is scheduled for a Quality Review or for a Quality Feedback.
+ * Document Type: It is used to select whether an Action is scheduled for a Quality Review or for a Quality Feedback.
 
- * Document Name : Document name of the selected Document Type.
+ * Document Name: Document name of the selected Document Type.
 
  * Goal : If the Quality Action is being scheduled for a Quality Review, Goal associated with Review is fetched automatically.
 
- * Procedure : If the Quality Action is being scheduled for a Quality Review, Procedure associated with Review is fetched automatically.
+ * Procedure: If the Quality Action is being scheduled for a Quality Review, Procedure associated with Review is fetched automatically.
 
- * Status : Indicates whether the necessary actions have been undertaken or not.
+ * Status: Indicates whether the necessary actions have been undertaken or not.
 
- * Resolution : Reolution proposed for the problem.
+ * Resolution: Resolution proposed for the problem.
 
 {next}
