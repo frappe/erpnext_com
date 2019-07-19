@@ -32,13 +32,13 @@ Once the list of Employees is fetched, click on the _Create Salary Slips_ button
 <img class="screenshot" alt="Payroll Entry" src="/docs/assets/img/human-resources/payroll-entry.png">
 
 
-
 > Note: If the Salary Slips are already created, the system will not create any more Salary Slips. You can also just save the form as Draft and create the Salary Slips later.
 
 
 ## 2. Features 
 
-### 1. Booking Salary Accrual 
+### 2.1 Booking Salary Accrual 
+
 After verifying the Salary Slips, you can Submit them all together by clicking on _Submit Salary Slip_. This will also book the default Payroll Payable account against respective Expense Heads (as configured in Salary Components) to record the accrual of salary to employees.
 
 > Note: Submitting Salary Slips one by one manually will not create the Journal Entry to record salary accrual.
@@ -55,19 +55,26 @@ This way there is only one payment entry in the company’s books of accounts an
 
 
 
-### 2. Salary Payment Entry
+### 2.2 Salary Payment Entry
 
 The salary payment entry is a Journal Entry that debits the total of the Earnings type salary component and credits the total of Deductions type salary component of all Employees to the default account set at Salary Component level for each component.
 
-To generate your salary payment voucher from Payroll Entry, click on -
+To generate your salary payment voucher from Payroll Entry, go on:
 > Make > Bank Entry
-
-<img class="screenshot" alt="Payroll Entry" src="/docs/assets/img/human-resources/payroll-make-bank-entry.png">
 
 Payroll Entry will route you to Journal Entry with relevant filters to view the draft Journal Vouchers created. You shall set reference number and date for the transactions and Submit the Journal Entries.
 
+<img class="screenshot" alt="Payroll Entry" src="/docs/assets/img/human-resources/payroll-make-bank-entry.png">
+
 > Note: For Salary Components which are Flexible Benefits and has _Create Separate Payment Entry Against Benefit Claim_ checked, ERPNext will book separate draft Journal Entries.
 
-<img class="screenshot" alt="Payroll Entry" src="/docs/assets/img/human-resources/payroll-journal-entry.png">
+
+## 3. Related Topics
+
+1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
+1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
+1. [Salary Slip](/docs/user/manual/en/human-resources/salary-slip)
+1. [Payroll Period](/docs/user/manual/en/human-resources/payroll-period)
+1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
 
 {next}

@@ -25,7 +25,7 @@ To create a new Payroll Period:
 
 ## 2. Features
 
-### 1. Tax Salary Slabs
+### 2.1 Tax Salary Slabs
 
 The most important feature in Payroll Period is Tax Salary Slabs under which you can create various tax slabs and tax rates for the employees. You can add multiple tax slabs for the Payroll Period depending on the tax regulations. Select the From Amount, To Amount and Percent Deduction for each slab. 
 

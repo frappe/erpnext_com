@@ -8,7 +8,7 @@ At the beginning of a Payroll Period, employees can declare the amount of exempt
 
 To access Employee Tax Exemption Declaration, go to:
 
-> Home > Human resources > Payroll > Employee Tax Exemption Declaration 
+> Home > Human resources > Employee Tax and Benefits > Employee Tax Exemption Declaration 
 
 ## 1. How to create Employee Tax Exemption Declaration
 
@@ -17,23 +17,40 @@ To create a new Employee Tax Exemption Declaration:
 1. Go to: Employee Tax Exemption Declaration > New.
 1. Select the Exemption Sub Category and Exemption Category.
 1. Enter the Maximum Exemption Amount and Declared Amount.
+1. Save and Submit.
 
-<img class="screenshot" alt="Employee Tax Exemption Declaration"
-	src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-declaration.png">
+<img class="screenshot" alt="Employee Tax Exemption Declaration" src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-declaration.png">
 
-The _Total Exemption Amount_ will be exempted from annual taxable earnings of the employee while calculating the tax deductions in Payroll.
+The Total Exemption Amount will be exempted from annual taxable earnings of the employee while calculating the tax deductions in Payroll.
 
 > Note: Employees can only submit one Employee Tax Exemption Declaration for a Payroll Period.
 
-### Regional - India
+## 2. Features
+
+### 2.1 HRA Exemption (Regional - India)
+
 For the current fiscal year, in India, House Rent Allowance (HRA) exemption from taxable earnings is the minimum of:
 
 * The actual amount allotted by the employer as the HRA.
 * Actual rent paid less 10% of the basic salary.
 * 50% of the basic salary, if the employee is staying in a metro city (40% for a non-metro city).
 
-As part of the Employee Tax Exemption Declaration, employees shall also fill out the HRA Exemption. ERPNext will calculate the exemption eligible for HRA and exempt it while calculating the taxable earnings.
+As part of the Employee Tax Exemption Declaration, employees can also fill out the HRA Exemption. ERPNext calculates the exemption eligible for HRA and exempts it while calculating the taxable earnings. 
 
-> Note: HRA component shall be configured in Company for HRA exemption to work
+Enter the Monthly House Rent and check the 'Rented in Metro City' checkbox if applicable and submit the form. The Annual and Monthly HRA Exemption will be automatically calculated.
+
+Once the declaration is submitted, you can submit the proof of your tax exemption by clicking on the _Submit Proof_ button.
+
+
+<img class="screenshot" alt="Employee Tax Exemption Declaration" src="{{docs_base_url}}/assets/img/human-resources/hra-exemption.png">
+
+> Note: HRA component needs to be configured in Company master under HRS Settings sections for the HRA exemption to work.
+
+
+## 3. Related Topics
+
+1. [Employee Tax Exemption Proof Submission](/docs/user/manual/en/human-resources/employee-tax-exemption-proof-submission)
+1. [Employee Benefit Application](/docs/user/manual/en/human-resources/employee-benefit-application)
+1. [Employee Benefit Claim](/docs/user/manual/en/human-resources/employee-benefit-claim)
 
 {next}
