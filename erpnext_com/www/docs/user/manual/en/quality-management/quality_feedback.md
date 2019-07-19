@@ -14,6 +14,7 @@ To access Quality Feedback Template, go to:
 
  <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/template.gif">
 
+1. Go to the Quality Feedback Template list, click on New.
 
 1. Enter a name for the template
 
