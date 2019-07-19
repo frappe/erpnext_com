@@ -10,11 +10,10 @@
  To access Quality Meeting, go to:
 > Home > Quality > Meeting > Quality Meeting
 
-## Creating a Quality Meeting:
+## 1. How to Create a Quality Meeting
 
- <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/meeting.gif">
-
- Steps for creating a Meeting
+1. Go to the Quality Meeting list, click on New.
+1. Enter the following details:
 
  * Meeting Date: Date on which the Meeting is held.
 
@@ -26,5 +25,7 @@
 
     - Review: Select the Quality Review, Action, Feedback to be discussed.
     - Minute: Written or recorded documentation that is associated with the Review.
+
+    <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/meeting.gif">
 
 {next}
