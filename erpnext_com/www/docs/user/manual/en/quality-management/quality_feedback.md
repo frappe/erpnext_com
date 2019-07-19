@@ -14,7 +14,7 @@ Quality Feedback has different fields to rate different parameters. You can also
  <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/template.gif">
 
 
- * Template : The name of the template
+1. Enter a name for the template
 
  * Parameter : Listing down various processes/parameters to which you want the user to rate and give the feedback.
 
