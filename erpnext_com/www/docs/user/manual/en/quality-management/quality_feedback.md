@@ -40,6 +40,6 @@ To access Quality Feedback, go to:
 
  * Feedback :
 
-    - Parameter : Various Parameters that are pre-defined in the Feedback Template.
+    - Parameter: Various Parameters that are pre-defined in the Quality Feedback Template you create.
     - Rating: Rating for a parameter from 1 to 5.
     - Feedback : Feedback based on the Rating given.
