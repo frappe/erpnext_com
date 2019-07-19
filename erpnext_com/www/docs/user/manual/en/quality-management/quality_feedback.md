@@ -31,7 +31,6 @@ To access Quality Feedback, go to:
 > Home > Quality > Feedback > Quality Feedback
  <img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/feedback.gif">
 
- Steps for creating a Quality Feedback
 
  * Type: Select whether Feedback is by a Customer or a User.
 
