@@ -51,6 +51,7 @@ website_redirects = [
 	{'source': '/download', 'target': 'https://erpnext.org/get-started' },
 	{'source': '/faq', 'target': 'https://erpnext.org/faq' },
 	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },
+	{'source': '/12', 'target': '/version-12' },
 ]
 
 look_for_sidebar_json = True
