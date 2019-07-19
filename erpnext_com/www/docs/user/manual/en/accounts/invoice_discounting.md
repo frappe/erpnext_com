@@ -3,6 +3,7 @@
 **Invoice discounting is the practice of using a company's unpaid sales invoices as collateral for a short term loan, which is issued by a bank or a finance company.**
 To access the Invoice discounting list, go to:
 > Home > Accounting > Banking and Payments > Invoice Discounting
+
 ### Prerequisites
 
 You need to create following ledgers in order to post invoice discounting transactions.
