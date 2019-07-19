@@ -24,7 +24,7 @@ To access Quality Feedback Template, go to:
 ## Quality Feedback
 
  The Quality can easily give there feedbacks by selecting there template to rate on different parameter and also provide the qualitative feedback on the parameters.
- If the Feedback is not as per expectations, Quality Action may be initialised on the basis of the seriousness of the Feedback.
+If the Quality Feedback ratings are poor or negative, Quality Action may be initialized depending on seriousness of the Quality Feedback.
 
 ## Creating a Quality Feedback
 
