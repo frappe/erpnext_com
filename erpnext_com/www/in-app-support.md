@@ -3,7 +3,7 @@
 </section>
 
 
-To serve Frappe Customers more efficiently on support issues, Frappe Technologies is implementing an in-app support allowing you to raise and track issues right from your ERPNext account.
+To serve Frappe Customers more efficiently on support issues, Frappe Technologies presents in-app support allowing you to raise and track issues right from your ERPNext account.
 
 #### Using In-app Support
 
