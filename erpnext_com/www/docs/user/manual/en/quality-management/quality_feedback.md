@@ -37,7 +37,7 @@ To access Quality Feedback, go to:
 1. Select the Customer or User.
 
 1. Selecting a Quality Feedback Template will automatically populate the parameters for the Quality Feedback.
-
+1. The date will be automatically set to the current date.
  * Feedback :
 
     - Parameter: Various Parameters that are pre-defined in the Quality Feedback Template you create.
