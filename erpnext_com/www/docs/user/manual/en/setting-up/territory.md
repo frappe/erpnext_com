@@ -10,4 +10,19 @@ You can also set different pricing for the same product sold across different te
 
 <img class="screenshot" alt="Territory Tree" src="{{docs_base_url}}/assets/img/crm/territory-tree.png">
 
+## Allocate Item Group Wise Target
+
+In the Territory master, you will find table a called Territory Targets.
+
+<img class="screenshot" alt="Territory Tree" src="{{docs_base_url}}/assets/img/crm/territory-targets.png">
+
+In this table, you should select Item Group, Fiscal Year, Target Qty, Target Amount, and Target Distribution.
+
+You can give target in amount or quantity, or both. Item Group can also be left blank. In this case, the system will calculate target based on All Item Groups.
+
+## Territory Target Variance Based On Item Group
+This report will provide you variance between target and actual performance of the Sales Partner based on the Sales Order / Sales Invoice / Delivery Note data. User can view this report period wise like monthly, Quarterly, Half-Yearly and Yearly.
+
+<img class="screenshot" alt="Territory Tree" src="{{docs_base_url}}/assets/img/crm/territory-variance-report.png">
+
 {next}
