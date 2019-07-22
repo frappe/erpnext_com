@@ -58,7 +58,7 @@ metatags:
 1. [Bank Remittance](/docs/user/manual/en/human-resources/human-resources-reports#bank-remittance-report)
 1. [BOM Explorer](/docs/user/manual/en/stock/articles/bom_explorer)
 1. [Billing Summary Report](/docs/user/manual/en/projects/reports/billing_summary_reports)
-1. [Procurement Tracker Report](docs/user/manual/en/buying/articles/procurement-tracker-report)
+1. [Procurement Tracker Report](/docs/user/manual/en/buying/articles/procurement-tracker-report)
 1. [Loan Repayment](/docs/user/manual/en/human-resources/human-resources-reports#loan-repayment-report)
 1. [GSTR-3B](/docs/user/manual/en/regional/india/gst-3b-report)
 1. [Sales Partner](/docs/user/manual/en/selling/sales-partner#sales-partner-reports)
