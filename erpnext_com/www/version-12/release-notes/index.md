@@ -13,7 +13,6 @@ metatags:
 
 ### Accounting
 1. [Accounting Dimensions](/docs/user/manual/en/accounts/accounting-dimensions)
-1. Bank Remittance
 1. [Chart of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
 1. [Invoice Discounting](/docs/user/manual/en/accounts/invoice_discounting)
 1. [Tally Migrator](https://github.com/frappe/erpnext/pull/17405)
@@ -33,7 +32,7 @@ metatags:
 1. [Promotional Scheme](/docs/user/manual/en/accounts/promotional-schemes)
 1. [SLA](/docs/user/manual/en/support/service-level-agreement)
 1. [Exotel Call Integration](/docs/user/manual/en/erpnext_integration/exotel_integration)
-1. Email Campaign
+1. [Email Campaign](/docs/user/manual/en/CRM/campaign)
 
 ### Domain Specific Features
 1. [Learning Management System](/docs/user/manual/en/education/setting-up-lms)
@@ -55,20 +54,20 @@ metatags:
 1. [Auto Repeat](/docs/user/manual/en/setting-up/automation/auto-repeat)
 
 ### New Reports
-1. Bank Remittance
+1. [Bank Remittance](/docs/user/manual/en/human-resources/human-resources-reports#bank-remittance-report)
 1. [BOM Explorer](/docs/user/manual/en/stock/articles/bom_explorer)
 1. [Billing Summary Report](/docs/user/manual/en/projects/reports/billing_summary_reports)
-1. Procurement Tracker Report
-1. Loan Repayment
+1. [Procurement Tracker Report](docs/user/manual/en/buying/articles/procurement-tracker-report)
+1. [Loan Repayment](/docs/user/manual/en/human-resources/human-resources-reports#loan-repayment-report)
 1. [GSTR-3B](/docs/user/manual/en/regional/india/gst-3b-report)
-1. Sales Partner
-1. Item group wise target variance
+1. [Sales Partner](/docs/user/manual/en/selling/sales-partner#sales-partner-reports)
+1. [Sales Partner Target Variance based on Item Group](sales-partner-target-variance-based-on-item-group)
 
 ### Other Changes & Enhancements
 1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)
 1. [Energy Points](/docs/user/manual/en/setting-up/energy-point-system)
 1. [Project Template](/docs/user/manual/en/projects/project-template)
-1. [Dashboards](/docs/user/manual/en/customize-erpnext/dashboard)
+1. [Dashboards](c)
 1. [Disable customization for single doctypes](/version-12/release-notes/features#disable-customization-for-single-doctypes)
 1. [Email Linking](/docs/user/manual/en/setting-up/email/linking-emails-to-document)
 1. [Google Contacts](/docs/user/manual/en/erpnext_integration/google_contacts)

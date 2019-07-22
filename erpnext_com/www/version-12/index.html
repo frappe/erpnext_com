@@ -16,12 +16,18 @@
 </div>
 {% endmacro %}
 
-{% macro section(title, image, description, section_class) %}
+{% macro section(title, image, description, section_class, link) %}
 <section class="section {{ section_class }}">
 	<div class="container">
 		<h2>{{ title }}</h2>
 		<p class="text-muted" style="font-size: 1.25em;">{{ description }}</p>
 		<img class="card mt-2" src="/assets/erpnext_com/img/version-12/{{ image }}.png" alt="{{ title }}"/>
+		{% if link %}
+		<a href="{{ link }}" class="text-muted mt-3 inline-block">
+			Read More
+			<span class="hover-right">&#8594;</span>
+		</a>
+		{% endif %}
 	</div>
 </section>
 {% endmacro %}
@@ -60,35 +66,40 @@
 </section>
 {% set hero_features = [
 		{
-			"title": "New Desk UI",
+			"title": "New Desktop",
 			"image": "desk",
-			"description": "The new Desk is built from first principles, with information heirarchy in mind. It is more accessible and navigable."
+			"description": "The new Desk is built from first principles, with information heirarchy in mind. It is more accessible and navigable.",
+			"link": "/docs/user/manual/en/using-erpnext/articles/desktop"
 		},
 		{
 			"title": "Dashboards",
 			"image": "dashboards",
-			"description": "Create custom dashboards for everything you want to measure. Monitor and visualise your growth."
+			"description": "Create custom dashboards for everything you want to measure. Monitor and visualise your growth.",
+			"link": "/docs/user/manual/en/using-erpnext/articles/desktop"
 		},
 		{
 			"title": "Website",
 			"image": "website",
-			"description": "The new website modules allows creation of custom themes with improved SEO and page speed."
+			"description": "The new website modules allows creation of custom themes with improved SEO and page speed.",
+			"link": "/docs/user/manual/en/website"
 		},
 		{
 			"title": "Accounting Dimensions",
 			"image": "dimension",
-			"description": "You can now create you own configurable dimensions and use them across accounting transactions and reports."
+			"description": "You can now create you own configurable dimensions and use them across accounting transactions and reports.",
+			"link": "/docs/user/manual/en/accounts/accounting-dimensions"
 		},
 		{
 			"title": "Learning Management System",
 			"image": "lms",
-			"description": "Publish your programs online, host quizzes for your students to learn and track their progress."
+			"description": "Publish your programs online, host quizzes for your students to learn and track their progress.",
+			"link": "/docs/user/manual/en/education/setting-up-lms"
 		}
 	]
 %}
 
 {% for feature in hero_features %}
-	{{ section(feature.title, feature.image, feature.description, "section-bg" if loop.index%2!=0 else "") }}
+	{{ section(feature.title, feature.image, feature.description, "section-bg" if loop.index%2!=0 else "", feature.link) }}
 {% endfor %}
 
 {% set small_features = [
