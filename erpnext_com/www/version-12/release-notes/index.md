@@ -15,7 +15,7 @@ metatags:
 1. [Accounting Dimensions](/docs/user/manual/en/accounts/accounting-dimensions)
 1. Bank Remittance
 1. [Chart of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
-1. Invoice Discounting
+1. [Invoice Discounting](/docs/user/manual/en/accounts/invoice_discounting)
 1. [Tally Migrator](https://github.com/frappe/erpnext/pull/17405)
 
 ### Stock
@@ -23,10 +23,10 @@ metatags:
 1. [Auto Fetch Serialized Items](/version-12/release-notes/features#new-upload-dialog)
 
 ### HR
-1. Auto Attendance
+1. [Auto Attendance](/docs/user/manual/en/human-resources/auto-attendance)
 1. [Employee Skill Map](/docs/user/manual/en/human-resources/employee_skill_map)
 1. [Encrypted Salary Slips](/docs/user/manual/en/human-resources/hr-settings#24-encrypt-salary-slips-in-emails)
-1. Leave Management Enhancements
+1. [Leave Ledger](/docs/user/manual/en/human-resources/leave-ledger-entry)
 1. [Staffing Plan](/docs/user/manual/en/human-resources/staffing-plan)
 
 ### CRM
@@ -38,10 +38,10 @@ metatags:
 ### Domain Specific Features
 1. [Learning Management System](/docs/user/manual/en/education/setting-up-lms)
 1. [Quality Management System](/docs/user/manual/en/quality-management)
-1. Production Plan Enhancements
+1. [Production Planning Enhancements](/docs/user/manual/en/manufacturing/production-plan/planning-for-material-requests)
 
 ### UI/UX Enhancements
-1. New Desktop
+1. [New Desktop](/docs/user/manual/en/using-erpnext/articles/desktop)
 1. [Keyboard Navigation](/docs/user/manual/en/using-erpnext/articles/keyboard-shortcuts)
 1. [Link Preview](/version-12/release-notes/features#link-preview)
 1. [New Upload Dialog](/version-12/release-notes/features#new-upload-dialog)
@@ -56,9 +56,8 @@ metatags:
 
 ### New Reports
 1. Bank Remittance
-1. BOM Explorer
-1. Project Billing Report
-1. Employee Billing Report
+1. [BOM Explorer](/docs/user/manual/en/stock/articles/bom_explorer)
+1. [Billing Summary Report](/docs/user/manual/en/projects/reports/billing_summary_reports)
 1. Procurement Tracker Report
 1. Loan Repayment
 1. [GSTR-3B](/docs/user/manual/en/regional/india/gst-3b-report)
