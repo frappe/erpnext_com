@@ -70,4 +70,4 @@ Status indicates the state of the Email Campaign:
 1. [Lead](/docs/user/manual/en/CRM/lead)
 1. [Contact](/docs/user/manual/en/CRM/contact)
 
-Next: [Newsletter](/docs/user/manual/en/newsletter)
+Next: [Newsletter](/docs/user/manual/en/CRM/newsletter)

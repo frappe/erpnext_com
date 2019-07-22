@@ -63,4 +63,4 @@ You will have to setup a schedule for the campaign. Click on 'Add Row' to add an
 1. [Quotation](/docs/user/manual/en/selling/quotation)
 1. [Email Campaign](/docs/user/manual/en/CRM/email-campaign)
 
-Next: [Email Campaign](/docs/user/manual/en/email-campaign)
+Next: [Email Campaign](/docs/user/manual/en/CRM/email-campaign)
