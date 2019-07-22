@@ -67,7 +67,7 @@ metatags:
 1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)
 1. [Energy Points](/docs/user/manual/en/setting-up/energy-point-system)
 1. [Project Template](/docs/user/manual/en/projects/project-template)
-1. [Dashboards](c)
+1. [Dashboards](/docs/user/manual/en/customize-erpnext/dashboard)
 1. [Disable customization for single doctypes](/version-12/release-notes/features#disable-customization-for-single-doctypes)
 1. [Email Linking](/docs/user/manual/en/setting-up/email/linking-emails-to-document)
 1. [Google Contacts](/docs/user/manual/en/erpnext_integration/google_contacts)
