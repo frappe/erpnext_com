@@ -15,10 +15,12 @@ You'll find the global configuration options here, for module-wise setup, visit 
 1. [Setting Company Sales Goal](/docs/user/manual/en/setting-up/setting-company-sales-goal)
 1. [Global Defaults](/docs/user/manual/en/setting-up/settings/global-defaults)
 1. [System Settings](/docs/user/manual/en/setting-up/settings/system-settings)
+1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
 
-##### 1.2 Data Import and Privacy
+##### 1.2 Data Import
 1. [Data Import](/docs/user/manual/en/setting-up/data-and-privacy/data-import)
 1. [Charts Of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
+1. [Download Backup](/docs/user/manual/en/setting-up/data-and-privacy/download-backup)
 
 ##### 1.3 User and Permissions
 1. [Users and Permissions](/docs/user/manual/en/setting-up/users-and-permissions)
@@ -33,9 +35,9 @@ You'll find the global configuration options here, for module-wise setup, visit 
 ##### 1.4 Printing
 1. [Print Settings](/docs/user/manual/en/setting-up/print/print-settings)
 1. [Print Format](/docs/user/manual/en/setting-up/print/print-format)
+1. [Print Format Builder](/docs/user/manual/en/setting-up/print/print-format-builder)
 1. [Print Style](/docs/user/manual/en/setting-up/print/print-style)
 1. [Print Headings](/docs/user/manual/en/setting-up/print/print-headings)
-1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
 1. [Address Template](/docs/user/manual/en/setting-up/print/address-template)
 1. [Terms and Conditions Template](/docs/user/manual/en/setting-up/print/terms-and-conditions)
 1. [Cheque Print Template](/docs/user/manual/en/setting-up/print/cheque-print-template)
@@ -60,17 +62,16 @@ You'll find the global configuration options here, for module-wise setup, visit 
 1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)
 
 ##### 1.7 System Configuration
-1. [Module Settings](/docs/user/manual/en/setting-up/settings/module-settings)
+1. [Show or Hide Modules](/docs/user/manual/en/setting-up/settings/show-hide-modules)
 1. [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series)
 1. [Bulk Rename](/docs/user/manual/en/setting-up/settings/bulk-rename)
-1. [Download Backup](/docs/user/manual/en/setting-up/data-and-privacy/download-backup)
 1. [Milestone Tracking](/docs/user/manual/en/setting-up/automation/milestone-tracker)
 1. [Auto Repeat](/docs/user/manual/en/setting-up/automation/auto-repeat)
 1. [Authorization Rule](/docs/user/manual/en/setting-up/authorization-rule)
 1. [Energy Point System](/docs/user/manual/en/setting-up/energy-point-system)
 
-##### 1.8 Personal Data
-1. [Personal Data Request](/docs/user/manual/en/setting-up/personal-data-request)
+##### 1.8 Data Privacy
+1. [Personal Data Request](/docs/user/manual/en/setting-up/personal-data-download)
 1. [Personal Data Deletion](/docs/user/manual/en/setting-up/personal-data-deletion)
 
 ## 2. Articles

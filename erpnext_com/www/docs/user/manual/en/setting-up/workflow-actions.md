@@ -6,6 +6,8 @@
 
 **Workflow Actions is a single place to manage all the pending actions you can take on Workflows.**
 
+Workflow Actions will send email notifications only if the 'Send Email Alert' checkbox is ticked in the Workflow that you've created.
+
 To access Workflow Actions, go to:
 > Home > Settings > Workflow > Workflow Actions
 

@@ -3,6 +3,8 @@
 
 **The administrator is above the System Manager and has all the rights and permissions for an ERPNext account.**
 
+A System Manager also has permissions to most items in the system, but the Administrator has unrestricted access. 
+
 1. If your ERPNext account is cloud-hosted with us (Frappe Technologies Pvt. Ltd.), then you won't be able to access your ERPNext account as an Administrator. 
 
 1.  For cloud hosted account, upgrades are managed from the backend. We reserve admin login credentials with us so that we can upgrade all the customer's ERPNext accounts from the backend. 

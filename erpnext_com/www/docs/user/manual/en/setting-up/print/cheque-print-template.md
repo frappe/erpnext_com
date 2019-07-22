@@ -16,17 +16,17 @@ A sample cheque:
 
 
 ## 1. How to create a Cheque Print Template
-1. Click on new.
+1. Go to the Cheque Print Template list, click on New.
 1. You can set the position of various items in the cheque.
 1. Save.
 
-In the Cheque Print Template, for each value (say Payee, Date), exact coordinates are provided based on where that value should be printed on a cheque. Co-ordinates are provided in centimeters. Here is a represending the structure.
+In the Cheque Print Template, for each value (say Payee, Date), exact coordinates are provided based on where that value should be printed on a cheque. Co-ordinates are provided in centimeters. Here is a representation the structure:
 
 <img class="screenshot" alt="Sample Cheque" src="{{docs_base_url}}/assets/img/setup/print/cheque-1.png">
 
 ### 1.1 New Format by Scanning
 
-To speed up the creation of a new cheque printing format, you can upload a scanned image of the cheque. Considering the scanned image for the cheque, the system automatically updates co-ordinates for each value like party name, amount, date, amount in words, etc.
+To speed up the creation of a new cheque printing format, you can upload a scanned image of the cheque. Considering the scanned image for the cheque, the system automatically updates co-ordinates for each value like party name, amount, date, the amount in words, etc.
 
 ### 1.2 New Print Format manually 
 If the preview looks good, click on the **Create Print Format** button to create a new Print Format for printing the cheque. Based on the values provided in the Cheque Print Template, the system will auto-generate an HTML script for the cheque’s Print Format.

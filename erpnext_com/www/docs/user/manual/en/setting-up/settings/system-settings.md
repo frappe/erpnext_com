@@ -87,7 +87,7 @@ On ticking 'Enable Two Factor Auth', the following two options will be seen.
 * **Expiry time of QR Code Image Page**: Expiry time for QRCode image if "OTP App" is selected in the method.
 * OTP Issuer Name of the One Time Password.
 
-<img class="screenshot" alt="Two Factor Auth" src="{{docs_base_url}}/assets/img/setup/settings/twofactor-settings.png">
+    <img class="screenshot" alt="Two Factor Auth" src="{{docs_base_url}}/assets/img/setup/settings/twofactor-settings.png">
 
 
 ### 1.9 Email
@@ -96,15 +96,14 @@ On ticking 'Enable Two Factor Auth', the following two options will be seen.
 * **Disable Standard Email Footer**: If ticked, the standard email footer will be disabled for outgoing emails.
 * **Hide footer in auto-email reports**: If ticked, footers will be hidden in [Auto Email reports](/docs/user/manual/en/setting-up/email/auto-email-reports).
 
-![Email Footer](/docs/assets/img/setup/settings/email-footer.png)
+    ![Email Footer](/docs/assets/img/setup/settings/email-footer.png)
 
 ### 1.10 Chat
 
 * **Enable Chat**: This option will enable the in-app chat which can be used to communicate with other employees.
-* **Use socketio to upload file**: If ticked, Socket.IO will be used to upload files.
 
 
 ### 2. Related Topics
 1. [Company Setup](/docs/user/manual/en/setting-up/company-setup)
 1. [Global Defaults](/docs/user/manual/en/setting-up/settings/global-defaults)
-1. [Module Settings](/docs/user/manual/en/setting-up/settings/module-settings)
+1. [Show or Hide Modules](/docs/user/manual/en/setting-up/settings/show-hide-modules)

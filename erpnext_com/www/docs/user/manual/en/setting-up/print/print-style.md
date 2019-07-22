@@ -5,12 +5,13 @@
 
 ERPNext comes with preset styles for printing documents. You can also create new styles using CSS that can be applied to all your print formats.
 
+The standard print Styles in ERPNext are: Monochrome, Modern, and Classic.
 To create a new **Print Style** go to:
 
 > Home > Settings > Printing > Print Style
 
 ## 1. How to create a new Print Style
-1. Click on New.
+1. Go to the Print Style list, click on New.
 1. Enter a name for the Print Style.
 1. Enter the CSS that'll define how the style will look like.
 1. Save.

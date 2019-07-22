@@ -7,10 +7,10 @@ In ERPNext, the first Company is created when an ERPNext account. For each Compa
 
 If you have more than one company, you can add them from:
 
-> Home > Accounting > Company
+> Home > Accounting > Masters and Accounts > Company
 
 ## 1. How to create a new Company
-1. Go to the path, click on New.
+1. Go to the Company list, click on New.
 1. Enter the name, abbreviation, and default currency for the company.
 1. Save.
 
@@ -26,9 +26,9 @@ You can also attach a company logo and add a description for the company.
 
 Let's assume you run a group of companies, some may be larger companies and some may be smaller that are a part of the larger companie(s).
 
-In ERPNext, you can setup multiple companies. The company structure can be parallel, i.e., sister companies, parent child companies, or a combination of both.
+In ERPNext, you can set up multiple companies. The company structure can be parallel, i.e., sister companies, parent-child companies, or a combination of both.
 
-A parent company is the larger organization which consists of one or more child companies. A child company is a subsidiary of a parent company.
+A parent company is a larger organization which consists of one or more child companies. A child company is a subsidiary of a parent company.
 
 The company tree view displays the overall structure of your companies.
 
@@ -47,7 +47,7 @@ For each Company, the master for Chart of Accounts is maintained separately. Thi
 
 <img class="screenshot" alt="Company Chart of Accounts" src="{{docs_base_url}}/assets/img/accounts/company-coa.png">
 
-ERPNext has localized Chart of Accounts readily available for some countries. When creating a new Company, you can choose to setup the Chart of Account for it from one of the following options.
+ERPNext has localized Chart of Accounts readily available for some countries. When creating a new Company, you can choose to set up the Chart of Account for it from one of the following options.
 
 * Standard Chart of Accounts
 * Based on Existing Company's Chart of Account
@@ -55,7 +55,7 @@ ERPNext has localized Chart of Accounts readily available for some countries. Wh
 <img class="screenshot" alt="Company Chart of Accounts" src="{{docs_base_url}}/assets/img/accounts/company-coa-2.png">
 
 ### 1.4 Defaults
-Within the Company master, you can set many of the default values for masters and accounts. These default accounts will help you in the quick posting of accounting transactions, where the value for the account will be fetched from the Company master, if provided. As soon as the company is created, a default Chart Of Accounts and Cost Center is automatically created.
+Within the Company master, you can set many of the default values for masters and accounts. These default accounts will help you in the quick posting of accounting transactions, where the value for the account will be fetched from the Company master if provided. As soon as the company is created, a default Chart Of Accounts and Cost Center is automatically created.
 
 The following defaults can be set for a company:
 
@@ -98,7 +98,7 @@ Some of the following accounts will be set by default when you create a new comp
 * Default Payment Terms Template
 
 ### 2.3 Stock Settings
-Enabling Perpetual Inventory feature would lead to Stock transactions impacting company's books of accounts. Know more [here](/docs/user/manual/en/stock/perpetual-inventory).
+Enabling Perpetual Inventory feature would lead to Stock transactions impacting the company's books of accounts. Know more [here](/docs/user/manual/en/stock/perpetual-inventory).
 
 * Default Inventory Account
 * Stock Adjustment Account
@@ -123,9 +123,9 @@ For managing fixed assets in a company, the following accounts are needed. Most 
 
 ### 2.5 HRA Settings
 
-Set default Component for the following Salary Components.
+Set the default Component for the following Salary Components.
 
-> For the Indian user, setting default value in this section will help in Employee Tax Declaration calculations, specially for HRA exemption amount.
+> For the Indian user, setting the default value in this section will help in Employee Tax Declaration calculations, especially for HRA exemption amount.
 
 * Basic Component
 * HRA Component
@@ -133,10 +133,14 @@ Set default Component for the following Salary Components.
 
 ### 2.6 Bank Remittance Settings
 
-Using Payment Order feature (in Accounts), you can give a single document of transfer for multiple bank transfers. Updating value in the following fields will help you generate Bank Remittance in a format which can be accepted, and can be also uploaded on the bank's portal.
+*Only for India.*
 
-* Client Code
-* Product Code
+Using the Payment Order feature (in Accounts), you can give a single document of transfer for multiple bank transfers. Updating value in the following fields will help you generate Bank Remittance in a format which can be accepted and can be also uploaded on the bank's portal.
+
+Payment order allows a user to combine several payment entries/payment requests into a single document. Bank Remittance allows a user to send **that** single document to the bank as text format, this text format can be manually uploaded to Kotak bank payments platform.
+
+Client Code and Product Code are codes given by the bank to you. This is required to be added in the text file as per the format specified by Kotak bank.
+
 
 ### 2.7 Budget
 Exception Budget Approver Role: The role selected here can bypass the set budget to approve expenses.

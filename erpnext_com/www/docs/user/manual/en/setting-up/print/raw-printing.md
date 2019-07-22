@@ -19,7 +19,7 @@ Further instructions on installing the QZ Tray Application can be [here](https:/
 
 To be able to send raw commands to a printer you need to first create a print format in raw commands. Jinja Templating Language is used in raw commands just like in the [HTML custom print format](/docs/user/manual/en/customize-erpnext/print-format).
 
-To create a new print format for raw printing:
+To create a new print format for Raw Printing:
 
 1. Go to print format list: **Home > Settings > Printing > Print Format**
 2. Click on New.
@@ -34,7 +34,7 @@ Currently, any string-based printer languages can be used in the `Raw Commands` 
 
 ### 1.3 Enable Raw Printing in the Print Setting
 
-To enable raw printing:
+To enable Raw Printing:
 
 1. Go to: **Home > Settings > Printing > Print Settings > Raw Printing**.
 2. Check the **Enable Raw Printing** option.
@@ -42,7 +42,7 @@ To enable raw printing:
 
 ## 2. Methods to utilize raw printing in ERPNext
 
-There are two ways to send raw printing commands to your printer.
+There are two ways to send Raw Printing commands to your printer.
 
 ### 2.1 Clicking print on the print view page
 
@@ -65,7 +65,7 @@ To print a raw command print format from the Document print view:
 
 It is often a requirement that a print command has to be issued on a certain event (like submit, save, amend, etc.). It is possible to write a [custom script](/docs/user/manual/en/customize-erpnext/custom-scripts) to do this for you.
 
-Below are the relevant Raw Print functions:
+Following are the relevant Raw Print functions:
 
 1. function: `frappe.ui.form.qz_connect`
   - A connection wrapper to establish a connection with the QZ Tray application.

@@ -4,33 +4,33 @@
 **Terms and conditions contain the terms and conditions of a service/product offered by a seller to a buyer.**
 
 Each Quotation/Sales Order must ideally contain a set of terms of your contract. Terms and conditions are usually included to define terms of service, conditions for using any service or to even limit responsibilities of the seller in case any harm is caused to the buyer due to using the provided goods or services.  It is
-usually a good idea to make template(s) of your Terms and Conditions, so that
+usually a good idea to make template(s) of your Terms and Conditions so that
 you have a standard set of terms. 
 
 To access Terms and Conditions template go to:
 
 > Home > Selling > Settings > Terms and Conditions Template
 
-## 1. How to create Terms and Conditions
+## 1. How to create Terms and Conditions Template
 
-1. Click on new.
+1. Go to the Terms and Conditions Template list, click on New.
 1. Add the Terms and Conditions.
 
     <img class="screenshot" alt="Terms and Conditions" src="{{docs_base_url}}/assets/img/setup/print/terms-1.png">
 
 ### 1.1. Select in Transaction
 
-In transactions, you will find section of Terms and Conditions where you will be able to search and fetched required Terms and Condition master.
+In transactions, you will find a section of Terms and Conditions where you will be able to search and fetch the required Terms and Condition master.
 
 <img class="screenshot" alt="Terms and Conditions, Select in document" src="{{docs_base_url}}/assets/img/setup/print/terms-3.png">
 
 ### 1.3 What should Terms and Conditions contain?
-Here are a some common topics that Terms and Conditions should contain:
+Here are some common topics that Terms and Conditions should contain:
 
   * Validity of the offer.
-  * Payment Terms (In Advance, On Credit, part advance etc).
+  * Payment Terms (In Advance, On Credit, part advance, etc).
   * What is extra (or payable by the Customer).
-  * Safety / usage warning.
+  * Safety/usage warning.
   * Warranty if any.
   * Return Policy.
   * Terms of shipping, if applicable.

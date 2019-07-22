@@ -1,11 +1,13 @@
 <!-- add-breadcrumbs -->
 # Users And Permissions
 
-In ERPNext, you can create multiple users and assign them different roles. There are some users who can only access the public facing part of ERPNext (i.e. a portal view). Such users are called "Website Users".
+In ERPNext, you can create multiple users and assign them different roles.
 
-ERPNext implements permission control at the User and Role level. Each user in the system can be assigned multiple roles and permissions.
+A role is a set of permissions assigned to a user so that they can access the necessary documents. For example, a sales employee will need access to sales transactions but will not have access to approve leaves. 
 
-The most important role is the "System Manager". Any user having this role can add other users and set roles to all users.
+There are some users who can only access the public facing part of ERPNext (i.e. a portal view). Such users are called "Website Users". "System Users" will have access to modules and can access documents as per the roles set.
+
+ERPNext implements permission control at the User and Role level. Each user in the system can be assigned multiple roles and permissions. The most important role is the "System Manager". Any user having this role can add other users and set roles for all users.
 
 <div>
     <div class='embed-container'>
