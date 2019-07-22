@@ -2,21 +2,24 @@
 # Campaign
 
 **A Campaign is a full-scale implementation of a sales strategy to promote a
-product or a service.**
+product or service.**
 
 This is done in a market segment of a particular geographical area to achieve specified objectives.
 
+To access Campaign, go to:
+> Home > CRM > Campaign
+
 <img class="screenshot" alt="Campaign" src="{{docs_base_url}}/assets/img/crm/campaign.png">
 
-## 1. How to create a Campaign
-1. Go to **Home > CRM > Settings > Campaign > New**.
+## 1. How to Create a Campaign
+1. Go to the Campaign list, click on new.
 2. Enter a name for the campaign.
 3. Enter a description to describe what the campaign is about.
 4. Save.
 
 ## 2. Features
 
-### 2.1 Tag Campaign in Lead, Opportunity and Quotation
+### 2.1 Tag Campaign in Lead, Opportunity, and Quotation
 
 When a marketing campaign generates a lead or an opportunity, you can tag the campaign while creating the [Lead](/docs/user/manual/en/CRM/lead) or [Opportunity](/docs/user/manual/en/CRM/opportunity). You can also tag the campaign in [Quotation](/docs/user/manual/en/selling/quotation).
 
@@ -36,11 +39,11 @@ This helps in assessing the effectiveness of a marketing campaign by calculating
 
      <img class="screenshot" alt="Campaign - New Lead" src="{{docs_base_url}}/assets/img/crm/campaign-new-lead.png">
 
-### 2.3 Set up email schedules for Email Campaigns.
+### 2.3 Set up email schedules for Email Campaigns
 
-If you want to do campaigning using emails for your leads or contacts, [Email Campaign](/docs/user/manual/en/CRM/email-campaign) serves the purpose.
+If you want to carry out a campaign using emails for your leads or contacts, [Email Campaign](/docs/user/manual/en/CRM/email-campaign) serves the purpose.
 
-You will have to setup a schedule for the campaign. Click on 'Add Row' to add an entry to the campaign schedule.
+You will have to set up a schedule for the campaign. Click on 'Add Row' to add an entry to the campaign schedule.
 
 <img class="screenshot" alt="Campaign Schedule" src="{{docs_base_url}}/assets/img/crm/campaign-email-schedule.png">
 
@@ -48,11 +51,11 @@ You will have to setup a schedule for the campaign. Click on 'Add Row' to add an
 
      <img class="screenshot" alt="Campaign - Email Template" src="{{docs_base_url}}/assets/img/crm/email-template.png">
 
--  In **Send After (days)**, specify the number of days after which the respective email should be sent. Using this field, the day on which email is to be sent is calculated, relative to the **Start Date** of **Email Campaign**.
+-  In **Send After (days)**, specify the number of days after which the respective email should be sent. Using this field, the day on which email is to be sent is calculated relative to the **Start Date** of **Email Campaign**.
 
 ### 2.4 Dashboard
  
- The Campaign dashboard shows you all the Email Campaigns linked to the Campaign. You can also create a new Email Campaign from here.
+The Campaign dashboard shows you all the Email Campaigns linked to the Campaign. You can also create a new Email Campaign from here.
 
 <img class="screenshot" alt="Campaign Dashboard" src="{{docs_base_url}}/assets/img/crm/email-campaigns-from-dash.png">
 
