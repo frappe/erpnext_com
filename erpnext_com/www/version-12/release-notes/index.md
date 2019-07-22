@@ -30,7 +30,7 @@ metatags:
 1. [Staffing Plan](/docs/user/manual/en/human-resources/staffing-plan)
 
 ### CRM
-1. [Promotional Scheme](/docs/user/manual/en/accounts/promotional-schemes)
+1. [Promotional Scheme](/docs/user/manual/en/accounts/promotional-scheme)
 1. [SLA](/docs/user/manual/en/support/service-level-agreement)
 1. [Exotel Call Integration](/docs/user/manual/en/erpnext_integration/exotel_integration)
 1. [Email Campaign](/docs/user/manual/en/CRM/email-campaign)
@@ -38,7 +38,7 @@ metatags:
 ### Domain Specific Features
 1. [Learning Management System](/docs/user/manual/en/education/setting-up-lms)
 1. [Quality Management System](/docs/user/manual/en/quality-management)
-1. [Production Planning Enhancements](/docs/user/manual/en/manufacturing/production-plan/planning-for-material-requests)
+1. [Production Planning Enhancements](/docs/user/manual/en/manufacturing/production-plan#planning-for-material-requests)
 
 ### UI/UX Enhancements
 1. [New Desktop](/docs/user/manual/en/using-erpnext/desktop)
@@ -46,7 +46,7 @@ metatags:
 1. [Link Preview](/version-12/release-notes/features#link-preview)
 1. [New Upload Dialog](/version-12/release-notes/features#new-upload-dialog)
 1. [Frequently visited links appear in Awesomebar results](/version-12/release-notes/features#frequently-visited-links-appear-in-awesomebar-results)
-1. [Full Width Container]((/version-12/release-notes/features#full-width-container))
+1. [Full Width Container](/version-12/release-notes/features#full-width-container)
 1. [List View Enhancements](/version-12/release-notes/features#list-view-enhancements)
 
 ### New Automation Module
@@ -62,7 +62,7 @@ metatags:
 1. [Loan Repayment](/docs/user/manual/en/human-resources/human-resources-reports#loan-repayment-report)
 1. [GSTR-3B](/docs/user/manual/en/regional/india/gst-3b-report)
 1. [Sales Partner](/docs/user/manual/en/selling/sales-partner#sales-partner-reports)
-1. [Sales Partner Target Variance based on Item Group](sales-partner-target-variance-based-on-item-group)
+1. [Sales Partner Target Variance based on Item Group](/docs/user/manual/en/selling/sales-partner#33-sales-partner-target-variance-based-on-item-group)
 
 ### Other Changes & Enhancements
 1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)
