@@ -40,7 +40,7 @@ metatags:
 1. [Production Planning Enhancements](/docs/user/manual/en/manufacturing/production-plan/planning-for-material-requests)
 
 ### UI/UX Enhancements
-1. [New Desktop](/docs/user/manual/en/using-erpnext/articles/desktop)
+1. [New Desktop](/docs/user/manual/en/using-erpnext/desktop)
 1. [Keyboard Navigation](/docs/user/manual/en/using-erpnext/articles/keyboard-shortcuts)
 1. [Link Preview](/version-12/release-notes/features#link-preview)
 1. [New Upload Dialog](/version-12/release-notes/features#new-upload-dialog)
