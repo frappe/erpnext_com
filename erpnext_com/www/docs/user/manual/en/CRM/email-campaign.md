@@ -58,6 +58,7 @@ When the lead or contact unsubscribes, the status of the Email Campaign document
 
 Status indicates the state of the Email Campaign:
 
+- Scheduled: When the Email Campaign has not yet started but scheduled on a future 'Start Date'.
 - In Progress: When there are still more campaign mails to be sent.
 - Completed: When all the emails have been sent according to the schedule setup in the Campaign.
 - Unsubscribed: When the lead or contact unsubscribes from the campaign.
