@@ -20,6 +20,7 @@ metatags:
 ### Stock
 1. [Serialized & Batched Item Reconciliation](/docs/user/manual/en/setting-up/stock-reconciliation#12-for-serialized-items)
 1. [Auto Fetch Serialized Items](/version-12/release-notes/features#new-upload-dialog)
+1. [Item Tax Templates](/docs/user/manual/en/accounts/item-tax-template)
 
 ### HR
 1. [Auto Attendance](/docs/user/manual/en/human-resources/auto-attendance)
@@ -32,7 +33,7 @@ metatags:
 1. [Promotional Scheme](/docs/user/manual/en/accounts/promotional-schemes)
 1. [SLA](/docs/user/manual/en/support/service-level-agreement)
 1. [Exotel Call Integration](/docs/user/manual/en/erpnext_integration/exotel_integration)
-1. [Email Campaign](/docs/user/manual/en/CRM/campaign)
+1. [Email Campaign](/docs/user/manual/en/CRM/email-campaign)
 
 ### Domain Specific Features
 1. [Learning Management System](/docs/user/manual/en/education/setting-up-lms)
@@ -77,5 +78,3 @@ metatags:
 1. [Website Refactor](/docs/user/manual/en/website)
 1. [Added Track Views field to Customize Form](/version-12/release-notes/features#added-track-views-field-to-customize-form)
 1. [Add custom columns to any report](/version-12/release-notes/features#add-custom-columns-to-any-report)
-
-<!-- no-sitemap -->
