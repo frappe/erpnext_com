@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-#Setting up LDAP
+# Setting up LDAP
 
 Lightweight Directory Access Protocol is a centralised access control system used by many small and medium scale organisations.
 
@@ -7,7 +7,7 @@ By settings up LDAP service, you able to login to ERPNext account by using LDAP 
 
 #### Setup LDAP
 
-##### Pre-requesites
+##### Prerequisites
 To use LDAP, you will first need to install the ldap3 python module.  To do this, open a terminal session on your server that hosts the ERPNext instance. Go to the frappe-bench directory.
 run the command: `./env/pip install ldap3`
 
@@ -90,19 +90,23 @@ In the LDAP Security section, You have a number of options to connect securely t
   If you are specifying a trusted certificate, you will need to specify the paths to your certificate files.  These files are to be placed on your ERPNext server, and the fields below should be an absolute path to the files on your server.
     The certificate fields are:
 
-    * Path to private Key File
-    * Path to Server Certificate
-    * Path to CA Certs File
+  * Path to private Key File
+    
+  * Path to Server Certificate
+    
+  * Path to CA Certs File
 
 
 #### LDAP Group Mappings
 ERPNext also allows you to automatically map multiple LDAP groups to the appropriate ERPNext roles.  
-This can be helpful for example that you want all of your Accounting employees, to automatically have the Accounts User Role.
+For example you may want all of your Accounting employees, to automatically have the Accounts User Role.
 
 Ensure that you fill out the LDAP Group Field to allow this.  This is the LDAP field that is found on a user object in LDAP, that has all of the groups the user is a member of.
 
 For Active Directory and Open LDAP this field should be set to `memberOf`
 
 Open LDAP may need this field to be enabled on your LDAP server.  Please see examples on the internet for more details.
+
+> Note that all ERPNext roles will be checked each time a user logs on, and will be removed or added to the users permissions.
 
 <img class="screenshot" alt="LDAP Group Mappings" src="{{docs_base_url}}/assets/img/setup/integrations/ldap_group_mappings.png">
