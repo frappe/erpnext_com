@@ -2,9 +2,9 @@
 # Employment Type
 
 
-**You can employ people under a number of categories each having their own wage and leave entitlements. This is called an Employement Type.** 
+**You can employ people under a number of categories each having their own wage and leave entitlements. This is called an Employment Type.** 
 
-ERPNext allows you to select an Employment Type from a predefined list or even create a new Employment Type based on your requirements.
+ERPNext allows you to select an Employment Type from a pre-defined list or even create a new Employment Type based on your requirements.
 
 To access the Employment Type, go to:
 
@@ -14,11 +14,11 @@ To access the Employment Type, go to:
 
 ## 1. How to create an Employment Type
 
-To create a new Employement Type:
+To create a new Employment Type:
 
-1. Click on Employment Type > New.
-2. Enter the Name of the Employment Type.
-3. Save.
+1. Click on Employment Type list and click on New
+2. Enter the Name of the Employment Type
+3. Save
 
 
 The Employment Type can be linked to the [Employee](/docs/user/manual/en/human-resources/employee) master.

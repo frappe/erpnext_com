@@ -8,14 +8,14 @@ In ERPNext, you can manage the Employee master. It captures the demographic, per
 
 To access the Employee master, go to:
 
-> Home > Human Resources > Employee and Attendance > Employee
+> Home > Human Resources  > Employee
 
 ## 1. How to create an Employee
 
-To create a new Employee:
+To create a new Employee:   
 
-1. Click on Employee > New.
-1. Enter the Employee's personal details  such as Name, Gender, Date of Birth, and Date of Joining.
+1. Go to Employee list and click on New.
+1. Enter the Employee's personal details such as Name, Gender, Date of Birth, and Date of Joining.
 1. Save.
 
 As shown below, all the mandatory fields are highlighted.
@@ -92,8 +92,6 @@ Some additional features included in the Employee master are as follows:
 * Health Insurance
 * Personal Bio
 * History in the Company
-
-
 
 ## 3. Related Topics
 
