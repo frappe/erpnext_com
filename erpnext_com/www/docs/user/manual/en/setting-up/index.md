@@ -47,6 +47,7 @@ To get an ERP implementation right, the implementor needs to set aside time and 
 ##### 1.4 System Configuration
 
 1. [Global Defaults](/docs/user/manual/en/setting-up/settings/global-defaults)
+1. [Session Defaults](/docs/user/manual/en/setting-up/settings/session-defaults)
 1. [System Settings](/docs/user/manual/en/setting-up/settings/system-settings)
 1. [Module Settings](/docs/user/manual/en/setting-up/settings/module-settings)
 1. [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series)
