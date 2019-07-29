@@ -14,7 +14,7 @@ Setting User Permissions are particularly useful when you want to restrict based
 
 
 To access User Permissions, go to:
-> Home > User and Permissions > Permission > User Permissions
+> Home > User and Permissions > User Permissions
 
 
 ## 1. How to create User Permissions
@@ -23,7 +23,7 @@ To access User Permissions, go to:
 1. Select the user for which the rule has to be applied.
 2. Select the type of document to be allowed (for example "Company").
 3. Under For Value, select the specific item that you want to allow (the name of the "Company).
-4. If you check 'Is Default', the value selected in 'For Value' will be used as default for any future transactions by this user. That is if company ABC is selected as 'For Value', company ABC will be set as default for all future transactions by this user.
+4. If you check 'Is Default', the value selected in 'For Value' will be used as default for any future transactions by this user. That is, if company Unico Plastics Inc. is selected as 'For Value', this Company will be set as default for all future transactions by this user.
 
     <img src="{{docs_base_url}}/assets/img/users-and-permissions/user-perms/new-user-permission.png" class="screenshot" alt="Creating a new user permission">
 

@@ -12,7 +12,7 @@ Every transaction has a default Print Format called 'Standard'. You can change P
 
 To access Print Format, go to:
 
-> Home > Settings > Printing > Print Format
+> Home > Settings > Print Format
 
 ## 1. How to create a Print Format
 1. Go to the Print Format List, click on New.

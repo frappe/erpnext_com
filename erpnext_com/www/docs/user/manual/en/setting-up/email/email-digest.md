@@ -7,7 +7,7 @@ Email Digests are a great way for top managers to keep track of the big numbers 
 
 To set up Email Digest, go to:
 
-> Home > Settings > Email > Email Digest
+> Home > Settings > Email Digest
 
 1. Enter a name for the Email digest.
 1. Set the frequency of mails to be sent.

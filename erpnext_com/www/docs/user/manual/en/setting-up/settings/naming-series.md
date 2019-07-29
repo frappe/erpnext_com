@@ -76,4 +76,4 @@ For example:
 </div>
 
 ### 4. Related Topics
-1. [Bulk Rename](/docs/user/manual/en/setting-up/data-and-privacy/bulk-rename)
+1. [Bulk Rename](/docs/user/manual/en/setting-up/data/bulk-rename)

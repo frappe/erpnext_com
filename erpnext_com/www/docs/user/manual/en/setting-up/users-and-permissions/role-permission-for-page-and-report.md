@@ -10,7 +10,7 @@ In ERPNext, user can make a custom user interface using Page and a custom report
 If the user has enabled developer mode, then they can add the roles directly in the page and report record. In that case, the permissions will also be reflected in the JSON file for the page/report. Consider you want to restrict the roles that can access certain pages and reports in ERPNext, this can be done via the Role Permission for Page and Report.
 
 To access Role Permission for Page and Report, go to:
-> Home > Users and Permissions > Permissions > Role Permission for Page and Report
+> Home > Users and Permissions > Role Permission for Page and Report
 
 
 ## 1. How to use Role Permission for Page and Report Tool

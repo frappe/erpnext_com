@@ -6,7 +6,7 @@
 Since ERPNext is a browser-based application, the actual print command is executed by the browser you're using.
 
 To edit Print Settings, go to:
-> Home > Settings > Printing > Print Settings
+> Home > Settings > Print Settings
 
 <img class="screenshot" alt="Print Settings" src="{{docs_base_url}}/assets/img/setup/print/print-settings.png">
 

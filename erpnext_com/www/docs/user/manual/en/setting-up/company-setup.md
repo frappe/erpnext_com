@@ -7,7 +7,7 @@ In ERPNext, the first Company is created when an ERPNext account. For each Compa
 
 If you have more than one company, you can add them from:
 
-> Home > Accounting > Masters and Accounts > Company
+> Home > Accounting > Company
 
 ## 1. How to create a new Company
 1. Go to the Company list, click on New.
@@ -40,7 +40,7 @@ Once you build a company tree, ERPNext will validate if the accounts of the chil
 
 * **Domain**: The domain of work the company is into. Eg: manufacturing, services, etc. Choose one when setting up your account.
 * **Is Group**: If checked, this becomes a parent company.
-* **Parent Company**: If this is a child company, set the parent from this field i.e., select a group company this company belongs to. If a parent company is set, the chart of accounts for the new company you're creating will be created on the basis of the selected parent company.
+* **Parent Company**: If this is a child company, set the parent from this field i.e., select a group company this company belongs to. If a parent company is set, the chart of accounts for the new company you're creating will be created based on the selected parent company.
 
 ### 1.3 Chart of Accounts
 For each Company, the master for Chart of Accounts is maintained separately. This allows you to maintain separate accounting for each company as per the legal requirements. You can also import chart of accounts using the [Charts Of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer).
@@ -53,6 +53,8 @@ ERPNext has localized Chart of Accounts readily available for some countries. Wh
 * Based on Existing Company's Chart of Account
 
 <img class="screenshot" alt="Company Chart of Accounts" src="{{docs_base_url}}/assets/img/accounts/company-coa-2.png">
+
+Note that, if the Parent Company is selected when creating a new Company, the Chart of Accounts will be created based on the existing Parent Company.
 
 ### 1.4 Defaults
 Within the Company master, you can set many of the default values for masters and accounts. These default accounts will help you in the quick posting of accounting transactions, where the value for the account will be fetched from the Company master if provided. As soon as the company is created, a default Chart Of Accounts and Cost Center is automatically created.

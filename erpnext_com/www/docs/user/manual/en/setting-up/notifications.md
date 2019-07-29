@@ -1,19 +1,19 @@
 <!-- add-breadcrumbs -->
-# Notifications
+# Notification
 
 **You can configure various notifications in your system to remind you of important activities.**
 
-1. Completion date of a Task.
+1. The completion date of a Task.
 2. Expected Delivery Date of a Sales Order.
 3. Expected Payment Date.
-4. Reminder of follow up.
+4. A reminder of follow up.
 5. If an Order greater than a particular value is received or sent.
 6. Expiry notification for a Contract.
 7. Completion/Status change of a Task.
 
 To access notification setup, go to:
 
-> Home > Settings > Email > Notification
+> Home > Settings > Notification
 
 ## 1. Setting Up An Alert
 
@@ -98,7 +98,7 @@ If you prefer to have your notifications sent to a dedicated Slack channel, you 
 
 A Slack webhook URL is a URL pointing directly to a Slack channel.
 
-In order to generate webhook URLs, you need to create a new Slack App:
+To generate webhook URLs, you need to create a new Slack App:
 
 1. Go to https://api.slack.com/slack-apps.
 2. Click on "Create a Slack App".
@@ -124,7 +124,7 @@ Example:
     {% raw %}
     *Order Overdue*
 
-    Transaction {{ doc.name }} has exceeded Due Date. Please take necessary action.
+    Transaction {{ doc.name }} has exceeded Due Date. Please take the necessary action.
 
 
     {% if comments %}

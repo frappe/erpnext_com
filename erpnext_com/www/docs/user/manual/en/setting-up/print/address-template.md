@@ -3,10 +3,10 @@
 
 **Address template can store different formats of addresses based on the region.**
 
-Each region has its own way of defining addresses. To manage multiple address formats for your Documents (like Quotations, Purchase Invoices, etc.), you can create country-wise **Address Templates**.
+Each region has its way of defining addresses. To manage multiple address formats for your Documents (like Quotations, Purchase Invoices, etc.), you can create country-wise **Address Templates**.
 
 To access address template, go to:
-> Home > Settings > Printing > Address Template
+> Home > Settings > Address Template
 
 A default Address Template is created when you set up the system. You can either edit it or create a new template. This default template will apply to all countries not having a specific template.
 

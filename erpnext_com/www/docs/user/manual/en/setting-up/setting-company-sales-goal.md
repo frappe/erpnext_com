@@ -3,7 +3,7 @@
 
 **Defining and achieving sales goals/targets can help your company reach new goals and increase revenue.**
 
-1. Monthly sales targets can be set for a company via the Company master. By default, the Company master dashboard displays month-wise past sales stats.
+1. Monthly sales targets can be set for a Company via the Company master under the Sales Settings section. By default, the Company master dashboard displays month-wise past sales stats.
 
     <img class="screenshot" alt="Sales Graph" src="{{docs_base_url}}/assets/img/sales_goal/sales_history_graph.png">
 

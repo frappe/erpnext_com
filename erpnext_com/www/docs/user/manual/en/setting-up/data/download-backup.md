@@ -3,7 +3,7 @@
 
 In the ERPNext, you can manually download database backup. To get the latest database backup, go to:
 
-> Home > Settings > Data > Download Backups
+> Home > Settings > Download Backups
 
 Backup available for the download is updated in every eight hours. Click on the link to download the backup at a given time.
 

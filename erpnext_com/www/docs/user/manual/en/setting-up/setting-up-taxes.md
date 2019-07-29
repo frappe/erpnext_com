@@ -10,7 +10,7 @@ purchase transactions.
 ## 1. Tax Accounts
 
 For Tax Accounts that you want to use in the tax templates, go to:
-> Home > Accounting > Masters and Accounts > Chart of Accounts
+> Home > Accounting > Chart of Accounts
 
 Select an account and click on edit. Select the 'Account Type' as 'Tax' for the account.
 

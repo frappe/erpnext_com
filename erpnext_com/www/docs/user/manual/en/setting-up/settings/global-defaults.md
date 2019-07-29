@@ -1,12 +1,12 @@
 <!-- add-breadcrumbs -->
 # Global Defaults
 
-**Default values for documents like currency, fiscal year, etc, can be set from Global Defaults.**
+**Default values for documents like Currency, Fiscal Year, etc, can be set from Global Defaults.**
 
 The values set here will impact all users and the default values for various fields will be set for them.
 
 To access Global Defaults, go to:
-> Home > Setup > Settings > Global Defaults
+> Home > Settings > Global Defaults
 
 Or search from the search bar.
 

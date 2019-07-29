@@ -9,7 +9,7 @@
 Assignment Rule will be useful in a scenario like—you have a support team and incoming support tickets. To assign the support tickets automatically amongst the employees who work on support, an Assignment Rule can be used.
 
 To access Assignment Rule, go to:
-> Home > Settings > Workflow > Assignment Rule
+> Home > Settings > Assignment Rule
 
 ## 1. How to create an Assignment Rule
 To set up an automatic assignment:
@@ -17,7 +17,7 @@ To set up an automatic assignment:
 1. Go to the Assignment Rule list, click on New.
 1. Select the Document Type you want to assign automatically (for example **Issue**).
 1. Write the "Description" that will be added to the To Do.
-1. Select the condition for assignment.
+1. Select the condition for the assignment.
     You can write simple Python expressions for automatic assignment in the `Assign Rule` and `Unassign Rule`. You will have access to all the properties of the document and can use operators like >, <, ==, etc and also multiple conditions like `and` and `or`
 
     Examples:
@@ -35,7 +35,7 @@ To set up an automatic assignment:
 
 1. Save.
 
-You can use properties of the document in description that will be part of the assignment. Higher 'Priority' Assignment Rules will be applied first.
+You can use properties of the document in the Description field that will be part of the assignment. Higher 'Priority' Assignment Rules will be applied first.
 
 Example:
 
@@ -43,7 +43,7 @@ High Priority Issue *File Upload not working* has been assigned to you.
 
 ### 1.1 Multiple Assignment Rules
 
-You can also setup multiple auto assignments for each Document Type, the one with the highest Priority will be applied first:
+You can also set up multiple auto assignments for each Document Type, the one with the highest Priority will be applied first:
 
 Here is an example of an Assignment Rule.
 

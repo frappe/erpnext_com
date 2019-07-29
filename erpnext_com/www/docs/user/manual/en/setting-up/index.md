@@ -18,9 +18,10 @@ You'll find the global configuration options here, for module-wise setup, visit 
 1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
 
 ##### 1.2 Data Import
-1. [Data Import](/docs/user/manual/en/setting-up/data-and-privacy/data-import)
+1. [Data Import](/docs/user/manual/en/setting-up/data/data-import)
+1. [Data Export](/docs/user/manual/en/setting-up/data/data-export)
 1. [Charts Of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
-1. [Download Backup](/docs/user/manual/en/setting-up/data-and-privacy/download-backup)
+1. [Download Backup](/docs/user/manual/en/setting-up/data/download-backup)
 
 ##### 1.3 User and Permissions
 1. [Users and Permissions](/docs/user/manual/en/setting-up/users-and-permissions)
@@ -50,24 +51,27 @@ You'll find the global configuration options here, for module-wise setup, visit 
 1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)
 
 ##### 1.6 Email and SMS
+1. [Email Domain](/docs/user/manual/en/setting-up/email/email-domain)
 1. [Email Account](/docs/user/manual/en/setting-up/email/email-account)
 1. [Email Inbox](/docs/user/manual/en/setting-up/email/email-inbox)
+1. [Sending Email from any Document](/docs/user/manual/en/setting-up/email/sending-email)
+1. [Linking Emails to Document](/docs/user/manual/en/setting-up/email/linking-emails-to-document)
 1. [Email Digest](/docs/user/manual/en/setting-up/email/email-digest)
 1. [Auto Email Reports](/docs/user/manual/en/setting-up/email/auto-email-reports)
-1. [Sending Email from any Document](/docs/user/manual/en/setting-up/email/sending-email)
-1. [Email Domain](/docs/user/manual/en/setting-up/email/email-domain)
-1. [Linking Emails to Document](/docs/user/manual/en/setting-up/email/linking-emails-to-document)
 1. [SMS Settings](/docs/user/manual/en/setting-up/sms-setting)
-1. [Notifications](/docs/user/manual/en/setting-up/notifications)
+1. [Notification](/docs/user/manual/en/setting-up/notifications)
 1. [Document Follow](/docs/user/manual/en/setting-up/email/document-follow)
+1. [Email Dropbox](/docs/user/manual/en/setting-up/email/email-dropbox)
 
 ##### 1.7 System Configuration
 1. [Show or Hide Modules](/docs/user/manual/en/setting-up/settings/show-hide-modules)
 1. [Naming Series](/docs/user/manual/en/setting-up/settings/naming-series)
 1. [Bulk Rename](/docs/user/manual/en/setting-up/settings/bulk-rename)
+1. [Bulk Update](/docs/user/manual/en/setting-up/bulk-update)
 1. [Milestone Tracking](/docs/user/manual/en/setting-up/automation/milestone-tracker)
 1. [Auto Repeat](/docs/user/manual/en/setting-up/automation/auto-repeat)
 1. [Authorization Rule](/docs/user/manual/en/setting-up/authorization-rule)
+1. [Domain Settings](/docs/user/manual/en/setting-up/domain-settings)
 1. [Energy Point System](/docs/user/manual/en/setting-up/energy-point-system)
 
 ##### 1.8 Data Privacy

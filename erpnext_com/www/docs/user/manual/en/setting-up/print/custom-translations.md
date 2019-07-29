@@ -25,19 +25,19 @@ Supplier Quotation print preview in supplier's default language.
 
 ### 1.2 Changing the print language in the preview
 
-User can have the option to select alternate language on print view.
+User has the option to select an alternate language on print view.
 
 <img src="{{docs_base_url}}/assets/img/setup/multilingual_print_format/alternate_language.png" class="screenshot">
 
 ## 2. Custom Translation
 
-Users can set their custom translations using Custom Translations form. For example, if a user wants to set a description of a product in the customer's language (Italian). For that, create a new translation with language as Italian, enter source data and translated information.
+Users can set their custom translations using Custom Translations form. For example, if a user wants to set a description of a product in the customer's language (Spanish). For that, create a new translation with language as Spanish, enter source data and translated information.
 
 > Home > Customization > Other > Custom Translations > New
 
 <img src="{{docs_base_url}}/assets/img/setup/multilingual_print_format/translation.png" class="screenshot">
 
-The translation is applied when the user selects the language as Italian on supplier quotation's print preview.
+The translation is applied when the user selects the language as Spanish on supplier Quotation's print preview. Note that no translation is applied for the second item's description since it wasn't created in the Translation list.
 
 <img src="{{docs_base_url}}/assets/img/setup/multilingual_print_format/custom_translation.png" class="screenshot">
 

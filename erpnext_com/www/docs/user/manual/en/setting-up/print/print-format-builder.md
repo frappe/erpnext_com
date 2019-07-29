@@ -7,7 +7,7 @@ The 'Standard' Print Format is created by default, it cannot be edited.
 
 To access the Print Format Builder, go to:
 
-> Home > Settings > Printing > Print Format Builder
+> Home > Settings > Print Format Builder
 
 Or via a document.
 

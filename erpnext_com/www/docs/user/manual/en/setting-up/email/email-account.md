@@ -1,28 +1,31 @@
 <!-- add-breadcrumbs -->
-# Email Accounts
+# Email Account
 
-**You can add your email account to be used with ERPNext account.**
+**You can sync your email account with ERPNext to send and receive emails from ERPNext.**
 
 You can manage multiple incoming and outgoing Email Accounts in ERPNext. There has to be at least one default outgoing account and one default incoming account. If you are on the ERPNext cloud, the default outgoing email is set by us.
 
 To access Email Accounts, go to:
-> Home > Setting > Email > Email Account
+> Home > Settings > Email Account
 
 ## 1. How to create an Email Account
-1. Click on New.
-1. Enter the email address with the domain. [Domains](/docs/user/manual/en/setting-up/email/email-domain) need to be created in order to create an email account.
-1. Enter its password.
+1. Go to the Email Account list, click on New.
+1. Enter the email address with the domain. [Domains](/docs/user/manual/en/setting-up/email/email-domain) need to be created in order to create an email account. 
+    You don't need to create a domain if you're syncing an email from certain providers as listed [here](/docs/user/manual/en/setting-up/email/email-inbox#2-create-an-email-domain).
+1. Enter the email account password.
 1. Save.
+If the credentials are correct, the email account will be synced.
+> Note: For some services like Gmail, you may need to turn on the settings to allow less secure apps.
 
 ### 1.1 Additional options when creating an Email Account
-1. **Use Different Email Login ID**: To use an alternative email login and password to access this account.
-1. **Awaiting password**: If you're creating this account on behalf of someone and the password is unknown, tick this checkbox.
+1. **Use Different Email Login ID**: To use an alternative email login and password to access this account. For example, if you have notifications@example.com and you want users to access this email with an alternate email ID, they should tick this checkbox. The recipients will see notifications@example.com as the sender.
+1. **Awaiting password**: If you're creating this account on behalf of someone and the password is unknown, tick this checkbox. When the other user logs in, they'll be prompted to enter the password.
 1. **Use ASCII encoding for password**: Ticking this will use ASCII encoding for the password.
 
 ## 2. Configuration of the Email Account
 ### 2.1 Default Email Accounts
 
-ERPNext will create templates for a bunch of email accounts by default. Not all of them are enabled. To enable them, you must set your account details.
+ERPNext will create templates for a bunch of email accounts by default. Not all of them are enabled. To enable them, you must set valid email account details.
 
 There are two types of email accounts, outgoing and incoming. Outgoing email accounts use an SMTP service to send emails and emails are retrieved from your inbox using an IMAP or POP. Most email providers such as Gmail, Outlook, or Yahoo provide these services.
 
@@ -39,7 +42,7 @@ The following options are available for incoming emails:
 * Use IMAP
 * Use SSL
 * Attachment Limit
-* **Append To**: Add emails in this account to a DocType in the Communication section.
+* **Append To**: This feature creates DocTypes when an email is sent to a particular email account. For example, you can append support@example.com to the Issue DocType. On doing this, whenever an email is sent to support@example.com, the system will create an Issue for it. Similarly if you link jobs@example.com, when emails are sent to jobs@example.com, a Job Applicant DocType is created.
 * **Default Incoming**: If ticked, all replies to your company (eg: replies@yourcomany.com) will come to this account.
 * **Email Sync Option**: Whether to sync all or only unseen emails.
 * **Initial Sync Count**: Number of emails to sync the first time.

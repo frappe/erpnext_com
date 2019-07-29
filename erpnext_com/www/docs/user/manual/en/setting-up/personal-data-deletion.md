@@ -4,9 +4,11 @@
 
 As a part of GDPR compliance, ERPNext has Personal Data Deletion.
 
-Personal data deletion tool enables a user to anonymize all the personally identifiable data a user has generated while using ERPNext. That is, personally identifiable information will be randomized. This includes personally identifiable data from your user account, communication, lead, contact, and so on, however, this excludes data that is required by law to be maintained by a business.
+Personal data deletion tool enables a user to anonymize all the personally identifiable data a user has generated while using ERPNext. That is, personally identifiable information will be randomized. This includes personally identifiable data from your user account like: username, full name, birth date, phone numbers, mobile numbers, location, interests, bio, email signature, Email, Contact, Address, Communication, etc. It also includes data from Leads and Opportunities, the details you have saved like phone numbers, mobile numbers, fax, website, and name.
 
-## 1. How to request deletion of user data
+However, this excludes data that is required by law to be maintained by a business.
+
+## 1. How to request the deletion of user data
 
 1. To begin deleting personally identifiable data, you need to visit [host-name]/request-to-delete-data (e.g. example.erpnext.com/request-to-delete-data) in the URL field.
 

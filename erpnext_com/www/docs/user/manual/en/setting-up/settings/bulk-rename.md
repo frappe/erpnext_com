@@ -20,4 +20,4 @@ To rename multiple records, upload a **.csv** file with the old names in the fir
 You can also merge documents by renaming them. For example, if you have a customer named Steve and a duplicate named Steve1, you can go to either of them, click on Menu > Rename and tick the 'Merge with existing' checkbox. This will merge all the linked documents of both documents. To know more, [visit this page](/docs/user/manual/en/using-erpnext/articles/merging-documents).
 
 ### 2. Related Topics
-1. [Data Import](/docs/user/manual/en/setting-up/data-and-privacy/data-import)
+1. [Data Import](/docs/user/manual/en/setting-up/data/data-import)

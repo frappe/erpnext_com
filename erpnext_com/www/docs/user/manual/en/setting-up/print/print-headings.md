@@ -9,7 +9,7 @@ If you want to rename a transaction on how it appears when printing, you can do 
 
 To access Print Headings go to:
 
-> Home > Settings > Printing > Print Heading
+> Home > Settings > Print Heading
 
 ## 1. How to create a Print Heading
 1. Go to the Print Heading list, click on New.

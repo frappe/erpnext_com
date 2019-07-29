@@ -19,7 +19,7 @@ request. Accordingly, the user will get his Approved or Rejected status.
 
 To make a Workflow and transition rules go to:
 
-> Home > Settings > Workflow > Workflow
+> Home > Settings > Workflow
 
 Once a Workflow is created, you can take actions on it via [Workflow Actions](/docs/user/manual/en/setting-up/workflow-actions).
 

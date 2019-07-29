@@ -2,19 +2,20 @@
 # Adding Users
 
 Users can be added by the System Manager. To add users go to:
-> Home > Users and Permissions > Users > User
+> Home > Users and Permissions > User
 
-There are two main types of users: Website Users and System Users. System Users are people using ERPNext in the company with access to modules, company data, etc. Website users are customers, suppliers, etc., who have access only to the portal.
+There are two main types of users:
+
+**Website users**: Customers, Suppliers, Students, etc., who have access only to the portal and not to any modules.
+**System Users**: People using ERPNext in the Company with access to modules, company data, etc.
   
 Under User, a lot of info can be entered. For the sake of usability, the information entered for web users is minimal: First Name and Email.
 
 An Email address is the unique key (ID) identifying the Users.
 
-> Home > Users and Permissions > Users  > User
-
 ## 1. How to Create a New User
 
-1. Go to the user list, click on New.
+1. Go to the User list, click on New.
 1. Add an Email address and name of the user.
 1. Save.
 
@@ -87,6 +88,22 @@ For more details, go to [this page](https://frappe.io/docs/user/en/guides/deploy
 
 ### 2.10 API Access
 You can generate API Secret keys from this section using the Generate Keys button. This can be used to access your account's data from another application, for example, an offline POS system.
+
+### 2.11 After saving
+After saving a user, these buttons will be seen on the dashboard area of the User master.
+
+![User dashboard buttons](/docs/assets/img/setup/users/user-after-save.png)
+
+#### Permissions
+* **Set User Permissions**: Will take you to the [User Permissions](/docs/user/manual/en/setting-up/users-and-permissions/user-permissions) page of Bruce from where you can restrict Bruce's access to documents.
+* **View Permitted Documents**: Will take you to the 'Permitted Documents For User' report for this user. Here you can see which documents does Bruce have access to. For example, on selected Sales Order, the list of Sales Orders Bruce has access to will be displayed.
+
+#### Password
+
+* **Reset Password**: An email with instructions to reset the user's password will be sent to the user's [Email Account](/docs/user/manual/en/setting-up/email/email-account).
+* **Reset OTP Secret**: Reset OTP Secret for logging in via Two Factor Authentication.
+
+Create User Email will let you create an [Email Account](/docs/user/manual/en/setting-up/email/email-account) for the user based on the email entered in the User master.
 
 ### 3. Login Methods
 In System Settings, under the Security section, if you check the 'Allow Login using Mobile No' checkbox, a mobile number can also be used to log in. While a Mobile No will be unique, it will not be treated as a user ID.

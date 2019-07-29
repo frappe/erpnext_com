@@ -10,7 +10,7 @@ Roles define a set of permissions which can be set from the [Roles Permission Ma
 Role Profiles act as a template to store and select multiple roles. This Role Profile can then be assigned to a [User](/docs/user/manual/en/setting-up/users-and-permissions/adding-users). For example, a Sales Supervisor will have the roles Employee, Sales Manager, Sales User, and Sales Master Manager. Role Profiles are useful to assign multiple roles at once when adding multiple employees.
 
 To access Role, go to:
-> Home > Users and Permissions > Permissions > Role
+> Home > Users and Permissions > Role
 
 ## 1. How to add a Role
 1. Go to the Role list, click on New.

@@ -2,13 +2,13 @@
 
 # Data Import
 
-**Data import lets you import records from a CSV/Excel file.**
+**Data Import lets you import records from a CSV/Excel file.**
 
 Data Import (formerly known as the Data Import Tool) is a great way to upload (or edit) bulk data (especially master data) into the system.
 
 To begin importing data, go to:
 
-> Home > Settings > Data > Import Data
+> Home > Settings > Import Data
 
 Or go to the Transaction you want to import and click on Menu > Import:
 
@@ -126,4 +126,5 @@ Notepad, then save as “UTF-8”. (Or upgrade your Excel!)
 
 ### 4. Related Topics
 1. [Charts Of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
+1. [Data Export](/docs/user/manual/en/setting-up/data/data-export)
 

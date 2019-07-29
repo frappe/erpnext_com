@@ -6,7 +6,7 @@
 Business involves making payment to various parties like suppliers and employees. Payment can be made in various modes like cash, NEFT or cheque. If you are making a payment via a cheque, you can also create a Print Format for printing Cheques from ERPNext based on the Payment Entry.
 
 To access Cheque Print Template, go to:
-> Home > Accounting > Settings > Cheque Print Template
+> Home > Accounting > Cheque Print Template
 
 Using the Cheque Print Template you can generate a new Print Format for cheques. It will be created based on the cheque format provided by your bank. 
 

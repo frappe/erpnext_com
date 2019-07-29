@@ -8,7 +8,7 @@ Every company has a default Letter Head. These Letter Head values are generally 
 These details will appear in the Print Format of transactions like Sales Order, Sales Invoice, Salary Slip, Purchase Order, etc. In ERPNext, the Letter Head is only for setting up the top part of the document, other content is pre-formatted and can be configured via [Print Format](/docs/user/manual/en/setting-up/print/print-format) and [Print Headings](/docs/user/manual/en/setting-up/print/print-headings).
 
 To access Letter Head, go to:
-> Home > Settings > Printing > Letter Head
+> Home > Settings > Letter Head
 
 ## 1. How to create a Letter Head
 1. Go to the Letter Head list, click on New.

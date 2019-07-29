@@ -1,13 +1,13 @@
 <!-- add-breadcrumbs -->
 # System Settings
 
-**System Settings contains settings for system-wide configuration of the account.**
+**System Setting contains settings for system-wide configuration of the account.**
 
 You can localize ERPNext to use particular timezone, date, number or currency format, and also set global session expiry via System Settings.
 
 To open System Settings, go to:
 
-> Home > Settings > Core > System Settings
+> Home > Settings > System Settings
 
 <img class="screenshot" alt="System Settings" src="{{docs_base_url}}/assets/img/setup/settings/system-settings.png">
 
@@ -31,7 +31,7 @@ To open System Settings, go to:
 
 In ERPNext you can backup the database as well as your files. Database backups are created automatically while file backups need to be downloaded explicitly. 
 
-This field shows the number of backups after which older ones will be deleted. By default, 3 backups are saved over a period of 24 hours. New backups are automatically created every few hours and the newest backup will overwrite the oldest one. For a backup of files, click on the Download Files Backup button in the Download Backups form.
+This field shows the number of backups after which older ones will be deleted. By default, 3 backups are saved over 24 hours. New backups are automatically created every few hours and the newest backup will overwrite the oldest one. For a backup of files, click on the Download Files Backup button in the Download Backups form.
 
 Keeping regular backups of your system is a good practice in case of any mishap and you want to roll back or just for your records.
 
@@ -51,9 +51,9 @@ If the Apply Strict User Permissions checkbox is ticked, documents, where Territ
 
 ### 1.5 Security
 
-* **Session Expiry**: Number of idle hours after which you'll be logged out of a session. This helps in better security. For example if there is no activity for 6 hours, your account will be logged out.
+* **Session Expiry**: Number of idle hours after which you'll be logged out of a session. This helps in better security. For example, if there is no activity for 6 hours, your account will be logged out.
 * **Session Expiry Mobile**: Session expiry when logged in from a mobile phone.
-* **Allow only one session per user**: If you want to use a single set of credentials for multiple users, tick this checkbox. Number of simultaneous sessions can be changed under User master. Mobile phone sessions are not counted here.
+* **Allow only one session per user**: If you want to use a single set of credentials for multiple users, tick this checkbox. The number of simultaneous sessions can be changed under User master. Mobile phone sessions are not counted here.
 * **Allow Login using Mobile Number**: By checking the 'Allow Login using Mobile Number' checkbox, you can log in to ERPNext using a valid mobile number set in your User account. 
 
 * **Allow Login using User Name**: Allow user login via their username set in the [User master](/docs/user/manual/en/setting-up/users-and-permissions/adding-users).
@@ -72,7 +72,7 @@ If the Apply Strict User Permissions checkbox is ticked, documents, where Territ
 
 ### 1.7 Brute Force Security
 
-* **Allow Consecutive Login Attempts**: Consecutive logins after which you'll be locked out of the account for a specific time period. This helps if an intruder tries to log in to your account.
+* **Allow Consecutive Login Attempts**: Consecutive logins after which you'll be locked out of the account for a specific period. This helps if an intruder tries to log in to your account.
 * **Allow Login After Fail**: Seconds after which a login attempt will be allowed after consecutive unsuccessful attempts.
 
 ### 1.8 Two Factor Authentication

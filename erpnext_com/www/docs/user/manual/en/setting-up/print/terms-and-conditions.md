@@ -9,7 +9,7 @@ you have a standard set of terms.
 
 To access Terms and Conditions template go to:
 
-> Home > Selling > Settings > Terms and Conditions Template
+> Home > Selling > Terms and Conditions Template
 
 ## 1. How to create Terms and Conditions Template
 

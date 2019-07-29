@@ -3,9 +3,11 @@
 
 **An email domain is the name of the network/service you're using for your email account.**
 
+**Skip** to [Email Account](/docs/user/manual/en/setting-up/email/email-account) if you are using one of the services listed [here](/docs/user/manual/en/setting-up/email/email-inbox#2-create-an-email-domain).
+
 You can configure your Email Domain in ERPNext for easy setup of all Email Accounts. To find Email Domain settings go to:
 
-> Home > Settings > Email > Email Domain
+> Home > Settings > Email Domain
 
 **What is my Email Domain?:** You might have purchased an Email service from your internet service provider or your IT services provider. For example, if you access your business mailbox with URL like http://mail.yourcompany.com, then yourcompany.com is your email domain.
 
@@ -16,7 +18,7 @@ ERPNext creates a template email domain using example.com for your reference. Yo
 <img class="screenshot" alt="Email Domain" src="{{docs_base_url}}/assets/img/setup/email/email-domain.png">
 
 ## 1. How to create an Email Domain
-1. Click on New.
+1. Go to the Email Domain list, click on New.
 1. Enter the Example Email Address. This is where you enter your business email address. For example, if your email ID is yourname@yourcompanyname.com you should enter this.
 1. Email Server. This is the URL of your mail server or the email service that you have purchased. For example, it may be mail.yourcompany.com or imap.yourcompany.com. 
 1. Use IMAP. IMAP and POP are two services used by most mail servers for incoming emails. If your Email server allows IMAP service for the incoming emails keep this checked. Otherwise, leave this unchecked.

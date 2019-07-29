@@ -7,10 +7,10 @@ You can setup **Auto Email Report** to send reports at regular intervals. These 
 
 You can find Auto Email Report at
 
-> Home > Settings > Email > Auto Email Report
+> Home > Settings > Auto Email Report
 
 ## 1. How to create an Auto Email Report
-1. Click on New.
+1. Go to the Auto Email Report list, click on New.
 1. Select the Report.
 1. Select the user for which you want to create this report (permissions will apply for this user).
 1. Set the Email Addresses to which you want this report to be emailed and the frequency of the report.
