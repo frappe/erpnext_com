@@ -48,6 +48,7 @@ You'll find the global configuration options here, for module-wise setup, visit 
 ##### 1.5 Workflows
 1. [Workflows](/docs/user/manual/en/setting-up/workflows)
 1. [Workflow Actions](/docs/user/manual/en/setting-up/workflow-actions)
+1. [Workflow State](/docs/user/manual/en/setting-up/workflow-state)
 1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)
 
 ##### 1.6 Email and SMS
@@ -70,7 +71,6 @@ You'll find the global configuration options here, for module-wise setup, visit 
 1. [Bulk Update](/docs/user/manual/en/setting-up/bulk-update)
 1. [Milestone Tracking](/docs/user/manual/en/setting-up/automation/milestone-tracker)
 1. [Auto Repeat](/docs/user/manual/en/setting-up/automation/auto-repeat)
-1. [Authorization Rule](/docs/user/manual/en/setting-up/authorization-rule)
 1. [Domain Settings](/docs/user/manual/en/setting-up/domain-settings)
 1. [Energy Point System](/docs/user/manual/en/setting-up/energy-point-system)
 
@@ -89,7 +89,6 @@ You'll find the global configuration options here, for module-wise setup, visit 
 
 1. [Overwriting Data From Data Import Tool](/docs/user/manual/en/setting-up/articles/overwriting-data-from-data-import-tool)
 1. [Delete A Company And All Related Transactions](/docs/user/manual/en/setting-up/articles/delete-a-company-and-all-related-transactions)
-1. [Managing Multiple Companies](/docs/user/manual/en/setting-up/articles/managing-multiple-companies)
 1. [Managing Tree Structure Masters](/docs/user/manual/en/setting-up/articles/managing-tree-structure-masters/)
 1. [Managing Permission Level](/docs/user/manual/en/setting-up/articles/managing-perm-level/)
 
@@ -98,18 +97,14 @@ You'll find the global configuration options here, for module-wise setup, visit 
 1. [Email Error](/docs/user/manual/en/setting-up/articles/email-error)
 1. [Report Permission Error](/docs/user/manual/en/setting-up/articles/report-permission-error)
 
-##### 2.4 Sales
-
-1. [Calculate Incentive For Sales Team](/docs/user/manual/en/setting-up/articles/calculate-incentive-for-sales-team)
-
-##### 2.5 Other Actions
+##### 2.4 Other Actions
 
 1. [Integrating ERPNext With Other Application](/docs/user/manual/en/setting-up/articles/integrating-erpnext-with-other-application)
 1. [Naming Series Current Value](/docs/user/manual/en/setting-up/articles/naming-series-current-value)
 1. [Using Custom Domain On ERPNext](/docs/user/manual/en/setting-up/articles/using-custom-domain-on-erpnext)
 1. [Setup Two Factor Authentication](/docs/user/manual/en/setting-up/articles/setup-two-factor-authentication)
 1. [Outgoing Email Gateway](/docs/user/manual/en/setting-up/articles/outgoing-email-gateway)
-1. [Print Format Sections](/docs/user/manual/en/setting-up/articles/print-format-sections)
+1. [Disabling Line Breaks in Print Format Sections](/docs/user/manual/en/setting-up/articles/print-format-sections)
 
 
 ## 3. Videos

@@ -30,6 +30,7 @@ The tax set in Item Tax Template applies specifically to an [Item](/docs/user/ma
 Tax category helps in automatically applying sales/purchase tax templates in your transactions based on the customer/supplier chosen.
 [Click here](/docs/user/manual/en/accounts/tax-category) to know about this.
 
+## 6. Video
 
 <div>
   <div class="embed-container">
@@ -38,5 +39,5 @@ Tax category helps in automatically applying sales/purchase tax templates in you
   </div>
 </div>
 
-### 6. Related Topics
+### 7. Related Topics
 1. [Company Setup](/docs/user/manual/en/setting-up/company-setup)

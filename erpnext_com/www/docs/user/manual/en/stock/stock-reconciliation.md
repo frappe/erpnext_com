@@ -11,9 +11,9 @@ Stock Reconciliation is used for:
 * Posting opening stock
 * Reconciling book and actual stock
 
-#1. How to Create a Stock Reconciliation to Post Opening Stock
+##1. How to Create a Stock Reconciliation to Post Opening Stock
 
-##1.1. For Non-serialized Items
+###1.1. For Non-serialized Items
 
 Using stock reconciliation you can update the quantity of specific items in a warehouse as of specific time.
 
@@ -27,7 +27,7 @@ To post opening stock:
 1. Select Cost Center.
 1. Save and Submit.
 
-##1.2. For Serialized Items
+###1.2. For Serialized Items
 
 Using stock reconciliation you can add the items in the stcok which has serial number or the batch number.
 
@@ -45,7 +45,7 @@ To post opening stock:
 1. Save and Submit.
 
 
-#2. How to Create a Stock Reconciliation to Reconcile Book and Physical Stock Count
+##2. How to Create a Stock Reconciliation to Reconcile Book and Physical Stock Count
 
 Stock Reconciliation is the process of counting and evaluating stock-in-trade, periodically and at year end in order to value the total stock for preparation of the accounting statements. In this process actual physical stocks are checked and recorded in the system. The actual stocks and the stock in the system should be in agreement and accurate. If they are not, you can use the stock reconciliation tool to reconcile stock balance and value with actuals.
 
@@ -59,9 +59,9 @@ To reconcile the stock:
 1. Select Cost Center.
 1. Save and Submit.
 
-#3. Features
+##3. Features
 
-##3.1 Upload Data Through Spreadsheet
+###3.1 Upload Data Through Spreadsheet
 
 If you have lot of items, you can upload the details via a spreadsheet.
 
@@ -91,19 +91,19 @@ If you have lot of items, you can upload the details via a spreadsheet.
 
   <img class="screenshot" alt="Stock Reconciliation" src="{{docs_base_url}}/assets/img/setup//stock-reco-ledger.png">
 
-##3.2 Get Stock Balance and Valuation as of Specific Date and Time
+###3.2 Get Stock Balance and Valuation as of Specific Date and Time
 
 You can import the stock balance and valuation as of specific date and time by clicking on 'Items' button. You can update the Quantity and Valuation Rate as needed.
 
 <img class="screenshot" alt="Stock Reconciliation Items Button" src="{{docs_base_url}}/assets/img/stock/stock_reconciliation_items_button.gif">
 
-#4. How Stock Reconciliation Works
+##4. How Stock Reconciliation Works
 
 Once a stock reconciliation is posted to update the quantity on specific date and time for an item in a warehouse, it will not be modified by subsequent stock transactions even if such transactions have a posting date which is prior to the stock reconciliation date.
 
 Examples are as follows
 
-##4.1 For Non-serialized Items
+###4.1 For Non-serialized Items
 Consider an item with code 'ABC001' in a 'Mumbai' warehouse.
 Let's assume that stock as on 10th January is 100 units.
 Stock Reconciliation is made on 12th January to set stock balance to 150 units.
@@ -191,7 +191,7 @@ As you can see, the Balance Qty as on 10th January got updated from 100 to 120. 
 	</iframe>
 </div>
 
-##4.2 For Serialized Items
+###4.2 For Serialized Items
 
 For item ITEM-00225 has the 6 serial nos HJF00020, HJF00021, HJF00022, HJF00023, HJF00024, HJF00025 with valuation rate as 496.67 per serial no. At the end of the year user has came to know that they have only 3 serial nos against that item with valuation rate 530. So to remove the old serial nos HJF00020, HJF00021, HJF00022, HJF00023, HJF00024, HJF00025 and add the new serial nos with new valuation rate, stock reconciliation can be use as follows:
 

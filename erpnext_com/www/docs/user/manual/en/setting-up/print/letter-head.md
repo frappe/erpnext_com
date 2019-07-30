@@ -35,12 +35,13 @@ This is how the Letter Head looks in a document's print.
 
 > Note that Footer will be visible only when the document's print is seen in the PDF. Footer will not be visible in the HTML based print preview.
 
+## 2. Video
 <div class="embed-container">
   <iframe src="https://www.youtube.com/embed/cKZHcx1znMc?end=58&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
 </div>
 
-### 2. Related Topics
+### 3. Related Topics
 1. [Address Template](/docs/user/manual/en/setting-up/print/address-template)
 1. [Terms and Conditions](/docs/user/manual/en/setting-up/print/terms-and-conditions)
 1. [Cheque Print Template](/docs/user/manual/en/setting-up/print/cheque-print-template)

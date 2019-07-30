@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # Calculate Incentive For Sales Team
 
+You can Calculate Incentives for sales team using custom scripts.
+
 Can be used in any Sales Transaction with **Sales Team** Table:
 
     

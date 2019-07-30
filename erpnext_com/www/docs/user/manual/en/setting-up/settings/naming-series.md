@@ -68,6 +68,7 @@ For example:
         PO-.YY.MM.-.vendor_id.-.####
         Resulting in "PO-1503-WN-00001"
 
+## 6. Video
 <div>
   <div class='embed-container'>
     <iframe src='https://www.youtube.com/embed//IGyISSfI1qU' frameborder='0' allowfullscreen>
@@ -75,5 +76,5 @@ For example:
   </div>
 </div>
 
-### 4. Related Topics
+### 7. Related Topics
 1. [Bulk Rename](/docs/user/manual/en/setting-up/data/bulk-rename)

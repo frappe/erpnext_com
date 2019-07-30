@@ -15,7 +15,7 @@ To know how to add a new User, go to the [User page](/docs/user/manual/en/settin
 
 ## 2. Create an Email Domain
 
-If you use one of the following Email Services, then you need not create Email Domain in your ERPNext account. Email Domain for the following Services is available out-of-the-box and you can directly proceed to create an Email Account. Know more about creating an Email Domain [here](/docs/user/manual/en/setting-up/email/email-domain).
+Email Domain for the following Services is available out-of-the-box and you can directly proceed to create an [Email Account](/docs/user/manual/en/setting-up/email/email-account). Know more about creating an Email Domain [here](/docs/user/manual/en/setting-up/email/email-domain).
 
 * **Gmail**
 * **Yahoo**

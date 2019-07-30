@@ -10,10 +10,12 @@ To access address template, go to:
 
 A default Address Template is created when you set up the system. You can either edit it or create a new template. This default template will apply to all countries not having a specific template.
 
-Consider a customer from the United States where 'County' is a part of the address. If you set county in the address template for United States, then it'll show up in the address field and hence in the print preview. The Address Template checks the 'Country' field in the Address master to apply different address templates to transactions.
+Consider a customer from the United States where 'County' is a part of the address. If you set county in the address template for United States, then it'll show up in the address field and hence in the print preview. Fields like PIN code can be changed to be displayed as ZIP code and fields like county can be added by using Address Templates.
+
+> The Address Template checks the 'Country' field in the Address master to apply different address templates to transactions.
 
 ## 1. How to create an Address Template
-1. Go to the Address Template, click on New.
+1. Go to the Address Template list, click on New.
 1. Select a country.
 1. Change the CSS and Jinja if required.
 1. Save.

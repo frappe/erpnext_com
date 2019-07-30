@@ -23,11 +23,18 @@ To make a Workflow and transition rules go to:
 
 Once a Workflow is created, you can take actions on it via [Workflow Actions](/docs/user/manual/en/setting-up/workflow-actions).
 
-## 1. How to Create a Workflow
+## 1. Prerequisites
+Before creating a Workflow, it is advised to create these first:
+
+* [Workflow Actions](/docs/user/manual/en/setting-up/workflow-actions)
+* Workflow States like Approved, Canceled, etc.
+
+## 2. How to Create a Workflow
 1. Go to the Workflow list, click on New.
-1. Enter a name for the Workflow and select the DocType on which to be applied.
-1. Enter the different states of Leave Approval Process. Enter Doc Status for them, select which field to update from the Update Field column, enter what the value will be updated to under Update Value.
-    The Workflow States can have different colors according to the state. Eg: Green for success. Document statuses: Saved = 0, Submitted = 1, Cancelled = 2.
+1. Enter a name for the **Workflow** and select the DocType on which to be applied.
+1. Enter the different states of the Workflow. Enter Doc Status for them, select which field to update from the Update Field column, enter what the value will be updated to under Update Value.
+    
+    The Workflow States can have different colors according to the state. Eg: Green for success. Document statuses: Saved = 0, Submitted = 1, Cancelled = 3.
 
     <img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/workflow-1.png">
     
@@ -42,9 +49,9 @@ Once a Workflow is created, you can take actions on it via [Workflow Actions](/d
 1. Under Workflow State Field, enter a name for the Custom Field that'll be added to the DocType, Leave Application in this case.
 1. On saving, the Custom Field will be created in the DocType.
 
-### 1.2 Things to note when creating a Workflow
+### 2.2 Things to note when creating a Workflow
 
-* Creating a workflow essentially overwrites the existing code written for that document. Thus the document will function based on your workflow and not based on the pre-set code settings. Hence there might be no submit button/option if you have not specified it in the workflow.
+* Creating a Workflow in ERPNext essentially overrides the regular Save and Submit workflow. Thus the document will function based on your Workflow and not based on the pre-set code workflow. Hence there might be no Submit button/option if you have not specified it in the Workflow you create.
 
     If you don't apply a Workflow to a document, and that document is submittable, then it has the default workflow with states: Draft - Submitted - Cancelled. If you are applying a Workflow to a submittable document, then those default states should be handled by the user.
 
@@ -55,14 +62,14 @@ workflow transition step that says from submitted you can cancel.
 
 * If fields under Update Field column are not updated, a new custom field will be created with the name you set in the 'Workflow State Field' field.
 
-### 1.3 Other options for a Workflow
+### 2.3 Other options for a Workflow
 1. Is Active: On ticking this, all other Workflows for the selected DocType become inactive.
 1. Don't Override Status: This Workflow's status will not override the status of the document (Leave Application) in the list view.
 1. Send Email Alerts: Emails will be sent to the user with next possible workflow actions.
 
-## 2. Features
+## 3. Features
 
-### 2.1 Enable/Disable Optional Workflow State
+### 3.1 Enable/Disable Optional Workflow State
 
 > Introduced in Version 12
 
@@ -73,7 +80,7 @@ E.g. states like Canceled or Rejected can be optional.
 
 **Note:** Workflow Actions are not created for optional states.
 
-### 2.2 Conditions
+### 3.2 Conditions
 
 > Introduced in Version 11
 
@@ -86,7 +93,7 @@ Then if someone applied for leave for less than 5 days, only that particular tra
 
 This can be extended to any property of the document.
 
-## 3. Example of a Leave Application Process:
+## 4. Example of a Leave Application Process
 
 When a Leave Application is saved by Employee, the status of the document changes to "Applied":
 
@@ -101,6 +108,7 @@ When the Leave Approver opens the Leave Application page, he can finally "Approv
 
 <img class="screenshot" alt="Workflow" src="{{docs_base_url}}/assets/img/setup/workflow-5.png">
 
+## 5. Video
 <div>
     <div class="embed-container">
         <iframe src="https://www.youtube.com/embed/yObJUg9FxFs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
@@ -108,6 +116,6 @@ When the Leave Approver opens the Leave Application page, he can finally "Approv
     </div>
 </div>
 
-### 4. Related Topics
+### 6. Related Topics
 1. [Workflow Actions](/docs/user/manual/en/setting-up/workflow-actions)
 1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)

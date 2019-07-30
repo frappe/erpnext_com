@@ -28,3 +28,8 @@ The following two fields are the fields which appear on the print screen:
 
 * **Select Print Format**: The print format of the document. Know more about Print Format [here](/docs/user/manual/en/setting-up/print/print-format).
 * **Select Languages**: The language in which the PDF is to be generated.
+
+### Related Topics
+1. [Email Domain](/docs/user/manual/en/setting-up/email/email-domain)
+1. [Email Account](/docs/user/manual/en/setting-up/email/email-account)
+1. [Email Inbox](/docs/user/manual/en/setting-up/email/email-inbox)

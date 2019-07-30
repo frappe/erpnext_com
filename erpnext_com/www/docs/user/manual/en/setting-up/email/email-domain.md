@@ -3,7 +3,7 @@
 
 **An email domain is the name of the network/service you're using for your email account.**
 
-**Skip** to [Email Account](/docs/user/manual/en/setting-up/email/email-account) if you are using one of the services listed [here](/docs/user/manual/en/setting-up/email/email-inbox#2-create-an-email-domain).
+You can skip to [Email Account](/docs/user/manual/en/setting-up/email/email-account) creation if you are using one of the services listed [here](/docs/user/manual/en/setting-up/email/email-inbox#2-create-an-email-domain).
 
 You can configure your Email Domain in ERPNext for easy setup of all Email Accounts. To find Email Domain settings go to:
 

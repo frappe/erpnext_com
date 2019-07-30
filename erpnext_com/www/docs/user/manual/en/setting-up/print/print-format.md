@@ -44,13 +44,15 @@ In the fields table, expand the 'Item Code' row, scroll down and tick the 'Print
 A newly created Print Format can be selected on the print screen of a transaction. From there you can see how it looks and proceed to print.
 ![Selecting a Print Format](/docs/assets/img/setup/print/print-format-selection.png)
 
+## 2. Video
 <div class="embed-container">
   <iframe src="https://www.youtube.com/embed/cKZHcx1znMc?start=82&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
 </div>
 
-### 2. Related Topics
+### 3. Related Topics
 1. [Print Style](/docs/user/manual/en/setting-up/print/print-style)
 1. [Print Headings](/docs/user/manual/en/setting-up/print/print-headings)
 1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
 1. [Cheque Print Template](/docs/user/manual/en/setting-up/print/cheque-print-template)
+1. [Disabling Line Breaks in Print Format Sections](/docs/user/manual/en/setting-up/articles/print-format-sections)

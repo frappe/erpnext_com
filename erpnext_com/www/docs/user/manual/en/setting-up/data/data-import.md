@@ -14,6 +14,8 @@ Or go to the Transaction you want to import and click on Menu > Import:
 
 <img alt="Start Import" class="screenshot" src="{{docs_base_url}}/assets/img/setup/data-import/data-import-1-new.png">
 
+Before using Data Import **ensure** that you have all of your data ready.
+
 ## 1. Using Data Import
 
 Data in ERPNext is stored in tables like a spreadsheet with columns and rows of data. Each form likes Sales Order has multiple fields like Customer, Company, etc. It also has tables like the item table, tax table, etc. In Data Import, the set of fields in the Sales Order are treated as the main table and the rows inside the child table (item table) are treated as the child table for data import.
@@ -120,11 +122,12 @@ For older versions of Excel, there is no
 clear way of saving as UTF-8. So save your file as CSV, then open it in
 Notepad, then save as “UTF-8”. (Or upgrade your Excel!)
 
+## 4. Video
 <div class="embed-container">
     <iframe src="https://www.youtube.com/embed/Ta2Xx3QoK3E" frameborder="0" allowfullscreen></iframe>
 </div>
 
-### 4. Related Topics
+### 5. Related Topics
 1. [Charts Of Accounts Importer](/docs/user/manual/en/setting-up/chart-of-accounts-importer)
 1. [Data Export](/docs/user/manual/en/setting-up/data/data-export)
 

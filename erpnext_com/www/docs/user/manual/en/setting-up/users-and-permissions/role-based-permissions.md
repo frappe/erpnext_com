@@ -28,7 +28,9 @@ Permissions are applied on a combination of:
 
   * **Document Stages:** Permissions are applied on each stage of the document like Creation, Saving, Submission, Cancellation, and Amendment. A role can be permitted to Print, Email, Import or Export data, access Reports, or define User Permissions.
 
-  * **User Permissions:** There is a concept of user permission using which a user can be restricted to access only specific Documents for that Document Type. Eg: Only one Territory from all Territories. Such specific Document access is defined in the list of User Permissions. Additionally, User Permissions defined for other Document Types also get applied if they are related to the current Document Type through Link Fields. For example, a Customer is a link field in a Sales Order or Quotation. In the Role Permissions Manager, User Permissions can be set using the 'Set User Permissions' button.
+  * **User Permissions:** Using User Permissions in ERPNext a user can be restricted to access only specific Documents for that Document Type. Eg: Only one Territory from all Territories. User Permissions defined for other Document Types also get applied if they are related to the current Document Type through Link Fields.
+  
+    For example, a Customer is a link field in a Sales Order or Quotation. In the Role Permissions Manager, User Permissions can be set using the 'Set User Permissions' button.
 
     To set User Permissions based on documents/fields go to:
     > Home > Users and Permissions > Permissions > [User Permissions](/docs/user/manual/en/setting-up/users-and-permissions/user-permissions)
@@ -68,6 +70,8 @@ Leave Application is a good example that encompasses all areas of a Permission S
   HR User is given the right to Set User Permissions. A User with HR User role would be able to define User Permissions on Leave Application for other users.
 
   <img class="screenshot" alt="Let HR User delegate access to Leave Applications by checking 'Set User Permissions'. This will allow HR User to access User Permissions Manager for 'Leave Application'" src="{{docs_base_url}}/assets/img/users-and-permissions/setting-up-permissions-hr-user-role.png">
+
+In case you have correctly assigned the roles but still you're getting errors when accessing documents, refer [this page](/docs/user/manual/en/setting-up/articles/report-permission-error).
 
 ### 3. Related Topics
 1. [Role Based Permissions](/docs/user/manual/en/setting-up/users-and-permissions/role-based-permissions)

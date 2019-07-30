@@ -41,12 +41,13 @@ You can add customized text, HTML in your print format, just drag and drop the *
 
 Then click on **Edit HTML** to edit your content.
 
+## 2. Video
 <div class="embed-container">
   <iframe src="https://www.youtube.com/embed/cKZHcx1znMc?start=82&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
   </iframe>
 </div>
 
-### 2. Related Topics
+### 3. Related Topics
 1. [Print Style](/docs/user/manual/en/setting-up/print/print-style)
 1. [Print Headings](/docs/user/manual/en/setting-up/print/print-headings)
 1. [Letter Head](/docs/user/manual/en/setting-up/print/letter-head)
