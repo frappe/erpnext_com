@@ -3,9 +3,9 @@
 
 **Session Defaults are configurable default values set during user sessions.**
 
-For Example: Consider a scenario where you have 8 companies set up in your account and you have to set the 'Company' field every time while creating new Sales Order. This is a very time consuming problem when you have to deal with multiple Sales Orders.
+Consider a scenario where you have 8 companies set up in your account and you have to set the 'Company' field every time while creating a new Sales Order. This is a very time-consuming process when you have to deal with multiple Sales Orders daily.
 
-## How to Create Session Defaults
+## 1. How to Create Session Defaults
 
 ### 1.1 Set up the Session Default Settings
 
@@ -28,15 +28,15 @@ For Example: Consider a scenario where you have 8 companies set up in your accou
 
 After saving, the default values will be set everywhere.
 
-You can open a new Sales Order and check. The company field is set to the default company.
+You can open a new Sales Order and check. The company field is set to the default Company.
 
 <img class="screenshot" alt="Session Defaults Set" src="{{docs_base_url}}/assets/img/setup/settings/session-defaults-set-1.png">
 
-Open a new Task. The 'Project' field is set to the default project.
+Open a new Task. The 'Project' field is set to the default Project.
 
 <img class="screenshot" alt="Session Default Set" src="{{docs_base_url}}/assets/img/setup/settings/session-defaults-set-2.png">
 
-Open a report, for example, General Ledger. Company filter is set to default company
+Open a report, for example, General Ledger. Company filter is set to the default Company.
 
 <img class="screenshot" alt="Session Default " src="{{docs_base_url}}/assets/img/setup/settings/session-defaults-set-3.png">
 
