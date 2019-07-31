@@ -52,4 +52,6 @@ The Settings button is only visible to the System Manager or to a person having 
 
 <img class="screenshot" alt="Session Defaults Prompt" src="{{docs_base_url}}/assets/img/setup/settings/settings-button.png">
 
-{next}
+### 3. Related Topics
+1. [Global Defaults](/docs/user/manual/en/setting-up/settings/global-defaults)
+1. [System Settings](/docs/user/manual/en/setting-up/settings/system-settings)
