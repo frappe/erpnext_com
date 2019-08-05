@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Setting Up Clinic / Practice
 
-You can easily configure the masters for setting up ERPNext Healthcare for your practice. Below are a list of documents which helps you speed up data entry. Also read [Healthcare Settings](/docs/user/manual/en/healthcare/setup/healthcare_settings.html) for setting up the Healthcare module.
+You can easily configure the masters for setting up ERPNext Healthcare for your practice. Below are a list of documents which helps you speed up data entry. Also read [Healthcare Settings](/docs/user/manual/en/healthcare/setup/healthcare_settings) for setting up the Healthcare module.
 
 ## Medical Department
 To organize your clinic into departments, you can create multiple Medical Departments.
