@@ -12,11 +12,19 @@ metatags:
 
 Access Log is a security feature that logs all data exports by all users in the system. This feature is enabled by default from **v13**.
 
-Available to `System Managers`, it can be accessed using our favourite [Awesome Bar](/docs/user/manual/en/using-erpnext/articles/Global-search).
+In ERPNext, Access Log is available to [System Managers](/docs/user/manual/en/setting-up/users-and-permissions/role-and-role-profile), it can be accessed using our favourite [Awesome Bar](https://frappe.io/blog/erpnext-features/erpnext-awesome-bar) or through:
+> Home > Users and Permissions > Logs > Access Log
+
+Access logs are created in the following events:
+
+ - Printing of all Forms and Reports
+ - Private file downloading
+ - Exporting via XLSX/CSV formats
+
 
 <img class="screenshot" alt="Acess Log: ERPNext List View" src="{{docs_base_url}}/assets/img/access-log/access-log-002.png">
 
-The general List view provided out of the box by [Frappe](https://frappe.io/frappe)
+The general List view provided out of the box by [Frappe](https://frappe.io/frappe).
 
 <img class="screenshot" alt="Acess Log: General Ledger Report ERPNext" src="{{docs_base_url}}/assets/img/access-log/access-log-003.png">
 
@@ -24,13 +32,6 @@ Buttons are enabled dynamically for easy access with relevant data, keeping simp
 
 <img class="screenshot" alt="Acess Log: Sales Invoice Frappe Custom Application" src="{{docs_base_url}}/assets/img/access-log/access-log-001.png">
 
-<img class="screenshot" alt="Acess Log: HTML to PDF Printing" src="{{docs_base_url}}/assets/img/access-log/access-log-004.png">
-
 Events such as [raw printing](/docs/user/manual/en/setting-up/print/raw-printing) save information along with the chosen template for the document.
 
-
-In ERPNext, access logs are created in the following events:
-
- - Printing of all Forms and Reports
- - Private file downloading
- - Exporting via XLSX/CSV formats
+<img class="screenshot" alt="Acess Log: HTML to PDF Printing" src="{{docs_base_url}}/assets/img/access-log/access-log-004.png">
