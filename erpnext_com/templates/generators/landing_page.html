@@ -1,0 +1,88 @@
+{% extends "frappe_theme/templates/base.html" %}
+
+{% from "erpnext_com/templates/generators/landing_page_hero.html" import landing_page %}
+{% from "erpnext_com/templates/generators/landing_page_footer.html" import footer %}
+{% from "erpnext_com/templates/generators/testimonials.html" import testimonials %}
+
+{% block title %}ERP for Manufacturing{% endblock %}
+
+{% block content %}
+
+{{ landing_page(
+	website.name,
+	website.title,
+	website.subtitle,
+	website.feature_section_title,
+	website.feature_section_subtitle,
+	website.features,
+	website.show_contact_form
+	)
+}}
+
+{{
+	testimonials(
+		website.testimonial_title,
+		website.testimonials
+	)
+}}
+
+
+{{
+	footer(
+		"ERPNext is the world's best 100% Open Source ERP Solution",
+		"Open Source Software for Modern Businesses",
+		[
+			{
+				"title": "Accounting",
+				"content": "Get a real time view of your cash flow. Full fledged accounting module covering every aspect of book keeping.",
+				"url": "/docs/user/manual/en/accounts"
+			},
+			{
+				"title": "HR & Payroll",
+				"content": "Manage full employee life cycle right from onboarding, payroll, attendance, expense claims, assets to separation.",
+				"url": "/docs/user/manual/en/human-resources"
+			},
+			{
+				"title": "Manufacturing",
+				"content": "Effectively maintain & manage multilevel bill of materials, production planning, job cards & inventory.",
+				"url": "/docs/user/manual/en/manufacturing"
+			},
+			{
+				"title": "Sales & Purchase",
+				"content": "Increase productivity and lower costs by managing your sales and purchase cycles, from purchase to sales orders",
+				"url": "/docs/user/manual/en/buying"
+			},
+			{
+				"title": "CRM",
+				"content": "Win and retain more customers by optimising sales process. Track leads, opportunities and send the quotes on the go.",
+				"url": "/docs/user/manual/en/CRM"
+			},
+			{
+				"title": "Projects",
+				"content": "Deliver both internal and external projects on time, budget and profitability. Track tasks, timesheets and issues by project.",
+				"url": "/docs/user/manual/en/projects"
+			},
+			{
+				"title": "Helpdesk",
+				"content": "Deliver a better service experience with an intuitive issue tracker and integrated knowledge base.",
+				"url": "/docs/user/manual/en/support"
+			},
+			{
+				"title": "Asset Management",
+				"content": "Maintain and Manage details of assets, their movement, value adjustment and depreciation.",
+				"url": "/docs/user/manual/en/asset"
+			},
+			{
+				"title": "Website",
+				"content": "ERPNext comes with a fully featured content management with blogs, web pages and forms.",
+				"url": "/docs/user/manual/en/website"
+			},
+		]
+	)
+}}
+
+{% include "erpnext_com/templates/includes/signup_footer.html" %}
+
+{% endblock %}
+
+

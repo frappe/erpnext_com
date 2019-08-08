@@ -1,0 +1,41 @@
+{% macro footer(title, subtitle, features)%}
+<section class="section-padding section-bg">
+	<div class="container">
+		<div class="text-center">
+			<h3>{{ title }}</h3>
+			<!-- <h3></h3> -->
+			<!-- <p class='lead'>{{ feature_subtitle }}</p> -->
+		</div>
+		<div class='row mt-5'>
+			{% for card in features %}
+			<div class='col-sm-4 mb-4'>
+				<a href='{{ card.path }}' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>{{ card.title }}</h5>
+						{{ card.content }}
+					</div>
+				</a>
+			</div>
+			<!-- {{ feature(card.title, card.content, card.url) }} -->
+			{% endfor %}
+		</div>
+	</div>
+</section>
+{% endmacro %}
+
+{% macro feature(title, description, link) %}
+<div class="col-md-6 mb-5">
+	<div class="d-flex flex-column justify-content-between h-100">
+		<div>
+			<h3>{{ title }}</h3>
+			<p class="text-muted">{{ description }}</p>
+		</div>
+		{% if link %}
+		<a href="{{ link }}" class="text-muted">
+			Read More
+			<span class="hover-right">&#8594;</span>
+		</a>
+		{% endif %}
+	</div>
+</div>
+{% endmacro %}

@@ -1,0 +1,29 @@
+{% macro testimonials(title, testimonials)%}
+<section class="section-padding">
+	<div class="container">
+		<div class="text-center">
+			<h3>{{ title }}</h3>
+		</div>
+		<div class='row mt-5'>
+			{% for customer in testimonials %}
+			<div class='col-sm-12 mb-4'>
+				<div class='card h-100 text-left'></a>
+					<div class='card-body'>
+						<div class="media">
+							{% if customer.image %}
+							<img class="mr-3 greyscale rounded-circle" src="{{ customer.image }}" alt="{{ customer.name }}" style="max-width: 100px">
+							{% endif %}
+							<div class="media-body">
+								<h5 class='card-title'>{{ customer.name1 }}</h5>
+								<h6 class="card-subtitle mb-2 text-muted">{{ customer.designation}}</h6>
+								{{ customer.testimonial }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+{% endmacro %}
