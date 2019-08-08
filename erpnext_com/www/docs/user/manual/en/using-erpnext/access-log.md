@@ -10,7 +10,8 @@ metatags:
 
 # Access Log
 
-Access Log is a security feature that logs all data exports by all users in the system. This feature is enabled by default from **v13**.
+**Access Log is a security feature that logs all data exports by all users in the system.**
+> This feature is enabled by default from **v13**.
 
 Access logs are created in the following events:
 
