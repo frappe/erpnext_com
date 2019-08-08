@@ -32,6 +32,6 @@ Buttons are enabled dynamically for easy access with relevant data, keeping simp
 
 <img class="screenshot" alt="Acess Log: Sales Invoice Frappe Custom Application" src="{{docs_base_url}}/assets/img/access-log/access-log-001.png">
 
-Events such as [raw printing](/docs/user/manual/en/setting-up/print/raw-printing) save information along with the chosen template for the document.
+Events such as [Raw Printing](/docs/user/manual/en/setting-up/print/raw-printing) save information along with the chosen template for the document.
 
 <img class="screenshot" alt="Acess Log: HTML to PDF Printing" src="{{docs_base_url}}/assets/img/access-log/access-log-004.png">
