@@ -38,6 +38,6 @@ effectively manage your data and collaborate with your co-workers.
 1. [Search Filter](/docs/user/manual/en/using-erpnext/articles/search-filter)
 1. [Tree Master Renaming](/docs/user/manual/en/using-erpnext/articles/tree-master-renaming)
 1. [Letter Head In The Report](/docs/user/manual/en/using-erpnext/articles/letter-head-in-the-report)
-1. [Copy Pasting Multiple Records From Excel](/docs/user/manual/en/using-erpnext/articles/1py-pasting-multiple-records-from-excel)
+1. [Copy Pasting Multiple Records From Excel](/docs/user/manual/en/using-erpnext/articles/copy-pasting-multiple-records-from-excel)
 1. [Global Search](/docs/user/manual/en/using-erpnext/articles/Global-search)
 1. [Adding Attachments To Outgoing Messages](/docs/user/manual/en/using-erpnext/articles/adding-attachments-to-outgoing-messages)
