@@ -10,8 +10,9 @@ metatags:
 
 # Access Log
 
+> Introduced in Version 13
+
 **Access Log is a security feature that logs all data exports by all users in the system.**
-> This feature is enabled by default from **v13**.
 
 Access logs are created in the following events:
 
@@ -26,8 +27,6 @@ The general List view provided out of the box by [Frappe](https://frappe.io/frap
 
 <img class="screenshot" alt="Acess Log: ERPNext List View" src="{{docs_base_url}}/assets/img/access-log/access-log-002.png">
 
-Buttons are enabled dynamically for easy access with relevant data, keeping simplicity at the core.
-
 In case an access log is created on event of exporting a Report, a **Show Report** button will be generated in the respective log. On clicking this button, the exported report can be viewed along with the set filters.
 
 <img class="screenshot" alt="Acess Log: General Ledger Report ERPNext" src="{{docs_base_url}}/assets/img/access-log/access-log-003.png">
@@ -36,6 +35,6 @@ Similarly, a **Show Document** button is generated in case of events related to 
 
 <img class="screenshot" alt="Acess Log: Sales Invoice Frappe Custom Application" src="{{docs_base_url}}/assets/img/access-log/access-log-001.png">
 
-Events such as [raw printing](/docs/user/manual/en/setting-up/print/raw-printing) save information along with the chosen template for the document.
+Events such as [Raw Printing](/docs/user/manual/en/setting-up/print/raw-printing) save information along with the chosen template for the document.
 
 <img class="screenshot" alt="Acess Log: HTML to PDF Printing" src="{{docs_base_url}}/assets/img/access-log/access-log-004.png">
