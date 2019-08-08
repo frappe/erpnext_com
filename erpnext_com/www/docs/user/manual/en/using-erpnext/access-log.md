@@ -25,16 +25,16 @@ In ERPNext, Access Log is available to [System Managers](/docs/user/manual/en/se
 
 The general List view provided out of the box by [Frappe](https://frappe.io/frappe).
 
-<img class="screenshot" alt="Acess Log: ERPNext List View" src="{{docs_base_url}}/assets/img/access-log/access-log-002.png">
+<img class="screenshot" alt="Acess Log: ERPNext List View" src="{{docs_base_url}}/assets/img/collaboration-tools/access-log-002.png">
 
 In case an access log is created on event of exporting a Report, a **Show Report** button will be generated in the respective log. On clicking this button, the exported report can be viewed along with the set filters.
 
-<img class="screenshot" alt="Acess Log: General Ledger Report ERPNext" src="{{docs_base_url}}/assets/img/access-log/access-log-003.png">
+<img class="screenshot" alt="Acess Log: General Ledger Report ERPNext" src="{{docs_base_url}}/assets/img/collaboration-tools/access-log-003.png">
 
 Similarly, a **Show Document** button is generated in case of events related to documents directly such as document Printing and Private File download.
 
-<img class="screenshot" alt="Acess Log: Sales Invoice Frappe Custom Application" src="{{docs_base_url}}/assets/img/access-log/access-log-001.png">
+<img class="screenshot" alt="Acess Log: Sales Invoice Frappe Custom Application" src="{{docs_base_url}}/assets/img/collaboration-tools/access-log-001.png">
 
 Events such as [Raw Printing](/docs/user/manual/en/setting-up/print/raw-printing) save information along with the chosen template for the document.
 
-<img class="screenshot" alt="Acess Log: HTML to PDF Printing" src="{{docs_base_url}}/assets/img/access-log/access-log-004.png">
+<img class="screenshot" alt="Acess Log: HTML to PDF Printing" src="{{docs_base_url}}/assets/img/collaboration-tools/access-log-004.png">
