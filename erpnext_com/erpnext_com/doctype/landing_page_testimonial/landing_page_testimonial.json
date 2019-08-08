@@ -1,0 +1,51 @@
+{
+ "creation": "2019-08-08 18:35:49.407283",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "designation",
+  "testimonial",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "testimonial",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Testimonial",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-08-08 18:37:17.301820",
+ "modified_by": "Administrator",
+ "module": "erpnext_com",
+ "name": "Landing Page Testimonial",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

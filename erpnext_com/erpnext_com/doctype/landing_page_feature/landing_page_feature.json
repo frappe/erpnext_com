@@ -1,0 +1,50 @@
+{
+ "creation": "2019-08-08 18:34:08.578962",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "content",
+  "path",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Content",
+   "reqd": 1
+  },
+  {
+   "fieldname": "path",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Path"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-08-08 18:44:43.261440",
+ "modified_by": "Administrator",
+ "module": "erpnext_com",
+ "name": "Landing Page Feature",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

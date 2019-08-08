@@ -1,0 +1,144 @@
+{
+ "autoname": "field:page_name",
+ "creation": "2019-08-08 18:36:59.443455",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "page_name",
+  "title",
+  "subtitle",
+  "route",
+  "column_break_4",
+  "is_published",
+  "show_contact_form",
+  "hero_feature_section",
+  "feature_section_title",
+  "feature_section_subtitle",
+  "features",
+  "testimonials_section",
+  "testimonial_title",
+  "testimonials"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_contact_form",
+   "fieldtype": "Check",
+   "label": "Show Contact Form"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subtitle",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Subtitle",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "hero_feature_section",
+   "fieldtype": "Section Break",
+   "label": "Hero Feature"
+  },
+  {
+   "fieldname": "feature_section_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Feature Section Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "feature_section_subtitle",
+   "fieldtype": "Small Text",
+   "label": "Feature Section Subtitle"
+  },
+  {
+   "fieldname": "features",
+   "fieldtype": "Table",
+   "label": "Features",
+   "options": "Landing Page Feature"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "testimonials_section",
+   "fieldtype": "Section Break",
+   "label": "Testimonials"
+  },
+  {
+   "fieldname": "testimonial_title",
+   "fieldtype": "Data",
+   "label": "Testimonial Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "testimonials",
+   "fieldtype": "Table",
+   "label": "Testimonials",
+   "options": "Landing Page Testimonial"
+  },
+  {
+   "fieldname": "page_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Page Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  }
+ ],
+ "modified": "2019-08-08 20:03:02.711452",
+ "modified_by": "Administrator",
+ "module": "erpnext_com",
+ "name": "Frappe Landing Page",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
