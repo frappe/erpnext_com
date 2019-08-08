@@ -14,6 +14,8 @@ metatags:
 
 **Access Log is a security feature that logs all data exports by all users in the system.**
 
+It is a tool for [System Managers](/docs/user/manual/en/setting-up/users-and-permissions/role-and-role-profile) to track which files were accesed or exported by users on the system. This is useful for tracking company sensitive information like transactions or financials.
+
 Access logs are created in the following events:
 
  - Printing of all Forms and Reports
