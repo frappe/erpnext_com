@@ -11,10 +11,9 @@ class FrappeLandingPage(WebsiteGenerator):
 	website = frappe._dict(
 		page_title_field="title",
 		condition_field="is_published",
-		template="templates/generators/landing_page.html",
+		template="erpnext_com/doctype/frappe_landing_page/templates/landing_page.html",
 		no_cache=1
 	)
 
 	def get_context(self, context):
 		context.website = self
-		print("GET_CONTEXT")

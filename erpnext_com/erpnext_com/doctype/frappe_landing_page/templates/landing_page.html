@@ -1,8 +1,8 @@
 {% extends "frappe_theme/templates/base.html" %}
 
-{% from "erpnext_com/templates/generators/landing_page_hero.html" import landing_page %}
-{% from "erpnext_com/templates/generators/landing_page_footer.html" import footer %}
-{% from "erpnext_com/templates/generators/testimonials.html" import testimonials %}
+{% from "erpnext_com/doctype/frappe_landing_page/templates/landing_page_hero.html" import landing_page %}
+{% from "erpnext_com/doctype/frappe_landing_page/templates/landing_page_footer.html" import footer %}
+{% from "erpnext_com/doctype/frappe_landing_page/templates/testimonials.html" import testimonials %}
 
 {% block title %}ERP for Manufacturing{% endblock %}
 
@@ -81,8 +81,12 @@
 	)
 }}
 
-{% include "erpnext_com/templates/includes/signup_footer.html" %}
+{% include "erpnext_com/doctype/frappe_landing_page/templates/contact_footer.html" %}
 
 {% endblock %}
+
+{%- block footer -%}
+	{% include "erpnext_com/doctype/frappe_landing_page/templates/footer.html" %}
+{%- endblock -%}
 
 

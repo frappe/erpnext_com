@@ -1,0 +1,100 @@
+{% macro landing_page(domain, title, subtitle, feature_title, feature_subtitle, features, show_form) %}
+<div class="{{ 'py-5' if show_form else 'top-section' }}">
+	<div class='container'>
+		{% if show_form %}
+		<div class="row">
+			<div class="col-sm-7 top-section text-left">
+		{% endif %}
+				<h1>{{ title }}</h1>
+				<p class='lead mx-0 pr-3 mw-100' >{{ subtitle }}</p>
+			{% if not show_form %}
+				<a href='/contact-form' class='btn btn-primary btn-lg'>
+					Contact Sales
+				</a>
+			{% else%}
+			</div>
+			<div class="col-sm-5">
+				<div class="card //bg-dark">
+					<div class="card-body">
+						<h6 class="text-muted">Contact us for</h6>
+						<h4 class="card-title //text-white">Free Consultation</h4>
+						<form name="get-free-consultation">
+							<div class="form-group">
+								<label class="mb-1" style="padding-right: 0px;">Name</label>
+								<input type="text" required="true" class="form-control bold" maxlength="140" name="full_name" id="full_name" placeholder="">
+								<p id="error-full_name" hidden=true class="help-box small text-muted">This is a required field</p>
+							</div>
+							<div class="form-group">
+								<label class="mb-1" style="padding-right: 0px;">Email</label>
+								<input type="email" required="true" class="form-control bold" maxlength="140" name="email" id="email" placeholder="">
+								<p id="error-email" hidden=true class="help-box small text-muted">Please enter a valid email address</p>
+							</div>
+							<div class="form-group">
+								<label class="mb-1" style="padding-right: 0px;">Phone Number</label>
+								<input type="text" required="true" class="form-control bold" pattern="\+(9[976]\d|8[987530]\d|6[987]\d|5[90]\d|42\d|3[875]\d|2[98654321]\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)\d{1,14}$" maxlength="140" name="phone_number" id="phone_number" placeholder="">
+								<p id="error-phone_number" hidden=true class="help-box small text-muted">Please enter a valid phone number</p>
+							</div>
+							<div class="form-group">
+								<label class="mb-1" style="padding-right: 0px;">Company</label>
+								<input type="text" required="true" class="form-control bold" maxlength="140" name="organization_name" id="organization_name" placeholder="">
+								<p id="error-organization_name" hidden=true class="help-box small text-muted">This is a required field</p>
+							</div>
+							<div class="form-group">
+								<button onclick="submitForm()" type="button" class="btn btn-primary btn-block">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+<section class="section-padding section-bg">
+	<div class="container">
+		<div class="text-center">
+			<h3>{{ feature_title }}</h3>
+			<p class='lead'>{{ feature_subtitle }}</p>
+		</div>
+		<div class='row mt-5'>
+			{% for card in features %}
+			<div class='col-sm-4 mb-4'>
+				<a href='{{ card.path }}' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>{{ card.title }}</h5>
+						{{ card.content }}
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<script>
+	function submitForm() {
+		var validated = true
+		var inputs = ['full_name', 'email', 'phone_number', 'organization_name'];
+		inputs.forEach((id) => {
+			var element = document.getElementById(id)
+			if(!element.checkValidity()) {
+				var validated = false
+				element.classList.add('is-invalid')
+				document.getElementById(`error-${id}`).hidden = false
+			}
+			else {
+				element.classList.remove('is-invalid')
+				document.getElementById(`error-${id}`).hidden = true
+			}
+		});
+
+		if (validated) {
+			var form = {}
+			form.service = 'Consulting';
+			form.message = `Created from landing page ${document.title}, on ${new Date}`
+			inputs.forEach((id) => form[id] = document.getElementById(id).value)
+			frappe.call('ERPNext Opportunity', form)
+		}
+		else return
+	}
+</script>
+{% endmacro %}
