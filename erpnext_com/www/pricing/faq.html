@@ -8,9 +8,9 @@
 		<h1>Frequently Asked Questions</h1>
 		<div class='text-left'>
 			<p class="mt-5">
-				<h5>How is the subscription price calculated for the number of users?</h5>
-				You only pay for the number of System users in your account. These are the users who can access the core modules of the ERP and not just portal views.<br><br> 
-                
+				<h5>How is the fees calculated for the number of users?</h5>
+				You only pay for the number of System users in your account. These are the users who can access the core modules of the ERP and not just portal views.<br><br>
+
                 A system user is generally someone with system roles like manager in Sales/Purchase/Manufacturing/HR, Leave Approver, Employee, Auditor, etc. These roles are assigned from the user's settings page.
 			</p>
 			<p class="mt-5">
@@ -33,7 +33,14 @@
                     <img src="/assets/erpnext_com/images/subscribe.gif" class="img-responsive"
                         alt="ERPNext Subscription GIF" style="padding-top: 10px; padding-bottom: 17px; width:800px; margin:auto;">
                 </div>
-                You can pay for your subscription via PayPal or Credit card. If not, there's always Wire Transfer! Details for the same can be found <a href="/pricing/payment">here</a>.                
+                You can pay for your subscription via PayPal or Credit card. If not, there's always Wire Transfer! Details for the same can be found <a href="/pricing/payment">here</a>.
+			</p>
+			<p class="mt-5">
+				<h5>How monthly subscription works?</h5>
+				When you subscribe via PayPal or Razorpay, they payment agent (PayPal, Razorpay) creates pre-authorized subscription profile against your account.
+				Payment agent use this pre-authorized profile, to renew your subscription automatically.
+				As profile is pre-autorised, the payment agent wont ask for OTP to carry out the tranasction.
+				If your Card/Bank Account/PayPal Account wont have enough balance on date then the payment agent retries the transaction after interval of three days and seven days.
 			</p>
 			<p class="mt-5">
 				<h5>Do I need to have a PayPal Account for subscription?</h5>
@@ -82,8 +89,8 @@
 		"name": "How is the subscription price calculated for the number of users?",
 		"acceptedAnswer": {
 			"@type": "Answer",
-			"text":"You only pay for the number of System users in your account. These are the users who can access the core modules of the ERP and not just portal views.<br><br> 
-			
+			"text":"You only pay for the number of System users in your account. These are the users who can access the core modules of the ERP and not just portal views.<br><br>
+
 			A system user is generally someone with system roles like manager in Sales/Purchase/Manufacturing/HR, Leave Approver, Employee, Auditor, etc. These roles are assigned from the user's settings page."}
 	},
 	{
@@ -166,7 +173,7 @@
 			<br>
 			If you would like to completely reset your account, contact our <a href='mailto: support@erpnext.com'>support team</a>."
 		}
-	
+
 	}
 ]
 }
