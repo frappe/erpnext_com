@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-# Google MAps Integration
+# Google Maps Integration
 
 ERPNext provides an integration with Google Maps to calculate and optimize time for Delivery Trips.
 

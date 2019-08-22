@@ -15,7 +15,8 @@ In order to allow a synchronization with Google Calendar, Google Contacts or Goo
   - Google Calendar: **Calendar API**
   - Google Contacts: **People API**
   - Google Drive: **Drive API**
-<img class="screenshot" src="/docs/assets/img/erpnext_integrations/api.gif">
+
+ <img class="screenshot" src="/docs/assets/img/erpnext_integrations/api.gif">
 - Add `https://{yoursite}` to Authorized JavaScript origins.
 - Add `https://{yoursite}?cmd=frappe.integrations.doctype.{integration_name}.{integration_name}.google_callback` as an authorized redirect URI.
   - You need to replace `integration_name` with one of the following:
@@ -23,7 +24,8 @@ In order to allow a synchronization with Google Calendar, Google Contacts or Goo
      - Google Contacts: **google\_contacts**
      - Google Drive: **google\_drive**
   - eg: for Google Contacts URL will be `https://{yoursite}?cmd=frappe.integrations.doctype.google_contacts.google_contacts.google_callback`
-  <img class="screenshot" src="/docs/assets/img/erpnext_integrations/google_contacts_oauth.gif">
+
+ <img class="screenshot" src="/docs/assets/img/erpnext_integrations/google_contacts_oauth.gif">
 - Add your Client ID and Client Secret in the Google Settings in **Home > Integrations > Google Services > Google Settings**
 
 ### For Google Maps
