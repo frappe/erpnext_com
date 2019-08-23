@@ -12,7 +12,7 @@ The following should be noted when synchronizing contacts in ERPNext from Google
 
 In order to allow a synchronization with Google Contacts, you need to authorize ERPNext to get Contacts data from Google. Google Contacts Integration is set up with the following steps:
 
-- Create OAuth 2.0 Credentials [Google Settings](/docs/user/manual/en/erpnext_integration/google_settings).
+- Create OAuth 2.0 Credentials via [Google Settings](/docs/user/manual/en/erpnext_integration/google_settings).
 - In the Google Contacts list, click on New. Enter the Google Account Email you want to sync and then save it. Now click on **Authorize Contacts Access** to authorize ERPNext to get Contacts data from Google.
 
 ## How to use Google Contacts Integration

@@ -8,7 +8,7 @@ ERPNext provides an integration with Google Calendar in order for all users to s
 
 In order to allow a synchronization with Google Calendar, you need to authorize ERPNext to get Calendar Events data from Google. Google Calendar Integration is set up with the following steps:
 
-- Create OAuth 2.0 Credentials [Google Settings](/docs/user/manual/en/erpnext_integration/google_settings).
+- Create OAuth 2.0 Credentials via [Google Settings](/docs/user/manual/en/erpnext_integration/google_settings).
 - In the Google Calendar list, click on New. Enter Calendar Name and the User for whom you want to sync and then save it.
 - Depending what data you want to sync, you can select following
   - Pull from Google Calendar - Syncs all event from Google Calendar to ERPNext.

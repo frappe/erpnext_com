@@ -8,7 +8,7 @@ ERPNext provides an integration with Google Drive in order for all users to back
 
 In order to allow a ERPNext to upload backups to Google Drive, you need to authorize ERPNext to upload files to Google Drive. Google Drive Integration is set up with the following steps:
 
-- Create OAuth 2.0 Credentials [Google Settings](/docs/user/manual/en/erpnext_integration/google_settings).
+- Create OAuth 2.0 Credentials via [Google Settings](/docs/user/manual/en/erpnext_integration/google_settings).
 - In the Google Drive list, click on New. Enter the Backup folder name to save backups to Google Drive, the backup frequency and the email of the person to whom email is sent notifying the status of the backup and then save it. Now click on **Authorize Drive Access** to authorize ERPNext to push files to Google Drive.
 - Once Authorized, you can save your backup to Google Drive.
 
