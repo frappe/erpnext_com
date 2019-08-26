@@ -18,11 +18,14 @@ all Maintenance Visits made to your Customers.
 <!-- ##### 1. Common support topics -->
 
 1. [Issue](/docs/user/manual/en/support/issue)
+1. [Issue Type and Priority](/docs/user/manual/en/support/issue-type-and-priority)
 1. [Warranty Claim](/docs/user/manual/en/support/warranty-claim)
 1. [Maintenance Visit](/docs/user/manual/en/support/maintenance-visit)
 1. [Maintenance Schedule](/docs/user/manual/en/support/maintenance-schedule)
 1. [Support Reports](/docs/user/manual/en/support/support_reports)
 1. [Service Level Agreement](/docs/user/manual/en/support/service-level-agreement)
+1. [Serial Number](/docs/user/manual/en/stock/serial-no)
+1. [Support Settings](/docs/user/manual/en/support/support-settings)
 
 <!--
 ##### 2. Feedback
