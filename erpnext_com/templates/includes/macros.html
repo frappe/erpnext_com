@@ -96,7 +96,7 @@
 	</div>
 {% endmacro %}
 
-{% macro doc_page(title,  subtitle, doc) %}
+{% macro doc_page(title,  subtitle, doc, toc_url) %}
 	<!-- title: {{ title }} -->
 	{% from "frappe_theme/templates/includes/docs.html" import cards, hero, signup_footer %}
 
@@ -115,7 +115,7 @@
 			</div>
 			{% if loop.index == doc | length %}
 				<p class="mt-4 text-center">
-					<a href="content" class="text-muted">View Table of Contents</a>
+					<a href="{{ toc_url or 'content' }}" class="text-muted">View Table of Contents</a>
 				</p>
 			{% endif %}
 		</section>
