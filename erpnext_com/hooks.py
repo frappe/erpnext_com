@@ -39,7 +39,7 @@ website_context = {
 			{"label": "Become a Partner", "url":"/partners/plans"},
 		]},
 		{"label": "Sign Up", "url": "/signup?plan=P-Pro", "right":1},
-		{"label": "Contact Sales", "url": "/contact-form", "right":1, "button": 1},
+		{"label": "Contact Us", "url": "/contact-form", "right":1, "button": 1},
 	],
 	"hide_login": 1,
 	"favicon": "/assets/erpnext_com/img/erpnext-logo-blue.png"
