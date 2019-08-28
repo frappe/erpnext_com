@@ -12,14 +12,18 @@
 
 {% block content %}
 <section class='top-section'>
-	<div class='container' style='padding-top: 3em; padding-bottom: 3em;'>
-	<h1>Everything Your Organization Needs</h1>
+	<div class='container'>
+	<h1>Open Source Alternative to <span class="rotate">SAP</span></h1>
 	<p class='lead'>ERPNext is the world's best 100% open source ERP.
 	<p class="mt-4">
-		<a class="btn btn-primary btn-lg" href="/signup?plan=P-Standard#personal-details">Start Free Trial</a>
+		<a class="btn btn-primary btn-md" href="/signup?plan=P-Standard#personal-details">Start Free Trial</a>
+		<a class="btn btn-light btn-md" href="/contact-form">Contact Us</a>
 	</p>
-	<p class="mt-0 small text-muted">Try ERPNext free for 14 days</p>
-	<div class='py-4'></div>
+	<!-- <p class="mt-0 small text-muted">Try ERPNext free for 14 days</p> -->
+	</div>
+</section>
+<section class="section-sm section-light">
+	<div class='container'>
 
 	{{ card_grid(
 		None,
@@ -119,16 +123,108 @@
 	</div>
 	</div>
 </section>
-<section class='section-padding'>
-	<div class='container text-center'>
-		<h3 class='text-center'>Loved by Users</h3>
-		<p class='lead'>Used by more than 5000 companies across the world</p>
-		<img src="/assets/erpnext_com/img/home/customer-logos.png" class='greyscale my-5'>
-		<div class='mt-4 '>
-			<a class="btn btn-primary btn-lg" href="/signup?plan=P-Standard#personal-details">Start Free Trial</a>
-		</div>
-	</div>
-</section>
+
+{% include "erpnext_com/templates/includes/signup_footer.html" %}
+
+<script>
+	let words = (function () {
+		let words = [
+			"SAP",
+			"Oracle",
+			"Salesforce",
+			"NetSuite",
+			"MS Dynamics",
+			"Zoho",
+			"Freshworks"
+		],
+			el = document.querySelector('.rotate'),
+			currentIndex = 0,
+			currentWord = '',
+			duration = 2000;
+
+		var _clear = function () {
+			setTimeout(function () {
+				el.className = 'rotate';
+			}, duration / 4);
+		};
+
+		var _toggleWord = function (duration) {
+			setInterval(function () {
+				//Generate new current word
+				currentIndex = currentIndex + 1
+				currentWord = words[currentIndex %words.length];
+
+				//Swap new value
+				el.innerHTML = currentWord;
+
+				//Clear class styles
+				_clear();
+
+				//Fade in word
+				el.classList.add(
+					'rotate-block',
+					'fade-in-rotate'
+				);
+
+			}, duration);
+		};
+
+		var _init = function () {
+			_toggleWord(duration);
+		};
+
+		//Public API
+		return {
+			init: function () {
+				_init();
+			}
+		};
+	})();
+
+	words.init();
+</script>
+<style>
+@-moz-keyframes
+fade-it {
+	0% { opacity:0 }
+	100% { opacity:1 }
+}
+
+@-webkit-keyframes
+fade-it {
+	0% { opacity:0 }
+	100% { opacity:1 }
+}
+
+@keyframes
+fade-it {
+	0% { opacity:0 }
+	100% { opacity:1 }
+}
+
+.fade-in-rotate {
+  animation-name: fade-it;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: fade-it;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards
+}
+
+.rotate.rotate-block { display: inline-block }
+
+.rotate.rotate-hide {
+  display: none;
+  opacity: 0
+}
+
+.rotate {
+  display: inline-block;
+  visibility: visible;
+  color: #C53030;
+  color: #F6AD55;
+}
+</style>
 <style>.footer-message { display: none; }</style>
 
 {% endblock %}
