@@ -1,5 +1,5 @@
 {% extends "frappe_theme/templates/base.html" %}
-{% block title %}Contact Us{% endblock %}
+{% block title %}Get in Touch{% endblock %}
 
 {% from "erpnext_com/templates/includes/card_grid.html" import card_grid %}
 
@@ -54,8 +54,7 @@
 	}}
 </div>
 </section>
-<hr>
-<section>
+<section class="section-bg">
 	<div class='container'>
 		{{ card_grid(
 			"Contact Details",
@@ -87,7 +86,7 @@
 		}}
 	<div class='text-center'>
 		<p class="mt-5">
-			<a class="btn btn-primary btn-lg" style="width: 170px;" href="/pricing">Start Free Trial</a>
+			<a class="btn btn-primary btn-lg" href="/signup?plan=P-Standard#personal-details">Start Free Trial</a>
 		</p>
 		<p class="mt-0 text-muted">Try ERPNext free for 14 days</p>
 	</div>

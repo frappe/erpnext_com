@@ -13,9 +13,15 @@
 <section class='top-section'>
 	<div class='container'>
 	<h1>Self Hosted Support + Warranty</h1>
-	<p class='lead'>Ensure that your mission critical ERP platform is supported by the most experienced team</p>
-	<div class='py-4'></div>
-
+	<p class='lead'>Ensure that your mission critical ERP platform is supported by the most experienced team. Frappe Self Hosted Support starts at {{ symbol }}{{ amount }} / user / year</p>
+	<div class="mt-4">
+		<a href='/contact-form' class='btn btn-primary btn-lg'>Contact Sales</a>
+		<p class='mt-3'><a class='text-muted' href='/get-a-quote'>Get a Quote</a></p>
+	</div>
+	</div>
+</section>
+<section class="section-md section-bg">
+	<div class="container">
 	{{ card_grid(
 		None,
 		None,
@@ -52,52 +58,49 @@
 			},
 		])
 	}}
-	<div class='mt-5'>
-		<p class='lead'>Frappe Self Hosted Support starts at {{ symbol }}{{ amount }} / user / year</p>
-		<a href='/get-a-quote' class='btn btn-primary btn-lg'>Get Pricing</a>
-		<p class='mt-3'><a class='text-muted' href='/contact-form'>Contact Sales</a></p>
 	</div>
-</div>
 </section>
-<hr>
-<section class='section' id='faq'>
+<section class='section section-light' id='faq'>
 	<div class='container'>
-		<h2 class='text-center mb-5'>Frequently Asked Questions</h2>
+		<div class="w-600">
+			<h2 class='text-center mb-5'>Frequently Asked Questions</h2>
 
-		<h5>What happens after my enterprise contract expires?</h5>
-		<p class='mb-5'>
-			You can continue to use ERPNext on your server after your enterprise support license expires, but you will have to manage your own support and server management. Some features like in-app support will also stop working.
-		</p>
+			<h5>What happens after my enterprise contract expires?</h5>
+			<p class='mb-5'>
+				You can continue to use ERPNext on your server after your enterprise support license expires, but you will have to manage your own support and server management. Some features like in-app support will also stop working.
+			</p>
 
-		<h5>If ERPNext is Free and Open Source, why charge per user?</h5>
-		<p class='mb-5'>
-			ERPNext is Free and Open Source ("free" as in "free-speech"), but the services around ERPNext need engineers to support you. These are what is charged.
-			Since scale, complexity and support requirement of a deployment is proportional to the number of users, the Enterprise Support contract is also priced per user.
-			Also most ERP products are priced per user, so it is easy to compare with other products. ERPNext Support is a fraction of what you would pay for NetSuite, SAP or Oracle Cloud.
-		</p>
+			<h5>If ERPNext is Free and Open Source, why charge per user?</h5>
+			<p class='mb-5'>
+				ERPNext is Free and Open Source ("free" as in "free-speech"), but the services around ERPNext need engineers to support you. These are what is charged.
+				Since scale, complexity and support requirement of a deployment is proportional to the number of users, the Enterprise Support contract is also priced per user.
+				Also most ERP products are priced per user, so it is easy to compare with other products. ERPNext Support is a fraction of what you would pay for NetSuite, SAP or Oracle Cloud.
+			</p>
 
-		<h5>Is there a separate pricing for Employee Self-Service (HR module only) user?</h5>
-		<p class='mb-5'>
-			No. ERPNext is not restricted to just one module, with the standard support, customers can access all modules like and CRM, Projects, Helpdesk.
-			<br><br>
-			<a href='/get-a-quote'>Get a pricing estimate.</a>
-		</p>
+			<h5>Is there a separate pricing for Employee Self-Service (HR module only) user?</h5>
+			<p class='mb-5'>
+				No. ERPNext is not restricted to just one module, with the standard support, customers can access all modules like and CRM, Projects, Helpdesk.
+				<br><br>
+				<a href='/get-a-quote'>Get a pricing estimate.</a>
+			</p>
 
-		<h5>How is the number of users counted?</h5>
-		<p class='mb-5'>The number of users at the time of signup is counted for the Support Billing. If the number of users exceeds by 15% of the billable users, additional billing is required, for continued support.</p>
+			<h5>How is the number of users counted?</h5>
+			<p class='mb-5'>The number of users at the time of signup is counted for the Support Billing. If the number of users exceeds by 15% of the billable users, additional billing is required, for continued support.</p>
 
-		<h5>Is ERPNext available in my language?</h5>
-		<p class='mb-5'>
-			Most likely yes! ERPNext has been translated to more than 70 languages with the help of the community. <a href='https://translate.erpnext.com' target='_blank'>View the translation portal for a full list of supported languages</a>
-		</p>
+			<h5>Is ERPNext available in my language?</h5>
+			<p class='mb-5'>
+				Most likely yes! ERPNext has been translated to more than 70 languages with the help of the community. <a href='https://translate.erpnext.com' target='_blank'>View the translation portal for a full list of supported languages</a>
+			</p>
 
-		<h5>Can I pay via credit card or wire transfer?</h5>
-		<p class='mb-5'>Yes, you can make payment from within your account using your credit card. If you prefer wire us the money, <a href='/pricing/payment'>here are our bank details.</a></p>
+			<h5>Can I pay via credit card or wire transfer?</h5>
+			<p class='mb-5'>Yes, you can make payment from within your account using your credit card. If you prefer wire us the money, <a href='/pricing/payment'>here are our bank details.</a></p>
 
-		<p>Still have questions? Feel free to drop us a mail at <a href='mailto:hello@erpnext.com'>hello@erpnext.com</a>
+			<p>Still have questions? Feel free to drop us a mail at <a href='mailto:hello@erpnext.com'>hello@erpnext.com</a>
 
-		<div class='my-5 text-center'>
-			<a href='/contact-form' class='btn btn-primary btn-lg'>Contact Sales</a>
+			<!-- <div class='my-5 text-center'>
+				<a href='/contact-form' class='btn btn-primary btn-lg'>Contact Sales</a>
+				<p class='mt-3'><a class='text-muted' href='/get-a-quote'>Get a Quote</a></p>
+			</div> -->
 		</div>
 	</div>
 </section>

@@ -2,10 +2,12 @@
 
 <section class='top-section'>
 	<div class='container'>
-	<h1 class='pt-4'>ERPNext Cloud Pricing</h1>
-	<div class="lead pb-3">Solid hosting, priority support and backups.</div>
+	<div class='text-center'>
+		<h1 class='pt-4'>ERPNext Cloud Pricing</h1>
+		<p class='lead pb-3 mx-auto'>Solid hosting, priority support and backups.</p>
+	</div>
 
-	<div class="row mt-4">
+	<div class='row mt-4'>
 
 		{% for plan in plans %}
 		<div class='col-sm-4 mb-4' style='padding: 0px'>
@@ -18,23 +20,18 @@
 					<h4 class='card-title'>{{ plan.title }}</h4>
 
 					<h3>{{ plan.pricing.symbol }} {{ plan.pricing.monthly_amount|int }}</h3>
-					<p class=" mb-1">{{ plan.pricing.currency }} / user / month</p>
-					<p class="text-muted  mb-1">or {{ plan.pricing.symbol }} {{ plan.pricing.amount|int }} / user / year</p>
-					<p class="text-muted ">(Inclusive of Taxes)</p>
+					<p class=' mb-1'>Per active user per month</p>
+					<p class='text-muted  mb-1'>or {{ plan.pricing.symbol }}{{ plan.pricing.amount|int }} billed yearly</p>
+					<!-- <p class='text-muted '>(Inclusive of Taxes)</p> -->
 
-					<button class="btn btn-primary
-
-					{% if (loop.index == 1) or (loop.index == 3) %}
-						btn-muted
-					{% endif %}
-
-					btn-sm mb-4" onclick="redirect_to_signup('signup', '{{ plan.name }}')">Start 14 Day Trial</button>
+					<button class='btn btn-primary mt-2 btn-sm mb-4' onclick='redirect_to_signup('signup', '{{ plan.name }}')'>Start 14 Day Trial</button>
 
 					{% for feature in base_features %}
 					<div class='mb-2'>
-						<i class='octicon octicon-check mr-1'></i> {{ feature.title }}
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+							{{ feature.title }}
 					</div>
-					<!-- <p class=" mb-2">{{ feature.content }}</p> -->
+					<!-- <p class=' mb-2'>{{ feature.content }}</p> -->
 					{% endfor %}
 
 					<hr>
@@ -42,14 +39,14 @@
 					{% for feature in plan.features %}
 					<div
 					{% if loop.index == 3 %}
-						style="min-height: 190px;"
+						style='min-height: 190px;'
 					{% endif %}
 					>
-						<h6 class="mt-5">
+						<h6 class='mt-5'>
 							{{ feature.title }}
 						</h6>
 							{% for subfeature in feature.content %}
-							<p class=" mb-2">{{ subfeature }}</p>
+							<p class=' mb-2'>{{ subfeature }}</p>
 							{% endfor %}
 
 					</div>
@@ -69,48 +66,50 @@
 	<div class='container text-center'>
 		<h2>Support for Self Hosted</h2>
 		<p class=lead>ERPNext is a 100% Free and Open Source Software. We also offer you support for your self hosted instance.</p>
-		<a class='btn btn-primary mt-4' href="/support">Learn about Support for Self Hosted</a>
+		<a class='btn btn-primary mt-4' href='/support'>Learn about Support for Self Hosted</a>
 	</div>
 </section>
 
-<section class='section' id='faq'>
+<section class='section section-light' id='faq'>
 	<div class='container'>
-		<h2 class='text-center mb-5'>Frequently Asked Questions</h2>
+		<div class='w-600'>
+			<h2 class='text-center mb-5'>Frequently Asked Questions</h2>
 
-		<h5>How do I implement ERPNext?</h5>
-		<p class='mb-5'>
-			ERPNext is designed for self-implementation, and most companies don't need any help, just a bit of determination. To help you, there are tons of videos and other resources that will help you. If you sign up for a paid account, we conduct one-on-one sessions to help you configure the system.</a>
-		</p>
-		<h5>Will self hosting be better?</h5>
-		<p class='mb-5'>It depends. ERPNext is 100% Free and Open Source and depending on your scale and capability, self-hosting may be the right solution for you. <a href=/support>Learn more about our enterprise services.</a><br><br>
+			<h5>How do I implement ERPNext?</h5>
+			<p class='mb-5'>
+				ERPNext is designed for self-implementation, and most companies don't need any help, just a bit of determination. To help you, there are tons of videos and other resources that will help you. If you sign up for a paid account, we conduct one-on-one sessions to help you configure the system.</a>
+			</p>
+			<h5>Will self hosting be better?</h5>
+			<p class='mb-5'>It depends. ERPNext is 100% Free and Open Source and depending on your scale and capability, self-hosting may be the right solution for you. <a href=/support>Learn more about our enterprise services.</a><br><br>
 
-		If you are a  company, the cloud may make more sense for you. If you setup ERPNext on your own, then you start with a base cost of around $40/month for a VPS, then you'll need to pay extra for email, security and backups services. After that you'll spend a few hours installing and setting up everything, and also set aside a few hours of your time each month for maintenance + software updates, or maybe get someone to do that for you. Which gets expensive pretty quick. Frappe Cloud on the other hand, takes away all of that so you can focus on what you do best.</p>
+			If you are a  company, the cloud may make more sense for you. If you setup ERPNext on your own, then you start with a base cost of around $40/month for a VPS, then you'll need to pay extra for email, security and backups services. After that you'll spend a few hours installing and setting up everything, and also set aside a few hours of your time each month for maintenance + software updates, or maybe get someone to do that for you. Which gets expensive pretty quick. Frappe Cloud on the other hand, takes away all of that so you can focus on what you do best.</p>
 
-		<h5>Can I get a one-on-one demo?</h5>
-		<p class='mb-5'>
-			Yes, we would be happy to schedule a remote, one-on-one demo. <a href='/contact-form' target='_blank'>Just send us a request for one.</a>
-		</p>
+			<h5>Can I get a one-on-one demo?</h5>
+			<p class='mb-5'>
+				Yes, we would be happy to schedule a remote, one-on-one demo. <a href='/contact-form' target='_blank'>Just send us a request for one.</a>
+			</p>
 
-		<h5>Do you have discounts for education institutes?</h5>
-		<p class='mb-5'>
-			Yes, we support your education institute with a 30% discount.
-			<a href='/contact-form' target='_blank'>Contact us to apply.</a></a>
-		</p>
+			<h5>Do you have discounts for education institutes?</h5>
+			<p class='mb-5'>
+				Yes, we support your education institute with a 30% discount.
+				<a href='/contact-form' target='_blank'>Contact us to apply.</a></a>
+			</p>
 
-		<h5>Is ERPNext available in my language?</h5>
-		<p class='mb-5'>
-			Most likely yes! ERPNext has been translated to more than 70 languages with the help of the community. <a href='https://translate.erpnext.com' target='_blank'>View the translation portal for a full list of supported languages.</a>
-		</p>
+			<h5>Is ERPNext available in my language?</h5>
+			<p class='mb-5'>
+				Most likely yes! ERPNext has been translated to more than 70 languages with the help of the community. <a href='https://translate.erpnext.com' target='_blank'>View the translation portal for a full list of supported languages.</a>
+			</p>
 
-		<h5>Can I pay via credit card or wire transfer?</h5>
-		<p class='mb-5'>Yes, you can make payment from within your account using your credit card. If you prefer wire us the money, <a href='/pricing/payment'>here are our bank details.</a></p>
+			<h5>Can I pay via credit card or wire transfer?</h5>
+			<p class='mb-5'>Yes, you can make payment from within your account using your credit card. If you prefer wire us the money, <a href='/pricing/payment'>here are our bank details.</a></p>
 
-		<!-- <h5>Can I extend my trial period?</h5>
-		<p class='mb-5'>
-			Yes, we would be happy to extend your trial, <a href="mailto:hello@erpnext.com?subject=Please extend my trial&body=Please extend my trial account id {your account here}">just get in touch</a>.
-		</p> -->
-		<div class="text-center">
-			<p class="lead"><a href="/pricing/faq">More FAQs</a></p>
+			<!-- <h5>Can I extend my trial period?</h5>
+			<p class='mb-5'>
+				Yes, we would be happy to extend your trial, <a href='mailto:hello@erpnext.com?subject=Please extend my trial&body=Please extend my trial account id {your account here}'>just get in touch</a>.
+			</p> -->
+			<div class='text-center'>
+				<a class="text-muted text-link" href='/pricing/faq'>More FAQs</a>
+			</div>
 		</div>
 
 	</div>

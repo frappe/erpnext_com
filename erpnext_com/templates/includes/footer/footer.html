@@ -1,9 +1,14 @@
-<div class='bg-light-yellow mt-4 footer-message'>
-	<div class='container text-muted py-3 text-center'>
-		<a href='/signup'>Sign up for ERPNext</a> or <a href=
-		'https://support.erpnext.com/contact-form' target='_blank'>request a callback.</a>
-	</div>
-</div>
+<!-- IMPORTANT: If you are changing any style for the following footer message -->
+<!-- You need to change the macro in frappe_theme/templates/includes/docs.html as well -->
+<section class="section-md section-bg footer-message">
+		<div class="container text-center">
+			<p style="max-width: 75%; margin-left: auto; margin-right: auto; color: #718096; line-height: 1.5; font-weight: 400; font-size: 1.25rem;">ERPNext is used by more than 5000 companies across the world</p>
+			<div class="mt-4">
+				<a class="btn btn-primary" href="/signup?plan=P-Standard#personal-details">Start Free Trial</a>
+				<a class="btn btn-secondary" href="/contact-form">Contact Us</a></h4>
+			</div>
+		</div>
+</section>
 <footer class="bg-dark pt-4">
 	<div class="container px-5 px-sm-3">
 	<div class="row my-3 my-sm-5">
@@ -79,7 +84,7 @@
 						target="_blank">Foundation</a>
 				</li>
 				<li class="mb-2">
-					<a class="text-muted" href="https://erpnext.org/docs/user/manual">Manual</a>
+					<a class="text-muted" href="/docs/user/manual/en/">Documentation</a>
 				</li>
 				<li class="mb-2">
 					<a class="text-muted" href="https://www.youtube.com/c/erpnext" target="_blank" >YouTube</a>
@@ -144,7 +149,7 @@
 		</div>
 	</div>
 			<div class="py-3 text-muted">
-				<span>&copy; <span id="year"></span> Frappe Technologies Private Limited. Read the <a class="text-muted"href="/disclaimer" target="_blank">Disclaimer</a> and <a class="text-muted"href="/terms" target="_blank">Terms of Use</a>.</span>
+				<span>&copy; <span id="year"></span> Frappe <span class="mr-2"></span>|<span class="ml-2"></span> <a class="text-muted"href="/disclaimer" target="_blank">Disclaimer</a> and <a class="text-muted"href="/terms" target="_blank">Terms of Use</a>.</span>
 			</div>
 	</div>
 </footer>
