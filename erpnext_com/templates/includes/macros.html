@@ -104,6 +104,7 @@
 		<div class='container text-center'>
 			<h1>{{ title }}</h1>
 			<p class='lead'>{{ subtitle }}</p>
+			<a href="{{ toc_url }}" class="btn btn-light">Table of Contents</a>
 		</div>
 	</section>
 
@@ -113,12 +114,11 @@
 				<h4 class='mb-0'>{{ section.title }}</h4>
 				{{ cards(section.links)}}
 			</div>
-			{% if loop.index == doc | length %}
-				<p class="mt-4 text-center">
-					<a href="{{ toc_url or 'content' }}" class="text-muted">View Table of Contents</a>
-				</p>
-			{% endif %}
+			<p class="mt-4 text-center">
+				<a href="{{ toc_url or 'contents' }}" class="text-muted">View Full Contents</a>
+			</p>
 		</section>
 	{% endfor %}
+	<style>.footer-message { display: none; }</style>
 	{{ signup_footer('section-light' if (doc | length)%2 == 0 else 'section-bg') }}
 {% endmacro %}
