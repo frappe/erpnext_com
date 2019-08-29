@@ -84,41 +84,42 @@
 	</div>
 </section>
 
+{% macro card(title, body, link, badge) %}
+<a href="{{ link }}" class="card">
+	<!-- <img class='mt-3' src="/assets/erpnext_com/img/balloon.svg" style='height: 150px'> -->
+	<div class='card-body'>
+		<h5 class='card-title'>{{ title }}</h5>
+		<div>{{ body }}</div>
+	</div>
+	<div class='card-footer'>
+		<span class='badge badge-pill badge-secondary'>{{ badge }}</span>
+	</div>
+</a>
+{% endmacro %}
+
 <section class="section-padding section-bg">
 	<div class='container'>
 	<div class='card-deck'>
-		<div class="card">
-			<!-- <img class='mt-3' src="/assets/erpnext_com/img/balloon.svg" style='height: 150px'> -->
-			<div class='card-body'>
-				<h5 class='card-title'>Get Started on Cloud</h5>
-				<div>Start with a 14 day trial to get instant access to your own ERPNext Instance. Get expert support and world class hosting too.</div>
-			</div>
-			<div class='card-footer'>
-				<a href="/pricing" class='small'>See Pricing</a>
-			</div>
-		</div>
+		{{ card(
+			'Get Started on Cloud',
+			'Start with a 14 day trial to get instant access to your own ERPNext Instance. Get expert support and world class hosting too.',
+			'/pricing',
+			'See Pricing'
+		)  }}
 
-		<div class="card">
-			<!-- <img class='mt-3' src="/assets/erpnext_com/img/umbrella.svg" style='height: 150px'> -->
-			<div class='card-body'>
-				<h5 class='card-title'>ERPNext Support</h5>
-				<div>For self hosted users, ERPNext Support provides you the priority support and bug fix guarantee, so you can stop worrying.</div>
-			</div>
-			<div class='card-footer'>
-				<a href="/support" class='small'>Buy Support</a>
-			</div>
-		</div>
+		{{ card(
+			'ERPNext Support',
+			'For self hosted users, ERPNext Support provides you the priority support and bug fix guarantee, so you can stop worrying.',
+			'/support',
+			'Buy Support'
+		)  }}
 
-		<div class="card">
-			<!-- <img class='mt-3' src="/assets/erpnext_com/img/sun.svg" style='height: 150px'> -->
-			<div class='card-body'>
-				<h5 class='card-title'>100% Open Source</h5>
-				<div>ERPNext is open source and infinitely extensible. Customize it, build upon it, add your own apps built with <a href="https://frappe.io/frappe" class="underline">Frappe Framework</a>.</div>
-			</div>
-			<div class='card-footer'>
-				<a href="https://github.com/frappe/erpnext" class='small'>GitHub</a>
-			</div>
-		</div>
+		{{ card(
+			'100% Open Source',
+			'ERPNext is open source and infinitely extensible. Customize it, build upon it, add your own apps built with Frappe Framework.',
+			'https://github.com/frappe/erpnext',
+			'GitHub'
+		)  }}
 	</div>
 	</div>
 </section>
