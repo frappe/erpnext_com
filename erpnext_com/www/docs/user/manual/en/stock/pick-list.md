@@ -4,7 +4,7 @@ add_breadcrumbs: 1
 show_sidebar: 0
 
 metatags:
- description: A Pick List is a document that indicates which items should be taken from your inventory to fulfill orders. This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many SKUs.
+ description: A Pick List is a document that indicates which items should be taken from your inventory to fulfill orders. This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many Stock Keeping Unit(SKU).
  keywords: Pick List, Picking Slip, frappe, Pick Ticket, erpnext new features, erp, open source erp, free erp, stock
 ---
 
@@ -12,7 +12,7 @@ metatags:
 
 **A Pick List is a document that indicates which items should be taken from your inventory to fulfill orders.**
 
-This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many SKUs.
+This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many Stock Keeping Unit(SKU).
 Pick list selects Warehouse where item is available on FIFO (First-In-First-Out) basis.
 Selection of Warehouse for a batched item is different. In case of batched items, Warehouse where the batch is nearer to its expiry will be selected.
 
@@ -102,5 +102,3 @@ Before creating and using a Pick List, it is advised that you have the following
 1. [Sales Order](/docs/user/manual/en/selling/sales-order)
 1. [Work Order](/docs/user/manual/en/manufacturing/work-order)
 1. [Material Request](/docs/user/manual/en/stock/material-request)
-
-{next}
