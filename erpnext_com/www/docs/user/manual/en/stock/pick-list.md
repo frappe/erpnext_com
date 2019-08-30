@@ -16,32 +16,31 @@ To access Pick List, go to:
 
 > Home > Stock > Pick List
 
+## How does Pick List Work
+
+Pick list selects warehouse where item is available on FIFO (First-In-First-Out) basis.
+Selection of warehouse for a batched item is different. In case of batched items, warehouse where the batch is nearer to its expiry will be selected, so it is based on "Expiry First" selection.
+
 ## How to create Pick List
 
 1. Go To Pick List, click on New.
 1. Set Company.
 1. Select the Purpose of Pick List. There are following options under Purpose.
 
-  - **Delivery against Sales Order:** This option will let you add items from Sales Order. After stock picking new delivery note can be created based on the warehouse from which items were picked.
+- **Delivery against Sales Order:** This option will let you add items from Sales Order. After stock picking new delivery note can be created based on the warehouse from which items were picked.
 
-  - **Material Transfer for Manufacture:** This will let you select Work Order from which raw materials will be pulled for picking. You will be presented with an option to select the number of finished goods item for which you want to pick raw materials for. Once the stock picking is done you can create Stock Entry for the picked items i.e., raw materials.
+- **Material Transfer for Manufacture:** This will let you select Work Order from which raw materials will be pulled for picking. You will be presented with an option to select the number of finished goods item for which you want to pick raw materials for. Once the stock picking is done you can create Stock Entry for the picked items i.e., raw materials.
 
-  - **Material Transfer:** This will let you select Material Request for which you want to pick items for. After stock picking you can create Stock Entry with stock entry type for the picked items.
+- **Material Transfer:** This will let you select Material Request for which you want to pick items for. After stock picking you can create Stock Entry with stock entry type for the picked items.
 
 1. Parent Warehouse: If parent warehouse is selected, warehouses only under that parent warehouse will be suggested.
 1. Get Item Locations: Once items to be picked is finalized you can click on the get item locations button to get warehouse selection for each item.
 Note: Since warehouse will be automatically fetched if you get item from any reference document. This button can be useful when you manually add additional item or change the quantity of the existing items in the item locations table.
 1. Item Locations: This will have the information of the item location (warehouse), serial no for serialized items and batch no for batched items.
 
-## How does Pick List Work
-
-Pick list selects the warehouse where selected items are present on FIFO (First-In-First-Out) basis.
-For Serialized items, warehouse with serial numbers will be also selected on the basis of FIFO.
-Selection of warehouse for a batched item is bit different. In case of batched items, warehouse where the batch is nearer to expiry will be selected.
-
 ### Create Pick List from Sales Order
 
-1. Go to pending to deliver Sales Order
+1. Go to Sales Order (with Pending To Deliver state)
 1. Click on Create button and then click Pick List option
 1. Once you click Pick List, all the data required for Pick List will be fetched from sales order.
 1. You should be able to see the item locations table with the warehouse selected for each item.
@@ -54,7 +53,6 @@ Selection of warehouse for a batched item is bit different. In case of batched i
 > - Further document like Delivery Note can be created only if the Pick List is submitted.
 
 ### Create Pick List from Multiple Sales orders
-
 
 1. Go to Pick List, click on New.
 1. Set Company.
