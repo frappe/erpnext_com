@@ -24,7 +24,7 @@
 					<p class='text-muted  mb-1'>or {{ plan.pricing.symbol }}{{ plan.pricing.amount|int }} billed yearly</p>
 					<!-- <p class='text-muted '>(Inclusive of Taxes)</p> -->
 
-					<button class='btn btn-primary mt-2 btn-sm mb-4' onclick='redirect_to_signup('signup', '{{ plan.name }}')'>Start 14 Day Trial</button>
+					<button class='btn btn-primary mt-2 btn-sm mb-4' onclick="redirect_to_signup('signup', '{{ plan.name }}')">Start 14 Day Trial</button>
 
 					{% for feature in base_features %}
 					<div class='mb-2'>
