@@ -4,13 +4,13 @@ add_breadcrumbs: 1
 show_sidebar: 0
 
 metatags:
- description: A pick list is a document that indicates which items should be taken from your inventory to fulfill orders. This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many SKUs.
+ description: A Pick List is a document that indicates which items should be taken from your inventory to fulfill orders. This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many SKUs.
  keywords: Pick List, Picking Slip, frappe, Pick Ticket, erpnext new features, erp, open source erp, free erp, stock
 ---
 
 ## Pick List
 
-A pick list is a document that indicates which items should be taken from your inventory to fulfill orders. This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many SKUs.
+A Pick List is a document that indicates which items should be taken from your inventory to fulfill orders. This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many SKUs.
 
 To access Pick List, go to:
 
@@ -41,16 +41,35 @@ Selection of warehouse for a batched item is bit different. In case of batched i
 
 ### Create Pick List from Sales Order
 
-Note: You can create pick list only for sales orders which has pending items to be delivered.
-
 1. Go to pending to deliver Sales Order
 1. Click on Create button and then click Pick List option
-1. Once you click Pick List, all the data required for pick list will be fetched from sales order.
+1. Once you click Pick List, all the data required for Pick List will be fetched from sales order.
 1. You should be able to see the item locations table with the warehouse selected for each item.
 1. Save this document and then this document can be forwarded to stock picker.
 1. Submit the document once the stock picking is done and the picked item is updated in the document accordingly.
 
-Note: You can create further document like Delivery Note only if the pick list is submitted.
+> **Note:**
+>
+> - Pick list can only be created for Sales Orders which has pending items to be delivered.
+> - Further document like Delivery Note can be created only if the Pick List is submitted.
+
+### Create Pick List from Multiple Sales orders
+
+
+1. Go to Pick List, click on New.
+1. Set Company.
+1. Select the Purpose of Pick List as **Delivery Against Sales Order**.
+1. Set Customer.
+1. Now click the **Get Items** button on the top right of the form.
+1. You'll get the list of all the sales order for the selected customer. From here you can select multiple Sales Orders.
+1. All items from the selected Sales Orders will be pulled to the item locations table with warehouse for each item.
+1. Save the document and then this document can be forwarded to stock picker.
+1. Submit the document once the stock picking is done and picked item quantities are updated in the document accordingly.
+
+> **Note:**
+>
+> - Pick list can only be created for Sales Orders which has pending items to be delivered.
+> - Further document like Delivery Note can be created only if the Pick List is submitted.
 
 ### Create Pick List from Work Order
 
@@ -60,6 +79,10 @@ Note: You can create further document like Delivery Note only if the pick list i
 
 > Home > Material Request > Pick List
 
+
+### Create Delivery Note from Pick List
+
+### Create Stock Entry from Pick List
 
 Pick list will suggest the location to be picked.
 This stores all the information required about the item to be picked
