@@ -16,12 +16,12 @@ To access Pick List, go to:
 
 > Home > Stock > Pick List
 
-## How does Pick List Work
+## 1. How does Pick List Work
 
 Pick list selects warehouse where item is available on FIFO (First-In-First-Out) basis.
 Selection of warehouse for a batched item is different. In case of batched items, warehouse where the batch is nearer to its expiry will be selected, so it is based on "Expiry First" selection.
 
-## How to create Pick List
+## 2. How to create Pick List
 
 1. Go To Pick List, click on New.
 1. Set Company.
@@ -39,7 +39,7 @@ Selection of warehouse for a batched item is different. In case of batched items
 
 1. Item Locations: This will have the information of the item location (warehouse), serial no for serialized items and batch no for batched items.
 
-### Create Pick List from Sales Order
+### 2.1. Create Pick List from Sales Order
 
 1. Go to Sales Order.
 1. Click on **Create** button on the top right of the form and then click **Pick List** option.
@@ -53,7 +53,7 @@ Selection of warehouse for a batched item is different. In case of batched items
 > - Pick list can only be created for Sales Orders which has pending items to be delivered.
 > - Further document like Delivery Note can be created only if the Pick List is submitted.
 
-### Create Pick List from Multiple Sales orders
+### 2.2. Create Pick List from Multiple Sales orders
 
 1. Go to Pick List, click on New.
 1. Set Company.
@@ -70,7 +70,7 @@ Selection of warehouse for a batched item is different. In case of batched items
 > - Pick list can only be created for Sales Orders which has pending items to be delivered.
 > - Further document like Delivery Note can be created only after the Pick List is submitted.
 
-### Create Pick List from Work Order
+### 2.3. Create Pick List from Work Order
 
 1. Go to Work Order.
 1. Click **Create Pick List** button.
@@ -84,14 +84,14 @@ Selection of warehouse for a batched item is different. In case of batched items
 > - Pick list can only be created for Work Orders that are still in the state of 'Not Started' or 'In Progress'.
 > - Further document like Stock Entry can be created only after the Pick List is submitted.
 
-### Create Pick List from Material Request
+### 2.4. Create Pick List from Material Request
 
 > Home > Material Request > Pick List
 
 
-### Create Delivery Note from Pick List
+### 2.5. Create Delivery Note from Pick List
 
-### Create Stock Entry from Pick List
+### 2.6. Create Stock Entry from Pick List
 
 Pick list will suggest the location to be picked.
 This stores all the information required about the item to be picked
