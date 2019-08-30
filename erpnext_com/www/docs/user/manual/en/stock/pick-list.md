@@ -13,7 +13,7 @@ metatags:
 **A Pick List is a document that indicates which items should be taken from your inventory to fulfill orders.**
 
 This is particularly useful for shippers with a large amount of inventory, volume of orders, or customers ordering many SKUs.
-Pick list selects Warehouse where item is available on FIFO (First-In-First-Out) basis.
+Pick list selects Warehouse where an Item is available on FIFO (First-In-First-Out) basis.
 Selection of Warehouse for a batched item is different. In case of batched items, Warehouse where the batch is nearer to its expiry will be selected.
 
 To access Pick List, go to:
@@ -39,11 +39,11 @@ Before creating and using a Pick List, it is advised that you have the following
 
    - **Material Transfer:** This will let you select Material Request for which you want to pick items. After picking the stock you can create Stock Entry for the picked items.
 
-1. Add Item and quantity of item you want to pick in the item locations table. You can then click on **Get Item Locations** to get the Warehouse and other details for each item.
+1. Add Item and the quantity you want to pick in the Item Locations table. Click on **Get Item Locations** to get the Warehouse and other details for each item.
 
 1. **Parent Warehouse:** If parent Warehouse is selected, Warehouses only under that parent Warehouse will be suggested.
 
-1. **Get Item Locations:** Once items to be picked is finalized you can click on the **Get Item Locations** button to get Warehouse selection for each item. Since Warehouse will be automatically fetched if you get item from any reference document, this button can be useful when you manually add additional items or change the quantity of the existing items in the Item Locations table.
+1. **Get Item Locations:** Once items to be picked is finalized you can click on the **Get Item Locations** button to get Warehouse selection for each item. Since Warehouse will be automatically fetched if you get an Item from any reference document, this button can be useful when you manually add additional items or change the quantity of the existing items in the Item Locations table.
 
 1. **Item Locations:** This will have the information of the item location (Warehouse), serial number for serialized items and batch no for batched items.
 <img class='screenshot' alt='Item Locations' src='{{docs_base_url}}/assets/img/stock/pick-list-item-locations.png'>
@@ -58,7 +58,7 @@ Before creating and using a Pick List, it is advised that you have the following
 1. Click on **Create** button on the top right of the form and then click **Pick List** option.
 1. Once you click Pick List, all the data required for Pick List will be fetched from Sales Order.
 1. You should be able to see the item locations table with the Warehouse selected for each item.
-1. Save this document and it can used for stock picking.
+1. Save this document and it can be used for stock picking by the person performing this activity.
 1. Submit the document once the stock picking is done and picked item quantities are updated in the document.
 
 **Tip:** You can create a Pick List for multiple Sales Order from the same Customer. Click on Get Items and select the Sales Orders.
@@ -72,11 +72,11 @@ Before creating and using a Pick List, it is advised that you have the following
 
 1. Go to Work Order.
 1. Click **Create Pick List** button.
-1. You'll see the dialog box asking for the quantity of Finished Goods Item. This is required to calculate the number raw material items required to manufacture the entered quantity of Finished Goods Item.
+1. You'll see the dialog box asking for the quantity of Finished Goods Item. This is required to calculate the number of raw material items required to manufacture the entered quantity of Finished Goods Item.
 <img class='screenshot' alt='Dailog For qty' src='{{docs_base_url}}/assets/img/stock/pick-list-dialog-for-qty.png'>
 
 1. You should be able to see the item locations table with the Warehouse selected for each raw material item.
-1. Save this document and then this document can be forwarded to stock picker.
+1. Save this document and then this document can be forwarded to the person who is picking the stock.
 1. Submit the document once the stock picking is done and the picked item is updated in the document accordingly.
 
 > **Note:**
@@ -89,7 +89,7 @@ Before creating and using a Pick List, it is advised that you have the following
 1. Go to Material Request.
 1. Click on **Create** button and then click **Pick List** option.
 1. You should be able to see the item locations table with the Warehouse selected for each item in Material Request.
-1. Save this document and then this document can be forwarded to stock picker.
+1. Save this document and then this document can be forwarded to the person picking the stock.
 1. Submit the document once the stock picking is done and the picked item is updated in the document accordingly.
 
 > **Note:**
