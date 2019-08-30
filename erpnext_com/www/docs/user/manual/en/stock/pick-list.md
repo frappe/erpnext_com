@@ -8,7 +8,7 @@ metatags:
  keywords: Pick List, Picking Slip, frappe, Pick Ticket, erpnext new features, erp, open source erp, free erp, stock
 ---
 
-## Pick List
+# Pick List
 
 **A Pick List is a document that indicates which items should be taken from your inventory to fulfill orders.**
 
@@ -29,8 +29,8 @@ Before creating and using a Pick List, it is advised that you have the following
 
 ## 2. How to create Pick List
 
-1. Go To Pick List, click on New.
-1. Set Company.
+1. Go to Pick List, click on New.
+1. Set the Company.
 1. Select the Purpose of Pick List. These are the options under Purpose:
 
    - **Delivery against Sales Order:** This option will let you add items from a Sales Order. After submitting Pick List a new Delivery Note can be created based on the Warehouse from which items were picked.
@@ -54,7 +54,7 @@ Before creating and using a Pick List, it is advised that you have the following
 
 ### 2.1 Create Pick List from Sales Order
 
-1. Go to Sales Order.
+1. Go to a [Sales Order](/docs/user/manual/en/selling/sales-order).
 1. Click on **Create** button on the top right of the form and then click **Pick List** option.
 1. Once you click Pick List, all the data required for Pick List will be fetched from Sales Order.
 1. You should be able to see the item locations table with the Warehouse selected for each item.
@@ -70,7 +70,7 @@ Before creating and using a Pick List, it is advised that you have the following
 
 ### 2.2 Create Pick List from Work Order
 
-1. Go to Work Order.
+1. Go to a [Work Order](/docs/user/manual/en/stock/work-order).
 1. Click **Create Pick List** button.
 1. You'll see the dialog box asking for the quantity of Finished Goods Item. This is required to calculate the number of raw material items required to manufacture the entered quantity of Finished Goods Item.
 <img class='screenshot' alt='Dailog For qty' src='{{docs_base_url}}/assets/img/stock/pick-list-dialog-for-qty.png'>
@@ -86,7 +86,7 @@ Before creating and using a Pick List, it is advised that you have the following
 
 ### 2.3 Create Pick List from Material Request
 
-1. Go to Material Request.
+1. Go to a [Material Request](/docs/user/manual/en/stock/material-request).
 1. Click on **Create** button and then click **Pick List** option.
 1. You should be able to see the item locations table with the Warehouse selected for each item in Material Request.
 1. Save this document and then this document can be forwarded to the person picking the stock.
