@@ -14,7 +14,7 @@ hide_in_installer = True
 
 website_context = {
 	"repo": "frappe/erpnext_com",
-	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo-blue.svg',
+	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo.svg',
 	'brand_name': 'ERPNext',
 	"brand_html": "ERPNext",
 	"top_bar_items": [
