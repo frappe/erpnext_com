@@ -19,12 +19,25 @@
 	<meta name="twitter:description" content="ERPNext is the world's top 100% open source ERP software. ERPNext supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare">
 	<!-- <meta name="twitter:image" content="{{ frappe.utils.get_url() }}/assets/erpnext_com/img/home/social.png"> -->
 	<meta name="twitter:card" content="summary_large_image">
+	<link rel="stylesheet" href="/assets/erpnext_com/css/rotate.css">
 {% endblock %}
 
 {% block content %}
 <section class='top-section'>
 	<div class='container'>
-	<h1>Open Source Alternative to <span class="rotate">SAP</span></h1>
+	<h1 class="ah-headline">
+		<span>Open Source Alternative to</span>
+		<span class="ah-words-wrapper">
+			<b class="is-visible">SAP</b>
+			<b>Oracle</b>
+			<b>Salesforce</b>
+			<b>NetSuite</b>
+			<b>MS Dynamics</b>
+			<b>Zoho</b>
+			<b>Freshworks</b>
+		</span>
+		<!-- <span class="rotate">SAP</span> -->
+	</h1>
 	<p class='lead'>ERPNext is the world's best 100% open source ERP.
 	<p class="mt-4">
 		<a class="btn btn-primary btn-md" href="/signup?plan=P-Standard#personal-details">Start Free Trial</a>
@@ -137,7 +150,26 @@
 
 {% include "erpnext_com/templates/includes/signup_footer.html" %}
 
+
+{% block script %}
+	<script src="/assets/erpnext_com/js/rotate.js"></script>
+{% endblock %}
+
 <script>
+	frappe.ready(() => {
+		$('.container').animatedHeadline({
+			animationType: "slide",
+			animationDelay: 2500,
+			barAnimationDelay: 3800,
+			barWaiting: 800,
+			lettersDelay: 50,
+			typeLettersDelay: 150,
+			selectionDuration: 500,
+			typeAnimationDelay: 1300,
+			revealDuration: 600,
+			revealAnimationDelay: 1500
+		  });
+	})
 	let words = (function () {
 		let words = [
 			"SAP",
@@ -192,7 +224,7 @@
 		};
 	})();
 
-	words.init();
+	//words.init();
 </script>
 <style>
 @-moz-keyframes
@@ -232,7 +264,6 @@ fade-it {
 .rotate {
   display: inline-block;
   visibility: visible;
-  color: #C53030;
   color: #F6AD55;
 }
 
