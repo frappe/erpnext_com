@@ -63,6 +63,7 @@ def get_context(context):
 			'pricing': business_plan_pricing,
 			'storage': business_plan.space,
 			'emails': business_plan.emails,
+			'minimum_users': 5,
 			'base_features': ['all_modules', 'email_support', 'backup'],
 			'features': [
 				{
@@ -104,6 +105,7 @@ def get_context(context):
 			'pricing': enterprise_plan_pricing,
 			'storage': enterprise_plan.space,
 			'emails': enterprise_plan.emails,
+			'minimum_users': 5,
 			'base_features': ['all_modules', 'priority_support', 'backup'],
 			'features': [
 				{

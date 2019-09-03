@@ -6,12 +6,14 @@
 	<a class='btn btn-primary mt-2 btn-sm mb-4' href="/contact-form">Contact Sales</a>
 {% endmacro %}
 
-{% macro heading_with_pricing(name, symbol, monthly_amount, amount) %}
+{% macro heading_with_pricing(name, symbol, monthly_amount, amount, minimum_users) %}
+<div class="mb-4">
 	<h2>{{ symbol }} {{ monthly_amount|int }}</h2>
-	<p class=' mb-1'>Per active user per month</p>
-	<p class='text-muted  mb-1'>or {{ symbol }}{{ amount|int }} billed yearly</p>
-	<button class='btn btn-primary mt-2 btn-sm mb-4'
+	<p class=' mb-1'>Per user per month</p>
+	<p class='text-muted  mb-1'>or {{ symbol }}{{ amount|int }} yearly, minimum <b>{{ minimum_users }}</b> users</p>
+	<button class='btn btn-primary mt-2 btn-sm'
 		onclick="redirect_to_signup('signup', '{{ name }}')">Start 14 Day Trial</button>
+</div>
 {% endmacro %}
 
 {% macro feature_item(feature) %}
@@ -46,13 +48,21 @@
 					plan.name,
 					plan.pricing.symbol,
 					plan.pricing.monthly_amount,
-					plan.pricing.amount
+					plan.pricing.amount,
+					plan.minimum_users
 				) }}
 			{% endif %}
 
 			{% for feature_name in plan.base_features %}
 				{{ feature_item(base_features[feature_name]) }}
 			{% endfor %}
+			{% if plan.minimum_users and False %}
+			<!-- Intentionally hidden -->
+			<div class='mb-2 d-flex'>
+				<svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F6AD55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+				<span class="align-self-center mr-2">Minimum {{ plan.minimum_users }} Users</span>
+			</div>
+			{% endif %}
 		</div>
 		<div class="card-footer bg-white pt-0 pb-3" style="border: unset;">
 			<hr>
