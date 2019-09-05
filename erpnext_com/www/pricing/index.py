@@ -24,23 +24,28 @@ def get_context(context):
 	context.base_features = {
 		'all_modules': {
 			'title': 'All Modules',
-			'content': 'Accounting, Inventory, HR and more'
+			'content': 'Accounting, Inventory, HR and more',
+			'bold': False
 		},
 		'email_support': {
 			'title': 'Email Support',
-			'content': 'Email Support during bussiness hours'
+			'content': 'Email Support during bussiness hours',
+			'bold': False
 		},
 		'backup': {
 			'title': 'Backup + Redundancy',
-			'content': 'Daily offsite backups on AWS'
+			'content': 'Daily offsite backups on AWS',
+			'bold': False
 		},
 		'priority_support': {
 			'title': 'Priority Support',
-			'content': '24 hours priority support'
+			'content': 'High priority support with shorter SLA',
+			'bold': False
 		},
 		'account_manager': {
 			'title': 'Account Manager',
-			'content': 'Dedicated account manager to fulfill your requirements.'
+			'content': 'Dedicated account manager to fulfill your requirements.',
+			'bold': True
 		}
 	}
 
@@ -49,14 +54,14 @@ def get_context(context):
 	def get_plan_and_pricing(plan_name):
 		plan = frappe.get_doc('Base Plan', plan_name)
 		pricing = [d.as_dict() for d in plan.amounts if d.currency == context.currency][0]
-		pricing['monthly_amount'] = pricing['monthly_amount'] / plan.users
-		pricing['amount'] = pricing['amount'] / plan.users
+		# pricing['monthly_amount'] = pricing['monthly_amount'] / plan.users
+		# pricing['amount'] = pricing['amount'] / plan.users
 		pricing['symbol'] = context.symbol
 
 		return plan, pricing
 
-	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard-2019')
-	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro-2019')
+	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro')
 
 	context.plans = [
 		{
@@ -147,7 +152,7 @@ def get_context(context):
 			'title': 'Enterprise',
 			'no_pricing': True,
 			'description': 'Starts at ' + (context.symbol + "150" if context.currency == "USD" else "7000") + ' per user per month',
-			'base_features': ['all_modules', 'account_manager', 'priority_support', 'backup'],
+			'base_features': ['account_manager', 'all_modules', 'priority_support', 'backup'],
 			'features': [
 				{
 					'title': 'Organisations',
