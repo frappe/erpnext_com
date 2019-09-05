@@ -6,11 +6,11 @@
 	{% if subtitle %}
 	<p class='lead text-center'>{{ subtitle }}</p>
 	{% endif %}
-	<div class='row mt-4'>
+	<div class="row {{ 'mt-5' if heading else 'mt-4' }}">
 		{% for card in features %}
 		<div class='col-sm-4 mb-4'>
 			{% if card.url %}
-			<a href="{{ card.url }}" class='card h-100 card-with-link'>
+			<a href="{{ card.url }}" class='card h-100'>
 			{% else %}
 			<div class='card h-100'>
 			{% endif %}
