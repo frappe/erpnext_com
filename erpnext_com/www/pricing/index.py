@@ -60,8 +60,8 @@ def get_context(context):
 
 		return plan, pricing
 
-	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard-2019')
-	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro-2019')
+	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro')
 
 	context.plans = [
 		{
@@ -113,7 +113,7 @@ def get_context(context):
 			'storage': enterprise_plan.space,
 			'emails': enterprise_plan.emails,
 			'minimum_users': 5,
-			'base_features': ['all_modules', 'priority_support', 'backup'],
+			'base_features': ['account_manager', 'all_modules', 'priority_support', 'backup'],
 			'features': [
 				{
 					'title': 'Organisations',
@@ -151,8 +151,9 @@ def get_context(context):
 			'name': 'Contact Us',
 			'title': 'Enterprise',
 			'no_pricing': True,
-			'description': 'Starts at ' + ("$150" if context.currency == "USD" else "₹7000") + ' per user per month',
+			'description': 'Starts at ' + ("$150" if context.currency == "USD" else "₹7000") + ' per user per year',
 			'base_features': ['account_manager', 'all_modules', 'priority_support', 'backup'],
+			'minimum_users': 20,
 			'features': [
 				{
 					'title': 'Organisations',
