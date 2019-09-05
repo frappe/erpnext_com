@@ -151,7 +151,7 @@ def get_context(context):
 			'name': 'Contact Us',
 			'title': 'Enterprise',
 			'no_pricing': True,
-			'description': 'Starts at ' + (context.symbol + "150" if context.currency == "USD" else "7000") + ' per user per month',
+			'description': 'Starts at ' + ("$150" if context.currency == "USD" else "₹7000") + ' per user per month',
 			'base_features': ['account_manager', 'all_modules', 'priority_support', 'backup'],
 			'features': [
 				{
