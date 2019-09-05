@@ -2,17 +2,17 @@
 
 {% macro heading(name, description) %}
 	<h2>{{ name }}</h2>
-	<p class=' mb-1'>{{ description }}</p>
+	<p class='mb-1'>{{ description }}</p>
 	<a class='btn btn-primary mt-2 btn-sm mb-4' href="/contact-form">Contact Sales</a>
 {% endmacro %}
 
 {% macro heading_with_pricing(name, symbol, monthly_amount, amount, minimum_users) %}
 <div class="mb-4">
 	<h2>{{ symbol }} {{ monthly_amount|int }}</h2>
-	<p class=' mb-1'>Per user per month</p>
-	<p class='text-muted  mb-1'>or {{ symbol }}{{ amount|int }} yearly, minimum <b>{{ minimum_users }}</b> users</p>
+	<p class='text-muted mb-1'>Per user per month or {{ symbol }}{{ amount|int }} yearly</p>
 	<button class='btn btn-primary mt-2 btn-sm'
 		onclick="redirect_to_signup('signup', '{{ name }}')">Start 14 Day Trial</button>
+	<p class='text-muted small mt-2'>Minimum {{ minimum_users }} Users</p>
 </div>
 {% endmacro %}
 
@@ -37,8 +37,12 @@
 {% endmacro %}
 
 {% macro plan_card(plan, highlight) %}
-<div class='col-sm-4 mb-4'>
-	<div class='card h-100 {{ "//shadow" if highlight else "" }}'>
+<div class='col-sm-4 mb-4' style="padding: 0px;">
+	<div class='card h-100 pb-4'
+		{% if highlight %}
+			style="box-shadow: 0 20px 25px 5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); z-index: 1; margin: 0px -5px;"
+		{% endif %}
+	>
 		<div class='card-body text-left'>
 			<h5 class='card-title text-muted'>{{ plan.title }}</h5>
 			{% if plan.no_pricing %}
@@ -67,16 +71,12 @@
 		<div class="card-footer bg-white pt-0 pb-3" style="border: unset;">
 			<hr>
 			{% for feature in plan.features %}
-			<div
-			{% if loop.index == 3 %}
-				style='min-height: 190px;'
-			{% endif %}
-			>
+			<div>
 				<h6 class='mt-5'>
 					{{ feature.title }}
 				</h6>
 					{% for subfeature in feature.content %}
-					<p class='text-muted mb-2'>{{ subfeature }}</p>
+					<p class='text-muted mb-2' style="font-size: 0.95em">{{ subfeature }}</p>
 					{% endfor %}
 
 			</div>

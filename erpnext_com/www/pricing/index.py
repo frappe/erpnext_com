@@ -49,17 +49,19 @@ def get_context(context):
 	def get_plan_and_pricing(plan_name):
 		plan = frappe.get_doc('Base Plan', plan_name)
 		pricing = [d.as_dict() for d in plan.amounts if d.currency == context.currency][0]
+		pricing['monthly_amount'] = pricing['monthly_amount'] / plan.users
+		pricing['amount'] = pricing['amount'] / plan.users
 		pricing['symbol'] = context.symbol
 
 		return plan, pricing
 
-	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard')
-	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro')
+	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard-2019')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro-2019')
 
 	context.plans = [
 		{
 			'name': business_plan.name,
-			'title': business_plan.name.replace('P-', ''),
+			'title': business_plan.title,
 			'pricing': business_plan_pricing,
 			'storage': business_plan.space,
 			'emails': business_plan.emails,
@@ -83,7 +85,7 @@ def get_context(context):
 				{
 					'title': 'Customization',
 					'content': [
-						'Customized Print Formats and Email Alerts',
+						'Print Formats and Email Alerts',
 						'30 Custom Fields',
 						'10 Custom Forms, 10 Custom Scripts'
 					]
@@ -101,7 +103,7 @@ def get_context(context):
 		},
 		{
 			'name': enterprise_plan.name,
-			'title': enterprise_plan.name.replace('P-', ''),
+			'title': enterprise_plan.title,
 			'pricing': enterprise_plan_pricing,
 			'storage': enterprise_plan.space,
 			'emails': enterprise_plan.emails,
@@ -125,7 +127,7 @@ def get_context(context):
 				{
 					'title': 'Customization',
 					'content': [
-						'Customized Print Formats and Email Alerts',
+						'Print Formats and Email Alerts',
 						'Unlimited Custom Fields',
 						'Unlimited Custom Forms and Scripts'
 					]
@@ -141,10 +143,10 @@ def get_context(context):
 			],
 		},
 		{
-			'name': '$$$$$',
+			'name': 'Contact Us',
 			'title': 'Enterprise',
 			'no_pricing': True,
-			'description': 'Enterprise Implementation and Customizations',
+			'description': 'Starts at ' + (context.symbol + "150" if context.currency == "USD" else "7000") + ' per user per month',
 			'base_features': ['all_modules', 'account_manager', 'priority_support', 'backup'],
 			'features': [
 				{
@@ -164,7 +166,7 @@ def get_context(context):
 				{
 					'title': 'Customization',
 					'content': [
-						'Customized Print Formats and Email Alerts',
+						'Print Formats and Email Alerts',
 						'Unlimited Custom Fields',
 						'Unlimited Custom Forms and Scripts'
 					]
