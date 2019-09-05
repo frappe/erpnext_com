@@ -1,15 +1,16 @@
 <!-- title: ERPNext Pricing -->
 
-{% macro heading(name, description) %}
+{% macro heading(name, description, minimum_users) %}
 	<h2>{{ name }}</h2>
-	<p class='mb-1'>{{ description }}</p>
-	<a class='btn btn-primary mt-2 btn-sm mb-4' href="/contact-form">Contact Sales</a>
+	<p class='mb-1' style="min-height: 50px; width: 90%">{{ description }}</p>
+	<a class='btn btn-primary mt-2 btn-sm' href="/contact-form">Contact Sales</a>
+	<p class='text-muted small mt-2'>Minimum {{ minimum_users }} Users</p>
 {% endmacro %}
 
 {% macro heading_with_pricing(name, symbol, monthly_amount, amount, minimum_users) %}
 <div class="mb-4">
 	<h2>{{ symbol }} {{ monthly_amount|int }}</h2>
-	<p class='text-muted mb-1' style="min-height: 55px;">Per user per month or {{ symbol }}{{ amount|int }} yearly</p>
+	<p class='text-muted mb-1' style="min-height: 50px; width: 90%">Per user per month or {{ symbol }}{{ amount|int }} yearly</p>
 	<button class='btn btn-primary mt-2 btn-sm'
 		onclick="redirect_to_signup('signup', '{{ name }}')">Start 14 Day Trial</button>
 	<p class='text-muted small mt-2'>Minimum {{ minimum_users }} Users</p>
@@ -25,7 +26,7 @@
 	</svg>
 	<span class="align-self-center mr-2">
 	{% if feature.bold %}
-		<b>{{ feature.title }}</b>
+		<span style="font-weight: 600">{{ feature.title }}</span>
 	{% else %}
 		{{ feature.title }}
 	{% endif %}
@@ -52,7 +53,7 @@
 		<div class='card-body text-left'>
 			<h5 class='card-title text-muted'>{{ plan.title }}</h5>
 			{% if plan.no_pricing %}
-				{{ heading(plan.name, plan.description) }}
+				{{ heading(plan.name, plan.description, plan.minimum_users) }}
 			{% else %}
 				{{ heading_with_pricing(
 					plan.name,
