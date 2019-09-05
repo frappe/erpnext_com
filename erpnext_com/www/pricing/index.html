@@ -1,71 +1,119 @@
 <!-- title: ERPNext Pricing -->
 
-<section class='top-section'>
-	<div class='container'>
-	<div class='text-center'>
-		<h1 class='pt-4'>ERPNext Cloud Pricing</h1>
-		<p class='lead pb-3 mx-auto'>Solid hosting, priority support and backups.</p>
-	</div>
+{% macro heading(name, description) %}
+	<h2>{{ name }}</h2>
+	<p class='mb-1'>{{ description }}</p>
+	<a class='btn btn-primary mt-2 btn-sm mb-4' href="/contact-form">Contact Sales</a>
+{% endmacro %}
 
-	<div class='row mt-4'>
-
-		{% for plan in plans %}
-		<div class='col-sm-4 mb-4' style='padding: 0px'>
-			<div class='card h-100'
-			{% if loop.index == 2 %}
-				style='box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2); z-index: 1; margin: 0px -5px;'
-			{% endif %}
-			>
-				<div class='card-body text-left'>
-					<h4 class='card-title'>{{ plan.title }}</h4>
-
-					<h3>{{ plan.pricing.symbol }} {{ plan.pricing.monthly_amount|int }}</h3>
-					<p class=' mb-1'>Per active user per month</p>
-					<p class='text-muted  mb-1'>or {{ plan.pricing.symbol }}{{ plan.pricing.amount|int }} billed yearly</p>
-					<!-- <p class='text-muted '>(Inclusive of Taxes)</p> -->
-
-					<button class='btn btn-primary mt-2 btn-sm mb-4' onclick="redirect_to_signup('signup', '{{ plan.name }}')">Start 14 Day Trial</button>
-
-					{% for feature in base_features %}
-					<div class='mb-2'>
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
-							{{ feature.title }}
-					</div>
-					<!-- <p class=' mb-2'>{{ feature.content }}</p> -->
-					{% endfor %}
-
-					<hr>
-
-					{% for feature in plan.features %}
-					<div
-					{% if loop.index == 3 %}
-						style='min-height: 190px;'
-					{% endif %}
-					>
-						<h6 class='mt-5'>
-							{{ feature.title }}
-						</h6>
-							{% for subfeature in feature.content %}
-							<p class=' mb-2'>{{ subfeature }}</p>
-							{% endfor %}
-
-					</div>
-					{% endfor %}
-
-				</div>
-			</div>
-		</div>
-		{% endfor %}
-
-	</div>
-
+{% macro heading_with_pricing(name, symbol, monthly_amount, amount, minimum_users) %}
+<div class="mb-4">
+	<h2>{{ symbol }} {{ monthly_amount|int }}</h2>
+	<p class='text-muted mb-1' style="min-height: 55px;">Per user per month or {{ symbol }}{{ amount|int }} yearly</p>
+	<button class='btn btn-primary mt-2 btn-sm'
+		onclick="redirect_to_signup('signup', '{{ name }}')">Start 14 Day Trial</button>
+	<p class='text-muted small mt-2'>Minimum {{ minimum_users }} Users</p>
 </div>
+{% endmacro %}
+
+{% macro feature_item(feature) %}
+<div class='mb-2 d-flex'>
+	<svg class="align-self-center mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+		viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round"
+		stroke-linejoin="round" class="feather feather-check">
+		<polyline points="20 6 9 17 4 12"></polyline>
+	</svg>
+	<span class="align-self-center mr-2">
+	{% if feature.bold %}
+		<b>{{ feature.title }}</b>
+	{% else %}
+		{{ feature.title }}
+	{% endif %}
+	</span>
+	<svg class="align-self-center tooltip-element"
+		data-tippy-content="<span class='small'>{{ feature.content }}</span>" id="{{ feature_name }}"
+		xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+		stroke="#CBD5E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+		class="feather feather-help-circle">
+		<circle cx="12" cy="12" r="10"></circle>
+		<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+		<line x1="12" y1="17" x2="12" y2="17"></line>
+	</svg>
+</div>
+{% endmacro %}
+
+{% macro plan_card(plan, highlight) %}
+<div class='col-sm-4 mb-4' style="padding: 0px;">
+	<div class='card h-100 pb-4'
+		{% if highlight %}
+			style="box-shadow: 0 20px 25px 5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); z-index: 1; margin: 0px -5px;"
+		{% endif %}
+	>
+		<div class='card-body text-left'>
+			<h5 class='card-title text-muted'>{{ plan.title }}</h5>
+			{% if plan.no_pricing %}
+				{{ heading(plan.name, plan.description) }}
+			{% else %}
+				{{ heading_with_pricing(
+					plan.name,
+					plan.pricing.symbol,
+					plan.pricing.monthly_amount,
+					plan.pricing.amount,
+					plan.minimum_users
+				) }}
+			{% endif %}
+
+			{% for feature_name in plan.base_features %}
+				{{ feature_item(base_features[feature_name]) }}
+			{% endfor %}
+			{% if plan.minimum_users and False %}
+			<!-- Intentionally hidden -->
+			<div class='mb-2 d-flex'>
+				<svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F6AD55" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+				<span class="align-self-center mr-2">Minimum {{ plan.minimum_users }} Users</span>
+			</div>
+			{% endif %}
+		</div>
+		<div class="card-footer bg-white pt-0 pb-3" style="border: unset;">
+			<hr>
+			{% for feature in plan.features %}
+			<div>
+				<h6 class='mt-5'>
+					{{ feature.title }}
+				</h6>
+					{% for subfeature in feature.content %}
+					<p class='text-muted mb-2' style="font-size: 0.95em">{{ subfeature }}</p>
+					{% endfor %}
+
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endmacro %}
+
+<section class='top-section section-light'>
+	<div class='container'>
+		<div class='text-center'>
+			<h1 class='pt-4'>ERPNext Cloud Pricing</h1>
+			<p class='lead pb-3 mx-auto'>Solid hosting, priority support and backups.</p>
+		</div>
+
+		<div class='row mt-4'>
+
+			{% for plan in plans %}
+			{{ plan_card(plan, loop.index == 2)}}
+			{% endfor %}
+		</div>
+
+	</div>
 </section>
 
 <section class='section-bg'>
 	<div class='container text-center'>
 		<h2>Support for Self Hosted</h2>
-		<p class=lead>ERPNext is a 100% Free and Open Source Software. We also offer you support for your self hosted instance.</p>
+		<p class=lead>ERPNext is a 100% Free and Open Source Software. We also offer you support for your self hosted
+			instance.</p>
 		<a class='btn btn-primary mt-4' href='/support'>Learn about Support for Self Hosted</a>
 	</div>
 </section>
@@ -77,16 +125,26 @@
 
 			<h5>How do I implement ERPNext?</h5>
 			<p class='mb-5'>
-				ERPNext is designed for self-implementation, and most companies don't need any help, just a bit of determination. To help you, there are tons of videos and other resources that will help you. If you sign up for a paid account, we conduct one-on-one sessions to help you configure the system.</a>
+				ERPNext is designed for self-implementation, and most companies don't need any help, just a bit of
+				determination. To help you, there are tons of videos and other resources that will help you. If you sign
+				up for a paid account, we conduct one-on-one sessions to help you configure the system.</a>
 			</p>
 			<h5>Will self hosting be better?</h5>
-			<p class='mb-5'>It depends. ERPNext is 100% Free and Open Source and depending on your scale and capability, self-hosting may be the right solution for you. <a href=/support>Learn more about our enterprise services.</a><br><br>
+			<p class='mb-5'>It depends. ERPNext is 100% Free and Open Source and depending on your scale and capability,
+				self-hosting may be the right solution for you. <a href=/support>Learn more about our enterprise
+					services.</a> <br><br>
 
-			If you are a  company, the cloud may make more sense for you. If you setup ERPNext on your own, then you start with a base cost of around $40/month for a VPS, then you'll need to pay extra for email, security and backups services. After that you'll spend a few hours installing and setting up everything, and also set aside a few hours of your time each month for maintenance + software updates, or maybe get someone to do that for you. Which gets expensive pretty quick. Frappe Cloud on the other hand, takes away all of that so you can focus on what you do best.</p>
+					If you are a company, the cloud may make more sense for you. If you setup ERPNext on your own, then
+					you start with a base cost of around $40/month for a VPS, then you'll need to pay extra for email,
+					security and backups services. After that you'll spend a few hours installing and setting up
+					everything, and also set aside a few hours of your time each month for maintenance + software
+					updates, or maybe get someone to do that for you. Which gets expensive pretty quick. Frappe Cloud on
+					the other hand, takes away all of that so you can focus on what you do best.</p>
 
 			<h5>Can I get a one-on-one demo?</h5>
 			<p class='mb-5'>
-				Yes, we would be happy to schedule a remote, one-on-one demo. <a href='/contact-form' target='_blank'>Just send us a request for one.</a>
+				Yes, we would be happy to schedule a remote, one-on-one demo. <a href='/contact-form'
+					target='_blank'>Just send us a request for one.</a>
 			</p>
 
 			<h5>Do you have discounts for education institutes?</h5>
@@ -97,16 +155,19 @@
 
 			<h5>Is ERPNext available in my language?</h5>
 			<p class='mb-5'>
-				Most likely yes! ERPNext has been translated to more than 70 languages with the help of the community. <a href='https://translate.erpnext.com' target='_blank'>View the translation portal for a full list of supported languages.</a>
+				Most likely yes! ERPNext has been translated to more than 70 languages with the help of the community.
+				<a href='https://translate.erpnext.com' target='_blank'>View the translation portal for a full list of
+					supported languages.</a>
 			</p>
 
 			<h5>Can I pay via credit card or wire transfer?</h5>
-			<p class='mb-5'>Yes, you can make payment from within your account using your credit card. If you prefer wire us the money, <a href='/pricing/payment'>here are our bank details.</a></p>
+			<p class='mb-5'>Yes, you can make payment from within your account using your credit card. If you prefer
+				wire us the money, <a href='/pricing/payment'>here are our bank details.</a></p>
 
 			<!-- <h5>Can I extend my trial period?</h5>
-			<p class='mb-5'>
-				Yes, we would be happy to extend your trial, <a href='mailto:hello@erpnext.com?subject=Please extend my trial&body=Please extend my trial account id {your account here}'>just get in touch</a>.
-			</p> -->
+					<p class='mb-5'>
+						Yes, we would be happy to extend your trial, <a href='mailto:hello@erpnext.com?subject=Please extend my trial&body=Please extend my trial account id {your account here}'>just get in touch</a>.
+					</p> -->
 			<div class='text-center'>
 				<a class="text-muted text-link" href='/pricing/faq'>More FAQs</a>
 			</div>
@@ -115,8 +176,15 @@
 	</div>
 </section>
 
+<script src="https://unpkg.com/popper.js@1"></script>
+<script src="https://unpkg.com/tippy.js@4"></script>
 
 <script>
+	tippy('.tooltip-element', {
+		arrow: true,
+		arrowType: 'round', // or 'sharp' (default)
+		animation: 'fade',
+	})
 	function redirect_to_signup(page, plan) {
 		var url = page + '?plan=' + plan;
 		// concat existing params to url
@@ -126,7 +194,6 @@
 </script>
 
 <style>
-
 	.pricing-card {
 		box-shadow: none;
 	}
@@ -138,5 +205,4 @@
 		background-color: #8383ff;
 		border-color: #898bff;
 	}
-
 </style>

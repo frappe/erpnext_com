@@ -21,79 +21,57 @@ def get_context(context):
 		context.currency = 'USD'
 		context.symbol = '$'
 
-	context.base_features = [
-		{
+	context.base_features = {
+		'all_modules': {
 			'title': 'All Modules',
-			'content': 'Unlimited features with Accounting, Inventory, HR and Payroll'
+			'content': 'Accounting, Inventory, HR and more',
+			'bold': False
 		},
-		{
-			'title': 'Priority Support',
-			'content': 'In app priority support from the team that brought you ERPNext'
+		'email_support': {
+			'title': 'Email Support',
+			'content': 'Email Support during bussiness hours',
+			'bold': False
 		},
-		{
+		'backup': {
 			'title': 'Backup + Redundancy',
-			'content': 'Servers with offsite snapshot backups ensuring max reliability'
+			'content': 'Daily offsite backups on AWS',
+			'bold': False
+		},
+		'priority_support': {
+			'title': 'Priority Support',
+			'content': 'High priority support with shorter SLA',
+			'bold': False
+		},
+		'account_manager': {
+			'title': 'Account Manager',
+			'content': 'Dedicated account manager to fulfill your requirements.',
+			'bold': True
 		}
-	]
+	}
 
 	context.plan_features = ['Server and Emails', 'Customization', 'Integrations + API']
 
 	def get_plan_and_pricing(plan_name):
 		plan = frappe.get_doc('Base Plan', plan_name)
 		pricing = [d.as_dict() for d in plan.amounts if d.currency == context.currency][0]
+		pricing['monthly_amount'] = pricing['monthly_amount'] / plan.users
+		pricing['amount'] = pricing['amount'] / plan.users
 		pricing['symbol'] = context.symbol
 
 		return plan, pricing
 
-	basic_plan, basic_plan_pricing = get_plan_and_pricing('P-Basic')
-	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard')
-	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro')
+	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard-2019')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro-2019')
 
 	context.plans = [
 		{
-			'name': basic_plan.name,
-			'title': basic_plan.name.replace('P-', ''),
-			'pricing': basic_plan_pricing,
-			'storage': basic_plan.space,
-			'emails': basic_plan.emails,
-			'features': [
-				{
-					'title': 'Organisations',
-					'content': [
-						'Single Company',
-					]
-				},
-				{
-					'title': context.plan_features[0],
-					'content': [
-						'2 GB cloud storage',
-						'2000 emails / month',
-						'Extensible via add-ons'
-					]
-				},
-				{
-					'title': context.plan_features[1],
-					'content': [
-						'Customized Print Formats and Email Alerts',
-						'20 Custom Fields',
-						'1 Custom Form'
-					]
-				},
-				{
-					'title': context.plan_features[2],
-					'content': [
-						'Email Integration and REST API'
-					]
-				}
-			],
-
-		},
-		{
 			'name': business_plan.name,
-			'title': business_plan.name.replace('P-', ''),
+			'title': business_plan.title,
 			'pricing': business_plan_pricing,
 			'storage': business_plan.space,
 			'emails': business_plan.emails,
+			'minimum_users': 5,
+			'base_features': ['all_modules', 'email_support', 'backup'],
 			'features': [
 				{
 					'title': 'Organisations',
@@ -102,23 +80,23 @@ def get_context(context):
 					]
 				},
 				{
-					'title': context.plan_features[0],
+					'title': 'Server and Emails ',
 					'content': [
-						'5 GB cloud storage',
+						'10 GB cloud storage',
 						'5000 emails / month',
 						'Extensible via add-ons'
 					]
 				},
 				{
-					'title': context.plan_features[1],
+					'title': 'Customization',
 					'content': [
-						'Customized Print Formats and Email Alerts',
-						'Unlimited Custom Fields',
+						'Print Formats and Email Alerts',
+						'30 Custom Fields',
 						'10 Custom Forms, 10 Custom Scripts'
 					]
 				},
 				{
-					'title': context.plan_features[2],
+					'title': 'Integrations + API',
 					'content': [
 						'Email Integration and REST API',
 						'Payment Gateways',
@@ -130,10 +108,12 @@ def get_context(context):
 		},
 		{
 			'name': enterprise_plan.name,
-			'title': enterprise_plan.name.replace('P-', ''),
+			'title': enterprise_plan.title,
 			'pricing': enterprise_plan_pricing,
 			'storage': enterprise_plan.space,
 			'emails': enterprise_plan.emails,
+			'minimum_users': 5,
+			'base_features': ['all_modules', 'priority_support', 'backup'],
 			'features': [
 				{
 					'title': 'Organisations',
@@ -142,7 +122,7 @@ def get_context(context):
 					]
 				},
 				{
-					'title': context.plan_features[0],
+					'title': 'Server and Emails',
 					'content': [
 						'15 GB cloud storage',
 						'15000 emails / month',
@@ -150,15 +130,54 @@ def get_context(context):
 					]
 				},
 				{
-					'title': context.plan_features[1],
+					'title': 'Customization',
 					'content': [
-						'Customized Print Formats and Email Alerts',
+						'Print Formats and Email Alerts',
 						'Unlimited Custom Fields',
 						'Unlimited Custom Forms and Scripts'
 					]
 				},
 				{
-					'title': context.plan_features[2],
+					'title': 'Integrations + API',
+					'content': [
+						'Email Integration and REST API',
+						'Payment Gateways',
+						'Dropbox, Shopify and AWS'
+					]
+				}
+			],
+		},
+		{
+			'name': 'Contact Us',
+			'title': 'Enterprise',
+			'no_pricing': True,
+			'description': 'Starts at ' + ("$150" if context.currency == "USD" else "₹7000") + ' per user per month',
+			'base_features': ['account_manager', 'all_modules', 'priority_support', 'backup'],
+			'features': [
+				{
+					'title': 'Organisations',
+					'content': [
+						'Unlimited Companies',
+					]
+				},
+				{
+					'title': 'Server and Emails',
+					'content': [
+						'Private Server',
+						'Unlimited storage',
+						'Unlimited emails'
+					]
+				},
+				{
+					'title': 'Customization',
+					'content': [
+						'Print Formats and Email Alerts',
+						'Unlimited Custom Fields',
+						'Unlimited Custom Forms and Scripts'
+					]
+				},
+				{
+					'title': 'Integrations + API',
 					'content': [
 						'Email Integration and REST API',
 						'Payment Gateways',
