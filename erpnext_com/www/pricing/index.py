@@ -149,7 +149,7 @@ def get_context(context):
 		},
 		{
 			'name': 'Contact Us',
-			'title': 'Enterprise',
+			'title': 'Self Hosted',
 			'no_pricing': True,
 			'description': 'Starts at ' + ("$150" if context.currency == "USD" else "₹7000") + ' per user per year',
 			'base_features': ['account_manager', 'all_modules', 'priority_support', 'backup'],
