@@ -24,28 +24,27 @@ def get_context(context):
 	context.base_features = {
 		'all_modules': {
 			'title': 'All Modules',
-			'content': 'Accounting, Inventory, HR and more',
-			'bold': False
+			'content': 'Accounting, Inventory, HR and more'
 		},
 		'email_support': {
-			'title': 'Email Support',
-			'content': 'Email Support during bussiness hours',
-			'bold': False
+			'title': 'Standard Support',
+			'content': 'Support over email during bussiness hours'
 		},
 		'backup': {
 			'title': 'Backup + Redundancy',
-			'content': 'Daily offsite backups on AWS',
-			'bold': False
+			'content': 'Daily offsite backups on AWS'
 		},
 		'priority_support': {
 			'title': 'Priority Support',
-			'content': 'High priority support with shorter SLA',
-			'bold': False
+			'content': 'High priority support with shorter SLA'
+		},
+		'hosting' : {
+			'title': 'Hosting Included',
+			'content': 'Managed hosting on our servers.'
 		},
 		'account_manager': {
 			'title': 'Account Manager',
-			'content': 'Dedicated account manager to fulfill your requirements.',
-			'bold': True
+			'content': 'Dedicated account manager to fulfill your requirements.'
 		}
 	}
 
@@ -71,7 +70,12 @@ def get_context(context):
 			'storage': business_plan.space,
 			'emails': business_plan.emails,
 			'minimum_users': 5,
-			'base_features': ['all_modules', 'email_support', 'backup'],
+			'base_features': [
+				{'title': 'hosting', 'included': 1},
+				{'title': 'account_manager', 'included': 0},
+				{'title': 'all_modules', 'included': 1},
+				{'title': 'email_support', 'included': 1}
+			],
 			'features': [
 				{
 					'title': 'Organisations',
@@ -112,8 +116,13 @@ def get_context(context):
 			'pricing': enterprise_plan_pricing,
 			'storage': enterprise_plan.space,
 			'emails': enterprise_plan.emails,
-			'minimum_users': 5,
-			'base_features': ['account_manager', 'all_modules', 'priority_support', 'backup'],
+			'minimum_users': 10,
+			'base_features': [
+				{'title': 'hosting', 'included': 1},
+				{'title': 'account_manager', 'included': 1},
+				{'title': 'all_modules', 'included': 1},
+				{'title': 'priority_support', 'included': 1}
+			],
 			'features': [
 				{
 					'title': 'Organisations',
@@ -152,7 +161,12 @@ def get_context(context):
 			'title': 'Self Hosted',
 			'no_pricing': True,
 			'description': 'Starts at ' + ("$150" if context.currency == "USD" else "₹7000") + ' per user per year',
-			'base_features': ['account_manager', 'all_modules', 'priority_support', 'backup'],
+			'base_features': [
+				{'title': 'hosting', 'included': 0},
+				{'title': 'account_manager', 'included': 1},
+				{'title': 'all_modules', 'included': 1},
+				{'title': 'priority_support', 'included': 1}
+			],
 			'minimum_users': 20,
 			'features': [
 				{

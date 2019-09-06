@@ -1,10 +1,12 @@
 <!-- title: ERPNext Pricing -->
 
 {% macro heading(name, description, minimum_users) %}
+<div class="mb-4">
 	<h2>{{ name }}</h2>
 	<p class='mb-1' style="min-height: 50px; width: 90%">{{ description }}</p>
 	<a class='btn btn-primary mt-2 btn-sm' href="/contact-form">Contact Sales</a>
 	<p class='text-muted small mt-2'>Minimum {{ minimum_users }} Users</p>
+</div>
 {% endmacro %}
 
 {% macro heading_with_pricing(name, symbol, monthly_amount, amount, minimum_users) %}
@@ -17,19 +19,20 @@
 </div>
 {% endmacro %}
 
-{% macro feature_item(feature) %}
+{% macro feature_item(feature, included) %}
 <div class='mb-2 d-flex'>
-	<svg class="align-self-center mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+	{% if included %}
+	<svg class="align-self-center mr-2" width="20" height="20" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="10" style="fill:none;stroke:#28a745;stroke-width:2px;"/><path d="M15.773,7.719l-6.563,6.562l-2.983,-2.983" style="fill:none;fill-rule:nonzero;stroke:#28a745;stroke-width:2px;"/></svg>
+	<!-- <svg class="align-self-center mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
 		viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round"
 		stroke-linejoin="round" class="feather feather-check">
 		<polyline points="20 6 9 17 4 12"></polyline>
-	</svg>
-	<span class="align-self-center mr-2">
-	{% if feature.bold %}
-		<span style="font-weight: 600">{{ feature.title }}</span>
+	</svg> -->
 	{% else %}
-		{{ feature.title }}
+	<svg class="align-self-center mr-2" width="20" height="20" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="10" style="fill:none;stroke:#F6AD55;stroke-width:2px;"/><path d="M14,8l-6,6" style="fill:none;fill-rule:nonzero;stroke:#F6AD55;stroke-width:2px;"/><path d="M8,8l6,6" style="fill:none;fill-rule:nonzero;stroke:#F6AD55;stroke-width:2px;"/></svg>
 	{% endif %}
+	<span class="align-self-center mr-2">
+		{{ feature.title }}
 	</span>
 	<svg class="align-self-center tooltip-element"
 		data-tippy-content="<span class='small'>{{ feature.content }}</span>" id="{{ feature_name }}"
@@ -64,8 +67,8 @@
 				) }}
 			{% endif %}
 
-			{% for feature_name in plan.base_features %}
-				{{ feature_item(base_features[feature_name]) }}
+			{% for feature in plan.base_features %}
+				{{ feature_item(base_features[feature.title], feature.included) }}
 			{% endfor %}
 			{% if plan.minimum_users and False %}
 			<!-- Intentionally hidden -->
