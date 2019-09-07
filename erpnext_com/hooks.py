@@ -38,7 +38,7 @@ website_context = {
 			{"label": "Partner Listing", "url":"/partners"},
 			{"label": "Become a Partner", "url":"/partners/plans"},
 		]},
-		{"label": "Sign Up", "url": "/signup?plan=P-Pro", "right":1},
+		{"label": "Sign Up", "url": "/signup?plan=P-Standard-2019", "right":1},
 		{"label": "Contact Us", "url": "/contact-form", "right":1, "button": 1},
 	],
 	"hide_login": 1,
