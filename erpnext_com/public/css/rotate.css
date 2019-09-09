@@ -7,12 +7,6 @@
 .ah-headline.type b {
   visibility: hidden;
 }
-.ah-headline.clip span,
-.ah-headline.loading-bar span,
-.ah-headline.slide span {
-  padding: 0.2em 0;
-  display: inline-block;
-}
 .ah-headline.clip .ah-words-wrapper,
 .ah-headline.loading-bar .ah-words-wrapper,
 .ah-headline.slide .ah-words-wrapper,
