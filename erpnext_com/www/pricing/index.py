@@ -28,7 +28,7 @@ def get_context(context):
 		},
 		'email_support': {
 			'title': 'Standard Support',
-			'content': 'Support over email during bussiness hours'
+			'content': 'Standard support during bussiness hours'
 		},
 		'backup': {
 			'title': 'Backup + Redundancy',
@@ -165,7 +165,7 @@ def get_context(context):
 				{'title': 'hosting', 'included': 0},
 				{'title': 'account_manager', 'included': 1},
 				{'title': 'all_modules', 'included': 1},
-				{'title': 'priority_support', 'included': 1}
+				{'title': 'email_support', 'included': 1}
 			],
 			'minimum_users': 20,
 			'features': [
