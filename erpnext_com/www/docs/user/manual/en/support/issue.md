@@ -81,7 +81,7 @@ User can filter the issues based on these fields linked to the Issue:
 ## 4. After Saving
 
 ### 4.1 Add Comments
-Once the Issue is registered, support team Users can add a comments for the issue. This field is editable. Comments in Issues are for internal discussions and will not be visible to the Customers.
+Once the Issue is registered, support team Users can add comments for the issue. This field is editable. Comments in Issues are for internal discussions and will not be visible to the Customers.
 
 ### 4.2 New Email
 Users can compose an email to the person that has raised the Issue. All the mails (received as well as sent) can be seen in a thread in the Issue.

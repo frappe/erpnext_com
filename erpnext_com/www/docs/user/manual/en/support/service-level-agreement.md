@@ -17,7 +17,7 @@ To access the Service Level Agreement list, go to:
 
 ## 2. How to Create a Service Level Agreement
 1. Go to the Service Level Agreement list, click on New.
-1. Select the Service Level. This will fetch the Employee Group the SLA is applicable to, the default priority, and the Holiday list the SLA is excluded from.
+1. Select the Service Level. This will fetch the Employee Group the SLA applies to, the default priority, and the Holiday list the SLA is excluded from.
 1. 'Enable' determines if a Service Level Agreement is enabled or disabled.
 1. Ticking 'Default Service Level Agreement' will apply this SLA to a customer if they don't have a particular SLA assigned to them.
 1. Entity Type: Service Level Agreements can be assigned to a Customer/Customer Group/Territory enabling you to apply Service Level Agreement based on these factors.

@@ -25,13 +25,13 @@ Before creating and using Warranty Claim, it is advised that you create the foll
 1. Save.
     ![Warranty Claim]({{docs_base_url}}/assets/img/support/warranty-claim.png)
 
-### 2.1 Additional Options when Creating an Warranty Claim
+### 2.1 Additional Options when Creating a Warranty Claim
 
-* **Status**: While creating a Warranty Claim, status will be set as "Open". User can change the status to:
+* **Status**: While creating a Warranty Claim, the status will be set as "Open". User can change the status to:
     * Work In Progress: Fix/repairs are being done on the Item
     * Closed: The repairs have been done and the Warranty Claim is now closed.
     * Cancelled: The Warranty Claim was invalid and the claim was closed.
-* **Issue Date**: While creating the Warranty Claim, current date will be captured. This field is editable.
+* **Issue Date**: While creating the Warranty Claim, the current date will be captured. This field is editable.
 
 
 ## 3 Features
@@ -55,7 +55,7 @@ The details about Warranty/AMC will be fetched according to the Serial Number.
 ### 3.2 Resolution
 * **Resolution Date:** When the warranty or AMC is Closed, current date and time will be fetched in resolution Date field automatically. This field is also editable.
 * **Resolved By:** Set the Email ID of the User who has resolved the Warranty Claim. The email ID is linked with [User](/docs/user/manual/en/setting-up/users-and-permissions/adding-users) created in the system.
-* **Resolved Details:** This is a text field. User can enter a details about the Warranty or AMC claim. Also, user can upload the image, enter or create a table.
+* **Resolved Details:** This is a text field. User can enter details about the Warranty or AMC claim. A User can also upload the image, enter or create a table.
 
     ![Warranty Resolution](/docs/assets/img/support/warranty-resolution.png)
 
@@ -75,7 +75,7 @@ The following details of the [Customer](/docs/user/manual/en/CRM/customer) will 
 
 ### 3.4 More Information
 
-* **Company:** The Warranty or AMC is created from company will be selected automatically.
+* **Company:** The Warranty or AMC is created from the company will be selected automatically.
 * **Raised By:** User can enter the Name of the person who has raised the Warranty or AMC in case the Customer is an organization.
 * **From Company:** User can enter the name of the company from which the warranty or AMC has been created.
 
