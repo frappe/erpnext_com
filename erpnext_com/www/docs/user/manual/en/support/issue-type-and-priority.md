@@ -1,28 +1,37 @@
 <!-- add-breadcrumbs -->
 # Issue Type
 
-**User can select Issue Type from the master. By defining Issue type to issue, the user can classify the issue. It is helpful to identify and filter the issue list.**
+**Issue Type is useful for tagging and classifying Issues.**
 
-To access Issue Type, go to: 
+Classifying Issues helps in assigning the concerned team members to specific Issues. Examples of Issue Types can be: 'Functional', 'Technical', 'Hardware', etc. So engineers can be assigned to technical or hardware issues and consultants would be assigned to address functional issues.
+
+To access the Issue Type list, go to: 
 > Home > Support > Issues > Issue Type
+
+To create an Issue Type, click on New and enter a name for the type. A description can be added.
 
 <img class="screenshot" alt="Issue Type" src="{{docs_base_url}}/assets/img/support/issue-type.png">
 
-**Issue Type list**
-<img class="screenshot" alt="Issue Type List" src="{{docs_base_url}}/assets/img/support/issue-type-list.png">
-
 # Issue Priority
 
-**This is master which user can set the priority for the issue. User can create priorities like "Low", "Medium", "High", "Critical", etc. Issue Priority will be used while creating the [Service Level Agreement](/docs/user/manual/en/support/service-level-agreement).**
+**Issue Priority indicates the urgency of solving an Issue**
 
-To create Issue Priority, go to: 
+User can create priorities like "Low", "Medium", "High", "Critical", etc. Issue Priority will be used while creating the [Service Level Agreement](/docs/user/manual/en/support/service-level-agreement).
+
+To access the Issue Priority list, go to: 
 > Home > Support > Issues > Issue Priority
+
+To create an Issue Priority, click on New and enter a name for the type. A description can be added.
 
 <img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/issue-priority.png">
 
 **Issue Priority list**
 
 <img class="screenshot" alt="Issue" src="{{docs_base_url}}/assets/img/support/issue-priority-list.png">
+
+### Related Topics
+1. [Issue](/docs/user/manual/en/support/issue)
+1. [Service Level Agreement](/docs/user/manual/en/support/service-level-agreement)
 
 
 {next}
