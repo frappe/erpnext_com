@@ -53,7 +53,7 @@ frappe.ready(() => {
 						var wordWidth = $(this).width();
 						if (wordWidth > width) width = wordWidth;
 					});
-					headline.find('.ah-words-wrapper').css('width', width);
+					headline.find('.ah-words-wrapper').css('width', width + 25);
 				};
 
 				//trigger animation
