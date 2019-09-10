@@ -19,7 +19,7 @@ Before creating and using Issues, it is advised that you create the following fi
 * [Email Account](/docs/user/manual/en/setting-up/email/email-account)
 
 ## 2. How to Create Issue
-Issues are automatically created if you use the append to feature in [Email Account](/docs/user/manual/en/setting-up/email/email-account#32-incoming-email-accounts).
+Issues are automatically created if you use the **append to feature** in [Email Account](/docs/user/manual/en/setting-up/email/email-account#32-incoming-email-accounts).
 
 You can also create an Issue manually, to do that:
 
@@ -76,7 +76,9 @@ User can filter the issues based on these fields linked to the Issue:
 * **Opening Time**: When the issue is created or logged the exact time will automatically be posted.
 * **Resolution Date**: When the user resolved the issue, Date and Time will get updated in this field.
 * **Resolution Details**: User can enter the details of the issue, once it is resolved. This is a text field. Also, user can upload the image, enter or create a table.
-* **Via Customer Portal**: If the Customer raising the Issue is a Website User (no access to modules), this checkbox will be ticked to indicate that.
+
+#### Via Customer Portal
+If the Customer raising the Issue is a Website User (no access to modules), this checkbox will be ticked to indicate that.
 
 ## 4. After Saving
 
@@ -95,11 +97,14 @@ The email discussion thread in an Issue maintains all the emails which are sent 
 * All subsequent emails containing this Issue number in the subject will be added to this Issue thread.
 * The sender can also add attachments to the email.
 
-### 4.4 Assigning the Issue to a User
+### 4.4 Assigning Issues to Users
 
-You can assign an Issue to a specific User by clicking on "Assign" feature in the left sidebar. This will add a new To Do to the user and also send a message indicating that this Issue is allocated.
+> Issues can be assigned automatically among Users using [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule).
+
+You can assign an Issue to a specific User by clicking on "Assign" feature in the left sidebar. This will add a new To Do to the user and also send a message indicating that this Issue is allocated. 
 
 ![Assign Issue](/docs/assets/img/support/issue-assign.png)
+
 
 ### 4.5 Closing
 
