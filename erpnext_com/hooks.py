@@ -33,11 +33,10 @@ website_context = {
 			{"label": "Support", "url": "/support"},
 			{"label": "Enterprise", "url": "/enterprise"},
 			{"label": "Contact Sales", "url": "/contact-form"},
-		]},
-		{"label": "Partners", "child_items": [
 			{"label": "Partner Listing", "url":"/partners"},
 			{"label": "Become a Partner", "url":"/partners/plans"},
 		]},
+		{"label": "Conference", "url": "https://erpnext.org/conf/2019", "indicator": True},
 		{"label": "Sign Up", "url": "/signup?plan=P-Pro", "right":1},
 		{"label": "Contact Us", "url": "/contact-form", "right":1, "button": 1},
 	],
