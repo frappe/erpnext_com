@@ -36,7 +36,7 @@ website_context = {
 			{"label": "Partner Listing", "url":"/partners"},
 			{"label": "Become a Partner", "url":"/partners/plans"},
 		]},
-		{"label": "Conference", "url": "https://erpnext.org/conf/2019", "indicator": True},
+		{"label": "Conference", "url": "https://erpnext.org/conf/2019"},
 		{"label": "Sign Up", "url": "/signup?plan=P-Standard-2019", "right":1},
 		{"label": "Contact Us", "url": "/contact-form", "right":1, "button": 1},
 	],
