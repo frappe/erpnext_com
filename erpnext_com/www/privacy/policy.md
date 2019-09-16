@@ -281,7 +281,7 @@ erpnext.com firmly believes in protecting the personal information of the custom
 
 ### 20. Updates to this policy
 
-This Privacy Policy was last updated on 17.10.2018. From time to time we may change our privacy practices. We will notify you of any material changes to this policy as required by law. We will also post an updated copy on our website. Please check our site periodically for updates.
+From time to time we may change our privacy practices. We will notify you of any material changes to this policy as required by law. We will also post an updated copy on our website. Please check our site periodically for updates.
 
 ---
 
