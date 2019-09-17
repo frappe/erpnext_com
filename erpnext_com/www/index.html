@@ -19,24 +19,23 @@
 	<meta name="twitter:description" content="ERPNext is the world's top 100% open source ERP software. ERPNext supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare">
 	<!-- <meta name="twitter:image" content="{{ frappe.utils.get_url() }}/assets/erpnext_com/img/home/social.png"> -->
 	<meta name="twitter:card" content="summary_large_image">
-	<link rel="stylesheet" href="/assets/erpnext_com/css/rotate.css">
 {% endblock %}
 
 {% block content %}
 <section class='top-section'>
 	<div class='container'>
-	<h1 class="ah-headline">
+	<h1>
 		<span>Open Source Alternative to</span>
-		<span class="ah-words-wrapper">
+		<!-- <span class="ah-words-wrapper">
 			<b class="is-visible">SAP</b>
-			<b>Oracle</b>
-			<b>Salesforce</b>
-			<b>NetSuite</b>
-			<b>Dynamics</b>
-			<b>Zoho</b>
-			<b>Freshworks</b>
-		</span>
-		<!-- <span class="rotate">SAP</span> -->
+			<b class="is-hidden">Oracle</b>
+			<b class="is-hidden">Salesforce</b>
+			<b class="is-hidden">NetSuite</b>
+			<b class="is-hidden">Dynamics</b>
+			<b class="is-hidden">Zoho</b>
+			<b class="is-hidden">Freshworks</b>
+		</span> -->
+		<span class="rotate">SAP</span>
 	</h1>
 	<p class='lead'>ERPNext is the world's best 100% open source ERP.
 	<p class="mt-4">
@@ -151,10 +150,6 @@
 {% include "erpnext_com/templates/includes/signup_footer.html" %}
 
 
-{% block script %}
-	<script src="/assets/erpnext_com/js/rotate.js"></script>
-{% endblock %}
-
 <script>
 	frappe.ready(() => {
 		$('.container').animatedHeadline({
@@ -224,7 +219,7 @@
 		};
 	})();
 
-	//words.init();
+	words.init();
 </script>
 <style>
 @-moz-keyframes
