@@ -44,6 +44,16 @@ It is important to include at least the following information in the email:
 
 Please allow a reasonable time (2-4 days) for us to confirm and respond to the issue after reporting.
 
+#### Tentative Rewards
+
+Type of vulnerability| Award
+------|--------
+Cross Site Scripting (XSS) | $100
+Unvalidated Input | $100
+Access-Control Problem | $200
+Weaknesses in Authentication, Authorization, or Cryptographic Practices | $300
+Remote Code Execution (RCE) | $500
+SQL Injection (SQLi) | $700
 
 #### List of Known Vulnerabilities
 
