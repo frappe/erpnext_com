@@ -45,6 +45,12 @@ def get_context(context):
 		'account_manager': {
 			'title': 'Account Manager',
 			'content': 'Dedicated account manager to fulfill your requirements.'
+		},
+		'onboarding_three':  {
+			'title': '3 Hrs Onboarding Support'
+		},
+		'onboarding':  {
+			'title': '25 Hrs Onboarding Support'
 		}
 	}
 
@@ -74,7 +80,8 @@ def get_context(context):
 				{'title': 'hosting', 'included': 1},
 				{'title': 'account_manager', 'included': 0},
 				{'title': 'all_modules', 'included': 1},
-				{'title': 'email_support', 'included': 1}
+				{'title': 'email_support', 'included': 1},
+				{'title': 'onboarding_three', 'included': 1}
 			],
 			'features': [
 				{
@@ -121,7 +128,8 @@ def get_context(context):
 				{'title': 'hosting', 'included': 1},
 				{'title': 'account_manager', 'included': 1},
 				{'title': 'all_modules', 'included': 1},
-				{'title': 'priority_support', 'included': 1}
+				{'title': 'priority_support', 'included': 1},
+				{'title': 'onboarding', 'included': 1}
 			],
 			'features': [
 				{
@@ -165,7 +173,8 @@ def get_context(context):
 				{'title': 'hosting', 'included': 0},
 				{'title': 'account_manager', 'included': 1},
 				{'title': 'all_modules', 'included': 1},
-				{'title': 'email_support', 'included': 1}
+				{'title': 'email_support', 'included': 1},
+				{'title': 'onboarding_three', 'included': 1}
 			],
 			'minimum_users': 20,
 			'features': [
