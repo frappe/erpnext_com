@@ -8,7 +8,7 @@ In ERPNext, you can mark and record attendance of an Employee on a daily basis u
 
 To access Attendance, go to:
 
-> Human Resources > Attendance 
+> Home > Human Resources > Attendance 
 
 ## 1. Prerequisites
 
@@ -19,7 +19,7 @@ Before creating an Attendance record, it is advised that you create the followin
 
 ## 2. How to create an Attendance
 
-1. Go to: Attendance > New.
+1. Go to the Attendance list, click on New.
 1. Select the Employee.
 1. Select the Attendance Date.
 1. Select the Shift (optional).
@@ -29,7 +29,7 @@ Before creating an Attendance record, it is advised that you create the followin
     <img class="screenshot" alt="Attendance" src="{{docs_base_url}}/assets/img/human-resources/attendance.png">
 
 
-> Note: Attendance cannot be marked for future dates.
+> **Note:** Attendance cannot be marked for future dates.
 
 
 You can get a monthly report of your Attendance data by going to the **Monthly

@@ -15,8 +15,6 @@ In order to access Payroll Period, go to:
 
 ## 1. How to create a Payroll Period
 
-To create a new Payroll Period:
-
 1. Go to: Payroll Period > New.
 1. Enter Name.
 1. Select Start Date and End Date of Payroll Period.

@@ -5,7 +5,7 @@
 
 To access the Employee Attendance Tool, go to:
 
-> Human Resources > Attendance > Employee Attendance Tool
+> Home > Human Resources > Attendance > Employee Attendance Tool
 
 This tool allows you to add attendance records for multiple employees based on their Department and Branch for a given day quickly.
 
@@ -26,11 +26,13 @@ Before creating an Employee Attendance, it is advised that you create the follow
 1. Mark Present, Absent or Half Day as required.
 
 
-    <img class="screenshot" alt="Attendance upload" src="{{docs_base_url}}/assets/img/human-resources/employee-attendance-tool.png">
+    <img class="screenshot" alt="Attendance upload" src="{{docs_base_url}}/assets/img/human-resources/employee-attendance-tool.gif">
 
-> Note: Attendance cannot be marked for future dates.
+> **Note:** Attendance cannot be marked for future dates.
 
-Once the attendance is marked using Employee Attendance Tool, the employee attendance is saved in the [Attendance](/docs/user/manual/en/human-resources/attendance) doctype.
+Once the attendance is marked using the Employee Attendance Tool, the employee attendance is saved in the [Attendance](/docs/user/manual/en/human-resources/attendance) record as shown:
+
+<img class="screenshot" alt="Attendance" src="{{docs_base_url}}/assets/img/human-resources/attendance_tool1.png">
 
 
 ## 3. Related Topics

@@ -5,7 +5,7 @@
 
 To upload the attendance go to:
 
-> Human Resources > Attendance > Upload Attendance
+> Home > Human Resources > Attendance > Upload Attendance
 
 
 ## 1. Prerequisites
@@ -18,11 +18,13 @@ Before uploading bulk Attendance record, it is advised that you create the follo
 ## 2. How to upload attendance in bulk
 
 1. Enter Attendance From Date and Attendance To Date.
-1. Click on 'Get Template' button. It will download a csv file with the Employee Details.
-1. Enter the Status (Present/ Absent) of the Employee for the selected dates.
+1. Click on 'Get Template' button. It will download a csv file with the Employee Details as shown.
+
+    <img class="screenshot" alt="Attendance Template" src="{{docs_base_url}}/assets/img/human-resources/upload-attendance1.png">
+
+1. Enter the Status (Present / Absent) of the Employee for the selected dates.
 1. Save the file.
 1. Upload the saved file.
-
 
 
     <img class="screenshot" alt="Attendance upload" src="{{docs_base_url}}/assets/img/human-resources/upload-attendance.png">

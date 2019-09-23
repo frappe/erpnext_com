@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 #Holiday List
 
-Holiday List is a list which contains the dates of holidays.
+**Holiday List is a list which contains the dates of holidays.**
 
 Most organizations have a standard Holiday List for their employees. Some even have different holiday lists based on the different Locations or Departments.
 
@@ -13,20 +13,18 @@ To access Holiday List, go to:
 
 ## 1. How to create a Holiday List
 
-To create a new Holiday List, go to:
-
-1. Holiday List > New.
-2. Give a name to the Holiday List. It can be based on the Fiscal Year or Location or Department as per the requirement. 
+1. Go to Holiday List, click on New.
+2. Enter Holiday List Name. It can be based on the Fiscal Year or Location or Department as per the requirement. 
 3. Select From Date and To Date for the Holiday List.
 
 
-<img class="screenshot" alt="Holiday List" src="{{docs_base_url}}/assets/img/human-resources/holiday-list-1.png">
+    <img class="screenshot" alt="Holiday List" src="{{docs_base_url}}/assets/img/human-resources/holiday-list-1.png">
 
 ## 2. Features 
 
-Some of the additional features in the Holiday List doctype are as follows:
+Some of the additional features in the Holiday List  are as follows:
 
-### 1. Add Weekly Holidays 
+### 2.1 Add Weekly Holidays 
 
 You can quickly add Weekly Offs in the Holiday List as following:
 
@@ -37,7 +35,7 @@ You can quickly add Weekly Offs in the Holiday List as following:
 Once the Weekly Off is added, it is reflected in the Holidays table. 
 
 
-> Note: You can add multiple days in the Weekly Offs.
+> **Note:** You can add multiple days in the Weekly Offs.
 
 <img class="screenshot" alt="Holiday List" src="{{docs_base_url}}/assets/img/human-resources/holiday-list-2.gif">
 
@@ -46,11 +44,10 @@ After that, you can also add specific days (like festival holidays) manually by 
 
 <img class="screenshot" alt="Holiday List" src="{{docs_base_url}}/assets/img/human-resources/holiday-list-3.png">
 
-> Note: 
-Each time a new holiday is updated in the Holidays table, the Total Holidays field gets updated.
+> **Note:** Each time a new holiday is updated in the Holidays table, the Total Holidays field gets updated.
 
 
-### 3. Holiday List in Employee 
+### 2.2 Holiday List in Employee 
 
 If you have created multiple Holiday List, select a specific Holiday List for an Employee in the respective master.
 
@@ -58,7 +55,7 @@ When an Employee applies for Leave, the days mentioned in the Holiday List will 
 
 
 
-> Note: If you have specified a Holiday List in the Employee master, then that Holiday List will be given more priority as compared to the default Holiday List of the company.
+> **Note:** If you have specified a Holiday List in the Employee master, then that Holiday List will be given more priority as compared to the default Holiday List of the company.
 You can form as many holiday lists as you wish. For example, if you have a factory, you can have one list for the factory workers and another list for office staff. You can manage between many lists by linking a Holiday List to the respective Employee.
 
 You can also access [Company](/docs/user/manual/en/setting-up/company-setup), [Employee](/docs/user/manual/en/human-resources/employee), [Workstation](/docs/user/manual/en/manufacturing/workstation), [Service Level](/docs/user/manual/en/support/service-level), [Service Level Agreement](/docs/user/manual/en/support/service-level-agreement), [Leave Period](/docs/user/manual/en/human-resources/leave-period), and [Shift Type](/docs/user/manual/en/human-resources/shift-type) from the Holiday List page. 

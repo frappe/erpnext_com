@@ -10,7 +10,17 @@ To access Employee Tax Exemption Declaration, go to:
 
 > Home > Human resources > Employee Tax and Benefits > Employee Tax Exemption Declaration 
 
-## 1. How to create Employee Tax Exemption Declaration
+
+## 1. Prerequisites
+
+Before creating an Employee Tax Exemption Declaration, it is advisable you create the following:
+
+* [Employee](/docs/user/manual/en/human-resources/employee)
+* [Employee Tax Exemption Category](#31-employee-tax-exemption-category)
+* [Employee Tax Exemption Sub Category](#32-employee-tax-exemption-category)
+
+
+## 2. How to create Employee Tax Exemption Declaration
 
 To create a new Employee Tax Exemption Declaration:
 
@@ -19,15 +29,33 @@ To create a new Employee Tax Exemption Declaration:
 1. Enter the Maximum Exemption Amount and Declared Amount.
 1. Save and Submit.
 
-<img class="screenshot" alt="Employee Tax Exemption Declaration" src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-declaration.png">
+    <img class="screenshot" alt="Employee Tax Exemption Declaration" src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-declaration.png">
 
 The Total Exemption Amount will be exempted from annual taxable earnings of the employee while calculating the tax deductions in Payroll.
 
-> Note: Employees can only submit one Employee Tax Exemption Declaration for a Payroll Period.
+> **Note:** Employees can only submit one Employee Tax Exemption Declaration for a Payroll Period.
 
-## 2. Features
+## 3. Features
 
-### 2.1 HRA Exemption (Regional - India)
+###3.1 Employee Tax Exemption Category
+
+Exemptions from taxable salary are usually restricted to spendings on particular categories decided by the Government or regulatory agencies. ERPNext allows you to configure various categories which are allowed to be exempted. Examples of these (for India) could be, 80G, 80C, B0CC etc.
+
+You can configure Employee Tax Exemption Category by going to, **Employee Tax and Benefits > Employee Tax Exemption Category**
+
+ <img class="screenshot" alt="Employee Tax Exemption Category" src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-sub-category1.png">
+
+
+### 3.2 Employee Tax Exemption Sub-Category
+
+Under each category, there could be many heads for which the exemptions are allowed. For example, in India, sub categories under 80C could be Life Insurance Premium
+
+You can configure Employee Tax Exemption Category by going to, **Employee Tax and Benefits > Employee Tax Exemption Sub-Category**
+
+ <img class="screenshot" alt="Employee Tax Exemption Category" src="{{docs_base_url}}/assets/img/human-resources/employee-tax-exemption-category1.png">
+
+
+### 3.3 HRA Exemption (Regional - India)
 
 For the current fiscal year, in India, House Rent Allowance (HRA) exemption from taxable earnings is the minimum of:
 
@@ -47,7 +75,7 @@ Once the declaration is submitted, you can submit the proof of your tax exemptio
 > Note: HRA component needs to be configured in Company master under HRS Settings sections for the HRA exemption to work.
 
 
-## 3. Related Topics
+## 4. Related Topics
 
 1. [Employee Tax Exemption Proof Submission](/docs/user/manual/en/human-resources/employee-tax-exemption-proof-submission)
 1. [Employee Benefit Application](/docs/user/manual/en/human-resources/employee-benefit-application)

@@ -1,10 +1,10 @@
 # Attendance Request
 
-**Using the Attendance Request document, employees can submit their attendance request for the days when their attendance wasn't marked due to various reasons such as on-site duty or work from home.**
+**Using the Attendance Request, employees can submit their attendance request for the days when their attendance wasn't marked due to various reasons such as on-site duty or work from home.**
 
 To access Attendance Request, go to:
 
-> Human Resources > Attendance > Attendance Request 
+> Home > Human Resources > Attendance > Attendance Request 
 
 ## 1. Prerequisites
 
@@ -15,7 +15,7 @@ Before creating an Attendance Request, it is advised that you create the followi
 
 ## 2. How to create an Attendance Request
 
-1. Go to: Attendance Request > New.
+1. Go to Attendance Request list, click on New.
 1. Select Employee who wants to submit the Attendance Request.
 1. Select From Date and To Date of Attendance Request.
 1. Select Reason and enter Explanation (optional).
@@ -24,9 +24,11 @@ Before creating an Attendance Request, it is advised that you create the followi
 
     <img class="screenshot"  alt="Attendance Request" src="{{docs_base_url}}/assets/img/human-resources/attendance-request.png">
 
-> Note 1: You can check the 'Half Day' checkbox and enter the Date in case the attendance is for Half Day.
+> **Note 1:** You can check the 'Half Day' checkbox and enter the Date in case the attendance is for Half Day.
 
-> Note 2: On submission of the same, Attendance documents will be created for the days you mentioned as shown.
+> **Note 2:** On submission of the same, Attendance documents will be created for the days you mentioned as shown.
+
+> **Note 3:** You can submit Attendance Request of only unmarked Attendance.
 
 
 
@@ -36,7 +38,7 @@ As seen below, respective Attendance records are linked with the submitted Atten
 
  <img class="screenshot"  alt="Attendance Request Linked" src="{{docs_base_url}}/assets/img/human-resources/attendance-request-link.png">
 
-If you cancel the Attendance request, the linked Attendance documents created will be cancelled as well.
+If you cancel the Attendance Request, the linked Attendance documents created will be cancelled as well.
 
  <img class="screenshot"  alt="Attendance Request Cancelled" src="{{docs_base_url}}/assets/img/human-resources/attendance-request-cancelled.png">
 

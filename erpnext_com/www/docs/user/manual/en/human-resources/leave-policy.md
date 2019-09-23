@@ -10,9 +10,7 @@ To access Leave Policy, go to:
 
 ## 1. How to create a Leave Policy
 
-To create a new Leave Policy:
-
-1. Go to: Leave Policy > New.
+1. Go to Leave Policy list, click on New.
 1. Select the Leave Type and enter its Annual Allocation.
 1. Save and Submit.
 
