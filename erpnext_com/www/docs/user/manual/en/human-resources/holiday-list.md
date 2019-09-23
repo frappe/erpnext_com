@@ -44,7 +44,7 @@ Once the Weekly Off is added, it is reflected in the Holidays table.
 Once the Weekly Off is added, it is reflected in the Holidays table. 
 
 
-> Note: You can add multiple days in the Weekly Offs.
+> **Note:** You can add multiple days in the Weekly Offs.
 
 <img class="screenshot" alt="Holiday List" src="{{docs_base_url}}/assets/img/human-resources/holiday-list-2.gif">
 

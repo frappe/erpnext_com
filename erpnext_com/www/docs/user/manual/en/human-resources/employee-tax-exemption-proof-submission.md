@@ -1,11 +1,11 @@
 <!-- add-breadcrumbs -->
 # Employee Tax Exemption Proof Submission
 
-**Employees are required to submit proofs for all the spendings they claim tax exemption for.**
+**Employees are required to submit proofs for all the spendings they claim tax exemption for. This can be done through the Employee Tax Exemption Proof Submission document**
 
  This is usually done at the end of a Payroll Period, but employees can submit any number of proofs unlike Employee Tax Exemption Declaration.
 
- > Note: Create an Employee Tax Exemption Declaration before creating an Employee Tax Exemption Proof Submission 
+> **Note:** Create an Employee Tax Exemption Declaration before creating an Employee Tax Exemption Proof Submission 
 
 To access Employee Tax Exemption Proof Submission, go to:
 
