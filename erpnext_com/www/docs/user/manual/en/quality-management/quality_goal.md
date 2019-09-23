@@ -27,7 +27,7 @@ In the Objectives table, enter:
 The Revision field shows The number of times the document was saved.
 
 Creating a Quality Goal:
-<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/goal.gif">
+<img class="screenshot" alt="Quality mangement" src="{{docs_base_url}}/assets/img/quality-management/creating-quality-goal.gif">
 
 ## 2. Related Topics
 1. [Quality Procedure](/docs/user/manual/en/quality-management/quality_procedure)
