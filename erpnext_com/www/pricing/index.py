@@ -215,6 +215,7 @@ def get_context(context):
 
 @frappe.whitelist(allow_guest=True)
 def get_plan_details(plan_name):
+	plan_name = frappe.utils.escape_html(plan_name)
 	currency = 'USD'
 	symbol = '$'
 
