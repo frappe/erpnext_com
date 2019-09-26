@@ -7,7 +7,7 @@ To import details of current liabilities:
 
 1. Go to: **Accounting > Masters and Accounts > Journal Entry > New**.
 1. Enter Posting Date.
-1. Select the appropriate current liability ledgers in Account column and enter the value in Credit column.
+1. Select the appropriate current liability ledgers in the Account column and enter the value in the Credit column.
 1. Select 'Temporary Opening' ledger in Account and enter the balancing amount in Debit column.
 1. Set 'Is Opening' to Yes.
 

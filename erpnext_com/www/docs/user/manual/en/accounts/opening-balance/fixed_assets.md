@@ -13,14 +13,13 @@ To create a new Asset:
 1. Enter Asset Name.
 1. Enter Item Code.
 1. Enter Location.
-1. Enter Purchase Date.
+1. Enter the Purchase Date.
 1. Enter Gross Amount.
 1. Tick **Is Existing Asset.**
 
 <img class="screenshot" alt="Stock Asset Ledger" src="{{docs_base_url}}/assets/img/accounts/asset_opening_balance.png">
 
-
-### 2. Created Journal Entry to Update the Ledgers
+### 2. Create Journal Entry to Update the Ledgers
 
 When you create an Asset with 'Is Existing Asset' checkbox ticked, the General Ledger is not updated. You will have to update the value via a Journal Entry.
 
