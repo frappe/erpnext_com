@@ -5,10 +5,11 @@ You can view your company's sales performance, analyze sales data in different v
 With filters, you can dynamically change what is displayed. 
 There are three window areas that make up the Sales Analytics Report-The Filter Toolbar Window, the Graph Window and the Data Window shown as follows:
 
-These analytics can be found under **Selling > Key Reports**.
+These analytics can be found under:
+> Home > Selling > Key Reports
 
 ## 1. Sales Analytics Report
- Go to **Selling > Analytics > Sales Analytics**. The Sales Analytics report looks like this:
+Go to **Selling > Analytics > Sales Analytics**. The Sales Analytics report looks like this:
 
   <img class="screenshot" alt="Sales Analytics Sections" src="/docs/assets/img/selling/sales-analytics-sections.png">
 

@@ -1,0 +1,12 @@
+{% extends "templates/base.html" %}
+
+{% block content %}
+<section class="top-section">
+	<div class="container">
+		<h1>{{ heading }}</h1>
+		<p class="lead" style="margin-top: 0px">{{ description }}</p>
+		<img class="card mt-5" src="{{ hero }}" alt="{{ hero_alt }}"/>
+	</div>
+</section>
+<style>.footer-message { display: none; }</style>
+{% endblock %}

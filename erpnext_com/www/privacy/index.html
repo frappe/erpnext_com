@@ -1,0 +1,49 @@
+{% extends "frappe_theme/templates/base.html" %}
+{% block title %}Privacy{% endblock %}
+
+{% from "erpnext_com/templates/includes/card_grid.html" import card_grid %}
+
+{% block head_include %}
+	<meta name="description" content="Privacy" />
+	<meta name="keywords" content="Privacy, data ownership, GDPR" />
+	<meta name="google-site-verification" content="euiq62LnIrUF6eLvL7wZEnVxhdfkfzuIMnSYRf4JzGk" />
+{% endblock %}
+
+{% block content %}
+<section class='top-section'>
+	<div class='container'>
+	<h1>Data Privacy</h1>
+	<p class='lead'>Data Ownership and Privacy is of primary concern to us. Learn what we collect, how we use and how you can control your data.</p>
+	<div class='py-4'></div>
+
+	{{ card_grid(
+		None,
+		None,
+		[
+			{
+				"title": "Download Your Data",
+				"content": "Request a download of all your personal data stored in our cloud and billing systems",
+				"url": "/data-download-request"
+			},
+			{
+				"title": "Request Deletion",
+				"content": "Don't want us to remember your history? Request deletion of your personal data",
+				"url": "/data-delete-request"
+			},
+			{
+				"title": "ERPNext Instance",
+				"content": "Find your active ERPNext instances and download your backup or request archival",
+				"url": "/find-my-login"
+			},
+		])
+	}}
+	<div class='mt-5'>
+		<a href='/privacy/policy' class='btn btn-primary'>Read the full Privacy Policy</a>
+	</div>
+
+	<div class='mt-4'>Still have questions? Feel free to drop us a mail at
+		<a href='mailto:hello@erpnext.com'>hello@erpnext.com</a>
+	</div>
+</section>
+
+{% endblock %}

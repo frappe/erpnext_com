@@ -14,7 +14,7 @@ hide_in_installer = True
 
 website_context = {
 	"repo": "frappe/erpnext_com",
-	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo-blue.svg',
+	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo.svg',
 	'brand_name': 'ERPNext',
 	"brand_html": "ERPNext",
 	"top_bar_items": [
@@ -29,17 +29,18 @@ website_context = {
 			{"label": "Healthcare", "url": "/healthcare"},
 		]},
 		{"label": "Pricing", "url": "/pricing"},
-		{"label": "Services", "child_items": [
-			{"label": "Support", "url": "/support"},
-			{"label": "Enterprise", "url": "/enterprise"},
-			{"label": "Contact Sales", "url": "/contact-form"},
-		]},
+		# {"label": "Services", "child_items": [
+		# 	{"label": "Support", "url": "/support"},
+		# 	{"label": "Enterprise", "url": "/enterprise"},
+		# 	{"label": "Contact Sales", "url": "/contact-form"},
+		# ]},
 		{"label": "Partners", "child_items": [
 			{"label": "Partner Listing", "url":"/partners"},
 			{"label": "Become a Partner", "url":"/partners/plans"},
 		]},
-		{"label": "Docs", "url": "/docs/user/manual/en", "right":1},
-		{"label": "About", "url": "/about", "right":1},
+		{"label": "Conference", "url": "https://erpnext.org/conf/2019", "highlight": True, "new_tab": True},
+		{"label": "Sign Up", "url": "/signup?plan=P-Standard-2019", "right":1},
+		{"label": "Contact Us", "url": "/contact-form", "right":1, "button": 1},
 	],
 	"hide_login": 1,
 	"favicon": "/assets/erpnext_com/img/erpnext-logo-blue.png"
@@ -51,6 +52,7 @@ website_redirects = [
 	{'source': '/download', 'target': 'https://erpnext.org/get-started' },
 	{'source': '/faq', 'target': 'https://erpnext.org/faq' },
 	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },
+	{'source': '/12', 'target': '/version-12' },
 ]
 
 look_for_sidebar_json = True

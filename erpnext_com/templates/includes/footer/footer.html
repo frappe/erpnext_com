@@ -1,9 +1,12 @@
-<div class='bg-light-yellow mt-4 footer-message'>
-	<div class='container text-muted py-3 text-center'>
-		<a href='/signup'>Sign up for ERPNext</a> or <a href=
-		'https://support.erpnext.com/contact-form' target='_blank'>request a callback.</a>
-	</div>
-</div>
+<section class="section-sm section-dark footer-message">
+		<div class="container text-center">
+			<p style="max-width: 75%; margin-left: auto; margin-right: auto; line-height: 1.5; font-weight: 400; font-size: 1.25rem;">ERPNext is used by more than 5000 companies across the world</p>
+			<div class="mt-3">
+				<a class="btn btn-light mr-2" href="/signup?plan=P-Standard-2019#personal-details">Start Free Trial</a>
+				<a class="btn btn-light" href="/contact-form">Contact Us</a></h4>
+			</div>
+		</div>
+</section>
 <footer class="bg-dark pt-4">
 	<div class="container px-5 px-sm-3">
 	<div class="row my-3 my-sm-5">
@@ -37,36 +40,40 @@
 			</ul>
 		</div>
 		<div class="col-sm-3 col-6">
-			<h6 class="text-light">Services</h6>
-			<ul class="list-unstyled">
-				<li class="mb-2">
-					<a class="text-muted" href="/pricing">Cloud</a>
-				</li>
-				<li class="mb-2">
-					<a class="text-muted" href="/support">Support</a>
-				</li>
-				<li class="mb-2">
-					<a class="text-muted" href="/mobile">Mobile Apps</a>
-				</li>
-				<li class="mb-2">
-					<a class="text-muted" href="/terms">Terms</a>
-				</li>
-				<li class="mb-2">
-					<a class="text-muted" href="/privacy">Privacy</a>
-				</li>
-				<li class="mb-2">
-					<a class="text-muted" href="/find-my-login">My ERPNext Login</a>
-				</li>
-			</ul>
+			<div>
+				<h6 class="text-light">Services</h6>
+				<ul class="list-unstyled">
+					<li class="mb-2">
+						<a class="text-muted" href="/pricing">Cloud</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="/support">Support</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="/mobile">Mobile Apps</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="/find-my-login">My ERPNext Login</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mt-4">
+				<h6 class="text-light">Releases</h6>
+				<ul class="list-unstyled">
+					<li class="mb-2" style="margin-left: -15px;">
+						<a class="text-muted indicator blue"
+							href="/version-12" target="_blank">
+							Version 12</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="http://erpnext.org/releases/version-11" target="_blank">Version 11</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="col-sm-3 col-6">
 			<h6 class="text-light">ERPNext</h6>
 			<ul class="list-unstyled">
-				<!-- <li class="mb-2" style="margin-left: -19px;">
-					<a class="text-muted indicator blue"
-						href="https://erpnext.org/conf/2018" target="_blank">
-						Conference</a>
-				</li> -->
 				<li class="mb-2">
 					<a class="text-muted" href="https://github.com/frappe/erpnext" target="_blank" >GitHub</a>
 				</li>
@@ -75,7 +82,7 @@
 						target="_blank">Foundation</a>
 				</li>
 				<li class="mb-2">
-					<a class="text-muted" href="https://erpnext.org/docs/user/manual">Manual</a>
+					<a class="text-muted" href="/docs/">Documentation</a>
 				</li>
 				<li class="mb-2">
 					<a class="text-muted" href="https://www.youtube.com/c/erpnext" target="_blank" >YouTube</a>
@@ -87,8 +94,10 @@
 				<li class="mb-2">
 					<a class="text-muted" href="https://erpnext.org/stories">Stories</a>
 				</li>
-				<li class="mb-2">
-					<a class="text-muted" href="https://erpnext.org/conf/2018">Conference</a>
+				<li class="mb-2" style="margin-left: -15px;">
+					<a class="text-muted indicator blue"
+						href="https://erpnext.org/conf/2019" target="_blank">
+						Conference</a>
 				</li>
 				<li class="mb-2">
 						<a class="text-muted" href="/security">Security</a>
@@ -115,6 +124,12 @@
 						<a class="text-muted" href="/contact">
 							Contact</a>
 					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="/terms">Terms</a>
+					</li>
+					<li class="mb-2">
+						<a class="text-muted" href="/privacy">Privacy</a>
+					</li>
 				</ul>
 			</div>
 			<div>
@@ -134,7 +149,7 @@
 		</div>
 	</div>
 			<div class="py-3 text-muted">
-				<span>&copy; <span id="year"></span> Frappe Technologies Private Limited. Read the <a class="text-muted"href="/disclaimer" target="_blank">Disclaimer</a> and <a class="text-muted"href="/terms" target="_blank">Terms of Use</a>.</span>
+				<span>&copy; <span id="year"></span> Frappe <span class="mr-2"></span>|<span class="ml-2"></span> <a class="text-muted"href="/disclaimer" target="_blank">Disclaimer</a> and <a class="text-muted"href="/terms" target="_blank">Terms of Use</a>.</span>
 			</div>
 	</div>
 </footer>

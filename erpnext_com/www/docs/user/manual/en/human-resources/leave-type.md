@@ -34,7 +34,9 @@ Below is a detailed explanation of all the fields in Leave Type.
 
 * **Allow Negative Balance:** If checked, system will always allow to approve leave application for the Leave Type, even if there is no leave balance.
 
+
 * **Include holidays within leaves as leaves:** Check this option if you wish to count holidays within leaves as a ‘leave’. Such holidays will be deducted from the total number of leaves.
+
 
 * **Is Compensatory:** Compensatory leaves are leaves granted for working overtime or on holidays, normally compensated as an encashable leave. You can check this option to mark the Leave Type as compensatory. An Employee can request for compensatory leaves using [Compensatory Leave Request](/docs/user/manual/en/human-resources/compensatory-leave-request).
 
@@ -45,7 +47,6 @@ Below is a detailed explanation of all the fields in Leave Type.
 ### 2.1 Leave Encashment
 
 It is possible that Employees can receive cash from their Employer for unused leaves granted to them in a Leave Period. Not all Leave Types need to be encashable, so, you should set "Allow Encashment" for Leave Types which are encashable. 
-
 
 > **Note:** Leave encashment is allowed only in the last month of the Leave Period.
 

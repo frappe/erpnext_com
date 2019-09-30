@@ -48,4 +48,6 @@ You can also bulk upload attendance using the [Upload Attendance](/docs/user/man
 1. [Attendance Request](/docs/user/manual/en/human-resources/attendance-request)
 
 
+It is also, possible to set up marking of attendance automatically based on check-in/check-out logs from Biometric/RFID Devices (or any other similar mechanisms that produce IN/OUT logs of the employee). Please refer to [Auto Attendance](/docs/user/manual/en/human-resources/auto-attendance) feature for more information.
+
 {next}
