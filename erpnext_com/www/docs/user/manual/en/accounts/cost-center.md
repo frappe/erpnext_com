@@ -10,6 +10,12 @@ are profitable or not. For this purpose, there is an alternate structure called 
 
 A Cost Center acts like an [Accounting Dimension](/docs/user/manual/en/accounts/accounting-dimensions) which helps you track costing based on particular areas.
 
+The Cost Center can be set at these levels:
+
+* Company
+* Item
+* Order/Invoice
+
 ## 1. Cost Center tree
 
 You can create a tree of Cost Centers to represent your business better. Each
