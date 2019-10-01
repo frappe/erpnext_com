@@ -27,5 +27,8 @@ In ERPNext, you can maintain fixed asset records for Company assets like compute
 1. [Asset Depreciation](/docs/user/manual/en/asset/asset-depreciation)
 1. [Scrapping an Asset](/docs/user/manual/en/asset/scrapping-an-asset)
 
+##### 1.3 Assets Reports
+1. [Fixed Asset Register](/docs/user/manual/en/asset/fixed-asset-register)
+
 ## 2. Videos
 You can check out [this video](/docs/user/videos/learn/fixed-assets) for a demonstration of managing fixed assets.
