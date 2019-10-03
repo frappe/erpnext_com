@@ -106,7 +106,7 @@ Ideally you must create two Accounts for each type of VAT you pay and collect,
 “Purchase VAT-X” (asset) and “Sales VAT-X” (liability), or something to that
 effect. 
 
-For more information on setting up taxes see the [Purchase Taxes and Charges Template](/docs/user/manual/en/purchase-taxes-and-charges-template).
+For more information on setting up taxes see the [Purchase Taxes and Charges Template](/docs/user/manual/en/buying/purchase-taxes-and-charges-template).
 
 ### 3.6 Additional Discount
 Other than recording discount per item, you can add a discount to the whole purchase order in this section. This discount could be based on the Grand Total i.e., post tax/charges or Net total i.e., pre tax/charges. The additional discount can be applied as a percentage or an amount.
