@@ -22,19 +22,16 @@ Following is how you can configure Deferred Expense accounting in ERPNext to aut
 
 In the Item master created for the subscription plan, under Deferred Expense section, check field **Enable Deferred Expense**. In this section, you can also select a Deferred Expense account (Asset Account, preferably Current Asset) for this particular item and no. of months.
 
-<img class="screenshot" alt="Item - Deferred Expense" src="{{docs_base_url}}/assets/img/accounts/deferred-expense-item.png">
 
 ### Purchase Invoice
 
 On creation of Purchase Invoice for the Deferred Expense Item, instead of posting in the Expense Account, Deferred Expense account (Asset account) is Credited by the purchase amount.
 
-<img class="screenshot" alt="PI - Deferred Expense" src="{{docs_base_url}}/assets/img/accounts/deferred-expense.">
 
 
 ### Journal Entry
 
 Based on the From Date and To Date set in the Purchase Invoice Item table, Journal Entries are created automatically at the end of each month. It debits the value from Deferred Expense account and credits Expense Account selected for an Item in the Purchase Invoice. Following is the example of Income for the deferred Revenue Item is booked via multiple Journal Entries.
 
-<img class="screenshot" alt="JE - Deferred Expense" src="{{docs_base_url}}/assets/img/accounts/deferred-expense-je.png">
 
 {next}
