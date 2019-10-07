@@ -12,7 +12,7 @@ We will be doing so by customizing [Tasks](/docs/user/manual/en/projects/tasks) 
 
  <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-customize-form.gif">
 
-1. Add a new field in the doctype of fieldtype color
+1. Add a new field in the doctype of fieldtype color.
 1. Check *In List View* option.
 
  <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-in-list.png">
