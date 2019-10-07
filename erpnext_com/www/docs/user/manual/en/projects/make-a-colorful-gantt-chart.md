@@ -6,7 +6,7 @@ ERPNext allows users to add colours to certain documents for better visual cues 
 
 We will be doing so by customizing [Tasks](/docs/user/manual/en/projects/tasks) under Projects module.
 
-### Steps To Add Colours To The Gantt Chart
+## Steps To Add Colours To The Gantt Chart
 
 1. Go to [Customize Form](/docs/user/manual/en/customize-erpnext/customize-form) in the system and select *Task* in _Enter Form Type_ option. Alternatively, you can reach this screen by going to **Menu > Customize** from the Task list or form.
 
