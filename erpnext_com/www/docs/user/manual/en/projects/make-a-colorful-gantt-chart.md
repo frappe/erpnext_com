@@ -22,6 +22,6 @@ We will be doing so by customizing [Tasks](/docs/user/manual/en/projects/tasks) 
 
  <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-pick-color.png">
 
-1. Go back to the task list and switch to Gantt view.
+1. Go back to the Task list and switch to Gantt view.
 
   <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-colors.png">
