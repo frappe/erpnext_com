@@ -50,7 +50,7 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Item Tax Template](/docs/user/manual/en/accounts/item-tax-template)
 1. [Tax Withholding Category](/docs/user/manual/en/accounts/tax-withholding-category)
 1. [Tax Rule](/docs/user/manual/en/accounts/tax-rule)
-1. [Tax category](/docs/user/manual/en/accounts/tax-category)
+1. [Tax Category](/docs/user/manual/en/accounts/tax-category)
 
 ### 1.5 Pricing
 1. [Pricing Rule](/docs/user/manual/en/accounts/pricing-rule)
@@ -73,6 +73,7 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 ### 1.9 Advanced
 1. [Multi Currency Accounting](/docs/user/manual/en/accounts/multi-currency-accounting)
 1. [Deferred Revenue](/docs/user/manual/en/accounts/deferred-revenue)
+1. [Deferred Expense](/docs/user/manual/en/accounts/deferred-expense)
 1. [Bank Guarantee](/docs/user/manual/en/accounts/bank-guarantee)
 1. [Loyalty Program](/docs/user/manual/en/accounts/loyalty-program)
 1. [Budgeting](/docs/user/manual/en/accounts/budgeting)

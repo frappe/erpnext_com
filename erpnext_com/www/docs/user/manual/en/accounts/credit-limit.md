@@ -3,7 +3,6 @@
 
 **Credit Limit is the maximum amount of credit you are willing to offer to a customer.**
 
-
 A credit limit is the maximum amount of credit that a financial institution or
 other lender will extend to a debtor for a particular line of credit. From a
 customer's perspective, it is the maximum amount of goods or services he can get without paying upfront.

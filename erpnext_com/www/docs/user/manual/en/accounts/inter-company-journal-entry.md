@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Inter Company Journal Entry
 
-**An Inter Company Journal Entry is done between organization that belong to the same group.**
+**An Inter Company Journal Entry is done between organizations that belong to the same group.**
 
 You can create Inter Company Journal Entry if you are making transactions with multiple Companies.
 You can select the Accounts which you wish to use in the Inter Company transactions. A possible use case would be a company buying goods on behalf of another company.
