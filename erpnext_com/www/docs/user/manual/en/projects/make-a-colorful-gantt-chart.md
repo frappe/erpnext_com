@@ -8,7 +8,7 @@ We will be doing so by customizing [Tasks](/docs/user/manual/en/projects/tasks) 
 
 ### Steps To Add Colours To The Gantt Chart
 
-1. Go to [Customize Form](/docs/user/manual/en/customize-erpnext/customize-form) in the system and select *Task* in _Enter Form Type_ option. Alternatively, you can reach this screen by going to Menu > Customize from the task list or form.
+1. Go to [Customize Form](/docs/user/manual/en/customize-erpnext/customize-form) in the system and select *Task* in _Enter Form Type_ option. Alternatively, you can reach this screen by going to **Menu > Customize** from the Task list or form.
 
  <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-customize-form.gif">
 
