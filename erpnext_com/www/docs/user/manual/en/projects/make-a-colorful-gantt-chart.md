@@ -18,7 +18,7 @@ We will be doing so by customizing [Tasks](/docs/user/manual/en/projects/tasks) 
  <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-in-list.png">
 
 1. Save the form, go back to the Task list, and reload.
-1. When opening an existing or new task, you should see a color field. Pick a color for the task.
+1. When opening an existing or new Task, you should see a color field. Pick a color for the Task.
 
  <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-pick-color.png">
 
