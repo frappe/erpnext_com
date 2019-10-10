@@ -74,4 +74,4 @@ In case the Customer's Billing Country was Germany, the system will select VAT 1
 1. [Item Tax Template](/docs/user/manual/en/accounts/item-tax-template)
 1. [Tax Category](/docs/user/manual/en/accounts/tax-category)
 1. [Customer](/docs/user/manual/en/CRM/customer)
-1. [Supplier](/docs/user/manual/en/buying/supplier
+1. [Supplier](/docs/user/manual/en/buying/supplier)

@@ -45,6 +45,7 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Recurring Orders And Invoices](/docs/user/manual/en/accounts/recurring-orders-and-invoices)
 1. [Credit Note](/docs/user/manual/en/accounts/credit-note)
 1. [Debit Note](/docs/user/manual/en/accounts/debit-note)
+1. [Credit Limit](/docs/user/manual/en/accounts/credit-limit)
 
 ### 1.4 Taxes
 1. [Item Tax Template](/docs/user/manual/en/accounts/item-tax-template)
@@ -56,10 +57,13 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Pricing Rule](/docs/user/manual/en/accounts/pricing-rule)
 1. [Promotional Scheme](/docs/user/manual/en/accounts/promotional-scheme)
 1. [Exchange Rate Revaluation](/docs/user/manual/en/accounts/exchange-rate-revaluation)
+1. [Currency Exchange](/docs/user/manual/en/accounts/currency-exchange)
+1. [Currency](/docs/user/manual/en/accounts/currency)
 
 ### 1.6 Retail Operations
-1. [POS Setting](/docs/user/manual/en/accounts/pos-setting)
+1. [POS Profile](/docs/user/manual/en/accounts/pos-profile)
 1. [Point Of Sales](/docs/user/manual/en/accounts/point-of-sales)
+1. [POS Cashier Closing](/docs/user/manual/en/accounts/pos-cashier-closing)
 
 ### 1.7 Tools
 1. [Bank Reconciliation](/docs/user/manual/en/accounts/bank-reconciliation)
@@ -67,7 +71,6 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Period Closing Voucher](/docs/user/manual/en/accounts/period-closing-voucher)
 
 ### 1.8 Reports
-1. [Credit Limit](/docs/user/manual/en/accounts/credit-limit)
 1. [Accounting Reports](/docs/user/manual/en/accounts/accounting-reports)
 
 ### 1.9 Advanced

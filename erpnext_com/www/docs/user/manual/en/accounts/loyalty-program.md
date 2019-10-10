@@ -1,11 +1,14 @@
 <!-- add-breadcrumbs -->
 # Loyalty Program
 
-A customer loyalty program is a structured and long-term marketing effort which provides incentives to repeat customers who demonstrate loyal buying behavior. Successful programs are designed to motivate customers in a business's target market to return often, make frequent purchases, and shun competitors.
+A Customer Loyalty Program is a structured and long-term marketing effort which provides incentives to repeat customers who demonstrate loyal buying behavior. Successful programs are designed to motivate customers in a business's target market to return often, make frequent purchases, and shun competitors.
 
-### 1. How to create a loyalty program
-1. Go to: **Accounts > Retail Operations > Loyalty Program > New**.
-1. Enter a name for the Loyalty Program.
+To access the Loyalty Program list, go to:
+> Home > Retail > Retail Operations > Loyalty Program
+
+## 1. How to create a Loyalty Program
+1. Go to the Loyalty Program list and click on New.
+1. Enter a Name for the Loyalty Program.
 1. Select whether single tiered or multi tiered (gold, silver, etc,.).
 1. Set a start and end date for the program.
 1. Select the Customer Group and Territory for which this program is applicable, the default is all.
@@ -21,13 +24,13 @@ A customer loyalty program is a structured and long-term marketing effort which 
 
 <img class="screenshot" alt="Loyalty Program" src="{{docs_base_url}}/assets/img/accounts/loyalty-program.png">
 
-### 2. Loyalty Point Entry
+## 2. Loyalty Point Entry
 Go to: **Accounts > Retail Operations > Loyalty Point Entry**.
 This acts as a log to give an overview about which Customer earned how many points across which Invoice. It holds the data Invoice and Customer.
 
 <img class="screenshot" alt="Loyalty Program 3" src="{{docs_base_url}}/assets/img/accounts/loyalty-program-3.png">
 
-### 3. Customer
+## 3. Customer
 **Loyalty Program** section in Customer master.
 
 <img class="screenshot" alt="Loyalty Program 1" src="{{docs_base_url}}/assets/img/accounts/loyalty-program-1.png">
@@ -36,9 +39,9 @@ This acts as a log to give an overview about which Customer earned how many poin
 
 <img class="screenshot" alt="Loyalty Program 2" src="{{docs_base_url}}/assets/img/accounts/loyalty-program-2.png">
 
-### 4. How it works ?
+## 4. How it works ?
 
-#### 4.1 Earning Points
+### 4.1 Earning Points
 * Firstly, a **Loyalty Program** needs to be created (as shown in the first screenshot).
 * Assign this **Loyalty Program** to a **Customer**.
 * Go to **Sales Invoice > New** and create an invoice for the **Customer** to whom you have assigned **Loyalty Program**.
@@ -48,7 +51,7 @@ This acts as a log to give an overview about which Customer earned how many poin
 
 > Note: The minimum spent in Loyalty Program does not mean a minimum value for a single invoice. Rather it means the sum of amount of invoices for that customer under a particular Loyalty Program scheme.
 
-#### 4.2 Redeeming Points
+### 4.2 Redeeming Points
 * Continuing from the above example where we have created 1 invoice and earned 10 points over it, we create another invoice by duplicating the first, and under the collapsible section for **Loyalty Program**, we check the checkbox for 'Redeem Loyalty Points'.
 * The fields for 'Loyalty Point', 'Redemption Account' and 'Redemption Cost Center' will become visible under this section. The account and cost center will be fetched from the **Loyalty Program** assigned to the **Customer**.
 * Since we have earned 10 points, we can use as many of them as we want. If we try to use more than what we have an error will be thrown.
@@ -57,7 +60,7 @@ This acts as a log to give an overview about which Customer earned how many poin
 
 > Note: For an invoice on which points have been earned, if a return invoice is created, it will delete the original Loyalty Point Entry and create a new one after subtracting the original amount with the returned amount. Also, when cancelling an invoice, its subsequent Loyalty Point Entry will also be deleted.
 
-#### 5. Related Topics
+### 5. Related Topics
 1. [Cost Center](/docs/user/manual/en/accounts/cost-center)
 1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
 1. [Customer](/docs/user/manual/en/CRM/customer)
