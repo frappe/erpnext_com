@@ -31,6 +31,9 @@ Some examples of how the % Completion is calculated based on Tasks.
 
 <img class="screenshot" alt="Project 4" src="{{docs_base_url}}/assets/img/project/percent-complete-formula.png">
 
+**Note:** If the total weight of the Tasks is not 100, then the calculated result will be divided by the total weight.
+So the above example should show % Completed (70/0.8)% = 87.5%.
+
 ### Project Costing
 
 The Project Costing section helps you track the time, expenses and purchases incurred against the project.
