@@ -10,7 +10,7 @@ We will be doing so by customizing [Tasks](/docs/user/manual/en/projects/tasks) 
 
 1. Go to [Customize Form](/docs/user/manual/en/customize-erpnext/customize-form) in the system and select *Task* in _Enter Form Type_ option. Alternatively, you can reach this screen by going to **Menu > Customize** from the Task list or form.
 
- <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-customize-form.gif">
+ <img class="screenshot" alt="customize-form" src="/docs/assets/img/articles/project-gantt-customize-form-1.gif">
 
 1. Add a new field in the doctype of fieldtype color.
 1. Check *In List View* option.
