@@ -176,7 +176,7 @@ def get_context(context):
 				{'title': 'email_support', 'included': 1},
 				{'title': 'onboarding_three', 'included': 1}
 			],
-			'minimum_users': 20,
+			'minimum_users': 100,
 			'features': [
 				{
 					'title': 'Organisations',
