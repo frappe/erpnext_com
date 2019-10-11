@@ -22,4 +22,18 @@ A Loan Security contains details about:
   * The current loan security price
   * The Unit Of Measurement
 
+## 1. Prerequisites
+Before creating and using a Loan Security, it is advised that you create the following first:
+
+* [Loan Security Type](/docs/user/manual/en/loan-management/loan-security-type)
+
+## 2. How to Create a Loan Security
+1. Go to the Loan Security list, click on New.
+2. Select the Loan Security Type.
+3. Enter haircut %.
+4. Enter loan security code.
+5. Enter current loan security price.
+6. Enter unit of measurement
+7. Save.
+
 
