@@ -3,7 +3,7 @@
 
 **A Payment Request is used to request payment for an order or an invoice.**
 
-Payment Request is sent via email and will contain a link to a Payment Gateway if set up. You can create a payment request via Sales Order or Sales Invoice.
+Payment Request is sent via email and will contain a link to a Payment Gateway if set up. You can create a payment request via Sales Order or Sales Invoice. A Payment Request can also be set up against a Purchase Order or a Purchase Invoice for internal records. Then, payments can be processed in bulk using a [Payment Order](/docs/user/manual/en/accounts/payment-order).
 
 To access Payment Term go to:
 > Home > Accounting > Accounts Receivable > Payment Term
@@ -13,8 +13,8 @@ Before creating and using Payment Request, it is advisable to create the followi
 
 1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
 
-
 ## 2. How to create a Payment Request
+A Payment Request cannot be created manually, it is created from a Sales/Purchase Order or Invoice.
 
 ### 2.1 Creating Payment Request via Sales Order
 <img class="screenshot" alt="Payment Request" src="{{docs_base_url}}/assets/img/accounts/pr-from-so.png">

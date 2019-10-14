@@ -26,7 +26,7 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Accounting Dimensions](/docs/user/manual/en/accounts/accounting-dimensions)
 1. [Bank](/docs/user/manual/en/accounts/bank)
 1. [Bank Account](/docs/user/manual/en/accounts/bank-account)
-<!-- 1. [Bank Transaction](/docs/user/manual/en/accounts/bank-transaction) -->
+<!-- (in development) 1. [Bank Transaction](/docs/user/manual/en/accounts/bank-transaction) -->
 
 ### 1.2 Journals and Payments
 1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
@@ -42,7 +42,6 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
 1. [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice)
 1. [Inter Company Invoices](/docs/user/manual/en/accounts/inter-company-invoices)
-1. [Recurring Orders And Invoices](/docs/user/manual/en/accounts/recurring-orders-and-invoices)
 1. [Credit Note](/docs/user/manual/en/accounts/credit-note)
 1. [Debit Note](/docs/user/manual/en/accounts/debit-note)
 1. [Credit Limit](/docs/user/manual/en/accounts/credit-limit)
@@ -69,6 +68,7 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Bank Reconciliation](/docs/user/manual/en/accounts/bank-reconciliation)
 1. [Payment Reconciliation](/docs/user/manual/en/accounts/payment-reconciliation)
 1. [Period Closing Voucher](/docs/user/manual/en/accounts/period-closing-voucher)
+1. [Payment Order](/docs/user/manual/en/accounts/payment-order)
 
 ### 1.8 Reports
 1. [Accounting Reports](/docs/user/manual/en/accounts/accounting-reports)
@@ -81,15 +81,19 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Loyalty Program](/docs/user/manual/en/accounts/loyalty-program)
 1. [Budgeting](/docs/user/manual/en/accounts/budgeting)
 1. [Auto Repeat](/docs/user/manual/en/setting-up/automation/auto-repeat)
-1. [Subscription](/docs/user/manual/en/accounts/subscription)
 1. [Invoice Discounting](/docs/user/manual/en/accounts/invoice_discounting)
 
-### 1.10 Shareholder Management
+### 1.10 Subscription
+1. [Subscription](/docs/user/manual/en/accounts/subscription)
+1. [Subscription Plan](/docs/user/manual/en/accounts/subscription-plan)
+1. [Subscription Settings](/docs/user/manual/en/accounts/subscription-settings)
+
+### 1.11 Shareholder Management
 1. [Shareholder](/docs/user/manual/en/accounts/shareholder)
 1. [Share Transfer](/docs/user/manual/en/accounts/share-transfer)
 1. [Share Reports](/docs/user/manual/en/accounts/share-reports)
 
-### 1.11 GST
+### 1.12 GST
 1. [GST Setup](/docs/user/manual/en/regional/india/gst-setup)
 1. [GST Reminders](/docs/user/manual/en/regional/india/gst-reminders)
 1. [GST 3B](/docs/user/manual/en/regional/india/gst-3b-report)
@@ -116,6 +120,7 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Manage Foreign Exchange Difference](/docs/user/manual/en/accounts/articles/manage-foreign-exchange-difference)
 1. [How To Freeze Accounting Ledger](/docs/user/manual/en/accounts/articles/how-to-freeze-accounting-ledger)
 1. [Managing Transactions In Multiple Currency](/docs/user/manual/en/accounts/articles/managing-transactions-in-multiple-currency)
+1. [Recurring Orders And Invoices](/docs/user/manual/en/accounts/articles/recurring-orders-and-invoices)
 
 ### 2.4 Other
 1. [Tracking Project Profitability Using Cost Center](/docs/user/manual/en/accounts/articles/tracking-project-profitability-using-cost-center)
