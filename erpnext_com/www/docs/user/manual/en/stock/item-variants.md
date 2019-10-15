@@ -70,4 +70,4 @@ Go to: **Home > Stock > Items and Pricing > Item Variant Settings**. The fields 
 1. [Item Group](/docs/user/manual/en/stock/item-group)
 1. [Item Attribute](/docs/user/manual/en/stock/item-attribute)
 1. [Item Price](/docs/user/manual/en/stock/item-price)
-1. [Item Codification](/docs/user/manual/en/stock/item-codification)
+1. [Item Codification](/docs/user/manual/en/stock/articles/item-codification)
