@@ -38,7 +38,7 @@ Creating multiple variants in ERPNext:
 
 <img class="screenshot" alt="Make Variants" src="{{docs_base_url}}/assets/img/stock/make-multiple-variants.png">
 
-To learn more about setting attributes check out [Item Attributes](/docs/user/manual/en/stock/setup/item-attribute)
+To learn more about setting attributes check out [Item Attributes](/docs/user/manual/en/stock/item-attribute)
 
 ### 1.3 Item Variants Based on Manufacturers
 

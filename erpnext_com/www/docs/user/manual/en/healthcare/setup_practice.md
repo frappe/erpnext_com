@@ -18,7 +18,7 @@ You can also set a color for each Appointment Type which will help you identify 
 `Healthcare > Setup > Appointment Type > New Appointment Type`
 
 ## Healthcare Service Unit Type
-While setting up the schedule for Healthcare Practitioner, you can optionally select a [Healthcare Service Unit](/docs/user/manual/en/healthcare/healthcare_service_unit) at which the Practitioner will be conducting his consultations. You should have `Allow Appointments` option checked for Healthcare Service Unit for booking appointments. You can also define the properties of service units in `Healthcare Service Unit Type`, also read about [Setting up Inpatient Facility](/docs/user/manual/en/healthcare/setup/setup_inpatient) for more details.
+While setting up the schedule for Healthcare Practitioner, you can optionally select a [Healthcare Service Unit](/docs/user/manual/en/healthcare/healthcare_service_unit) at which the Practitioner will be conducting his consultations. You should have `Allow Appointments` option checked for Healthcare Service Unit for booking appointments. You can also define the properties of service units in `Healthcare Service Unit Type`, also read about [Setting up Inpatient Facility](/docs/user/manual/en/healthcare/setup_inpatient) for more details.
 
 ## Masters to Ease Data Input
 ERPNext Healthcare allows you to configure some of the frequently used masters to make the data entry more easy.
