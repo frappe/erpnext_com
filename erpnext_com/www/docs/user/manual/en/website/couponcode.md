@@ -74,8 +74,13 @@ To access Coupon Code, go to :
 	http://xyz.erpnext.com/products/golden-ring?cc=SAVE5
 
 2. Explicitly applying the code , by filling the code and clicking on "Apply Coupon Code" button as shown below in shopping cart page
-<img class="screenshot" alt="Shopping Cart Apply CouponCode" src="{{docs_base_url}}/assets/img/selling/ShoppinCartApplyCouponCode.png">
+
+	<img class="screenshot" alt="Shopping Cart Apply CouponCode" src="{{docs_base_url}}/assets/img/selling/ShoppinCartApplyCouponCode.png">
 
 Price will get updated on successful application of the coupon code.
 
 
+### 4. Related Topics
+
+1. [Shopping Cart](https://erpnext.com/docs/user/manual/en/website/shopping-cart)
+2. [Pricing Rule](https://erpnext.com/docs/user/videos/learn/pricing-rule.html)
