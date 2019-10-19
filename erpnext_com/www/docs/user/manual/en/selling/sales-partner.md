@@ -42,7 +42,9 @@ https://yourCompanyName.erpnext.com/partners
 
 Sales Partner can actively generates leads for your company products/ services. To track the performance of each sales partner use Referral Code and their URL as below
 
-e.g. A URL having "sp" as paramter like this http://xyz.erpnext.com?sp=speed will capture the Sales Partner Informatiton in the Quotation and Sales Order generated via Shopping Cart.
+URL as shown below should be sent to the sales partner to use in their website/campaign.
+
+e.g. A URL having "sp" as paramter like this http://xyz.erpnext.com?sp=speed will capture the Sales Partner Informatiton in the Sales Order generated via Shopping Cart.
 
 <img class="screenshot" alt="Sales Partner Referral Code" src="{{docs_base_url}}/assets/img/selling/sales-partner-refrral-code.png">
 
