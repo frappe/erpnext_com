@@ -2,41 +2,42 @@
 
 **Coupon Code allows a Customer to avail discount on shoppping cart products.**
 
-Everyone loves discount! so do the coupons offering such discounts. To encourage customers to buy from the e-commerce website, 
+Everyone loves discount! so do the coupons offering such discounts. To encourage Customers to buy from the e-commerce website, 
 coupon code feature is exciting.
 
 There are resellers/other site which generates leads for your ERPNext e-commerce website products/items/services. 
 
-When the potential customer comes from other sites OR promotional emails to your ERPNext website for purchase, you should have the ability
+When the potential Customer comes from other sites OR promotional emails to your ERPNext website for purchase, you should have the ability to:
 	
-	a)to track from which affiliate /sales partner the lead is coming i.e. [referral code]
-	(https://erpnext.com/docs/user/manual/en/selling/sales-partner)
+	a) Track from which affiliate / Sales Partner the Lead is coming i.e. [referral code]
+	(/docs/user/manual/en/selling/sales-partner)
 
-	b) to give discount (based on Pricing Rule) on overall purchase i.e. Coupon code
+	b) Give discount (based on Pricing Rule) on overall purchase i.e. Coupon code
 
-## 1. Prerequisite
-
-1) Coupon Code feature can be enabled from Shopping Cart Settings
-
-> Home > Settings > Shopping Cart Settings
-
-<img class="screenshot" alt="Shopping Cart Settings to enable Coupon Code" src="{{docs_base_url}}/assets/img/selling/CCShoppingCartSettings.png">
-
-2) It is advised you create Pricing Rule having **Coupon Code Based** flag enabled.
-
-## 2. How to create Coupon Code
-
-To access Coupon Code, go to :
+To access the Coupon Code list, go to:
 
 > Home > Accounts > Coupon Code
 
-1. Go to Coupon Code, click on New.
-2. Create **Coupon Name**, e.g. "SAVE 20"
-3. **Coupon Type**, select from Promotional or Gift Card.
+
+## 1. Prerequisites
+
+1. Coupon Code feature needs to be enabled from Shopping Cart Settings:
+
+	> Home > Settings > Shopping Cart Settings
+
+	<img class="screenshot" alt="Shopping Cart Settings to enable Coupon Code" src="{{docs_base_url}}/assets/img/selling/CCShoppingCartSettings.png">
+
+1. Create a Pricing Rule having **Coupon Code Based** flag enabled.
+
+## 2. How to create Coupon Code
+
+1. Go to Coupon Code list and click on New.
+2. Enter a **Coupon Name**, e.g. "SAVE 20"
+3. Under **Coupon Type**, select from Promotional or Gift Card.
    	
 	Promotional, is to promote a generic scheme. 
    	
-	Giftcard, is to randomly generate coupon code and to distribute to specific customer/user.
+	Gift Card, is to randomly generate coupon code and to distribute to specific customer/user.
    
 4. **Coupon Code** is unique readonly code in all capital letters , which gets generated based on Coupon Type & Coupon Name.
 	
@@ -56,7 +57,7 @@ To access Coupon Code, go to :
 
 ## 3. Features
 
-#### 3.1 Validity and Usage
+### 3.1 Validity and Usage
 
 1. **Valid From - To** - validity of the coupon
 2. **Maximum Use** - Cap to limit the usage of the coupon code
@@ -67,9 +68,9 @@ To access Coupon Code, go to :
 
 
 
-#### 3.2 Coupon Code can be applied in two ways
+### 3.2 Coupon Code can be applied in two ways
 
-1. Through URL , coupon code will be automatically fetched from the URL parameter ("cc") and filled in the Apply Coupon Code textbox , for ease of user to apply.
+1. Through URL , coupon code will be automatically fetched from the URL parameter ("cc") and filled in the Apply Coupon Code textbox, for ease of user to apply.
 
 	http://xyz.erpnext.com/products/golden-ring?cc=SAVE5
 
