@@ -11,8 +11,6 @@ To access Retention Bonus, go to:
 
 ## 1. How to create a Retention Bonus
 
-To create a new Retention Bonus:
-
 1. Go to: Retention Bonus > New.
 1. Select Employee and Bonus Payment Date.
 1. Enter the Bonus Amount.

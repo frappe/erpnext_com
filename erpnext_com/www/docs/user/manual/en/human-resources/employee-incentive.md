@@ -1,5 +1,5 @@
 <!-- add-breadcrumbs -->
-#Employee Incentive 
+# Employee Incentive 
 
 
 **Employee Incentives are a way of compensating and motivating Employee performance apart from the usual salary.**
@@ -11,8 +11,6 @@ To access Employee Incentive, go to:
 > Home > Human Resources > Payroll > Employee Incentive
 
 ## 1. How to create an Employee Incentive
-
-To create a new Employee Incentive:
 
 1. Go to: Employee Incentive > New.
 1. Select the Employee.
