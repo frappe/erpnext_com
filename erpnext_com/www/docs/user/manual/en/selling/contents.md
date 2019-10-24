@@ -15,6 +15,7 @@ organized and searchable manner.
 1. [Blanket Order](/docs/user/manual/en/selling/blanket-order)
 1. [Sales Analytics](/docs/user/manual/en/selling/sales-analytics)
 1. [Sales Partner](/docs/user/manual/en/selling/sales-partner)
+1. [Territory](/docs/user/manual/en/selling/territory)
 
 ### 1.2 Setup
 1. [Selling Settings](/docs/user/manual/en/selling/selling-settings)
@@ -36,7 +37,6 @@ organized and searchable manner.
 1. [Adding Margin](/docs/user/manual/en/selling/articles/adding-margin)
 1. [Amending Sales Order After Submit](/docs/user/manual/en/selling/articles/amending-sales-order-after-submit)
 1. [Drop Shipping](/docs/user/manual/en/selling/articles/drop-shipping)
-1. [Calculate Incentive For Sales Team](/docs/user/manual/en/setting-up/articles/calculate-incentive-for-sales-team)
 
 ### 2.3 Other
 1. [ERPNext For Services Organization](/docs/user/manual/en/selling/articles/erpnext-for-services-organization)
