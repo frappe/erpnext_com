@@ -1,5 +1,6 @@
 <!-- add-breadcrumbs -->
 # Loan Application
+> Introduced in Version 13
 
 **A Loan Application contains the applicant and loan security details for review.**
 
@@ -25,11 +26,25 @@ Before creating and using a Loan Security, it is advised that you create the fol
 2. Select applicant type.
 3. Select the applicant.
 4. Select loan type.
-5. Enter Loan amount.
-6. Click "Save" to save the draft of the Loan Application.
-7. Click "Submit" to submit the loan application.
+5. Enter loan amount.
+6. If the loan is a term loan enter the repayment method. If the repayment method is selected as "Repay Over Number Of Periods" then you will have to enter the number of months in which the repayment will be made. If the repayment method is selected as "Repay Over Number Of Periods" then you will have to enter the monthly repayment amount.
+7. You can also mention the proposed securities that will be pledged against a loan. For that first check the "Is Secure Loan" checkbox. Then in the proposed pledges table you can enter the securities and their quantities.
+8. Click "Save" to save the draft of the Loan Application.
+9. Click "Submit" to submit the loan application.
 
 ## 3. Features
+
+### 3.1 Creating the Loan Security Pledge
+A [Loan Security Pledge](/docs/user/manual/en/loan-management/loan-security-pledge) based on the proposed securities can be created from the loan application itself via Create button on the top right. This Loan Security Pledge can then be pledged against a loan as an initial Loan Security Pledge.
+
+<img class="screenshot" alt="Loan Application" src="{{docs_base_url}}/assets/img/loan-management/create-loan-security-pledge.png">
+
+### 3.1 Submitted the Loan Application
+Once a Loan Application is submitted and approved, you can create a Loan from the Loan Application using the Create Button and all the required details from the loan application will be automatically mapped in the loan.
+
+<img class="screenshot" alt="Loan Application" src="{{docs_base_url}}/assets/img/loan-management/create-loan.png">
+
+{next}
 
 
 

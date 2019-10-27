@@ -1,13 +1,14 @@
 <!-- add-breadcrumbs -->
 # Loan Security
+> Introduced in Version 13
 
 **A Loan Security is the actual security that is going to be pledged against a loan.**
 
-During a loan process, if the loan for which the customer is applying is a secured loan then some kind of security needs to be pledged against loan. Loan Security specifies the actual security that is going to be pledged against a Loan
+During a loan process, if the loan for which the customer is applying is a secured loan then some kind of security needs to be pledged against that loan. Loan Security specifies the actual security that is going to be pledged against a Loan
 
 <img class="screenshot" alt="Make Loan Security" src="{{docs_base_url}}/assets/img/loan-management/loan-security-flow.png">
 
-To access the Loan Security type list, go to:
+To access the Loan Security list, go to:
 > Home > Loan Management > Loan Security > Loan Security
 
 
@@ -16,7 +17,7 @@ To access the Loan Security type list, go to:
 
 A Loan Security contains details about:
 
-  * The type of loan security
+  * The [Loan Security Type](/docs/user/manual/en/loan-management/loan-security-type)
   * The Haircut % on that loan security
   * The Loan Security Code
   * The current loan security price
@@ -34,6 +35,8 @@ Before creating and using a Loan Security, it is advised that you create the fol
 4. Enter loan security code.
 5. Enter current loan security price.
 6. Enter unit of measurement
-7. Save.
+7. Click on Save.
+
+{next}
 
 

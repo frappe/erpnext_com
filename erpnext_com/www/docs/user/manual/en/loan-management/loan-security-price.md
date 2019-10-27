@@ -1,5 +1,6 @@
 <!-- add-breadcrumbs -->
 # Loan Security Price
+> Introduced in Version 13
 
 **Loan Security Price is the record in which you can log the loan security price and its validity.**
 
@@ -10,7 +11,7 @@ To access the Loan Security Price list, go to:
 > Home > Loan Management > Loan Security > Loan Security Price
 
 
-<img class="screenshot" alt="Loan Security Price" src="{{docs_base_url}}/assets/img/loan-management/loan-security.png">
+<img class="screenshot" alt="Loan Security Price" src="{{docs_base_url}}/assets/img/loan-management/loan-security-price.png">
 
 
 ## 1. Prerequisites
@@ -24,6 +25,8 @@ Before creating and using a Loan Security, it is advised that you create the fol
 2. Select the Loan Security.
 3. Enter loan security price.
 4. Enter the valid from and valid upto timestamps.
-7. Save.
+7. Click on Save.
+
+{next}
 
 

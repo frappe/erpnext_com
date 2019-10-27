@@ -1,5 +1,6 @@
 <!-- add-breadcrumbs -->
 # Loan Type
+> Introduced in Version 13
 
 **A Loan Type is where you can define various loan types and their properties like rate of interest, loan account details, etc.**
 
@@ -20,5 +21,9 @@ A Loan Type contains details about:
   * The grace period in days until which penalty will not be levied after the payment due date.
   * “Is Term Loan” specifies whether a loan is Term Loan Or Demand Loan. If  this is unchecked any loan of this type will be considered as a Demand Loan and automatic repayment schedule won’t be generated for that loan.
   * The various account details that will be used during the loan process can also be mentioned in the loan type
+
+> Demand Loans are open ended loans which do no have a fixed repayment schedule or a fixed repayment amount.
+
+{next}
 
 
