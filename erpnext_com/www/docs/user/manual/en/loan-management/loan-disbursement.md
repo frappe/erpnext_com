@@ -29,7 +29,15 @@ Before creating a Loan Disbursement, you must create the following first:
 ### 2.1. Other ways to create a Loan Disbursement
 1. You can also create a Loan Disbursement from a sanctioned Loan via the Create button on the top right
 
+<img class="screenshot" alt="Create Loan Disbursement" src="{{docs_base_url}}/assets/img/loan-management/create-loan-disbursement.png">
+
 ## 3. Features
+
+### 3.1 Multiple Disbursements against a Loan
+Multiple Loan Disbursements can be made against a Loan unless you don't cross the sanctioned amount loan amount against a Loan.
+
+### 3.2 Loan Topup
+Loan Disbursement can also me made once some of the loan amount is repaid and adequate amount of security is still pledged against that loan. This is called as loan topup.
 
 {next}
 

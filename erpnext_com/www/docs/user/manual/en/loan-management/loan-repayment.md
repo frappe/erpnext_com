@@ -30,8 +30,7 @@ Before creating a Loan Disbursement, you must create the following first:
 ### 2.1. Other ways to create a Loan Repayment
 1. You can also create a Loan Repayment from a disbursed Loan via the Create button on the top right
 
-## 3. Features
-
+<img class="screenshot" alt="Create Loan Repayment" src="{{docs_base_url}}/assets/img/loan-management/create-loan-repayment.png">
 {next}
 
 

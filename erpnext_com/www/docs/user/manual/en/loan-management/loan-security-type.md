@@ -4,7 +4,7 @@
 
 **Loan security type defines the type of security that can be pledged against a loan. For Eg: Stocks, land, etc.**
 
-During a loan process, if the loan for which the customer is applying is a secured loan then some kind of security needs to be pledged against that loan. In loan security type master you can define that type of security.
+During a loan process, if the loan for which the applicant is applying is a secured loan then some kind of security needs to be pledged against that loan. In loan security type master you can define that type of security.
 
 <img class="screenshot" alt="Make Loan Security Type" src="{{docs_base_url}}/assets/img/loan-management/loan-security-type-flow.png">
 

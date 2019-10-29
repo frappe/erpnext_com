@@ -4,7 +4,7 @@
 
 **A Loan Application contains the applicant and loan security details for review.**
 
-During a loan process, the first step a customer or employee has to do is submit a loan application for review.In case of a secured loan a loan application can also contain proposed loan securities.
+During a loan process, the first step a customer or employee has to do is submit a loan application for review. In case of a secured loan a loan application can also contain proposed loan securities.
 
 <img class="screenshot" alt="Make Loan Application" src="{{docs_base_url}}/assets/img/loan-management/loan-application-flow.png">
 
