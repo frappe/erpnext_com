@@ -20,7 +20,7 @@ Energy Point Rule has the following fields:
 | Field        | Description  |
 | ------------- |:-------------|
 | Reference DocType| Document Type you want to apply the rule on eg. Task, ToDo, Issue, etc. |
-| For Document Event| Options: Save, Submit, Cancel and Custom.<br>**Note:** If "Custom" option is selected then the "Conditions" field becomes mandatory|
+| For Document Event| Options: Save, Submit, Cancel, and Custom.<br>**Note:** If "Custom" option is selected then the "Conditions" field becomes mandatory|
 | Points | Points to be allocated.|
 | Allot Points To Assigned Users | If checked, users assigned to the reference document will get points. eg. If users Reema and Jai are assigned to a particular task then both of them i.e, Reema and Jai will get points when the document fulfills the condition|
 | User Field | Field from which user will be selected eg. `Resolved By`, `Modified By`, `Owner`, etc. can be used.      |
