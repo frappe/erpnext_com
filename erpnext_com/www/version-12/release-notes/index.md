@@ -78,3 +78,4 @@ metatags:
 1. [Website Refactor](/docs/user/manual/en/website)
 1. [Added Track Views field to Customize Form](/version-12/release-notes/features#added-track-views-field-to-customize-form)
 1. [Add custom columns to any report](/version-12/release-notes/features#add-custom-columns-to-any-report)
+1. [Breaking Change: Communication DocType was converted to Comment DocType (https://github.com/frappe/frappe/commit/41d90fa6d1fda781f6c96493faa616a63c5e0eb3)
