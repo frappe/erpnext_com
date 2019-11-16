@@ -22,7 +22,7 @@ To create a server script
 Server script must be enabled via site_config.json
 
 ```
-bench --site site1.local set-config enable_server_script true
+bench --site site1.local set-config server_script_enabled true
 ```
 
 ### 2.2 Document Events
