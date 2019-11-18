@@ -102,7 +102,7 @@ Sometimes payment is not done all at once. Depending on the agreement, half of t
 To know more about Payment Terms, [click here](/docs/user/manual/en/accounts/payment-terms).
 
 ### 3.7 Terms and Conditions
-There may be certain terms and conditions on the Item you're selling, these can be applied here. To know about adding Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions).
+In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
 
 ### 3.8 Print Settings
 #### Letterhead
@@ -134,7 +134,7 @@ If the sale took place via one of your Sales Partners, you can add their commiss
 <img class="screenshot" alt="Sales Team in Sales Order" src="{{docs_base_url}}/assets/img/selling/so-sales-team.png">
 
 ### 3.13 Auto Repeat Section
-Auto repeating Sales Orders is like a subscription. Set a start and end date for the auto-repeat. Select the Auto Repeat created. To know more about auto repeat [click here](/docs/user/manual/en/accounts/auto_repeat).
+Auto repeating Sales Orders is like a subscription. Set a start and end date for the auto-repeat. Select the Auto Repeat created. To know more about auto repeat [click here](/docs/user/manual/en/setting-up/automation/auto-repeat).
 
 ### 3.14 After Submitting
 Sales Order is a “Submittable” transaction. You will be able to execute further steps (like making a Delivery Note) only after “Submitting” a Sales Order.

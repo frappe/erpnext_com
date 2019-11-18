@@ -134,7 +134,7 @@ Any additional discounts to the whole order can be set in this section. This dis
 Read [Applying Discount](/docs/user/manual/en/selling/articles/applying-discount) for more details.
 
 ### 3.7 Terms and Conditions
-These are fetched from the Sales Order. To know about adding Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
 
 ### 3.8 Transporter Information
 
@@ -195,7 +195,7 @@ This is usually fetched from a Sales Order, for example:
 
 ### 3.14 Shipping Packets or Items with Product Bundle
 
-If you are shipping Items that have a [Product Bundle](/docs/user/manual/en/selling/setup/product-bundle), ERPNext will automatically create a “Packing List” table for you based on the sub-Items in that Item.
+If you are shipping Items that have a [Product Bundle](/docs/user/manual/en/selling/product-bundle), ERPNext will automatically create a “Packing List” table for you based on the sub-Items in that Item.
 
 If your Items are serialized, then for Product Bundle type of Items, you will have
 to update the Serial Number in the “Packing List” table.

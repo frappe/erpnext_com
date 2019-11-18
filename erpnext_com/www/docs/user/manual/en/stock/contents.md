@@ -28,6 +28,7 @@ The Stock module is tightly integrated with Purchase, Manufacturing and Accounti
 1. [Item Price](/docs/user/manual/en/stock/item-price)
 1. [Item Group](/docs/user/manual/en/stock/item-group)
 1. [Unit of Measure (UoM)](/docs/user/manual/en/stock/uom)
+1. [Manufacturer](/docs/user/manual/en/stock/manufacturer)
 
 ### 1.4 Stock Transactions
 1. [Material Request](/docs/user/manual/en/stock/material-request)
@@ -77,7 +78,7 @@ The Stock module is tightly integrated with Purchase, Manufacturing and Accounti
 1. [Track Items Using Barcode](/docs/user/manual/en/stock/articles/track-items-using-barcode)
 1. [Creating Depreciation For Item](/docs/user/manual/en/stock/articles/creating-depreciation-for-item)
 1. [Item Valuation FIFO And Moving Average](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average)
-1. [Item Codification](/docs/user/manual/en/stock/item-codification)
+1. [Item Codification](/docs/user/manual/en/stock/articles/item-codification)
 
 ### 2.4 Serial and Batch Number
 1. [Serial Number Naming](/docs/user/manual/en/stock/articles/serial-no-naming)

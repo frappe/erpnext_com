@@ -5,7 +5,7 @@
 
 For retail operations, the delivery of goods, accrual of sale and payment all happens in one event, that is usually called the 'Point of Sale' (POS).
 
-In ERPNext all Sales and Purchase transactions, like Sales Invoice, Quotation, Sales Order, Purchase Order etc. can be edited via the POS. There two steps to set up POS:
+In ERPNext all Sales and Purchase transactions, like Sales Invoice, Quotation, Sales Order, Purchase Order etc. can be edited via the POS. There are two steps to set up POS:
 
 To access POS, go to:
 > Home > Retail > Retail Operations > POS
@@ -57,7 +57,7 @@ in Search box.
 
 2. Set Qty as zero to remove Item from the POS invoice. There are two ways to remove an Item.
   * If Item's Qty is 1, click on a minus sign to make it zero.
-  * Manually enter 0(zero) quantity.
+  * Manually enter 0 (zero) quantity.
 
 
 ### 2.4 Change Amount
@@ -122,7 +122,7 @@ After sync of a POS order, email is sent to the Customer with the print of the b
 At the end of the day, the cashier can close his/her PoS by creating a POS Closing Voucher.
 Click on the Menu and select 'Close the POS'. Select the period, your POS Profile and your user to retrieve all sales registered.
 
-For closing shift wise or cahsier wise, use the [POS Cashier Closing](/docs/user/manual/en/accounts/pos-cashier-closing).
+For closing shift wise or cashier wise, use the [POS Cashier Closing](/docs/user/manual/en/accounts/pos-cashier-closing).
 
 <img class="screenshot" alt="POS Payment" src="{{docs_base_url}}/assets/img/accounts/pos-closing-voucher.png">
 
@@ -132,5 +132,4 @@ Enter the collected amount for each mode of payment. If you notice any differenc
 1. [Sales Invoice](/docs/user/manual/en/accounts/sales-invoice)
 1. [Purchase Order](/docs/user/manual/en/buying/purchase-order)
 1. [Payment Entry](/docs/user/manual/en/accounts/payment-entry)
-1. [Payments](/docs/user/manual/en/accounts/payments)
 1. [Payment Request](/docs/user/manual/en/accounts/payment-request)
