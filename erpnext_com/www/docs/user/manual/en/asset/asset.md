@@ -28,19 +28,19 @@ For an existing asset, you can create the asset record directly checking "Is Exi
 
 ### 2.2 New Asset
 
-For new assets, you cannot create the asset record directly from the Asset form. 
+For new assets, you cannot create the asset record directly from the Asset form. You need to create a Purchase Receipt/Invoice for it.
 
-When you're buying new assets, an asset ID is created when you make a Purchase Receipt. On submitting the Purchase Receipt for an Asset, you'll see a message like 'Asset AST00003 created'. This will happen only if you've ticked the 'Is Fixed Asset' checkbox when creating the Item.
+When you're buying new assets, an asset ID is created when you make a Purchase Receipt. On submitting the Purchase Receipt for an Asset, you'll see a message like 'Asset AST00003 created'. This will happen only if you've ticked the 'Is Fixed Asset' checkbox when creating the Item.	When you're buying new assets, assets can be created automatically when you make a Purchase Receipt, if you have 'Auto Create Assets on Purchase' ticked in the asset item. On submitting the Purchase Receipt for an Asset, you'll see a message like '5 Assets created for Office Phone'. If you don't want to auto create assets, after Purchase Receipt submission you will have to manually create assets and link the Purchase Receipt to the Asset.
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset.png">
 
-After submitting a Purchase Receipt/Invoice for such an Item, an Asset record will be created in the Draft stage. You can then go to the Asset and submit it.
+After submitting a Purchase Receipt/Invoice for such an Item, in case of auto creation a number of Asset record will be created in the Draft stage. You can then go to the Asset and submit it.
 
 To know more, visit the [Purchasing an Asset](/docs/user/manual/en/asset/purchasing-an-asset) page.
 
-## 3. How to create an Asset
+## 3. How to manually create an Asset
 
-Before you can create an Asset, you need to create an Item with 'Is Fixed Asset' checkbox ticked. Note that this cannot be done on an existing Item.
+Before you can create an Asset, you need to create an Item with 'Is Fixed Asset' checkbox ticked and create a Purchase Receipt/Invoice against that Item. Note that you will have to create a number of Assets based on the quantity specified in the Purchase Document.
 
 An Asset Category needs to be assigned to that Item. Now the Asset can be created.
 
@@ -49,9 +49,8 @@ An Asset Category needs to be assigned to that Item. Now the Asset can be create
 1. Select the Item Code, the Item Name and Asset Category will be fetched automatically.
 1. Select who is the Asset Owner, i.e. Company, Supplier, or Customer.
 1. Select the Company/Supplier/Customer.
-1. Select a Location. Eg: Mumbai Office.
-1. Enter the Purchase Date.
-1. Enter the Gross Purchase Amount.
+1. Select the Purchase Receipt/Invoice. Purchase Date and Gross Purchase Amount will be fetched automatically.
+1. Select a Location. Eg: Mumbai Office. This will be fetched automatically if specified in Purchase Receipt items table
 1. Enter an Available for use Date to set the date from which the Asset is available for use. The depreciation for the first period will be calculated from this date.
 1. Tick the 'Is Existing Asset' checkbox if you're recording an existing Asset.
 1. Save and Submit. 
