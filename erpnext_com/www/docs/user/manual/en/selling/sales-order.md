@@ -40,7 +40,7 @@ To allow for per-Customer, per-Item Pricing Rules, ("Customer A" pays $1.00 for 
 ## 3. Features
 
 ### 3.1 Currency and Price List
-You can set the currency in which the quotation/sales order is to be sent. If you set a Pricing List, then the item prices will be fetched from that list. Ticking on Ignore Pricing Rule will ignore the Pricing Rules set in Accounts > Pricing Rule.
+You can set the currency in which the quotation/sales order is to be sent. If you set a Pricing List, then the item prices will be fetched from that list. Ticking on 'Ignore Pricing Rule' will ignore the [Pricing Rules](/docs/user/manual/en/accounts/pricing-rule) set in Accounts > Pricing Rule.
 
 To know about Price Lists, [click here](/docs/user/manual/en/stock/price-lists).
 
@@ -49,12 +49,13 @@ To know about managing transactions in multiple currencies, [click here](/docs/u
 ### 3.1 Set Source Warehouse
 If you have the same stock in multiple warehouses, setting a warehouse here will cause all the items from the item table to be fetched from this warehouse. You need to have stock available in this 'source warehouse' you're setting. Note that this option will override the 'Default Warehouse' you've set in the Item master.
 
-### 3.2 The Item Table
+### 3.2 The Items Table
+
 * **Delivery Date against each item**: If there are multiple items and if you enter a delivery date in the first row, the date will be copied to other rows as well where it is blank. You'll have to set these if not set globally at the top of the Sales Order.
 
     A Sales Order displays the billed amount, valuation rate, and gross profit in the items table when you click on the inverted triangle to expand a row.
 
-    You can also add items in the item table by scanning their barcodes if you have a barcode scanner. Know how to track them [here](/docs/user/manual/en/stock/articles/track-items-using-barcode)
+    You can also add Items in the Items table by scanning their barcodes if you have a barcode scanner. Know how to track them [here](/docs/user/manual/en/stock/articles/track-items-using-barcode)
 
 * **Delivery Warehouse**: This is the warehouse from where the stock will be picked to be delivered to your customer.
 
@@ -85,7 +86,8 @@ The total taxes and charges will be displayed below the table. Clicking on Tax B
 
 <img class="screenshot" alt="Taxes in Quotation" src="{{docs_base_url}}/assets/img/selling/sales-order-taxes.png">
 
-You can add a [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) here for the items in the quotation.
+#### Shipping Rule
+A Shipping Rule helps set the cost of shipping an Item. The cost will usually increase with the distance of shipping. To know more, visit the [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) page.
 
 If a Tax Category is selected, the template and tax table will be automatically populated. To know more, visit [this page](/docs/user/manual/en/accounts/tax-category).
 
@@ -100,7 +102,7 @@ Sometimes payment is not done all at once. Depending on the agreement, half of t
 To know more about Payment Terms, [click here](/docs/user/manual/en/accounts/payment-terms).
 
 ### 3.7 Terms and Conditions
-To know about adding Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
 
 ### 3.8 Print Settings
 #### Letterhead
@@ -132,7 +134,7 @@ If the sale took place via one of your Sales Partners, you can add their commiss
 <img class="screenshot" alt="Sales Team in Sales Order" src="{{docs_base_url}}/assets/img/selling/so-sales-team.png">
 
 ### 3.13 Auto Repeat Section
-Auto repeating Sales Orders is like a subscription. Set a start and end date for the auto-repeat. Select the Auto Repeat created. To know more about auto repeat [click here](/docs/user/manual/en/accounts/auto_repeat).
+Auto repeating Sales Orders is like a subscription. Set a start and end date for the auto-repeat. Select the Auto Repeat created. To know more about auto repeat [click here](/docs/user/manual/en/setting-up/automation/auto-repeat).
 
 ### 3.14 After Submitting
 Sales Order is a “Submittable” transaction. You will be able to execute further steps (like making a Delivery Note) only after “Submitting” a Sales Order.

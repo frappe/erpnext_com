@@ -91,9 +91,10 @@ The total taxes and charges will be displayed below the table. Clicking on Tax B
 
 <img class="screenshot" alt="Taxes in Quotation" src="{{docs_base_url}}/assets/img/selling/quotation-taxes.png">
 
-You can add a [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) here for the items in the quotation.
-
 To add taxes automatically via a Tax Category, visit [this page](/docs/user/manual/en/accounts/tax-category).
+
+#### Shipping Rule
+A Shipping Rule helps set the cost of shipping an Item. The cost will usually increase with the distance of shipping. To know more, visit the [Shipping Rule](/docs/user/manual/en/selling/shipping-rule) page.
 
 ### 3.5 Additional Discount
 Other than offering discount per item, you can add a discount to the whole quotation in this section. This discount could be based on the Grand Total i.e., post tax/charges or Net total i.e., pre tax/charges. The additional discount can be applied as a percentage or an amount.
@@ -108,7 +109,7 @@ Sometimes payment is not done all at once. Depending on the agreement, half of t
 To know more about Payment Terms, [click here](/docs/user/manual/en/accounts/payment-terms).
 
 ### 3.7 Terms and Conditions
-To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions).
+In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
 
 ### 3.8 Print Settings
 #### Letterhead

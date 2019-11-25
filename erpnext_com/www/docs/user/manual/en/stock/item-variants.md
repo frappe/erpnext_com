@@ -32,13 +32,13 @@ Variants can be based on two things:
 > Note: You cannot make Transactions against a 'Template'.
 
 ### 1.2 Creating the Item Variants Based on Item Attributes
-To create 'Item Variants' against a 'Template' click on 'Create'. From there, choose whether to create a single variant or multiple. Single is simple where you just one or more attributes and one item will be created. When choosing multiple variants, tick the attributes and multiple items will be created. For example, if you choose Color: Red, Green and Size: Small, Medium, Large, 6 variants will be created.
+To create 'Item Variants' against a 'Template' click on 'Create'. From there, choose whether to create a single variant or multiple. Single is simple where you create just one or more attributes and one Item will be created. When choosing multiple variants, tick the attributes and multiple items will be created. For example, if you choose Color: Red, Green and Size: Small, Medium, Large, 6 variants will be created.
 
 Creating multiple variants in ERPNext:
 
 <img class="screenshot" alt="Make Variants" src="{{docs_base_url}}/assets/img/stock/make-multiple-variants.png">
 
-To learn more about setting attributes check out [Item Attributes](/docs/user/manual/en/stock/setup/item-attribute)
+To learn more about setting attributes check out [Item Attributes](/docs/user/manual/en/stock/item-attribute)
 
 ### 1.3 Item Variants Based on Manufacturers
 
@@ -70,4 +70,4 @@ Go to: **Home > Stock > Items and Pricing > Item Variant Settings**. The fields 
 1. [Item Group](/docs/user/manual/en/stock/item-group)
 1. [Item Attribute](/docs/user/manual/en/stock/item-attribute)
 1. [Item Price](/docs/user/manual/en/stock/item-price)
-1. [Item Codification](/docs/user/manual/en/stock/item-codification)
+1. [Item Codification](/docs/user/manual/en/stock/articles/item-codification)
