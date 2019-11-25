@@ -14,11 +14,13 @@ For purchasing a new asset:
 
 <img class="screenshot" alt="Purchasing Asset" src="{{docs_base_url}}/assets/img/asset/asset-purchase-receipt.png">
 
-Following accounting entries will be posted on submission of the Receipt entry.
+Following accounting entries will be posted on submission of the Receipt entry if Capital Work In Progress Accounting is enabled in the Asset Category of the purchased asset.
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-purchase-receipt-gl-entries.png">
 
 It is noticeable here that, instead of corresponding asset account, Capital Work in Progress (CWIP) has been debited. It is because, asset has been just purchased and it is still not available for use. Until the asset is available for use, the asset value maintained against this account. On the day when it is available for use, the CWIP account gets credited and corresponding asset account gets debited.
+
+In case of disabled 'Capital Work In Progress Accounting' in the Asset Category, the receipt entry will be made against corresponding asset accounts set in the Asset Category.
 
 ERPNext also uses a temporary account "Asset Received But Not Billed" (a liability account) which gets credited on submission of Purchase Receipt entry. Later, on submission of Purchase Invoice, this account gets debited/reversed.
 

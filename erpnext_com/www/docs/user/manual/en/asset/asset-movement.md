@@ -19,16 +19,21 @@ Before creating and using Asset Movement, it is advised to create the following 
 
 ## 2. How to create an Asset Movement
 1. Go to the Asset Movement list, click on New.
-1. Select the Purpose. Based on purpose mandatory fields will be changed.
+1. Select the Purpose. Mandatory fields will be changed based on purpose.
 1. Select a date.
-1. Select Reference Doctype. It can be Purchase Reciept or Invoice
-1. Select Reference Document. It is the document through which the Asset was purchased.
-1. Assets linked to the Purchase Document will be fetched automatically. This handy when you have to make movements of a number of assets.
+1. Select Assets you want to move. Currenct Location / Custodian will be automatically fetched.
+1. Select Reference Document Type (Optional)
+1. Select Reference Document Name (Optional)
 1. Save.
 1. Submit.
 
-There is also a **Transfer Asset** button on the top right of the Asset form to initiate Asset Movement. 
-
-To make asset movement of a number of assets it is adviced to go to Asset List, select Assets and click on 'Make Asset Movement' from Actions menu on the top left.
+To make asset movement of a number of assets it is adviced to go to Asset List, select assets to be moved and click on **Make Asset Movement** from Actions menu on the top left. 
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-movement-using-button.png">
+
+There is also a **Transfer Asset** button on the top right of the Asset form to initiate Asset Movement. It auto fills available fields from Asset Form.
+
+<img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-movement-using-transfer-asset-button.png">
+
+
+
