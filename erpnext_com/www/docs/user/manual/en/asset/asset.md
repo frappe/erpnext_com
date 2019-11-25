@@ -51,7 +51,7 @@ An Asset Category needs to be assigned to that Item. Now the Asset can be create
 1. Select the Company/Supplier/Customer.
 1. Select the Purchase Receipt/Invoice. Purchase Date and Gross Purchase Amount will be fetched automatically.
 1. Select a Location. Eg: Mumbai Office. This will be fetched automatically if specified in Purchase Receipt items table
-1. Enter an Available for use Date to set the date from which the Asset is available for use. The depreciation for the first period will be calculated from this date.
+1. Enter an Available for use Date to set the date from which the Asset is available for use. The depreciation amount for the first period will be calculated from this date.
 1. Tick the 'Is Existing Asset' checkbox if you're recording an existing Asset.
 1. Save and Submit. 
 
@@ -67,7 +67,7 @@ An Asset Category needs to be assigned to that Item. Now the Asset can be create
 1. **Current Value (After Depreciation)**: In case you are creating a record of an existing asset which has already been partially/fully depreciated, mention the current value of the asset. In case of a new asset, mention the purchase amount or leave it blank.
 1. **Next Depreciation Date**: Mention the next depreciation date, even if it is the first one. If the asset is an existing one and depreciation has already been completed, leave it blank.
 1. **Calculate Depreciation**: Enable this checkbox to calculate depreciation of Assets.
-1. **Allow Monthly Depreciation**: Enable this checkbox to distribute depreciation amount of an year into 12 months. Depreciation entries will be made every month on the date provided as Depreciation Start Date. For eg. If avialbled for use date is 22nd Nov 2019 and depreciation start date is 31st March 2020, first depreciation will be done on 30th Nov 2019 second on 31st Dec 2019 and so on. Amount will be distributed based on days left until next depreciation. 
+1. **Allow Monthly Depreciation**: Enable this checkbox to distribute depreciation amount of an year into 12 months. Depreciation entries will be made every month on the date provided as Depreciation Start Date. For eg. If Available for use date is 22nd Nov 2019 and depreciation start date is 31st March 2020, first depreciation will be done on 30th Nov 2019 second on 31st Dec 2019 and so on. Amount will be distributed based on days left until next depreciation. 
 
 ## 4. Features
 
