@@ -11,7 +11,7 @@ In ERPNext, you can maintain fixed asset records for Company assets like compute
 1. [Asset Location](/docs/user/manual/en/asset/asset-location)
 1. [Asset Movement](/docs/user/manual/en/asset/asset-movement)
 
-##### 1.2 Asset Maintenance
+### 1.2 Asset Maintenance
 1. [Asset Maintenance Team](/docs/user/manual/en/asset/asset-maintenance-team)
 1. [Asset Maintenance](/docs/user/manual/en/asset/asset-maintenance)
 1. [Asset Maintenance Log](/docs/user/manual/en/asset/asset-maintenance-log)
