@@ -34,7 +34,7 @@ When you're buying new assets, an asset ID is created when you make a Purchase R
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset.png">
 
-After submitting a Purchase Receipt/Invoice for such an Item, in case of auto creation a number of Asset record will be created in the Draft stage. You can then go to the Asset and submit it.
+After submitting a Purchase Receipt/Invoice for such an Item, in case of asset auto creation, a number of Asset records will be created in the Draft stage. You can then go to these Assets and submit them.
 
 To know more, visit the [Purchasing an Asset](/docs/user/manual/en/asset/purchasing-an-asset) page.
 
