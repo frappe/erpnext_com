@@ -23,7 +23,7 @@ Before creating and using Asset Movement, it is advised to create the following 
 1. Select a date.
 1. Select Assets you want to move. Currenct Location / Custodian will be automatically fetched.
 1. Select Reference Document Type (Optional).
-1. Select Reference Document Name (Optional)
+1. Select Reference Document Name (Optional).
 1. Save.
 1. Submit.
 
@@ -34,4 +34,3 @@ To make asset movement of a number of assets it is adviced to go to Asset List, 
 There is also a **Transfer Asset** button on the top right of the Asset form to initiate Asset Movement. It auto fills available fields from Asset Form.
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-movement-using-transfer-asset-button.png">
-
