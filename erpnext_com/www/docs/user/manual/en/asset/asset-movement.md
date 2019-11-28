@@ -27,7 +27,7 @@ Before creating and using Asset Movement, it is advised to create the following 
 1. Save.
 1. Submit.
 
-To make asset movement of a number of assets it is adviced to go to Asset List, select assets to be moved and click on **Make Asset Movement** from Actions menu on the top left. 
+To make an Asset Movement of a number of assets, it is advised to go to Asset List, select assets to be moved and click on **Make Asset Movement** from Actions menu on the top left. 
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset-movement-using-button.png">
 
