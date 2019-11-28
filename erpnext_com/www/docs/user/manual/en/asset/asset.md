@@ -76,7 +76,7 @@ An Asset Category needs to be assigned to that Item. Now the Asset can be create
 ### 4.1 Depreciation
 
 * **Frequency of Depreciation (Months)**: The number of months between depreciations.
-* **Total Number of Depreciations**: The total number of depreciations during the useful life. In case of existing assets which are partially depreciated, mention the number of pending depreciations. For example if you set frequency as 12 months and no. of depreciations as 3, 1 depreciation will be booked every 12 months for 3 years.
+* **Total Number of Depreciations**: The total number of depreciations during the useful life of the Asset. In case of existing assets which are partially depreciated, mention the number of pending depreciations. For example, if you set frequency as 12 months and no. of depreciations as 3, 1 depreciation will be booked every 12 months for 3 years.
 * **Depreciation Method**: There are two options**: Straight Line and Double Declining Balance.
     - **Straight Line**: This method spreads the cost of the fixed asset evenly over its useful life.
     - **Double Declining Method**: An accelerated method of depreciation, it results in higher depreciation expense in the earlier years of ownership.
