@@ -50,7 +50,7 @@ def get_context(context):
 			'title': '3 Hrs Onboarding Support'
 		},
 		'onboarding':  {
-			'title': '25 Hrs Onboarding Support'
+			'title': '10 Hrs Onboarding Support'
 		}
 	}
 
