@@ -30,7 +30,9 @@ For an existing asset, you can create the asset record directly checking "Is Exi
 
 For new assets, you cannot create the asset record directly from the Asset form. You need to create a Purchase Receipt/Invoice for it.
 
-When you're buying new assets, an asset ID is created when you make a Purchase Receipt. On submitting the Purchase Receipt for an Asset, you'll see a message like 'Asset AST00003 created'. This will happen only if you've ticked the 'Is Fixed Asset' checkbox when creating the Item.	When you're buying new assets, assets can be created automatically when you make a Purchase Receipt, if you have 'Auto Create Assets on Purchase' ticked in the asset item. On submitting the Purchase Receipt for an Asset, you'll see a message like '5 Assets created for Office Phone'. If you don't want to auto create assets, after Purchase Receipt submission you will have to manually create assets and link the Purchase Receipt to the Asset.
+When you're buying new assets, an asset ID is created when you make a Purchase Receipt. On submitting the Purchase Receipt for an Asset, you'll see a message like 'Asset AST00003 created'. This will happen only if you've ticked the 'Is Fixed Asset' checkbox when creating the Item.
+
+When you're buying new assets, assets can be created automatically when you make a Purchase Receipt, if you have 'Auto Create Assets on Purchase' ticked in the Item master of the Asset. On submitting the Purchase Receipt for an Asset, you'll see a message like '5 Assets created for Office Phone'. If you don't want to auto create assets, after Purchase Receipt submission you will have to manually create assets and link the Purchase Receipt to the Asset.
 
 <img class="screenshot" alt="Asset" src="{{docs_base_url}}/assets/img/asset/asset.png">
 
