@@ -3,13 +3,19 @@
 
 **Arbitrary meta tags can be added in your web pages using Website Route Meta.**
 
+Meta Tags are invisible tags that provide data about your page to search engines
+and website visitors. When used correctly, these tags may help boost your SEO
+and rankings on popular search engines. These tags will be placed in the
+`<head>` section of your page. ERPNext allows you add arbitrary meta tags in
+your web pages to improve the SEO of your pages.
+
 To access Website Route Meta go to:
 
 > Home > Website > Web Site > Website Route Meta
 
 ## 1. How to add meta tags to a web page
 
-1. Click on New.
+1. Go to the Website Route Meta list and click on New.
 1. Enter the route. Make sure the route doesn't start with a slash (`/`). A Web
    Page for this route should exist.
 1. Add key value pairs for each meta tag. For e.g., to add keywords to your web
