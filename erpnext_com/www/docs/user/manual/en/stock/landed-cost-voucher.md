@@ -56,7 +56,7 @@ But in reality, while making Purchase Receipt we might not know all the charges 
 
 1. Valuation Rate of items is recalculated based on new landed cost.
 
-3. If you are using “Perpetual Inventory”, the system will post general ledger entries to correct Stock-in-Hand balance. It will debit (increase) corresponding “warehouse account” and credit (decrease) **Expense Account** mentioned in taxes and charges table. If items are already delivered, the Cost-of-Goods-Sold (CoGS) value has been booked as per the old valuation rate. Hence, general ledger entries are reposted for all future outgoing entries of associated items, to correct CoGS value.
+3. If you are using “Perpetual Inventory”, the system will post general ledger entries to correct Stock-in-Hand balance. It will debit (increase) corresponding “warehouse account” and credit (decrease) **Expense Account** mentioned in Taxes and Charges table. If items are already delivered, the Cost-of-Goods-Sold (CoGS) value has been booked as per the old valuation rate. Hence, general ledger entries are reposted for all future outgoing entries of associated items, to correct CoGS value.
 
 ### 4. Related Topics
 1. [Delivery Trip](/docs/user/manual/en/stock/delivery-trip)
