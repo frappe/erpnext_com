@@ -33,7 +33,7 @@ Before creating and using Landed Cost Voucher, it is advised that you create the
 1. Select the specific Invoice or Receipt. The supplier name and Grand Total will be fetched automatically.
 1. Click on the Get Items from Purchase Receipts button to fetch the item details from the Purchase Invoice/Receipt.
 1. Select whether Distribute Charges Based On should be on quantity or Amount.
-1. Enter the expense account and additional charges in the Taxes and Charges table. The amount will be distributed equally based on the quantity or amount as per your selection.
+1. Enter the Expense Account and the Amount for Additional Costs in the Taxes and Charges table. The amount will be distributed equally based on the quantity or amount as per your selection.
 1. Save and Submit.
 
     <img class="screenshot" alt="Landed Cost Voucher" src="{{docs_base_url}}/assets/img/stock/landed-cost-voucher.png">
