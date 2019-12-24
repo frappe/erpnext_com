@@ -1,6 +1,9 @@
 <!-- add-breadcrumbs -->
 # ERPNext Integrations
 
+### Event Streaming
+1. [Event Streaming](/docs/user/manual/en/erpnext_integration/event_streaming)
+
 ### Authentication Integration
 1. [Ldap Integration](/docs/user/manual/en/erpnext_integration/ldap-integration)
 
