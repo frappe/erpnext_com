@@ -28,7 +28,7 @@ def get_context(context):
 		},
 		'email_support': {
 			'title': 'Standard Support',
-			'content': 'Standard support during bussiness hours'
+			'content': 'Standard support during business hours'
 		},
 		'backup': {
 			'title': 'Backup + Redundancy',
@@ -65,7 +65,8 @@ def get_context(context):
 
 		return plan, pricing
 
-	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard-2019')
+	
+	_plan, business_plan_pricing = get_plan_and_pricing('P-Standard-2019')
 	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro-2019')
 
 	context.plans = [
