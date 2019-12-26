@@ -154,4 +154,23 @@ home_page = "index"
 # 	"frappe.desk.doctype.event.event.get_events": "erpnext_com.event.get_events"
 # }
 
-fixtures = ["Contact Us Settings"]
+fixtures = [
+	"Contact Us Settings",
+	{
+		"dt": "Web Page",
+		"filters": [
+			[
+				"name",
+				"in",
+				(
+					'worlds-best-open-source-erp', 'compare', 'get-in-touch,disclaimer',
+					'erpnext-for-enterprise','frappe-customer-support', 'open-source-cloud-erp-software-erpnext',
+					'gst-ready-erp,master-erpnext-basics','license-trademark','erpnext-mobile-apps',
+					'paid-feature-development', 'frequently-asked-questions', 'payment', 'privacy',
+					'policy', 'erpnext-reviews', 'vat-ready-erp'
+				)
+			]
+		],
+		"overwrite_in_import": False
+	}
+]
