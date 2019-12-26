@@ -28,7 +28,7 @@ def get_context(context):
 		},
 		'email_support': {
 			'title': 'Standard Support',
-			'content': 'Standard support during bussiness hours'
+			'content': 'Standard support during business hours'
 		},
 		'backup': {
 			'title': 'Backup + Redundancy',
