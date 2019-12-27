@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import frappe
+import requests
 
 eu = ["BE", "BG", "CZ", "DK", "DE", "EE", "IE", "EL", "ES", "FR", "HR",
 	"IT", "CY", "LV", "LT", "LU", "HU", "MT", "NL", "AT", "PL", "PT",
