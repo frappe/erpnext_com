@@ -10,9 +10,12 @@ For Example: If you have 4-5 companies hosted on different sites, one among them
 To access Event Streaming, go to:
 > Home > Integrations > Event Streaming
 
-## 1. How to set up Event Streaming
+## 1. Prerequisites
+Before creating an Event Producer, one same user needs to be created on both the sites which will be used to access the site and will act as an Event Subsciber. Make sure the user has the necessary permissions for creation, updation and deletion of the subscribed doctypes.
 
-### 1.1 Create an Event Producer
+## 2. How to set up Event Streaming
+
+### 2.1 Create an Event Producer
 1. The site which you want to subscribe to, is called as the Event Producer. Create an Event Producer document for the site you wish to get the updates from.
 2. Go to: **Home > Integrations > Event Streaming > Event Producer**.
 3. Enter the site URL of the site you want to subscribe to, in the Producer URL field.
@@ -24,7 +27,7 @@ To access Event Streaming, go to:
 
     ![Event Producer](/docs/assets/img/setup/integrations/event-producer-doc.png)
 
-### 1.2 Approve Event Consumer on the Event Producer site
+### 2.2 Approve Event Consumer on the Event Producer site
 1. After the Event Producer has been created, an Event Consumer automatically gets created on the other site. By default all the Subscribed Document Types have the status as 'Pending'. In order to enable the Event Consumer to consume the documents of these Document Types, their Status needs to be updated to 'Approved'.
 2. Go to: **Home > Integrations > Event Streaming > Event Consumer**.
 3. Once you open the Event Consumer document you will see all the Document Types that the consumer has subscribed to. Change the status from 'Pending' to 'Approved' for all the Document Types that you want to approve to be consumed. You can change the status to 'Rejected' if you do not want the documents of that Document Type to be consumed.
@@ -34,21 +37,21 @@ To access Event Streaming, go to:
 
 **Note**: Document updates for Subscribed Document Types won't be synced unless they are Approved.
 
-## 2. Features
+## 3. Features
 
-### 2.1 Update Log
-Update Log logs every create, update, delete for documents that have consumers on the Event Producer site.
-In order to view the Update Log:
+### 3.1 Event Update Log
+Event Update Log logs every create, update, delete for documents that have consumers on the Event Producer site.
+In order to view the Event Update Log:
 
-Go to: **Home > Integrations > Event Streaming > Update Log**.
+Go to: **Home > Integrations > Event Streaming > Event Update Log**.
 
 - For 'Create' type the Update Type, Document Type, Document Name and the entire document (as json) is logged.
 - For 'Update' type the Update Type, Document Type, Document Name and the updated data (difference between the previous state and current state of the document) is logged.
 - For 'Delete' type only the Update Type, Document Type and Document Name is logged.
 
-![Update Log](/docs/assets/img/setup/integrations/event-update-log-doc.png)
+![Event Update Log](/docs/assets/img/setup/integrations/event-update-log-doc.png)
 
-### 2.2 Event Sync Log
+### 3.2 Event Sync Log
 Like the Update Log, Event Sync Log logs every document synced from the Event Producer on the Event Consumer site.
 In order to view the Event Sync Log:
 
@@ -77,13 +80,13 @@ A failed event generates a log doc with the above fields along with:
 - **Resync Button**: It also provides a 'Resync' button in order to resync the failed event.
     ![Event Failed](/docs/assets/img/setup/integrations/event-failed.png)
 
-### 2.3 Dependency Syncing
+### 3.3 Dependency Syncing
 Certain Document Types have dependencies. For example, before syncing a Sales Invoice, the Item and Customer need to be present in the current site. So, Item and Customer are dependencies for Sales Invoice. Event Streaming handles this by on-demand dependency syncing. Whenever any document is to be synced, it first checks whether the document has any dependencies (Link fields, Dynamic Link fields, Child Table fields, etc.). If that dependency is not fullfilled i.e. the dependent document (eg: Item) is not present on your consumer site, it will be synced first and then the Sales Invoice will be synced.
 
 For example: Sales Invoice syncing with Item dependency
     ![Event Dependency](/docs/assets/img/setup/integrations/event-dependency-sync.gif)
 
-### 2.4 Naming Configuration
+### 3.4 Naming Configuration
 Check the 'Use Same Name' checkbox to let the documents have same name on both Event Producer and Event Consumer sites. If this is not checked, then the document will be created using the naming conventions of the current site.
 
 ![Use Same Name Config](/docs/assets/img/setup/integrations/event-use-same-name.png)
@@ -92,7 +95,7 @@ Check the 'Use Same Name' checkbox to let the documents have same name on both E
 
 ![Subscribed Document](/docs/assets/img/setup/integrations/event-subscribed-doc.png)
 
-### 2.5 Mapping Configuration
+### 3.5 Mapping Configuration
 If you want to stream documents between an ERPNext instance and another Frappe app for a particular Document Type which has the same structure but fieldnames are different in both the sites, you can use Event Streaming with Mapping Configuration.
 For this you need to first set up a Document Type Mapping:
 
