@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "autoname": "field:page_name",
+ "creation": "2019-12-18 18:12:03.130860",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "page_name",
+  "title",
+  "subtitle",
+  "route",
+  "column_break_5",
+  "is_published",
+  "domain_image",
+  "section_break_8",
+  "cards"
+ ],
+ "fields": [
+  {
+   "fieldname": "page_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Page Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subtitle",
+   "fieldtype": "Text",
+   "label": "Subtitle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "domain_image",
+   "fieldtype": "Attach",
+   "label": "Domain Image"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cards",
+   "fieldtype": "Table",
+   "options": "Domain Card"
+  }
+ ],
+ "links": [],
+ "modified": "2019-12-31 13:07:08.600361",
+ "modified_by": "Administrator",
+ "module": "erpnext_com",
+ "name": "Domain Page",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
