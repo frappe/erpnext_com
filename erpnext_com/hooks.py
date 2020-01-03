@@ -171,10 +171,10 @@ fixtures = [
 				)
 			]
 		],
-		"overwrite_in_import": False
+		"can_overwrite": False
 	},
 	{
 		"dt": "Domain Page",
-		"overwrite_in_import": False
+		"can_overwrite": False
 	}
 ]
