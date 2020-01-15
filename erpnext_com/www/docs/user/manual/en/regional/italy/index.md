@@ -1,6 +1,8 @@
 <!-- add-breadcrumbs -->
 # Requirements for Italy
 
-Electronic Invoicing is now obligatory for businesses operating in Italy. ERPNext has a feature to import supplier invoices from XML files provided by suppliers to the government.
+ERPNext aims to support local regulation for different regions in the world. In most cases ERPNext is very flexible so you can easily add Custom Fields and make Custom Reports to support the regulation of your region.
+
+This section contains region specific features for Italy. 
 
 {index}
