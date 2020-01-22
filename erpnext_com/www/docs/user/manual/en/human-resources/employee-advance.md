@@ -7,7 +7,7 @@ Once the Employee Advance is created by the Employee, the Expense Approver can s
 
 To access Employee Advance, go to:
 
-> Human Resources > Expense Claims > Employee Advance 
+> Human Resources > Expense Claims > Employee Advance
 
 ## 1. Prerequisites
 
@@ -36,7 +36,14 @@ After saving Employee Advance, Employee should [Assign document to Approver](/do
 
 After verification, the Expense Approver can Submit (Accept) the Employee Advance form or Reject the request.
 
-### 3.2 Make Payment Entry
+### 3.2 Repay Employee Advance From salary
+
+This feature allows to pay the Employee Advance Unclaimed Amount via salary.
+If 'Repay unclaimed amount from salary' is checked then you need to fill Payroll Date and Salary Component. The Unclaimed amount will be deducted from salary if payroll date is in the interval when Salary is processed, It will be added to the deduction.
+
+<img class="screenshot" alt="Employee Advance Payment via Journal Entry" src="{{docs_base_url}}/assets/img/human-resources/repay-advance-via salary.png">
+
+### 3.3 Make Payment Entry
 
 ##### Employee Advance via Payment Entry
 After submission of Employee Advance record, accounts user will be able to create a [Payment Entry](/docs/user/manual/en/accounts/payment-entry) using the 'Create' button.
@@ -51,7 +58,7 @@ Alternatively, a [Journal Entry](/docs/user/manual/en/accounts/journal-entry) ca
 
 <img class="screenshot" alt="Employee Advance Payment via Journal Entry" src="{{docs_base_url}}/assets/img/human-resources/employee-advance-journal-entry1.png">
 
-> Note: Make sure the Party Type is selected as Employee and the Reference Type is selected as Employee 
+> Note: Make sure the Party Type is selected as Employee and the Reference Type is selected as Employee
 Advance.
 
 <img class="screenshot" alt="Employee Advance Payment via Journal Entry" src="{{docs_base_url}}/assets/img/human-resources/employee-advance-journal-entry2.png">
@@ -59,12 +66,12 @@ Advance.
 #### Employee Advance is Paid
 On submission of the Payment Entry/Journal Entry, the paid amount and status will be updated in Employee Advance record.
 
-### 3.3 Adjust Advances on Expense Claim
+### 3.4 Adjust Advances on Expense Claim
 
 Later when the employee claims the expense, an advance record can be fetched in the [Expense Claim](/docs/user/manual/en/human-resources/expense-claim) and linked to the claim record.
 
 
-### 3.4 Return Amount
+### 3.5 Return Amount
 When advance is paid to an Employee, there are three situations:
 
 * The amount may be unused
@@ -72,7 +79,7 @@ When advance is paid to an Employee, there are three situations:
 * Some part may be used
 
 
-Create the Employee Advance, create a payment entry to indicate that the amount is paid. 
+Create the Employee Advance, create a payment entry to indicate that the amount is paid.
 
 * If amount is unused, click on the **Return** button to return the paid Advance amount
     ![Return Button](/docs/assets/img/human-resources/advance-return-button.png)
