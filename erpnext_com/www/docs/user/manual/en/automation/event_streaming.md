@@ -3,12 +3,12 @@
 
 > Introduced in Version 13
 
-Event Streaming enables inter site communications between two ore more sites. You can **subscribe** to Document Types and **stream** Documents between different sites.
+Event Streaming enables inter site communications between two or more sites. You can **subscribe** to Document Types and **stream** Documents between different sites.
 
 For Example: Consider you have more than one Company hosted on different sites, one among them is the main site where you want to do ledger posting and on other sites, the Sales Invoices are generated. You can use Event Streaming in this case. For this, your child company sites can subscribe to the main company site for Item, Customer, and Supplier Document Types. The main Company in turn can subscribe to the child companies for Sales Invoices.
 
 To access Event Streaming, go to:
-> Home > Integrations > Event Streaming
+> Home > Automation > Event Streaming
 
 ## 1. Prerequisites
 Before creating an Event Producer, a common user needs to be created on both the sites which will be used to access the site and will act as an Event Subscriber. Make sure the user has the necessary permissions for creation, updation, and deletion of the subscribed DocTypes.
@@ -17,7 +17,7 @@ Before creating an Event Producer, a common user needs to be created on both the
 
 ### 2.1 Create an Event Producer
 1. The site which you want to subscribe to, is called as the Event Producer. Create an Event Producer document for the site you wish to get the updates from.
-2. Go to: **Home > Integrations > Event Streaming > Event Producer**.
+2. Go to: **Home > Automation > Event Streaming > Event Producer**.
 3. Enter the site URL of the site you want to subscribe to, in the Producer URL field.
 4. Add all the Document Types you want to subscribe to, in the Event Configuration child table.
 5. If you want to have the created documents with the same name as it is on the remote Event Producer site, check the 'Use Same Name' checkbox in the child table against the required Document Type.
@@ -29,7 +29,7 @@ Before creating an Event Producer, a common user needs to be created on both the
 
 ### 2.2 Approve Event Consumer on the Event Producer site
 1. After the Event Producer has been created, an Event Consumer automatically gets created on the other site. By default all the Subscribed Document Types have the status as 'Pending'. In order to enable the Event Consumer to consume the documents of these Document Types, their Status needs to be updated to 'Approved'.
-2. Go to: **Home > Integrations > Event Streaming > Event Consumer**.
+2. Go to: **Home > Automation > Event Streaming > Event Consumer**.
 3. Once you open the Event Consumer document you will see all the Document Types that the consumer has subscribed to. Change the status from 'Pending' to 'Approved' for all the Document Types that you want to approve to be consumed. You can change the status to 'Rejected' if you do not want the documents of that Document Type to be consumed.
 4. Save.
 
@@ -52,7 +52,7 @@ If you have some places where internet connectivity is low, for example, a store
 Event Update Log logs every create, update, and delete for documents that have consumers on the Event Producer site.
 In order to view the Event Update Log:
 
-Go to: **Home > Integrations > Event Streaming > Event Update Log**.
+Go to: **Home > Automation > Event Streaming > Event Update Log**.
 
 - For 'Create' type the Update Type, Document Type, Document Name and the entire document (as JSON) is logged.
 - For 'Update' type the Update Type, Document Type, Document Name and the updated data (difference between the previous state and current state of the document) is logged.
@@ -64,7 +64,7 @@ Go to: **Home > Integrations > Event Streaming > Event Update Log**.
 Like the Update Log, Event Sync Log logs every document synced from the Event Producer on the Event Consumer site.
 In order to view the Event Sync Log:
 
-Go to: **Home > Integrations > Event Streaming > Event Sync Log**.
+Go to: **Home > Automation > Event Streaming > Event Sync Log**.
 
 ![Event Sync Log](/docs/assets/img/setup/integrations/event-sync-log.png)
 
