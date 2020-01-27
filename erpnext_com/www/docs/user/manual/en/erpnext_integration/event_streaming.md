@@ -1,7 +1,7 @@
  <!-- add-breadcrumbs -->
 # Event Streaming
 
-Event Streaming enables inter site communications.
+Event Streaming enables inter site communications between two ore more sites.
 
 From version 13, you can **subscribe** to Document Types and **stream** Documents between different sites.
 
