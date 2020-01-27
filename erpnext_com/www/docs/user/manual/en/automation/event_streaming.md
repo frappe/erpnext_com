@@ -25,7 +25,7 @@ Before creating an Event Producer, a common user needs to be created on both the
 7. Save.
 8. The API key and API secret are then set in the Event Producer document for Authentication.
 
-    ![Event Producer](/docs/assets/img/setup/integrations/event-producer-doc.png)
+    ![Event Producer](/docs/assets/img/automation/event-producer-doc.png)
 
 ### 2.2 Approve Event Consumer on the Event Producer site
 1. After the Event Producer has been created, an Event Consumer automatically gets created on the other site. By default all the Subscribed Document Types have the status as 'Pending'. In order to enable the Event Consumer to consume the documents of these Document Types, their Status needs to be updated to 'Approved'.
@@ -33,7 +33,7 @@ Before creating an Event Producer, a common user needs to be created on both the
 3. Once you open the Event Consumer document you will see all the Document Types that the consumer has subscribed to. Change the status from 'Pending' to 'Approved' for all the Document Types that you want to approve to be consumed. You can change the status to 'Rejected' if you do not want the documents of that Document Type to be consumed.
 4. Save.
 
-    ![Event Consumer](/docs/assets/img/setup/integrations/event-consumer-doc.png)
+    ![Event Consumer](/docs/assets/img/automation/event-consumer-doc.png)
 
 >**Note**: Document updates for Subscribed Document Types won't be synced unless they are Approved.
 
@@ -58,7 +58,7 @@ Go to: **Home > Automation > Event Streaming > Event Update Log**.
 - For 'Update' type the Update Type, Document Type, Document Name and the updated data (difference between the previous state and current state of the document) is logged.
 - For 'Delete' type only the Update Type, Document Type, and Document Name is logged.
 
-![Event Update Log](/docs/assets/img/setup/integrations/event-update-log-doc.png)
+![Event Update Log](/docs/assets/img/automation/event-update-log-doc.png)
 
 ### 3.2 Event Sync Log
 Like the Update Log, Event Sync Log logs every document synced from the Event Producer on the Event Consumer site.
@@ -66,7 +66,7 @@ In order to view the Event Sync Log:
 
 Go to: **Home > Automation > Event Streaming > Event Sync Log**.
 
-![Event Sync Log](/docs/assets/img/setup/integrations/event-sync-log.png)
+![Event Sync Log](/docs/assets/img/automation/event-sync-log.png)
 
 A successfully synced event generates a log document with:
 
@@ -79,30 +79,30 @@ A successfully synced event generates a log document with:
 - **Use Same Name**
 - **Data**: The document data as JSON
 
-    ![Event Sync Log](/docs/assets/img/setup/integrations/event-synced.png)
+    ![Event Sync Log](/docs/assets/img/automation/event-synced.png)
 
 A failed event generates a log doc with the above fields along with:
 
 - **Error**: The error because of which the document was not synced.
-    ![Event Synced](/docs/assets/img/setup/integrations/event-failed-error.png)
+    ![Event Synced](/docs/assets/img/automation/event-failed-error.png)
 
 - **Resync Button**: It also provides a 'Resync' button in order to resync the failed event.
-    ![Event Failed](/docs/assets/img/setup/integrations/event-failed.png)
+    ![Event Failed](/docs/assets/img/automation/event-failed.png)
 
 ### 3.3 Dependency Syncing
 Certain Document Types have dependencies. For example, before syncing a Sales Invoice, the Item and Customer need to be present in the current site. So, Item and Customer are dependencies for Sales Invoice. Event Streaming handles this by on-demand dependency syncing. Whenever any document is to be synced, it first checks whether the document has any dependencies (Link fields, Dynamic Link fields, Child Table fields, etc.). If that dependency is not fullfilled i.e. the dependent document (eg: Item) is not present on your consumer site, it will be synced first and then the Sales Invoice will be synced.
 
 For example: Sales Invoice syncing with Item dependency:
-    ![Event Dependency](/docs/assets/img/setup/integrations/event-dependency-sync.gif)
+    ![Event Dependency](/docs/assets/img/automation/event-dependency-sync.gif)
 
 ### 3.4 Naming Configuration
 Check the 'Use Same Name' checkbox to let the documents have same name on both Event Producer and Event Consumer sites. If this is not checked, then the document will be created using the naming conventions of the current site.
 
-![Use Same Name Config](/docs/assets/img/setup/integrations/event-use-same-name.png)
+![Use Same Name Config](/docs/assets/img/automation/event-use-same-name.png)
 
 > **Note**: For Document Types that have naming series, it is advised to keep the 'Use Same Name' checkbox unchecked, to prevent naming conflicts. If this is unchecked, the Documents are created by following the naming conventions on the current site and the 'Remote Site Name' and 'Remote Document Name' custom fields are set in the synced document to store the Event Producer site URL and the document name on the remote site respectively.
 
-![Subscribed Document](/docs/assets/img/setup/integrations/event-subscribed-doc.png)
+![Subscribed Document](/docs/assets/img/automation/event-subscribed-doc.png)
 
 ### 3.5 Mapping Configuration
 If you want to stream documents between an ERPNext instance and another Frappe app for a particular Document Type which has the same structure but fieldnames are different in both the sites, you can use Event Streaming with Mapping Configuration.
@@ -117,13 +117,13 @@ In the Field Mapping child table:
 - **Local Fieldname**: The fieldname in the Local Document type of your current site.
 - **Remote Fieldname**: The fieldname in the Remote Document type of the Event Producer site which you want to map to the Local Fieldname. During the sync, the value of the remote fieldname gets copied to the local fieldname.
 
-![Document Type Mapping](/docs/assets/img/setup/integrations/event-field-mapping.png)
+![Document Type Mapping](/docs/assets/img/automation/event-field-mapping.png)
 
 - **Is Child Table**: If the field you are trying to map is a child table, you need to check this.
 - **Child Table Mapping**: Create another Document Type Mapping for the child table fields and select it here.
 
-![Child Table Mapping](/docs/assets/img/setup/integrations/event-map-is-child-table.png)
+![Child Table Mapping](/docs/assets/img/automation/event-map-is-child-table.png)
 
 After this, check the 'Has Mapping' checkbox in the Event Configuration child table in Event Producer against the required Document Type and select the Document Type Mapping you just created.
 
-![Mapping Configuration](/docs/assets/img/setup/integrations/event-mapping-conf.png)
+![Mapping Configuration](/docs/assets/img/automation/event-mapping-conf.png)
