@@ -2,9 +2,8 @@
 # Event Streaming
 
 > Introduced in Version 13
-Event Streaming enables inter site communications between two ore more sites.
 
-From version 13, you can **subscribe** to Document Types and **stream** Documents between different sites.
+Event Streaming enables inter site communications between two ore more sites. You can **subscribe** to Document Types and **stream** Documents between different sites.
 
 For Example: Consider you have more than one Company hosted on different sites, one among them is the main site where you want to do ledger posting and on other sites, the Sales Invoices are generated. You can use Event Streaming in this case. For this, your child company sites can subscribe to the main company site for Item, Customer, and Supplier Document Types. The main Company in turn can subscribe to the child companies for Sales Invoices.
 
@@ -36,7 +35,16 @@ Before creating an Event Producer, a common user needs to be created on both the
 
     ![Event Consumer](/docs/assets/img/setup/integrations/event-consumer-doc.png)
 
-**Note**: Document updates for Subscribed Document Types won't be synced unless they are Approved.
+>**Note**: Document updates for Subscribed Document Types won't be synced unless they are Approved.
+
+### 2.3 Offline access with single site
+If you have some places where internet connectivity is low, for example, a store in a remote area where sales invoices are generated and you want to sync these invoices from the store to the hosted account, you could setup offline syncing using the following steps:
+
+1. Set up an ERPNext local instance. You could use this [guide](https://github.com/frappe/bench) for the same:
+2. You will already have a hosted account with your company set up.
+3. Now create an Event Producer on the hosted account and set the producer URL to the URL of your local account.
+4. Add whatever doctypes you want to sync in the Event Producer Document Types child table.
+5. Approve the doctypes.
 
 ## 3. Features
 
@@ -65,7 +73,7 @@ A successfully synced event generates a log document with:
 - **Update Type**: Create, Update or Delete
 - **Status**: Sync Status
 - **DocType**
-- **Event Producer**: The site URL from where the document was synced
+- **Event Producer**: The site URL from where the document was created
 - **Document Name**
 - **Remote Document Name**: If 'Use Same Name' is unchecked
 - **Use Same Name**
