@@ -51,7 +51,7 @@ The following options are available for incoming emails:
 * **Initial Sync Count**: Number of emails to sync the first time.
 
 #### Appending Emails To Documents
-This feature creates DocTypes when an email is sent to a particular email account. For example, you can append support@example.com to the Issue DocType. On doing this, whenever an email is sent to support@example.com, the system will create an Issue for it. Similarly if you link jobs@example.com, when emails are sent to jobs@example.com, a Job Applicant DocType is created.
+This feature creates documents when an email is sent to a particular email account. For example, you can append support@example.com to the Issue DocType. On doing this, whenever an email is sent to support@example.com, the system will create an Issue for it. Similarly if you link jobs@example.com, when emails are sent to jobs@example.com, a Job Applicant document is created.
 
 
 Enable Automatic Linking in Documents will link emails to documents, to know more [click here](/docs/user/manual/en/setting-up/email/linking-emails-to-document).
@@ -87,6 +87,8 @@ The following options are available for outgoing emails:
 * **Send unsubscribe message in email**: Send a link to unsubscribe from emails sent from this account.
 * **Track Email Status**: Track if your email has been opened by the recipient. Note that, if you're sending to multiple recipients, even if one recipient reads the email, it'll be considered "Opened".
 * **Enable Auto Reply**: If enabled, enter an auto reply message.
+* **Append Outgoing Email to Sent Folder**: If using custom email servers like Zimbra or CPanel, SMTP will not automatically append emails to Sent folder. Enabling this option will ensure all emails are explicitly appended to the email account's Sent folder.
+* **Use SSL for Outgoing Emails**: Use SSL as a standard for outgoing emails. Defaults to port 465.
 
 ## 4. How ERPNext handles replies
 
