@@ -17,7 +17,7 @@ ToDo has 3 statuses, each describing a current state of a task.
 | **Cancelled** | Assignment is removed via the sidebar and the User is not associated to the task/issue anymore | No |
 
 ## Assignment Rules
-ToDos can be automatically assigned via assignment rules. [Assignment rule](/docs/user/manual/en/setting-up/automation/assignment-rule) also has three conditions. Let's consider an example of the Issue form where there are two priority levels, Level 1 (L1) and Level 2 (L2).
+ToDos can be automatically assigned via assignment rules. [Assignment rule](/docs/user/manual/en/automation/assignment-rule) also has three conditions. Let's consider an example of the Issue form where there are two priority levels, Level 1 (L1) and Level 2 (L2).
 
 | Condition | Example Scenario | ToDo State |
 |--------------------|-----------------------------|------------|
