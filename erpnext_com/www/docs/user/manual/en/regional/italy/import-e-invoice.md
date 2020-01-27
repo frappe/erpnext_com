@@ -1,5 +1,9 @@
 <!-- add-breadcrumbs -->
+
 # Importing e-Invoice from Supplier
+
+> Introduced in Version 13
+
 As of January 1, 2019, electronic Invoicing is mandatory for domestic businesses operating with domestic B2B and B2C transactions in Italy. ERPNext has a feature to import supplier invoices from XML files provided by suppliers to the government.
 
 ERPNext has a feature to import supplier invoices from XML files provided by suppliers to the government. Using this you can import Supplier e-invoices into ERPNext. The supplier details like supplier names, addresses and purchase invoices will get created automatically in the system from the XML files.
