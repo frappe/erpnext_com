@@ -1,17 +1,18 @@
  <!-- add-breadcrumbs -->
 # Event Streaming
 
+> Introduced in Version 13
 Event Streaming enables inter site communications between two ore more sites.
 
 From version 13, you can **subscribe** to Document Types and **stream** Documents between different sites.
 
-For Example: If you have 4-5 companies hosted on different sites, one among them is the main site where you want to do ledger posting and other sites, where the Sales Invoices are generated. You could use Event Streaming in this case. For this, your child company sites can subscribe to the main company site for Item, Customer and Supplier Document Types and the main company can subscribe to the child companies for Sales Invoices.
+For Example: Consider you have more than one Company hosted on different sites, one among them is the main site where you want to do ledger posting and on other sites, the Sales Invoices are generated. You can use Event Streaming in this case. For this, your child company sites can subscribe to the main company site for Item, Customer, and Supplier Document Types. The main Company in turn can subscribe to the child companies for Sales Invoices.
 
 To access Event Streaming, go to:
 > Home > Integrations > Event Streaming
 
 ## 1. Prerequisites
-Before creating an Event Producer, one same user needs to be created on both the sites which will be used to access the site and will act as an Event Subsciber. Make sure the user has the necessary permissions for creation, updation and deletion of the subscribed doctypes.
+Before creating an Event Producer, a common user needs to be created on both the sites which will be used to access the site and will act as an Event Subscriber. Make sure the user has the necessary permissions for creation, updation, and deletion of the subscribed DocTypes.
 
 ## 2. How to set up Event Streaming
 
@@ -40,14 +41,14 @@ Before creating an Event Producer, one same user needs to be created on both the
 ## 3. Features
 
 ### 3.1 Event Update Log
-Event Update Log logs every create, update, delete for documents that have consumers on the Event Producer site.
+Event Update Log logs every create, update, and delete for documents that have consumers on the Event Producer site.
 In order to view the Event Update Log:
 
 Go to: **Home > Integrations > Event Streaming > Event Update Log**.
 
-- For 'Create' type the Update Type, Document Type, Document Name and the entire document (as json) is logged.
+- For 'Create' type the Update Type, Document Type, Document Name and the entire document (as JSON) is logged.
 - For 'Update' type the Update Type, Document Type, Document Name and the updated data (difference between the previous state and current state of the document) is logged.
-- For 'Delete' type only the Update Type, Document Type and Document Name is logged.
+- For 'Delete' type only the Update Type, Document Type, and Document Name is logged.
 
 ![Event Update Log](/docs/assets/img/setup/integrations/event-update-log-doc.png)
 
@@ -83,7 +84,7 @@ A failed event generates a log doc with the above fields along with:
 ### 3.3 Dependency Syncing
 Certain Document Types have dependencies. For example, before syncing a Sales Invoice, the Item and Customer need to be present in the current site. So, Item and Customer are dependencies for Sales Invoice. Event Streaming handles this by on-demand dependency syncing. Whenever any document is to be synced, it first checks whether the document has any dependencies (Link fields, Dynamic Link fields, Child Table fields, etc.). If that dependency is not fullfilled i.e. the dependent document (eg: Item) is not present on your consumer site, it will be synced first and then the Sales Invoice will be synced.
 
-For example: Sales Invoice syncing with Item dependency
+For example: Sales Invoice syncing with Item dependency:
     ![Event Dependency](/docs/assets/img/setup/integrations/event-dependency-sync.gif)
 
 ### 3.4 Naming Configuration
@@ -91,7 +92,7 @@ Check the 'Use Same Name' checkbox to let the documents have same name on both E
 
 ![Use Same Name Config](/docs/assets/img/setup/integrations/event-use-same-name.png)
 
-**Note**: For Document Types that have naming series, it is adviced to keep the 'Use Same Name' checkbox unchecked, to prevent naming conflicts. If this is unchecked, the Documents are created by following the naming conventions on the current site and the 'Remote Site Name' and 'Remote Document Name' custom fields are set in the synced document to store the Event Producer site URL and the document name on the remote site respectively.
+> **Note**: For Document Types that have naming series, it is advised to keep the 'Use Same Name' checkbox unchecked, to prevent naming conflicts. If this is unchecked, the Documents are created by following the naming conventions on the current site and the 'Remote Site Name' and 'Remote Document Name' custom fields are set in the synced document to store the Event Producer site URL and the document name on the remote site respectively.
 
 ![Subscribed Document](/docs/assets/img/setup/integrations/event-subscribed-doc.png)
 
@@ -101,12 +102,12 @@ For this you need to first set up a Document Type Mapping:
 
 - **Mapping Name**: Give a unique name to the mapping
 - **Local Document Type**: The Document Type in your current site
-- **Remote Document Type**: The Document Type on the Event Producer site which you want to sync.
+- **Remote Document Type**: The Document Type on the Event Producer site which you want to sync
 
 In the Field Mapping child table:
 
 - **Local Fieldname**: The fieldname in the Local Document type of your current site.
-- **Remote Fieldname**: The fieldname in the Remote Document type of the Event Producer site which you want to map to the Local Fieldname. During the sync the value of the remote fieldname gets copied to the local fieldname.
+- **Remote Fieldname**: The fieldname in the Remote Document type of the Event Producer site which you want to map to the Local Fieldname. During the sync, the value of the remote fieldname gets copied to the local fieldname.
 
 ![Document Type Mapping](/docs/assets/img/setup/integrations/event-field-mapping.png)
 
