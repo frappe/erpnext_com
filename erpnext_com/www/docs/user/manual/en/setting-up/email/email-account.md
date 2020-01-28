@@ -51,7 +51,8 @@ The following options are available for incoming emails:
 * **Initial Sync Count**: Number of emails to sync the first time.
 
 #### Appending Emails To Documents
-This feature creates documents when an email is sent to a particular email account. For example, you can append support@example.com to the Issue DocType. On doing this, whenever an email is sent to support@example.com, the system will create an Issue for it. Similarly if you link jobs@example.com, when emails are sent to jobs@example.com, a Job Applicant document is created.
+* This feature creates documents when an email is sent to a particular email account. For example, you can append support@example.com to the Issue DocType. On doing this, whenever an email is sent to support@example.com, the system will create an Issue for it. Similarly if you link jobs@example.com, when emails are sent to jobs@example.com, a Job Applicant document is created.
+* If you want to enable Appending Emails to Documents for Custom DocTypes, you will have to enable it from DocType. Select **Allow document creation via Email** present in the Email Settings for DocType and then specify the fields in which you want the subject and sender to be appended to. This will show the DocType name in dropdown of **Append To** in the Email Account.
 
 
 Enable Automatic Linking in Documents will link emails to documents, to know more [click here](/docs/user/manual/en/setting-up/email/linking-emails-to-document).
