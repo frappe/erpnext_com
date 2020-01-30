@@ -40,7 +40,7 @@ Before creating an Event Producer, a common user needs to be created on both the
 ### 2.3 Offline access with single site
 If you have some places where internet connectivity is low, for example, a store in a remote area where sales invoices are generated and you want to sync these invoices from the store to the hosted account, you could setup offline syncing using the following steps:
 
-1. Set up an ERPNext local instance. You could use this [guide](https://github.com/frappe/bench) for the same:
+1. Set up an ERPNext local instance. You can refer [this guide](https://github.com/frappe/bench) for local setup.
 2. You will already have a hosted account with your company set up.
 3. Now create an Event Producer on the hosted account and set the producer URL to the URL of your local account.
 4. Add whatever doctypes you want to sync in the Event Producer Document Types child table.
