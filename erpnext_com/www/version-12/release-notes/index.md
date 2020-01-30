@@ -50,9 +50,9 @@ metatags:
 1. [List View Enhancements](/version-12/release-notes/features#list-view-enhancements)
 
 ### New Automation Module
-1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)
-1. [Milestones](/docs/user/manual/en/setting-up/automation/milestone-tracker)
-1. [Auto Repeat](/docs/user/manual/en/setting-up/automation/auto-repeat)
+1. [Assignment Rule](/docs/user/manual/en/automation/assignment-rule)
+1. [Milestones](/docs/user/manual/en/automation/milestone-tracker)
+1. [Auto Repeat](/docs/user/manual/en/automation/auto-repeat)
 
 ### New Reports
 1. [Bank Remittance](/docs/user/manual/en/human-resources/human-resources-reports#bank-remittance-report)
