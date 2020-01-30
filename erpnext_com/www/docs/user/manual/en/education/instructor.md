@@ -36,8 +36,8 @@ Before creating an instructor, it is advisable to first create the following:
 
 ### 3.1. Instructor Log
 
-* **Academic Year**: Select the Academic Year for which the Instructor Log is being made.
-* **Academic Term**: Select the Academic Term for which the Insructor Log is being made.
+* **Academic Year**: Select the Academic Year for which the Instructor is created.
+* **Academic Term**: Select the Academic Term for which the Insructor is created.
 * **Department**: Select the department to which the Instructor belongs to.
 * **Program**: Select the Program for which the Instructor Log is being made.
 * **Course**: Select the course for which the Instructor Log is being made.
