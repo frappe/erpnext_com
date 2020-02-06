@@ -11,7 +11,7 @@ To access Blanket Order, go to:
 ## 1. Prerequisites
 Before creating and using a Blanket Order, it is advised that you create the following first:
 
-* [Customer](/docs/user/manual/en/CRM/customer)or[Supplier](/docs/user/manual/en/buying/supplier)
+* [Customer](/docs/user/manual/en/CRM/customer) or [Supplier](/docs/user/manual/en/buying/supplier)
 * [Item](/docs/user/manual/en/stock/item)
 
 ## 2. How to Create a Blanket Order for Sales and Purchase
