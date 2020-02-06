@@ -17,7 +17,7 @@ To access Auto Repeat, go to:
 2. Select the form in which you want to allow creation of repeatable documents.
 3. Check 'Allow Auto Repeat' to allow the creation of repeatable documents for that Form. This is necessary for the document type to show up in the Reference Document field under the Auto Repeat doctype.
 
-  <img class="screenshot" alt="Allow Auto Repeat" src="/docs/assets/img/setup/automation/allow-auto-repeat.png">
+  <img class="screenshot" alt="Allow Auto Repeat" src="/docs/assets/img/automation/allow-auto-repeat.png">
 
 ### 1.2 Set up Auto Repeat
 1. Go to **Home > Settings > Automation > Auto Repeat > New**.
@@ -34,11 +34,11 @@ You can also set a document on Auto Repeat by clicking the **Repeat** option fro
 
 **Note**: If a document is already on Auto Repeat, the Repeat option is not available.
 
-<img class="screenshot" alt="Allow Auto Repeat" src="/docs/assets/img/setup/automation/repeat-option.png">
+<img class="screenshot" alt="Allow Auto Repeat" src="/docs/assets/img/automation/repeat-option.png">
 
 Once you click on Repeat, a prompt for Auto Repeat will show up. Fill in the details and click on Save.
 
-<img class="screenshot" alt="Auto Repeat Prompt" src="/docs/assets/img/setup/automation/auto-repeat-prompt.png">
+<img class="screenshot" alt="Auto Repeat Prompt" src="/docs/assets/img/automation/auto-repeat-prompt.png">
 
 ## 2. Features
 
@@ -53,6 +53,8 @@ If you want to notify certain contacts whenever the recurring documents are crea
 - **Preview Message**: This button will show a preview of the message.
 - **Print Format**: Select a print format to define document view which should be emailed to customer.
 
+> **Note**: If the document you are setting up Auto Repeat for, is submittable, ensure that "Allow Print for Draft" is enabled in [Print Settings](/docs/user/manual/en/setting-up/print/print-settings) to receive the new recurring document in Auto Repeat Notification Email. If this is not enabled, you will be notified about the recurring document creation without the document.
+
 ### 2.2 Repeat on a particular day
 If the frequency is set as Monthly, Quarterly, Half-yearly or Yearly, then it will create recurring documents in the respective months on the same day as the 'Start Date' of Auto Repeat. If you want to create recurring documents on some other day then you can set one of the following:
 
@@ -62,13 +64,13 @@ If the frequency is set as Monthly, Quarterly, Half-yearly or Yearly, then it wi
 ### 2.3 Dashboard
 You can see the Auto Repeat schedule in the Dashboard of Auto Repeat document. If you don't specify the End Date then the schedule will show only the Next Schedule Date.
 
-<img class="screenshot" alt="Allow Auto Dashboard" src="/docs/assets/img/setup/automation/auto-repeat-dashboard.png">
+<img class="screenshot" alt="Allow Auto Dashboard" src="/docs/assets/img/automation/auto-repeat-dashboard.png">
 
 ### 2.4 Auto Repeat Frequency on the sidebar
 When a document is set on Auto Repeat you can see the Auto Repeat frequency on the sidebar.
 You can click on the status to see the linked Auto Repeat document.
 
-<img class="screenshot" alt="Auto Repeat Frequency" src="/docs/assets/img/setup/automation/auto-repeat-frequency.png">
+<img class="screenshot" alt="Auto Repeat Frequency" src="/docs/assets/img/automation/auto-repeat-frequency.png">
 
 ### 2.5 Disable Auto Repeat
 If you check this field it will stop creating recurring documents and unlink the Auto Repeat document from the Reference Document.
