@@ -5,18 +5,15 @@ ERPNext offers the possibility to synchronize your bank accounts through a servi
 
 If your instance is connected to Plaid, you are able to synchronize your bank account transactions without having to manually import a CSV or XLSX file.
 
-
-## Settings
-
-In order to give ERPNext access to Plaid, you need to add the following three parameters to your `site_config.json` file.
-
-- `plaid_env`
-- `plaid_public_key`
-- `plaid_secret`
-
 ## Activation
 
-In order to activate Plaid on an instance, click on the button "Enable" in the Plaid Settings DocType.
+In order to activate Plaid on an instance, go to Plaid Settings doctype and enter the following details
+
+1. Click on the 'Enable' checkbox
+2. Enter Plaid Client ID
+3. Enter Plaid Public Key
+4. Enter Plaid Secret
+5. Select Plaid Environment and click save
 
 <img class="screenshot" alt="Enable Plaid" src="{{docs_base_url}}/assets/img/erpnext_integrations/plaid_enable.gif">
 
