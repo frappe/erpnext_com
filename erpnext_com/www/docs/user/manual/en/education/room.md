@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Room
 
-**Room in ERPNext refers to a tutoring space (e.g., Examination Hall, Classroom or a Lab) which can be set as the venue for courses or examinations.**
+**Room refers to a tutoring space (e.g., Examination Hall, Classroom or a Lab) which can be set as the venue for courses or examinations.**
 
 The Room will have details like Room number and Room Capacity.
 

@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Assessment Criteria
 
-Assessment Criteria is the parameter based on which you assess the Student.
+**Assessment Criteria is the parameter based on which you assess the Student.**
 
 ![Assessment Criteria](/docs/assets/img/education/education-assessment-criteria.png)
 

@@ -47,21 +47,25 @@ Apart from the aforementioned details, some additional details of the student th
 
 Personal details of the Student like their Date of Birth, Gender, Blood Group and Nationality can be added here.
 
+![Student](/docs/assets/img/education/education-student-personal.png)
+
 ### 3.2. Home Address
 
 The address of the student, along with the City, State and Pincode can be captured here. Two address lines can be captured for each student. 
 
-![Student](/docs/assets/img/education/education-student-5.png)
+![Student](/docs/assets/img/education/education-student-address.png)
 
 ### 3.3. Guardian Details
 
 The details of the student's guardian and their relationship with the student can be captured here. You can create a [Guardian](/docs/user/manual/en/education/guardian) from here itself, or create a guardian first and then create the Student.
 
+![Student](/docs/assets/img/education/education-student-guardian.png)
+
 ### 3.4. Sibling Details 
 
 This section will have all the details of the Student's Siblings. You can select if the sibling is studying in the Same Insititute or no. If the Sibling is also a student of your institute, you will be required to enter their Student ID, if not, you can enter the name of the Institution they are associated with. Their academic details like Program and personal details like Gender and Date of Birth can also be captured.
 
-![Student](/docs/assets/img/education/education-student-6.png)
+![Student](/docs/assets/img/education/education-student-sibling.png)
 
 ### 3.5. Exit Details
 

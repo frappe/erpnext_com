@@ -18,7 +18,6 @@ Here are the functionalities available under the ERPNext Education domain to go 
 1. [Instructor](/docs/user/manual/en/education/instructor)
 1. [Room](/docs/user/manual/en/education/room)
 1. [Student Category](/docs/user/manual/en/education/student-category)
-1. [Student Batch Name](/docs/user/manual/en/education/student-batch-name)
 1. [Academic Term](/docs/user/manual/en/education/academic-term)
 1. [Academic Year](/docs/user/manual/en/education/academic-year)
 1. [Education Settings](/docs/user/manual/en/education/education-settings)
@@ -27,6 +26,7 @@ Here are the functionalities available under the ERPNext Education domain to go 
 1. [Student](/docs/user/manual/en/education/student)
 1. [Guardian](/docs/user/manual/en/education/guardian)
 1. [Student Log](/docs/user/manual/en/education/student-log)
+1. [Student Batch Name](/docs/user/manual/en/education/student-batch-name)
 1. [Student Group](/docs/user/manual/en/education/student-group)
 1. [Student Group Creation Tool](/docs/user/manual/en/education/student-group-creation-tool)
 
@@ -51,7 +51,7 @@ Here are the functionalities available under the ERPNext Education domain to go 
 1. [Setting Up LMS](/docs/user/manual/en/education/setting-up-lms)
 1. [LMS Masters](/docs/user/manual/en/education/lms-masters)
 1. [Navigating the Portal](/docs/user/manual/en/education/navigating-the-portal)
-1. [Tracking Progress](/docs/user/manual/en/education/tracking-progress)
+<!-- 1. [Tracking Progress](/docs/user/manual/en/education/tracking-progress) -->
 
 ##### 7. Attendance
 1. [Student Attendance](/docs/user/manual/en/education/student-attendance)
