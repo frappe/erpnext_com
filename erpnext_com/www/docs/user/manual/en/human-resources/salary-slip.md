@@ -19,7 +19,7 @@ Before creating Salary Slip, it is advised that you create the following first:
 1. Go to Salary Slip, Click on New.
 1. Select Employee. On selecting Employee all details of the Employee will be fetched from Salary Structure which is assigned to that Employee. This includes details such as Payroll Frequency, Earnings, Deductions, etc.
 1. Select Start Date and End Date.
-1. Save
+1. Save.
 
 ## 3. Feature
 
