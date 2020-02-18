@@ -53,7 +53,7 @@ Steps for creating such Salary Structure:
 1. Select checkbox **Salary Slip based on Timesheet**.
 1. Fill Salary Component, this component is for Timesheet based payroll.
 1. Fill Hour Rate, The amount for Working hours will be calculated accordingly.
-1. Save and Submit
+1. Save and Submit.
 
 <img class="screenshot" alt="Create Salary Slip based on Timesheets" src="{{docs_base_url}}/assets/img/human-resources/salary-structure-for-salary-based-on-timesheets.png">
 
@@ -75,4 +75,3 @@ Additionally, Salary Slip can also be directly created through the dashboard.
 1. [Salary Structure Assignment](/docs/user/manual/en/human-resources/salary-structure-assignment)
 1. [Employee Grade](/docs/user/manual/en/human-resources/employee-grade)
 1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
-
