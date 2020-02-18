@@ -47,6 +47,16 @@
 		<a class="btn btn-light btn-md" href="/contact-form">Contact Us</a>
 	</p>
 	<!-- <p class="mt-0 small text-muted">Try ERPNext free for 14 days</p> -->
+	<div class="macbook">
+		<div class="screen" id="slides">
+			<div class="viewport slide showing" style="background-image:url('/assets/erpnext_com/img/home/desk.png');"></div>
+			<div class="viewport slide" style="background-image:url('/assets/erpnext_com/img/home/accounts-dashboard.png');"></div>
+			<div class="viewport slide" style="background-image:url('/assets/erpnext_com/img/home/report.png');"></div>
+			<div class="viewport slide" style="background-image:url('/assets/erpnext_com/img/home/user-profile.png');"></div>
+		</div>
+		<div class="base"></div>
+		<div class="notch"></div>
+	</div>
 	</div>
 </section>
 <section class="section-md section-light">
@@ -224,7 +234,18 @@
 		};
 	})();
 
-	words.init();
+	// words.init();
+
+	var slides = document.querySelectorAll('#slides .slide');
+	var currentSlide = 0;
+	var slideInterval = setInterval(nextSlide, 3500);
+
+	function nextSlide() {
+	    slides[currentSlide].className = 'viewport slide';
+	    currentSlide = (currentSlide+1)%slides.length;
+	    slides[currentSlide].className = 'viewport slide showing';
+	}
+
 </script>
 <style>
 @-moz-keyframes
@@ -246,25 +267,25 @@ fade-it {
 }
 
 .fade-in-rotate {
-  animation-name: fade-it;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  -webkit-animation-name: fade-it;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards
+	animation-name: fade-it;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	-webkit-animation-name: fade-it;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: both
 }
 
 .rotate.rotate-block { display: inline-block }
 
 .rotate.rotate-hide {
-  display: none;
-  opacity: 0
+	display: none;
+	opacity: 0
 }
 
 .rotate {
-  display: inline-block;
-  visibility: visible;
-  color: #F6AD55;
+	display: inline-block;
+	visibility: visible;
+	color: #F6AD55;
 }
 
 @media (max-width: 768px) {
@@ -272,6 +293,137 @@ fade-it {
 		display: block !important;
 	}
 }
+
+/* Macbook -------------- */
+body {
+  background: white;
+}
+
+.macbook {
+	padding: 0%;
+	margin: 5em -80px;
+	background: white;
+	/*max-width: 800px;*/
+}
+
+.screen {
+	background: linear-gradient(270deg, rgba(255,255,255,0.04), rgba(0,0,0,0.01));
+	background-color: rgba(0,0,0,0.005);
+	box-shadow: 0 20px 100px -50px rgba(45, 55, 72, 0.5);
+	border-radius: 3% 3% 0.5% 0.5% / 5%;
+	margin: 0 auto;
+	/* for aspect ratio */
+	position: relative;
+	width: 85%;
+}
+
+.screen:before {
+	border: 2px solid white;
+	/*border-image: linear-gradient(270deg, rgba(0,0,0,0.1), rgba(255,255,255,0.04)), 30;*/
+	border-radius: 3% 3% 0.5% 0.5% / 5%;
+	content: "";
+	display: block;
+	/* for aspect ratio ~67:100 */
+	padding-top: 67%;
+}
+
+.viewport {
+	/*border: 2px solid rgba(0,0,0,0.08);*/
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 4.3% 3.2%;
+	background: white;
+	background-size: cover;
+}
+
+.base {
+	/* for aspect ratio */
+	position: relative;
+	width: 100%;
+}
+
+.base:before {
+	content: "";
+	display: block;
+	/* for aspect ratio ~33:1000*/
+	padding-top: 2%;
+	/* stylin */
+	background: #FBFBFB;
+	background-image: linear-gradient(270deg, rgba(0,0,0,0.04) 0%, rgba(249,249,249,0.04) 2%, rgba(255,255,255,0.04) 98%, rgba(0,0,0,0.04) 100%);
+	border-radius: 0 0 10% 10%/ 0 0 50% 50%;
+	box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1);
+}
+
+.base::after {
+	background: white;
+	background-image: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.05) 100%);
+	content: "";
+	height: 50%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.notch {
+	background: #F9F7F7;
+	background-image: linear-gradient(270deg, rgba(0,0,0,0.04) 0%, rgba(233,233,233,0.04) 8%, rgba(255,255,255,0.04) 92%, rgba(0,0,0,0.04) 100%);
+	border-radius: 0 0 7% 7% / 0 0 95% 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -2%;
+	z-index: 2;
+	/* for aspect ratio */
+	position: relative;
+	width: 12%;
+}
+
+.notch:before {
+	content: "";
+	display: block;
+	/* for aspect ratio ~1:10 */
+	padding-top: 10%;
+}
+
+.macbook .viewport {
+	background-position: 0 0;
+	background-size: 100% auto;
+	overflow: hidden;
+	cursor: pointer;
+	display: none;
+	-webkit-animation-name: fade-it;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+}
+
+.macbook .viewport.showing {
+	display: block;
+}
+
+@keyframes slideRight {
+	0% {
+		transform-origin: 0 0;
+		transform: translateX(-15%);
+	}
+
+	100% {
+		transform-origin: 0 0;
+		transform: translateX(0%);
+	}
+}
+
+.macbook .viewport:after {
+  background: transparent;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* Macbook mocks */
 </style>
 <style>.footer-message { display: none; }</style>
 
