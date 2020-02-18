@@ -38,8 +38,7 @@ You can create Salary Slip after submitting the slip by clicking directly on **C
 
 <img class="screenshot" alt="Create Salary Slip based on Timesheets" src="{{docs_base_url}}/assets/img/human-resources/create-salary-slip-based-on-timesheets.png">
 
-The Payment Amount is calculated on basis Hour Rate as defined in Salary Structure and is reflected in earnings table.
-
+The Payment Amount is calculated on the basis of Hour Rate defined in Salary Structure and is reflected in the Earnings table.
 
 
 
