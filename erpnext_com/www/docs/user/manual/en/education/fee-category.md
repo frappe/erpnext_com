@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Fee Category
 
-**Fee Category would form all the components for calculation of Fees or creation of Fee Structure.** 
+List of all different type of fees collected.
 
 An educational institute collects different types of fees for a course. These categories help in defining the fee structure.
 

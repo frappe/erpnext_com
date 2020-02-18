@@ -1,20 +1,17 @@
 <!-- add-breadcrumbs -->
 # Student Category
 
-**Student Category allows you to classify the students based on various categories. In Institutions, there may be fee concession for some categories such as Handicapped Students, Foreign Nationals, Reserved Categories by the government, etc.**
+Student Category doctype allow you to classify student based various categories. In Institutions, there may be fee concession for some categories such as Handicapped students, foreign, nationals, reserved category by the government etc.
 
-When a Student is enrolled for a [Program](/docs/user/manual/en/education/program), you can select the select the Category for the Student.
+To create Student category go to:
 
-To access Student category, go to
+> Setup > Student Category > New
 
-> Education > Settings > Student Category
+We can create new student category by adding a name and save it
 
-![Student Category](/docs/assets/img/education/education-student-category-1.png)
-
-To create a new student category, click on New Student Category and add the name of the Student Category.
-
-![Student Category](/docs/assets/img/education/education-student-category-2.gif)
+<img class="screenshot" alt="Student" src="{{docs_base_url}}/assets/img/education/setup/student-category.png">
 
 You can select the Student Category while making the Fee Structure and accordingly the student from the selected groups can be filtered out while making the Fee Schedule.
+
 
 {next}
