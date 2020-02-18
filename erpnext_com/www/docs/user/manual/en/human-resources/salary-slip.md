@@ -26,7 +26,7 @@ Before creating Salary Slip, it is advised that you create the following first:
 ### 3.1. Salary Slip based on Attendance/Leave
 
 HR user can create Salary Slip on based on Attendance or leave.
-The Working days will calculated on basis of leave/Attendance, depends on the field **Payroll based on** in [HR Settings](/docs/user/manual/en/human-resource/hr-settings). If Payroll is based on Attendance then, The **Leave without pay** will be considered as absent and **half-day** will be considered as half-day absent.
+The Working days will calculated on basis of leave/Attendance, depending on the field **Payroll based on** in [HR Settings](/docs/user/manual/en/human-resource/hr-settings). If Payroll is based on Attendance then, the **Leave without pay** will be considered as absent and **half-day** will be considered as half-day absent.
 
 ### 3.2. Salary Slip based on Timesheet
 
@@ -38,7 +38,6 @@ You can create Salary Slip after submitting the slip by clicking directly on **C
 <img class="screenshot" alt="Create Salary Slip based on Timesheets" src="{{docs_base_url}}/assets/img/human-resources/create-salary-slip-based-on-timesheets.png">
 
 The Payment Amount is calculated on the basis of Hour Rate defined in Salary Structure and is reflected in the Earnings table.
-
 
 
 
