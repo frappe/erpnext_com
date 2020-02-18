@@ -32,11 +32,10 @@ The Working days will calculated on basis of leave/Attendance, depending on the 
 
 For creating Salary Slip based on timesheet you need to create Salary Structure for Timesheets.
 
-ERPNext also provide to create Salary slip based on working hours based on [Timesheet](/docs/user/manual/en/projects/timesheets)
+ERPNext also provides an option to create Salary slip based on working hours based on [Timesheet](/docs/user/manual/en/projects/timesheets).
 You can create Salary Slip after submitting the Timesheet by clicking directly on **Create Salary Slip** button on top right.
 
 <img class="screenshot" alt="Create Salary Slip based on Timesheets" src="{{docs_base_url}}/assets/img/human-resources/create-salary-slip-based-on-timesheets.png">
 
 The Payment Amount is calculated on the basis of Hour Rate defined in Salary Structure and is reflected in the Earnings table.
-
 
