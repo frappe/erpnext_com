@@ -24,7 +24,7 @@ To create a new Salary Structure:
 
 Apart from the mandatory fields, the other important fields of a Salary Structure are Earnings and Deductions which form the basis of the Salary Structure among others. They are explained below:
 
-### 2.1. Earning and Deduction
+### 2.1 Earning and Deduction
 
 Earnings specify the Salary Components that are earned by an Employee. These components typically include basic, allowances, bonuses and incentives that are added to the employee's Total Salary. On the other hand, Deductions specify the Salary Components that are deducted from the employee's Total Salary. These typically include the taxes.
 
@@ -39,11 +39,11 @@ To create Earnings and Deductions, select the Salary Component in the Component 
 > Note: Make sure to click on the downward arrow and enable the 'Amount based on formula' checkbox in case the the Salary Component is calculated using a formula.
 
 
-### 2.2. Account
+### 2.2 Account
 
 In this section, the Mode of Payment and the Payment Account that is used to pay the salary can be specified.
 
-### 2.3. Salary Structure for Salary based on Timesheets
+### 2.3 Salary Structure for Salary based on Timesheets
 
 In ERPNext you can also define the Salary Structure for Salary Slip based on Timesheet, which allow Company to pay there Employee as per working hours.
 
@@ -57,7 +57,7 @@ Steps for creating such Salary Structure:
 
 <img class="screenshot" alt="Create Salary Slip based on Timesheets" src="{{docs_base_url}}/assets/img/human-resources/salary-structure-for-salary-based-on-timesheets.png">
 
-### 2.4. Additional Features
+### 2.4 Additional Features
 
 Some of the additional features provided in the Salary Structure doctype are:
 
