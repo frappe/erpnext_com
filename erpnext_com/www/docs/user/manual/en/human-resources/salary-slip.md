@@ -16,7 +16,7 @@ Before creating Salary Slip, it is advised that you create the following first:
 ## 2. How to create a Salary Slip
 
 
-1. Go to Salary Slip, Click on.
+1. Go to Salary Slip, Click on New.
 1. Select Employee. On selecting Employee the every details will be fetched from Salary Structure which is assigned to that Employee, details such as Payroll Frequency, Earnings, Deductions, etc.
 1. Select Start Date and  End Date.
 1. Save
@@ -38,7 +38,6 @@ You can create Salary Slip after submitting the slip by clicking directly on **C
 <img class="screenshot" alt="Create Salary Slip based on Timesheets" src="{{docs_base_url}}/assets/img/human-resources/create-salary-slip-based-on-timesheets.png">
 
 The Payment Amount is calculated on the basis of Hour Rate defined in Salary Structure and is reflected in the Earnings table.
-
 
 
 
