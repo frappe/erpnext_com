@@ -37,7 +37,7 @@ To create an Appointment Letter Template:
 
     <img class="screenshot" alt="Appointment Letter" src="{{docs_base_url}}/assets/img/human-resources/appointment-letter-template.png">
 
-> **Note** On selecting Appointment Letter Template in Appointment Letter it autofills the content.
+> **Note** On selecting Appointment Letter Template in Appointment Letter, it autofills the content.
 
 ### 2.2 Print Format
 You can create new or use existing standard print formats.
