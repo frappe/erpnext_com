@@ -38,7 +38,7 @@ After verification, the Expense Approver can Submit (Accept) the Employee Advanc
 
 ### 3.2 Repay Employee Advance From salary
 
-This feature allows to pay the Employee Advance Unclaimed Amount via salary.
+This feature allows paying the Employee Advance Unclaimed Amount via salary.
 If 'Repay unclaimed amount from salary' is checked then you need to fill Payroll Date and Salary Component. The Unclaimed amount will be deducted from salary if payroll date is in the interval when Salary is processed, It will be added to the deduction.
 
 <img class="screenshot" alt="Employee Advance Payment via Journal Entry" src="{{docs_base_url}}/assets/img/human-resources/repay-advance-via salary.png">
