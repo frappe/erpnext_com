@@ -20,6 +20,7 @@ Before creating an Appointment Letter, it is advisable to create the following:
 1. Select the Job Applicant and Appointment Date.
 1. You can manually fill Introduction, Terms and, Closing Statement or select an Appointment Letter Template to autofill the content. You can create new Appointment Letter Templates to select them easily.
 1. Click on Save.
+1. After saving, go to the Print View to view and save the PDF of the Appointment letter.
 
     <img class="screenshot" alt="Appointment Letter" src="{{docs_base_url}}/assets/img/human-resources/appointment-letter.png">
 
