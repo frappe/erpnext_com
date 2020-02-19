@@ -29,7 +29,6 @@ Before creating an Appointment Letter, it is advisable to create the following:
 
 ### 2.1 Appointment Letter Template
 
-To create an Appointment Letter Template:
 
 1. Go to Appointment Letter Template list, click to New.
 1. fill Introduction, Terms and, Closing Statement.
