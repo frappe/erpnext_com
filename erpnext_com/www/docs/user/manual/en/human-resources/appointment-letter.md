@@ -40,6 +40,6 @@ To create an Appointment Letter Template:
 > **Note** On selecting Appointment Letter Template in Appointment Letter it autofills the content.
 
 ### 2.2 Print Format
-You can create or use existing standard print format.
+You can create new or use existing standard print formats.
 
 ![Appointment Letter](/docs/assets/img/human-resources/standard-appointment-letter.png)
