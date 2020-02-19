@@ -31,7 +31,7 @@ Before creating an Appointment Letter, it is advisable to create the following:
 
 
 1. Go to Appointment Letter Template list, click to New.
-1. fill Introduction, Terms and, Closing Statement.
+1. Fill Introduction, Terms and, Closing Statement.
 1. Click on Save.
 
     <img class="screenshot" alt="Appointment Letter" src="{{docs_base_url}}/assets/img/human-resources/appointment-letter-template.png">
