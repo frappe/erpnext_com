@@ -1,6 +1,7 @@
 <!-- add-breadcrumbs -->
 
 # Appointment Letter
+> Introduced in Version 13
 
 **The letter written by the employer requesting the selected candidates to join in a specific position.**
 
