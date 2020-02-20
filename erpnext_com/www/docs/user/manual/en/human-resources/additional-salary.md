@@ -20,7 +20,6 @@ Before creating a Additional Salary, it is advisable to create the following:
 
 ## 2. How to create an Additional Salary
 
-To create a new Additional Salary:
 
 1. Go to Additional Salary list, click on New.
 2. Select Employee.
