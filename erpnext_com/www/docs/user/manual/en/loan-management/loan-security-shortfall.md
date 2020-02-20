@@ -2,7 +2,7 @@
 # Loan Security Shortfall
 > Introduced in Version 13
 
-**If loan to security value ratio falls below a specific value a Loan Security Shortfall is automatically created for that specific loan.**
+**If loan to security value ratio falls below a specific value, a Loan Security Shortfall is automatically created for that specific loan.**
 
 <img class="screenshot" alt="Loan Security Shortfall" src="{{docs_base_url}}/assets/img/loan-management/loan-security-shortfall-flow.png">
 
@@ -19,16 +19,15 @@ A Loan Security Shortfall contains the details about:
   * The status of the shortfall. Pending is the default status and it changes to Complete once a payment is made or additional security is pledged against the loan to satisfy the shortfall
   * Loan amount is the pending loan amount which is used for shortfall calculation.
   * Security Value is the current pledged security value
-  * Shortfall amount is the difference between the loan amount and the security value which needs to repaid to complete the shortfall
+  * Shortfall amount is the difference between the loan amount and the security value which needs to be repaid to complete the shortfall
 
 ## 1. Features
 
-Additional Loan Security can be pledged against a loan from the Loan Security Shortfall itself via the "Add Loan Security" button on the top right
+Additional Loan Security can be pledged against a loan from the Loan Security Shortfall itself via the **Add Loan Security** button on the top right.
 
 <img class="screenshot" alt="Loan Application" src="{{docs_base_url}}/assets/img/loan-management/shortfall-security.png">
 
 {next}
-
 
 
 

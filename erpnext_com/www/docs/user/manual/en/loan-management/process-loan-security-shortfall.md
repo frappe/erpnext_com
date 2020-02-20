@@ -22,13 +22,12 @@ Before creating a Loan Security Unpledge, you must create the following first:
 
 ## 2. How to create Process Loan Security Shortfall
 1. Go to Process Loan Security Shortfall List, click on New.
-2. Enter from time and to time. All the [Loan Security Price](/docs/user/manual/en/loan-management/loan-security-price) between the from time and to time will be considered for updating the Loan Security Master.
+2. Enter From Time and To Time. All the [Loan Security Price](/docs/user/manual/en/loan-management/loan-security-price) between the From Time and To Time will be considered for updating the Loan Security Master.
 3. Enter Loan Security Type if only the prices of a specific [Loan Security Type](/docs/user/manual/en/loan-management/loan-security-type) needs to be updated.
 4. Click "Save" to save the draft of the Loan Disbursement.
 5. Click "Submit" to submit the Loan Security Pledge.
 
 {next}
-
 
 
 

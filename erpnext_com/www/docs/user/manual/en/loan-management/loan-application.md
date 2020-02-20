@@ -4,7 +4,7 @@
 
 **A Loan Application contains details about the applicant and loan security details for review.**
 
-During a loan process, the first step a customer or employee has to do is submit a loan application for review. In case of a secured loan, a loan application can also contain proposed loan securities.
+During a loan process, the first step a customer or employee has to do is submit a Loan Application for review. In case of a secured loan, a Loan Application can also contain proposed loan securities.
 
 <img class="screenshot" alt="Make Loan Application" src="{{docs_base_url}}/assets/img/loan-management/loan-application-flow.png">
 
@@ -23,11 +23,11 @@ Before creating and using a Loan Security, it is advised that you create the fol
 
 ## 2. How to Create a Loan Application
 1. Go to Loan Application List, click on New.
-2. Select the applicant type.
-3. Select the applicant.
+2. Select the Applicant Type.
+3. Select the Applicant.
 4. Select the Loan Type.
 5. Enter the Loan Amount.
-6. If the loan is a term loan, enter the repayment method. If the repayment method is selected as "Repay Over Number Of Periods" then you will have to enter the number of months in which the repayment will be made. If the repayment method is selected as "Repay Over Number Of Periods" then you will have to enter the monthly repayment amount.
+6. If the loan is a term loan, enter the Repayment Method. If the Repayment Method is selected as "Repay Over Number Of Periods" then you will have to enter the number of months in which the repayment will be made. If the repayment method is selected as "Repay Over Number Of Periods" then you will have to enter the Monthly Repayment Amount.
 7. You can also mention the proposed securities that will be pledged against a loan. For that, first tick the "Is Secure Loan" checkbox. Then in the proposed pledges table, you can enter the securities and their quantities.
 8. Click "Save" to save the draft of the Loan Application.
 9. Click "Submit" to submit the loan application.
@@ -45,6 +45,5 @@ Once a Loan Application is submitted and approved, you can create a Loan from th
 <img class="screenshot" alt="Loan Application" src="{{docs_base_url}}/assets/img/loan-management/create-loan.png">
 
 {next}
-
 
 
