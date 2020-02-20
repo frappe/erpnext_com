@@ -37,7 +37,8 @@ Select the 'Overwrite Salary Structure Amount' checkbox to overwrite the Additio
 
 ### 3.1 Recurring Additional Salary
 This feature allows users to create an Additional Salary for a fixed interval.
-If 'Is Recurring' is checked then you need to fill To Date and From Date. The Additional Salary will be repeated for every month between From Date to To Date interval and it will be reflected in Salary Slip for that employee.
+When 'Is Recurring' is checked you need to fill 'To Date' and 'From Date'. 
+This will add or deduct the the additional salary amount for this employee within the selected date range and it will be reflected in the Salary Slip for the employee. The Additional Salary will be repeated every month between 'From Date' and 'To Date' interval.
 
 ## 4. Related Topics
 
