@@ -141,6 +141,10 @@
 	background-size: 100% auto;
 	overflow: hidden;
 	display: none;
+	-webkit-animation-name: fade-it;
+	animation-name: fade-it;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
 }
 
 .macbook .viewport.showing {
@@ -164,18 +168,18 @@
 
 @-moz-keyframes
 fade-it {
-	0% { opacity:0 }
+	0% { opacity:0.5 }
 	100% { opacity:1 }
 }
 
 @-webkit-keyframes
 fade-it {
-	0% { opacity:0 }
+	0% { opacity:0.5 }
 	100% { opacity:1 }
 }
 
 @keyframes
 fade-it {
-	0% { opacity:0 }
+	0% { opacity:0.5 }
 	100% { opacity:1 }
 }
