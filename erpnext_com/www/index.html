@@ -41,7 +41,7 @@
 		<!-- <p class="mt-0 small text-muted">Try ERPNext free for 14 days</p> -->
 		<div class="macbook">
 			<div class="screen" id="slides">
-				<!-- <div class="viewport" style="background-image:white;"></div> -->
+				<div class="viewport" style="background-color: white;display: block !important;"></div>
 				<div class="viewport slide showing" style="background-image:url('/assets/erpnext_com/img/home/item.png');"></div>
 				<div class="viewport slide" style="background-image:url('/assets/erpnext_com/img/home/accounts-dashboard.png');"></div>
 				<div class="viewport slide" style="background-image:url('/assets/erpnext_com/img/home/accounts-report.png');"></div>
@@ -172,61 +172,6 @@
 
 {% block script %}
 <script>
-	// let words = (function () {
-	// 	let words = [
-	// 		"SAP",
-	// 		"Oracle",
-	// 		"Salesforce",
-	// 		"NetSuite",
-	// 		"MS Dynamics",
-	// 		"Zoho",
-	// 		"Freshworks"
-	// 	],
-	// 		el = document.querySelector('.rotate'),
-	// 		currentIndex = 0,
-	// 		currentWord = '',
-	// 		duration = 2000;
-
-	// 	var _clear = function () {
-	// 		setTimeout(function () {
-	// 			el.className = 'rotate';
-	// 		}, duration / 4);
-	// 	};
-
-	// 	var _toggleWord = function (duration) {
-	// 		setInterval(function () {
-	// 			//Generate new current word
-	// 			currentIndex = currentIndex + 1
-	// 			currentWord = words[currentIndex %words.length];
-
-	// 			//Swap new value
-	// 			el.innerHTML = currentWord;
-
-	// 			//Clear class styles
-	// 			_clear();
-
-	// 			//Fade in word
-	// 			el.classList.add(
-	// 				'rotate-block',
-	// 				'fade-in-rotate'
-	// 			);
-
-	// 		}, duration);
-	// 	};
-
-	// 	var _init = function () {
-	// 		_toggleWord(duration);
-	// 	};
-
-	// 	//Public API
-	// 	return {
-	// 		init: function () {
-	// 			_init();
-	// 		}
-	// 	};
-	// })();
-
-	// words.init();
 	var currentInterval;
 	var intervals = [];
 
