@@ -31,7 +31,7 @@ Before creating a Student Applicant, it is advisable to first create the followi
 
 ### 3.1 Online Application via a Web Form
 
-A Student Applicant gets automatically created when a student applies oline. This can be made possible through the Student Applicant Web Form which is created by default in the system. Search for "[Web Form List](/docs/user/manual/en/website/web-form)" in the awesome bar to access the list of all the web forms in the system.
+A Student Applicant gets automatically created when a student applies online. This can be made possible through the Student Applicant Web Form which is created by default in the system. Search for "[Web Form List](/docs/user/manual/en/website/web-form)" in the awesome bar to access the list of all the web forms in the system.
 
 Once the student applies, the status of the application by default is "Applied". You can either "Approve" or "Reject" the form.
 
@@ -47,10 +47,10 @@ the system shall create a student against that applicant and redirect you to the
 #### Video Tutorial for Student Application
 
 <div>
-	<div class='embed-container'>
-		<iframe src='https://www.youtube.com/embed/l8PUACusN3E' frameborder='0' allowfullscreen>
-		</iframe>
-	</div>
+    <div class='embed-container'>
+        <iframe src='https://www.youtube.com/embed/l8PUACusN3E' frameborder='0' allowfullscreen>
+        </iframe>
+    </div>
 </div>
 
 {next}

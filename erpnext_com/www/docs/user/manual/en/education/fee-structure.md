@@ -22,7 +22,7 @@ Before creating a Fee Structure, it is advisable to create the following first:
 
 ## 2. How to create a Fee Structure
 
-1. Go to fee structure list and click on New.
+1. Go to the fee structure list and click on New.
 1. Select and add the **Program** and other details for the fee structure.
 1. In the Components Table, enter the **Fees Category** and **Amount**.
 1. Save and Submit.

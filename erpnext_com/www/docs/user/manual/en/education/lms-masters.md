@@ -1,4 +1,4 @@
-# Setting up Masters for Learning Management System
+# Setting up the Masters for Learning Management System
 
 The ERPNext Learning Management System uses the following masters to show content on the portal.
 

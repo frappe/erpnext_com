@@ -1,9 +1,9 @@
 <!-- add-breadcrumbs -->
 # Course Schedule
 
-**Course Schedule can be used to for scheduling a particular course by an Instructor.**
+**Course Schedule can be used for scheduling a particular course by an Instructor.**
 
-Using this feature, a time table or an itinerary can be created in the Institute, wherein each slot will be scheduled via Course scheduling.
+Using this feature, a time table or an itinerary can be created in the Institute, wherein each slot will be scheduled via Course schedule.
 
 ![Course Schedule](/docs/assets/img/education/education-course-schedule-1.png)
 
@@ -23,7 +23,7 @@ Before creating a Course Schedule, it is advised that you create the following f
 
 ## 2. How to create a Course Schedule
 
-1. Create a new Course Schedule from the Schedule Calender.
+1. Create a new Course Schedule from the Schedule Calendar.
 1. Select the **Student Group** for which you want to create the Course Schedule.
 1. Select the **Instructor** who will be tutoring the students for the course.
 1. Select the **Course** for which the schedule is being prepared.

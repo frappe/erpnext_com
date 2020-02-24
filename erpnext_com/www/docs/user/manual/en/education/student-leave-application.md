@@ -11,7 +11,7 @@ To create a Student Leave application record, enter the **Student** and the date
 
 ![Student Leave Application](/docs/assets/img/education/education-student-leave-application.gif)
 
-Incase the student is not attending the institute in order to participate or represent institute in any event, he/she can be mark as present from the Leave Application itself. 
+In case the student is not attending the institute to participate or represent institute in any event, he/she can be marked as present from the Leave Application itself. 
 
 Once a Leave Application is recorded for a student it will not be recorded in the absent student report as he has applied for a leave. 
 

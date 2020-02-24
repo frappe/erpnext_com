@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Student Admission
 
-**Student Admission is a document which can be configured in order to initiate an Admission Process for your institution by publishing it on the ERPNext generated website.**
+**Student Admission is a document which can be configured to initiate an Admission Process for your institution by publishing it on the ERPNext generated website.**
 
 To access student Admission, go to
 

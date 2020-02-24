@@ -6,7 +6,7 @@ Whether you are running a B-School, an Academy or even a Primary School, the ERP
 We also understand that an Educational Institute needs a lot more than a simple 'Education Module', and ERPNext has all of it available built-in. You can:
 
 - Track your books of accounts using [Accounts module](/docs/user/manual/en/accounts).
-- Manage payroll, leaves and claims of your admin and teaching staff in the [HR module](/docs/user/manual/en/human-resources).
+- Manage payroll, leaves, and claims of your admin and teaching staff in the [HR module](/docs/user/manual/en/human-resources).
 - Organize your [purchases](/docs/user/manual/en/buying) and place an approval system.
 
 Here are the functionalities available under the ERPNext Education domain to go through after this **[introduction](/docs/user/manual/en/education/introduction)**
@@ -15,6 +15,7 @@ Here are the functionalities available under the ERPNext Education domain to go 
 ##### 1. Setup
 1. [Program](/docs/user/manual/en/education/program)
 1. [Course](/docs/user/manual/en/education/course)
+1. [Topic](/docs/user/manual/en/education/topic)
 1. [Instructor](/docs/user/manual/en/education/instructor)
 1. [Room](/docs/user/manual/en/education/room)
 1. [Student Category](/docs/user/manual/en/education/student-category)

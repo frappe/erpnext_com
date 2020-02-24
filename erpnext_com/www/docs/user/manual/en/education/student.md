@@ -12,7 +12,7 @@ metatags:
 
 # Student
 
-**The Student document will hold all the data of any Student in your Academy like their Personal Information, Photo, Date of Birth, Address etc.**
+**The Student document will hold all the data of any Student in your Academy like their Personal Information, Photo, Date of Birth, Address, etc.**
 
 This form will also contain any additional details like the Student's Guardian and Sibling details.
 
@@ -45,7 +45,7 @@ Apart from the aforementioned details, some additional details of the student th
 
 ### 3.1. Personal Details
 
-Personal details of the Student like their Date of Birth, Gender, Blood Group and Nationality can be added here.
+Personal details of the Student like their Date of Birth, Gender, Blood Group, and Nationality can be added here.
 
 ![Student](/docs/assets/img/education/education-student-personal.png)
 
@@ -79,7 +79,7 @@ The Student's exit details can be captured here, like their Date of Leaving, and
 
 ### 3.6. After Saving
 
-Once you save the Student Form, the student gets created in the system and you will be able to link this docuement to other documents related to Admission, Assessment, Attendance, Student Activity, Student LMS Activity and Fees. Further, you will also be able to see a dashboard which will indicate their activities throughout the year.
+Once you save the Student Form, the student gets created in the system and you will be able to link this document to other documents related to Admission, Assessment, Attendance, Student Activity, Student LMS Activity, and Fees. Further, you will also be able to see a dashboard that will indicate their activities throughout the year.
 
 ## 4. Other actions
 

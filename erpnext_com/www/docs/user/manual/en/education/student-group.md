@@ -40,7 +40,7 @@ Apart from the above mandatory options, the following fields should also be fill
 1. Select the **Academic Year** and **Academic Term** for which the Student Group is being made.
 1. **Program**: Select the Program for which the Student Group is being made.
 1. **Batch**: Select the Batch based on which you would want to fetch the list of students for the student group.
-1. **Max Strength**: Enter the Maximum number of students that can be a part of this Student Group. If the number of selected students in the group are more than the Max Strength, the system will not allow you to save this group and an error will be shown.
+1. **Max Strength**: Enter the Maximum number of students that can be a part of this Student Group. If the number of selected students in the group is more than the Max Strength, the system will not allow you to save this group and an error will be shown.
 
     ![Student Group](/docs/assets/img/education/education-student-group-max-student-limit-error.png)
 
@@ -53,7 +53,7 @@ Apart from the above mandatory options, the following fields should also be fill
 
 * **Get Students**: Based on the parameters selected above, the system will automatically fetch the list of students, and all the students who have the criteria matching with the Student Group, will be enlisted in the Students list once you click on 'Get students'.
 
- > Note: You have to select the students Manually for an Activity Based group as this group may not have any defined criteria and any student can be selected to be added in this group. **Get Students** will not be functional in this condition. 
+ > Note: You have to select the students Manually for an Activity-Based group as this group may not have any defined criteria and any student can be selected to be added in this group. **Get Students** will not be functional in this condition. 
 
 * **Instructors**: Select the Instructors who will be teaching or mentoring this particular group of students.
 
@@ -63,10 +63,10 @@ Apart from the above mandatory options, the following fields should also be fill
 
 Once the student group has been created and saved, the following can be created from the Student group:
 
-1. **Attendence**: You will be redirected to [Student Attendence Tool](/docs/user/manual/en/education/student-attendance-tool) through which you can mark the attendance of all the students for a particular date.
+1. **Attendance**: You will be redirected to [Student Attendance Tool](/docs/user/manual/en/education/student-attendance-tool) through which you can mark the attendance of all the students for a particular date.
 1. **Course Schedule**: You will be redirected to [Course Schedule](/docs/user/manual/en/education/course-schedule), wherein you will be able to see the schedule for this student group and further you can also create a New Course Schedule for the students in this group.
 1. **Assessment Plan**: You will be redirected to [Assessment Plan](/docs/user/manual/en/education/assessment_plan) list, where all the assessment plan for your student group will be listed and you will also be allowed to create a New Assessment Plan for the group.
-1. **Update Email Group**: Once you select this option, if the the Email Ids of the Students in this group will be added to the Email Group and you will be able to send newsletters to all the subscribers in this Student Group.
+1. **Update Email Group**: Once you select this option if the Email Ids of the Students in this group will be added to the Email Group and you will be able to send newsletters to all the subscribers in this Student Group.
 
     ![Student Group](/docs/assets/img/education/education-student-group-update-email.png)
 

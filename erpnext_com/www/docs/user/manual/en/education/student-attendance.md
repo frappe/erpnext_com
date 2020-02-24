@@ -3,7 +3,7 @@
 
 **Student Attendance allows you to track and manage the attendance of a student for a day. The Attendance module is designed to help teachers easily mark student attendance during class.**
 
-Attendance Records can be created against Student on daily basis.
+Attendance Records can be created against Students on a daily basis.
 
 To access Student Attendance, go to 
 

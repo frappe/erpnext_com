@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Course
 
-**A course can be considered as a subject or a part of an educational program which is to be taught over a period of a term.**
+**A course can be considered as a subject or a part of an educational program which is to be taught for a term.**
 
 E.g. if for a particular term, Economics Major is a program taught in the institute, then Mathematical Methods for Economics would be a Course covered under the program.
 

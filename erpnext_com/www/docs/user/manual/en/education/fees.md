@@ -3,7 +3,7 @@
 
 **In this document we can maintain the Fee Records of the students.**
 
-At the time of submission of Fees by each student, a new Fees Record will be created wherein all the details of the student, Program they are enrolled to, Accounting information etc. would be maintained.
+At the time of submission of Fees by each student, a new Fees Record will be created wherein all the details of the student, Program they are enrolled in, Accounting information, etc. would be maintained.
 
 To access Fees, go to 
 
@@ -19,7 +19,7 @@ Before you create Fees record, it is advisable that you create the following fir
 
 ## 2. How to Create Fees
 
-1. Go to Fees list and click on new.
+1. Go to the Fees list and click on new.
 1. The **Institution** will be selected by default, which is editable, if required.
 1. Select and add the **Student** for whom the Fees record is being made. The name of the student will be fetched simultaneously.
 1. Add the **Due Date** of the payment of the Fees.
