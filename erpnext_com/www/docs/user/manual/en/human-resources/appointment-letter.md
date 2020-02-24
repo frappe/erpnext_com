@@ -27,9 +27,9 @@ Before creating an Appointment Letter, it is advisable to create the following:
 
 > **Note:** Appointment Letter can be made only against a [Job Applicant](/docs/user/manual/en/human-resources/job-applicant)
 
-## 2. Features
+## 3. Features
 
-### 2.1 Appointment Letter Template
+### 3.1 Appointment Letter Template
 
 
 1. Go to Appointment Letter Template list, click to New.
@@ -40,7 +40,7 @@ Before creating an Appointment Letter, it is advisable to create the following:
 
 > **Note** On selecting Appointment Letter Template in Appointment Letter, it autofills the content.
 
-### 2.2 Print Format
+### 3.2 Print Format
 You can create new or use existing standard print formats.
 
 ![Appointment Letter](/docs/assets/img/human-resources/standard-appointment-letter.png)
