@@ -108,6 +108,7 @@ You'll find the global configuration options here, for module-wise setup, visit 
 1. [Using Custom Domain On ERPNext](/docs/user/manual/en/setting-up/articles/using-custom-domain-on-erpnext)
 1. [Setup Two Factor Authentication](/docs/user/manual/en/setting-up/articles/setup-two-factor-authentication)
 1. [Disabling Line Breaks in Print Format Sections](/docs/user/manual/en/setting-up/articles/print-format-sections)
+1. [Integrating ERPNext With Biometric Attendance Devices](/docs/user/manual/en/setting-up/articles/integrating-erpnext-with-biometric-attendance-devices)
 
 
 ## 3. Videos
