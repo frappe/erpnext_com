@@ -5,7 +5,7 @@
 
 Any changes to the Salary Structure i.e. among the components, can have a major impact on what the Employee does, such as the kind of tax exemptions claimed. 
 
-ERPNExt allows you to define the Earning and Deductions of a Salary Structure, Payroll frequency and Payment Mode among other features.
+ERPNext allows you to define the Earning and Deductions of a Salary Structure, Payroll frequency and Payment Mode among other features.
 
 To access Salary Structure, go to:
 > Home > Human Resources > Payroll > Salary Structure
@@ -29,14 +29,14 @@ Apart from the mandatory fields, the other important fields of a Salary Structur
 Earnings specify the Salary Components that are earned by an Employee. These components typically include basic, allowances, bonuses and incentives that are added to the employee's Total Salary. On the other hand, Deductions specify the Salary Components that are deducted from the employee's Total Salary. These typically include the taxes. 
 
 
-To create Earnings and Deductions, select the Salary Component in the Component column. Enter the Formula/Condition if not previously specified while creating the [Salary Component](/docs/user/manual/en/human-resources/salary-component). Additionally, you can also enter a pre-defiend amount in the Amount column.
+To create Earnings and Deductions, select the Salary Component in the Component column. Enter the Formula/Condition if not previously specified while creating the [Salary Component](/docs/user/manual/en/human-resources/salary-component). Additionally, you can also enter a pre-defined amount in the Amount column.
 
 
 
 <img class="screenshot" alt="Salary Structure" src="{{docs_base_url}}/assets/img/human-resources/salary-structure.png">
 
 
-> Note: Make sure to click on the downward arrow and enable the 'Amount based on formula' checkbox in case the the Salary Component is calculated using a formula.
+> Note: Make sure to click on the downward arrow and enable the 'Amount based on formula' checkbox in case the Salary Component is calculated using a formula.
 
 
 ### 2. Account
