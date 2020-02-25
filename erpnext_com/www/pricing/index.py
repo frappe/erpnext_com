@@ -11,9 +11,10 @@ eu = ["BE", "BG", "CZ", "DK", "DE", "EE", "IE", "EL", "ES", "FR", "HR",
 
 def get_context(context):
 	context.no_cache = True
-	country_code = get_country().get("countryCode")
+	country_details = frappe._dict(get_country())
 
-	if country_code == 'IN':
+
+	if country_details.country_code == 'IN':
 		context.currency = 'INR'
 		context.symbol = '₹'
 
@@ -56,11 +57,17 @@ def get_context(context):
 
 	context.plan_features = ['Server and Emails', 'Customization', 'Integrations + API']
 
+	pricing_factor_doc = frappe.get_doc({
+			"doctype": "Region Based Pricing Factor"
+		})
+
+	pricing_factor = pricing_factor_doc.get_pricing_factor_details(country_details.country)
+
 	def get_plan_and_pricing(plan_name):
 		plan = frappe.get_doc('Base Plan', plan_name)
 		pricing = [d.as_dict() for d in plan.amounts if d.currency == context.currency][0]
-		pricing['monthly_amount'] = pricing['monthly_amount'] / plan.users
-		pricing['amount'] = pricing['amount'] / plan.users
+		pricing['monthly_amount'] = (pricing['monthly_amount'] / plan.users) * pricing_factor
+		pricing['amount'] = (pricing['amount'] / plan.users) * pricing_factor
 		pricing['symbol'] = context.symbol
 
 		return plan, pricing
