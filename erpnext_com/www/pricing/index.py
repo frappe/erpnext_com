@@ -50,7 +50,7 @@ def get_context(context):
 			'title': '3 Hrs Onboarding Support'
 		},
 		'onboarding':  {
-			'title': '10 Hrs Onboarding Support'
+			'title': 'Enterprise Onboarding'
 		}
 	}
 
@@ -126,10 +126,10 @@ def get_context(context):
 			'minimum_users': 10,
 			'base_features': [
 				{'title': 'hosting', 'included': 1},
-				{'title': 'account_manager', 'included': 1},
+				{'title': 'account_manager', 'included': 0},
 				{'title': 'all_modules', 'included': 1},
-				{'title': 'priority_support', 'included': 1},
-				{'title': 'onboarding', 'included': 1}
+				{'title': 'email_support', 'included': 1},
+				{'title': 'onboarding_three', 'included': 1}
 			],
 			'features': [
 				{
@@ -168,13 +168,13 @@ def get_context(context):
 			'name': 'Contact Us',
 			'title': 'Self Hosted',
 			'no_pricing': True,
-			'description': 'Starts at ' + ("$150" if context.currency == "USD" else "₹7000") + ' per user per year',
+			'description': 'One Stack, One Vendor, 100% Freedom',
 			'base_features': [
 				{'title': 'hosting', 'included': 0},
 				{'title': 'account_manager', 'included': 1},
 				{'title': 'all_modules', 'included': 1},
-				{'title': 'email_support', 'included': 1},
-				{'title': 'onboarding_three', 'included': 1}
+				{'title': 'priority_support', 'included': 1},
+				{'title': 'onboarding', 'included': 1}
 			],
 			'minimum_users': 100,
 			'features': [
