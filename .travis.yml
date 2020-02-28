@@ -8,7 +8,7 @@ git:
 
 jobs:
   - name: 'Spell Check'
-    script: pwd; cd $TRAVIS_BUILD_DIR && bash $TRAVIS_BUILD_DIR/.travis/spell_checker.sh
+    script: bash ./.travis/spell_checker.sh
 
 install:
   - npm i -g cspell
