@@ -1,11 +1,11 @@
 language: node
 
 git:
-  depth: 1
+  depth: 2
 
 jobs:
-  - name: "Spell Check"
-    script: bash $TRAVIS_BUILD_DIR/.travis/spell_checker.sh
+  - name: 'Spell Check'
+    script: cd $TRAVIS_BUILD_DIR && bash $TRAVIS_BUILD_DIR/.travis/spell_checker.sh
 
 install:
-  - npm install -g cspell
+  - npm i -g npx cspell
