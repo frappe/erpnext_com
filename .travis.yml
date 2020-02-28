@@ -3,7 +3,7 @@ language: node
 git:
   depth: 1
 
-job:
+jobs:
   - name: "Spell Check"
     script: $TRAVIS_BUILD_DIR/.travis/spell_checker.sh
 
