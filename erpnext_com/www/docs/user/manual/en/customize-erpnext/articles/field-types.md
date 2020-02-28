@@ -125,6 +125,8 @@ You can select the field to be an HTML field when you want the data to be entere
 
 #### Image
 
+
+
 Image field will render an image file selected in another attach field.
 
 For the Image field, under Option (in Doctype), a field name should be provided where the image file is attached. By referring to the value in that field, the image will be a reference in the Image field.
