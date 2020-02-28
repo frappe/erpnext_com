@@ -11,4 +11,4 @@ jobs:
     script: cd $TRAVIS_BUILD_DIR && bash $TRAVIS_BUILD_DIR/.travis/spell_checker.sh
 
 install:
-  - npm i -g npx cspell
+  - npm i -g cspell
