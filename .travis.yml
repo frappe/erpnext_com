@@ -1,11 +1,3 @@
-language: node_js
-
-node_js:
-  - '10'
-
-git:
-  depth: 2
-
 jobs:
   - name: 'Spell Check'
     script: bash ./.travis/spell_checker.sh
