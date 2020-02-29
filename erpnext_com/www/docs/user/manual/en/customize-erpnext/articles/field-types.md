@@ -61,7 +61,7 @@ This field will give you a date and time picker. The current date and time (as p
 
 #### Barcode
 
-In this field, you can specify the field as Barcode which will allow you to enter a Barcode number. Oce you do that, the Barcode would automatically get generated against the number.
+In this field, you can specify the field as Barcode which will allow you to enter a Barcode number. Oce you do that, the Barcode would automatically get generated against the number. 
 
 <img alt="Field Types" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-barcode.png">
 
@@ -85,7 +85,7 @@ You will have the option of specifying the color for this Form.
 
 #### Column Break
 
-Since ERPNext has multiple column layouts, using Column Breaks, you can divide a set of fields into a maximum of two columns.
+Since ERPNext has multiple column layouts, using Column Breaks, you can divide a set of fields into a maximum of two columns. 
 
 <img alt="Field Types" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-column break.png">
 
@@ -129,7 +129,7 @@ Image field will render an image file selected in another attach field.
 
 For the Image field, under Option (in Doctype), a field name should be provided where the image file is attached. By referring to the value in that field, the image will be a reference in the Image field.
 
-<img alt="Field Types" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-image-field.png">
+<img alt="Field Types" class="screenshot" src="{{docs_base_url}}/assets/img/customize/cutomize-image-field.png">
 
 #### Int (Integer)
 
@@ -197,7 +197,7 @@ You can define the field to be a Signature field wherein you can add the Digital
 
 #### Table MultiSelect
 
-This is a combination of 'Link' type and 'Table' type fields. Instead of a child table with 'Add Row' button, in one field multiple values can be selected.
+This is a combination of 'Link' type and 'Table' type fields. Instead of a child table with 'Add Row' button, in one field multiple values can be selected.  
 
 <img alt="Field Types" class="screenshot" src="{{docs_base_url}}/assets/img/customize/customize-table-multiselect.png">
 
