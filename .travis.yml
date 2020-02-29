@@ -1,0 +1,6 @@
+jobs:
+  - name: 'Spell Check'
+    script: bash ./.travis/spell_checker.sh
+
+install:
+  - npm i -g cspell
