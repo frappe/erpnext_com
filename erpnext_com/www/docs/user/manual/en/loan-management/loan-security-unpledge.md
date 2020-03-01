@@ -9,9 +9,6 @@
 To access the Loan Security Unpledge list, go to:
 > Home > Loan Management > Loan Security > Loan Security Unpledge
 
-
-<img class="screenshot" alt="Loan Application" src="{{docs_base_url}}/assets/img/loan-management/loan-security-unpledge.png">
-
 ## 1. Prerequisites
 Before creating a Loan Security Unpledge, you must create the following first:
 
@@ -25,10 +22,12 @@ Before creating a Loan Security Unpledge, you must create the following first:
 2. Select Loan against which the securities are unpledged.
 3. Select Applicant.
 4. Select Company
-3. In the securities table enter the loan.
-4. Enter disbursement amount.
-7. Click "Save" to save the draft of the Loan Disbursement.
-8. Click "Submit" to submit the Loan Security Pledge.
+5. In the securities table enter the Loan Security and their quantity to be unpledged. Also enter the [Loan Security Pledge](/docs/user/manual/en/loan-management/loan-security-pledge) for which the securities needs to be unpledged.
+6. Click "Save" to save the draft of the Loan Security Unpledge.
+7. Click "Submit" to unpledge the loan securities
+
+<img class="screenshot" alt="Loan Application" src="{{docs_base_url}}/assets/img/loan-management/loan-security-unpledge.png">
+
 
 ### 2.1. Other ways to create a Loan Security Unpledge
 You can also create a Loan Security Unpledge from a Loan on which loan closure is requested via the **Create** button on the top right

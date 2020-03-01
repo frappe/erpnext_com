@@ -19,6 +19,7 @@ A Loan Security Type contains details about:
 
   * The Unit Of Measurement of that loan security
   * The Haircut % on that loan security
+  * The Loan To Security Value Ratio, below which loan security shortfall should be created
 
 > Haircut percentage is the percentage difference between market value of the Loan Security and the value ascribed to that asset when used as collateral for that loan.
 

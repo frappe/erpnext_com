@@ -15,14 +15,6 @@ To access the Loan Security list, go to:
 <img class="screenshot" alt="Loan Security" src="{{docs_base_url}}/assets/img/loan-management/loan-security.png">
 
 
-A Loan Security contains details about:
-
-  * The [Loan Security Type](/docs/user/manual/en/loan-management/loan-security-type)
-  * The Haircut % on that loan security
-  * The Loan Security Code
-  * The current loan security price
-  * The Unit Of Measurement
-
 ## 1. Prerequisites
 Before creating and using a Loan Security, it is advised that you create the following first:
 

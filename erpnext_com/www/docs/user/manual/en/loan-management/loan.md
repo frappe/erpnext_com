@@ -9,9 +9,6 @@ Loan record acts as a loan account which contains all the applicant details, rep
 To access the Loan List list, go to:
 > Home > Loan Management > Loan > Loan
 
-
-<img class="screenshot" alt="Loan" src="{{docs_base_url}}/assets/img/loan-management/loan.png">
-
 ## 1. Prerequisites
 Before creating and using a Loan, it is advised that you create the following first:
 
@@ -22,27 +19,27 @@ Before creating and using a Loan, it is advised that you create the following fi
 * [Loan Security Pledge](/docs/user/manual/en/loan-management/loan-security-pledge)
 
 ## 2. How to Create a Loan
-* Go to Loan List, click on New.
-* Select Applicant Type.
-* Select the Applicant.
-* Select Loan Application if Loan Application is created against that Applicant. All the details in loan application will be automatically fetched in the Loan record.
-* Select Company
-* Enter posting date
-* If applicant type is Employee then check "Repay from Salary" if loan will be repaid from salary
+1. Go to Loan List, click on New.
+1. Select Applicant Type.
+1. Select the Applicant.
+1. Select Loan Application if Loan Application is created against that Applicant. All the details in loan application will be automatically fetched in the Loan record.
+1. Select Company.
+1. Enter posting date.
+1. If applicant type is Employee then check "Repay from Salary" if loan will be repaid from salary.
 
   <img class="screenshot" alt="Make Loan" src="{{docs_base_url}}/assets/img/loan-management/loan-details.png">
 
-* Enter Loan Type. All the loan accounts, mode of payment and other loan details like whether the loan is a term loan or demand loan will be automatically fetched from the loan type master. If loan is a term loan repayment schedule will be auto generated on saving the loan document.
+1. Enter Loan Type. All the loan accounts, mode of payment and other loan details like whether the loan is a term loan or demand loan will be automatically fetched from the loan type master. If loan is a term loan repayment schedule will be auto generated on saving the loan document.
 
   <img class="screenshot" alt="Make Loan" src="{{docs_base_url}}/assets/img/loan-management/loan-accounts.png">
 
   <img class="screenshot" alt="Make Loan" src="{{docs_base_url}}/assets/img/loan-management/loan-repayment-schedule.png">
 
 
-* Check 'Is Secured Loan' if the loan is a secured loan. Also select 'Loan Security Pledge' if the loan is a secured loan.
-* Click "Save" to save the draft of the Loan.
-* Click "Submit" to submit the Loan Security Pledge.
-* Once the Loan is submitted the loan amount is ready to be disbursed
+1. Check 'Is Secured Loan' if the loan is a secured loan. Also select 'Loan Security Pledge' if the loan is a secured loan.
+1. Click "Save" to save the draft of the Loan.
+1. Click "Submit" to submit the Loan Security Pledge.
+1. Once the Loan is submitted the loan amount is ready to be disbursed.
 
 
 

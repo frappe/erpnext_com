@@ -9,18 +9,21 @@
 To access the Loan Type list, go to:
 > Home > Loan Management > Loan > Loan Type
 
+## 1. How to Create a Loan Type
+
+1. Enter Loan Name.
+1. Enter Company.
+1. Enter yearly rate of interest.
+1. Enter Mode Of Payment and account details.
+1. Click "Save" to save the draft  of the loan type.
+1. Click "Submit" to submit the loan type
 
 <img class="screenshot" alt="Loan Type" src="{{docs_base_url}}/assets/img/loan-management/loan-type.png">
 
+## 2. Feature
+### 2.1 Creating Term Loans and Demand Loans
 
-A Loan Type contains details about:
-
-  * The maximum loan amount that can be provided against a loan of this loan type
-  * The yearly rate of interest
-  * The penalty interest rate
-  * The grace period in days until which penalty will not be levied after the payment due date.
-  * “Is Term Loan” specifies whether a loan is Term Loan Or Demand Loan. If  this is unchecked any loan of this type will be considered as a Demand Loan and automatic repayment schedule won’t be generated for that loan.
-  * The various account details that will be used during the loan process can also be mentioned in the loan type
+Is Term Loan: Is Term Loan specifies whether a Loan is a Term Loan or a Demand Loan. If this is unchecked any loan of this type will be considered as a demand loan and an automatic repayment schedule won't be generated for that loan.
 
 > Demand Loans are open ended loans which do no have a fixed repayment schedule or a fixed repayment amount.
 

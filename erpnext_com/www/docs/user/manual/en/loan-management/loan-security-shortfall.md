@@ -14,12 +14,12 @@ To access the Loan Security Shortfall list, go to:
 
 A Loan Security Shortfall contains the details about:
 
-  * The Loan against which there is a Loan to security value shortfall
-  * The time at which the shortfall record was created.
-  * The status of the shortfall. Pending is the default status and it changes to Complete once a payment is made or additional security is pledged against the loan to satisfy the shortfall
-  * Loan amount is the pending loan amount which is used for shortfall calculation.
-  * Security Value is the current pledged security value
-  * Shortfall amount is the difference between the loan amount and the security value which needs to be repaid to complete the shortfall
+  * Loan: The Loan against which there is a Loan to security value shortfall.
+  * Shortfall Time: The time at which the shortfall record was created.
+  * Status: The status of the shortfall. Pending is the default status and it changes to Complete once a payment is made or additional security is pledged against the loan to satisfy the shortfall.
+  * Loan Amount: Loan amount is the pending loan amount which is used for shortfall calculation.
+  * Security Value: Security Value is the current pledged security value.
+  * Shortfall Amount: Shortfall amount is the difference between the loan amount and the security value which needs to be repaid to complete the shortfall.
 
 ## 1. Features
 

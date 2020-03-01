@@ -1,8 +1,8 @@
 <!-- add-breadcrumbs -->
 # Loan Management
 This module enables companies which provides loans to define and manage loans.
-Employees can request loans, which are then reviewed and approved. For the approved loans, 
-repayment schedule for the entire loan cycle can be generated and automatic deduction from salary can also be set up. 
+Customers and employees can request loans, which are then reviewed and approved. For the approved loans,
+repayment schedule for the entire loan cycle can be generated and automatic deduction from salary can also be set up.
 
 ### Loan Type
 To create a new Loan Type go to:
@@ -25,7 +25,7 @@ Employee can apply for loan by going to:
 
   * Enter Employee details and Loan details
   * Select the repayment method, and based on your selection enter Repayment Period in Months or repayment Amount
-  
+
 On save, Employee can see Repayment Information and make changes if required before submitting.
 
 <img class="screenshot" alt="Loan Application" src="{{docs_base_url}}/assets/img/human-resources/repayment-info.png">
@@ -44,8 +44,8 @@ Once the Loan is approved, Manager can create Loan record for the Employee.
  * Check "Repay from Salary" if the loan repayment will be deducted from the salary
  * Enter Disbursement Date, Repayment Start Date, and Account Info
  * If the amount has been disbursed and status is set to "Disbursed", as soon as you hit save, the repayment schedule is generated.
- * The first repayment payment date would be set as per the "Repayment Start Date".  
- 
+ * The first repayment payment date would be set as per the "Repayment Start Date".
+
 <img class="screenshot" alt="repayment Schedule" src="{{docs_base_url}}/assets/img/human-resources/repayment-schedule.png">
 
 #### Loan Repayment for Members
