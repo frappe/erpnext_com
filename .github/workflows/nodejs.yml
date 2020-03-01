@@ -1,0 +1,18 @@
+name: Spell Checker
+
+on: 
+  pull_request:
+    branches:
+    - master
+ 
+jobs:
+   my_job:
+    name: Spell Check
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+    - run: npm i -g cspell
+    - run: npx cspell --config ./spell_checker/cSpell.json -- '/erpnext/**'
