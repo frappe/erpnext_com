@@ -28,6 +28,7 @@ The Stock module is tightly integrated with Purchase, Manufacturing and Accounti
 1. [Item Price](/docs/user/manual/en/stock/item-price)
 1. [Item Group](/docs/user/manual/en/stock/item-group)
 1. [Unit of Measure (UoM)](/docs/user/manual/en/stock/uom)
+1. [Manufacturer](/docs/user/manual/en/stock/manufacturer)
 
 ### 1.4 Stock Transactions
 1. [Material Request](/docs/user/manual/en/stock/material-request)
@@ -47,6 +48,7 @@ The Stock module is tightly integrated with Purchase, Manufacturing and Accounti
 ### 1.6 Tools
 1. [Quality Inspection](/docs/user/manual/en/stock/quality-inspection)
 1. [Stock Reconciliation](/docs/user/manual/en/stock/stock-reconciliation)
+1. [Quick Stock Balance](/docs/user/manual/en/stock/quick-stock-balance)
 
 ### 1.7 Return
 1. [Sales Return](/docs/user/manual/en/stock/sales-return)
@@ -66,8 +68,9 @@ The Stock module is tightly integrated with Purchase, Manufacturing and Accounti
 1. [Stock Received But Not Billed](/docs/user/manual/en/stock/articles/stock-received-but-not-billed)
 
 ### 2.2 Stock Reports
-1. [Stock Level Report](/docs/user/manual/en/stock/articles/stock-level-report)
-1. [BOM Explorer](/docs/user/manual/en/stock/articles/bom_explorer)
+1. [Stock Level Report](/docs/user/manual/en/stock/stock-level-report)
+1. [BOM Explorer](/docs/user/manual/en/stock/bom_explorer)
+1. [Stock Value and Account Value Comparision](/docs/user/manual/en/stock/stock-value-account-value-comparison)
 
 ### 2.3 Managing Items
 1. [Item Valuation Transactions](/docs/user/manual/en/stock/articles/item-valuation-transactions)
@@ -77,7 +80,7 @@ The Stock module is tightly integrated with Purchase, Manufacturing and Accounti
 1. [Track Items Using Barcode](/docs/user/manual/en/stock/articles/track-items-using-barcode)
 1. [Creating Depreciation For Item](/docs/user/manual/en/stock/articles/creating-depreciation-for-item)
 1. [Item Valuation FIFO And Moving Average](/docs/user/manual/en/stock/articles/item-valuation-fifo-and-moving-average)
-1. [Item Codification](/docs/user/manual/en/stock/item-codification)
+1. [Item Codification](/docs/user/manual/en/stock/articles/item-codification)
 
 ### 2.4 Serial and Batch Number
 1. [Serial Number Naming](/docs/user/manual/en/stock/articles/serial-no-naming)

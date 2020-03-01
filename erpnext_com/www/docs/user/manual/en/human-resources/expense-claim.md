@@ -1,13 +1,33 @@
 <!-- add-breadcrumbs -->
 # Expense Claim
 
-Expense Claim is made when Employee’s make expenses out of their pocket on behalf of the company. For example, if they take a customer out for lunch, they can make a request for reimbursement via the Expense Claim form.
+**Expense Claim is made when employees make expenses out of their pocket on behalf of the company.**
 
-To make a new Expense Claim, go to:
+For example, if they take a customer out for lunch, they can make a request for reimbursement via the Expense Claim form.
 
-> Human Resources > Travel and Expense Claims > Expense Claim > New Expense Claim
+To access an Expense Claim, go to:
+
+> Human Resources > Expense Claims > Expense Claim 
+
+## 1. Prerequisites
+
+1. [Employee](/docs/user/manual/en/human-resources/employee)
+1. [Department](/docs/user/manual/en/human-resources/department)
+1. [Chart of Accounts](/docs/user/manual/en/accounts/chart-of-accounts)
+
+
+## 2. How to create a Expense Claim
+
+1. Go to: Expense Claim > New.
+1. Select the Employee Name in the 'From Employee' field.
+1. Select the Expense Approver.
+1. Enter the Expense Date, Expense Claim Type and the Amount.
+1. Additionally, you can also enter the Expense Taxes and Charges.
+1. In Accounting Details, select the Company's Default Payable Account.
+1. Save and Submit.
 
 <img class="screenshot" alt="Expense Claim" src="{{docs_base_url}}/assets/img/human-resources/expense_claim.png">
+
 
 Set the Employee ID, date, the list of expenses, and corresponding taxes that are to be claimed and “Submit” the record.
 
@@ -26,9 +46,9 @@ Set employee's expense account on the employee form, system books an expense amo
 
 ### Approving Expenses
 
-Approver for the Expense Claim is selected by an Employee himself. Employee can choose from the list of users who are configured as _Expense Approvers_ for their [Department](/docs/user/manual/en/human-resources/setup/department.html).
+Approver for the Expense Claim is selected by an Employee himself. Employee can choose from the list of users who are configured as _Expense Approvers_ for their [Department](/docs/user/manual/en/human-resources/department).
 
-After saving Expense Claim, Employee should [Assign document to Approver](/docs/user/manual/en/using-erpnext/assignment.html). On assignment, approving user will also receive email notification. To automate email notification, you can also setup [Email Alert](/docs/user/manual/en/setting-up/email/email-alerts.html).
+After saving Expense Claim, Employee should [Assign document to Approver](/docs/user/manual/en/using-erpnext/assignment.html). On assignment, approving user will also receive email notification. To automate email notification, you can also setup Email Alert
 
 Expense Claim Approver can update the “Sanctioned Amounts” against Claimed Amount of an Employee. If submitting, Approval Status should be submitted to Approved or Rejected. If Approved, then Expense Claim gets submitted. If rejected, then Expense Approver's comments can be added in the Comments section explaining why the claim was approved or rejected.
 
@@ -53,7 +73,7 @@ Note: This amount should not be clubbed with Salary because the amount will then
 
 Alternatively, a Payment Entry can be made for an employee and all outstanding Expense Claims will be pulled in.
 
-> Accounts > Payment Entry > New Payment Entry
+> Accounting > Payment Entry > New Payment Entry
 
 Set the Payment Type to "Pay", the Party Type to Employee, the Party to the employee being paid and the account being paid from. All outstanding expense claims will be pulled in and payments amounts can be allocated to each expense.
 <img class="screenshot" alt="Expense Claim" src="{{docs_base_url}}/assets/img/human-resources/expense_claim_payment_entry.png">

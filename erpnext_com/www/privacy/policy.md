@@ -187,7 +187,7 @@ On the cloud, we maintain regular SQL backups (from hereon referred to as backup
 These backups are stored on Amazon's AWS service. You can refer to its <a href="https://aws.amazon.com/compliance/gdpr-center/" target="_blank">compliance information</a>.
 
 We recommend that you also maintain your own copy. To download them manually by going to ``` Setup > Download Backups ```.
-You can also automate database backup download of your ERPNext account into your <a href="https://erpnext.org/docs/user/manual/en/setting-up/integrations/dropbox-backup" target="_blank">Dropbox account.</a>
+You can also automate database backup download of your ERPNext account into your <a href="https://erpnext.com/docs/user/manual/en/erpnext_integration/dropbox-backup" target="_blank">Dropbox account.</a>
 
 ---
 

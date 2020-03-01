@@ -13,7 +13,7 @@ Before creating an Email Account, you need an [Email Domain](/docs/user/manual/e
 
 ## 2. How to create an Email Account
 1. Go to the Email Account list, click on New.
-1. Enter the email address with the domain. [Domains](/docs/user/manual/en/setting-up/email/email-domain) need to be created in order to create an email account. 
+1. Enter the email address with the domain. [Domains](/docs/user/manual/en/setting-up/email/email-domain) need to be created in order to create an email account.
     You don't need to create a domain if you're syncing an email from certain providers as listed [here](/docs/user/manual/en/setting-up/email/email-inbox#2-create-an-email-domain).
 1. Enter the email account password.
 1. Save.
@@ -43,15 +43,15 @@ To set up an incoming Email Account, check on **Enable Incoming** and set your P
 
 The following options are available for incoming emails:
 
-* Use IMAP
-* Use SSL
-* Attachment Limit
+* **Use IMAP**
+* **Use SSL**
+* **Attachment Limit**
 * **Default Incoming**: If ticked, all replies to your company (eg: replies@yourcomany.com) will come to this account.
 * **Email Sync Option**: Whether to sync all or only unseen emails.
 * **Initial Sync Count**: Number of emails to sync the first time.
 
 #### Appending Emails To Documents
-This feature creates DocTypes when an email is sent to a particular email account. For example, you can append support@example.com to the Issue DocType. On doing this, whenever an email is sent to support@example.com, the system will create an Issue for it. Similarly if you link jobs@example.com, when emails are sent to jobs@example.com, a Job Applicant DocType is created.
+This feature creates documents when an email is sent to a particular email account. For example, you can append support@example.com to the Issue DocType. On doing this, whenever an email is sent to support@example.com, the system will create an Issue for it. Similarly if you link jobs@example.com, when emails are sent to jobs@example.com, a Job Applicant document is created.
 
 
 Enable Automatic Linking in Documents will link emails to documents, to know more [click here](/docs/user/manual/en/setting-up/email/linking-emails-to-document).
@@ -77,16 +77,18 @@ To set up an outgoing Email Account, check on **Enable Outgoing** and set your S
 <img class="screenshot" alt="Outgoing EMail" src="{{docs_base_url}}/assets/img/setup/email/email-account-sending.png">
 
 The following options are available for outgoing emails:
-* Use TLS
-* Port
-* Disable SMTP server authentication
-* Add Signature
 
+* **Use TLS**
+* **Port**
+* **Disable SMTP server authentication**
+* **Add Signature**: The default signature appended to the end of each email.
 * **Default Outgoing**: Notifications and bulk emails will be sent from this outgoing server.
 * **Always use Account's Email Address as Sender**: The email address of this account will be mentioned as the sender for outgoing emails.
 * **Send unsubscribe message in email**: Send a link to unsubscribe from emails sent from this account.
 * **Track Email Status**: Track if your email has been opened by the recipient. Note that, if you're sending to multiple recipients, even if one recipient reads the email, it'll be considered "Opened".
 * **Enable Auto Reply**: If enabled, enter an auto reply message.
+* **Append Outgoing Email to Sent Folder**: If using custom email servers like Zimbra or CPanel, SMTP will not automatically append emails to Sent folder. Enabling this option will ensure all emails are explicitly appended to the email account's Sent folder.
+* **Use SSL for Outgoing Emails**: Use SSL as a standard for outgoing emails. Defaults to port 465.
 
 ## 4. How ERPNext handles replies
 

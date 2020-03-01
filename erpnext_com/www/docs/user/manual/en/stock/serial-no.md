@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Serial Number
 
-As discussed in the [Item]([Item](/docs/user/manual/en/stock/item)) page, if an **Item** is _serialized_, a
+As discussed in the [Item](/docs/user/manual/en/stock/item) page, if an **Item** is _serialized_, a
 **Serial Number** (Serial No) record is maintained for each quantity of that
 **Item**. This information helps track the location of the Serial
 No, its warranty and end-of-life (expiry) information.
@@ -76,7 +76,7 @@ Any additional information about this specific Item unit can be set under 'Seria
 </div>
 
 ### 5. Related Topics
-1. [Item Codification](/docs/user/manual/en/stock/item-codification)
+1. [Item Codification](/docs/user/manual/en/stock/articles/item-codification)
 1. [Item Variants](/docs/user/manual/en/stock/item-variants)
 1. [Serial Number Naming](/docs/user/manual/en/stock/articles/serial-no-naming)
 

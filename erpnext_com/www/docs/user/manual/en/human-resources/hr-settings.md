@@ -1,9 +1,27 @@
 <!-- add-breadcrumbs -->
+<!-- title: HR Settings -->
+
 # HR Settings
 
-Global settings for HR related documents
+**HR Settings allow global settings for HR related documents.**
 
-<img class="screenshot" alt="HR Settings" src="{{docs_base_url}}/assets/img/human-resources/hr-settings.png">
+## 1. Features
+
+The different settings allowed are explained in brief below:
+
+### 1. Employee Settings
+
+1. **Retirement Age:** You can enter the retirement age (in years) for your employees. 
+
+2. **Employee Records to be created by:** This is a select field which allows you to create Employee records such as Attendance records, Leave records, etc. either by Naming series or Employee Number or Full Name.  
+
+<img class="screenshot" alt="Previous Work Experience" src="{{docs_base_url}}/assets/img/human-resources/hr-settings1.png">
+
+3. **Leave Approval Notification Template:** 
+
+ 
+
+
 
 To access HR Settings, go to:
 > Home > Human Resources > Settings > HR Settings
@@ -40,10 +58,13 @@ If checked, total number of working days will include holidays, and this will re
 ### 2.2 Max working hours against Timesheet
 For salary slips based on timesheet, you can set the maximum allowed hours against a single timesheet. Set this value to Zero to disable this validation.
 
-### 2.3 Email Salary Slip to Employee
+### 2.3 Disable Rounded Total
+You can enable this to disable rounding of total amount in salary slips.
+
+### 2.4 Email Salary Slip to Employee
 An email with the salary slip is sent to the respective employee's preferred email address on submission of the salary slip.
 
-### 2.4 Encrypt Salary Slips in Emails
+### 2.5 Encrypt Salary Slips in Emails
 The salary slip PDF sent to the employee is encrypted using the mentioned Password Policy.
 
 #### Password Policy
