@@ -22,7 +22,7 @@ contact. The new person is then able to know the history of that particular
 Lead.
 
 To access the Lead list, go to:
-> Home > CRM > Sales Pipeline > Lead 
+> Home > CRM > Sales Pipeline > Lead
 
 ---
 ## 1. How to Create a Lead
@@ -30,7 +30,7 @@ To access the Lead list, go to:
 1. Go to the Lead list and click on New.
 1. If the person represents an organization, check the 'Lead is an Organization' checkbox. Notice that when you check, the 'Company Name
 ' field becomes mandatory. Enter the Company Name.
-1. If the person is an individual, leave the checkbox unchecked and enter Person Name and Gender.  
+1. If the person is an individual, leave the checkbox unchecked and enter Person Name and Gender.
 1. Enter the 'Email Address'.
 1. **Status is the important field** in the Lead. You can set the status manually and also it will be updated automatically based on your actions against the lead.
  * Lead: This is the default status assigned when a Lead is created and it indicates an action is needed against this Lead.
@@ -62,7 +62,7 @@ You can assign the Lead to a user by clicking on 'Assign' button on left bar. Yo
 
 ### 2.1 Reminders to Follow Up on the Leads
 
-It is important to reach out to leads from time to time and build the relationship. You can set the 'Next Contact Date' and 'Next Contact By' fields and a calendar event will be added for the user chosen in 'Next Contact By' field and a notification is shown on the that Date.
+It is important to reach out to leads from time to time and build the relationship. You can set the 'Next Contact Date' and 'Next Contact By' fields and a calendar event will be added for the user chosen in 'Next Contact By' field and a notification is shown on that Date.
 
 ### 2.2 Adding Multiple Contacts and Addresses
 
@@ -74,7 +74,9 @@ You can add the details of all such people in the same lead. Once you save a Lea
 ### 2.3 Recording Comments, Emails and Events
 
 * **Comments**: You can write your comment in 'Add a comment' box and click on 'Comment'.
-* **Emails**: You can send an email to the lead by clicking on the 'New Email' button and when the lead responds to your email, it will visible.
+
+* **Emails**: You can send an email to the lead by clicking on the 'New Email' button and when the lead responds to your email, it will be appended to your email creating an email thread.
+
 * **Events**: You can also records the Meetings, Calls etc you have had with the Lead by clicking on 'New Event'
 
 ### 2.4 Creating Opportunity, Customer and Quotation
@@ -85,7 +87,7 @@ You can create an Opportunity, Customer or a Quotation from the Make dropdown. R
 ### 2.5 Auto-assigning the Leads to Sales Executives
 >Introduced in Version 12
 
-You can define [Assignment Rules](/docs/user/manual/en/setting-up/automation/assignment-rule) to automatically assign the leads to sales executives.
+You can define [Assignment Rules](/docs/user/manual/en/automation/assignment-rule) to automatically assign the leads to sales executives.
 
 <img class="screenshot" alt="Lead" src="{{docs_base_url}}/assets/img/crm/lead_assignment_rule.png">
 
