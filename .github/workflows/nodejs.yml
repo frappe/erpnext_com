@@ -13,8 +13,6 @@ jobs:
     steps:
     - name: Checkout branch
       uses: actions/checkout@v2
-      with:
-        ref: ${{ github.head_ref }}
     - name: Setup Node
       uses: actions/setup-node@v1
       with:
