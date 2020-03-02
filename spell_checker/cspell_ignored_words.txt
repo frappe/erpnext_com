@@ -15,11 +15,13 @@ uncheck
 ldap
 matunga
 reco
-itemised
+itemized
 xlink
 smtp
 unticked
-mangement
-sodipodi
 erps
 unstyled
+favicon
+financials
+spendings
+UOMs
