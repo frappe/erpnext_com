@@ -19,8 +19,6 @@ itemized
 xlink
 smtp
 unticked
-mangement
-sodipodi
 erps
 unstyled
 favicon
