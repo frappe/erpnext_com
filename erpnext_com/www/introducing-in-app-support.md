@@ -10,7 +10,7 @@ We bring to you, In App Support, where you can get prompt support within your ER
 
 ## Track Organization-wide support queries
 
-With our new Aupport App, we will list down any and every query about your organization's ERPNext account on one platform. 
+With our new Support App, we will list down any and every query about your organization's ERPNext account on one platform. 
 
 ![Introducing In App Support](/docs/assets/img/in-app-support/in-app-support-list.png)
 

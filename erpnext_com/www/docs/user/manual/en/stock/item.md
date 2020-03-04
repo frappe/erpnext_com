@@ -33,10 +33,10 @@ Before creating and using an Item, it is advised that you create the following f
   
   * **Item Group:** Item Group is used to categorize an Item under various criteria like products, raw materials, services, sub-assemblies, consumables or all Item groups. Create your default Item Group list under Setup > Item Group and pre-select the option while filling your New Item details under [Item Group](/docs/user/manual/en/stock/item-group). Item groups can be sub-assemblies, raw materials, etc, or based on your business use case.
   
-  * **Default Unit of Measure:** This is the default measuring unit that you will use for your product. It could be Nos, Kgs, Meters, etc. You can store all the UOM’s that your product will require under Set Up> Master Data > UOM. These can be preselected while filling New Item by using % sign to get a pop up of the UOM list. Visit the [UoM](/docs/user/manual/en/stock/uom) page for more details
+  * **Default Unit of Measure:** This is the default measuring unit that you will use for your product. It could be Nos, Kgs, Meters, etc. You can store all the UOMs that your product will require under Set Up> Master Data > UOM. These can be preselected while filling New Item by using % sign to get a pop up of the UOM list. Visit the [UoM](/docs/user/manual/en/stock/uom) page for more details
 
 ### 2.2 Options when creating an item
-* **Disabled**: If you disable ad Item, it cannot be selected in any transaction.
+* **Disabled**: If you disable an Item, it cannot be selected in any transaction.
 
 * **Allow Alternative Item**: Sometimes when manufacturing a finished good, specific material may not be available. If you tick this, you can create and select an alternative item from the Item Alternative list. To know more, visit the [Item Alternative](/docs/user/manual/en/manufacturing/item-alternative) page.
 
@@ -157,7 +157,7 @@ In this section, you can define Company-wide transaction-related defaults for th
 ### 3.9 Purchase, Replenishment Details
 
 * **Default Purchase Unit of Measure**: The default UoM that will be used in Purchase transactions.
-* **Minimum Order Qty**: The minimum quantity required for purchase transactions/Material Requests. This quantity also applied to auto reordering items.
+* **Minimum Order Qty**: The minimum quantity required for purchase transactions like Purchase Orders. If set, the system will not let you proceed with the purchase transaction if the item quantity in the purchase transaction is lesser than the quantity set in this field.
 * **Safety Stock**: “Safety Stock” is used in the report “Itemwise Recommended Reorder Level”. Based on Safety Stock, average daily consumption and the lead time, the system suggests Reorder Level of an item.
 
   Reorder Level = Safety Stock + (Average Daily Consumption * Lead Time)

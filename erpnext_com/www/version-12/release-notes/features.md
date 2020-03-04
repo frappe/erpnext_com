@@ -5,7 +5,7 @@ show_sidebar: 0
 image: /assets/erpnext_com/img/version-12/hero.png
 
 metatags:
- description: ERPNext v12 is our greatest release yet. It packs a new Refreshed UI, Dashboards and over 100 new features and enhancements.
+ description: ERPNext v12 is our greatest release yet. New and Refreshed UI, Dashboards, Full Width Container, and over 100 new features and enhancements.
  keywords: erpnext v12, erpnext release notes, erpnext new features, erp, open source erp, free erp
 ---
 

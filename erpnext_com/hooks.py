@@ -27,6 +27,7 @@ website_context = {
 			{"label": "Non Profit", "url":"/non-profit"},
 			{"label": "Agriculture", "url":"/agriculture"},
 			{"label": "Healthcare", "url": "/healthcare"},
+			{"label": "Regional", "url": "/regional"}
 		]},
 		{"label": "Pricing", "url": "/pricing"},
 		{"label": "Services", "child_items": [
@@ -37,6 +38,7 @@ website_context = {
 		{"label": "Partners", "child_items": [
 			{"label": "Partner Listing", "url":"/partners"},
 			{"label": "Become a Partner", "url":"/partners/plans"},
+			{"label": "Partner Login", "url":"/login"},
 		]},
 		# {"label": "Conference", "url": "https://erpnext.org/conf/2019", "highlight": True, "new_tab": True},
 		{"label": "Sign Up", "url": "/signup?plan=P-Standard-2019", "right":1},
