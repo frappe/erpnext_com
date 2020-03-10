@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Google Settings
 
-To enable Google Integrations, ERPNext needs access to the API through which the data will be synced which is acheived using OAuth 2.0 Authentication Protocol.
+To enable Google Integrations, ERPNext needs access to the API through which the data will be synced which is achieved using OAuth 2.0 Authentication Protocol.
 
 ## How to set up Google Settings
 
