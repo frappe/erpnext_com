@@ -38,7 +38,7 @@ ERPNext will help you to:
 
 - Track all invoices and payments.
 - Know what quantity of which product is available in stock.
-- Identify and track your key performance indicators (KPI's).
+- Identify and track your key performance indicators (KPIs).
 - Identify open customer queries.
 - Manage employee payroll.
 - Assign tasks and follow up on them.
