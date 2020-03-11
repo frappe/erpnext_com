@@ -25,3 +25,9 @@ favicon
 financials
 spendings
 UOMs
+SMEs
+SAAS
+CRMs
+CAPEX
+OPEX
+KPIs
