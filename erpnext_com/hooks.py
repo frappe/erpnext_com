@@ -27,7 +27,8 @@ website_context = {
 			{"label": "Non Profit", "url":"/non-profit"},
 			{"label": "Agriculture", "url":"/agriculture"},
 			{"label": "Healthcare", "url": "/healthcare"},
-			{"label": "Regional", "url": "/regional"}
+			{"label": "Regional", "url": "/regional"},
+			{"label": "Whitepapers", "url": "/whitepapers"}
 		]},
 		{"label": "Pricing", "url": "/pricing"},
 		{"label": "Services", "child_items": [
