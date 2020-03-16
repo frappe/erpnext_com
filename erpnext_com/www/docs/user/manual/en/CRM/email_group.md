@@ -28,4 +28,13 @@ You can import email IDs from existing transactions.
 
 Click on Action > Import Subscribers and select a transaction like Lead. Click on Import and all the email IDs mentioned in the email IDs will be imported.
 
+### 2.2 Email Templates
+
+You can specify confirmation email and welcome email template for the email group.
+
+**a. Confirmation Email Template:** This email template is used to replace the default template sent for newsletter subscription.<br />
+**b. Welcome Email Template:** This email template defines the email that is sent whenever a subscriber is added to the email group.
+
+<img class="screenshot" alt="Email Group Templates" src="{{docs_base_url}}/assets/img/crm/email-group.png">
+
 Next: [Automate Lead Capturing](/docs/user/manual/en/CRM/articles/automate_lead_capturing)
