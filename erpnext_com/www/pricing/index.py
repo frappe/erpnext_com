@@ -65,9 +65,14 @@ def get_context(context):
 
 	def get_plan_and_pricing(plan_name):
 		plan = frappe.get_doc('Base Plan', plan_name)
+		_pricing_multiplier = 1
 		pricing = [d.as_dict() for d in plan.amounts if d.currency == context.currency][0]
-		pricing['monthly_amount'] = (pricing['monthly_amount'] / plan.users) * pricing_multiplier
-		pricing['amount'] = (pricing['amount'] / plan.users) * pricing_multiplier
+
+		if plan.apply_pricing_multiplier:
+			_pricing_multiplier = pricing_multiplier
+
+		pricing['monthly_amount'] = (pricing['monthly_amount'] / plan.users) * _pricing_multiplier
+		pricing['amount'] = (pricing['amount'] / plan.users) * _pricing_multiplier
 		pricing['symbol'] = context.symbol
 
 		return plan, pricing
