@@ -152,7 +152,7 @@ def get_context(context):
 				{
 					'title': 'Server and Emails',
 					'content': [
-						'100 GB cloud storage',
+						'25 GB cloud storage',
 						'15000 emails / month',
 						'Extensible via add-ons'
 					]
