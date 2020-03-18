@@ -13,8 +13,7 @@ def get_context(context):
 	context.no_cache = True
 	country_details = frappe._dict(get_country())
 
-
-	if country_details.country_code == 'IN':
+	if country_details.countryCode == 'IN':
 		context.currency = 'INR'
 		context.symbol = '₹'
 
@@ -97,7 +96,7 @@ def get_context(context):
 			],
 			'features': [
 				{
-					'title': 'Organisations',
+					'title': 'Organizations',
 					'content': [
 						'3 Companies',
 					]
@@ -145,7 +144,7 @@ def get_context(context):
 			],
 			'features': [
 				{
-					'title': 'Organisations',
+					'title': 'Organizations',
 					'content': [
 						'Unlimited Companies',
 					]
@@ -191,7 +190,7 @@ def get_context(context):
 			'minimum_users': 100,
 			'features': [
 				{
-					'title': 'Organisations',
+					'title': 'Organizations',
 					'content': [
 						'Unlimited Companies',
 					]
