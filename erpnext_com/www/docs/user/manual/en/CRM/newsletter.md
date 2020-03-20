@@ -37,17 +37,19 @@ You can select multiple email groups in the 'RECIPIENT' tables in the newsletter
 
 You can choose to send your newsletter at any future datetime by specifying time in hourly steps.
 
+<img class="screenshot" alt="Scheduled Newsletter" src="{{docs_base_url}}/assets/img/crm/scheduled-newsletter.png">
+
 ### 2.3 Test Newsletter Before Sending to Subscribers
 
 Once the newsletter is ready you can provide a 'Test Email Address' and click on 'Test'.
 
 You can review the newsletter received in the test email, verify it and then send it to all subscribers by clicking on 'Send'.
 
-<img class="screenshot" alt="Newsletter - Test" src="{{docs_base_url}}/assets/img/crm/newsletter-test.png">
+<img class="screenshot" alt="Newsletter Test" src="{{docs_base_url}}/assets/img/crm/newsletter-test.png">
 
 <div class="embed-container">
-    <iframe src="https://www.youtube.com/embed/muLKsCrrDRo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-    </iframe>
+	<iframe src="https://www.youtube.com/embed/muLKsCrrDRo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+	</iframe>
 </div>
 
 {next}
