@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from erpnext_com.www.pricing.index import get_country
+from erpnext_com.erpnext_com.utils import get_country
 
 def get_context(context):
 	context.no_cache = True

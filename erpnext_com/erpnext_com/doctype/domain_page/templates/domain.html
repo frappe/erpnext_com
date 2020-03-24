@@ -1,0 +1,45 @@
+{% macro domain(domain, title, subtitle, image, features) %}
+<!-- <section class='splash' style="background-image: url(/assets/erpnext_com/img/unsplash/{{ image }})"></section> -->
+<section class='top-section'>
+	<div class=container>
+		<h1>{{ title }}</h1>
+		<p class='lead'>{{ subtitle }}</p>
+		<p class="mt-4">
+			<a class="btn btn-primary" href="/pricing">Start Free Trial</a>
+		</p>
+		<p class="mt-0 small text-muted">Try ERPNext free for 14 days</p>
+	</div>
+</section>
+<section class="section-bg section-md">
+	<div class="container">
+		<div class='row mt-4'>
+			{% for card in features %}
+			<div class='col-sm-4 mb-4'>
+				<a href='{{ card.path }}' class='card h-100 text-left'>
+					<div class='card-body '>
+						<h5 class='card-title'>{{ card.title }}</h5>
+						{{ card.content }}
+					</div>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+{% include "erpnext_com/templates/includes/signup_footer.html" %}
+
+<style>.footer-message { display: none; }</style>
+{% endmacro %}
+
+
+
+{% extends "frappe_theme/templates/base.html" %}
+
+
+{% block title %} {{ website.page_name }} {% endblock %}
+
+{% block content %}
+
+{{ domain(website.page_name, website.title, website.subtitle, website.domain_image, website.cards) }}
+
+{% endblock %}

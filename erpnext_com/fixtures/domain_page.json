@@ -1,0 +1,522 @@
+[
+ {
+  "cards": [
+   {
+    "content": "Plan your crop cycles with standard processes linked to a crop and keep track of all tasks.",
+    "parent": "erpnext-for-agriculture",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/agriculture/crop_cycle",
+    "title": "Crop Cycle"
+   },
+   {
+    "content": "The Crop master helps you keep plans and processes linked to a crop and track its history.",
+    "parent": "erpnext-for-agriculture",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/agriculture/crop",
+    "title": "Crop Management"
+   },
+   {
+    "content": "Geo-tag all your properties and map them in a hierarchical model.",
+    "parent": "erpnext-for-agriculture",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/agriculture/land_unit",
+    "title": "Land Management"
+   },
+   {
+    "content": "Keep a track of crop diseases with treatments and keep track of actions taken.",
+    "parent": "erpnext-for-agriculture",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/agriculture/disease",
+    "title": "Disease Management"
+   },
+   {
+    "content": "ERPNext stock module will help you manage inventory and procurement across warehouses.",
+    "parent": "erpnext-for-agriculture",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock",
+    "title": "Inventory"
+   },
+   {
+    "content": "Track all things financial, including billings and payments with the ERPNext accounts module.",
+    "parent": "erpnext-for-agriculture",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/accounts",
+    "title": "Billing and Payments"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Domain Page",
+  "domain_image": null,
+  "is_published": 1,
+  "modified": "2020-01-03 10:33:02.398907",
+  "name": "erpnext-for-agriculture",
+  "page_name": "Agriculture",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "route": "agriculture",
+  "subtitle": "ERPNext Agriculture module helps you manage your land, crop cycles, track soil composition and diseases.",
+  "title": "ERPNext for Agriculture"
+ },
+ {
+  "cards": [
+   {
+    "content": "ERPNext stock module will help you manage inventory and procurement across warehouses.",
+    "parent": "erpnext-for-distribution-or-trading",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock",
+    "title": "Inventory"
+   },
+   {
+    "content": "Track all things financial, including billings and payments with the ERPNext accounts module.",
+    "parent": "erpnext-for-distribution-or-trading",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/accounts",
+    "title": "Billing and Payments"
+   },
+   {
+    "content": "ERPNext Item management helps you create and manage your manufacturing items and its variants.",
+    "parent": "erpnext-for-distribution-or-trading",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock/item",
+    "title": "Items and Variants"
+   },
+   {
+    "content": "You can maintain prices, bills, track payments and maintain account balances in multiple currencies.",
+    "parent": "erpnext-for-distribution-or-trading",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/accounts/multi-currency-accounting",
+    "title": "Multi Currency"
+   },
+   {
+    "content": "ERPNext has built-in support for batched and serialised inventory that will help you in traceability.",
+    "parent": "erpnext-for-distribution-or-trading",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock/serial-no",
+    "title": "Batches and Serial Numbers"
+   },
+   {
+    "content": "Keep track of quality inspections done for purchased and manufacturing materials.",
+    "parent": "erpnext-for-distribution-or-trading",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/quality-management",
+    "title": "Quality Inspection"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Domain Page",
+  "domain_image": null,
+  "is_published": 1,
+  "modified": "2020-01-03 10:33:10.646259",
+  "name": "erpnext-for-distribution-or-trading",
+  "page_name": "Distribution",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "route": "distribution",
+  "subtitle": "ERPNext is a perfect fit for distribution companies and helps you manage your inventory across multiple currencies and companies.",
+  "title": "ERPNext for Distribution or Trading"
+ },
+ {
+  "cards": [
+   {
+    "content": "A single source of all information regarding students from guardians to attendance.",
+    "parent": "erpnext-for-education-institutes",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/education/student",
+    "title": "Student Data"
+   },
+   {
+    "content": "Create admission criteria and conduct online admissions with payments via the portal.",
+    "parent": "erpnext-for-education-institutes",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/education/student_admission",
+    "title": "Admissions"
+   },
+   {
+    "content": "Manage the attendance of your students groups and batches with a simple click.",
+    "parent": "erpnext-for-education-institutes",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/education/student-attendance",
+    "title": "Attendance"
+   },
+   {
+    "content": "Create a schedule of courses for each team, enrol students in programs and groups.",
+    "parent": "erpnext-for-education-institutes",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/education/course-schedule",
+    "title": "Course Scheduling"
+   },
+   {
+    "content": "The assessment module lets you create complex criteria for each course and student and manage grades.",
+    "parent": "erpnext-for-education-institutes",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/education/assessment-introduction",
+    "title": "Assessment"
+   },
+   {
+    "content": "Track collection of fees by creating fee schedules and sending fee requests that can be paid on the portal.",
+    "parent": "erpnext-for-education-institutes",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/education/fees",
+    "title": "Fee Collection"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Domain Page",
+  "domain_image": null,
+  "is_published": 1,
+  "modified": "2020-01-03 10:32:56.098823",
+  "name": "erpnext-for-education-institutes",
+  "page_name": "Education",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "route": "education",
+  "subtitle": "ERPNext Education module helps you manage your entire educational institution from admissions to assessments.",
+  "title": "ERPNext for Education Institutes"
+ },
+ {
+  "cards": [
+   {
+    "content": "Keep track of all patients, their history and other critical parameters.",
+    "parent": "erpnext-for-healthcare",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/healthcare/patient",
+    "title": "Patient Data"
+   },
+   {
+    "content": "Maintain a schedule of all your physicians and track appointment bookings for them.",
+    "parent": "erpnext-for-healthcare",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/healthcare/appointment",
+    "title": "Appointments"
+   },
+   {
+    "content": "Record all observations, assessments and prescriptions of all patient consultations.",
+    "parent": "erpnext-for-healthcare",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/healthcare/patient_encounter",
+    "title": "Consultations"
+   },
+   {
+    "content": "Manage all Lab Tests along with specimens and results and keep them ready for print.",
+    "parent": "erpnext-for-healthcare",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/healthcare/lab_test",
+    "title": "Lab Tests"
+   },
+   {
+    "content": "Track all things financial, including billings and payments with the ERPNext accounts module.",
+    "parent": "erpnext-for-healthcare",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/healthcare/invoicing",
+    "title": "Patient Billing"
+   },
+   {
+    "content": "ERPNext stock module will help you manage medical inventory and procurement across warehouses.",
+    "parent": "erpnext-for-healthcare",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock",
+    "title": "Stores and Inventory"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Domain Page",
+  "domain_image": null,
+  "is_published": 1,
+  "modified": "2020-01-03 10:32:49.371485",
+  "name": "erpnext-for-healthcare",
+  "page_name": "Healthcare",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "route": "healthcare",
+  "subtitle": "ERPNext Healthcare modules will help you manage patients, appointments, consultations and lab tests along with billing and all the other ERPNext goodies",
+  "title": "ERPNext for Healthcare"
+ },
+ {
+  "cards": [
+   {
+    "content": "Manage multi-level Bill of Materials and Operations, the blue print of your manufacturing system.",
+    "parent": "erpnext-for-manufacturing-companies",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/manufacturing/bill-of-materials",
+    "title": "Bill of Materials"
+   },
+   {
+    "content": "Make Production Plans based on Sales Orders or internal requirements and track operations.",
+    "parent": "erpnext-for-manufacturing-companies",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/manufacturing/production-plan",
+    "title": "Production Plan"
+   },
+   {
+    "content": "Issue and track Work Orders for workstations and plan time and material for each Work Order.",
+    "parent": "erpnext-for-manufacturing-companies",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/manufacturing/work-order",
+    "title": "Work Order"
+   },
+   {
+    "content": "ERPNext Item management helps you create and manage your manufacturing items and its variants.",
+    "parent": "erpnext-for-manufacturing-companies",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock/item",
+    "title": "Items and Variants"
+   },
+   {
+    "content": "ERPNext has built-in support for batched and serialized inventory that will help you in traceability.",
+    "parent": "erpnext-for-manufacturing-companies",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock/batch",
+    "title": "Batches and Serial Numbers"
+   },
+   {
+    "content": "Keep track of quality inspections done for purchased and manufacturing materials.",
+    "parent": "erpnext-for-manufacturing-companies",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock/quality-inspection",
+    "title": "Quality Inspection"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Domain Page",
+  "domain_image": null,
+  "is_published": 1,
+  "modified": "2020-01-03 10:32:41.787605",
+  "name": "erpnext-for-manufacturing-companies",
+  "page_name": "Manufacturing",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "route": "manufacturing",
+  "subtitle": "ERPNext Manufacturing module helps you manage your manufacturing process right from procurement to shipping finished goods.",
+  "title": "ERPNext for Manufacturing Companies"
+ },
+ {
+  "cards": [
+   {
+    "content": "Maintain data of all your members, their memberships and terms, also collect payments online.",
+    "parent": "erpnext-for-non-profits",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/non_profit/membership",
+    "title": "Members and Volunteers"
+   },
+   {
+    "content": "Manage a database of your donors and their details. Also accept payments online via the portal.",
+    "parent": "erpnext-for-non-profits",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/non_profit/donor",
+    "title": "Donors"
+   },
+   {
+    "content": "Keep a track of all Grant applications and track expenses with projects.",
+    "parent": "erpnext-for-non-profits",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/non_profit/grant-application",
+    "title": "Grants"
+   },
+   {
+    "content": "Manage all your projects with tasks, assignments and reminders and tracking expenses and billing too.",
+    "parent": "erpnext-for-non-profits",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/projects",
+    "title": "Project Management"
+   },
+   {
+    "content": "Track all things financial, including billings and payments with the ERPNext accounts module.",
+    "parent": "erpnext-for-non-profits",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/accounts",
+    "title": "Financial Accounting"
+   },
+   {
+    "content": "ERPNext stock module will help you manage inventory and procurement across warehouses.",
+    "parent": "erpnext-for-non-profits",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock",
+    "title": "Stock and Inventory"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Domain Page",
+  "domain_image": null,
+  "is_published": 1,
+  "modified": "2020-01-03 10:32:32.100954",
+  "name": "erpnext-for-non-profits",
+  "page_name": "Non Profit",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "route": "non-profit",
+  "subtitle": "ERPNext Non Profit module helps you manage all your members, donors, projects and much more.",
+  "title": "ERPNext for Non Profits"
+ },
+ {
+  "cards": [
+   {
+    "content": "The ERPNext POS helps you manage your store checkout easily with integrated billing and inventory.",
+    "parent": "erpnext-for-retail",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/accounts/point-of-sales",
+    "title": "Point of Sale"
+   },
+   {
+    "content": "ERPNext stock module will help you manage inventory and procurement across warehouses.",
+    "parent": "erpnext-for-retail",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock",
+    "title": "Inventory"
+   },
+   {
+    "content": "Track all things financial, including billings and payments with the ERPNext accounts module.",
+    "parent": "erpnext-for-retail",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/accounts",
+    "title": "Billing and Payments"
+   },
+   {
+    "content": "ERPNext Item management helps you create and manage your manufacturing items and its variants.",
+    "parent": "erpnext-for-retail",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock/item",
+    "title": "Items and Variants"
+   },
+   {
+    "content": "ERPNext has built-in support for batched and serialized inventory that will help you in traceability.",
+    "parent": "erpnext-for-retail",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/stock/batch",
+    "title": "Batches and Serial Numbers"
+   },
+   {
+    "content": "Manage your employee data, payroll, leave and attendance, expense claims, all within your ERPNext system.",
+    "parent": "erpnext-for-retail",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/human-resources",
+    "title": "HR and Payroll"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Domain Page",
+  "domain_image": null,
+  "is_published": 1,
+  "modified": "2020-01-03 10:32:19.910454",
+  "name": "erpnext-for-retail",
+  "page_name": "Retail",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "route": "retail",
+  "subtitle": "ERPNext can help you manage your shop or multiple shops with a web-based POS with integrated inventory and accounting.",
+  "title": "ERPNext for Retail"
+ },
+ {
+  "cards": [
+   {
+    "content": "Manage all your projects with tasks, assignments and reminders and tracking expenses and billing.",
+    "parent": "erpnext-for-services",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/projects",
+    "title": "Project Management"
+   },
+   {
+    "content": "Track all things financial, including billings and payments with the ERPNext accounts module.",
+    "parent": "erpnext-for-services",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/accounts",
+    "title": "Billing and Payments"
+   },
+   {
+    "content": "Manage your employee data, payroll, leave and attendance, expense claims, all within your ERPNext system.",
+    "parent": "erpnext-for-services",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/human-resources",
+    "title": "HR and Payroll"
+   },
+   {
+    "content": "ERPNext helps you maintain timesheets against projects or tasks and also update them in bulk.",
+    "parent": "erpnext-for-services",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/projects/timesheets/",
+    "title": "Time Tracking"
+   },
+   {
+    "content": "Track and follow up with leads and opportunities and send out rule based emails and newsletters.",
+    "parent": "erpnext-for-services",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/CRM",
+    "title": "CRM and Sales"
+   },
+   {
+    "content": "Manage your customer service and support with email integrated issue tracker.",
+    "parent": "erpnext-for-services",
+    "parentfield": "cards",
+    "parenttype": "Domain Page",
+    "path": "/docs/user/manual/en/support",
+    "title": "Helpdesk"
+   }
+  ],
+  "docstatus": 0,
+  "doctype": "Domain Page",
+  "domain_image": null,
+  "is_published": 1,
+  "modified": "2020-01-03 10:32:13.169027",
+  "name": "erpnext-for-services",
+  "page_name": "Services",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "route": "services",
+  "subtitle": "ERPNext is ideal for service organizations with integrated projects and people management.",
+  "title": "ERPNext for Services"
+ }
+]
