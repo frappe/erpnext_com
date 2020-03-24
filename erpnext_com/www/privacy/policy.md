@@ -144,7 +144,7 @@ The regulation distinguishes two main types of entities:
     <tr>
         <td>Data Processor</td>
         <td>Customer Data</td>
-        <td>Any data stored by our customers in their ERPNext account, they are the database owner and become the Data Controller for it. We on act as the Data Processor</td>
+        <td>Any data stored by our customers in their ERPNext account, they are the database owner and become the Data Controller for it. We only act as the Data Processor</td>
     </tr>
     <tbody>
     <tbody>
