@@ -1,7 +1,7 @@
 <!-- add-breadcrumbs -->
 # Accounting Of Inventory Stock
 
-The value of available inventory is treated as an Asset in the company's [Chart of
+The value of available inventory is treated as a Current Asset in the company's [Chart of
 Accounts](/docs/user/manual/en/accounts/chart-of-accounts). To prepare a Balance Sheet, you should make the accounting entries for those assets. There are generally two different methods of
 accounting for inventory.
 
@@ -9,7 +9,7 @@ accounting for inventory.
 
 In this process, for each stock transaction, the system posts relevant
 accounting entries to sync stock balance and accounting balance. This is the
-default setting in ERPNext for new accounts.
+default setting in ERPNext for new accounts. By default, Perpetual Inventory is enabled in the [Company](/docs/user/manual/en/setting-up/company-setup#23-stock-settings).
 
 When you buy and receive items, those items are booked as the company’s assets
 (stock-in-hand). When you sell and deliver those items, an
@@ -59,8 +59,8 @@ is passed.
 This complete process is called **Periodic Inventory**.
 
 If you are an existing user using Periodic Inventory and want to use Perpetual
-Inventory, you need to follow [a few steps](/docs/user/manual/en/stock/migrate-to-perpetual-inventory) to migrate. 
+Inventory, you need to follow [a few steps](/docs/user/manual/en/stock/articles/migrate-to-perpetual-inventory) to migrate. 
 
 ### 3. Related Topics
 1. [Perpetual Inventory](/docs/user/manual/en/stock/perpetual-inventory)
-1. [Migrate to Perpetual Inventory](/docs/user/manual/en/stock/migrate-to-perpetual-inventory)
+1. [Migrate to Perpetual Inventory](/docs/user/manual/en/stock/articles/migrate-to-perpetual-inventory)

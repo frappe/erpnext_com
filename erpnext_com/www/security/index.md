@@ -16,7 +16,6 @@ Any reproducible vulnerability that affects the security of our users is likely 
 
 Common examples include:
 
-* Cross Site Scripting (XSS)
 * Remote Code Execution (RCE)
 * SQL Injection (SQLi)
 * Code Injection
@@ -44,6 +43,15 @@ It is important to include at least the following information in the email:
 
 Please allow a reasonable time (2-4 days) for us to confirm and respond to the issue after reporting.
 
+#### Tentative Rewards
+
+Type of vulnerability| Award
+------|--------
+Unvalidated Input | $100
+Access-Control Problem | $200
+Weaknesses in Authentication, Authorization, or Cryptographic Practices | $300
+Remote Code Execution (RCE) | $500
+SQL Injection (SQLi) | $700
 
 #### List of Known Vulnerabilities
 

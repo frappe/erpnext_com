@@ -46,7 +46,7 @@ carried on. For example, “Travel Expense” is an account, “Customer Zoe”,
 “Supplier Mae” are accounts. ERPNext creates accounts for Customers and
 Suppliers automatically.
 
-> Accounts > Chart of Accounts
+> Accounting > Chart of Accounts
 
 #### Address
 
@@ -102,7 +102,7 @@ For example, in your Chart of Accounts, you can separate your expenses by its ty
 (i.e., travel, marketing, etc.). In your Chart of Cost Centers, you can separate
 them by product line or business group (e.g., online sales, retail sales, etc.).
 
-> Accounts > Chart of Cost Centers
+> Accounting > Chart of Cost Centers
 
 #### Journal Entry
 
@@ -110,19 +110,19 @@ A document that contains General Ledger (GL) entries and the sum of Debits and
 Credits of those entries is the same. In ERPNext you can update Payments,
 Returns, etc., using Journal Entries.
 
-> Accounts > Journal Entry
+> Accounting > Journal Entry
 
 #### Sales Invoice
 
 A bill sent to Customers for delivery of Items (goods or services).
 
-> Accounts > Sales Invoice
+> Accounting > Sales Invoice
 
 #### Purchase Invoice
 
 A bill sent by a Supplier for delivery of Items (goods or services).
 
-> Accounts > Purchase Invoice
+> Accounting > Purchase Invoice
 
 #### Currency
 
@@ -419,7 +419,8 @@ want to print a Quotation with a title “Proposal” or “Pro forma Invoice”
 
 #### Terms and Conditions
 
-Text of your terms of contract.
+Text of your terms of contract. In Sales/Purchase transactions there might be certain Terms and Conditions based on which the Supplier provides goods or services to the Customer. You can apply the Terms and Conditions to transactions to transactions and they will appear when printing the document. To know about Terms and Conditions, [click here](/docs/user/manual/en/setting-up/print/terms-and-conditions)
+
 
 > Selling > Setup > Terms and Conditions
 

@@ -1,12 +1,36 @@
 {% extends "frappe_theme/templates/base.html" %}
-{% block title %}Contact Us{% endblock %}
+{% block title %}Get in Touch{% endblock %}
 
 {% from "erpnext_com/templates/includes/card_grid.html" import card_grid %}
 
 {% block head_include %}
-	<meta name="description" content="ERPNext Contact Details" />
+	<meta name="description" content="Get in touch with the experts of ERPNext to address your queries for Consulting, Support, or Partnerships." />
 	<meta name="keywords" content="ERPNext, Contact, Queries" />
 	<meta name="google-site-verification" content="euiq62LnIrUF6eLvL7wZEnVxhdfkfzuIMnSYRf4JzGk" />
+	<meta name="image" content="https://erpnext.com/assets/erpnext_com/img/home/social.png"/>
+
+	<!-- Open Graph Tags -->	
+
+	<meta property="og:site_name" content="ERPNext"/>
+	<meta property="og:title" content="Contact Us | ERPNext"/>
+	<meta property="og:description" content="Get in touch with the experts of ERPNext to address your queries for Consulting, Support, or Partnerships." />					   
+	<meta property="og:image" content="https://erpnext.com/assets/erpnext_com/img/home/social.png" />
+	<meta property="og:type" content="website" />			   
+
+	<!-- Twitter Tags -->
+													
+	<meta name="twitter:card" content="summary_large_image">					  
+	<meta name="twitter:title" content="Contact Us | ERPNext">
+	<meta name="twitter:description" content="Get in touch with the experts of ERPNext to address your queries for Consulting, Support, or Partnerships.">
+	<meta name="twitter:image" content="https://erpnext.com/assets/erpnext_com/img/home/social.png">
+												      
+												     
+	<!-- Schema.org Markup -->
+
+	<meta itemprop="name" content="Contact Us | ERPNext">
+	<meta itemprop="description" content="Get in touch with the experts of ERPNext to address your queries for Consulting, Support, or Partnerships.">
+	<meta itemprop="image" content="https://erpnext.com/assets/erpnext_com/img/home/social.png">
+
 {% endblock %}
 
 {% block content %}
@@ -41,21 +65,15 @@
 				"url": "https://frappe.io/careers/apply"
 			},
 			{
-				"title": "Get A Quote",
-				"content": "Get a customized quote for self hosted ERPNext and implementation / development services",
-				"url": "/get-a-quote"
-			},
-			{
 				"title": "Report Vulnerability",
-				"content": "Discovered a security issue? Submit a vulnerablility report for ERPNext or Frappe Framework.",
+				"content": "Discovered a security issue? Submit a vulnerability report for ERPNext or Frappe Framework.",
 				"url": "/security/report"
 			},
 		])
 	}}
 </div>
 </section>
-<hr>
-<section>
+<section class="section-bg">
 	<div class='container'>
 		{{ card_grid(
 			"Contact Details",
@@ -87,7 +105,7 @@
 		}}
 	<div class='text-center'>
 		<p class="mt-5">
-			<a class="btn btn-primary btn-lg" style="width: 170px;" href="/pricing">Start Free Trial</a>
+			<a class="btn btn-primary btn-lg" href="/pricing">Start Free Trial</a>
 		</p>
 		<p class="mt-0 text-muted">Try ERPNext free for 14 days</p>
 	</div>

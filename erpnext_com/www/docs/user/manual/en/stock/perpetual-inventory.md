@@ -1,9 +1,9 @@
 <!-- add-breadcrumbs -->
 # Perpetual Inventory
 
-As per the perpetual inventory system, accounting entry is done for every stock transaction. Otherwise it's done in larger intervals for example monthly or quarterly. Each warehouse is linked with a corresponding account head.
+As per the perpetual inventory system, accounting entry is done for every stock transaction. Otherwise, it's done in larger intervals for example monthly or quarterly. Each warehouse is linked with a corresponding account head.
 
-On receipt of items in a particular warehouse, the balance in the Warehouse Account will increase. Similarly, when items are delivered from the Warehouse, an expense will be booked, and balance in the Warehouse Account will reduce.
+On receipt of items in a particular warehouse, the balance in the Warehouse Account will increase. Similarly, when items are delivered from the Warehouse, an expense will be booked, and the balance in the Warehouse Account will reduce.
 
 ### 1. How to activate perpetual inventory
 
@@ -37,30 +37,30 @@ Consider the following Chart of Accounts and Warehouse setup for your company:
 
 Chart of Accounts:
 
-* Assets (Dr) 
+* Assets (Dr)
     * Current Assets
-        * Accounts Receivable 
+        * Accounts Receivable
             * Debtors
         * Stock Assets
             * Stores
             * Finished Goods
             * Work In Progress
-        * Tax Assets 
+        * Tax Assets
             * VAT
-* Liabilities (Cr) 
+* Liabilities (Cr)
     * Current Liabilities
-        * Accounts Payable 
+        * Accounts Payable
             * Creditors
-        * Stock Liabilities 
+        * Stock Liabilities
             * Stock Received But Not Billed
-        * Tax Liabilities 
+        * Tax Liabilities
             * Service Tax
-* Income (Cr) 
+* Income (Cr)
     * Direct Income
         * Sales Account
-* Expenses (Dr) 
+* Expenses (Dr)
     * Direct Expenses
-        * Stock Expenses 
+        * Stock Expenses
             * Cost of Goods Sold
             * Expenses Included In Valuation
             * Stock Adjustment
@@ -141,7 +141,7 @@ Suppose you have purchased _10 nos_ of item "RM0001" at _$200_ and _5 nos_ of it
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-receipt-gl-2.png">
 
-As stock balance increases through Purchase Receipt, "Store" accounts are debited and a temporary account "Stock Receipt But Not Billed" account is credited, to maintain double-entry accounting system. At the same time, the negative expense is booked in account "Expense included in Valuation" for the amount added for valuation purpose, to avoid double expense booking.
+As stock balance increases through Purchase Receipt, "Store" accounts are debited and a temporary account "Stock Receipt But Not Billed" account is credited, to maintain double-entry accounting system. At the same time, the negative expense is booked in account head having category as "Valuation" or "Total and Valuation" in taxes and charges table for the amount added for valuation purpose, to avoid double expense booking.
 
 #### 2.3 Purchase Invoice
 
@@ -217,16 +217,16 @@ debit/credit amount is equal to the total valuation amount (buying cost) of
 the selling items. And the valuation amount is calculated based on your preferred
 valuation method (FIFO / Moving Average) or actual cost of serialized items.
 
-    
-     
-    In this example, we have considered the valuation method as FIFO. 
-    Valuation Rate  = Purchase Rate + Charges Included in Valuation 
-                    = 200 + (250 * (2000 / 2500) / 10) 
+
+
+    In this example, we have considered the valuation method as FIFO.
+    Valuation Rate  = Purchase Rate + Charges Included in Valuation
+                    = 200 + (250 * (2000 / 2500) / 10)
                     = 220
-    Total Valuation Amount  = 220 * 5 
+    Total Valuation Amount  = 220 * 5
                             = 1100
-        
-    
+
+
 
 * * *
 
@@ -347,7 +347,7 @@ Goods Sold" accounts are also affected based on the valuation amount.
 **General Ledger**
 
 <img class="screenshot" alt="Perpetual Inventory" src="{{docs_base_url}}/assets/img/accounts/perpetual-st-transfer-gl.png">
-    
+
 #### 3. Related Topics
 1. [Accounting Of Inventory Stock](/docs/user/manual/en/stock/accounting-of-inventory-stock)
-1. [Migrate to Perpetual Inventory](/docs/user/manual/en/stock/migrate-to-perpetual-inventory)
+1. [Migrate to Perpetual Inventory](/docs/user/manual/en/stock/articles/migrate-to-perpetual-inventory)

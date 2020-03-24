@@ -5,131 +5,214 @@
 {% from "erpnext_com/templates/includes/card_grid.html" import card_grid %}
 
 {% block head_include %}
-	<meta name="description" content="ERPNext is the world's top 100% open source ERP software. ERPNext supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare" />
+	<meta name="description" content="ERPNext is the world's top 100% open source ERP which supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare" />
 	<meta name="keywords" content="ERP Software, Cloud ERP, Open Source ERP, Accounting Software, Online ERP, Online Accounting, ERP for small business" />
 	<meta name="google-site-verification" content="euiq62LnIrUF6eLvL7wZEnVxhdfkfzuIMnSYRf4JzGk" />
+	<meta name="author" content="erpnext.com">
+	<meta name="robots" content="index, follow">
+	<meta name="revisit-after" content="1 days">
+	<!-- Open Graph Protocol -->
+	<meta property="og:title" content="ERPNext - Open Source Cloud ERP">
+	<meta property="og:description" content="ERPNext is the world's top 100% open source ERP software. ERPNext supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare">
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="ERPNext"/>
+	<meta property="og:image" content="{{ frappe.utils.get_url() }}/assets/erpnext_com/img/home/social.png">
+	<meta property="og:url" content="https://erpnext.com">
+	<!-- Twitter Card -->
+	<meta name="twitter:title" content="ERPNext - Open Source Cloud ERP Software">
+	<meta name="twitter:description" content="ERPNext is the world's top 100% open source ERP software. ERPNext supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare">
+	<meta name="twitter:image" content="{{ frappe.utils.get_url() }}/assets/erpnext_com/img/home/social.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<link type="text/css" rel="stylesheet" href="/assets/erpnext_com/css/custom.css">
 {% endblock %}
 
 {% block content %}
 <section class='top-section'>
-	<div class='container' style='padding-top: 3em; padding-bottom: 3em;'>
-	<h1>Everything Your Organization Needs</h1>
-	<p class='lead'>ERPNext is the world's best 100% open source ERP.
-	<p class="mt-4">
-		<a class="btn btn-primary btn-lg" style="width: 170px;" href="/pricing">Get Started</a>
-	</p>
-	<p class="mt-0 small text-muted">Try ERPNext free for 14 days</p>
-	<div class='py-4'></div>
+	<div class='container'>
+		<h1>
+			<span>Open Source Alternative to</span>
+			<span class="rotate">SAP</span>
+		</h1>
+		<p class='lead'>ERPNext is the world's best 100% open source ERP.
+		<p class="mt-4">
+			<a class="btn btn-primary btn-md" href="/pricing">Start Free Trial</a>
+			<a class="btn btn-light btn-md" href="/contact-form">Contact Us</a>
+		</p>
+		<!-- <p class="mt-0 small text-muted">Try ERPNext free for 14 days</p> -->
+		<div class="macbook">
+			<div class="screen" id="slides">
+				<div class="viewport" style="background-color: white;display: block !important;"></div>
+				<div class="viewport slide showing" style="background-image:url('/assets/erpnext_com/img/home/item.png');"></div>
+				<div class="viewport slide" style="background-image:url('/assets/erpnext_com/img/home/accounts-dashboard.png');"></div>
+				<div class="viewport slide" style="background-image:url('/assets/erpnext_com/img/home/accounts-report.png');"></div>
+				<div class="viewport slide" style="background-image:url('/assets/erpnext_com/img/home/profile.png');"></div>
+				<div class="viewport slide" style="background-image:url('/assets/erpnext_com/img/home/gantt.png');"></div>
+				<div class="viewport slide" style="background-image:url('/assets/erpnext_com/img/home/sales-order.png');"></div>
+			</div>
+			<div class="base"></div>
+			<div class="notch"></div>
+		</div>
+		<div class="row d-block d-sm-flex" style="margin-top: 7rem;">
+			<div class="col-sm-3 p-3 p-md-0 mb-2 mb-md-0 text-center">
+				<a href="https://www.getapp.com/operations-management-software/enterprise-resource-planning-erp/category-leaders/" target="_blank"><img alt="GetApp Category Leaders for Enterprise Resource Planning (ERP) Jan-2020" title="Category Leaders Badge" class="mx-auto" style="width: 100%; max-width: 200px; padding: 0px 12px; border: 0px" src="/assets/erpnext_com/img/home/getapp.png"></a>
+			</div>
+			<div class="col-sm-9">
+				<h3 class="text-md-left text-center">Certified Awesome</h3>
+				<p class="text-muted text-md-left text-center" style="line-height: 1.7;">
+					ERPNext has been rated amongst top-performing softwares by GetApp based on verified buyer reviews. Over 5,000 companies have made themselves ready for the next generation of enterprise with ERPNext.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section-md section-light">
+	<div class='container'>
 
 	{{ card_grid(
-		None,
+		"Everything Included",
 		None,
 		[
 			{
-			"title": "Accounting",
-			"content": "Get a real time view of your cash flow. Full fledged accounting module covering every aspect of book keeping.",
-			"url": "/docs/user/manual/en/accounts"
+				"title": "Accounting",
+				"content": "Get a real time view of your cash flow. Full fledged accounting module covering every aspect of book keeping.",
+				"url": "/open-source-accounting"
 			},
 			{
-			"title": "HR & Payroll",
-			"content": "Manage full employee life cycle right from onboarding, payroll, attendance, expense claims, assets to separation.",
-			"url": "/docs/user/manual/en/human-resources"
+				"title": "HR & Payroll",
+				"content": "Manage full employee life cycle right from onboarding, payroll, attendance, expense claims, assets to separation.",
+				"url": "/open-source-hrms-and-payroll"
 			},
 			{
-			"title": "Manufacturing",
-			"content": "Effectively maintain & manage multilevel bill of materials, production planning, job cards & inventory.",
-			"url": "/docs/user/manual/en/manufacturing"
+				"title": "Manufacturing",
+				"content": "Effectively maintain and manage multilevel bill of materials, production planning, job cards & inventory.",
+				"url": "/open-source-manufacturing-erp-software"
 			},
 			{
-			"title": "Sales & Purchase",
-			"content": "Increase productivity and lower costs by managing your sales and purchase cycles, from purchase to sales orders",
-			"url": "/docs/user/manual/en/buying"
+				"title": "Sales & Purchase",
+				"content": "Increase productivity and lower costs by managing your sales and purchase cycles, from purchase to sales orders",
+				"url": "/open-source-sales-purchase"
 			},
 			{
-			"title": "CRM",
-			"content": "Win and retain more customers by optimising sales process. Track leads, opportunities and send the quotes on the go.",
-			"url": "/docs/user/manual/en/CRM"
+				"title": "CRM",
+				"content": "Win and retain more customers by optimizing sales process. Track leads, opportunities and send the quotes on the go.",
+				"url": "/open-source-crm"
 			},
 			{
-			"title": "Projects",
-			"content": "Deliver both internal and external projects on time, budget and profitability. Track tasks, timesheets and issues by project.",
-			"url": "/docs/user/manual/en/projects"
+				"title": "Projects",
+				"content": "Deliver both internal and external projects on time, budget and profitability. Track tasks, timesheets and issues by project.",
+				"url": "/open-source-project-management-software"
 			},
 			{
-			"title": "Helpdesk",
-			"content": "Deliver a better service experience with an intuitive issue tracker and integrated knowledge base.",
-			"url": "/docs/user/manual/en/support"
+				"title": "Helpdesk",
+				"content": "Deliver a better service experience with an intuitive issue tracker and integrated knowledge base.",
+				"url": "/open-source-help-desk-software"
 			},
 			{
-			"title": "Asset Management",
-			"content": "Maintain and Manage details of assets, their movement, value adjustment and depreciation.",
-			"url": "/docs/user/manual/en/asset"
+				"title": "Asset Management",
+				"content": "Maintain and Manage details of assets, their movement, value adjustment and depreciation.",
+				"url": "/open-source-asset-management-software"
 			},
 			{
-			"title": "Website",
-			"content": "ERPNext comes with a fully featured content management with blogs, web pages and forms.",
-			"url": "/docs/user/manual/en/website"
+				"title": "Website",
+				"content": "ERPNext comes with a fully featured content management with blogs, web pages and forms.",
+				"url": "/open-source-website-builder-software"
 			},
 		]
+
 		)
 	}}
-
-	<p class='mt-4'>
-		<a href='/docs/user/manual/en' class='text-muted'>Read the full Documentation</a>
+	<p class='mt-4 text-center'>
+		<!-- <a href='/docs/user/manual/en' class='text-muted'>Read full Documentation</a> -->
+		<a href='/docs/user/manual/en' class='btn btn-sm btn-secondary'>Read full Documentation</a>
 	</p>
-
 	</div>
 </section>
+
+{% macro card(title, body, link, badge) %}
+<a href="{{ link }}" class="card">
+	<!-- <img class='mt-3' src="/assets/erpnext_com/img/balloon.svg" style='height: 150px'> -->
+	<div class='card-body'>
+		<h5 class='card-title'>{{ title }}</h5>
+		<div>{{ body }}</div>
+	</div>
+	<div class='card-footer'>
+		<span class='badge badge-pill badge-secondary'>{{ badge }}</span>
+	</div>
+</a>
+{% endmacro %}
 
 <section class="section-padding section-bg">
 	<div class='container'>
 	<div class='card-deck'>
-		<div class="card">
-			<!-- <img class='mt-3' src="/assets/erpnext_com/img/balloon.svg" style='height: 150px'> -->
-			<div class='card-body'>
-				<h5 class='card-title'>Get Started on Cloud</h5>
-				<div>Start with a 14 day trial to get instant access to your own ERPNext Instance. Get expert support and world class hosting too.</div>
-			</div>
-			<div class='card-footer'>
-				<a href="/pricing" class='small'>See Pricing</a>
-			</div>
-		</div>
+		{{ card(
+			'Get Started on Cloud',
+			'Start with a 14 day trial to get instant access to your own ERPNext Instance. Get expert support and world class hosting too.',
+			'/pricing',
+			'See Pricing'
+		)  }}
 
-		<div class="card">
-			<!-- <img class='mt-3' src="/assets/erpnext_com/img/umbrella.svg" style='height: 150px'> -->
-			<div class='card-body'>
-				<h5 class='card-title'>ERPNext Support</h5>
-				<div>For self hosted users, ERPNext Support provides you the priority support and bug fix guarantee, so you can stop worrying.</div>
-			</div>
-			<div class='card-footer'>
-				<a href="/support" class='small'>Buy Support</a>
-			</div>
-		</div>
+		{{ card(
+			'ERPNext Support',
+			'For self hosted users, ERPNext Support provides you the priority support and bug fix guarantee, so you can stop worrying.',
+			'/support',
+			'Buy Support'
+		)  }}
 
-		<div class="card">
-			<!-- <img class='mt-3' src="/assets/erpnext_com/img/sun.svg" style='height: 150px'> -->
-			<div class='card-body'>
-				<h5 class='card-title'>100% Open Source</h5>
-				<div>ERPNext is open source and infinitely extensible. Customize it, build upon it, add your own apps built with <a href="https://frappe.io/frappe" class="underline">Frappe Framework</a>.</div>
-			</div>
-			<div class='card-footer'>
-				<a href="https://github.com/frappe/erpnext" class='small'>GitHub</a>
-			</div>
-		</div>
+		{{ card(
+			'100% Open Source',
+			'ERPNext is open source and infinitely extensible. Customize it, build upon it, add your own apps built with Frappe Framework.',
+			'https://github.com/frappe/erpnext',
+			'GitHub'
+		)  }}
 	</div>
 	</div>
 </section>
-<section class='section-padding'>
-	<div class='container text-center'>
-		<h3 class='text-center'>Loved by Users</h3>
-		<p class='lead'>Used by more than 5000 companies across the world</p>
-		<img src="/assets/erpnext_com/img/home/customer-logos.png" class='greyscale my-5'>
-		<div class='mt-4 '>
-			<a class="btn btn-primary btn-lg" href="/pricing">Get Started</a>
-		</div>
-	</div>
-</section>
+
+{% include "erpnext_com/templates/includes/signup_footer.html" %}
+
+{% block script %}
+<script>
+	var currentInterval;
+	var intervals = [];
+
+	var startInterval = function(func, time) {
+		intervals.push({
+			func: func,
+			time: time
+		});
+		checkQueue();
+	};
+
+	var checkQueue = function() {
+		if(currentInterval == null) {
+			var item = intervals.shift();
+			if(item) {
+				currentInterval = setInterval(item.func, item.time);
+			}
+		}
+	};
+
+	var stopInterval = function() {
+		clearInterval(currentInterval);
+		currentInterval = null;
+		checkQueue();
+	};
+
+	var slides = document.querySelectorAll('#slides .slide');
+	var currentSlide = 0;
+	startInterval(changeSlide, 4000)
+
+	function changeSlide() {
+	    slides[currentSlide].className = 'viewport slide';
+	    currentSlide = (currentSlide+1)%slides.length;
+	    slides[currentSlide].className = 'viewport slide showing';
+	}
+
+</script>
+{% endblock %}
+
+{% block style %}
 <style>.footer-message { display: none; }</style>
-
+{% endblock %}
 {% endblock %}
 

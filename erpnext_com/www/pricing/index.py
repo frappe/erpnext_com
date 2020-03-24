@@ -11,9 +11,9 @@ eu = ["BE", "BG", "CZ", "DK", "DE", "EE", "IE", "EL", "ES", "FR", "HR",
 
 def get_context(context):
 	context.no_cache = True
-	country_code = get_country().get("countryCode")
+	country_details = frappe._dict(get_country())
 
-	if country_code == 'IN':
+	if country_details.countryCode == 'IN':
 		context.currency = 'INR'
 		context.symbol = '₹'
 
@@ -21,104 +21,104 @@ def get_context(context):
 		context.currency = 'USD'
 		context.symbol = '$'
 
-	context.base_features = [
-		{
+	context.base_features = {
+		'all_modules': {
 			'title': 'All Modules',
-			'content': 'Unlimited features with Accounting, Inventory, HR and Payroll'
+			'content': 'Accounting, Inventory, HR and more'
 		},
-		{
-			'title': 'Priority Support',
-			'content': 'In app priority support from the team that brought you ERPNext'
+		'email_support': {
+			'title': 'Standard Support',
+			'content': 'Standard support during business hours'
 		},
-		{
+		'backup': {
 			'title': 'Backup + Redundancy',
-			'content': 'Servers with offsite snapshot backups ensuring max reliability'
+			'content': 'Daily offsite backups on AWS'
+		},
+		'priority_support': {
+			'title': 'Priority Support',
+			'content': 'High priority support with shorter SLA'
+		},
+		'hosting' : {
+			'title': 'Hosting Included',
+			'content': 'Managed hosting on our servers.'
+		},
+		'account_manager': {
+			'title': 'Account Manager',
+			'content': 'Dedicated account manager to fulfill your requirements.'
+		},
+		'onboarding_three':  {
+			'title': '3 Hrs Onboarding Support'
+		},
+		'onboarding':  {
+			'title': 'Enterprise Onboarding'
 		}
-	]
+	}
 
 	context.plan_features = ['Server and Emails', 'Customization', 'Integrations + API']
 
+	pricing_multiplier_doc = frappe.get_doc({
+			"doctype": "Pricing Multiplier"
+		})
+
+	pricing_multiplier = pricing_multiplier_doc.get_pricing_multiplier_details(country_details.country)
+
 	def get_plan_and_pricing(plan_name):
 		plan = frappe.get_doc('Base Plan', plan_name)
+		_pricing_multiplier = 1
 		pricing = [d.as_dict() for d in plan.amounts if d.currency == context.currency][0]
+
+		if plan.apply_pricing_multiplier:
+			_pricing_multiplier = pricing_multiplier
+
+		pricing['monthly_amount'] = (pricing['monthly_amount'] / plan.users) * _pricing_multiplier
+		pricing['amount'] = (pricing['amount'] / plan.users) * _pricing_multiplier
 		pricing['symbol'] = context.symbol
 
 		return plan, pricing
 
-	basic_plan, basic_plan_pricing = get_plan_and_pricing('P-Basic')
-	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard')
-	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro')
+	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard-2019')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro-2019')
 
 	context.plans = [
 		{
-			'name': basic_plan.name,
-			'title': basic_plan.name.replace('P-', ''),
-			'pricing': basic_plan_pricing,
-			'storage': basic_plan.space,
-			'emails': basic_plan.emails,
-			'features': [
-				{
-					'title': 'Organisations',
-					'content': [
-						'Single Company',
-					]
-				},
-				{
-					'title': context.plan_features[0],
-					'content': [
-						'2 GB cloud storage',
-						'2000 emails / month',
-						'Extensible via add-ons'
-					]
-				},
-				{
-					'title': context.plan_features[1],
-					'content': [
-						'Customized Print Formats and Email Alerts',
-						'20 Custom Fields',
-						'1 Custom Form'
-					]
-				},
-				{
-					'title': context.plan_features[2],
-					'content': [
-						'Email Integration and REST API'
-					]
-				}
-			],
-
-		},
-		{
 			'name': business_plan.name,
-			'title': business_plan.name.replace('P-', ''),
+			'title': business_plan.title,
 			'pricing': business_plan_pricing,
 			'storage': business_plan.space,
 			'emails': business_plan.emails,
+			'minimum_users': 5,
+			'base_features': [
+				{'title': 'hosting', 'included': 1},
+				{'title': 'account_manager', 'included': 0},
+				{'title': 'all_modules', 'included': 1},
+				{'title': 'email_support', 'included': 1},
+				{'title': 'onboarding_three', 'included': 1}
+			],
 			'features': [
 				{
-					'title': 'Organisations',
+					'title': 'Organizations',
 					'content': [
 						'3 Companies',
 					]
 				},
 				{
-					'title': context.plan_features[0],
+					'title': 'Server and Emails ',
 					'content': [
-						'5 GB cloud storage',
+						'10 GB cloud storage',
 						'5000 emails / month',
 						'Extensible via add-ons'
 					]
 				},
 				{
-					'title': context.plan_features[1],
+					'title': 'Customization',
 					'content': [
-						'Customized Print Formats and Email Alerts',
-						'Unlimited Custom Fields',
+						'Print Formats and Email Alerts',
+						'30 Custom Fields',
 						'10 Custom Forms, 10 Custom Scripts'
 					]
 				},
 				{
-					'title': context.plan_features[2],
+					'title': 'Integrations + API',
 					'content': [
 						'Email Integration and REST API',
 						'Payment Gateways',
@@ -130,35 +130,89 @@ def get_context(context):
 		},
 		{
 			'name': enterprise_plan.name,
-			'title': enterprise_plan.name.replace('P-', ''),
+			'title': enterprise_plan.title,
 			'pricing': enterprise_plan_pricing,
 			'storage': enterprise_plan.space,
 			'emails': enterprise_plan.emails,
+			'minimum_users': 10,
+			'base_features': [
+				{'title': 'hosting', 'included': 1},
+				{'title': 'account_manager', 'included': 0},
+				{'title': 'all_modules', 'included': 1},
+				{'title': 'email_support', 'included': 1},
+				{'title': 'onboarding_three', 'included': 1}
+			],
 			'features': [
 				{
-					'title': 'Organisations',
+					'title': 'Organizations',
 					'content': [
 						'Unlimited Companies',
 					]
 				},
 				{
-					'title': context.plan_features[0],
+					'title': 'Server and Emails',
 					'content': [
-						'15 GB cloud storage',
+						'25 GB cloud storage',
 						'15000 emails / month',
 						'Extensible via add-ons'
 					]
 				},
 				{
-					'title': context.plan_features[1],
+					'title': 'Customization',
 					'content': [
-						'Customized Print Formats and Email Alerts',
+						'Print Formats and Email Alerts',
 						'Unlimited Custom Fields',
 						'Unlimited Custom Forms and Scripts'
 					]
 				},
 				{
-					'title': context.plan_features[2],
+					'title': 'Integrations + API',
+					'content': [
+						'Email Integration and REST API',
+						'Payment Gateways',
+						'Dropbox, Shopify and AWS'
+					]
+				}
+			],
+		},
+		{
+			'name': 'Contact Us',
+			'title': 'Self Hosted',
+			'no_pricing': True,
+			'description': 'One Stack, One Vendor, 100% Freedom',
+			'base_features': [
+				{'title': 'hosting', 'included': 0},
+				{'title': 'account_manager', 'included': 1},
+				{'title': 'all_modules', 'included': 1},
+				{'title': 'priority_support', 'included': 1},
+				{'title': 'onboarding', 'included': 1}
+			],
+			'minimum_users': 100,
+			'features': [
+				{
+					'title': 'Organizations',
+					'content': [
+						'Unlimited Companies',
+					]
+				},
+				{
+					'title': 'Server and Emails',
+					'content': [
+						'Private Server',
+						'Unlimited storage',
+						'Unlimited emails'
+					]
+				},
+				{
+					'title': 'Customization',
+					'content': [
+						'Print Formats and Email Alerts',
+						'Unlimited Custom Fields',
+						'Unlimited Custom Forms and Scripts'
+					]
+				},
+				{
+					'title': 'Integrations + API',
 					'content': [
 						'Email Integration and REST API',
 						'Payment Gateways',
@@ -172,6 +226,7 @@ def get_context(context):
 
 @frappe.whitelist(allow_guest=True)
 def get_plan_details(plan_name):
+	plan_name = frappe.utils.escape_html(plan_name)
 	currency = 'USD'
 	symbol = '$'
 

@@ -3,13 +3,15 @@
 
 **Suppliers are companies or individuals who provide you with products or services.**
 
+To access the Supplier list, go to:
+> Home > Buying > Supplier > Supplier
+
 ## 1. How to create a Supplier
-1. You can create a new Supplier from:
-**Buying > Supplier > Supplier > New**
+1. Go to the Supplier list and click on New.
 2. Enter a name for the supplier.
 4. Select the supplier group whether Pharmaceutical, Hardware etc.
 5. Save.
-<img class="screenshot" alt="Supplier Master" src="{{docs_base_url}}/assets/img/buying/supplier-master.png">
+    <img class="screenshot" alt="Supplier Master" src="{{docs_base_url}}/assets/img/buying/supplier-master.png">
 
 The options to Warn RFQs, POs, Prevent RFQs, POs will be available once you create a [Supplier Scorecard](/docs/user/manual/en/buying/supplier-scorecard) and transactions are made.
 
@@ -23,7 +25,7 @@ Fields in future transactions will be auto-populated if the 'Default' fields lik
 * **Tax ID**: Tax identification number of the supplier.
 * **Tax Category**: This is linked to [Tax Rule](/docs/user/manual/en/accounts/tax-rule). If a Tax Category is set here, when you select this supplier, the respective Purchase Tax and Charges template will be applied. This template is linked to the Tax Rule and the Tax Rule is linked with a Tax Category. Tax Category can be used to group suppliers to whom same tax will be applied. For example: Government, commercial, etc,.
 * **Print Language**: The language in which the document will be printed.
-* **Tax Withholding Category**: For India, TDS category for the supplier.
+* **Tax Withholding Category**: For India, TDS category for the Supplier. On setting a category here, it will be fetched into the [Purchase Invoice](/docs/user/manual/en/accounts/purchase-invoice). For more information, visit the [Tax Withholding Category](/docs/user/manual/en/accounts/tax-withholding-category) page.
 * **Disabled**: Disables the Supplier and they won't be shown in the Supplier List.
 * **Is Transporter**: If the supplier is selling your transport services, tick this box. 'GST Transporter ID' field will be visible if this field is ticked.
 * **Internal Supplier**: If the supplier is from a sister or parent/child company, tick this field and select the company which they represent.
@@ -95,6 +97,7 @@ By clicking on the View button, you can view the Accounting Ledger or Accounts P
 
 There's a button to 'Send GST Update Reminder' to the supplier. You need to have a default [email account](/docs/user/manual/en/setting-up/email/email-account) setup first.
 
+## 3. Video
 <div>
     <div class='embed-container'>
         <iframe src='https://www.youtube.com/embed//zsrrVDk6VBs?start=213' frameborder='0' allowfullscreen>
@@ -102,10 +105,8 @@ There's a button to 'Send GST Update Reminder' to the supplier. You need to have
     </div>
 </div>
 
-### 3. Related Topics
+### 4. Related Topics
 1. [Supplier Quotation](/docs/user/manual/en/buying/supplier-quotation)
 1. [Supplier Scorecard](/docs/user/manual/en/buying/supplier-scorecard)
 1. [Maintaining Supplier's Item Code In the Item Master](/docs/user/manual/en/buying/articles/maintaining-suppliers-part-no-in-item)
-1. [Pull Items In Purchase Order Based On Supplier](/docs/user/manual/en/buying/articles/pull-items-in-purchase-order-based-on-supplier)
-
 {next}

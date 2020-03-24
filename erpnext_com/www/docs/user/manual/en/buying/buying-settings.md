@@ -31,11 +31,11 @@ Configure what should be the default Price List when creating a new Buying trans
 
 ### 2.2 Purchase Order Required
 
-If this option is configured "Yes", ERPNext will prevent you from creating a Purchase Invoice or a Purchase Receipt directly without creating a Purchase Order first.
+If this option is configured "Yes", ERPNext will prevent you from creating a Purchase Invoice or a Purchase Receipt directly without creating a Purchase Order first. If retail transactions are involved where the order happens offline, then Purchase Orders can be skipped. If you're accepting sample Items, you can directly create a Purchase Receipt to receive the Items to your Warehouse. 
 
 ### 2.3 Purchase Receipt Required
 
-If this option is configured "Yes", ERPNext will prevent you from creating a Purchase Invoice without creating a Purchase Receipt first.
+If this option is configured "Yes", ERPNext will prevent you from creating a Purchase Invoice without creating a Purchase Receipt first. In case the Item being transacted is a service, it'll not require a receipt, you can directly create an Invoice.
 
 ### 2.4 Maintain Same Rate Throughout Purchase Cycle
 
@@ -46,6 +46,6 @@ If this is checked, ERPNext will stop you from changing an Item's price in a Pur
 When this checkbox is unchecked, an item cannot be added multiple times in the same Purchase Order. However, you can still explicitly change the quantity. This is a validation checkbox for preventing accidental purchase of the same item. This can be checked for specific use cases where there are multiple sources for the same material, for example in manufacturing.
 
 ### 4. Related Topics
-1. [Supplier Group](/docs/user/manual/en/buying/setup/supplier-group)
+1. [Supplier Group](/docs/user/manual/en/buying/supplier-group)
 
 {next}

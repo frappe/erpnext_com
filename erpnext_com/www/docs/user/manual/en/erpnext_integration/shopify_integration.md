@@ -20,7 +20,10 @@ While creating the sales order if Customer or Item is missing in ERPNext the sys
 
 
 #### Setting Up Shopify  on ERPNext:-
-Once you have created a Private App on Shopify, setup App Credentials and other details in ERPNext.
+Once you have created a Private App on Shopify, setup App Credentials and other details in Shopify Settings in ERPNext.
+
+> To access Shopify Settings, go to:
+Integrations > Shopify Settings
 
 1. Select App Type as Private and Fill-up API key, Password and Shared Secret from Shopify's Private App.
 <img class="screenshot" alt="Setup Private App Credentials" src="{{docs_base_url}}/assets/img/erpnext_integrations/app_details.png">
@@ -41,3 +44,6 @@ After setting up all the configurations, enable the Shopify sync and save the se
 
 ### Note:
 The connector won't handle Order cancellation. If you cancelled any order in Shopify then manually you have to cancel respective Sales Order and other documents in ERPNext.
+
+#### Version 11:
+We have enhanced the Shopify Integration to make it unidirectional - The Shopify Connector will pull the orders from Shopify and creates Sales Order against them in ERPNext, not the other way round.

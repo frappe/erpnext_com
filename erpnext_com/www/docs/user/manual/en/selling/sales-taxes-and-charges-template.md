@@ -18,17 +18,18 @@ To know about setting up taxes visit [this page](/docs/user/manual/en/setting-up
 ## 1. How to add Sales Taxes/Charges via a template
 Before creating a new template, note that templates are already created for many of the commonly used taxes.
 
-1. Click on New.
+1. Go to the Sales Taxes and Charges Template list, click on New.
 2. Enter a title name for the Tax.
 3. Under type, set on what the tax will be calculated and the tax rate. There are five options under type for which tax will be calculated.
-  1. Actual: On the actual amount of each item.
-  1. On Net Total: On the grand total of all the items.
+  1. Actual: You can directly enter the amount for the expense.
+  1. On Net Total: On the net total of all the items.
   1. On Previous Row Amount: This is for compounding the charges. For example, cess charges over the amount to which tax was already applied in the previous row.
   1. On Previous Row Total: Same as above but applied on the total bill and not just the amount of an item.
+  1. On Item Quantity: Tax will be calculated as Tax Rate * Item Quantity. For example, if Tax Rate is 2% and number of Items is 1, then Tax Rate will be 4, if number of Items are 5, Tax Rate will be 10, and so on.
 4. Select an account head which has pre set tax rates or create your own.
 1. Selecting default will apply this template by default for new Sales transactions.
 5. Save.
-![Sales taxes](/docs/assets/img/selling/sales-taxes.png)
+  ![Sales taxes](/docs/assets/img/selling/sales-taxes.png)
 
 **Is Inter State**: For India. On selection of a customer in Sales Invoice or Delivery Note, if the GST codes of place of supply and customer shipping address don't match, the template with 'Is Inter State' ticked will be set as the taxes template. If the place of supply and shipping address are the same, the default taxes template will be applied. This also applies to Purchase Invoice, on selection of Supplier, the templates are set depending on the addresses. For example, IGST.
 
@@ -51,6 +52,6 @@ The tax rates you define in the template be the standard tax rate for all Items.
 
 ### 3. Related Topics
 1. [Sales Order](/docs/user/manual/en/selling/sales-order)
-1. [Selling Settings](/docs/user/manual/en/selling/setup/selling-settings)
+1. [Selling Settings](/docs/user/manual/en/selling/selling-settings)
 
 {next}
