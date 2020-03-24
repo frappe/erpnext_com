@@ -3,7 +3,8 @@
 
 fairlogin is an GDPR aware oAuth provider by fairkom.eu. 
 
-To setup fairlogin as an oAuth provider, go to `Explore > Integrations > Social Login Key`
+To setup fairlogin as an oAuth provider, go to:
+> Home > Integrations > Social Login Key
 
 ## Setup keycloak 
 
