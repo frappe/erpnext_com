@@ -13,7 +13,7 @@ To access the Loan Type list, go to:
 
 1. Enter Loan Name.
 1. Enter Company.
-1. Enter yearly rate of interest.
+1. Enter yearly rate of interest to be charged on the principal amount.
 1. Enter Mode Of Payment and account details.
 1. Click "Save" to save the draft  of the loan type.
 1. Click "Submit" to submit the loan type
