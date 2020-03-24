@@ -6,7 +6,7 @@
 Sales Invoice is an accounting transaction. On submission of Sales Invoice, the system updates the receivable and books income against a Customer Account.
 
 To access the Sales Invoice list, go to:
-> Home > Accounts > Accounts Receivable > Sales Invoice
+> Home > Accounting > Accounts Receivable > Sales Invoice
 
 ![SO Flow](/docs/assets/img/accounts/so-flow.png)
 
@@ -38,7 +38,7 @@ For manual creation, follow these steps:
 
 ### 2.1 Additional options when creating a Sales Invoice
 
-* **Include Payment (POS)**: If this invoice is for retail sales / Point of Sale. [Know more here](/docs/user/manual/en/accounts/sales-invoice#323-pos-invoices).
+* **Include Payment (POS)**: If this invoice is for retail sales / Point of Sale. [Know more here](/docs/user/manual/en/accounts/sales-invoice#324-pos-invoices).
 * **Is Return Credit Note**: Tick this if the customer has returned the Items. To know more details, visit the [Credit Note](/docs/user/manual/en/accounts/credit-note) page.
 
 <img class="screenshot" alt="Sales Invoice" src="{{docs_base_url}}/assets/img/accounts/sales-invoice.png">

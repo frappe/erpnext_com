@@ -50,9 +50,9 @@ metatags:
 1. [List View Enhancements](/version-12/release-notes/features#list-view-enhancements)
 
 ### New Automation Module
-1. [Assignment Rule](/docs/user/manual/en/setting-up/automation/assignment-rule)
-1. [Milestones](/docs/user/manual/en/setting-up/automation/milestone-tracker)
-1. [Auto Repeat](/docs/user/manual/en/setting-up/automation/auto-repeat)
+1. [Assignment Rule](/docs/user/manual/en/automation/assignment-rule)
+1. [Milestones](/docs/user/manual/en/automation/milestone-tracker)
+1. [Auto Repeat](/docs/user/manual/en/automation/auto-repeat)
 
 ### New Reports
 1. [Bank Remittance](/docs/user/manual/en/human-resources/human-resources-reports#bank-remittance-report)
@@ -78,4 +78,4 @@ metatags:
 1. [Website Refactor](/docs/user/manual/en/website)
 1. [Added Track Views field to Customize Form](/version-12/release-notes/features#added-track-views-field-to-customize-form)
 1. [Add custom columns to any report](/version-12/release-notes/features#add-custom-columns-to-any-report)
-1. [Breaking Change: Communication DocType was converted to Comment DocType (https://github.com/frappe/frappe/commit/41d90fa6d1fda781f6c96493faa616a63c5e0eb3)
+1. [Breaking Change: Communication DocType was converted to Comment DocType](https://github.com/frappe/frappe/commit/41d90fa6d1fda781f6c96493faa616a63c5e0eb3)

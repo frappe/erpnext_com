@@ -27,7 +27,6 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Bank](/docs/user/manual/en/accounts/bank)
 1. [Bank Account](/docs/user/manual/en/accounts/bank-account)
 <!-- (in development) 1. [Bank Transaction](/docs/user/manual/en/accounts/bank-transaction) -->
-1. [Accounting Dimensions](/docs/user/manual/en/accounts/accounting-dimensions)
 
 ### 1.2 Journals and Payments
 1. [Journal Entry](/docs/user/manual/en/accounts/journal-entry)
@@ -70,6 +69,7 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Payment Reconciliation](/docs/user/manual/en/accounts/payment-reconciliation)
 1. [Period Closing Voucher](/docs/user/manual/en/accounts/period-closing-voucher)
 1. [Payment Order](/docs/user/manual/en/accounts/payment-order)
+1. [Quickbooks Migrator](/docs/user/manual/en/accounts/quickbooks-migrator)
 
 ### 1.8 Reports
 1. [Accounting Reports](/docs/user/manual/en/accounts/accounting-reports)
@@ -81,7 +81,7 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Bank Guarantee](/docs/user/manual/en/accounts/bank-guarantee)
 1. [Loyalty Program](/docs/user/manual/en/accounts/loyalty-program)
 1. [Budgeting](/docs/user/manual/en/accounts/budgeting)
-1. [Auto Repeat](/docs/user/manual/en/setting-up/automation/auto-repeat)
+1. [Auto Repeat](/docs/user/manual/en/automation/auto-repeat)
 1. [Invoice Discounting](/docs/user/manual/en/accounts/invoice_discounting)
 
 ### 1.10 Subscription
@@ -128,8 +128,9 @@ You can check out [this video](https://www.youtube.com/watch?v=5wjollWN0OA) for 
 1. [Update Stock Option In Sales Invoice](/docs/user/manual/en/accounts/articles/update-stock-option-in-sales-invoice)
 1. [Exchange Rate Field Frozen](/docs/user/manual/en/accounts/articles/exchange-rate-field-frozen)
 1. [Fiscal Year Creation](/docs/user/manual/en/accounts/articles/fiscal-year-creation)
-1. [How To Customize Cash Flow Report](/docs/user/manual/en/accounts/articles/how-to-customise-cash-flow-report)
+1. [How To Customize Cash Flow Report](/docs/user/manual/en/accounts/articles/how-to-customize-cash-flow-report)
 1. [How To Manage Subscriptions With ERPNext](/docs/user/manual/en/accounts/articles/how-to-manage-subscriptions-with-erpnext)
+1. [Merging Accounts](/docs/user/manual/en/accounts/articles/merging-documents)
 
 ### 2.5 Reports and Errors
 1. [Purchase Invoice Account Type Error](/docs/user/manual/en/accounts/articles/purchase-invoice-account-type-error)

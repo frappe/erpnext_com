@@ -9,6 +9,10 @@ To access Student Attendance, go to
 
 > Home > Education > Attendance > Student Attendance
 
+To access Student Attendance, go to 
+
+> Home > Education > Attendance > Student Attendance
+
 To create Attendance record :
 
 Select the **Student, Course Schedule and Student Group** for which attendance is to be marked for the given date. Set the Status to Present/Absent and save. 

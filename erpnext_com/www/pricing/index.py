@@ -11,9 +11,9 @@ eu = ["BE", "BG", "CZ", "DK", "DE", "EE", "IE", "EL", "ES", "FR", "HR",
 
 def get_context(context):
 	context.no_cache = True
-	country_code = get_country().get("countryCode")
+	country_details = frappe._dict(get_country())
 
-	if country_code == 'IN':
+	if country_details.countryCode == 'IN':
 		context.currency = 'INR'
 		context.symbol = '₹'
 
@@ -50,17 +50,28 @@ def get_context(context):
 			'title': '3 Hrs Onboarding Support'
 		},
 		'onboarding':  {
-			'title': '10 Hrs Onboarding Support'
+			'title': 'Enterprise Onboarding'
 		}
 	}
 
 	context.plan_features = ['Server and Emails', 'Customization', 'Integrations + API']
 
+	pricing_multiplier_doc = frappe.get_doc({
+			"doctype": "Pricing Multiplier"
+		})
+
+	pricing_multiplier = pricing_multiplier_doc.get_pricing_multiplier_details(country_details.country)
+
 	def get_plan_and_pricing(plan_name):
 		plan = frappe.get_doc('Base Plan', plan_name)
+		_pricing_multiplier = 1
 		pricing = [d.as_dict() for d in plan.amounts if d.currency == context.currency][0]
-		pricing['monthly_amount'] = pricing['monthly_amount'] / plan.users
-		pricing['amount'] = pricing['amount'] / plan.users
+
+		if plan.apply_pricing_multiplier:
+			_pricing_multiplier = pricing_multiplier
+
+		pricing['monthly_amount'] = (pricing['monthly_amount'] / plan.users) * _pricing_multiplier
+		pricing['amount'] = (pricing['amount'] / plan.users) * _pricing_multiplier
 		pricing['symbol'] = context.symbol
 
 		return plan, pricing
@@ -85,7 +96,7 @@ def get_context(context):
 			],
 			'features': [
 				{
-					'title': 'Organisations',
+					'title': 'Organizations',
 					'content': [
 						'3 Companies',
 					]
@@ -126,14 +137,14 @@ def get_context(context):
 			'minimum_users': 10,
 			'base_features': [
 				{'title': 'hosting', 'included': 1},
-				{'title': 'account_manager', 'included': 1},
+				{'title': 'account_manager', 'included': 0},
 				{'title': 'all_modules', 'included': 1},
-				{'title': 'priority_support', 'included': 1},
-				{'title': 'onboarding', 'included': 1}
+				{'title': 'email_support', 'included': 1},
+				{'title': 'onboarding_three', 'included': 1}
 			],
 			'features': [
 				{
-					'title': 'Organisations',
+					'title': 'Organizations',
 					'content': [
 						'Unlimited Companies',
 					]
@@ -141,7 +152,7 @@ def get_context(context):
 				{
 					'title': 'Server and Emails',
 					'content': [
-						'100 GB cloud storage',
+						'25 GB cloud storage',
 						'15000 emails / month',
 						'Extensible via add-ons'
 					]
@@ -168,18 +179,18 @@ def get_context(context):
 			'name': 'Contact Us',
 			'title': 'Self Hosted',
 			'no_pricing': True,
-			'description': 'Starts at ' + ("$150" if context.currency == "USD" else "₹7000") + ' per user per year',
+			'description': 'One Stack, One Vendor, 100% Freedom',
 			'base_features': [
 				{'title': 'hosting', 'included': 0},
 				{'title': 'account_manager', 'included': 1},
 				{'title': 'all_modules', 'included': 1},
-				{'title': 'email_support', 'included': 1},
-				{'title': 'onboarding_three', 'included': 1}
+				{'title': 'priority_support', 'included': 1},
+				{'title': 'onboarding', 'included': 1}
 			],
 			'minimum_users': 100,
 			'features': [
 				{
-					'title': 'Organisations',
+					'title': 'Organizations',
 					'content': [
 						'Unlimited Companies',
 					]

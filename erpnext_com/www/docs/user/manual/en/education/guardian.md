@@ -31,7 +31,7 @@ Apart from the mandatory details of the guardian, you can also add the following
 2. **Mobile Number**: The mobile number of the guardian can be recorded here.
 3. **Alternate Mobile Number**: You can add the Alternate Mobile Number of the guardian over here for emergency purposes.
 4. **Date of Birth**: The date of birth of the Guardian can be recorded here.
-5. **User ID**: If the Guardian is a USer of the system, their User Id can be mentioned here.
+5. **User ID**: If the Guardian is a User of the system, their User Id can be mentioned here.
 6. **Education**: The Academic and Educational details of the Guardian can be recorded here.
 7. **Occupation**: The occupation of the Guardian can be captured here.
 8. **Designation**: You can enter the designation of the Guardian here.

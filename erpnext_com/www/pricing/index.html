@@ -5,7 +5,7 @@
 	<h2>{{ name }}</h2>
 	<p class='mb-1' style="min-height: 50px; width: 90%">{{ description }}</p>
 	<a class='btn btn-primary mt-2 btn-sm' href="/contact-form">Contact Sales</a>
-	<p class='text-muted small mt-2'>Minimum {{ minimum_users }} Users</p>
+	<p class='text-muted small mt-2'>Unlimited Users</p>
 </div>
 {% endmacro %}
 
@@ -14,7 +14,7 @@
 	<h2>{{ symbol }} {{ monthly_amount|int }}</h2>
 	<p class='text-muted mb-1' style="min-height: 50px; width: 90%">Per user per month or {{ symbol }}{{ amount|int }} yearly</p>
 	<button class='btn btn-primary mt-2 btn-sm'
-		onclick="redirect_to_signup('signup', '{{ name }}')">Start 14 Day Trial</button>
+		onclick="redirect_to_signup('/signup', '{{ name }}')">Start 14 Day Trial</button>
 	<p class='text-muted small mt-2'>Minimum {{ minimum_users }} Users</p>
 </div>
 {% endmacro %}

@@ -10,7 +10,7 @@ For example, if you are doing online sales, you can set a budget for search adve
 Budgets are also great for planning purposes. When you are making plans for the next Financial Year, you would typically target a revenue based on which you would set your expenses. Setting a budget will ensure that your expenses do not get out of hand at any point.
 
 To access the Budget list, go to:
-> Home > Accounts > Cost Center and Budgeting > Budget
+> Home > Accounting > Cost Center and Budgeting > Budget
 
 ## 1. How to Create a new Budget
 1. Go to the Budget list and click on New.
@@ -36,7 +36,7 @@ Control actions can be triggered when:
 * A [Purchase Order](/docs/user/manual/en/buying/purchase-order) is being submitted 
 * When an actual expense is being posted (through a journal entry or a purchase invoice).
 
-You can set a control action in the Budget based on Material Request, Purchase Order, or on actual expenses. Further, you can set a control action for annual or monthly budgets.
+You can set a control action in the Budget based on Material Requests, Purchase Orders, or on actual expenses. Further, you can set a control action for annual or monthly budgets.
 
 ![Control Actions](/docs/assets/img/accounts/control-actions.png)
 
@@ -50,13 +50,15 @@ You can set separate actions for monthly and annual budgets. If you exceed the b
 
 <img class="screenshot" alt="Monthly Distribution" src="{{docs_base_url}}/assets/img/accounts/budget-warning.png">
 
+Note that a similar warning will be triggered for any type of transactions set in the budget for the particular Account heads.
+
 ## 3. Budget Variance Report
 
 At any point in time, you can check the Budget Variance Report to analyze the actual expense incurred vs budget allocated against a cost center or a project.
 
 To check the Budget Variance report, go to:
 
-> Home > Accounts > Cost Center and Budgeting > Budget Variance Report
+> Home > Accounting > Cost Center and Budgeting > Budget Variance Report
 
 <img class="screenshot" alt="Budget Variance Report" src="{{docs_base_url}}/assets/img/accounts/budget-variance-report.png">
 

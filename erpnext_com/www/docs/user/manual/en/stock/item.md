@@ -33,10 +33,10 @@ Before creating and using an Item, it is advised that you create the following f
   
   * **Item Group:** Item Group is used to categorize an Item under various criteria like products, raw materials, services, sub-assemblies, consumables or all Item groups. Create your default Item Group list under Setup > Item Group and pre-select the option while filling your New Item details under [Item Group](/docs/user/manual/en/stock/item-group). Item groups can be sub-assemblies, raw materials, etc, or based on your business use case.
   
-  * **Default Unit of Measure:** This is the default measuring unit that you will use for your product. It could be Nos, Kgs, Meters, etc. You can store all the UOM’s that your product will require under Set Up> Master Data > UOM. These can be preselected while filling New Item by using % sign to get a pop up of the UOM list. Visit the [UoM](/docs/user/manual/en/stock/uom) page for more details
+  * **Default Unit of Measure:** This is the default measuring unit that you will use for your product. It could be Nos, Kgs, Meters, etc. You can store all the UOMs that your product will require under Set Up> Master Data > UOM. These can be preselected while filling New Item by using % sign to get a pop up of the UOM list. Visit the [UoM](/docs/user/manual/en/stock/uom) page for more details
 
 ### 2.2 Options when creating an item
-* **Disabled**: If you disable ad Item, it cannot be selected in any transaction.
+* **Disabled**: If you disable an Item, it cannot be selected in any transaction.
 
 * **Allow Alternative Item**: Sometimes when manufacturing a finished good, specific material may not be available. If you tick this, you can create and select an alternative item from the Item Alternative list. To know more, visit the [Item Alternative](/docs/user/manual/en/manufacturing/item-alternative) page.
 
@@ -70,6 +70,13 @@ For India:
 * **Description**: Description of the item. The text from the Item Code will be fetched by default.
   ![Item brand and description](/docs/assets/img/stock/item-brand-description.png)
 
+### 3.2 Barcodes
+
+Barcodes can be recorded in Items to quickly scan and add them in transactions. In the Barcodes table you can add an Item's [barcode for scanning](/docs/user/manual/en/stock/articles/track-items-using-barcode). There are two types of barcodes in ERPNext:
+
+* **EAN**: The European Article Number is a 13 digit number. EAN is used internationally and recognized by more POS systems.
+* **UPC**: The Universal Product Code is a 12 digit number. UPC is generally used only in USA and Canada.
+
 ### 3.3 Inventory
 
 * **Shelf Life In Days**: This is for a product [Batch](/docs/user/manual/en/stock/batch). The number of days after which product batch will be unusable. For example, medicines.
@@ -98,6 +105,8 @@ When the stock of an item dips under a certain quantity, you can set an automati
 * **Material Request Type**: The [Material Request](/docs/user/manual/en/stock/material-request) type with which the stock will be reordered. This depends whether you buy the Item, manufacture it yourself or transfer it between Warehouses.
 
   <img alt="Item Reorder" class="screenshot" src="{{docs_base_url}}/assets/img/stock/item-reorder.png">
+
+> **Note**: The Material Request is created at 12 midnight depending on the set reorder level.
 
 ### 3.5 Multiple Units of Measure
 You can add alternate UoMs for an Item. If the default UoM in which you sell is numbers (NoS) but you receive it in Kilos, you can set an additional UoM with an appropriate conversion factor. For example, 500 Nos of screws = 1 Kilogram, so select Kilogram/Litre as UOM and set the conversion factor as 500. To know more about selling in different UoM, visit [this page](/docs/user/manual/en/selling/articles/Selling-in-different-UOM).
@@ -157,7 +166,7 @@ In this section, you can define Company-wide transaction-related defaults for th
 ### 3.10 Purchase, Replenishment Details
 
 * **Default Purchase Unit of Measure**: The default UoM that will be used in Purchase transactions.
-* **Minimum Order Qty**: The minimum quantity required for purchase transactions/Material Requests. This quantity also applied to auto reordering items.
+* **Minimum Order Qty**: The minimum quantity required for purchase transactions like Purchase Orders. If set, the system will not let you proceed with the purchase transaction if the item quantity in the purchase transaction is lesser than the quantity set in this field.
 * **Safety Stock**: “Safety Stock” is used in the report “Itemwise Recommended Reorder Level”. Based on Safety Stock, average daily consumption and the lead time, the system suggests Reorder Level of an item.
 
   Reorder Level = Safety Stock + (Average Daily Consumption * Lead Time)

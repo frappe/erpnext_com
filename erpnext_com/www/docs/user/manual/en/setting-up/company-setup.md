@@ -3,7 +3,7 @@
 
 **A company is a legal entity made up of an association of people for carrying on a commercial or industrial enterprise.**
 
-In ERPNext, the first Company is created when an ERPNext account. For each Company, you can set a domain as manufacturing, retail, or services depending on the nature of your business activity.
+In ERPNext, the first Company is created when an ERPNext account is set up. For each Company, you can set a domain as manufacturing, retail, or services depending on the nature of your business activity.
 
 If you have more than one company, you can add them from:
 
@@ -24,7 +24,7 @@ You can also attach a company logo and add a description for the company.
 
 ### 1.1 Multi Company Structure
 
-Let's assume you run a group of companies, some may be larger companies and some may be smaller that are a part of the larger companie(s).
+Let's assume you run a group of companies, some may be larger companies and some may be smaller that are a part of the larger company(s).
 
 In ERPNext, you can set up multiple companies. The company structure can be parallel, i.e., sister companies, parent-child companies, or a combination of both.
 
@@ -166,6 +166,34 @@ For reference, the following details of your company can be saved in ERPNext:
 
 On saving a company, the following details/actions will be visible in the dashboard:
 ![Company after Save](/docs/assets/img/setup/company-after-save.png)
+
+**Registration Details**: Here you can save various tax/cheque/bank number for reference.
+
+### 2.9 Deleting all Company Transactions
+You can delete all transactions (Orders, Invoices) of a Company. *Use with caution*, transactions once deleted cannot be recovered.
+
+#### Requirements
+
+* The User has to be a System Manager
+* The User has to be the creator of the Company
+
+#### Steps
+1. Click on the **Delete Company Transactions** button
+1. Verify your password
+1. Enter Company name for confirmation
+    ![Company after Save](/docs/assets/img/setup/company-delete-transactions.png)
+
+And you're done. The master data like Item, Account, Employee, BOM etc. will remain as it is.
+
+#### What is affected?
+
+* Sales/Purchase Orders/Invoices Receipts/Notes will be deleted
+* The monthly sales and sales history will be cleared
+* All notifications will be cleared
+* Lead Addresses to which the Company is linked will be deleted
+* All communications linked to the Company will be deleted
+* All naming series will be reset
+* Stock Entries linked to a Warehouse of this Company will be deleted
 
 ### 3. Related Topics
 1. [Setting Up Taxes](/docs/user/manual/en/setting-up/setting-up-taxes)

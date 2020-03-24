@@ -8,7 +8,7 @@ accrue expenses to your Supplier. Making a Purchase Invoice is very similar to
 making a Purchase Order.
 
 To access the Purchase Invoice list, go to:
-> Home > Accounts > Accounts Payable > Purchase Invoice
+> Home > Accounting > Accounts Payable > Purchase Invoice
 
 ![PI Flow](/docs/assets/img/accounts/pi-flow.png)
 
@@ -70,6 +70,12 @@ Sometimes you may need to hold an invoice from being submitted.
 **Hold Invoice**: Enable this checkbox to put the Purchase Invoice on hold. This can be done only before submitting the invoice. Once 'Hold Invoice' is enabled and the Purchase Invoice is submitted, the status will change to 'Temporarily on Hold'.
 
 ![PI Hold](/docs/assets/img/accounts/pi-hold.png)
+
+Once the purchase invoice gets submit and you want to change 'Release Date' then you can take the help of the 'Hold Invoice' button, which is available on the top right.
+
+If you want to hold submitted purchase invoice then you can hold using 'Block Invoice' option and If you want to unblock again then use 'Unblock Invoice' option.
+
+![Block PI](/docs/assets/img/accounts/pi_block.png)   
 
 This is invoice level holding, Suppliers can be put on hold. [Learn more here](/docs/user/manual/en/buying/supplier#23-credit-limit).
 

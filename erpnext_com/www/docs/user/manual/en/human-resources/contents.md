@@ -2,7 +2,7 @@
 # Human Resources
 
 The Human Resources (HR) module covers the processes related to the HR department of a company. It maintains a complete employee database including contact information,
-salary details, attendance, performance evaluation, leaves, and appraisal records. 
+salary details, attendance, performance evaluation, leaves, and appraisal records.
 
 The most important feature here is processing the payroll by using Payroll Entry to generate Salary Slips. Most countries have complex tax rules stating which expenses the company can make on behalf of its Employees.
 
@@ -47,6 +47,7 @@ their calculation.
 1. [Job Opening](/docs/user/manual/en/human-resources/job-opening)
 1. [Job Applicant](/docs/user/manual/en/human-resources/job-applicant)
 1. [Job Offer](/docs/user/manual/en/human-resources/job-offer)
+1. [Appointment Letter](/docs/user/manual/en/human-resources/appointment-letter)
 
 ### 1.5 Training
 1. [Training Program](/docs/user/manual/en/human-resources/training-program)
@@ -70,6 +71,7 @@ their calculation.
 1. [Salary Component](/docs/user/manual/en/human-resources/salary-component)
 1. [Salary Structure](/docs/user/manual/en/human-resources/salary-structure)
 1. [Salary Structure Assignment](/docs/user/manual/en/human-resources/salary-structure-assignment)
+1. [Salary Slip](/docs/user/manual/en/human-resources/salary-slip)
 1. [Payroll Entry](/docs/user/manual/en/human-resources/payroll-entry)
 1. [Additional Salary](/docs/user/manual/en/human-resources/additional-salary)
 1. [Retention Bonus](/docs/user/manual/en/human-resources/retention-bonus)
