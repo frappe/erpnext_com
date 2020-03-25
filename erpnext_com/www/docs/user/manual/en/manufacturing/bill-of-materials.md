@@ -75,7 +75,7 @@ Transfer Material Against needs to be set for a BOM With Operations. Materials c
 
 * **Rate Of Materials Based On**: The Rate of raw materials used can be calculated based on different parameters.
  * **Valuation Rate**: The Valuation Rate set in the [Item master](/docs/user/manual/en/stock/item).
- * **Last Purchase Rate**: The Rate is fetched from the last Sales [Order](/docs/user/manual/en/selling/sales-order)/[Invoice](/docs/user/manual/en/accounts/sales-invoice).
+ * **Last Purchase Rate**: The Rate is fetched from the last Purchase [Order](/docs/user/manual/en/buying/purchase-order)/[Invoice](/docs/user/manual/en/accounts/purchase-invoice).
  * **Price List**: The Rate will be fetched from the [Item Price](/docs/user/manual/en/stock/item-price).
   For more details, visit [this page](/docs/user/manual/en/manufacturing/articles/valuation-based-on-field-in-bom).
 
