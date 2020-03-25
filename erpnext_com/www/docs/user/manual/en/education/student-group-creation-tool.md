@@ -3,11 +3,11 @@
 
 **The Student group creation tool allows you to create student groups in bulk.**
 
-To access the Student Group Creation Tool, go to
+To access the Student Group Creation Tool, go to:
 
 > Home > Education > Tools > Student Group Creation Tool
 
-You can create Student Groups from the Student Group Creation Tool in the following way:
+## 1. How to use the Student Group Creation Tool
 
 1. Select the **Academic Term** and the **Program** for which a student group is to be created. 
 1. Select the **Program** under which you are creating the student group. 
@@ -17,7 +17,7 @@ You can create Student Groups from the Student Group Creation Tool in the follow
 
 ![Student Group Creation Tool](/docs/assets/img/education/education-student-group-creation-tool.gif)
 
-#### Tutorial Video on Student Group Creation Tool
+## 2. Tutorial Video on Student Group Creation Tool
 
 <div>
     <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

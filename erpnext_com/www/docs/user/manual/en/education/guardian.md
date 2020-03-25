@@ -1,13 +1,13 @@
 <!-- add-breadcrumbs -->
-#Guardian
+# Guardian
 
-**Guardian allows you to record the details of the Guardians of a **Student**.**
+**Guardian allows you to record the details of the Guardians of a Student.**
 
 ![Guardian](/docs/assets/img/education/education-guardian-1.png)
 
-Every student can have multiple guardians like Father, Mother, Brother or Sister, etc. 
+Every student can have multiple guardians like Father, Mother, Brother, or Sister. 
 
-To access Guardian, go top
+To access Guardian, go to:
 
 > Home > Education > Student > Guardian
 
@@ -18,18 +18,18 @@ Before creating a student, it is advised to create the following first:
 * Student
 * User 
 
-## 2. How to create a New Guardian
+## 2. How to create a Guardian
 
 1. Click on New Guardian in the Guardian List. 
 1. Add the name of the Guardian and click on Save.
 
-## 2.1. Additional Options while creating a Guardian
+### 2.1. Additional Options while creating a Guardian
 
-Apart from the mandatory details of the guardian, you can also add the following details:
+Apart from the mandatory details of the Guardian, you can also add the following details:
 
 1. **Email Address**: Enter the email address of the Guardian. The email address can be linked to an email group for sending Newsletters or Announcements. 
-2. **Mobile Number**: The mobile number of the guardian can be recorded here.
-3. **Alternate Mobile Number**: You can add the Alternate Mobile Number of the guardian over here for emergency purposes.
+2. **Mobile Number**: The mobile number of the Guardian can be recorded here.
+3. **Alternate Mobile Number**: You can add the Alternate Mobile Number of the Guardian over here for emergency purposes.
 4. **Date of Birth**: The date of birth of the Guardian can be recorded here.
 5. **User ID**: If the Guardian is a User of the system, their User Id can be mentioned here.
 6. **Education**: The Academic and Educational details of the Guardian can be recorded here.

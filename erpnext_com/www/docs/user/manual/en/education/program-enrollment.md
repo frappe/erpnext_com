@@ -27,10 +27,10 @@ Before creating a Program Enrollment, it is advisable that you create the follow
 ## 2. How to create a Program Enrollment
 
 1. Go to Program Enrollment List and click on new.
-1. Select the **Student** whom you are getting enrolled in the program.
-1. Select the **Program** under which you are getting the student enrolled.
-1. Enter the **Academic Year** for which the student is getting enrolled.
-1. The **Enrollment Date** for the form would by default be set on the current date, the same, however, can be changed if needed.
+1. Select the Student whom you are getting enrolled in the program.
+1. Select the Program under which you are getting the student enrolled.
+1. Enter the Academic Year for which the student is getting enrolled.
+1. The Enrollment Date for the form would by default be set on the current date, the same, however, can be changed if needed.
 1. Save and submit.
 
  ![Program Enrollment](/docs/assets/img/education/education-program-enrollment-1.gif)
@@ -51,7 +51,7 @@ Before creating a Program Enrollment, it is advisable that you create the follow
 
 Select the mode of transportation for the student to and from the Institute and the Vehicle Number.
 
-###  3.2. Enrolled Courses
+### 3.2. Enrolled Courses
 
 Select and add the courses which the student has opted to study during the course of the program.
 
@@ -63,7 +63,7 @@ Select and add the Academic Term, Fee Structure, Student Category, Fees Due Date
 
 ![Program Enrollment](/docs/assets/img/education/education-program-enrollment-4.gif)
 
-#### Video Tutorial For Program Enrollment
+## 4. Video
 
 
 <div>

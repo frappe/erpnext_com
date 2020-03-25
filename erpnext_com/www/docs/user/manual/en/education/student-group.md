@@ -3,11 +3,11 @@
 
 **A student group is a collection of students from the same batch or taking the same course.**
 
-E.g., If a group of students studying the same program together will be called a student batch, then from within this group, the cluster of students who have taken up the same elective course will be called a Student Group.
+For example, if a group of students studying the same program together will be called a student batch, then from within this group, the cluster of students who have taken up the same elective course will be called a Student Group.
 
 ![Student Group](/docs/assets/img/education/education-student-workflow.png)
 
-To access Student Group, go to
+To access Student Group, go to:
 
 > Home > Education > Student > Student group
 
@@ -76,7 +76,7 @@ Once the student group has been created and saved, the following can be created 
 
 
 
-#### Video Tutorial on Student Groups
+## 4. Video
 
 <div>
     <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

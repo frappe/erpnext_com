@@ -18,11 +18,11 @@ This form will also contain any additional details like the Student's Guardian a
 
 ![Student](/docs/assets/img/education/education-student-1.png)
 
-The student is enrolled in a [Program](/docs/user/manual/en/education/program) when the application is approved. Once the enrollement is done the [Student Applicant](/docs/user/manual/en/education/student-applicant) status is update to Admitted.
+The student is enrolled in a [Program](/docs/user/manual/en/education/program) when the application is approved. Once the enrollment is done the [Student Applicant](/docs/user/manual/en/education/student-applicant) status is update to Admitted.
 
-To access Student, go to
+To access Student, go to:
 
-> Home > Education > Student
+> Home > Education > Student > Student
 
 ## 1. Prerequisites
 
@@ -32,7 +32,7 @@ Before creating a student, it is advised to create the following first:
 
 ## 2. How to create a New Student
 
-1. Click on New Student.
+1. Go to the student list and click on New.
 2. Enter the First Name, Middle Name and Last Name of the student.
 3. Enter other details like Student Email Address, User ID(If Applicable) and Joining Date.
 4. Save.
@@ -51,7 +51,7 @@ Personal details of the Student like their Date of Birth, Gender, Blood Group, a
 
 ### 3.2. Home Address
 
-The address of the student, along with the City, State and Pincode can be captured here. Two address lines can be captured for each student. 
+The address of the student, along with the City, State, and Pincode can be captured here. Two address lines can be captured for each student. 
 
 ![Student](/docs/assets/img/education/education-student-address.png)
 
@@ -63,7 +63,7 @@ The details of the student's guardian and their relationship with the student ca
 
 ### 3.4. Sibling Details 
 
-This section will have all the details of the Student's Siblings. You can select if the sibling is studying in the Same Insititute or no. If the Sibling is also a student of your institute, you will be required to enter their Student ID, if not, you can enter the name of the Institution they are associated with. Their academic details like Program and personal details like Gender and Date of Birth can also be captured.
+This section will have all the details of the Student's Siblings. You can select if the sibling is studying in the Same Institute or no. If the Sibling is also a student of your institute, you will be required to enter their Student ID, if not, you can enter the name of the Institution they are associated with. Their academic details like Program and personal details like Gender and Date of Birth can also be captured.
 
 ![Student](/docs/assets/img/education/education-student-sibling.png)
 

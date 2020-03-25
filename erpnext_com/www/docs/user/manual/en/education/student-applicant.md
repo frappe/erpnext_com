@@ -5,7 +5,7 @@
 
 You can Approve or Reject a student applicant. By accepting a student applicant you can add them to the student master.
 
-To access student Applicant, go to 
+To access student Applicant, go to:
 
 > Home > Education > Admission > Student Applicant
 
@@ -14,7 +14,7 @@ To access student Applicant, go to
 Before creating a Student Applicant, it is advisable to first create the following:
 
 1. [Academic Term](/docs/user/manual/en/education/academic-term)
-1. [Acadmeic Year](/docs/user/manual/en/education/academic-year)
+1. [Academic Year](/docs/user/manual/en/education/academic-year)
 1. [Program](/docs/user/manual/en/education/program)
 
 ## 2. How to create a Student Applicant
@@ -25,7 +25,7 @@ Before creating a Student Applicant, it is advisable to first create the followi
 4. Enter the **Student Email Address**.
 5. Save.
 
-![Student Applicant](/docs/assets/img/education/education-student-applcant-1.gif)
+    ![Student Applicant](/docs/assets/img/education/education-student-applcant-1.gif)
 
 ## 3. Features
 
@@ -37,14 +37,13 @@ Once the student applies, the status of the application by default is "Applied".
 
 ![Student Applicant](/docs/assets/img/education/education-student-applicant-5.png)
 
-Once the application is approved, you can "Enroll" the student to a program. When you click the 'Enroll' button,
-the system shall create a student against that applicant and redirect you to the [Program Enrollment form](/docs/user/manual/en/education/program-enrollment).
+Once the application is approved, you can "Enroll" the student to a program. When you click the **Enroll** button, the system shall create a student against that applicant and redirect you to the [Program Enrollment form](/docs/user/manual/en/education/program-enrollment).
 
 ![Student Applicant](/docs/assets/img/education/education-student-applcant-6.gif)
 
-> Note: Once a student is created against the student applicant, the system shall set the application status to 'Admitted' and will not allow you to change the application status unless the student record is deleted.
+> Note: Once a student is created against the student applicant, the system will set the application status to 'Admitted' and will not allow you to change the application status unless the student record is deleted.
 
-#### Video Tutorial for Student Application
+## 4. Video Tutorial for Student Application
 
 <div>
     <div class='embed-container'>

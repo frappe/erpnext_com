@@ -3,19 +3,20 @@
 
 **A Program will have an educational curriculum defined by your institute to streamline the learning process and goals in each subject or course.**
 
-E.g., Economics Major would be a Program taught at an institution that will have various courses within.
+For example, Economics Major would be a Program taught at an institution that will have various courses within.
 
 ![Program](/docs/assets/img/education/education-program-workflow.png)
 
+An Economics major would look something like this:
 ![Program](/docs/assets/img/education/education-program-2.png)
 
-To create a Program go to :
+To access the Program list go to:
 
 > Home > Education > Masters > Program
 
 ## 1. Prerequisites
 
-To create a New Program, it is advised to create first:
+To create a New Program, it is advised to create the following first:
 
 1. Department
 2. Course
@@ -24,19 +25,19 @@ To create a New Program, it is advised to create first:
 
 1. Go to the Program list and click on New.
 2. Enter the Program Name and the Program Abbreviation.
-3. Select the department for the Program.
+3. Select the Department for the Program.
 4. Select and add the courses within the Program.
 5. Save.
 
     ![Program](/docs/assets/img/education/education-program-1.gif)
 
-## 2.1. Alternate ways of creating a new Program
+### 2.1 Alternate ways of creating a new Program
 
 A new program can also be created from a course, in the following way:
 
 ![Program](/docs/assets/img/education/education-program-3.gif)
 
-### 2.1. Additional Options while creating a new Program
+### 2.2 Additional Options while creating a new Program
 
 * **Portal Settings**
 
