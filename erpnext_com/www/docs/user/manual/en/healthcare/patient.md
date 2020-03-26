@@ -48,7 +48,7 @@ Capture Risk Factors like Tobacco and Alcohol consumption habits, etc.
 
 ### 2.2 Patient as a Customer
 
-ERPNext, especially the Accounts module, makes use of **Customer** document for booking all transactions. So, you may want to associate every Patient with a Customer. By default, system creates a Customer alongside a Patient and links to it. If, for some reason you do not intend to use the ERPNext Accounts module you can turn this behavior off by unchecking the flag "Link Customer to Patient" in [Healthcare Settings](/docs/user/manual/en/Healthcare/healthcare_settings).
+ERPNext, especially the Accounts module, makes use of **Customer** document for booking all transactions. So, you may want to associate every Patient with a Customer. By default, system creates a Customer alongside a Patient and links to it. If, for some reason you do not intend to use the ERPNext Accounts module you can turn this behavior off by disabling the flag "Link Customer to Patient" in [Healthcare Settings](/docs/user/manual/en/Healthcare/healthcare_settings).
 
 <img class="screenshot" alt="ERPNext Healthcare" src="{{docs_base_url}}/assets/img/healthcare/patient_link_customer.png">
 

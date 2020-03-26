@@ -2,7 +2,7 @@
 
 # Healthcare Service Unit Type
 
-You can define the standard properties of [Healthcare Service Unit](/docs/user/manual/en/healthcare/healthcare_service_unit) using the Healthcare Service Unit Type. By configuring various types of service units in your facility with respective rates and other properties, you can easily create multiple Healthcare Service Units by merely selecting the type. Healthcare Service Unit Type is a generic type. For example, "Operation Theatre" can be a Healthcare Service Unit Type and Neuro-OT, Procedure-Room-1, etc. could be Healthcare Service Units.
+You can define the standard properties of [Healthcare Service Unit](/docs/user/manual/en/healthcare/healthcare_service_unit) using the Healthcare Service Unit Type. By configuring various types of service units in your facility with respective rates and other properties, you can easily create multiple Healthcare Service Units by merely selecting the type. Healthcare Service Unit Type is a generic type. For example, "Operation Theatre" can be a Healthcare Service Unit Type and Neurology-OT, Procedure-Room-1, etc. could be Healthcare Service Units.
 
 ## 1. How to Create a Healthcare Service Unit Type
 

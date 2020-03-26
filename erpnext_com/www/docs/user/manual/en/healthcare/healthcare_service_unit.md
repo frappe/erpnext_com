@@ -12,7 +12,7 @@ To create a Healthcare Service Unit, go to:
 1. Give a name to the Service Unit.
 2. Specify the Parent Service Unit.
 3. You can create a hierarchy and check "Is Group" if you want to create some units under it.
-4. If "Is Group" is not check, select the Healthcare Service Unit Type. The configurations such as "Allow Appointment", "Inpatient Occupany", "Is Billable", "Allow Overlap" are auto-fetched from the Healthcare Service Unit Type.
+4. If "Is Group" is not check, select the Healthcare Service Unit Type. The configurations such as "Allow Appointment", "Inpatient Occupancy", "Is Billable", "Allow Overlap" are auto-fetched from the Healthcare Service Unit Type.
 5. Set the Warehouse if the type is linked to an item.
 6. Select the Company (Hospital) where this unit will be used.
 7. Save.
