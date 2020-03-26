@@ -39,7 +39,7 @@ Following are detailed guides on each of the functionalities ready to use in the
 1. [Lab Test](/docs/user/manual/en/healthcare/lab_test)
 1. [Sample Collection](/docs/user/manual/en/healthcare/sample_collection)
 
-### 4. Records, History and Reports
+### 6. Records, History and Reports
 1. [Patient History](/docs/user/manual/en/healthcare/medical_record)
 1. [Patient Appointment Analytics](/docs/user/manual/en/healthcare/patient_appointment_analytics)
 1. [Inpatient Record](/docs/user/manual/en/healthcare/inpatient_record)
