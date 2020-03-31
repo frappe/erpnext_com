@@ -70,8 +70,8 @@ def get_context(context):
 		if plan.apply_pricing_multiplier:
 			_pricing_multiplier = pricing_multiplier
 
-		pricing['monthly_amount'] = (pricing['monthly_amount'] / plan.users) * _pricing_multiplier
-		pricing['amount'] = (pricing['amount'] / plan.users) * _pricing_multiplier
+		pricing['monthly_amount'] = get_rounded_total((pricing['monthly_amount'] / plan.users), _pricing_multiplier)
+		pricing['amount'] = get_rounded_total((pricing['amount'] / plan.users), _pricing_multiplier)
 		pricing['symbol'] = context.symbol
 
 		return plan, pricing
@@ -263,3 +263,13 @@ def get_country(fields=None):
 			country_info[ip] = {}
 
 	return country_info[ip]
+
+
+def get_rounded_total(amount, pricing_multiplier):
+	''' Python - round up to the nearest ten '''
+
+	if pricing_multiplier != 1:
+		amount = amount * pricing_multiplier
+		return int(round(amount / 10.0)) * 10
+	else:
+		return amount
