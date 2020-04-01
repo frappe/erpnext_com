@@ -76,8 +76,8 @@ def get_context(context):
 
 		return plan, pricing
 
-	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard-2019')
-	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro-2019')
+	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard-2020')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro-2020')
 
 	context.plans = [
 		{
