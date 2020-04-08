@@ -1,5 +1,0 @@
-managing-multi-level-bom
-valuation-based-on-field-in-bom
-capacity-planning
-open-work-orders
-material_consumption

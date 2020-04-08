@@ -1,4 +1,0 @@
-gst-setup
-gst-reminders
-gst-3b-report
-auto-generate-e-way-bill-JSON
