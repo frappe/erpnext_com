@@ -1,5 +1,0 @@
-issue
-warranty-claim
-maintenance-visit
-maintenance-schedule
-service-level-agreement
