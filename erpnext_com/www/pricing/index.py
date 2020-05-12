@@ -49,6 +49,9 @@ def get_context(context):
 		'onboarding_three':  {
 			'title': '3 Hrs Onboarding Support'
 		},
+		'onboarding_5':  {
+			'title': '5 Hrs Onboarding Support'
+		},
 		'onboarding':  {
 			'title': 'Enterprise Onboarding'
 		}
@@ -129,7 +132,7 @@ def get_context(context):
 				{'title': 'account_manager', 'included': 0},
 				{'title': 'all_modules', 'included': 1},
 				{'title': 'email_support', 'included': 1},
-				{'title': 'onboarding_three', 'included': 1}
+				{'title': 'onboarding_5', 'included': 1}
 			],
 			'features': [
 				{
