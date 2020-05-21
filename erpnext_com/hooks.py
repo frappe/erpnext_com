@@ -42,7 +42,7 @@ website_context = {
 			{"label": "Partner Login", "url":"/login"},
 		]},
 		# {"label": "Conference", "url": "https://erpnext.org/conf/2019", "highlight": True, "new_tab": True},
-		{"label": "Sign Up", "url": "/signup?plan=P-Standard-2019", "right":1},
+		{"label": "Sign Up", "url": "/signup?plan=P-Standard-2020", "right":1},
 		{"label": "Contact Us", "url": "/contact-form", "right":1, "button": 1},
 	],
 	"hide_login": 1,
