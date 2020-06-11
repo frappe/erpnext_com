@@ -49,13 +49,13 @@
 {% endmacro %}
 
 {% macro plan_card(plan, highlight) %}
-<div class='col-sm-4 mb-4' style="padding: 0px;">
-	<div class='card h-100 pb-4'
+<div class='col-sm-6 mb-6 pl-2' style="padding: 0px;">
+	<div class='card h-100 pb-4 mr-2'
 		{% if highlight %}
 			style="box-shadow: 0 20px 25px 5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); z-index: 1; margin: 0px -5px;"
 		{% endif %}
 	>
-		<div class='card-body text-left'>
+		<div class='card-body text-left ml-4'>
 			<h5 class='card-title text-muted'>{{ plan.title }}</h5>
 			{% if plan.no_pricing %}
 				{{ heading(plan.name, plan.description, plan.minimum_users) }}
@@ -80,7 +80,7 @@
 			</div>
 			{% endif %}
 		</div>
-		<div class="card-footer bg-white pt-0 pb-3" style="border: unset;">
+		<div class="card-footer bg-white pt-0 pb-3 ml-4" style="border: unset;">
 			<hr>
 			{% for feature in plan.features %}
 			<div>
@@ -108,7 +108,7 @@
 		<div class='row mt-4'>
 
 			{% for plan in plans %}
-			{{ plan_card(plan, loop.index == 2)}}
+			{{ plan_card(plan, true)}}
 			{% endfor %}
 		</div>
 
