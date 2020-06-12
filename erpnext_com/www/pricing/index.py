@@ -42,9 +42,9 @@ def get_context(context):
 			'title': 'Hosting Included',
 			'content': 'Managed hosting on our servers.'
 		},
-		'account_manager': {
-			'title': 'Account Manager',
-			'content': 'Dedicated account manager to fulfill your requirements.'
+		'managed_server' : {
+			'title': 'Server Management',
+			'content': 'Managed hosting on your servers.'
 		},
 		'onboarding_three':  {
 			'title': '3 Hrs Onboarding Support'
@@ -79,7 +79,7 @@ def get_context(context):
 
 		return plan, pricing
 
-	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro-2020')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('Cloud-2020')
 
 	context.plans = [
 		{
@@ -91,7 +91,6 @@ def get_context(context):
 			'minimum_users': 5,
 			'base_features': [
 				{'title': 'hosting', 'included': 1},
-				{'title': 'account_manager', 'included': 0},
 				{'title': 'all_modules', 'included': 1},
 				{'title': 'email_support', 'included': 1},
 				{'title': 'onboarding_5', 'included': 1}
@@ -100,7 +99,8 @@ def get_context(context):
 				{
 					'title': 'Organizations',
 					'content': [
-						'Unlimited Companies',
+						'Multiple Companies',
+						'All Modules'
 					]
 				},
 				{
@@ -135,8 +135,7 @@ def get_context(context):
 			'no_pricing': True,
 			'description': 'One Stack, One Vendor, 100% Freedom',
 			'base_features': [
-				{'title': 'hosting', 'included': 0},
-				{'title': 'account_manager', 'included': 1},
+				{'title': 'managed_server', 'included': 1},
 				{'title': 'all_modules', 'included': 1},
 				{'title': 'priority_support', 'included': 1},
 				{'title': 'onboarding', 'included': 1}
@@ -146,7 +145,8 @@ def get_context(context):
 				{
 					'title': 'Organizations',
 					'content': [
-						'Unlimited Companies',
+						'Multiple Companies',
+						'All Modules'
 					]
 				},
 				{
