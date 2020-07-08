@@ -75,6 +75,12 @@ def get_context(context):
 
 		pricing['monthly_amount'] = get_rounded_total((pricing['monthly_amount'] / plan.users), _pricing_multiplier)
 		pricing['amount'] = get_rounded_total((pricing['amount'] / plan.users), _pricing_multiplier)
+		pricing['discount_rate'] = plan.discount
+
+		if plan.apply_discount and plan.discount:
+			discounted_amount = pricing['amount'] * (plan.discount/100)
+			pricing['discounted_amount'] = pricing['amount'] - discounted_amount
+
 		pricing['symbol'] = context.symbol
 
 		return plan, pricing

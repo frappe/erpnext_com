@@ -9,10 +9,16 @@
 </div>
 {% endmacro %}
 
-{% macro heading_with_pricing(name, symbol, monthly_amount, amount, minimum_users) %}
+{% macro heading_with_pricing(name, symbol, monthly_amount, amount, minimum_users, discounted_amount) %}
 <div class="mb-4">
 	<h2>{{ symbol }} {{ monthly_amount|int }}</h2>
+
+	{% if discounted_amount %}
+	<p class='text-muted mb-1' style="min-height: 50px; width: 90%">Per user per month or {{ symbol }}{{ discounted_amount|int }} yearly</p>
+	{% else %}
 	<p class='text-muted mb-1' style="min-height: 50px; width: 90%">Per user per month or {{ symbol }}{{ amount|int }} yearly</p>
+	{% endif %}
+
 	<button class='btn btn-primary mt-2 btn-sm'
 		onclick="redirect_to_signup('/signup', '{{ name }}')">Start 14 Day Trial</button>
 	<p class='text-muted small mt-2'>Minimum {{ minimum_users }} Users</p>
@@ -65,7 +71,8 @@
 					plan.pricing.symbol,
 					plan.pricing.monthly_amount,
 					plan.pricing.amount,
-					plan.minimum_users
+					plan.minimum_users,
+					plan.pricing.discounted_amount
 				) }}
 			{% endif %}
 
