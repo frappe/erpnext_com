@@ -11,8 +11,8 @@ frappe.ready(function () {
 		localStorage.setItem(key, JSON.stringify(value_obj));
 	}
 
-	var res = frappe.utils.get_url_arg('res');
-	if (res) {
-		set_expiry('res', res, 30);
+	var referral_id = frappe.utils.get_url_arg('referral-id');
+	if (referral_id) {
+		set_expiry('referral_id', referral_id, 30);
 	}
 });
