@@ -42,9 +42,9 @@ def get_context(context):
 			'title': 'Hosting Included',
 			'content': 'Managed hosting on our servers.'
 		},
-		'account_manager': {
-			'title': 'Account Manager',
-			'content': 'Dedicated account manager to fulfill your requirements.'
+		'managed_server' : {
+			'title': 'Server Management',
+			'content': 'Managed hosting on your servers.'
 		},
 		'onboarding_three':  {
 			'title': '3 Hrs Onboarding Support'
@@ -75,72 +75,28 @@ def get_context(context):
 
 		pricing['monthly_amount'] = get_rounded_total((pricing['monthly_amount'] / plan.users), _pricing_multiplier)
 		pricing['amount'] = get_rounded_total((pricing['amount'] / plan.users), _pricing_multiplier)
+		pricing['discount_rate'] = plan.discount
+
+		if plan.apply_discount and plan.discount:
+			discounted_amount = pricing['amount'] * (plan.discount/100)
+			pricing['discounted_amount'] = pricing['amount'] - discounted_amount
+
 		pricing['symbol'] = context.symbol
 
 		return plan, pricing
 
-	business_plan, business_plan_pricing = get_plan_and_pricing('P-Standard-2020')
-	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('P-Pro-2020')
+	enterprise_plan, enterprise_plan_pricing = get_plan_and_pricing('Cloud-2020')
 
 	context.plans = [
-		{
-			'name': business_plan.name,
-			'title': business_plan.title,
-			'pricing': business_plan_pricing,
-			'storage': business_plan.space,
-			'emails': business_plan.emails,
-			'minimum_users': 5,
-			'base_features': [
-				{'title': 'hosting', 'included': 1},
-				{'title': 'account_manager', 'included': 0},
-				{'title': 'all_modules', 'included': 1},
-				{'title': 'email_support', 'included': 1},
-				{'title': 'onboarding_three', 'included': 1}
-			],
-			'features': [
-				{
-					'title': 'Organizations',
-					'content': [
-						'3 Companies',
-					]
-				},
-				{
-					'title': 'Server and Emails ',
-					'content': [
-						'10 GB cloud storage',
-						'5000 emails / month',
-						'Extensible via add-ons'
-					]
-				},
-				{
-					'title': 'Customization',
-					'content': [
-						'Print Formats and Email Alerts',
-						'30 Custom Fields',
-						'10 Custom Forms, 10 Custom Scripts'
-					]
-				},
-				{
-					'title': 'Integrations + API',
-					'content': [
-						'Email Integration and REST API',
-						'Payment Gateways',
-						'Dropbox, Shopify and AWS'
-					]
-				}
-			],
-
-		},
 		{
 			'name': enterprise_plan.name,
 			'title': enterprise_plan.title,
 			'pricing': enterprise_plan_pricing,
 			'storage': enterprise_plan.space,
 			'emails': enterprise_plan.emails,
-			'minimum_users': 10,
+			'minimum_users': 5,
 			'base_features': [
 				{'title': 'hosting', 'included': 1},
-				{'title': 'account_manager', 'included': 0},
 				{'title': 'all_modules', 'included': 1},
 				{'title': 'email_support', 'included': 1},
 				{'title': 'onboarding_5', 'included': 1}
@@ -149,7 +105,8 @@ def get_context(context):
 				{
 					'title': 'Organizations',
 					'content': [
-						'Unlimited Companies',
+						'Multiple Companies',
+						'All Modules'
 					]
 				},
 				{
@@ -184,8 +141,7 @@ def get_context(context):
 			'no_pricing': True,
 			'description': 'One Stack, One Vendor, 100% Freedom',
 			'base_features': [
-				{'title': 'hosting', 'included': 0},
-				{'title': 'account_manager', 'included': 1},
+				{'title': 'managed_server', 'included': 1},
 				{'title': 'all_modules', 'included': 1},
 				{'title': 'priority_support', 'included': 1},
 				{'title': 'onboarding', 'included': 1}
@@ -195,7 +151,8 @@ def get_context(context):
 				{
 					'title': 'Organizations',
 					'content': [
-						'Unlimited Companies',
+						'Multiple Companies',
+						'All Modules'
 					]
 				},
 				{

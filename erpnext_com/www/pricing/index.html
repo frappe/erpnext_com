@@ -5,14 +5,20 @@
 	<h2>{{ name }}</h2>
 	<p class='mb-1' style="min-height: 50px; width: 90%">{{ description }}</p>
 	<a class='btn btn-primary mt-2 btn-sm' href="/contact-form">Contact Sales</a>
-	<p class='text-muted small mt-2'>Unlimited Users</p>
+	<p class='text-muted small mt-2'>Minimum 20 Users</p>
 </div>
 {% endmacro %}
 
-{% macro heading_with_pricing(name, symbol, monthly_amount, amount, minimum_users) %}
+{% macro heading_with_pricing(name, symbol, monthly_amount, amount, minimum_users, discounted_amount) %}
 <div class="mb-4">
 	<h2>{{ symbol }} {{ monthly_amount|int }}</h2>
+
+	{% if discounted_amount %}
+	<p class='text-muted mb-1' style="min-height: 50px; width: 90%">Per user per month or {{ symbol }}{{ discounted_amount|int }} yearly</p>
+	{% else %}
 	<p class='text-muted mb-1' style="min-height: 50px; width: 90%">Per user per month or {{ symbol }}{{ amount|int }} yearly</p>
+	{% endif %}
+
 	<button class='btn btn-primary mt-2 btn-sm'
 		onclick="redirect_to_signup('/signup', '{{ name }}')">Start 14 Day Trial</button>
 	<p class='text-muted small mt-2'>Minimum {{ minimum_users }} Users</p>
@@ -49,13 +55,13 @@
 {% endmacro %}
 
 {% macro plan_card(plan, highlight) %}
-<div class='col-sm-4 mb-4' style="padding: 0px;">
-	<div class='card h-100 pb-4'
+<div class='col-sm-6 mb-6 pl-2' style="padding: 0px;">
+	<div class='card h-100 pb-4 ' style="margin-left: 15px; margin-right: 15px;"
 		{% if highlight %}
 			style="box-shadow: 0 20px 25px 5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); z-index: 1; margin: 0px -5px;"
 		{% endif %}
 	>
-		<div class='card-body text-left'>
+		<div class='card-body text-left ml-4'>
 			<h5 class='card-title text-muted'>{{ plan.title }}</h5>
 			{% if plan.no_pricing %}
 				{{ heading(plan.name, plan.description, plan.minimum_users) }}
@@ -65,7 +71,8 @@
 					plan.pricing.symbol,
 					plan.pricing.monthly_amount,
 					plan.pricing.amount,
-					plan.minimum_users
+					plan.minimum_users,
+					plan.pricing.discounted_amount
 				) }}
 			{% endif %}
 
@@ -80,7 +87,7 @@
 			</div>
 			{% endif %}
 		</div>
-		<div class="card-footer bg-white pt-0 pb-3" style="border: unset;">
+		<div class="card-footer bg-white pt-0 pb-3 ml-4" style="border: unset;">
 			<hr>
 			{% for feature in plan.features %}
 			<div>
@@ -108,7 +115,7 @@
 		<div class='row mt-4'>
 
 			{% for plan in plans %}
-			{{ plan_card(plan, loop.index == 2)}}
+			{{ plan_card(plan)}}
 			{% endfor %}
 		</div>
 
