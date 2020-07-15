@@ -17,7 +17,7 @@
  "is_standard": 1,
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2019-05-31 11:33:21.886056",
+ "modified": "2020-07-15 18:46:11.335513",
  "modified_by": "Administrator",
  "module": "erpnext_com",
  "name": "cve-report",
@@ -30,7 +30,8 @@
  "show_in_grid": 0,
  "show_sidebar": 0,
  "sidebar_items": [],
- "success_url": "/cve-report",
+ "success_message": "Thank you for reporting the vulnerability. Our team will reach out to you if required in the next two weeks.",
+ "success_url": "/security",
  "title": "Report a Vulnerability",
  "web_form_fields": [
   {
