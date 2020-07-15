@@ -1,0 +1,5 @@
+{
+	"js/pricing.js": [
+		"public/js/signup/pricing.js"
+	]
+}
