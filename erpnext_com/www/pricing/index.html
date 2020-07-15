@@ -189,22 +189,25 @@
 	</div>
 </section>
 
-<script src="https://unpkg.com/popper.js@1"></script>
-<script src="https://unpkg.com/tippy.js@4"></script>
-
-<script>
-	tippy('.tooltip-element', {
-		arrow: true,
-		arrowType: 'round', // or 'sharp' (default)
-		animation: 'fade',
-	})
+{% block script %}
+	<script src="https://unpkg.com/popper.js@1"></script>
+	<script src="https://unpkg.com/tippy.js@4"></script>
+	<script>
 	function redirect_to_signup(page, plan) {
 		var url = page + '?plan=' + plan;
 		// concat existing params to url
 		url = url + window.location.search.replace('?', '&');
 		window.location.href = url;
 	}
-</script>
+	
+	tippy('.tooltip-element', {
+		arrow: true,
+		arrowType: 'round', // or 'sharp' (default)
+		animation: 'fade',
+	});
+	</script>
+	<script src='/assets/js/pricing.js'></script>
+{% endblock %}
 
 <style>
 	.pricing-card {
