@@ -1,3 +1,9 @@
+tippy('.tooltip-element', {
+	arrow: true,
+	arrowType: 'round', // or 'sharp' (default)
+	animation: 'fade',
+});
+
 frappe.ready(function () {
 	function set_expiry(key, value, period) {
 		// convert days to milliseconds, faster than importing external library
