@@ -4,6 +4,7 @@
 {% from "templates/includes/media.html" import media %}
 {% from "erpnext_com/templates/includes/card_grid.html" import card_grid %}
 
+{#
 {% block head_include %}
 	<meta name="description" content="ERPNext is the world's top 100% open source ERP which supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare" />
 	<meta name="keywords" content="ERP Software, Cloud ERP, Open Source ERP, Accounting Software, Online ERP, Online Accounting, ERP for small business" />
@@ -11,6 +12,7 @@
 	<meta name="author" content="erpnext.com">
 	<meta name="robots" content="index, follow">
 	<meta name="revisit-after" content="1 days">
+
 	<!-- Open Graph Protocol -->
 	<meta property="og:title" content="ERPNext - Open Source Cloud ERP">
 	<meta property="og:description" content="ERPNext is the world's top 100% open source ERP software. ERPNext supports manufacturing, distribution, retail, trading, services, education, non profits and healthcare">
@@ -24,7 +26,8 @@
 	<meta name="twitter:image" content="{{ frappe.utils.get_url() }}/assets/erpnext_com/img/home/social.png">
 	<meta name="twitter:card" content="summary_large_image">
 	<link type="text/css" rel="stylesheet" href="/assets/erpnext_com/css/custom.css">
-{% endblock %}
+	{% endblock %}
+#}
 
 {% block content %}
 <section class='top-section'>
@@ -53,12 +56,12 @@
 			<div class="notch"></div>
 		</div>
 		<div class="row d-block d-sm-flex" style="margin-top: 7rem;">
-			<div class="col-sm-3 p-3 p-md-0 mb-2 mb-md-0 text-center">
+			<div class="p-3 mb-2 text-center col-sm-3 p-md-0 mb-md-0">
 				<a href="https://www.getapp.com/operations-management-software/enterprise-resource-planning-erp/category-leaders/" target="_blank"><img alt="GetApp Category Leaders for Enterprise Resource Planning (ERP) Jan-2020" title="Category Leaders Badge" class="mx-auto" style="width: 100%; max-width: 200px; padding: 0px 12px; border: 0px" src="/assets/erpnext_com/img/home/getapp.png"></a>
 			</div>
 			<div class="col-sm-9">
-				<h3 class="text-md-left text-center">Certified Awesome</h3>
-				<p class="text-muted text-md-left text-center" style="line-height: 1.7;">
+				<h3 class="text-center text-md-left">Certified Awesome</h3>
+				<p class="text-center text-muted text-md-left" style="line-height: 1.7;">
 					ERPNext has been rated amongst top-performing softwares by GetApp based on verified buyer reviews. Over 5,000 companies have made themselves ready for the next generation of enterprise with ERPNext.
 				</p>
 			</div>

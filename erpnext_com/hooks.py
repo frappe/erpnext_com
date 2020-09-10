@@ -14,48 +14,15 @@ hide_in_installer = True
 
 website_context = {
 	"repo": "frappe/erpnext_com",
-	"logo_image_url": '/assets/erpnext_com/img/erpnext-logo.svg',
-	'brand_name': 'ERPNext',
-	"brand_html": "ERPNext",
-	"top_bar_items": [
-		{"label": "Solutions", "child_items": [
-			{"label": "Services", "url":"/services"},
-			{"label": "Manufacturing", "url":"/manufacturing"},
-			{"label": "Retail", "url":"/retail"},
-			{"label": "Distribution", "url":"/distribution"},
-			{"label": "Education", "url":"/education"},
-			{"label": "Non Profit", "url":"/non-profit"},
-			{"label": "Agriculture", "url":"/agriculture"},
-			{"label": "Healthcare", "url": "/healthcare"},
-			{"label": "Regional", "url": "/regional"},
-			{"label": "Whitepapers", "url": "/whitepapers"}
-		]},
-		{"label": "Pricing", "url": "/pricing"},
-		{"label": "Services", "child_items": [
-			{"label": "Support", "url": "/support"},
-			{"label": "Enterprise", "url": "/enterprise"},
-			{"label": "Contact Sales", "url": "/contact-form"},
-		]},
-		{"label": "Partners", "child_items": [
-			{"label": "Partner Listing", "url":"/partners"},
-			{"label": "Become a Partner", "url":"/partners/plans"},
-			{"label": "Partner Login", "url":"/login"},
-		]},
-		# {"label": "Conference", "url": "https://erpnext.org/conf/2019", "highlight": True, "new_tab": True},
-		{"label": "Sign Up", "url": "/signup?plan=Cloud-2020", "right":1},
-		{"label": "Contact Us", "url": "/contact-form", "right":1, "button": 1},
-	],
-	"hide_login": 1,
-	"favicon": "/assets/erpnext_com/img/erpnext-logo-blue.png"
 }
 
 website_redirects = [
-	{'source': '/compare', 'target': 'https://erpnext.org/contribute' },
-	{'source': '/benefits', 'target': '/about' },
-	{'source': '/download', 'target': 'https://erpnext.org/get-started' },
-	{'source': '/faq', 'target': 'https://erpnext.org/faq' },
-	{'source': '/open-source', 'target': 'https://erpnext.org/open-source' },
-	{'source': '/12', 'target': '/version-12' },
+	{"source": "/compare", "target": "https://erpnext.org/contribute"},
+	{"source": "/benefits", "target": "/about"},
+	{"source": "/download", "target": "https://erpnext.org/get-started"},
+	{"source": "/faq", "target": "https://erpnext.org/faq"},
+	{"source": "/open-source", "target": "https://erpnext.org/open-source"},
+	{"source": "/12", "target": "/version-12"},
 ]
 
 look_for_sidebar_json = True
@@ -69,17 +36,20 @@ look_for_sidebar_json = True
 
 # include js, css files in header of web template
 web_include_css = "/assets/erpnext_com/css/custom.css"
-web_include_js = ["/assets/erpnext_com/js/payment.js", "/assets/erpnext_com/js/search_docs.js"]
+web_include_js = [
+	"/assets/erpnext_com/js/payment.js",
+	"/assets/erpnext_com/js/search_docs.js",
+]
 
 # Home Pages
 # ----------
 
 # application home page (will override Website Settings)
-home_page = "index"
+# home_page = "index"
 
 # website user home page (by Role)
 # role_home_page = {
-#	"Role": "home_page"
+# 	"Role": "home_page"
 # }
 
 # Generators
@@ -121,7 +91,7 @@ home_page = "index"
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
-#	}
+# 	}
 # }
 
 # Scheduled Tasks
