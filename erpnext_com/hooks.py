@@ -41,6 +41,7 @@ website_context = {
 			{"label": "Become a Partner", "url":"/partners/plans"},
 			{"label": "Partner Login", "url":"/login"},
 		]},
+		{"label": "Newsletter", "url": "/newsletter"},
 		# {"label": "Conference", "url": "https://erpnext.org/conf/2019", "highlight": True, "new_tab": True},
 		{"label": "Sign Up", "url": "/signup?plan=Cloud-2020", "right":1},
 		{"label": "Contact Us", "url": "/contact-form", "right":1, "button": 1},
