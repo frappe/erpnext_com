@@ -106,6 +106,13 @@ def get_context(context):
 			],
 			'features': [
 				{
+					'title': 'Onboarding Support',
+					'content': [
+						'5 Hours On Monthly Plan',
+						'50 Hours On Yearly Plan'
+					]
+				},
+				{
 					'title': 'Organizations',
 					'content': [
 						'Multiple Companies',
