@@ -135,7 +135,14 @@ def get_context(context):
 						'Payment Gateways',
 						'Dropbox, Shopify and AWS'
 					]
-				}
+				},
+				{
+					'title': 'Onboarding Support',
+					'content': [
+						'5 Hours On Monthly Plan',
+						'50 Hours On Yearly Plan'
+					]
+				},
 			],
 		},
 		{
