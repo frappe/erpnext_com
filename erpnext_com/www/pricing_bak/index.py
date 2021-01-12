@@ -54,6 +54,9 @@ def get_context(context):
 		},
 		'onboarding':  {
 			'title': 'Enterprise Onboarding'
+		},
+		'onboarding_support':  {
+			'title': 'Onboarding Support'
 		}
 	}
 
@@ -99,7 +102,7 @@ def get_context(context):
 				{'title': 'hosting', 'included': 1},
 				{'title': 'all_modules', 'included': 1},
 				{'title': 'email_support', 'included': 1},
-				{'title': 'onboarding_5', 'included': 1}
+				{'title': 'onboarding_support', 'included': 1}
 			],
 			'features': [
 				{
@@ -132,7 +135,14 @@ def get_context(context):
 						'Payment Gateways',
 						'Dropbox, Shopify and AWS'
 					]
-				}
+				},
+				{
+					'title': 'Onboarding Support',
+					'content': [
+						'5 Hours On Monthly Plan',
+						'50 Hours On Yearly Plan'
+					]
+				},
 			],
 		},
 		{
