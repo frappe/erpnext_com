@@ -1,4 +1,4 @@
-{% extends "frappe_theme/templates/base.html" %}
+{% extends "templates/base.html" %}
 {% from "erpnext_com/templates/includes/macros.html" import hero, feature, testimonial %}
 
 {% block title %}GST Ready ERP{% endblock %}
@@ -25,14 +25,14 @@
 			"desc": "ERPNext is GST ready out-of-the-box with tons of in-built tax-templates, chart of accounts, HSN codes, reports, and print formats to assure full GST compliance from the beggining.",
 			"img": "/assets/erpnext_com/images/india/chart-of-accounts-gst-india.png"
 		})
-	}}	
+	}}
 
 	{{ feature({
 			"title": "Create GST Compliant Invoices",
 			"desc": "Issue GST compliant invoices to customers and business in with print formats in line with the GST guidelines.",
 			"img": "/assets/erpnext_com/images/india/gst-pos-invoice.png"
 		})
-	}}	
+	}}
 
 	{{ feature({
 		"title": "Find Item HSN Codes With Ease",
@@ -41,7 +41,7 @@
 		})
 	}}
 
-	{{ feature({ 
+	{{ feature({
 		"title": "Itemised Tax Breakup",
 		"desc": "Manage itemised taxation on items (0%, 5%, 12%, 18%, 28%) in the single transaction. In the Print Format, get tax breakup for each item HSN code-wise.",
 		"img": "/assets/erpnext_com/images/india/gst-tax-breakup.png"
