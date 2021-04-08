@@ -128,3 +128,9 @@ web_include_js = [
 # }
 
 fixtures = ["Contact Us Settings"]
+
+jenv = {
+	"methods": [
+		"get_geolocation_data:erpnext_com.utils.get_country"
+	]
+}
