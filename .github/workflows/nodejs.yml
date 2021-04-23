@@ -23,4 +23,4 @@ jobs:
       run: |
         git fetch origin $GITHUB_BASE_REF:$GITHUB_BASE_REF -q
         files=$(git diff --name-only $GITHUB_BASE_REF --diff-filter=d)
-        if [ -f $files ]; then npx cspell --config ./spell_checker/cSpell.json $files fi
+        npx cspell --config ./spell_checker/cSpell.json $files
